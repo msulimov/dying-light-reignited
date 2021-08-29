@@ -193,7 +193,7 @@ sub extraDLCRecipes(){
         ClipReload(true);
 		Silenced(true);
         FxNameShell("BerettaGunfireShell");
-        ShootFx("pistol_gunshot_electric_sequence.fx");
+        ForceShootFx("pistol_gunshot_electric_sequence.fx");
         AimBlurStart(0.25);
         AimBlurEnd(0.35);
         ShootStatAccuracy(95.0);
@@ -211,7 +211,7 @@ sub extraDLCRecipes(){
         ShootMode(ShotMode_Single);
         BulletsPerShot(1);
         AimFov(1.6);
-        MaxReboundCount(3);
+        MaxReboundCount(0);
         DamageSize(1.0);
         AiHitSound("bullet");
         StatsType(StatsType_Pistol);
@@ -237,13 +237,14 @@ sub extraDLCRecipes(){
         FirePointRange(3,10000.0 *0.01);
         FirePointDamage(3,33.75);
         FirePointForce(3,5.0);
+        BulletSpeed(350.0);
         Color(Color_Platinum);
         GenType(GenType_Firearm);
-        ShotTailDelay(0.5);
+        ShotTailDelay(0.01);
         AchType(AchType_Pistol);
         NameGender(0);
         Price(10000);
-        ShootAnimFactor(0.05);
+        ShootAnimFactor(1.0);
 		//GameVersion(11);
 		
 		BulletTrailMesh("bullet_trail_laser.msh");
@@ -323,7 +324,7 @@ sub extraDLCRecipes(){
         AnimPrefix("m16");
         HudIcon("weapon_volkan_rifle");
         ShotTime(0.14);
-        ShotSound("rifle_scifi_shot_XX.wav");
+        ShotSound("astro_rifle_shot_XX.wav");
 		BaseSoundPrefix("");
         DefaultBulletId("Bullet_Rifle");		
         AmmoCount(45);
@@ -342,7 +343,7 @@ sub extraDLCRecipes(){
         use PickupSounds_Default();
         ClipReload(true);
         FxNameShell("MGGunfireShell");
-        ShootFx("m16_muzzle_flash_space_sequence.fx"); 
+        ForceShootFx("m16_muzzle_flash_space_sequence.fx"); 
         AimBlurStart(25.0);
         AimBlurEnd(500.0);
         ShootStatAccuracy(100.0);
@@ -361,7 +362,7 @@ sub extraDLCRecipes(){
         ShootMode(ShotMode_Automatic);
         BulletsPerShot(1);
         AimFov(1.8);
-        MaxReboundCount(3);
+        MaxReboundCount(0);
         DamageSize(1.0);
         AiHitSound("bullet");
         StatsType(StatsType_Pistol);
@@ -389,11 +390,11 @@ sub extraDLCRecipes(){
         FirePointForce(3,6.25);
         Color(Color_Platinum);
         GenType(GenType_Firearm);
-        ShotTailDelay(0.2);
+        ShotTailDelay(0.9);
         AchType(AchType_Pistol);
         NameGender(1);
         Price(20000);
-        ShootAnimFactor(1.0);
+        ShootAnimFactor(0.05);
         HandInertiaFactor(0.0);
         HandInertiaRotFactor([0.0,0.0,2.0]);
         BulletSpeed(350.0);
