@@ -1,0 +1,89 @@
+ sub hr_torch()
+{
+Preset("hr_torch")
+
+// 0 - Light Spot 1.3
+// 1 - Omni Close 1.1
+// 2 - Omni Far 0.5
+
+    {
+		OnLevelStart()
+	    {
+        SetLightIntensity(0, 0.0, 0.0);
+		SetLightIntensity(1, 0.0, 0.0);
+		SetLightIntensity(2, 0.0, 0.0);
+   		}
+		
+		OnEnable()
+	    {
+        SetLightIntensity(0, 0.0, 1.3);
+		SetLightIntensity(1, 0.0, 1.1);
+		SetLightIntensity(2, 0.0, 0.5);
+   		}
+		
+		OnDisable()
+		{
+        SetLightIntensity(0, 0.0, 0.0);
+		SetLightIntensity(1, 0.0, 0.0);
+		SetLightIntensity(2, 0.0, 0.0);
+		}
+		
+		// Group, Time, Value
+        
+		TimedEvent(0.0)
+        {
+		SetLightIntensity(0, 0.14, 1.3);
+		SetLightIntensity(1, 0.14, 1.1);
+		SetLightIntensity(2, 0.14, 0.5);
+		MoveTo(0, 0.07, [0.0, 0.01, 0.03]);
+     	}
+        
+		TimedEvent(0.07)
+        {
+		MoveTo(0, 0.07, [0.0, 0.0, 0.00]);
+		}
+        
+		TimedEvent(0.15)
+        {
+		SetLightIntensity(0, 0.14, 1.4);
+		SetLightIntensity(1, 0.14, 1.18);
+		SetLightIntensity(2, 0.14, 0.55);
+		MoveTo(0, 0.07, [0.0, -0.02, -0.02]);
+        }
+        
+		TimedEvent(0.22)
+        {
+		MoveTo(0, 0.07, [0.0, 0.0, 0.00]);
+		}
+		
+		TimedEvent(0.30)
+        {
+		SetLightIntensity(0, 0.14, 1.25);
+		SetLightIntensity(1, 0.14, 1.05);
+		SetLightIntensity(2, 0.14, 0.45);
+		MoveTo(0, 0.14, [0.0, 0.01, 0.03]);
+     	}
+        
+		TimedEvent(0.37)
+        {
+		MoveTo(0, 0.07, [0.0, -0.01, -0.02]);
+		}
+        
+		TimedEvent(0.45)
+        {
+		SetLightIntensity(0, 0.14, 1.35);
+		SetLightIntensity(1, 0.14, 1.10);
+		SetLightIntensity(2, 0.14, 0.58);
+		MoveTo(0, 0.14, [0.0, 0.0, -0.02]);
+     	}
+        
+		TimedEvent(0.52)
+        {
+		MoveTo(0, 0.07, [0.0, 0.0, -0.01]);
+		}
+		
+		GoToBegin(0.60)
+		{
+		}
+    }
+}

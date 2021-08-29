@@ -1,0 +1,75 @@
+//SPECIAL AGENT BUNDLE
+
+import "inventorystuff.scr" 
+sub main() 
+{		
+	Item("Craftplan_Melee_Cane_SpecialAgent", CategoryType_Collectable)
+    {
+        Name("&Craftplan_Melee_Cane_SpecialAgent_N&");
+        Description("&Craftplan_Melee_Cane_SpecialAgent__D&");
+        ItemType(ItemType_CraftPlan);
+        Price(40);
+        Mesh("blueprint.msh");
+        Skin("default");
+        BaseItem("Melee_Crowbar", "", "");
+		BaseItem("Melee_Baton", "", "");
+		BaseItem("Melee_Pick", "", "");
+		BaseItem("Melee_Pipe", "", "");
+        RequiredItem("Craft_DuctTape", 1);
+		RequiredItem("Craft_PlasticTube", 2);
+		RequiredItem("Craft_Sugar", 3);
+		RequiredItem("Craft_Bleach", 2);
+        Color(Color_Blue);
+        CraftedItem("Melee_Cane_SpecialAgent", 1, 1);
+		CraftplanType("Developer");
+        InheritBaseStats();
+        UniqueSaveID(9921);
+        HudIcon("blueprint_a");
+        GameVersion(34);    	
+		OwnedAtStart();
+    }
+	
+	Item("Craftplan_Firearm_SubmachineA_SpecialAgent", CategoryType_Collectable)
+    {
+        Name("&Craftplan_Firearm_SubmachineA_SpecialAgent_N&");
+        Description('&Craftplan_Firearm_SubmachineA_SpecialAgent_D&');
+        ItemType(ItemType_CraftPlan);
+        Price(65);
+        Mesh("blueprint.msh");
+        Skin("default");
+		RequiredItem("Craft_MetalScrap", 6);
+        RequiredItem("Craft_DuctTape", 3);
+        BaseItem("Firearm_Submachine", "", "");
+        CraftedItem("Firearm_SubmachineA_SpecialAgent", 1, 1);
+        CraftplanType("Developer");
+		Color(Color_Blue);
+        UniqueSaveID(9922);
+        HudIcon("blueprint_a");
+		GameVersion(34);
+		OwnedAtStart();
+		InheritBaseStats();
+    }
+	
+	 Item("Craftplan_Firearm_PistolASilenced_SpecialAgent", CategoryType_Collectable)
+    {
+        Name("&Craftplan_Firearm_PistolASilenced_SpecialAgent_N&");
+        Description("&Craftplan_Firearm_PistolASilenced_SpecialAgent_D&");
+        ItemType(ItemType_CraftPlan);
+        Price(45);
+        Mesh("blueprint.msh");
+        Skin("default");
+        BaseItem("Firearm_PistolAGen", "", "");
+        RequiredItem("Craft_DuctTape", 4);
+		RequiredItem("Craft_TinCan", 3);
+		RequiredItem("Craft_Bleach", 1);
+        Color(Color_Blue);
+        CraftedItem("Firearm_PistolASilenced_SpecialAgent", 1, 1);
+        CraftplanType("Developer");
+        UniqueSaveID(9923);
+        HudIcon("blueprint_a");
+        GameVersion(34);
+        InheritBaseStats();
+		OwnedAtStart();
+    }
+	
+}

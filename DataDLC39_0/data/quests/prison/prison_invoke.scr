@@ -1,0 +1,12 @@
+!QuestStage( s, s, s )
+
+QuestStage( "+tree17 00x01  &RD_Prison_Name& (RD_Prison/RD - BEACH - START)", "RD_Prison", "RD - BEACH - START" )
+QuestStage( "+tree17 00x02  &RD_Prison_replayable_Name& (RD_Prison_replayable/RD - BEACH - START)", "RD_Prison_replayable", "RD - BEACH - START" )
+QuestStage( "+tree17 00x03  &RD_Prison_Start_Name& (RD_Prison_Start/RD - PRISON - START)", "RD_Prison_Start", "RD - PRISON - START" )
+QuestStage( "+tree17 00x03  &RD_Prison_Start_Name& (RD_Prison_Start/RD - PRISON - CLEAR - BLOCK A)", "RD_Prison_Start", "RD - PRISON - CLEAR - BLOCK A" )
+QuestStage( "+tree17 00x03  &RD_Prison_Start_Name& (RD_Prison_Start/RD - PRISON - GET TO - DINING ROOM)", "RD_Prison_Start", "RD - PRISON - GET TO - DINING ROOM" )
+QuestStage( "+tree17 00x03  &RD_Prison_Start_Name& (RD_Prison_Start/RD - PRISON - CLEAR - DINNING ROOM)", "RD_Prison_Start", "RD - PRISON - CLEAR - DINNING ROOM" )
+QuestStage( "+tree17 00x03  &RD_Prison_Start_Name& (RD_Prison_Start/RD - PRISON - CLEAR - BLOCK B)", "RD_Prison_Start", "RD - PRISON - CLEAR - BLOCK B" )
+QuestStage( "+tree17 00x03  &RD_Prison_Start_Name& (RD_Prison_Start/RD - PRISON - FINAL ARENA)", "RD_Prison_Start", "RD - PRISON - FINAL ARENA" )
+QuestStage( "+tree17 00x03  &RD_Prison_Start_Name& (RD_Prison_Start/RD - PRISON - WALL FINAL BOSS)", "RD_Prison_Start", "RD - PRISON - WALL FINAL BOSS" )
+QuestStage( "+tree17 00x03  &RD_Prison_Start_Name& (RD_Prison_Start/RD - PRISON - TAKE REWARD )", "RD_Prison_Start", "RD - PRISON - TAKE REWARD " )

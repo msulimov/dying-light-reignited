@@ -1,0 +1,55 @@
+sub main()
+{
+	PrisonDoorDI("Prison_Gate_Start"); // start gate name - enables prison timer
+	PrisonEvacDoorDI("Exit_Prison_DoorDI"); // door that exits reward room and stops death timer
+
+	PrisonCamouflageMult(0.3);
+
+	// map_name, quest_name, phase_name
+	RestartInvoke("prison", "RD_Prison", "RD - BEACH - START");
+
+	StartWeather(1.0);
+	StartTime(6.5);
+
+	EvacWeather(1.0);
+	EvacTime(6.5);
+}
+
+sub reward_times_default()
+{
+	RewardTierTime(480); 	// 0 tier time (s) - the best one 
+	RewardTierTime(900); 	// 1 tier time (s)
+	RewardTierTime(1500); 	// 2 tier time (s)
+	RewardTierTime(2400); 	// 3 tier time (s)
+	RewardTierTime(3000); 	// 4 tier time (s)
+	RewardTierTime(3600); 	// 5 tier time (s)
+
+	RewardRoomTimes(60, 50, 40, 30); // how much time do we have to get the reward per coop team size
+	//1,2,3,4
+}
+
+sub reward_times_hard()
+{
+	RewardTierTime(900); 	// 0 tier time (s) - the best one 
+	RewardTierTime(1500); 	// 1 tier time (s)
+	RewardTierTime(2100); 	// 2 tier time (s)
+	RewardTierTime(3000); 	// 3 tier time (s)
+	RewardTierTime(4200); 	// 4 tier time (s)
+	RewardTierTime(5400); 	// 5 tier time (s)
+
+	RewardRoomTimes(120, 110, 100, 90); // how much time do we have to get the reward per coop team size
+	//1,2,3,4
+}
+
+sub reward_times_nightmare()
+{
+	RewardTierTime(1500); 	// 0 tier time (s) - the best one 
+	RewardTierTime(2100); 	// 1 tier time (s)
+	RewardTierTime(2700); 	// 2 tier time (s)
+	RewardTierTime(4200); 	// 3 tier time (s)
+	RewardTierTime(5400); 	// 4 tier time (s)
+	RewardTierTime(6600); 	// 5 tier time (s)
+
+	RewardRoomTimes(180, 170, 160, 150); // how much time do we have to get the reward per coop team size
+	//1,2,3,4
+}

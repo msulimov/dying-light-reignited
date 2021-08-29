@@ -1,0 +1,43 @@
+sub main()
+{
+    NightHorde()
+    {
+		DefaultRadius(10);
+		MaxRadius(30);		
+		TimeToReachMaxRadius(100);
+		TimeOutsideHordeToDisable(15);
+		DistToDisableNightHorde(19);
+		
+		PlayerDistanceToChangeSpawnPos(1.0);
+		
+		VolatilesChaseMaxDistance(5000000000000000000);
+		VolatilesChaseMaxNumber(900000000000);
+		
+		FogBlendDistance(5.0);
+		
+		BehaviourWander()
+		{
+			// Maximum distance the horde might move away from its base position.
+			Range()
+			{
+				Value(0, 2000);
+				Value(1, 7000);
+				Value(2, 10000);
+			}
+			
+			// Determines how fast the horde moves when wandering.
+			Speed()
+			{
+				Value(0, 1000);
+				Value(1, 2000);				
+				Value(2, 3000);
+			}
+		}
+		
+		BehaviourChase()
+		{
+			MaxSpeed(14.0);
+			MinSpeed(7.0, 60.0); //  first is value of speed, second is distance that this speed is reached			
+		}
+    }
+}

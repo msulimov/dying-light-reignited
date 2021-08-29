@@ -1,0 +1,11 @@
+!include("AudioScript.def")
+
+AudioProc("prison")
+{
+    CallProc("map_default")
+	
+	LoadAudioBanks("music_dlc39")
+    LoadLocalisedAudioBank("speech_ai_chatter_dlc39")
+	LoadAudioBanks("all_in_maps_dlc39")
+    LoadLocalisedAudioBank("all_in_maps_local_dlc139")
+}

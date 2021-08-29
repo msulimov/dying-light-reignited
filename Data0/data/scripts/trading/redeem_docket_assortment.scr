@@ -1,0 +1,549 @@
+import "assortment_sets.scr"
+import "item_color.def"
+
+sub main()
+{
+    Docket("A")
+    {
+        use Weapons();
+        use Weapons2H();
+    }
+
+    Docket("B")  // Community Dockets
+    {
+        use Weapons_CommunityDockets();
+        use Weapons2H_CommunityDockets();
+    }
+
+    Docket("C")  // Premium Dockets
+    {
+        use Weapons_PremiumDockets();
+        use Weapons2H_PremiumDockets();
+    }
+
+    Docket("D")  // Premium dockets used for server achievements
+    {
+        use Weapons_PremiumDockets();
+        use Weapons2H_PremiumDockets();
+    }
+
+	Docket("Bozak")  // Bozak Dockets
+    {
+        use Weapons_CommunityDockets();
+        use Weapons2H_CommunityDockets();
+    }
+    
+    Docket("E01")  // Buggy skin docket
+    {
+        use BuggySkinDocket01();
+    }
+    
+    Docket("E02")  // Buggy skin docket
+    {
+        use BuggySkinDocket02();
+    }
+    
+    Docket("E03")  // Buggy skin docket
+    {
+        use BuggySkinDocket03();
+    }
+    
+    Docket("E04")  // Buggy skin docket
+    {
+        use BuggySkinDocket04();
+    }
+    
+    Docket("E05")  // Buggy skin docket
+    {
+        use BuggySkinDocket05();
+    }
+    
+    Docket("E06")  // Buggy skin docket
+    {
+        use BuggySkinDocket06();
+    }
+    
+    Docket("E07")  // Buggy skin docket
+    {
+        use BuggySkinDocket07();
+    }
+    
+    Docket("E08")  // Buggy skin docket
+    {
+        use BuggySkinDocket08();
+    }
+    
+    Docket("E09")  // Buggy skin docket
+    {
+        use BuggySkinDocket09();
+    }
+    
+    Docket("E10")  // Buggy skin docket
+    {
+    }
+    
+    Docket("F01")  // Outfit docket
+    {
+        use OutfitDocket01();
+    }
+    
+    Docket("F02")  // Outfit docket
+    {
+		Set("Gaas_Drop1_Player_Outfit",			                 "whites_only",   1, 1)
+        {
+        }
+	}
+    
+    Docket("F03")  // Easter event outfit
+    {
+        Set("Liveops_Easter_Outfit",                       "whites_only",   1, 1)
+        {
+        }
+    }
+    
+    Docket("F04")  // Outfit docket
+    {
+		Set("Liveops_Outfit_CHN",                       "whites_only",   1, 1)
+        {		
+        }
+    }
+    
+    Docket("F05")  // Outfit docket
+    {
+		Set("Liveops_Collectable_Liveops_Outfit_Halloween_Rat",                       "whites_only",   1, 1)
+        {		
+        }
+    }
+    
+    Docket("F06")  // Outfit docket
+    {
+		Set("Liveops_Collectable_Liveops_Outfit_Winter_Frost",                       "whites_only",   1, 1)
+        {		
+        }
+    }
+    
+    Docket("F07")  // Outfit docket
+    {
+    }
+    
+    Docket("F08")  // Outfit docket
+    {
+    }
+    
+    Docket("F09")  // Buggy Parts
+    {
+        use BuggyPartsDocket();
+    }
+    
+    Docket("F10")  // Valentine's Pack docket
+    {
+        use ValentineDocket();
+    }
+    
+    Docket("G01")  // alternate Valentine's Pack docket (no crossbow)
+    {
+        Set("Valentine_unlocker_no_crossbow",                    "whites_only",   1, 1)
+        {
+        }
+    }
+    
+    Docket("G02")  // Premium docket used for Zombiefest
+    {
+        use Weapons_PremiumDockets();
+        use Weapons2H_PremiumDockets();
+    }
+
+    Docket("G03")  // Premium docket used for Hyper-Mode
+    {
+        use Weapons_PremiumDockets();
+        use Weapons2H_PremiumDockets();
+    }
+
+    Docket("G04")  // Premium docket used for ZombieFest 2
+    {
+        use Weapons_PremiumDockets();
+        use Weapons2H_PremiumDockets();
+    }
+
+    Docket("G05")  // Premium docket used for ZombieFest 4
+    {
+        use Weapons_PremiumDockets();
+        use Weapons2H_PremiumDockets();
+    }
+
+    Docket("G06")  // Premium docket used for CARnage 2.0
+    {
+        use Weapons_PremiumDockets();
+        use Weapons2H_PremiumDockets();
+    }
+	
+    Docket("G07")  // GAAS DROP 1 - Harran Rifle
+    {
+        Set("Gaas_Drop1_Harran_Rifle",			                 "blue_only",   1, 1)
+        {
+        }
+    }
+
+    Docket("G08")  // GAAS DROP 1 - Gemly Wrench
+    {
+        Set("Gaas_Drop1_Gemly_Wrench",                           "green_only",   1, 1)
+        {
+        }
+    }
+
+    Docket("G09")  // GAAS DROP 1 - Halloween Shotgun
+    {
+        Set("Gaas_Drop1_Halloween_Shotgun",						 "blue_only",   1, 1)
+        {
+        }
+    }
+
+    Docket("G10")  // GAAS DROP 1 - Halloween Shotgun
+    {
+        Set("Gaas_Drop1_Halloween_Sickle",						 "whites_only",   1, 1)
+        {
+        }
+    }
+
+    Docket("G11")  // Christmas event - Candy Crusher
+    {
+        Set("Liveops_Christmas_Crowbar",                       "blue_only",   1, 1)
+        {
+        }
+    }
+
+    Docket("G12")  // Christmas event - outfit Snowman
+    {
+        Set("Liveops_Christmas_Outfit3",                       "whites_only",   1, 1)
+        {
+        }
+    }
+
+    Docket("G13")  // Christmas event - outfit Christmas Party
+    {
+        Set("Liveops_Christmas_Outfit4",                       "whites_only",   1, 1)
+        {
+        }
+    }
+
+    Docket("G14")  // Christmas event - outfit Santa's Helper
+    {
+        Set("Liveops_Christmas_Outfit5",                       "whites_only",   1, 1)
+        {
+        }
+    }
+
+    Docket("G15")  // Nvidia - mask
+    {
+        Set("Liveops_NVidia_Outfit",                       "whites_only",   1, 1)
+        {
+        }
+    }
+
+    Docket("G16")  // Tiger mask
+    {
+        Set("Liveops_Tiger_Outfit",                       "whites_only",   1, 1)
+        {
+        }
+    }
+	
+	Docket("G17")  // Lunar bow
+    {
+        Set("Liveops_Bow_Composite_Lunar",            "premium_dockets",   1, 1)
+        {
+        }
+    }
+	
+	Docket("G18")  // Last Hope
+    {
+        Set("Liveops_ShortAxe_LastHope",            "premium_dockets",   1, 1)
+        {
+        }
+    }
+
+    Docket("G19")  // Spectral Baseball
+    {
+        Set("Liveops_Spectral_Baseball",            "premium_dockets",   1, 1)
+        {
+        }
+    }
+	
+	Docket("G20")  // Kingmod
+    {
+        use KingModDocket();
+    }
+
+	Docket("G21")  // Pumpkin Mask Outfit
+    {
+        Set("Liveops_Halloween_Pumpkin_Mask",                       "whites_only",   1, 1)
+        {
+        }
+    }
+
+	Docket("G22")  // L4D Weapons Blueprint
+    {
+        Set("Liveops_Craftplan_L4D_Golf_Club",                       "premium_dockets",   1, 1)
+        {
+        }
+    }
+
+	Docket("G23")  // L4D Weapons Blueprint
+    {
+        Set("Liveops_Craftplan_L4D_Frying_Pan",                       "premium_dockets",   1, 1)
+        {
+        }
+    }
+
+	Docket("G24")  // L4D Weapons Blueprint
+    {
+        Set("Liveops_Craftplan_L4D_Electric_Guitar",                       "premium_dockets",   1, 1)
+        {
+        }
+    }
+	
+	Docket("G25")  // Chivalry Outfit
+    {
+        Set("Liveops_Outfit_Chivalry",                       "whites_only",   1, 1)
+        {
+        }
+    }
+
+	Docket("G26")  // Winter candy weapon
+    {
+        Set("Liveops_Craftplan_Winter_Candy_Cane",                       "blue_only",   1, 1)
+        {
+        }
+    }
+	
+	Docket("G27")  // Dao sword LUNAR event
+    {
+        Set("Liveops_Dao_Sword_Weapon",                       "premium_dockets",   1, 1)
+        {
+        }
+    }
+	
+	Docket("G28")
+    {
+        Set("Liveops_Scepter_Weapon",                       "premium_dockets",   1, 1)
+        {
+        }
+    }
+	
+	Docket("G29")
+    {
+        Set("Liveops_Pistol_Space_Commando_Weapon",          "premium_dockets",   1, 1)
+        {
+        }
+    }
+	
+	Docket("G30")
+    {
+        Set("Liveops_Craftplan_Throwable_ExplosiveBomb",          "whites_only",   1, 1)
+        {
+        }
+    }
+	
+	Docket("G31")
+    {
+        Set("Liveops_Collectable_Liveops_Outfit_Bestcrane",          "whites_only",   1, 1)
+        {
+        }
+    }
+
+	Docket("G32")
+    {
+        Set("Liveops_Collectable_Craftplan_L4D_Gnome",          "premium_dockets",   1, 1)
+        {
+        }
+    }
+	
+	Docket("G33")
+    {
+        Set("Liveops_Collectable_Craftplan_Crossbow_DeadEye",          "orange_only",   1, 1)
+        {
+        }
+    }
+	
+	Docket("G34")
+    {
+        Set("Liveops_Collectable_Craftplan_Bow_Composite_DeadEye",          "orange_only",   1, 1)
+        {
+        }
+    }
+	
+	Docket("G35")
+    {
+        Set("Liveops_Craftplan_DevCraft_ChickenStick_Anniversary5",          "orange_only",   1, 1)
+        {
+        }
+    }
+	
+	Docket("G36")
+    {
+        Set("Liveops_Craftplan_Throwable_Snowball",          "whites_only",   1, 1)
+        {
+        }
+    }
+	
+	Docket("G37")
+    {
+        Set("Liveops_Craftplan_AddOn_SubsonicAmmo",          "blue_only",   1, 1)
+        {
+        }
+    }
+	
+	Docket("G38")
+    {
+        Set("Liveops_Craftplan_Melee_MacheteARaisElite",          "green_only",   1, 1)
+        {
+        }
+    }
+	
+	Docket("G39")
+    {
+        Set("Liveops_Craftplan_Grandmas_Eggnog",          "green_only",   1, 1)
+        {
+        }
+    }
+	
+	Docket("G40")
+    {
+        Set("Liveops_Craftplan_Melee_ShortAxe_AddOn_RodAxe",          "premium_dockets",   1, 1)
+        {
+        }
+    }
+	
+	Docket("G41")
+    {
+		Set("Liveops_Bundle_Rust_C4_Elemental_Craftplan",          "premium_dockets",   1, 1)
+        {
+        }
+    }
+	
+	Docket("G42")
+    {
+		Set("Liveops_Craftplan_Melee_Mace_AddOn_Bolted",          "premium_dockets",   1, 1)
+        {
+        }
+    }
+	
+	Docket("G43")
+    {		
+		Set("Liveops_Craftplan_Melee_Hammer_AddOn_Brilliant",          "premium_dockets",   1, 1)
+        {
+        }
+    }
+	
+	Docket("G44")
+    {
+		Set("Liveops_Craftplan_Melee_Polearm_TSreward",          "premium_dockets",   1, 1)
+        {
+        }
+    }
+	
+	Docket("G45")
+    {
+	
+    }
+	
+	Docket("G46")
+    {
+	
+    }
+	
+	Docket("G47")
+    {
+	
+    }
+	
+	Docket("G48")
+    {
+	
+    }
+	
+	Docket("G49")
+    {
+	
+    }
+	
+	Docket("G50")
+    {      
+	
+    }
+		
+    Docket("H01")
+    {
+        use Weapons_CommunityDockets();
+        use Weapons2H_CommunityDockets();
+    }
+    
+    Docket("ConsumableDlc01")  // "Consumable Dlc docket
+    {
+        //TEMP only!
+        use Weapons();
+        use Weapons2H();
+    }
+    
+    Docket("ConsumableDlc02")  // "Consumable Dlc docket
+    {
+        //TEMP only!
+        use Weapons();
+        use Weapons2H();
+    }
+    
+    Docket("ConsumableDlc03")  // "Consumable Dlc docket
+    {
+        //TEMP only!
+        use Weapons();
+        use Weapons2H();
+    }
+    
+    Docket("ConsumableDlc04")  // "Consumable Dlc docket
+    {
+        //TEMP only!
+        use Weapons();
+        use Weapons2H();
+    }
+    
+    Docket("ConsumableDlc05")  // "Consumable Dlc docket
+    {
+        //TEMP only!
+        use Weapons();
+        use Weapons2H();
+    }
+    
+    Docket("ConsumableDlc06")  // "Consumable Dlc docket
+    {
+        //TEMP only!
+        use Weapons();
+        use Weapons2H();
+    }
+    
+    Docket("ConsumableDlc07")  // "Consumable Dlc docket
+    {
+        //TEMP only!
+        use Weapons();
+        use Weapons2H();
+    }
+    
+    Docket("ConsumableDlc08")  // "Consumable Dlc docket
+    {
+        //TEMP only!
+        use Weapons();
+        use Weapons2H();
+    }
+    
+    Docket("ConsumableDlc09")  // "Consumable Dlc docket
+    {
+        //TEMP only!
+        use Weapons();
+        use Weapons2H();
+    }
+    
+    Docket("ConsumableDlc10")  // "Consumable Dlc docket
+    {
+        //TEMP only!
+        use Weapons();
+        use Weapons2H();
+    }
+}

@@ -1,0 +1,80 @@
+import "inventorystuff.scr" 
+sub main() 
+{	
+	Item("Craftplan_BigHammer_Anniversary5", CategoryType_Collectable)
+    {
+        Name("&Craftplan_BigHammer_Anniversary5_N&");
+        Description('&Craftplan_BigHammer_Anniversary5_D&');
+        ItemType(ItemType_CraftPlan);
+        Price(1000);
+        Mesh("blueprint.msh");
+        Skin("default");
+        BaseItem("Melee_BigHammer", "", "");
+        BaseItem("Melee_AxeBig", "", "");
+        BaseItem("Melee_Pickaxe", "", "");
+        RequiredItem("Craft_MetalScrap", 4);
+        RequiredItem("Craft_DuctTape", 2);
+        RequiredItem("Craft_Gauze", 2);
+        Color(Color_Blue);
+        CraftedItem("Melee_BigHammer_Anniversary5", 1, 1);
+        CraftplanType("WeaponDLC");
+        UniqueSaveID(9590);
+        HudIcon("blueprint_b");
+        GameVersion(32);
+        InheritBaseStats();
+        OwnedAtStart();
+    }
+	
+	Item("Craftplan_Pipe_Anniversary5", CategoryType_Collectable)
+    {
+        Name("&Craftplan_Pipe_Anniversary5_N&");
+        Description("&Craftplan_Pipe_Anniversary5_D&");
+        ItemType(ItemType_CraftPlan);
+        Price(1000);
+        Mesh("blueprint.msh");
+        Skin("default");
+		BaseItem("Melee_Pipe", "", "");
+        BaseItem("Melee_Baton", "", "");
+		BaseItem("Melee_Pick", "", "");
+        BaseItem("Melee_Crowbar", "", "");
+        BaseItem("Melee_Wrench", "", "");
+        BaseItem("Melee_Hammer", "", "");
+        BaseItem("Melee_Baseball", "", "");
+        RequiredItem("Craft_MetalScrap", 2);
+        RequiredItem("Craft_DuctTape", 2);
+		RequiredItem("Craft_Bleach", 1);
+		RequiredItem("Craft_Shroom", 1);
+        Color(Color_Blue);
+        CraftedItem("Melee_Pipe_Anniversary5", 1, 1);
+		CraftplanType("WeaponDLC");
+        InheritBaseStats();
+        UniqueSaveID(9591);
+        HudIcon("blueprint_b");
+        OwnedAtStart();
+		GameVersion(32);
+    }
+	
+	Item("Craftplan_Shotgun_Anniversary5", CategoryType_Collectable)
+    {
+        Name("&Craftplan_Shotgun_Anniversary5_N&");
+        Description('&Craftplan_Shotgun_Anniversary5_D&');
+        ItemType(ItemType_CraftPlan);
+        Price(1000);
+        Mesh("blueprint.msh");
+        Skin("default");
+        RequiredItem("Craft_MetalScrap", 4);
+		RequiredItem("Craft_Nails", 4);
+        RequiredItem("Craft_DuctTape", 1);
+		RequiredItem("Craft_TinCan", 4);
+		RequiredItem("Craft_Batteries", 1);
+		RequiredItem("Craft_Electronics", 1);
+        Color(Color_Blue);
+        CraftedItem("Firearm_Shotgun_Anniversary5", 1, 1);
+		InheritBaseStats();
+        CraftplanType("WeaponDLC");
+        UniqueSaveID(9592);
+        OwnedAtStart();
+        HudIcon("blueprint_b");
+        GameVersion(32);
+    }
+}

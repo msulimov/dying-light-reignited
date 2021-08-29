@@ -1,0 +1,30 @@
+import "inventorystuff.scr" 
+sub main() 
+{
+    Item("Craftplan_PunkQueen", CategoryType_Collectable)
+    {
+        Name("&Craftplan_PunkQueen_N&");
+        Description('&Craftplan_PunkQueen_D&');
+        ItemType(ItemType_CraftPlan);
+        Price(68);
+        Mesh("blueprint.msh");
+        Skin("default_hl");
+        BaseItem("Melee_Crowbar", "", "");
+        RequiredItem("Craft_MetalScrap", 6);
+        RequiredItem("Craft_PlasticTube", 2);
+        RequiredItem("Craft_Bleach", 2);
+        RequiredItem("Craft_Insecticide", 3);
+        RequiredItem("Craft_Electronics", 2);
+        RequiredItem("Craft_Batteries", 3);
+		RequiredItem("Craft_PowerCable", 1);
+        Elemental(Elemental_ShockElectricity, 2);
+        Elemental(Elemental_Poison, 2);
+        Color(Color_White);
+        CraftedItem("Melee_Punk_Queen", 1, 1);
+		CraftplanType("Developer");
+        InheritBaseStats();
+        UniqueSaveID(3000);
+        HudIcon("blueprint_a");
+		OwnedAtStart();
+    }
+}

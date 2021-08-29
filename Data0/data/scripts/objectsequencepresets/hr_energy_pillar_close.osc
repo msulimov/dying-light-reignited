@@ -1,0 +1,45 @@
+ sub hr_energy_pillar_close()
+{
+Preset("hr_energy_pillar_close")
+
+// 0 - Omni Close 1.5
+// 1 - Omni Far 0.7
+// 2 - FX
+
+    {
+		OnLevelStart()
+	    {
+        SetLightIntensity(0, 0.0, 0.0);
+		SetLightIntensity(1, 0.0, 0.0);
+		EnableFX(2, false);
+   		}
+		
+		OnEnable()
+	    {
+        SetLightIntensity(0, 0.0, 1.4);
+		SetLightIntensity(1, 0.0, 0.5);
+		EnableFX(2, true);
+   		}
+		
+		OnDisable()
+		{
+        SetLightIntensity(0, 0.0, 0.0);
+		SetLightIntensity(1, 0.0, 0.0);
+		EnableFX(2, false);
+		}
+		
+		// Group, Time, Value
+		
+        TimedEvent(0.0)
+        {
+		SetLightIntensity(0, 1.4, 0.0);
+		SetLightIntensity(1, 1.4, 0.0);
+     	}
+		
+		TimedEvent(0.8)
+        {
+		EnableFX(2, false);
+		}
+		
+    }
+}

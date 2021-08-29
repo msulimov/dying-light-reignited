@@ -1,0 +1,41 @@
+sub hr_indication_pulse()
+{
+Preset("hr_indication_pulse")
+
+// 0 - Light
+// 1 - FX
+
+    {
+		OnLevelStart()
+	    {
+		SetLightIntensity(0, 0.0, 0.0);
+		EnableFX(1, false);
+		}
+		
+		OnEnable()
+	    {
+		SetLightIntensity(0, 0.0, 0.6);
+		EnableFX(1, true);		
+   		}
+		
+		OnDisable()
+		{
+		SetLightIntensity(0, 0.0, 0.0);
+		EnableFX(1, false);
+		}
+		
+		// Group, Time, Value
+		
+        TimedEvent(0.0)
+        { 
+		SetLightIntensity(0, 1.6, 1.3);
+     	}
+        TimedEvent(1.6)
+        { 
+		SetLightIntensity(0, 1.6, 0.6);
+     	}
+		GoToBegin(3.2)
+		{
+		}
+    }
+}

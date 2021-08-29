@@ -1,0 +1,4507 @@
+<?xml version="1.0"?>
+<QuestsDefinitions
+     level="prison"
+     source="dlc39"
+     quest_tree="tree17"
+     pxsl_line="3">
+    <Quest
+         name="RD_Prison"
+         required_chapter="Chapter01"
+         pxsl_line="5">
+        <Phase
+             type="go to"
+             name="RD - BEACH - START"
+             objective="&amp;RD_Prison_OBJ_FindBoat&amp;"
+             distance="1000"
+             show_locations="true"
+             pxsl_line="6">
+            <Destination
+                 pxsl_line="6">
+                <QuestObject
+                     class="SpawnPoint"
+                     name="Prison_Start"
+                     pxsl_line="6" />
+            </Destination>
+            <DebugPlayerPosition
+                 pxsl_line="7">
+                <QuestObject
+                     class="SpawnPoint"
+                     name="Prison_Start"
+                     pxsl_line="7" />
+            </DebugPlayerPosition>
+        </Phase>
+        <Phase
+             type="checkpoint"
+             name="_"
+             pxsl_line="8">
+            <Destination
+                 pxsl_line="8">
+                <QuestObject
+                     class="SpawnPoint"
+                     name="Prison_Start"
+                     pxsl_line="8" />
+            </Destination>
+        </Phase>
+    </Quest>
+    <Quest
+         name="RD_Prison_replayable"
+         parent="RD_Prison"
+         replayable="true"
+         glued="true"
+         pxsl_line="10">
+        <!-- ,cnd-quest-started _ Blackout1_5c -finished=true -->
+        <Phase
+             type="AND"
+             name="_"
+             objective="&amp;RD_Prison_OBJ_GetToPrison&amp;"
+             pxsl_line="12">
+            <Path
+                 pxsl_line="12">
+                <Phase
+                     type="go to"
+                     name="RD - BEACH - START"
+                     distance="1000"
+                     show_locations="true"
+                     pxsl_line="13">
+                    <Destination
+                         pxsl_line="13">
+                        <QuestObject
+                             class="SpawnPoint"
+                             name="MapStart"
+                             pxsl_line="13" />
+                    </Destination>
+                    <DebugPlayerPosition
+                         pxsl_line="14">
+                        <QuestObject
+                             class="SpawnPoint"
+                             name="MapStart"
+                             pxsl_line="14" />
+                    </DebugPlayerPosition>
+                </Phase>
+                <Phase
+                     type="checkpoint"
+                     name="_"
+                     pxsl_line="15">
+                    <Destination
+                         pxsl_line="15">
+                        <QuestObject
+                             class="SpawnPoint"
+                             name="MapStart"
+                             pxsl_line="15" />
+                    </Destination>
+                </Phase>
+                <Phase
+                     type="block quest tracking"
+                     name="_"
+                     block="false"
+                     change="true"
+                     pxsl_line="16" />
+                <Phase
+                     type="session param"
+                     name="_"
+                     param="BtZDisable"
+                     value="true"
+                     pxsl_line="17" />
+                <Phase
+                     type="enable auto challenges"
+                     name="_"
+                     enable="false"
+                     pxsl_line="18" />
+                <Phase
+                     type="block quest tracking"
+                     name="_"
+                     block="true"
+                     pxsl_line="19" />
+                <Phase
+                     type="player control"
+                     name="_"
+                     block_night_aggro="true"
+                     pxsl_line="20" />
+                <Phase
+                     type="player control"
+                     name="_"
+                     block_night_reminder_sounds="true"
+                     pxsl_line="21" />
+                <Phase
+                     type="player control"
+                     name="_"
+                     disable_noise_aggro="true"
+                     pxsl_line="22" />
+                <Phase
+                     type="wait guard"
+                     name="_"
+                     time="3.5"
+                     pxsl_line="23" />
+                <Phase
+                     type="enable"
+                     name="_"
+                     state="disabled"
+                     pxsl_line="24">
+                    <Object
+                         pxsl_line="25">
+                        <QuestObject
+                             class="SensorAmbientMusicArea"
+                             name="SAMA_Courtyard_Fight"
+                             pxsl_line="25" />
+                    </Object>
+                    <Object
+                         pxsl_line="26">
+                        <QuestObject
+                             class="SensorAmbientMusicArea"
+                             name="SAMA_Courtyard_Fight_2"
+                             pxsl_line="26" />
+                    </Object>
+                </Phase>
+                <Phase
+                     type="appear"
+                     name="_"
+                     mode="hide"
+                     pxsl_line="27">
+                    <Object
+                         pxsl_line="28">
+                        <QuestObject
+                             class="DoorDI"
+                             name="Exit_Prison_DoorDI_Before_Show_Room_Closing"
+                             pxsl_line="28" />
+                    </Object>
+                    <Object
+                         pxsl_line="29">
+                        <QuestObject
+                             class="DoorDI"
+                             name="Exit_Prison_DoorDI_Show_Room_Closing"
+                             pxsl_line="29" />
+                    </Object>
+                </Phase>
+                <Phase
+                     type="enable"
+                     name="_"
+                     pxsl_line="30">
+                    <Object
+                         pxsl_line="31">
+                        <QuestObject
+                             class="AISpawnBoxCompound"
+                             name="Helipad_Prison_Spawner_1"
+                             pxsl_line="31" />
+                    </Object>
+                    <Object
+                         pxsl_line="32">
+                        <QuestObject
+                             class="AISpawnBoxCompound"
+                             name="Helipad_Prison_Spawner_2"
+                             pxsl_line="32" />
+                    </Object>
+                    <Object
+                         pxsl_line="33">
+                        <QuestObject
+                             class="AISpawnBoxCompound"
+                             name="Helipad_Prison_Spawner_3"
+                             pxsl_line="33" />
+                    </Object>
+                    <Object
+                         pxsl_line="34">
+                        <QuestObject
+                             class="SensorPrisonRush"
+                             name="Sensor_Stage_1"
+                             pxsl_line="34" />
+                    </Object>
+                    <Object
+                         pxsl_line="35">
+                        <QuestObject
+                             class="SensorPrisonRush"
+                             name="Sensor_Stage_2"
+                             pxsl_line="35" />
+                    </Object>
+                    <Object
+                         pxsl_line="36">
+                        <QuestObject
+                             class="SensorPrisonRush"
+                             name="Sensor_Stage_3"
+                             pxsl_line="36" />
+                    </Object>
+                    <Object
+                         pxsl_line="37">
+                        <QuestObject
+                             class="SensorPrisonRush"
+                             name="Sensor_Stage_4"
+                             pxsl_line="37" />
+                    </Object>
+                    <Object
+                         pxsl_line="38">
+                        <QuestObject
+                             class="SensorPrisonRush"
+                             name="Sensor_Stage_5"
+                             pxsl_line="38" />
+                    </Object>
+                </Phase>
+                <Phase
+                     type="set state"
+                     name="_"
+                     desired_state="closed"
+                     pxsl_line="40">
+                    <Trigger
+                         pxsl_line="40">
+                        <QuestObject
+                             class="DoorDI"
+                             name="RD_Prison_Door_Cell_Wing_A"
+                             pxsl_line="40" />
+                    </Trigger>
+                </Phase>
+                <Phase
+                     type="set state"
+                     name="_"
+                     desired_state="closed"
+                     pxsl_line="41">
+                    <Trigger
+                         pxsl_line="41">
+                        <QuestObject
+                             class="DoorDI"
+                             name="RD_Prison_Door_Cell_Wing_A_01"
+                             pxsl_line="41" />
+                    </Trigger>
+                </Phase>
+                <Phase
+                     type="set state"
+                     name="_"
+                     desired_state="closed"
+                     pxsl_line="42">
+                    <Trigger
+                         pxsl_line="42">
+                        <QuestObject
+                             class="DoorDI"
+                             name="RD_Prison_Door_Cell_Wing_A_02"
+                             pxsl_line="42" />
+                    </Trigger>
+                </Phase>
+                <Phase
+                     type="wait guard"
+                     name="_"
+                     time="1"
+                     pxsl_line="43" />
+                <Phase
+                     type="enable"
+                     name="_"
+                     pxsl_line="44">
+                    <Object
+                         pxsl_line="45">
+                        <QuestObject
+                             class="AISpawnBoxCompound"
+                             name="Helipad_Prison_Spawner_4"
+                             pxsl_line="45" />
+                    </Object>
+                    <Object
+                         pxsl_line="46">
+                        <QuestObject
+                             class="AISpawnBoxCompound"
+                             name="Helipad_Prison_Spawner_5"
+                             pxsl_line="46" />
+                    </Object>
+                    <Object
+                         pxsl_line="47">
+                        <QuestObject
+                             class="AISpawnBoxCompound"
+                             name="Helipad_Prison_Spawner_6"
+                             pxsl_line="47" />
+                    </Object>
+                </Phase>
+                <Phase
+                     type="wait guard"
+                     name="_"
+                     time="2"
+                     pxsl_line="48" />
+                <Phase
+                     type="enable"
+                     name="_"
+                     pxsl_line="49">
+                    <Object
+                         pxsl_line="50">
+                        <QuestObject
+                             class="AISpawnBoxCompound"
+                             name="PR_Pre_Prison_Spawner_1"
+                             pxsl_line="50" />
+                    </Object>
+                    <Object
+                         pxsl_line="51">
+                        <QuestObject
+                             class="AISpawnBoxCompound"
+                             name="PR_Pre_Prison_Spawner_2"
+                             pxsl_line="51" />
+                    </Object>
+                </Phase>
+            </Path>
+        </Phase>
+    </Quest>
+    <Quest
+         name="RD_Prison_Start"
+         parent="RD_Prison_replayable"
+         glued="true"
+         pxsl_line="53">
+        <Phase
+             type="AND"
+             name="_"
+             objective="&amp;RD_Prison_OBJ_GetToPrison&amp;"
+             pxsl_line="54">
+            <Path
+                 pxsl_line="54">
+                <Phase
+                     type="use"
+                     name="_"
+                     show_locations="true"
+                     gather_radius="6"
+                     pxsl_line="55">
+                    <Trigger
+                         pxsl_line="55">
+                        <QuestObject
+                             class="DoorDI"
+                             name="Prison_Gate_Start"
+                             pxsl_line="55" />
+                    </Trigger>
+                </Phase>
+                <Phase
+                     type="enable"
+                     name="_"
+                     pxsl_line="56">
+                    <Object
+                         pxsl_line="56">
+                        <QuestObject
+                             class="SensorAmbientMusicArea"
+                             name="SAMA_Prison_Time_Run"
+                             pxsl_line="56" />
+                    </Object>
+                </Phase>
+            </Path>
+        </Phase>
+        <!-- !!         -->
+        <Phase
+             type="AND"
+             name="_"
+             objective="&amp;RD_Prison_OBJ_GetToBlockA&amp;"
+             pxsl_line="59">
+            <Path
+                 pxsl_line="59">
+                <Phase
+                     type="AND"
+                     name="_"
+                     pxsl_line="60">
+                    <!-- enabling new respawn -= Bartek -->
+                    <Path
+                         pxsl_line="61">
+                        <Phase
+                             type="OR"
+                             name="_"
+                             pxsl_line="62">
+                            <Path
+                                 pxsl_line="63">
+                                <Phase
+                                     type="go to"
+                                     name="_"
+                                     distance="0"
+                                     show_locations="false"
+                                     pxsl_line="64">
+                                    <Destination
+                                         pxsl_line="64">
+                                        <QuestObject
+                                             class="SensorGoTo"
+                                             name="prison_SGT_unlock_SP_01"
+                                             pxsl_line="64" />
+                                    </Destination>
+                                </Phase>
+                            </Path>
+                            <Path
+                                 pxsl_line="65">
+                                <Phase
+                                     type="go to"
+                                     name="_"
+                                     distance="0"
+                                     show_locations="false"
+                                     pxsl_line="66">
+                                    <Destination
+                                         pxsl_line="66">
+                                        <QuestObject
+                                             class="SensorGoTo"
+                                             name="prison_SGT_unlock_SP_02"
+                                             pxsl_line="66" />
+                                    </Destination>
+                                </Phase>
+                            </Path>
+                            <Path
+                                 pxsl_line="67">
+                                <Phase
+                                     type="go to"
+                                     name="_"
+                                     distance="0"
+                                     show_locations="false"
+                                     pxsl_line="68">
+                                    <Destination
+                                         pxsl_line="68">
+                                        <QuestObject
+                                             class="SensorGoTo"
+                                             name="prison_SGT_unlock_SP_03"
+                                             pxsl_line="68" />
+                                    </Destination>
+                                </Phase>
+                            </Path>
+                        </Phase>
+                        <Phase
+                             type="enable"
+                             name="_"
+                             pxsl_line="69">
+                            <Object
+                                 pxsl_line="69">
+                                <QuestObject
+                                     class="SpawnPoint"
+                                     name="BeforePrisonStart"
+                                     pxsl_line="69" />
+                            </Object>
+                        </Phase>
+                    </Path>
+                    <Path
+                         pxsl_line="70">
+                        <Phase
+                             type="go to"
+                             name="_"
+                             distance="6"
+                             show_locations="true"
+                             pxsl_line="71">
+                            <Destination
+                                 pxsl_line="71">
+                                <QuestObject
+                                     class="SpawnPoint"
+                                     name="PrisonStart"
+                                     pxsl_line="71" />
+                            </Destination>
+                        </Phase>
+                    </Path>
+                    <!-- added to test - force alarm of enemies  -->
+                    <Path
+                         pxsl_line="72">
+                        <Phase
+                             type="go to"
+                             name="_"
+                             distance="35"
+                             show_locations="false"
+                             pxsl_line="73">
+                            <Destination
+                                 pxsl_line="73">
+                                <QuestObject
+                                     class="SpawnPoint"
+                                     name="PrisonStart"
+                                     pxsl_line="73" />
+                            </Destination>
+                        </Phase>
+                        <Phase
+                             type="alarm group"
+                             name="_"
+                             level="High"
+                             pxsl_line="74">
+                            <GroupMarker
+                                 pxsl_line="74">
+                                <QuestObject
+                                     class="AIGroupMarker"
+                                     name="Helipad_AI_Group_Marker"
+                                     pxsl_line="74" />
+                            </GroupMarker>
+                        </Phase>
+                        <Phase
+                             type="enable"
+                             name="_"
+                             pxsl_line="75">
+                            <Object
+                                 pxsl_line="76">
+                                <QuestObject
+                                     class="SensorAmbientMusicArea"
+                                     name="SAMA_Courtyard_Fight"
+                                     pxsl_line="76" />
+                            </Object>
+                            <Object
+                                 pxsl_line="77">
+                                <QuestObject
+                                     class="SensorAmbientMusicArea"
+                                     name="SAMA_Courtyard_Fight_2"
+                                     pxsl_line="77" />
+                            </Object>
+                        </Phase>
+                    </Path>
+                    <Path
+                         pxsl_line="78">
+                        <Phase
+                             type="group alarmed guard"
+                             name="_"
+                             level="High"
+                             wait_time="1"
+                             pxsl_line="79">
+                            <GroupMarker
+                                 pxsl_line="79">
+                                <QuestObject
+                                     class="AIGroupMarker"
+                                     name="Helipad_AI_Group_Marker"
+                                     pxsl_line="79" />
+                            </GroupMarker>
+                        </Phase>
+                        <Phase
+                             type="enable"
+                             name="_"
+                             pxsl_line="80">
+                            <Object
+                                 pxsl_line="81">
+                                <QuestObject
+                                     class="SensorAmbientMusicArea"
+                                     name="SAMA_Courtyard_Fight"
+                                     pxsl_line="81" />
+                            </Object>
+                            <Object
+                                 pxsl_line="82">
+                                <QuestObject
+                                     class="SensorAmbientMusicArea"
+                                     name="SAMA_Courtyard_Fight_2"
+                                     pxsl_line="82" />
+                            </Object>
+                        </Phase>
+                    </Path>
+                </Phase>
+                <Phase
+                     type="enable"
+                     name="_"
+                     pxsl_line="83">
+                    <Object
+                         pxsl_line="84">
+                        <QuestObject
+                             class="AISpawnBoxCompound"
+                             name="PR_VisitorsSecurity_AI_1"
+                             pxsl_line="84" />
+                    </Object>
+                    <Object
+                         pxsl_line="85">
+                        <QuestObject
+                             class="AISpawnBoxCompound"
+                             name="PR_VisitorsSecurity_AI_2"
+                             pxsl_line="85" />
+                    </Object>
+                    <Object
+                         pxsl_line="86">
+                        <QuestObject
+                             class="AISpawnBoxCompound"
+                             name="PR_VisitorsSecurity_AI_3"
+                             pxsl_line="86" />
+                    </Object>
+                    <Object
+                         pxsl_line="87">
+                        <QuestObject
+                             class="AISpawnBoxCompound"
+                             name="PR_VisitorsSecurity_AI_4"
+                             pxsl_line="87" />
+                    </Object>
+                    <Object
+                         pxsl_line="88">
+                        <QuestObject
+                             class="AISpawnBoxCompound"
+                             name="PR_VisitorsSecurity_AI_5"
+                             pxsl_line="88" />
+                    </Object>
+                </Phase>
+                <Phase
+                     type="AND"
+                     name="_"
+                     pxsl_line="90">
+                    <Path
+                         pxsl_line="90">
+                        <Phase
+                             type="AND"
+                             name="RD - PRISON - START"
+                             pxsl_line="91">
+                            <DebugPlayerPosition
+                                 pxsl_line="92">
+                                <QuestObject
+                                     class="SpawnPoint"
+                                     name="PrisonStart"
+                                     pxsl_line="92" />
+                            </DebugPlayerPosition>
+                            <Path
+                                 pxsl_line="93">
+                                <Phase
+                                     type="go to"
+                                     name="_"
+                                     distance="3"
+                                     pxsl_line="94">
+                                    <Destination
+                                         pxsl_line="94">
+                                        <QuestObject
+                                             class="SpawnPoint"
+                                             name="Clear_Bloack_A_Visitors_End"
+                                             pxsl_line="94" />
+                                    </Destination>
+                                </Phase>
+                            </Path>
+                            <Path
+                                 pxsl_line="95">
+                                <Phase
+                                     type="group alarmed guard"
+                                     name="_"
+                                     level="High"
+                                     wait_time="1"
+                                     pxsl_line="96">
+                                    <GroupMarker
+                                         pxsl_line="96">
+                                        <QuestObject
+                                             class="AIGroupMarker"
+                                             name="Visitors_Security_AI_Group_Marker"
+                                             pxsl_line="96" />
+                                    </GroupMarker>
+                                </Phase>
+                                <Phase
+                                     type="enable"
+                                     name="_"
+                                     pxsl_line="97">
+                                    <Object
+                                         pxsl_line="98">
+                                        <QuestObject
+                                             class="SensorAmbientMusicArea"
+                                             name="SAMA_Lobby_Fight"
+                                             pxsl_line="98" />
+                                    </Object>
+                                </Phase>
+                            </Path>
+                        </Phase>
+                        <Phase
+                             type="enable"
+                             name="AI Visitors BOOTHS"
+                             pxsl_line="99">
+                            <Object
+                                 pxsl_line="100">
+                                <QuestObject
+                                     class="AIGroupMarker"
+                                     name="Visitors_Booths_AI_Group_Marker"
+                                     pxsl_line="100" />
+                            </Object>
+                            <Object
+                                 pxsl_line="101">
+                                <QuestObject
+                                     class="AISpawnBoxCompound"
+                                     name="PR_VisitorsBooths_AI_1"
+                                     pxsl_line="101" />
+                            </Object>
+                            <Object
+                                 pxsl_line="102">
+                                <QuestObject
+                                     class="AISpawnBoxCompound"
+                                     name="PR_VisitorsBooths_AI_2"
+                                     pxsl_line="102" />
+                            </Object>
+                        </Phase>
+                        <Phase
+                             type="enable"
+                             name="_"
+                             state="disabled"
+                             pxsl_line="104">
+                            <Object
+                                 pxsl_line="105">
+                                <QuestObject
+                                     class="SpawnPoint"
+                                     name="MapStart"
+                                     pxsl_line="105" />
+                            </Object>
+                            <Object
+                                 pxsl_line="106">
+                                <QuestObject
+                                     class="SpawnPoint"
+                                     name="BeforePrisonStart"
+                                     pxsl_line="106" />
+                            </Object>
+                            <Object
+                                 pxsl_line="107">
+                                <QuestObject
+                                     class="AISpawnBoxCompound"
+                                     name="PR_Pre_Prison_Spawner_1"
+                                     pxsl_line="107" />
+                            </Object>
+                            <Object
+                                 pxsl_line="108">
+                                <QuestObject
+                                     class="AISpawnBoxCompound"
+                                     name="PR_Pre_Prison_Spawner_2"
+                                     pxsl_line="108" />
+                            </Object>
+                            <Object
+                                 pxsl_line="109">
+                                <QuestObject
+                                     class="AISpawnBoxCompound"
+                                     name="Helipad_Prison_Spawner_1"
+                                     pxsl_line="109" />
+                            </Object>
+                            <Object
+                                 pxsl_line="110">
+                                <QuestObject
+                                     class="AISpawnBoxCompound"
+                                     name="Helipad_Prison_Spawner_2"
+                                     pxsl_line="110" />
+                            </Object>
+                            <Object
+                                 pxsl_line="111">
+                                <QuestObject
+                                     class="AISpawnBoxCompound"
+                                     name="Helipad_Prison_Spawner_3"
+                                     pxsl_line="111" />
+                            </Object>
+                            <Object
+                                 pxsl_line="112">
+                                <QuestObject
+                                     class="AISpawnBoxCompound"
+                                     name="Helipad_Prison_Spawner_4"
+                                     pxsl_line="112" />
+                            </Object>
+                            <Object
+                                 pxsl_line="113">
+                                <QuestObject
+                                     class="AISpawnBoxCompound"
+                                     name="Helipad_Prison_Spawner_5"
+                                     pxsl_line="113" />
+                            </Object>
+                            <Object
+                                 pxsl_line="114">
+                                <QuestObject
+                                     class="AISpawnBoxCompound"
+                                     name="Helipad_Prison_Spawner_6"
+                                     pxsl_line="114" />
+                            </Object>
+                            <Object
+                                 pxsl_line="115">
+                                <QuestObject
+                                     class="SensorAmbientMusicArea"
+                                     name="SAMA_Courtyard_Fight"
+                                     pxsl_line="115" />
+                            </Object>
+                            <Object
+                                 pxsl_line="116">
+                                <QuestObject
+                                     class="SensorAmbientMusicArea"
+                                     name="SAMA_Courtyard_Fight_2"
+                                     pxsl_line="116" />
+                            </Object>
+                        </Phase>
+                    </Path>
+                </Phase>
+                <Phase
+                     type="AND"
+                     name="_"
+                     pxsl_line="118">
+                    <Path
+                         pxsl_line="118">
+                        <Phase
+                             type="AND"
+                             name="_"
+                             pxsl_line="120">
+                            <Path
+                                 pxsl_line="121">
+                                <Phase
+                                     type="go to"
+                                     name="_"
+                                     distance="3"
+                                     pxsl_line="122">
+                                    <Destination
+                                         pxsl_line="122">
+                                        <QuestObject
+                                             class="SpawnPoint"
+                                             name="Clear_Block_A_First_Zombie"
+                                             pxsl_line="122" />
+                                    </Destination>
+                                </Phase>
+                            </Path>
+                            <Path
+                                 pxsl_line="123">
+                                <Phase
+                                     type="group alarmed guard"
+                                     name="_"
+                                     level="High"
+                                     wait_time="1"
+                                     pxsl_line="124">
+                                    <GroupMarker
+                                         pxsl_line="124">
+                                        <QuestObject
+                                             class="AIGroupMarker"
+                                             name="Visitors_Booths_AI_Group_Marker"
+                                             pxsl_line="124" />
+                                    </GroupMarker>
+                                </Phase>
+                                <Phase
+                                     type="enable"
+                                     name="_"
+                                     pxsl_line="125">
+                                    <Object
+                                         pxsl_line="126">
+                                        <QuestObject
+                                             class="SensorAmbientMusicArea"
+                                             name="SAMA_WC_Fight"
+                                             pxsl_line="126" />
+                                    </Object>
+                                </Phase>
+                            </Path>
+                        </Phase>
+                        <Phase
+                             type="enable"
+                             name="_"
+                             state="disabled"
+                             pxsl_line="127">
+                            <Object
+                                 pxsl_line="127">
+                                <QuestObject
+                                     class="SpawnPoint"
+                                     name="PrisonStart"
+                                     pxsl_line="127" />
+                            </Object>
+                        </Phase>
+                        <Phase
+                             type="enable"
+                             name="_"
+                             pxsl_line="128">
+                            <Object
+                                 pxsl_line="129">
+                                <QuestObject
+                                     class="SpawnPoint"
+                                     name="Clear_Block_A_First_Zombie"
+                                     pxsl_line="129" />
+                            </Object>
+                            <Object
+                                 pxsl_line="130">
+                                <QuestObject
+                                     class="AISpawnBoxNumber"
+                                     name="Cell_Wing_a_Fast_Zombie_2"
+                                     pxsl_line="130" />
+                            </Object>
+                        </Phase>
+                    </Path>
+                </Phase>
+                <Phase
+                     type="go to"
+                     name="RD - PRISON - CLEAR - BLOCK A"
+                     distance="6"
+                     pxsl_line="132">
+                    <Destination
+                         pxsl_line="132">
+                        <QuestObject
+                             class="SpawnPoint"
+                             name="Clear_Block_A_Waypoint_1"
+                             pxsl_line="132" />
+                    </Destination>
+                    <DebugPlayerPosition
+                         pxsl_line="133">
+                        <QuestObject
+                             class="SpawnPoint"
+                             name="Clear_Block_A_Waypoint_1"
+                             pxsl_line="133" />
+                    </DebugPlayerPosition>
+                </Phase>
+                <Phase
+                     type="set state"
+                     name="_"
+                     desired_state="on"
+                     pxsl_line="134">
+                    <Trigger
+                         pxsl_line="134">
+                        <QuestObject
+                             class="PhysicalSwitchDI"
+                             name="rd_prison_logic_dinner::Circuit_Box_Electricty_Hallway"
+                             pxsl_line="134" />
+                    </Trigger>
+                </Phase>
+                <Phase
+                     type="enable"
+                     name="AI Cell WING A"
+                     pxsl_line="135">
+                    <Object
+                         pxsl_line="136">
+                        <QuestObject
+                             class="AISpawnBoxCompound"
+                             name="PR_Cell_Wing_A_AI_1"
+                             pxsl_line="136" />
+                    </Object>
+                    <Object
+                         pxsl_line="137">
+                        <QuestObject
+                             class="PhysicalSwitchDI"
+                             name="rd_prison_logic_dinner::Circuit_Box_Electricty_Hallway"
+                             pxsl_line="137" />
+                    </Object>
+                </Phase>
+                <Phase
+                     type="AND"
+                     name="_"
+                     pxsl_line="138">
+                    <Path
+                         pxsl_line="139">
+                        <Phase
+                             type="clear area"
+                             name="RD - PRISON - CLEAR - BLOCK A - Completed"
+                             show="false"
+                             show_locations="false"
+                             pxsl_line="140">
+                            <Object
+                                 pxsl_line="140">
+                                <QuestObject
+                                     class="ClearArea"
+                                     name="Clear_Block_A_Area"
+                                     pxsl_line="140" />
+                            </Object>
+                        </Phase>
+                    </Path>
+                    <Path
+                         pxsl_line="141">
+                        <Phase
+                             type="group alarmed guard"
+                             name="_"
+                             level="High"
+                             wait_time="1"
+                             pxsl_line="142">
+                            <GroupMarker
+                                 pxsl_line="142">
+                                <QuestObject
+                                     class="AIGroupMarker"
+                                     name="Cell_Wing_A_Group_Marker"
+                                     pxsl_line="142" />
+                            </GroupMarker>
+                        </Phase>
+                        <Phase
+                             type="enable"
+                             name="_"
+                             pxsl_line="143">
+                            <Object
+                                 pxsl_line="144">
+                                <QuestObject
+                                     class="SensorAmbientMusicArea"
+                                     name="Music_Block_Area_A"
+                                     pxsl_line="144" />
+                            </Object>
+                        </Phase>
+                        <Phase
+                             type="wait guard"
+                             name="_"
+                             time="5"
+                             pxsl_line="145" />
+                        <Phase
+                             type="enable"
+                             name="_"
+                             pxsl_line="146">
+                            <Object
+                                 pxsl_line="146">
+                                <QuestObject
+                                     class="SensorAmbientMusicArea"
+                                     name="Music_Block_Area_A_2"
+                                     pxsl_line="146" />
+                            </Object>
+                        </Phase>
+                    </Path>
+                </Phase>
+                <Phase
+                     type="enable"
+                     name="_"
+                     pxsl_line="148">
+                    <Object
+                         pxsl_line="149">
+                        <QuestObject
+                             class="LightDI"
+                             name="block_a_green_a"
+                             pxsl_line="149" />
+                    </Object>
+                    <Object
+                         pxsl_line="150">
+                        <QuestObject
+                             class="LightDI"
+                             name="block_a_green_b"
+                             pxsl_line="150" />
+                    </Object>
+                    <Object
+                         pxsl_line="151">
+                        <QuestObject
+                             class="SoundEmitterOnce"
+                             name="SES_light_on_block"
+                             pxsl_line="151" />
+                    </Object>
+                </Phase>
+                <Phase
+                     type="enable"
+                     name="_"
+                     state="disabled"
+                     pxsl_line="152">
+                    <Object
+                         pxsl_line="153">
+                        <QuestObject
+                             class="LightDI"
+                             name="block_a_red_a"
+                             pxsl_line="153" />
+                    </Object>
+                    <Object
+                         pxsl_line="154">
+                        <QuestObject
+                             class="LightDI"
+                             name="block_a_red_b"
+                             pxsl_line="154" />
+                    </Object>
+                    <Object
+                         pxsl_line="155">
+                        <QuestObject
+                             class="AISpawnBoxCompound"
+                             name="PR_VisitorsSecurity_AI_1"
+                             pxsl_line="155" />
+                    </Object>
+                    <Object
+                         pxsl_line="156">
+                        <QuestObject
+                             class="AISpawnBoxCompound"
+                             name="PR_VisitorsSecurity_AI_2"
+                             pxsl_line="156" />
+                    </Object>
+                    <Object
+                         pxsl_line="157">
+                        <QuestObject
+                             class="AISpawnBoxCompound"
+                             name="PR_VisitorsSecurity_AI_3"
+                             pxsl_line="157" />
+                    </Object>
+                    <Object
+                         pxsl_line="158">
+                        <QuestObject
+                             class="AISpawnBoxCompound"
+                             name="PR_VisitorsSecurity_AI_4"
+                             pxsl_line="158" />
+                    </Object>
+                    <Object
+                         pxsl_line="159">
+                        <QuestObject
+                             class="AISpawnBoxCompound"
+                             name="PR_VisitorsSecurity_AI_5"
+                             pxsl_line="159" />
+                    </Object>
+                    <Object
+                         pxsl_line="160">
+                        <QuestObject
+                             class="AIGroupMarker"
+                             name="Visitors_Booths_AI_Group_Marker"
+                             pxsl_line="160" />
+                    </Object>
+                    <Object
+                         pxsl_line="161">
+                        <QuestObject
+                             class="AISpawnBoxCompound"
+                             name="PR_VisitorsBooths_AI_1"
+                             pxsl_line="161" />
+                    </Object>
+                    <Object
+                         pxsl_line="162">
+                        <QuestObject
+                             class="AISpawnBoxCompound"
+                             name="PR_VisitorsBooths_AI_2"
+                             pxsl_line="162" />
+                    </Object>
+                    <Object
+                         pxsl_line="163">
+                        <QuestObject
+                             class="AISpawnBoxCompound"
+                             name="PR_VisitorsBooths_AI_3"
+                             pxsl_line="163" />
+                    </Object>
+                    <Object
+                         pxsl_line="164">
+                        <QuestObject
+                             class="AISpawnBoxNumber"
+                             name="Cell_Wing_a_Fast_Zombie_2"
+                             pxsl_line="164" />
+                    </Object>
+                    <Object
+                         pxsl_line="165">
+                        <QuestObject
+                             class="AISpawnBoxCompound"
+                             name="PR_Cell_Wing_A_AI_1"
+                             pxsl_line="165" />
+                    </Object>
+                    <Object
+                         pxsl_line="166">
+                        <QuestObject
+                             class="SensorAmbientMusicArea"
+                             name="SAMA_Lobby_Fight"
+                             pxsl_line="166" />
+                    </Object>
+                    <Object
+                         pxsl_line="167">
+                        <QuestObject
+                             class="SensorAmbientMusicArea"
+                             name="SAMA_WC_Fight"
+                             pxsl_line="167" />
+                    </Object>
+                </Phase>
+                <Phase
+                     type="use"
+                     name="RD - PRISON - GET TO - DINING ROOM"
+                     desired_state="opening"
+                     pxsl_line="172">
+                    <Trigger
+                         pxsl_line="172">
+                        <QuestObject
+                             class="DoorDI"
+                             name="rd_prison_logic_dinner::RD_Prison_Door_Dinner_Part"
+                             pxsl_line="172" />
+                    </Trigger>
+                    <DebugPlayerPosition
+                         pxsl_line="173">
+                        <QuestObject
+                             class="SpawnPoint"
+                             name="Clear_Block_A_Cleared_Waypoint_2"
+                             pxsl_line="173" />
+                    </DebugPlayerPosition>
+                </Phase>
+                <Phase
+                     type="enable"
+                     name="_"
+                     state="disabled"
+                     pxsl_line="174">
+                    <Object
+                         pxsl_line="174">
+                        <QuestObject
+                             class="SpawnPoint"
+                             name="Clear_Block_A_First_Zombie"
+                             pxsl_line="174" />
+                    </Object>
+                </Phase>
+                <Phase
+                     type="enable"
+                     name="_"
+                     pxsl_line="175">
+                    <Object
+                         pxsl_line="176">
+                        <QuestObject
+                             class="DoorDI"
+                             name="rd_prison_logic_dinner::RD_Prison_Door_Dinner_Part"
+                             pxsl_line="176" />
+                    </Object>
+                    <Object
+                         pxsl_line="177">
+                        <QuestObject
+                             class="SpawnPoint"
+                             name="Clear_Block_A_Cleared_Waypoint_2"
+                             pxsl_line="177" />
+                    </Object>
+                    <Object
+                         pxsl_line="178">
+                        <QuestObject
+                             class="AISpawnBoxNumber"
+                             name="rd_prison_logic_dinner::Suicider_1"
+                             pxsl_line="178" />
+                    </Object>
+                    <Object
+                         pxsl_line="179">
+                        <QuestObject
+                             class="AISpawnBoxWaves"
+                             name="rd_prison_logic_dinner::Bitter_Dining_Floor_1_b"
+                             pxsl_line="179" />
+                    </Object>
+                    <Object
+                         pxsl_line="180">
+                        <QuestObject
+                             class="BoxObjectEnabler"
+                             name="Disable_Lights_From_Start"
+                             pxsl_line="180" />
+                    </Object>
+                </Phase>
+                <Phase
+                     type="enable"
+                     name="_"
+                     state="disabled"
+                     pxsl_line="182">
+                    <Object
+                         pxsl_line="183">
+                        <QuestObject
+                             class="SensorAmbientMusicArea"
+                             name="Music_Block_Area_A"
+                             pxsl_line="183" />
+                    </Object>
+                    <Object
+                         pxsl_line="184">
+                        <QuestObject
+                             class="SensorAmbientMusicArea"
+                             name="Music_Block_Area_A_2"
+                             pxsl_line="184" />
+                    </Object>
+                    <Object
+                         pxsl_line="185">
+                        <QuestObject
+                             class="SoundEmitterOnce"
+                             name="SES_light_on_block"
+                             pxsl_line="185" />
+                    </Object>
+                </Phase>
+                <Phase
+                     type="go to"
+                     name="_"
+                     distance="6"
+                     pxsl_line="186">
+                    <Destination
+                         pxsl_line="186">
+                        <QuestObject
+                             class="SpawnPoint"
+                             name="rd_prison_logic_dinner::rd_prison_dinner_spawnpoint"
+                             pxsl_line="186" />
+                    </Destination>
+                </Phase>
+                <Phase
+                     type="enable"
+                     name="_"
+                     state="disabled"
+                     pxsl_line="189">
+                    <Object
+                         pxsl_line="190">
+                        <QuestObject
+                             class="SpawnPoint"
+                             name="Clear_Block_A_Cleared_Waypoint_2"
+                             pxsl_line="190" />
+                    </Object>
+                    <Object
+                         pxsl_line="191">
+                        <QuestObject
+                             class="QuestEnableGroup"
+                             name="rd_prison_logic_dinner::QEG_Alarm"
+                             pxsl_line="191" />
+                    </Object>
+                    <Object
+                         pxsl_line="192">
+                        <QuestObject
+                             class="AISpawnBoxNumber"
+                             name="rd_prison_logic_dinner::Bucket_Zombie"
+                             pxsl_line="192" />
+                    </Object>
+                    <Object
+                         pxsl_line="193">
+                        <QuestObject
+                             class="AISpawnBoxNumber"
+                             name="rd_prison_logic_dinner::Washing_Zombies"
+                             pxsl_line="193" />
+                    </Object>
+                    <Object
+                         pxsl_line="194">
+                        <QuestObject
+                             class="AISpawnBoxNumber"
+                             name="rd_prison_logic_dinner::Washing_Zombies_2"
+                             pxsl_line="194" />
+                    </Object>
+                </Phase>
+                <Phase
+                     type="wait guard"
+                     name="_"
+                     time="1"
+                     pxsl_line="196" />
+                <Phase
+                     type="go to"
+                     name="RD - PRISON - CLEAR - DINNING ROOM"
+                     distance="0"
+                     show_locations="true"
+                     pxsl_line="197">
+                    <Destination
+                         pxsl_line="197">
+                        <QuestObject
+                             class="SensorGoTo"
+                             name="rd_prison_logic_dinner::Enable_Gone_Sensor"
+                             pxsl_line="197" />
+                    </Destination>
+                    <DebugPlayerPosition
+                         pxsl_line="198">
+                        <QuestObject
+                             class="SpawnPoint"
+                             name="rd_prison_logic_dinner::rd_prison_dinner_spawnpoint"
+                             pxsl_line="198" />
+                    </DebugPlayerPosition>
+                </Phase>
+                <Phase
+                     type="enable"
+                     name="_"
+                     pxsl_line="199">
+                    <Object
+                         pxsl_line="200">
+                        <QuestObject
+                             class="AISpawnBoxWaves"
+                             name="rd_prison_logic_dinner::Goon_Dining_Zombie_Ambush"
+                             pxsl_line="200" />
+                    </Object>
+                    <Object
+                         pxsl_line="201">
+                        <QuestObject
+                             class="SpawnPoint"
+                             name="rd_prison_logic_dinner::rd_prison_dinner_spawnpoint"
+                             pxsl_line="201" />
+                    </Object>
+                    <Object
+                         pxsl_line="202">
+                        <QuestObject
+                             class="SoundEmitterOnce"
+                             name="rd_prison_logic_dinner::Goon_Sound"
+                             pxsl_line="202" />
+                    </Object>
+                    <Object
+                         pxsl_line="203">
+                        <QuestObject
+                             class="SensorAmbientMusicArea"
+                             name="rd_prison_logic_dinner::Music_Dinner_Fight"
+                             pxsl_line="203" />
+                    </Object>
+                    <Object
+                         pxsl_line="204">
+                        <QuestObject
+                             class="SensorAmbientMusicArea"
+                             name="rd_prison_logic_dinner::Music_Dinner_Fight_2"
+                             pxsl_line="204" />
+                    </Object>
+                </Phase>
+                <Spawner
+                     pxsl_line="205">
+                    <QuestObject
+                         class="AISpawnBoxWaves"
+                         name="rd_prison_logic_dinner::Goon_Dining_Zombie_Ambush"
+                         pxsl_line="205" />
+                </Spawner>
+                <Phase
+                     type="wait guard"
+                     name="_"
+                     time="0.8"
+                     pxsl_line="206" />
+                <Phase
+                     type="movie"
+                     name="_"
+                     movie="Goon_Door_Breaking"
+                     pxsl_line="207" />
+                <Phase
+                     type="enable"
+                     name="_"
+                     pxsl_line="208">
+                    <Object
+                         pxsl_line="209">
+                        <QuestObject
+                             class="QuestEnableGroup"
+                             name="rd_prison_logic_dinner::QEG_Alarm"
+                             pxsl_line="209" />
+                    </Object>
+                    <Object
+                         pxsl_line="210">
+                        <QuestObject
+                             class="SoundEmitterSimple"
+                             name="rd_prison_logic_dinner::Alarm_Sound"
+                             pxsl_line="210" />
+                    </Object>
+                </Phase>
+                <Phase
+                     type="enable"
+                     name="_"
+                     state="disabled"
+                     pxsl_line="213">
+                    <Object
+                         pxsl_line="213">
+                        <QuestObject
+                             class="NavMeshDynamicObject"
+                             name="NavmeshRegenration_3"
+                             pxsl_line="213" />
+                    </Object>
+                </Phase>
+                <Phase
+                     type="AND"
+                     name="_"
+                     pxsl_line="215">
+                    <Path
+                         pxsl_line="215">
+                        <Phase
+                             type="set state"
+                             name="_"
+                             desired_state="lockpick"
+                             pxsl_line="216">
+                            <Trigger
+                                 pxsl_line="216">
+                                <QuestObject
+                                     class="DoorDI"
+                                     name="rd_prison_logic_dinner::DoorDI_After_Dinner_1"
+                                     pxsl_line="216" />
+                            </Trigger>
+                        </Phase>
+                        <Phase
+                             type="set state"
+                             name="_"
+                             desired_state="lockpick"
+                             pxsl_line="217">
+                            <Trigger
+                                 pxsl_line="217">
+                                <QuestObject
+                                     class="DoorDI"
+                                     name="rd_prison_logic_dinner::DoorDI_After_Dinner_2"
+                                     pxsl_line="217" />
+                            </Trigger>
+                        </Phase>
+                        <Phase
+                             type="enable"
+                             name="enable all zombies"
+                             pxsl_line="218">
+                            <Object
+                                 pxsl_line="220">
+                                <QuestObject
+                                     class="AISpawnBoxCompound"
+                                     name="rd_prison_logic_dinner::Vent_Zombie_1"
+                                     pxsl_line="220" />
+                            </Object>
+                        </Phase>
+                        <Phase
+                             type="wait guard"
+                             name="_"
+                             time="1"
+                             pxsl_line="221" />
+                        <Phase
+                             type="enable"
+                             name="enable next zombies"
+                             pxsl_line="222">
+                            <Object
+                                 pxsl_line="223">
+                                <QuestObject
+                                     class="AISpawnBoxCompound"
+                                     name="rd_prison_logic_dinner::Vent_Zombie_2"
+                                     pxsl_line="223" />
+                            </Object>
+                            <Object
+                                 pxsl_line="224">
+                                <QuestObject
+                                     class="AISpawnBoxCompound"
+                                     name="rd_prison_logic_dinner::Vent_Zombie_3"
+                                     pxsl_line="224" />
+                            </Object>
+                            <Object
+                                 pxsl_line="225">
+                                <QuestObject
+                                     class="AISpawnBoxCompound"
+                                     name="rd_prison_logic_dinner::Vent_Zombie_4"
+                                     pxsl_line="225" />
+                            </Object>
+                            <Object
+                                 pxsl_line="226">
+                                <QuestObject
+                                     class="AISpawnBoxCompound"
+                                     name="rd_prison_logic_dinner::Cell_Dinner_Crawl_Zombie_1"
+                                     pxsl_line="226" />
+                            </Object>
+                            <Object
+                                 pxsl_line="227">
+                                <QuestObject
+                                     class="AISpawnBoxCompound"
+                                     name="rd_prison_logic_dinner::Cell_Dinner_Crawl_Zombie_2"
+                                     pxsl_line="227" />
+                            </Object>
+                        </Phase>
+                        <Phase
+                             type="go to"
+                             name="_"
+                             distance="0"
+                             show_locations="false"
+                             pxsl_line="228">
+                            <Destination
+                                 pxsl_line="228">
+                                <QuestObject
+                                     class="SensorGoTo"
+                                     name="rd_prison_logic_dinner::Lockpick_Sensor"
+                                     pxsl_line="228" />
+                            </Destination>
+                        </Phase>
+                        <Phase
+                             type="use"
+                             name="_"
+                             desired_state="opening"
+                             show_locations="false"
+                             pxsl_line="229">
+                            <Trigger
+                                 pxsl_line="229">
+                                <QuestObject
+                                     class="DoorDI"
+                                     name="rd_prison_logic_dinner::DoorDI_After_Dinner_1"
+                                     pxsl_line="229" />
+                            </Trigger>
+                        </Phase>
+                    </Path>
+                </Phase>
+                <Phase
+                     type="enable"
+                     name="_"
+                     state="disabled"
+                     pxsl_line="231">
+                    <!-- ,o SoundEmitterSimple rd_prison_logic_dinner::Alarm_Sound -->
+                    <Object
+                         pxsl_line="233">
+                        <QuestObject
+                             class="SpawnPoint"
+                             name="Clear_Block_A_Cleared_Waypoint_2"
+                             pxsl_line="233" />
+                    </Object>
+                    <Object
+                         pxsl_line="234">
+                        <QuestObject
+                             class="AISpawnBoxCompound"
+                             name="rd_prison_logic_dinner::Vent_Zombie_1"
+                             pxsl_line="234" />
+                    </Object>
+                    <Object
+                         pxsl_line="235">
+                        <QuestObject
+                             class="AISpawnBoxCompound"
+                             name="rd_prison_logic_dinner::Vent_Zombie_2"
+                             pxsl_line="235" />
+                    </Object>
+                    <Object
+                         pxsl_line="236">
+                        <QuestObject
+                             class="AISpawnBoxCompound"
+                             name="rd_prison_logic_dinner::Vent_Zombie_3"
+                             pxsl_line="236" />
+                    </Object>
+                    <Object
+                         pxsl_line="237">
+                        <QuestObject
+                             class="AISpawnBoxCompound"
+                             name="rd_prison_logic_dinner::Vent_Zombie_4"
+                             pxsl_line="237" />
+                    </Object>
+                    <Object
+                         pxsl_line="238">
+                        <QuestObject
+                             class="AISpawnBoxCompound"
+                             name="rd_prison_logic_dinner::Cell_Dinner_Crawl_Zombie_1"
+                             pxsl_line="238" />
+                    </Object>
+                    <Object
+                         pxsl_line="239">
+                        <QuestObject
+                             class="AISpawnBoxCompound"
+                             name="rd_prison_logic_dinner::Cell_Dinner_Crawl_Zombie_2"
+                             pxsl_line="239" />
+                    </Object>
+                    <Object
+                         pxsl_line="240">
+                        <QuestObject
+                             class="AISpawnBoxWaves"
+                             name="rd_prison_logic_dinner::Goon_Dining_Zombie_Ambush"
+                             pxsl_line="240" />
+                    </Object>
+                    <!-- ,o SoundEmitterSimple rd_prison_logic_dinner::Alarm_Sound -->
+                    <Object
+                         pxsl_line="242">
+                        <QuestObject
+                             class="SoundEmitterOnce"
+                             name="rd_prison_logic_dinner::Goon_Sound"
+                             pxsl_line="242" />
+                    </Object>
+                </Phase>
+                <Phase
+                     type="OR"
+                     name="_"
+                     pxsl_line="246">
+                    <Path
+                         pxsl_line="247">
+                        <Phase
+                             type="go to"
+                             name="_"
+                             distance="2"
+                             pxsl_line="248">
+                            <Destination
+                                 pxsl_line="248">
+                                <QuestObject
+                                     class="SpawnPoint"
+                                     name="rd_prison_logic_dinner::rd_prison_dinner_spawnpoint_cleared_goto"
+                                     pxsl_line="248" />
+                            </Destination>
+                        </Phase>
+                    </Path>
+                    <Path
+                         pxsl_line="249">
+                        <Phase
+                             type="go to"
+                             name="_"
+                             distance="2"
+                             pxsl_line="250">
+                            <Destination
+                                 pxsl_line="250">
+                                <QuestObject
+                                     class="SpawnPoint"
+                                     name="rd_prison_logic_dinner::rd_prison_dinner_spawnpoint_cleared_goto"
+                                     pxsl_line="250" />
+                            </Destination>
+                        </Phase>
+                    </Path>
+                </Phase>
+                <!-- ,disable _ LightObject Disable_light -->
+                <!-- ,set-skin _ ModelObject lab_lamp_test_off default -->
+                <!-- PRISONERS CELL BLOCK B -->
+                <Phase
+                     type="go to"
+                     name="_"
+                     distance="5"
+                     pxsl_line="255">
+                    <Destination
+                         pxsl_line="255">
+                        <QuestObject
+                             class="SpawnPoint"
+                             name="Artur_Waypoint"
+                             pxsl_line="255" />
+                    </Destination>
+                </Phase>
+                <Phase
+                     type="use"
+                     name="RD - PRISON - CLEAR - BLOCK B"
+                     desired_state="opening"
+                     pxsl_line="257">
+                    <Trigger
+                         pxsl_line="257">
+                        <QuestObject
+                             class="DoorDI"
+                             name="rd_prison_logic_cellwing_b::RD_Prison_Door_cell_wing_b"
+                             pxsl_line="257" />
+                    </Trigger>
+                    <DebugPlayerPosition
+                         pxsl_line="258">
+                        <QuestObject
+                             class="SpawnPoint"
+                             name="rd_prison_logic_cellwing_b::rd_prison_clear_block_b_spawnpoint"
+                             pxsl_line="258" />
+                    </DebugPlayerPosition>
+                </Phase>
+                <Phase
+                     type="enable"
+                     name="_"
+                     state="disabled"
+                     pxsl_line="259">
+                    <Object
+                         pxsl_line="259">
+                        <QuestObject
+                             class="SpawnPoint"
+                             name="rd_prison_logic_dinner::rd_prison_dinner_spawnpoint"
+                             pxsl_line="259" />
+                    </Object>
+                </Phase>
+                <Phase
+                     type="enable"
+                     name="_"
+                     pxsl_line="260">
+                    <Object
+                         pxsl_line="261">
+                        <QuestObject
+                             class="SpawnPoint"
+                             name="rd_prison_logic_dinner::rd_prison_dinner_spawnpoint_cleared"
+                             pxsl_line="261" />
+                    </Object>
+                    <Object
+                         pxsl_line="262">
+                        <QuestObject
+                             class="AISpawnBoxNumber"
+                             name="rd_prison_logic_cellwing_b::Cell_Wing_b_Spiter_1"
+                             pxsl_line="262" />
+                    </Object>
+                    <Object
+                         pxsl_line="263">
+                        <QuestObject
+                             class="AISpawnBoxNumber"
+                             name="rd_prison_logic_cellwing_b::Cell_Wing_b_Spiter_2"
+                             pxsl_line="263" />
+                    </Object>
+                    <Object
+                         pxsl_line="264">
+                        <QuestObject
+                             class="AISpawnBoxNumber"
+                             name="rd_prison_logic_cellwing_b::Cell_Wing_b_Volatile_01"
+                             pxsl_line="264" />
+                    </Object>
+                    <Object
+                         pxsl_line="265">
+                        <QuestObject
+                             class="AISpawnBoxNumber"
+                             name="rd_prison_logic_cellwing_b::Cell_Wing_b_Volatile_02"
+                             pxsl_line="265" />
+                    </Object>
+                    <Object
+                         pxsl_line="266">
+                        <QuestObject
+                             class="AISpawnBoxNumber"
+                             name="rd_prison_logic_cellwing_b::Cell_Wing_b_Volatile_03"
+                             pxsl_line="266" />
+                    </Object>
+                    <Object
+                         pxsl_line="267">
+                        <QuestObject
+                             class="AISpawnBoxCompound"
+                             name="rd_prison_logic_cellwing_b::Cell_Wing_b_Fast_Zombie_2"
+                             pxsl_line="267" />
+                    </Object>
+                    <Object
+                         pxsl_line="268">
+                        <QuestObject
+                             class="AISpawnBoxWaves"
+                             name="rd_prison_logic_cellwing_b::Bitter_Cell_Wing_B"
+                             pxsl_line="268" />
+                    </Object>
+                    <Object
+                         pxsl_line="269">
+                        <QuestObject
+                             class="SensorAmbientMusicArea"
+                             name="rd_prison_logic_cellwing_b::Music_Block_Area_B"
+                             pxsl_line="269" />
+                    </Object>
+                </Phase>
+                <Phase
+                     type="go to"
+                     name="_"
+                     distance="2"
+                     show_locations="false"
+                     pxsl_line="271">
+                    <Destination
+                         pxsl_line="271">
+                        <QuestObject
+                             class="SpawnPoint"
+                             name="rd_prison_logic_cellwing_b::rd_prison_clear_block_b_spawnpoint_falldown"
+                             pxsl_line="271" />
+                    </Destination>
+                </Phase>
+                <Phase
+                     type="enable"
+                     name="_"
+                     pxsl_line="272">
+                    <Object
+                         pxsl_line="273">
+                        <QuestObject
+                             class="FXEmitter"
+                             name="rd_prison_logic_cellwing_b::FX_Fall_Down_1"
+                             pxsl_line="273" />
+                    </Object>
+                    <Object
+                         pxsl_line="274">
+                        <QuestObject
+                             class="FXEmitter"
+                             name="rd_prison_logic_cellwing_b::FX_Fall_Down_2"
+                             pxsl_line="274" />
+                    </Object>
+                    <Object
+                         pxsl_line="275">
+                        <QuestObject
+                             class="SoundEmitterSimple"
+                             name="Sound_Fall_Down_Cell_Block_B"
+                             pxsl_line="275" />
+                    </Object>
+                    <Object
+                         pxsl_line="276">
+                        <QuestObject
+                             class="SpawnPoint"
+                             name="rd_prison_logic_cellwing_b::rd_prison_clear_block_b_spawnpoint_checkpoint"
+                             pxsl_line="276" />
+                    </Object>
+                    <Object
+                         pxsl_line="277">
+                        <QuestObject
+                             class="DoorDI"
+                             name="rd_prison_logic_cellwing_b::RD_Prison_Door_cell_wing_b_After_Arena"
+                             pxsl_line="277" />
+                    </Object>
+                </Phase>
+                <Phase
+                     type="movie"
+                     name="_"
+                     movie="Catwalk_Falldown_Movie_02"
+                     pxsl_line="278" />
+                <Phase
+                     type="modify ai params"
+                     name="_"
+                     force_target_type="player"
+                     pxsl_line="279">
+                    <Object
+                         pxsl_line="280">
+                        <QuestObject
+                             class="AISpawnBoxNumber"
+                             name="rd_prison_logic_cellwing_b::Cell_Wing_b_Spiter_1"
+                             pxsl_line="280" />
+                    </Object>
+                    <Object
+                         pxsl_line="281">
+                        <QuestObject
+                             class="AISpawnBoxNumber"
+                             name="rd_prison_logic_cellwing_b::Cell_Wing_b_Spiter_2"
+                             pxsl_line="281" />
+                    </Object>
+                    <Object
+                         pxsl_line="282">
+                        <QuestObject
+                             class="AISpawnBoxCompound"
+                             name="rd_prison_logic_cellwing_b::Cell_Wing_b_Fast_Zombie_2"
+                             pxsl_line="282" />
+                    </Object>
+                    <Object
+                         pxsl_line="283">
+                        <QuestObject
+                             class="AISpawnBoxWaves"
+                             name="rd_prison_logic_cellwing_b::Bitter_Cell_Wing_B"
+                             pxsl_line="283" />
+                    </Object>
+                </Phase>
+                <Phase
+                     type="set state"
+                     name="_"
+                     desired_state="lockpick"
+                     pxsl_line="285">
+                    <Trigger
+                         pxsl_line="285">
+                        <QuestObject
+                             class="DoorDI"
+                             name="rd_prison_logic_cellwing_b::RD_Prison_Door_cell_wing_b_After_Arena"
+                             pxsl_line="285" />
+                    </Trigger>
+                </Phase>
+                <Phase
+                     type="OR"
+                     name="_"
+                     pxsl_line="287">
+                    <Path
+                         pxsl_line="288">
+                        <Phase
+                             type="enable"
+                             name="_"
+                             state="disabled"
+                             pxsl_line="289">
+                            <Object
+                                 pxsl_line="290">
+                                <QuestObject
+                                     class="SpawnPoint"
+                                     name="rd_prison_logic_cellwing_b::rd_prison_clear_block_b_spawnpoint"
+                                     pxsl_line="290" />
+                            </Object>
+                            <Object
+                                 pxsl_line="291">
+                                <QuestObject
+                                     class="SoundEmitterSimple"
+                                     name="Sound_Fall_Down_Cell_Block_B"
+                                     pxsl_line="291" />
+                            </Object>
+                            <Object
+                                 pxsl_line="292">
+                                <QuestObject
+                                     class="FXEmitter"
+                                     name="rd_prison_logic_cellwing_b::FX_Fall_Down_1"
+                                     pxsl_line="292" />
+                            </Object>
+                            <Object
+                                 pxsl_line="293">
+                                <QuestObject
+                                     class="FXEmitter"
+                                     name="rd_prison_logic_cellwing_b::FX_Fall_Down_2"
+                                     pxsl_line="293" />
+                            </Object>
+                            <Object
+                                 pxsl_line="294">
+                                <QuestObject
+                                     class="SensorAmbientMusicArea"
+                                     name="rd_prison_logic_dinner::Music_Dinner_Fight"
+                                     pxsl_line="294" />
+                            </Object>
+                            <Object
+                                 pxsl_line="295">
+                                <QuestObject
+                                     class="SensorAmbientMusicArea"
+                                     name="rd_prison_logic_dinner::Music_Dinner_Fight_2"
+                                     pxsl_line="295" />
+                            </Object>
+                        </Phase>
+                        <Phase
+                             type="clear area"
+                             name="_"
+                             show="false"
+                             show_locations="false"
+                             pxsl_line="296">
+                            <Object
+                                 pxsl_line="296">
+                                <QuestObject
+                                     class="ClearArea"
+                                     name="rd_prison_logic_cellwing_b::Clear_Cell_Wing_B_Area"
+                                     pxsl_line="296" />
+                            </Object>
+                        </Phase>
+                        <Phase
+                             type="enable"
+                             name="_"
+                             state="disabled"
+                             pxsl_line="297">
+                            <Object
+                                 pxsl_line="298">
+                                <QuestObject
+                                     class="AISpawnBoxNumber"
+                                     name="rd_prison_logic_cellwing_b::Cell_Wing_b_Spiter_1"
+                                     pxsl_line="298" />
+                            </Object>
+                            <Object
+                                 pxsl_line="299">
+                                <QuestObject
+                                     class="AISpawnBoxNumber"
+                                     name="rd_prison_logic_cellwing_b::Cell_Wing_b_Spiter_2"
+                                     pxsl_line="299" />
+                            </Object>
+                            <Object
+                                 pxsl_line="300">
+                                <QuestObject
+                                     class="AISpawnBoxNumber"
+                                     name="rd_prison_logic_cellwing_b::Cell_Wing_b_Volatile_01"
+                                     pxsl_line="300" />
+                            </Object>
+                            <Object
+                                 pxsl_line="301">
+                                <QuestObject
+                                     class="AISpawnBoxNumber"
+                                     name="rd_prison_logic_cellwing_b::Cell_Wing_b_Volatile_02"
+                                     pxsl_line="301" />
+                            </Object>
+                            <Object
+                                 pxsl_line="302">
+                                <QuestObject
+                                     class="AISpawnBoxNumber"
+                                     name="rd_prison_logic_cellwing_b::Cell_Wing_b_Volatile_03"
+                                     pxsl_line="302" />
+                            </Object>
+                            <Object
+                                 pxsl_line="303">
+                                <QuestObject
+                                     class="AISpawnBoxCompound"
+                                     name="rd_prison_logic_cellwing_b::Cell_Wing_b_Fast_Zombie_2"
+                                     pxsl_line="303" />
+                            </Object>
+                            <Object
+                                 pxsl_line="304">
+                                <QuestObject
+                                     class="AISpawnBoxWaves"
+                                     name="rd_prison_logic_cellwing_b::Bitter_Cell_Wing_B"
+                                     pxsl_line="304" />
+                            </Object>
+                            <Object
+                                 pxsl_line="305">
+                                <QuestObject
+                                     class="SoundEmitterSimple"
+                                     name="Sound_Fall_Down_Cell_Block_B"
+                                     pxsl_line="305" />
+                            </Object>
+                            <Object
+                                 pxsl_line="306">
+                                <QuestObject
+                                     class="FXEmitter"
+                                     name="rd_prison_logic_cellwing_b::FX_Fall_Down_1"
+                                     pxsl_line="306" />
+                            </Object>
+                            <Object
+                                 pxsl_line="307">
+                                <QuestObject
+                                     class="FXEmitter"
+                                     name="rd_prison_logic_cellwing_b::FX_Fall_Down_2"
+                                     pxsl_line="307" />
+                            </Object>
+                            <Object
+                                 pxsl_line="308">
+                                <QuestObject
+                                     class="SensorAmbientMusicArea"
+                                     name="rd_prison_logic_cellwing_b::Music_Block_Area_B"
+                                     pxsl_line="308" />
+                            </Object>
+                        </Phase>
+                        <Phase
+                             type="use"
+                             name="_"
+                             desired_state="opening"
+                             pxsl_line="309">
+                            <Trigger
+                                 pxsl_line="309">
+                                <QuestObject
+                                     class="DoorDI"
+                                     name="rd_prison_logic_cellwing_b::RD_Prison_Door_cell_wing_b_After_Arena"
+                                     pxsl_line="309" />
+                            </Trigger>
+                        </Phase>
+                    </Path>
+                    <Path
+                         pxsl_line="310">
+                        <Phase
+                             type="use"
+                             name="_"
+                             desired_state="opening"
+                             pxsl_line="311">
+                            <Trigger
+                                 pxsl_line="311">
+                                <QuestObject
+                                     class="DoorDI"
+                                     name="rd_prison_logic_cellwing_b::RD_Prison_Door_cell_wing_b_After_Arena"
+                                     pxsl_line="311" />
+                            </Trigger>
+                        </Phase>
+                    </Path>
+                </Phase>
+                <!-- PRISONERS DEFEAT MAIN BOSS -->
+                <Phase
+                     type="enable"
+                     name="_"
+                     pxsl_line="314">
+                    <Object
+                         pxsl_line="315">
+                        <QuestObject
+                             class="AISpawnBoxWaves"
+                             name="Corridor_Hord_1"
+                             pxsl_line="315" />
+                    </Object>
+                    <Object
+                         pxsl_line="316">
+                        <QuestObject
+                             class="AISpawnBoxWaves"
+                             name="Corridor_Hord_2"
+                             pxsl_line="316" />
+                    </Object>
+                </Phase>
+                <Phase
+                     type="AND"
+                     name="_"
+                     pxsl_line="317">
+                    <Path
+                         pxsl_line="317">
+                        <Phase
+                             type="go to"
+                             name="_"
+                             pxsl_line="318">
+                            <Destination
+                                 pxsl_line="318">
+                                <QuestObject
+                                     class="SensorGoTo"
+                                     name="SuiciderSensor"
+                                     pxsl_line="318" />
+                            </Destination>
+                        </Phase>
+                        <Phase
+                             type="enable"
+                             name="_"
+                             pxsl_line="319">
+                            <Object
+                                 pxsl_line="319">
+                                <QuestObject
+                                     class="AISpawnBoxNumber"
+                                     name="Suicider_2"
+                                     pxsl_line="319" />
+                            </Object>
+                        </Phase>
+                        <Phase
+                             type="go to"
+                             name="_"
+                             distance="12"
+                             pxsl_line="320">
+                            <Destination
+                                 pxsl_line="320">
+                                <QuestObject
+                                     class="SpawnPoint"
+                                     name="rd_prison_exerciseyard_spawnpoint_invoke"
+                                     pxsl_line="320" />
+                            </Destination>
+                        </Phase>
+                    </Path>
+                </Phase>
+                <Phase
+                     type="AND"
+                     name="_"
+                     pxsl_line="323">
+                    <Path
+                         pxsl_line="323">
+                        <Phase
+                             type="go to"
+                             name="RD - PRISON - FINAL ARENA"
+                             pxsl_line="324">
+                            <Destination
+                                 pxsl_line="324">
+                                <QuestObject
+                                     class="SensorGoTo"
+                                     name="Prison_Rush_Final_Arena_Start"
+                                     pxsl_line="324" />
+                            </Destination>
+                            <DebugPlayerPosition
+                                 pxsl_line="325">
+                                <QuestObject
+                                     class="SpawnPoint"
+                                     name="rd_prison_exerciseyard_spawnpoint_invoke"
+                                     pxsl_line="325" />
+                            </DebugPlayerPosition>
+                        </Phase>
+                        <Phase
+                             type="enable"
+                             name="_"
+                             state="disabled"
+                             pxsl_line="326">
+                            <Object
+                                 pxsl_line="326">
+                                <QuestObject
+                                     class="SpawnPoint"
+                                     name="rd_prison_logic_cellwing_b::rd_prison_clear_block_b_spawnpoint_checkpoint"
+                                     pxsl_line="326" />
+                            </Object>
+                        </Phase>
+                        <Phase
+                             type="enable"
+                             name="_"
+                             pxsl_line="327">
+                            <Object
+                                 pxsl_line="327">
+                                <QuestObject
+                                     class="SpawnPoint"
+                                     name="rd_prison_exerciseyard_spawnpoint_checkpoint"
+                                     pxsl_line="327" />
+                            </Object>
+                        </Phase>
+                    </Path>
+                </Phase>
+                <Phase
+                     type="enable"
+                     name="_"
+                     state="disabled"
+                     pxsl_line="329">
+                    <Object
+                         pxsl_line="330">
+                        <QuestObject
+                             class="DoorDI"
+                             name="rd_prison_logic_cellwing_b::RD_Prison_Door_cell_wing_b_After_Arena"
+                             pxsl_line="330" />
+                    </Object>
+                    <Object
+                         pxsl_line="331">
+                        <QuestObject
+                             class="AISpawnBoxWaves"
+                             name="Corridor_Hord_1"
+                             pxsl_line="331" />
+                    </Object>
+                    <Object
+                         pxsl_line="332">
+                        <QuestObject
+                             class="AISpawnBoxWaves"
+                             name="Corridor_Hord_2"
+                             pxsl_line="332" />
+                    </Object>
+                </Phase>
+                <Phase
+                     type="enable"
+                     name="_"
+                     pxsl_line="333">
+                    <Object
+                         pxsl_line="334">
+                        <QuestObject
+                             class="AISpawnBoxNumber"
+                             name="New_RD_Prison_BOSS_1"
+                             pxsl_line="334" />
+                    </Object>
+                    <Object
+                         pxsl_line="335">
+                        <QuestObject
+                             class="AISpawnBoxNumber"
+                             name="New_RD_Prison_BOSS_2"
+                             pxsl_line="335" />
+                    </Object>
+                    <Object
+                         pxsl_line="336">
+                        <QuestObject
+                             class="AISpawnBoxWaves"
+                             name="New_RD_Prison_Wave_Viral_Party_Start_1"
+                             pxsl_line="336" />
+                    </Object>
+                    <Object
+                         pxsl_line="337">
+                        <QuestObject
+                             class="AISpawnBoxCompound"
+                             name="New_RD_Prison_Wave_Viral_Party_Start_2"
+                             pxsl_line="337" />
+                    </Object>
+                    <Object
+                         pxsl_line="338">
+                        <QuestObject
+                             class="AISpawnBoxWaves"
+                             name="New_RD_Prison_Wave_Viral_Party_Start_3"
+                             pxsl_line="338" />
+                    </Object>
+                    <Object
+                         pxsl_line="339">
+                        <QuestObject
+                             class="AISpawnBoxWaves"
+                             name="New_RD_Prison_Wave_Viral_Party_Start_4"
+                             pxsl_line="339" />
+                    </Object>
+                    <Object
+                         pxsl_line="340">
+                        <QuestObject
+                             class="SensorAmbientMusicArea"
+                             name="Music_Final_Arena_Fight_Part_1"
+                             pxsl_line="340" />
+                    </Object>
+                    <!-- ,o AISpawnBoxCompound Boss_Fast_Zombie_3 -->
+                </Phase>
+                <Phase
+                     type="wait guard"
+                     name="_"
+                     time="0.5"
+                     pxsl_line="344" />
+                <!-- ,spawner AISpawnBoxNumber RD_Prison_BOSS -->
+                <!-- ,spawner AISpawnBoxCompound Boss_Fast_Zombie_3 -->
+                <!--    ,o AISpawnBoxNumber RD_Prison_BOSS    -->
+                <!--    ,o AISpawnBoxNumber Boss_Fast_Zombie_1 -->
+                <!--    ,o AISpawnBoxNumber Boss_Fast_Zombie_2 -->
+                <Phase
+                     type="enable"
+                     name="_"
+                     pxsl_line="350">
+                    <Object
+                         pxsl_line="350">
+                        <QuestObject
+                             class="SensorAmbientMusicArea"
+                             name="Music_Final_Arena_Fight_Part_1_bonus"
+                             pxsl_line="350" />
+                    </Object>
+                </Phase>
+            </Path>
+        </Phase>
+        <Phase
+             type="AND"
+             name="_"
+             objective="&amp;RD_Prison_OBJ_Defeat_Boss&amp;"
+             pxsl_line="351">
+            <Path
+                 pxsl_line="353">
+                <Phase
+                     type="kill"
+                     name="_"
+                     pxsl_line="354">
+                    <Spawner
+                         pxsl_line="355">
+                        <QuestObject
+                             class="AISpawnBoxNumber"
+                             name="New_RD_Prison_BOSS_1"
+                             pxsl_line="355" />
+                    </Spawner>
+                    <Spawner
+                         pxsl_line="356">
+                        <QuestObject
+                             class="AISpawnBoxNumber"
+                             name="New_RD_Prison_BOSS_2"
+                             pxsl_line="356" />
+                    </Spawner>
+                </Phase>
+            </Path>
+            <!-- path -->
+                <!-- ,OR _ -->
+                    <!-- path -->
+                        <!-- ,cnd-health-level _ 80 -->
+                            <!-- ,spawner AISpawnBoxNumber New_RD_Prison_BOSS_1 -->
+                    <!-- path -->
+                        <!-- ,cnd-health-level _ 80 -->
+                            <!-- ,spawner AISpawnBoxNumber New_RD_Prison_BOSS_2 -->
+                <!-- ,kill-multi _  -->
+                    <!-- ,spawner AISpawnBoxWaves New_RD_Prison_Wave_Viral_Health_80_1 -->
+                    <!-- ,spawner AISpawnBoxWaves New_RD_Prison_Wave_Viral_Health_80_2 -->
+                    <!-- ,spawner AISpawnBoxWaves New_RD_Prison_Wave_Viral_Health_80_3 -->
+                    <!-- ,spawner AISpawnBoxWaves New_RD_Prison_Wave_Viral_Health_80_4 -->
+                    <!--  -->
+            <!-- path -->
+                <!-- ,OR _ -->
+                    <!-- path -->
+                        <!-- ,cnd-health-level _ 60 -->
+                            <!-- ,spawner AISpawnBoxNumber New_RD_Prison_BOSS_1 -->
+                    <!-- path -->
+                        <!-- ,cnd-health-level _ 60 -->
+                            <!-- ,spawner AISpawnBoxNumber New_RD_Prison_BOSS_2 -->
+                <!-- ,kill-multi _  -->
+                    <!-- ,spawner AISpawnBoxWaves New_RD_Prison_Wave_Viral_Health_60_1 -->
+                    <!-- ,spawner AISpawnBoxWaves New_RD_Prison_Wave_Viral_Health_60_2 -->
+                    <!-- ,spawner AISpawnBoxWaves New_RD_Prison_Wave_Viral_Health_60_3 -->
+                    <!-- ,spawner AISpawnBoxWaves New_RD_Prison_Wave_Viral_Health_60_4                 -->
+            <Path
+                 pxsl_line="384">
+                <Phase
+                     type="OR"
+                     name="_"
+                     pxsl_line="385">
+                    <Path
+                         pxsl_line="386">
+                        <Phase
+                             type="health level guard"
+                             name="_"
+                             health="20"
+                             pxsl_line="387">
+                            <Spawner
+                                 pxsl_line="388">
+                                <QuestObject
+                                     class="AISpawnBoxNumber"
+                                     name="New_RD_Prison_BOSS_1"
+                                     pxsl_line="388" />
+                            </Spawner>
+                        </Phase>
+                    </Path>
+                    <Path
+                         pxsl_line="389">
+                        <Phase
+                             type="health level guard"
+                             name="_"
+                             health="20"
+                             pxsl_line="390">
+                            <Spawner
+                                 pxsl_line="391">
+                                <QuestObject
+                                     class="AISpawnBoxNumber"
+                                     name="New_RD_Prison_BOSS_2"
+                                     pxsl_line="391" />
+                            </Spawner>
+                        </Phase>
+                    </Path>
+                </Phase>
+                <Phase
+                     type="kill"
+                     name="_"
+                     pxsl_line="392">
+                    <Spawner
+                         pxsl_line="393">
+                        <QuestObject
+                             class="AISpawnBoxWaves"
+                             name="New_RD_Prison_Wave_Viral_Health_40_1"
+                             pxsl_line="393" />
+                    </Spawner>
+                    <Spawner
+                         pxsl_line="394">
+                        <QuestObject
+                             class="AISpawnBoxWaves"
+                             name="New_RD_Prison_Wave_Viral_Health_40_2"
+                             pxsl_line="394" />
+                    </Spawner>
+                    <Spawner
+                         pxsl_line="395">
+                        <QuestObject
+                             class="AISpawnBoxWaves"
+                             name="New_RD_Prison_Wave_Viral_Health_40_3"
+                             pxsl_line="395" />
+                    </Spawner>
+                </Phase>
+            </Path>
+            <Path
+                 pxsl_line="397">
+                <!-- -show_location=false -visualize_count=-1 -location_visible_on_map=false -->
+                <Phase
+                     type="clear area"
+                     name="_"
+                     show="false"
+                     show_locations="false"
+                     pxsl_line="398">
+                    <Object
+                         pxsl_line="398">
+                        <QuestObject
+                             class="ClearArea"
+                             name="New_Clear_Boss_Fight_Area"
+                             pxsl_line="398" />
+                    </Object>
+                </Phase>
+            </Path>
+        </Phase>
+        <Phase
+             type="enable"
+             name="_"
+             state="disabled"
+             pxsl_line="400">
+            <Object
+                 pxsl_line="401">
+                <QuestObject
+                     class="AISpawnBoxNumber"
+                     name="New_RD_Prison_BOSS_1"
+                     pxsl_line="401" />
+            </Object>
+            <Object
+                 pxsl_line="402">
+                <QuestObject
+                     class="AISpawnBoxNumber"
+                     name="New_RD_Prison_BOSS_2"
+                     pxsl_line="402" />
+            </Object>
+            <Object
+                 pxsl_line="403">
+                <QuestObject
+                     class="AISpawnBoxWaves"
+                     name="New_RD_Prison_Wave_Viral_Party_Start_1"
+                     pxsl_line="403" />
+            </Object>
+            <Object
+                 pxsl_line="404">
+                <QuestObject
+                     class="AISpawnBoxCompound"
+                     name="New_RD_Prison_Wave_Viral_Party_Start_2"
+                     pxsl_line="404" />
+            </Object>
+            <Object
+                 pxsl_line="405">
+                <QuestObject
+                     class="AISpawnBoxWaves"
+                     name="New_RD_Prison_Wave_Viral_Party_Start_3"
+                     pxsl_line="405" />
+            </Object>
+            <Object
+                 pxsl_line="406">
+                <QuestObject
+                     class="AISpawnBoxWaves"
+                     name="New_RD_Prison_Wave_Viral_Party_Start_4"
+                     pxsl_line="406" />
+            </Object>
+            <Object
+                 pxsl_line="407">
+                <QuestObject
+                     class="AISpawnBoxWaves"
+                     name="New_RD_Prison_Wave_Viral_Health_40_1"
+                     pxsl_line="407" />
+            </Object>
+            <Object
+                 pxsl_line="408">
+                <QuestObject
+                     class="AISpawnBoxWaves"
+                     name="New_RD_Prison_Wave_Viral_Health_40_2"
+                     pxsl_line="408" />
+            </Object>
+            <Object
+                 pxsl_line="409">
+                <QuestObject
+                     class="AISpawnBoxWaves"
+                     name="New_RD_Prison_Wave_Viral_Health_40_3"
+                     pxsl_line="409" />
+            </Object>
+            <Object
+                 pxsl_line="410">
+                <QuestObject
+                     class="AISpawnBoxWaves"
+                     name="New_RD_Prison_Wave_Viral_Health_60_1"
+                     pxsl_line="410" />
+            </Object>
+            <Object
+                 pxsl_line="411">
+                <QuestObject
+                     class="AISpawnBoxWaves"
+                     name="New_RD_Prison_Wave_Viral_Health_60_2"
+                     pxsl_line="411" />
+            </Object>
+            <Object
+                 pxsl_line="412">
+                <QuestObject
+                     class="AISpawnBoxWaves"
+                     name="New_RD_Prison_Wave_Viral_Health_60_3"
+                     pxsl_line="412" />
+            </Object>
+            <Object
+                 pxsl_line="413">
+                <QuestObject
+                     class="AISpawnBoxWaves"
+                     name="New_RD_Prison_Wave_Viral_Health_60_4"
+                     pxsl_line="413" />
+            </Object>
+            <Object
+                 pxsl_line="414">
+                <QuestObject
+                     class="AISpawnBoxWaves"
+                     name="New_RD_Prison_Wave_Viral_Health_80_1"
+                     pxsl_line="414" />
+            </Object>
+            <Object
+                 pxsl_line="415">
+                <QuestObject
+                     class="AISpawnBoxWaves"
+                     name="New_RD_Prison_Wave_Viral_Health_80_2"
+                     pxsl_line="415" />
+            </Object>
+            <Object
+                 pxsl_line="416">
+                <QuestObject
+                     class="AISpawnBoxWaves"
+                     name="New_RD_Prison_Wave_Viral_Health_80_3"
+                     pxsl_line="416" />
+            </Object>
+            <Object
+                 pxsl_line="417">
+                <QuestObject
+                     class="AISpawnBoxWaves"
+                     name="New_RD_Prison_Wave_Viral_Health_80_4"
+                     pxsl_line="417" />
+            </Object>
+            <Object
+                 pxsl_line="418">
+                <QuestObject
+                     class="SensorAmbientMusicArea"
+                     name="Music_Final_Arena_Fight_Part_1"
+                     pxsl_line="418" />
+            </Object>
+            <Object
+                 pxsl_line="419">
+                <QuestObject
+                     class="SensorAmbientMusicArea"
+                     name="Music_Final_Arena_Fight_Part_1_bonus"
+                     pxsl_line="419" />
+            </Object>
+            <Object
+                 pxsl_line="420">
+                <QuestObject
+                     class="SpawnPoint"
+                     name="rd_prison_logic_dinner::rd_prison_dinner_spawnpoint_cleared"
+                     pxsl_line="420" />
+            </Object>
+        </Phase>
+        <Phase
+             type="AND"
+             name="_"
+             objective="&amp;RD_Prison_OBJ_Defeat_Final_Boss&amp;"
+             pxsl_line="422">
+            <Path
+                 pxsl_line="422">
+                <Phase
+                     type="enable"
+                     name="RD - PRISON - WALL FINAL BOSS"
+                     pxsl_line="423">
+                    <DebugPlayerPosition
+                         pxsl_line="424">
+                        <QuestObject
+                             class="SpawnPoint"
+                             name="rd_prison_armored_wall_initiation.eds::Final_Boss_SpawnPoint"
+                             pxsl_line="424" />
+                    </DebugPlayerPosition>
+                    <Object
+                         pxsl_line="425">
+                        <QuestObject
+                             class="AISpawnBoxNumber"
+                             name="rd_prison_armored_wall_initiation.eds::New_RD_Prison_BOSS_Final"
+                             pxsl_line="425" />
+                    </Object>
+                    <Object
+                         pxsl_line="426">
+                        <QuestObject
+                             class="SensorAmbientMusicArea"
+                             name="Music_Final_Arena_Boss"
+                             pxsl_line="426" />
+                    </Object>
+                    <Object
+                         pxsl_line="427">
+                        <QuestObject
+                             class="FireEmitterDI"
+                             name="rd_prison_armored_wall_initiation.eds::Fire_emitter_01"
+                             pxsl_line="427" />
+                    </Object>
+                    <Object
+                         pxsl_line="428">
+                        <QuestObject
+                             class="FXEmitter"
+                             name="FX_Fire_01"
+                             pxsl_line="428" />
+                    </Object>
+                    <Object
+                         pxsl_line="429">
+                        <QuestObject
+                             class="FXEmitter"
+                             name="FX_Fire_02"
+                             pxsl_line="429" />
+                    </Object>
+                    <Object
+                         pxsl_line="430">
+                        <QuestObject
+                             class="FXEmitter"
+                             name="FX_Fire_03"
+                             pxsl_line="430" />
+                    </Object>
+                    <Object
+                         pxsl_line="431">
+                        <QuestObject
+                             class="FXEmitter"
+                             name="FX_Fire_04"
+                             pxsl_line="431" />
+                    </Object>
+                    <Object
+                         pxsl_line="432">
+                        <QuestObject
+                             class="FXEmitter"
+                             name="FX_Fire_05"
+                             pxsl_line="432" />
+                    </Object>
+                    <Object
+                         pxsl_line="433">
+                        <QuestObject
+                             class="FXEmitter"
+                             name="FX_Fire_06"
+                             pxsl_line="433" />
+                    </Object>
+                    <Object
+                         pxsl_line="434">
+                        <QuestObject
+                             class="FXEmitter"
+                             name="FX_Fire_07"
+                             pxsl_line="434" />
+                    </Object>
+                    <Object
+                         pxsl_line="435">
+                        <QuestObject
+                             class="FXEmitter"
+                             name="FX_Fire_08"
+                             pxsl_line="435" />
+                    </Object>
+                    <Object
+                         pxsl_line="436">
+                        <QuestObject
+                             class="FXEmitter"
+                             name="FX_Fire_09"
+                             pxsl_line="436" />
+                    </Object>
+                    <Object
+                         pxsl_line="437">
+                        <QuestObject
+                             class="FXEmitter"
+                             name="FX_Fire_10"
+                             pxsl_line="437" />
+                    </Object>
+                    <Object
+                         pxsl_line="438">
+                        <QuestObject
+                             class="FXEmitter"
+                             name="FX_Fire_11"
+                             pxsl_line="438" />
+                    </Object>
+                    <Object
+                         pxsl_line="439">
+                        <QuestObject
+                             class="FXEmitter"
+                             name="FX_Fire_12"
+                             pxsl_line="439" />
+                    </Object>
+                    <Object
+                         pxsl_line="440">
+                        <QuestObject
+                             class="FXEmitter"
+                             name="FX_Fire_13"
+                             pxsl_line="440" />
+                    </Object>
+                    <Object
+                         pxsl_line="441">
+                        <QuestObject
+                             class="FXEmitter"
+                             name="FX_Fire_14"
+                             pxsl_line="441" />
+                    </Object>
+                    <Object
+                         pxsl_line="442">
+                        <QuestObject
+                             class="FXEmitter"
+                             name="FX_Fire_15"
+                             pxsl_line="442" />
+                    </Object>
+                    <Object
+                         pxsl_line="443">
+                        <QuestObject
+                             class="FXEmitter"
+                             name="FX_Smoke_Cloud_01"
+                             pxsl_line="443" />
+                    </Object>
+                    <Object
+                         pxsl_line="444">
+                        <QuestObject
+                             class="FXEmitter"
+                             name="FX_Smoke_Cloud_02"
+                             pxsl_line="444" />
+                    </Object>
+                    <Object
+                         pxsl_line="445">
+                        <QuestObject
+                             class="FXEmitter"
+                             name="FX_Smoke_Cloud_03"
+                             pxsl_line="445" />
+                    </Object>
+                    <Object
+                         pxsl_line="446">
+                        <QuestObject
+                             class="FXEmitter"
+                             name="FX_Smoke_Cloud_04"
+                             pxsl_line="446" />
+                    </Object>
+                    <Object
+                         pxsl_line="447">
+                        <QuestObject
+                             class="FXEmitter"
+                             name="FX_Smoke_Cloud_05"
+                             pxsl_line="447" />
+                    </Object>
+                </Phase>
+                <Phase
+                     type="AND"
+                     name="_"
+                     pxsl_line="448">
+                    <Path
+                         pxsl_line="449">
+                        <Phase
+                             type="AND"
+                             name="_"
+                             pxsl_line="450">
+                            <Path
+                                 pxsl_line="451">
+                                <Phase
+                                     type="enable"
+                                     name="_"
+                                     pxsl_line="452">
+                                    <Object
+                                         pxsl_line="453">
+                                        <QuestObject
+                                             class="AISpawnBoxWaves"
+                                             name="New_RD_Prison_Wave_Viral_Final_Boss_01_01"
+                                             pxsl_line="453" />
+                                    </Object>
+                                    <Object
+                                         pxsl_line="454">
+                                        <QuestObject
+                                             class="AISpawnBoxWaves"
+                                             name="New_RD_Prison_Wave_Viral_Final_Boss_02_01"
+                                             pxsl_line="454" />
+                                    </Object>
+                                </Phase>
+                            </Path>
+                            <Path
+                                 pxsl_line="455">
+                                <Phase
+                                     type="wait guard"
+                                     name="_"
+                                     time="1"
+                                     pxsl_line="456" />
+                                <Phase
+                                     type="enable"
+                                     name="_"
+                                     pxsl_line="457">
+                                    <Object
+                                         pxsl_line="458">
+                                        <QuestObject
+                                             class="AISpawnBoxWaves"
+                                             name="New_RD_Prison_Wave_Viral_Final_Boss_03_01"
+                                             pxsl_line="458" />
+                                    </Object>
+                                    <Object
+                                         pxsl_line="459">
+                                        <QuestObject
+                                             class="AISpawnBoxWaves"
+                                             name="New_RD_Prison_Wave_Viral_Final_Boss_04_01"
+                                             pxsl_line="459" />
+                                    </Object>
+                                </Phase>
+                            </Path>
+                        </Phase>
+                    </Path>
+                    <Path
+                         pxsl_line="460">
+                        <Phase
+                             type="wait guard"
+                             name="_"
+                             time="2"
+                             pxsl_line="461" />
+                        <Phase
+                             type="AND"
+                             name="_"
+                             pxsl_line="462">
+                            <Path
+                                 pxsl_line="463">
+                                <Phase
+                                     type="enable"
+                                     name="_"
+                                     pxsl_line="464">
+                                    <Object
+                                         pxsl_line="465">
+                                        <QuestObject
+                                             class="AISpawnBoxWaves"
+                                             name="New_RD_Prison_Wave_Viral_Final_Boss_01_02"
+                                             pxsl_line="465" />
+                                    </Object>
+                                    <Object
+                                         pxsl_line="466">
+                                        <QuestObject
+                                             class="AISpawnBoxWaves"
+                                             name="New_RD_Prison_Wave_Viral_Final_Boss_02_02"
+                                             pxsl_line="466" />
+                                    </Object>
+                                </Phase>
+                            </Path>
+                            <Path
+                                 pxsl_line="467">
+                                <Phase
+                                     type="wait guard"
+                                     name="_"
+                                     time="1"
+                                     pxsl_line="468" />
+                                <Phase
+                                     type="enable"
+                                     name="_"
+                                     pxsl_line="469">
+                                    <Object
+                                         pxsl_line="470">
+                                        <QuestObject
+                                             class="AISpawnBoxWaves"
+                                             name="New_RD_Prison_Wave_Viral_Final_Boss_03_02"
+                                             pxsl_line="470" />
+                                    </Object>
+                                    <Object
+                                         pxsl_line="471">
+                                        <QuestObject
+                                             class="AISpawnBoxWaves"
+                                             name="New_RD_Prison_Wave_Viral_Final_Boss_04_02"
+                                             pxsl_line="471" />
+                                    </Object>
+                                </Phase>
+                            </Path>
+                        </Phase>
+                    </Path>
+                </Phase>
+                <Phase
+                     type="wait guard"
+                     name="_"
+                     time="1"
+                     pxsl_line="472" />
+                <Phase
+                     type="enable"
+                     name="_"
+                     state="disabled"
+                     pxsl_line="473">
+                    <Object
+                         pxsl_line="473">
+                        <QuestObject
+                             class="NavMeshDynamicObject"
+                             name="NavmeshRegenration"
+                             pxsl_line="473" />
+                    </Object>
+                </Phase>
+                <Phase
+                     type="AND"
+                     name="_"
+                     objective="&amp;RD_Prison_OBJ_Defeat_Final_Boss&amp;"
+                     pxsl_line="474">
+                    <Path
+                         pxsl_line="475">
+                        <Phase
+                             type="wait guard"
+                             name="_"
+                             time="1"
+                             pxsl_line="476" />
+                        <Phase
+                             type="enable"
+                             name="_"
+                             pxsl_line="477">
+                            <Object
+                                 pxsl_line="477">
+                                <QuestObject
+                                     class="BarrierObject"
+                                     name="rd_prison_armored_wall_initiation.eds::goon_wall_barrier_01"
+                                     pxsl_line="477" />
+                            </Object>
+                        </Phase>
+                    </Path>
+                    <Path
+                         pxsl_line="478">
+                        <Phase
+                             type="kill"
+                             name="_"
+                             pxsl_line="479">
+                            <Spawner
+                                 pxsl_line="479">
+                                <QuestObject
+                                     class="AISpawnBoxNumber"
+                                     name="rd_prison_armored_wall_initiation.eds::New_RD_Prison_BOSS_Final"
+                                     pxsl_line="479" />
+                            </Spawner>
+                        </Phase>
+                    </Path>
+                    <Path
+                         pxsl_line="480">
+                        <Phase
+                             type="health level guard"
+                             name="_"
+                             health="95"
+                             pxsl_line="481">
+                            <Spawner
+                                 pxsl_line="482">
+                                <QuestObject
+                                     class="AISpawnBoxNumber"
+                                     name="rd_prison_armored_wall_initiation.eds::New_RD_Prison_BOSS_Final"
+                                     pxsl_line="482" />
+                            </Spawner>
+                        </Phase>
+                        <Phase
+                             type="AND"
+                             name="_"
+                             pxsl_line="483">
+                            <Path
+                                 pxsl_line="484">
+                                <Phase
+                                     type="kill"
+                                     name="_"
+                                     pxsl_line="485">
+                                    <Spawner
+                                         pxsl_line="486">
+                                        <QuestObject
+                                             class="AISpawnBoxWaves"
+                                             name="New_RD_Prison_Wave_Viral_Final_Boss_95_01_01"
+                                             pxsl_line="486" />
+                                    </Spawner>
+                                    <Spawner
+                                         pxsl_line="487">
+                                        <QuestObject
+                                             class="AISpawnBoxWaves"
+                                             name="New_RD_Prison_Wave_Viral_Final_Boss_95_02_01"
+                                             pxsl_line="487" />
+                                    </Spawner>
+                                </Phase>
+                            </Path>
+                            <Path
+                                 pxsl_line="488">
+                                <Phase
+                                     type="wait guard"
+                                     name="_"
+                                     time="1"
+                                     pxsl_line="489" />
+                                <Phase
+                                     type="kill"
+                                     name="_"
+                                     pxsl_line="490">
+                                    <Spawner
+                                         pxsl_line="491">
+                                        <QuestObject
+                                             class="AISpawnBoxWaves"
+                                             name="New_RD_Prison_Wave_Viral_Final_Boss_95_03_01"
+                                             pxsl_line="491" />
+                                    </Spawner>
+                                    <Spawner
+                                         pxsl_line="492">
+                                        <QuestObject
+                                             class="AISpawnBoxWaves"
+                                             name="New_RD_Prison_Wave_Viral_Final_Boss_95_04_01"
+                                             pxsl_line="492" />
+                                    </Spawner>
+                                </Phase>
+                            </Path>
+                        </Phase>
+                    </Path>
+                    <Path
+                         pxsl_line="493">
+                        <Phase
+                             type="health level guard"
+                             name="_"
+                             health="95"
+                             pxsl_line="494">
+                            <Spawner
+                                 pxsl_line="495">
+                                <QuestObject
+                                     class="AISpawnBoxNumber"
+                                     name="rd_prison_armored_wall_initiation.eds::New_RD_Prison_BOSS_Final"
+                                     pxsl_line="495" />
+                            </Spawner>
+                        </Phase>
+                        <Phase
+                             type="wait guard"
+                             name="_"
+                             time="2"
+                             pxsl_line="496" />
+                        <Phase
+                             type="AND"
+                             name="_"
+                             pxsl_line="497">
+                            <Path
+                                 pxsl_line="498">
+                                <Phase
+                                     type="kill"
+                                     name="_"
+                                     pxsl_line="499">
+                                    <Spawner
+                                         pxsl_line="500">
+                                        <QuestObject
+                                             class="AISpawnBoxWaves"
+                                             name="New_RD_Prison_Wave_Viral_Final_Boss_95_01_02"
+                                             pxsl_line="500" />
+                                    </Spawner>
+                                    <Spawner
+                                         pxsl_line="501">
+                                        <QuestObject
+                                             class="AISpawnBoxWaves"
+                                             name="New_RD_Prison_Wave_Viral_Final_Boss_95_02_02"
+                                             pxsl_line="501" />
+                                    </Spawner>
+                                </Phase>
+                            </Path>
+                            <Path
+                                 pxsl_line="502">
+                                <Phase
+                                     type="wait guard"
+                                     name="_"
+                                     time="1"
+                                     pxsl_line="503" />
+                                <Phase
+                                     type="kill"
+                                     name="_"
+                                     pxsl_line="504">
+                                    <Spawner
+                                         pxsl_line="505">
+                                        <QuestObject
+                                             class="AISpawnBoxWaves"
+                                             name="New_RD_Prison_Wave_Viral_Final_Boss_95_03_02"
+                                             pxsl_line="505" />
+                                    </Spawner>
+                                    <Spawner
+                                         pxsl_line="506">
+                                        <QuestObject
+                                             class="AISpawnBoxWaves"
+                                             name="New_RD_Prison_Wave_Viral_Final_Boss_95_04_02"
+                                             pxsl_line="506" />
+                                    </Spawner>
+                                </Phase>
+                            </Path>
+                        </Phase>
+                    </Path>
+                    <Path
+                         pxsl_line="507">
+                        <!-- -show_location=false -visualize_count=-1 -location_visible_on_map=false -->
+                        <Phase
+                             type="clear area"
+                             name="_"
+                             show="false"
+                             show_locations="false"
+                             pxsl_line="508">
+                            <Object
+                                 pxsl_line="508">
+                                <QuestObject
+                                     class="ClearArea"
+                                     name="New_Clear_Boss_Fight_Area"
+                                     pxsl_line="508" />
+                            </Object>
+                        </Phase>
+                    </Path>
+                </Phase>
+            </Path>
+        </Phase>
+        <Phase
+             type="enable"
+             name="_"
+             state="disabled"
+             pxsl_line="511">
+            <Object
+                 pxsl_line="512">
+                <QuestObject
+                     class="AISpawnBoxWaves"
+                     name="New_RD_Prison_Wave_Viral_Party_Start_1"
+                     pxsl_line="512" />
+            </Object>
+            <Object
+                 pxsl_line="513">
+                <QuestObject
+                     class="AISpawnBoxCompound"
+                     name="New_RD_Prison_Wave_Viral_Party_Start_2"
+                     pxsl_line="513" />
+            </Object>
+            <Object
+                 pxsl_line="514">
+                <QuestObject
+                     class="AISpawnBoxNumber"
+                     name="rd_prison_armored_wall_initiation.eds::New_RD_Prison_BOSS_Final"
+                     pxsl_line="514" />
+            </Object>
+            <Object
+                 pxsl_line="515">
+                <QuestObject
+                     class="AISpawnBoxWaves"
+                     name="New_RD_Prison_Wave_Viral_Party_Start_3"
+                     pxsl_line="515" />
+            </Object>
+            <Object
+                 pxsl_line="516">
+                <QuestObject
+                     class="AISpawnBoxWaves"
+                     name="New_RD_Prison_Wave_Viral_Party_Start_4"
+                     pxsl_line="516" />
+            </Object>
+            <Object
+                 pxsl_line="517">
+                <QuestObject
+                     class="AISpawnBoxWaves"
+                     name="New_RD_Prison_Wave_Viral_Health_40_1"
+                     pxsl_line="517" />
+            </Object>
+            <Object
+                 pxsl_line="518">
+                <QuestObject
+                     class="AISpawnBoxWaves"
+                     name="New_RD_Prison_Wave_Viral_Health_40_2"
+                     pxsl_line="518" />
+            </Object>
+            <Object
+                 pxsl_line="519">
+                <QuestObject
+                     class="AISpawnBoxWaves"
+                     name="New_RD_Prison_Wave_Viral_Health_40_3"
+                     pxsl_line="519" />
+            </Object>
+            <Object
+                 pxsl_line="520">
+                <QuestObject
+                     class="AISpawnBoxWaves"
+                     name="New_RD_Prison_Wave_Viral_Health_60_1"
+                     pxsl_line="520" />
+            </Object>
+            <Object
+                 pxsl_line="521">
+                <QuestObject
+                     class="AISpawnBoxWaves"
+                     name="New_RD_Prison_Wave_Viral_Health_60_2"
+                     pxsl_line="521" />
+            </Object>
+            <Object
+                 pxsl_line="522">
+                <QuestObject
+                     class="AISpawnBoxWaves"
+                     name="New_RD_Prison_Wave_Viral_Health_60_3"
+                     pxsl_line="522" />
+            </Object>
+            <Object
+                 pxsl_line="523">
+                <QuestObject
+                     class="AISpawnBoxWaves"
+                     name="New_RD_Prison_Wave_Viral_Health_60_4"
+                     pxsl_line="523" />
+            </Object>
+            <Object
+                 pxsl_line="524">
+                <QuestObject
+                     class="AISpawnBoxWaves"
+                     name="New_RD_Prison_Wave_Viral_Health_80_1"
+                     pxsl_line="524" />
+            </Object>
+            <Object
+                 pxsl_line="525">
+                <QuestObject
+                     class="AISpawnBoxWaves"
+                     name="New_RD_Prison_Wave_Viral_Health_80_2"
+                     pxsl_line="525" />
+            </Object>
+            <Object
+                 pxsl_line="526">
+                <QuestObject
+                     class="AISpawnBoxWaves"
+                     name="New_RD_Prison_Wave_Viral_Health_80_3"
+                     pxsl_line="526" />
+            </Object>
+            <Object
+                 pxsl_line="527">
+                <QuestObject
+                     class="AISpawnBoxWaves"
+                     name="New_RD_Prison_Wave_Viral_Health_80_4"
+                     pxsl_line="527" />
+            </Object>
+            <Object
+                 pxsl_line="528">
+                <QuestObject
+                     class="AISpawnBoxWaves"
+                     name="New_RD_Prison_Wave_Viral_Final_Boss"
+                     pxsl_line="528" />
+            </Object>
+            <Object
+                 pxsl_line="529">
+                <QuestObject
+                     class="AISpawnBoxWaves"
+                     name="New_RD_Prison_Wave_Viral_Final_Boss_40"
+                     pxsl_line="529" />
+            </Object>
+            <Object
+                 pxsl_line="530">
+                <QuestObject
+                     class="AISpawnBoxWaves"
+                     name="New_RD_Prison_Wave_Viral_Final_Boss_60"
+                     pxsl_line="530" />
+            </Object>
+            <Object
+                 pxsl_line="531">
+                <QuestObject
+                     class="AISpawnBoxWaves"
+                     name="New_RD_Prison_Wave_Viral_Final_Boss_80"
+                     pxsl_line="531" />
+            </Object>
+            <Object
+                 pxsl_line="532">
+                <QuestObject
+                     class="AISpawnBoxWaves"
+                     name="New_RD_Prison_Wave_Viral_Final_Boss_95_01_01"
+                     pxsl_line="532" />
+            </Object>
+            <Object
+                 pxsl_line="533">
+                <QuestObject
+                     class="AISpawnBoxWaves"
+                     name="New_RD_Prison_Wave_Viral_Final_Boss_95_01_02"
+                     pxsl_line="533" />
+            </Object>
+            <Object
+                 pxsl_line="534">
+                <QuestObject
+                     class="AISpawnBoxWaves"
+                     name="New_RD_Prison_Wave_Viral_Final_Boss_95_02_01"
+                     pxsl_line="534" />
+            </Object>
+            <Object
+                 pxsl_line="535">
+                <QuestObject
+                     class="AISpawnBoxWaves"
+                     name="New_RD_Prison_Wave_Viral_Final_Boss_95_02_02"
+                     pxsl_line="535" />
+            </Object>
+            <Object
+                 pxsl_line="536">
+                <QuestObject
+                     class="AISpawnBoxWaves"
+                     name="New_RD_Prison_Wave_Viral_Final_Boss_95_03_01"
+                     pxsl_line="536" />
+            </Object>
+            <Object
+                 pxsl_line="537">
+                <QuestObject
+                     class="AISpawnBoxWaves"
+                     name="New_RD_Prison_Wave_Viral_Final_Boss_95_03_02"
+                     pxsl_line="537" />
+            </Object>
+            <Object
+                 pxsl_line="538">
+                <QuestObject
+                     class="AISpawnBoxWaves"
+                     name="New_RD_Prison_Wave_Viral_Final_Boss_95_04_01"
+                     pxsl_line="538" />
+            </Object>
+            <Object
+                 pxsl_line="539">
+                <QuestObject
+                     class="AISpawnBoxWaves"
+                     name="New_RD_Prison_Wave_Viral_Final_Boss_95_04_02"
+                     pxsl_line="539" />
+            </Object>
+            <Object
+                 pxsl_line="540">
+                <QuestObject
+                     class="AISpawnBoxWaves"
+                     name="New_RD_Prison_Wave_Viral_Final_Boss_01_01"
+                     pxsl_line="540" />
+            </Object>
+            <Object
+                 pxsl_line="541">
+                <QuestObject
+                     class="AISpawnBoxWaves"
+                     name="New_RD_Prison_Wave_Viral_Final_Boss_02_01"
+                     pxsl_line="541" />
+            </Object>
+            <Object
+                 pxsl_line="542">
+                <QuestObject
+                     class="AISpawnBoxWaves"
+                     name="New_RD_Prison_Wave_Viral_Final_Boss_03_01"
+                     pxsl_line="542" />
+            </Object>
+            <Object
+                 pxsl_line="543">
+                <QuestObject
+                     class="AISpawnBoxWaves"
+                     name="New_RD_Prison_Wave_Viral_Final_Boss_04_01"
+                     pxsl_line="543" />
+            </Object>
+            <Object
+                 pxsl_line="544">
+                <QuestObject
+                     class="AISpawnBoxWaves"
+                     name="New_RD_Prison_Wave_Viral_Final_Boss_01_02"
+                     pxsl_line="544" />
+            </Object>
+            <Object
+                 pxsl_line="545">
+                <QuestObject
+                     class="AISpawnBoxWaves"
+                     name="New_RD_Prison_Wave_Viral_Final_Boss_02_02"
+                     pxsl_line="545" />
+            </Object>
+            <Object
+                 pxsl_line="546">
+                <QuestObject
+                     class="AISpawnBoxWaves"
+                     name="New_RD_Prison_Wave_Viral_Final_Boss_03_02"
+                     pxsl_line="546" />
+            </Object>
+            <Object
+                 pxsl_line="547">
+                <QuestObject
+                     class="AISpawnBoxWaves"
+                     name="New_RD_Prison_Wave_Viral_Final_Boss_04_02"
+                     pxsl_line="547" />
+            </Object>
+            <Object
+                 pxsl_line="548">
+                <QuestObject
+                     class="AISpawnBoxNumber"
+                     name="rd_prison_armored_wall_initiation.eds::New_RD_Prison_BOSS_Final"
+                     pxsl_line="548" />
+            </Object>
+            <Object
+                 pxsl_line="549">
+                <QuestObject
+                     class="SpawnPoint"
+                     name="rd_prison_exerciseyard_spawnpoint"
+                     pxsl_line="549" />
+            </Object>
+            <Object
+                 pxsl_line="550">
+                <QuestObject
+                     class="SensorAmbientMusicArea"
+                     name="Music_Final_Arena_Boss"
+                     pxsl_line="550" />
+            </Object>
+        </Phase>
+        <Phase
+             type="gather players guard"
+             name="_"
+             objective="&amp;RD_Prison_OBJ_Team_Up&amp;"
+             show_locations="true"
+             pxsl_line="551">
+            <Destination
+                 pxsl_line="551">
+                <QuestObject
+                     class="SensorGoTo"
+                     name="Prison_Take_Reward_Sensor_Gather_1_Enabler"
+                     pxsl_line="551" />
+            </Destination>
+        </Phase>
+        <Phase
+             type="enable"
+             name="_"
+             pxsl_line="552">
+            <Object
+                 pxsl_line="553">
+                <QuestObject
+                     class="SensorPrisonRush"
+                     name="Prison_Take_Reward_Sensor_Gather_1"
+                     pxsl_line="553" />
+            </Object>
+            <Object
+                 pxsl_line="554">
+                <QuestObject
+                     class="SoundEmitterOnce"
+                     name="SEO_Before_Room_Door_Opens_Steam_1"
+                     pxsl_line="554" />
+            </Object>
+        </Phase>
+        <Phase
+             type="wait guard"
+             name="_"
+             time="0.5"
+             pxsl_line="555" />
+        <Phase
+             type="enable"
+             name="_"
+             state="disabled"
+             pxsl_line="556">
+            <Object
+                 pxsl_line="556">
+                <QuestObject
+                     class="SensorPrisonRush"
+                     name="Prison_Take_Reward_Sensor_Gather_1"
+                     pxsl_line="556" />
+            </Object>
+        </Phase>
+        <Phase
+             type="AND"
+             name="_"
+             objective="&amp;RD_Prison_OBJ_TakeReward&amp;"
+             pxsl_line="558">
+            <Path
+                 pxsl_line="558">
+                <Phase
+                     type="AND"
+                     name="_"
+                     pxsl_line="559">
+                    <Path
+                         pxsl_line="560">
+                        <Phase
+                             type="go to"
+                             name="RD - PRISON - TAKE REWARD "
+                             distance="10"
+                             pxsl_line="561">
+                            <Destination
+                                 pxsl_line="561">
+                                <QuestObject
+                                     class="SpawnPoint"
+                                     name="Exit_Prison_After_Boss"
+                                     pxsl_line="561" />
+                            </Destination>
+                            <DebugPlayerPosition
+                                 pxsl_line="562">
+                                <QuestObject
+                                     class="SpawnPoint"
+                                     name="Exit_Prison_After_Boss"
+                                     pxsl_line="562" />
+                            </DebugPlayerPosition>
+                        </Phase>
+                        <Phase
+                             type="set door behaviour"
+                             name="_"
+                             behaviour="ClosedUnlockable"
+                             pxsl_line="563">
+                            <Door
+                                 pxsl_line="563">
+                                <QuestObject
+                                     class="DoorDI"
+                                     name="Exit_Prison_DoorDI"
+                                     pxsl_line="563" />
+                            </Door>
+                        </Phase>
+                        <Phase
+                             type="enable"
+                             name="_"
+                             pxsl_line="564">
+                            <Object
+                                 pxsl_line="565">
+                                <QuestObject
+                                     class="SpawnPoint"
+                                     name="Exit_Prison_After_Boss"
+                                     pxsl_line="565" />
+                            </Object>
+                        </Phase>
+                        <Phase
+                             type="enable"
+                             name="_"
+                             state="disabled"
+                             pxsl_line="566">
+                            <Object
+                                 pxsl_line="567">
+                                <QuestObject
+                                     class="SpawnPoint"
+                                     name="rd_prison_exerciseyard_spawnpoint_checkpoint"
+                                     pxsl_line="567" />
+                            </Object>
+                            <Object
+                                 pxsl_line="568">
+                                <QuestObject
+                                     class="BoxObjectEnabler"
+                                     name="show_room_light_1_skin_Trigger"
+                                     pxsl_line="568" />
+                            </Object>
+                        </Phase>
+                    </Path>
+                    <Path
+                         pxsl_line="569">
+                        <Phase
+                             type="go to"
+                             name="_"
+                             distance="0"
+                             show_locations="false"
+                             pxsl_line="570">
+                            <Destination
+                                 pxsl_line="570">
+                                <QuestObject
+                                     class="SensorGoTo"
+                                     name="prison_SGT_door_unlock"
+                                     pxsl_line="570" />
+                            </Destination>
+                        </Phase>
+                        <Phase
+                             type="enable"
+                             name="_"
+                             pxsl_line="571">
+                            <Object
+                                 pxsl_line="571">
+                                <QuestObject
+                                     class="SoundEmitterSimple"
+                                     name="Show_Room_Door_Open_Waiting"
+                                     pxsl_line="571" />
+                            </Object>
+                        </Phase>
+                        <Phase
+                             type="movie"
+                             name="_"
+                             movie="Before_Show_Room_Opening"
+                             pxsl_line="572" />
+                        <Phase
+                             type="appear"
+                             name="_"
+                             mode="hide"
+                             pxsl_line="573">
+                            <Object
+                                 pxsl_line="573">
+                                <QuestObject
+                                     class="DoorDI"
+                                     name="Exit_Prison_DoorDI_Before_Show_Room_Opening"
+                                     pxsl_line="573" />
+                            </Object>
+                        </Phase>
+                        <Phase
+                             type="appear"
+                             name="_"
+                             mode="show"
+                             pxsl_line="574">
+                            <Object
+                                 pxsl_line="574">
+                                <QuestObject
+                                     class="DoorDI"
+                                     name="Exit_Prison_DoorDI_Before_Show_Room_Closing"
+                                     pxsl_line="574" />
+                            </Object>
+                        </Phase>
+                    </Path>
+                </Phase>
+                <Phase
+                     type="AND"
+                     name="_"
+                     pxsl_line="575">
+                    <Path
+                         pxsl_line="576">
+                        <Phase
+                             type="gather players guard"
+                             name="_"
+                             show_locations="true"
+                             pxsl_line="577">
+                            <Destination
+                                 pxsl_line="577">
+                                <QuestObject
+                                     class="SensorGoTo"
+                                     name="Prison_Show_Room_Sensor_Gather"
+                                     pxsl_line="577" />
+                            </Destination>
+                        </Phase>
+                    </Path>
+                    <Path
+                         pxsl_line="578">
+                        <Phase
+                             type="go to"
+                             name="_"
+                             distance="0"
+                             show_locations="false"
+                             pxsl_line="579">
+                            <Destination
+                                 pxsl_line="579">
+                                <QuestObject
+                                     class="SensorGoTo"
+                                     name="prison_SGT_sound_enabler"
+                                     pxsl_line="579" />
+                            </Destination>
+                        </Phase>
+                        <Phase
+                             type="enable"
+                             name="_"
+                             state="disabled"
+                             pxsl_line="580">
+                            <Object
+                                 pxsl_line="580">
+                                <QuestObject
+                                     class="SensorAmbientMusicArea"
+                                     name="SAMA_Prison_Time_Run"
+                                     pxsl_line="580" />
+                            </Object>
+                        </Phase>
+                    </Path>
+                </Phase>
+                <Phase
+                     type="enable"
+                     name="_"
+                     pxsl_line="581">
+                    <Object
+                         pxsl_line="581">
+                        <QuestObject
+                             class="SpawnPoint"
+                             name="Reward_Room_Spawn_Point"
+                             pxsl_line="581" />
+                    </Object>
+                </Phase>
+                <Phase
+                     type="enable"
+                     name="_"
+                     state="disabled"
+                     pxsl_line="582">
+                    <Object
+                         pxsl_line="582">
+                        <QuestObject
+                             class="SpawnPoint"
+                             name="Exit_Prison_After_Boss"
+                             pxsl_line="582" />
+                    </Object>
+                </Phase>
+                <Phase
+                     type="enable"
+                     name="_"
+                     pxsl_line="583">
+                    <Object
+                         pxsl_line="584">
+                        <QuestObject
+                             class="BarrierObject"
+                             name="prison_barrier_01"
+                             pxsl_line="584" />
+                    </Object>
+                    <Object
+                         pxsl_line="585">
+                        <QuestObject
+                             class="SoundEmitterOnce"
+                             name="SEO_Before_Room_Door_Opens_Steam_2"
+                             pxsl_line="585" />
+                    </Object>
+                </Phase>
+                <Phase
+                     type="movie"
+                     name="_"
+                     movie="Before_Show_Room_Closing"
+                     pxsl_line="586" />
+                <Phase
+                     type="enable"
+                     name="_"
+                     pxsl_line="587">
+                    <Object
+                         pxsl_line="588">
+                        <QuestObject
+                             class="BoxObjectEnabler"
+                             name="show_room_light_1_skin_Trigger"
+                             pxsl_line="588" />
+                    </Object>
+                    <Object
+                         pxsl_line="589">
+                        <QuestObject
+                             class="SensorAmbientMusicArea"
+                             name="SAMA_Music_Revard_Room"
+                             pxsl_line="589" />
+                    </Object>
+                </Phase>
+                <Phase
+                     type="wait guard"
+                     name="_"
+                     time="6"
+                     pxsl_line="590" />
+                <Phase
+                     type="enable"
+                     name="_"
+                     state="disabled"
+                     pxsl_line="591">
+                    <!-- ,o SoundEmitterSimple Show_Room_Door_Opens -->
+                    <Object
+                         pxsl_line="593">
+                        <QuestObject
+                             class="SoundEmitterSimple"
+                             name="Show_Room_Lights_On_1"
+                             pxsl_line="593" />
+                    </Object>
+                    <Object
+                         pxsl_line="594">
+                        <QuestObject
+                             class="SoundEmitterSimple"
+                             name="Show_Room_Lights_On_2"
+                             pxsl_line="594" />
+                    </Object>
+                    <Object
+                         pxsl_line="595">
+                        <QuestObject
+                             class="SoundEmitterSimple"
+                             name="Show_Room_Lights_On_3"
+                             pxsl_line="595" />
+                    </Object>
+                    <Object
+                         pxsl_line="596">
+                        <QuestObject
+                             class="SoundEmitterSimple"
+                             name="Show_Room_Lights_On_4"
+                             pxsl_line="596" />
+                    </Object>
+                    <Object
+                         pxsl_line="597">
+                        <QuestObject
+                             class="BarrierObject"
+                             name="rd_prison_armored_wall_initiation.eds::goon_wall_barrier_01"
+                             pxsl_line="597" />
+                    </Object>
+                    <Object
+                         pxsl_line="598">
+                        <QuestObject
+                             class="FireEmitterDI"
+                             name="rd_prison_armored_wall_initiation.eds::Fire_emitter_01"
+                             pxsl_line="598" />
+                    </Object>
+                    <Object
+                         pxsl_line="599">
+                        <QuestObject
+                             class="FXEmitter"
+                             name="FX_Fire_01"
+                             pxsl_line="599" />
+                    </Object>
+                    <Object
+                         pxsl_line="600">
+                        <QuestObject
+                             class="FXEmitter"
+                             name="FX_Fire_02"
+                             pxsl_line="600" />
+                    </Object>
+                    <Object
+                         pxsl_line="601">
+                        <QuestObject
+                             class="FXEmitter"
+                             name="FX_Fire_03"
+                             pxsl_line="601" />
+                    </Object>
+                    <Object
+                         pxsl_line="602">
+                        <QuestObject
+                             class="FXEmitter"
+                             name="FX_Fire_04"
+                             pxsl_line="602" />
+                    </Object>
+                    <Object
+                         pxsl_line="603">
+                        <QuestObject
+                             class="FXEmitter"
+                             name="FX_Fire_05"
+                             pxsl_line="603" />
+                    </Object>
+                    <Object
+                         pxsl_line="604">
+                        <QuestObject
+                             class="FXEmitter"
+                             name="FX_Fire_06"
+                             pxsl_line="604" />
+                    </Object>
+                    <Object
+                         pxsl_line="605">
+                        <QuestObject
+                             class="FXEmitter"
+                             name="FX_Fire_07"
+                             pxsl_line="605" />
+                    </Object>
+                    <Object
+                         pxsl_line="606">
+                        <QuestObject
+                             class="FXEmitter"
+                             name="FX_Fire_08"
+                             pxsl_line="606" />
+                    </Object>
+                    <Object
+                         pxsl_line="607">
+                        <QuestObject
+                             class="FXEmitter"
+                             name="FX_Fire_09"
+                             pxsl_line="607" />
+                    </Object>
+                    <Object
+                         pxsl_line="608">
+                        <QuestObject
+                             class="FXEmitter"
+                             name="FX_Fire_10"
+                             pxsl_line="608" />
+                    </Object>
+                    <Object
+                         pxsl_line="609">
+                        <QuestObject
+                             class="FXEmitter"
+                             name="FX_Fire_11"
+                             pxsl_line="609" />
+                    </Object>
+                    <Object
+                         pxsl_line="610">
+                        <QuestObject
+                             class="FXEmitter"
+                             name="FX_Fire_12"
+                             pxsl_line="610" />
+                    </Object>
+                    <Object
+                         pxsl_line="611">
+                        <QuestObject
+                             class="FXEmitter"
+                             name="FX_Fire_13"
+                             pxsl_line="611" />
+                    </Object>
+                    <Object
+                         pxsl_line="612">
+                        <QuestObject
+                             class="FXEmitter"
+                             name="FX_Fire_14"
+                             pxsl_line="612" />
+                    </Object>
+                    <Object
+                         pxsl_line="613">
+                        <QuestObject
+                             class="FXEmitter"
+                             name="FX_Fire_15"
+                             pxsl_line="613" />
+                    </Object>
+                    <Object
+                         pxsl_line="614">
+                        <QuestObject
+                             class="FXEmitter"
+                             name="FX_Smoke_Cloud_01"
+                             pxsl_line="614" />
+                    </Object>
+                    <Object
+                         pxsl_line="615">
+                        <QuestObject
+                             class="FXEmitter"
+                             name="FX_Smoke_Cloud_02"
+                             pxsl_line="615" />
+                    </Object>
+                    <Object
+                         pxsl_line="616">
+                        <QuestObject
+                             class="FXEmitter"
+                             name="FX_Smoke_Cloud_03"
+                             pxsl_line="616" />
+                    </Object>
+                    <Object
+                         pxsl_line="617">
+                        <QuestObject
+                             class="FXEmitter"
+                             name="FX_Smoke_Cloud_04"
+                             pxsl_line="617" />
+                    </Object>
+                    <Object
+                         pxsl_line="618">
+                        <QuestObject
+                             class="FXEmitter"
+                             name="FX_Smoke_Cloud_05"
+                             pxsl_line="618" />
+                    </Object>
+                </Phase>
+                <Phase
+                     type="enable"
+                     name="_"
+                     pxsl_line="619">
+                    <Object
+                         pxsl_line="620">
+                        <QuestObject
+                             class="SoundEmitterOnce"
+                             name="Show_Room_Door_Opens_Steam"
+                             pxsl_line="620" />
+                    </Object>
+                    <!-- ,o SoundEmitterOnce Show_Room_Door_Opens_Steam -->
+                    <Object
+                         pxsl_line="622">
+                        <QuestObject
+                             class="FXEmitter"
+                             name="Door_Steam_1"
+                             pxsl_line="622" />
+                    </Object>
+                    <Object
+                         pxsl_line="623">
+                        <QuestObject
+                             class="FXEmitter"
+                             name="Door_Steam_2"
+                             pxsl_line="623" />
+                    </Object>
+                    <Object
+                         pxsl_line="624">
+                        <QuestObject
+                             class="FXEmitter"
+                             name="Door_Steam_3"
+                             pxsl_line="624" />
+                    </Object>
+                    <Object
+                         pxsl_line="625">
+                        <QuestObject
+                             class="FXEmitter"
+                             name="Door_Steam_4"
+                             pxsl_line="625" />
+                    </Object>
+                    <Object
+                         pxsl_line="626">
+                        <QuestObject
+                             class="FXEmitter"
+                             name="FX_Hot_Sparks_1"
+                             pxsl_line="626" />
+                    </Object>
+                    <Object
+                         pxsl_line="627">
+                        <QuestObject
+                             class="FXEmitter"
+                             name="FX_Hot_Sparks_2"
+                             pxsl_line="627" />
+                    </Object>
+                    <Object
+                         pxsl_line="628">
+                        <QuestObject
+                             class="FXEmitter"
+                             name="Show_Room_Steam_Die_Player_01"
+                             pxsl_line="628" />
+                    </Object>
+                    <Object
+                         pxsl_line="629">
+                        <QuestObject
+                             class="FXEmitter"
+                             name="Show_Room_Steam_Die_Player_02"
+                             pxsl_line="629" />
+                    </Object>
+                    <Object
+                         pxsl_line="630">
+                        <QuestObject
+                             class="FXEmitter"
+                             name="Show_Room_Steam_Die_Player_03"
+                             pxsl_line="630" />
+                    </Object>
+                    <Object
+                         pxsl_line="631">
+                        <QuestObject
+                             class="FXEmitter"
+                             name="Show_Room_Steam_Die_Player_04"
+                             pxsl_line="631" />
+                    </Object>
+                    <Object
+                         pxsl_line="632">
+                        <QuestObject
+                             class="FXEmitter"
+                             name="Show_Room_Steam_Die_Player_05"
+                             pxsl_line="632" />
+                    </Object>
+                </Phase>
+                <Phase
+                     type="wait guard"
+                     name="_"
+                     time="0.6"
+                     pxsl_line="633" />
+                <Phase
+                     type="movie"
+                     name="_"
+                     movie="Show_Room_Enter_Cutscene_Opening"
+                     pxsl_line="635" />
+                <!-- ,hide _ DoorDI Exit_Prison_DoorDI_Show_Room_Opening -->
+                <!-- ,show _ DoorDI Exit_Prison_DoorDI_Show_Room_Closing             -->
+                <Phase
+                     type="go to"
+                     name="_"
+                     show_locations="true"
+                     pxsl_line="638">
+                    <Destination
+                         pxsl_line="638">
+                        <QuestObject
+                             class="SensorPrisonRush"
+                             name="Prison_Take_Reward_Sensor_Gather"
+                             pxsl_line="638" />
+                    </Destination>
+                </Phase>
+                <Phase
+                     type="enable"
+                     name="_"
+                     state="disabled"
+                     pxsl_line="639">
+                    <Object
+                         pxsl_line="640">
+                        <QuestObject
+                             class="SoundEmitterOnce"
+                             name="Show_Room_Door_Opens_Steam"
+                             pxsl_line="640" />
+                    </Object>
+                    <Object
+                         pxsl_line="641">
+                        <QuestObject
+                             class="SoundEmitterOnce"
+                             name="SEO_Before_Room_Door_Opens_Steam_1"
+                             pxsl_line="641" />
+                    </Object>
+                    <Object
+                         pxsl_line="642">
+                        <QuestObject
+                             class="SoundEmitterOnce"
+                             name="SEO_Before_Room_Door_Opens_Steam_2"
+                             pxsl_line="642" />
+                    </Object>
+                </Phase>
+                <!-- ,enable _ BarrierObject prison_barrier_02 -->
+                <!-- ,movie _ Show_Room_Enter_Cutscene_Closing -->
+            </Path>
+        </Phase>
+        <Phase
+             type="AND"
+             name="_"
+             objective="&amp;RD_Prison_OBJ_TakeReward_2&amp;"
+             pxsl_line="646">
+            <Path
+                 pxsl_line="646">
+                <Phase
+                     type="OR"
+                     name="_"
+                     pxsl_line="647">
+                    <Path
+                         pxsl_line="648">
+                        <Phase
+                             type="wait guard"
+                             name="_"
+                             time="10"
+                             pxsl_line="649" />
+                        <Phase
+                             type="enable"
+                             name="_"
+                             pxsl_line="650">
+                            <Object
+                                 pxsl_line="651">
+                                <QuestObject
+                                     class="SensorAmbientMusicArea"
+                                     name="SAMA_Music_Gas"
+                                     pxsl_line="651" />
+                            </Object>
+                            <Object
+                                 pxsl_line="652">
+                                <QuestObject
+                                     class="FXEmitter"
+                                     name="Show_Room_Gass_Die_Player_1"
+                                     pxsl_line="652" />
+                            </Object>
+                            <Object
+                                 pxsl_line="653">
+                                <QuestObject
+                                     class="SoundEmitterSimple"
+                                     name="SES_Gas_1"
+                                     pxsl_line="653" />
+                            </Object>
+                            <Object
+                                 pxsl_line="654">
+                                <QuestObject
+                                     class="FXEmitter"
+                                     name="Show_Room_Gass_Die_Player_2"
+                                     pxsl_line="654" />
+                            </Object>
+                            <Object
+                                 pxsl_line="655">
+                                <QuestObject
+                                     class="SoundEmitterSimple"
+                                     name="SES_Gas_2"
+                                     pxsl_line="655" />
+                            </Object>
+                            <Object
+                                 pxsl_line="656">
+                                <QuestObject
+                                     class="FXEmitter"
+                                     name="Show_Room_Gass_Die_Player_3"
+                                     pxsl_line="656" />
+                            </Object>
+                            <Object
+                                 pxsl_line="657">
+                                <QuestObject
+                                     class="SoundEmitterSimple"
+                                     name="SES_Gas_3"
+                                     pxsl_line="657" />
+                            </Object>
+                            <Object
+                                 pxsl_line="658">
+                                <QuestObject
+                                     class="FXEmitter"
+                                     name="Show_Room_Gass_Die_Player_4"
+                                     pxsl_line="658" />
+                            </Object>
+                            <Object
+                                 pxsl_line="659">
+                                <QuestObject
+                                     class="SoundEmitterSimple"
+                                     name="SES_Gas_4"
+                                     pxsl_line="659" />
+                            </Object>
+                            <Object
+                                 pxsl_line="660">
+                                <QuestObject
+                                     class="SoundEmitterSimple"
+                                     name="SES_Gas_5"
+                                     pxsl_line="660" />
+                            </Object>
+                            <Object
+                                 pxsl_line="661">
+                                <QuestObject
+                                     class="SoundEmitterSimple"
+                                     name="SES_Gas_6"
+                                     pxsl_line="661" />
+                            </Object>
+                            <Object
+                                 pxsl_line="662">
+                                <QuestObject
+                                     class="SoundEmitterSimple"
+                                     name="SES_Gas_7"
+                                     pxsl_line="662" />
+                            </Object>
+                            <Object
+                                 pxsl_line="663">
+                                <QuestObject
+                                     class="FXEmitter"
+                                     name="Show_Room_cloud_Die_Player_01"
+                                     pxsl_line="663" />
+                            </Object>
+                            <Object
+                                 pxsl_line="664">
+                                <QuestObject
+                                     class="FXEmitter"
+                                     name="Show_Room_cloud_Die_Player_02"
+                                     pxsl_line="664" />
+                            </Object>
+                            <Object
+                                 pxsl_line="665">
+                                <QuestObject
+                                     class="FXEmitter"
+                                     name="Show_Room_cloud_Die_Player_03"
+                                     pxsl_line="665" />
+                            </Object>
+                        </Phase>
+                    </Path>
+                    <Path
+                         pxsl_line="666">
+                        <Phase
+                             type="gather players guard"
+                             name="_"
+                             show_locations="true"
+                             pxsl_line="667">
+                            <Destination
+                                 pxsl_line="667">
+                                <QuestObject
+                                     class="SensorGoTo"
+                                     name="Prison_Evacuation_Sensor_Gather"
+                                     pxsl_line="667" />
+                            </Destination>
+                        </Phase>
+                    </Path>
+                </Phase>
+                <Phase
+                     type="gather players guard"
+                     name="_"
+                     show_locations="true"
+                     pxsl_line="668">
+                    <Destination
+                         pxsl_line="668">
+                        <QuestObject
+                             class="SensorGoTo"
+                             name="Prison_Evacuation_Sensor_Gather"
+                             pxsl_line="668" />
+                    </Destination>
+                </Phase>
+                <Phase
+                     type="enable"
+                     name="_"
+                     pxsl_line="669">
+                    <Object
+                         pxsl_line="669">
+                        <QuestObject
+                             class="SensorPrisonRush"
+                             name="Prison_Evacuation_Sensor_Evac"
+                             pxsl_line="669" />
+                    </Object>
+                </Phase>
+                <Phase
+                     type="gather players guard"
+                     name="_"
+                     show_locations="false"
+                     pxsl_line="670">
+                    <Destination
+                         pxsl_line="670">
+                        <QuestObject
+                             class="SensorPrisonRush"
+                             name="Prison_Evacuation_Sensor_Evac"
+                             pxsl_line="670" />
+                    </Destination>
+                </Phase>
+                <Phase
+                     type="enable"
+                     name="_"
+                     pxsl_line="671">
+                    <Object
+                         pxsl_line="672">
+                        <QuestObject
+                             class="SoundEmitterOnce"
+                             name="Reward_Room_Door_Closing_Steam"
+                             pxsl_line="672" />
+                    </Object>
+                    <Object
+                         pxsl_line="673">
+                        <QuestObject
+                             class="BarrierObject"
+                             name="prison_barrier_03"
+                             pxsl_line="673" />
+                    </Object>
+                    <Object
+                         pxsl_line="674">
+                        <QuestObject
+                             class="DoorDI"
+                             name="Exit_Prison_DoorDI"
+                             pxsl_line="674" />
+                    </Object>
+                </Phase>
+                <Phase
+                     type="movie"
+                     name="_"
+                     movie="Reward_Room_After_Reward_Cutscene"
+                     pxsl_line="675" />
+                <Phase
+                     type="enable"
+                     name="_"
+                     state="disabled"
+                     pxsl_line="676">
+                    <Object
+                         pxsl_line="677">
+                        <QuestObject
+                             class="SensorAmbientMusicArea"
+                             name="SAMA_Music_Gas"
+                             pxsl_line="677" />
+                    </Object>
+                    <Object
+                         pxsl_line="678">
+                        <QuestObject
+                             class="SensorAmbientMusicArea"
+                             name="SAMA_Music_Revard_Room"
+                             pxsl_line="678" />
+                    </Object>
+                    <Object
+                         pxsl_line="679">
+                        <QuestObject
+                             class="SoundEmitterSimple"
+                             name="SES_Gas_1"
+                             pxsl_line="679" />
+                    </Object>
+                    <Object
+                         pxsl_line="680">
+                        <QuestObject
+                             class="SoundEmitterSimple"
+                             name="SES_Gas_2"
+                             pxsl_line="680" />
+                    </Object>
+                    <Object
+                         pxsl_line="681">
+                        <QuestObject
+                             class="SoundEmitterSimple"
+                             name="SES_Gas_3"
+                             pxsl_line="681" />
+                    </Object>
+                    <Object
+                         pxsl_line="682">
+                        <QuestObject
+                             class="SoundEmitterSimple"
+                             name="SES_Gas_4"
+                             pxsl_line="682" />
+                    </Object>
+                    <Object
+                         pxsl_line="683">
+                        <QuestObject
+                             class="SoundEmitterSimple"
+                             name="SES_Gas_5"
+                             pxsl_line="683" />
+                    </Object>
+                    <Object
+                         pxsl_line="684">
+                        <QuestObject
+                             class="SoundEmitterSimple"
+                             name="SES_Gas_6"
+                             pxsl_line="684" />
+                    </Object>
+                    <Object
+                         pxsl_line="685">
+                        <QuestObject
+                             class="SoundEmitterSimple"
+                             name="SES_Gas_7"
+                             pxsl_line="685" />
+                    </Object>
+                    <Object
+                         pxsl_line="686">
+                        <QuestObject
+                             class="SoundEmitterSimple"
+                             name="SES_steam_1"
+                             pxsl_line="686" />
+                    </Object>
+                    <Object
+                         pxsl_line="687">
+                        <QuestObject
+                             class="SoundEmitterSimple"
+                             name="SES_steam_2"
+                             pxsl_line="687" />
+                    </Object>
+                    <Object
+                         pxsl_line="688">
+                        <QuestObject
+                             class="SoundEmitterSimple"
+                             name="SES_steam_3"
+                             pxsl_line="688" />
+                    </Object>
+                    <Object
+                         pxsl_line="689">
+                        <QuestObject
+                             class="SoundEmitterSimple"
+                             name="SES_steam_4"
+                             pxsl_line="689" />
+                    </Object>
+                    <Object
+                         pxsl_line="690">
+                        <QuestObject
+                             class="SoundEmitterSimple"
+                             name="SES_steam_5"
+                             pxsl_line="690" />
+                    </Object>
+                </Phase>
+                <Phase
+                     type="enable"
+                     name="_"
+                     pxsl_line="693">
+                    <Object
+                         pxsl_line="693">
+                        <QuestObject
+                             class="SensorAmbientMusicArea"
+                             name="SAMA_Prison_Time_Run_2"
+                             pxsl_line="693" />
+                    </Object>
+                </Phase>
+            </Path>
+        </Phase>
+        <Phase
+             type="AND"
+             name="_"
+             objective="&amp;RD_Prison_OBJ_LeaveArea&amp;"
+             pxsl_line="696">
+            <Path
+                 pxsl_line="696">
+                <Phase
+                     type="use"
+                     name="_"
+                     show_locations="true"
+                     pxsl_line="697">
+                    <Trigger
+                         pxsl_line="697">
+                        <QuestObject
+                             class="DoorDI"
+                             name="Exit_Prison_DoorDI"
+                             pxsl_line="697" />
+                    </Trigger>
+                </Phase>
+                <Phase
+                     type="enable"
+                     name="_"
+                     state="disabled"
+                     pxsl_line="698">
+                    <Object
+                         pxsl_line="699">
+                        <QuestObject
+                             class="SpawnPoint"
+                             name="Exit_Prison_After_Boss"
+                             pxsl_line="699" />
+                    </Object>
+                    <!-- ,o SoundEmitterOnce Show_Room_Door_Opens_Steam -->
+                    <Object
+                         pxsl_line="701">
+                        <QuestObject
+                             class="FXEmitter"
+                             name="Door_Steam_1"
+                             pxsl_line="701" />
+                    </Object>
+                    <Object
+                         pxsl_line="702">
+                        <QuestObject
+                             class="FXEmitter"
+                             name="Door_Steam_2"
+                             pxsl_line="702" />
+                    </Object>
+                    <Object
+                         pxsl_line="703">
+                        <QuestObject
+                             class="FXEmitter"
+                             name="Door_Steam_3"
+                             pxsl_line="703" />
+                    </Object>
+                    <Object
+                         pxsl_line="704">
+                        <QuestObject
+                             class="FXEmitter"
+                             name="Door_Steam_4"
+                             pxsl_line="704" />
+                    </Object>
+                    <Object
+                         pxsl_line="705">
+                        <QuestObject
+                             class="FXEmitter"
+                             name="FX_Hot_Sparks_1"
+                             pxsl_line="705" />
+                    </Object>
+                    <Object
+                         pxsl_line="706">
+                        <QuestObject
+                             class="FXEmitter"
+                             name="Show_Room_Steam_Die_Player_01"
+                             pxsl_line="706" />
+                    </Object>
+                    <Object
+                         pxsl_line="707">
+                        <QuestObject
+                             class="FXEmitter"
+                             name="Show_Room_Steam_Die_Player_02"
+                             pxsl_line="707" />
+                    </Object>
+                    <Object
+                         pxsl_line="708">
+                        <QuestObject
+                             class="FXEmitter"
+                             name="Show_Room_Steam_Die_Player_03"
+                             pxsl_line="708" />
+                    </Object>
+                    <Object
+                         pxsl_line="709">
+                        <QuestObject
+                             class="FXEmitter"
+                             name="Show_Room_Steam_Die_Player_04"
+                             pxsl_line="709" />
+                    </Object>
+                    <Object
+                         pxsl_line="710">
+                        <QuestObject
+                             class="FXEmitter"
+                             name="Show_Room_Steam_Die_Player_05"
+                             pxsl_line="710" />
+                    </Object>
+                    <Object
+                         pxsl_line="711">
+                        <QuestObject
+                             class="FXEmitter"
+                             name="Show_Room_cloud_Die_Player_01"
+                             pxsl_line="711" />
+                    </Object>
+                    <Object
+                         pxsl_line="712">
+                        <QuestObject
+                             class="FXEmitter"
+                             name="Show_Room_cloud_Die_Player_02"
+                             pxsl_line="712" />
+                    </Object>
+                    <Object
+                         pxsl_line="713">
+                        <QuestObject
+                             class="FXEmitter"
+                             name="Show_Room_cloud_Die_Player_03"
+                             pxsl_line="713" />
+                    </Object>
+                </Phase>
+                <Phase
+                     type="session param"
+                     name="_"
+                     param="BtZDisable"
+                     value="false"
+                     pxsl_line="716" />
+            </Path>
+        </Phase>
+    </Quest>
+    <Quest
+         name="DLC39_RD_Prison_End"
+         parent="RD_Prison_Start"
+         final="true"
+         glued="true"
+         pxsl_line="717">
+        <Phase
+             type="AND"
+             name="_"
+             objective="&amp;RD_Prison_OBJ_GetBackToSlums&amp;"
+             pxsl_line="718">
+            <Path
+                 pxsl_line="718">
+                <Phase
+                     type="enable auto challenges"
+                     name="_"
+                     enable="true"
+                     pxsl_line="719" />
+                <Phase
+                     type="block quest tracking"
+                     name="_"
+                     block="false"
+                     pxsl_line="720" />
+                <Phase
+                     type="player control"
+                     name="_"
+                     block_night_aggro="false"
+                     pxsl_line="721" />
+                <Phase
+                     type="player control"
+                     name="_"
+                     block_night_reminder_sounds="false"
+                     pxsl_line="722" />
+                <Phase
+                     type="player control"
+                     name="_"
+                     disable_noise_aggro="false"
+                     pxsl_line="723" />
+                <Phase
+                     type="semaphore"
+                     name="_"
+                     pxsl_line="724" />
+            </Path>
+        </Phase>
+    </Quest>
+</QuestsDefinitions>

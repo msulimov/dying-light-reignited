@@ -1,0 +1,199 @@
+///////////////////////////////////////////////////////////////////////////////////////////////////
+// Fizyka Ragdoll dla czlowieka
+///////////////////////////////////////////////////////////////////////////////////////////////////
+
+!include("ODEPhysicsRagdoll.phx")
+
+///////////////////////////////////////////////////////////////////////////////////////////////////
+PhysicsParams()
+{
+    QuickStepNumIterations(15)
+    QuickStepSortingMethod(0)
+    
+    CollisionDamageToMeMul(0, 0)
+    AllowContinuousCollisions(1, 0)
+    SetWaterFloat(32.0)
+
+    SetAbsorbers(0.8, 0.5)
+    SetMaxVels(50, 100)
+    
+    MaxLifeTime(16)
+
+    SetVelsGate(0, 0)
+    
+    PreciseCC(1)
+    
+    SetExtraGravity(0, -1, 0)
+}
+
+///////////////////////////////////////////////////////////////////////////////////////////////////
+RagdollParams()
+{
+    Mass(90)
+    
+    ApplyForceMod(1)
+    ApplyForceAddUp(0)
+
+    BehaviorSet("RagdollBehaviors.phx")
+    
+    BlendingOfNonPhysicalBonesTime(0.5)
+    NPBoneSynchroExclusionPropagate("head")
+}
+
+///////////////////////////////////////////////////////////////////////////////////////////////////
+Bones()
+{
+    // define physical bones and collision helpers (collision geom with no rigid body)
+    UseBoneScale("bip01 pelvis",      "sphere",   3, 0.8)
+    UseBoneScale("bip01 spine1",      "sphere",   3, 0.8)
+    UseBoneScale("bip01 spine3",      "sphere",   3, 0.8)
+    UseBone     ("bip01 head",        "sphere",   2)
+    UseBone     ("bip01 L Upperarm",  "capsule",  3)
+    UseBone     ("bip01 R Upperarm",  "capsule",  3)
+    UseBone     ("bip01 L Forearm",   "capsule",  2)
+    UseBone     ("bip01 R Forearm",   "capsule",  2)
+    UseBoneScale("bip01 L Hand",      "sphere",   1, 0.8)
+    UseBoneScale("bip01 R Hand",      "sphere",   1, 0.8)
+    UseBoneScale("bip01 L Thigh",     "capsule",  3, 0.8)
+    UseBoneScale("bip01 R Thigh",     "capsule",  3, 0.8)
+    UseBoneScale("bip01 L Calf",      "capsule",  2, 0.6)
+    UseBoneScale("bip01 R Calf",      "capsule",  2, 0.6)
+   
+    CollisionHelper("bip01 L Foot",   "bip01 L Calf",   1.4)
+    CollisionHelper("bip01 R Foot",   "bip01 R Calf",   1.4)
+    CollisionHelper("bip01 spine",    "bip01 spine1",   1)
+	
+    // synchro non physical bones
+    RootSynchro("bip01", "bip01 pelvis")
+
+    BoneSynchro("bip01 pelvis", "bip01 spine")
+    BoneSynchro("bip01 spine1", "bip01 spine2")
+    BoneSynchro("bip01 spine3", "bip01 neck1")
+
+    // exclude some collisions
+    NoCollidedPair("bip01 L Thigh",  "bip01 spine1")
+    NoCollidedPair("bip01 R Thigh",  "bip01 spine1")
+    NoCollidedPair("bip01 L Thigh",  "bip01 R Thigh")
+
+    // define floating on the water parameter for some geoms
+    FloatingGeom("bip01 head", 0.2)
+    FloatingGeom("bip01 L Upperarm", 1.3)
+    FloatingGeom("bip01 R Upperarm", 1.3)
+    FloatingGeom("bip01 L Forearm", 1.2)
+    FloatingGeom("bip01 R Forearm", 1.2)
+    
+    FloatingGeom("bip01 pelvis", 0)
+    FloatingGeom("bip01 spine", 0.8)
+    FloatingGeom("bip01 spine1", 0.8)
+    FloatingGeom("bip01 spine3", 1.2)
+    
+    FloatingGeom("bip01 L Thigh", 0.9)
+    FloatingGeom("bip01 R Thigh", 0.9)
+    FloatingGeom("bip01 L Calf", 0.7)
+    FloatingGeom("bip01 R Calf", 0.7)
+    FloatingGeom("bip01 L Foot", 0)
+    FloatingGeom("bip01 R Foot", 0)
+    
+    GeomFrictionMul("bip01 L Forearm", 0.02)
+    GeomFrictionMul("bip01 R Forearm", 0.02)
+    GeomFrictionMul("bip01 L Hand", 0.02)
+    GeomFrictionMul("bip01 R Hand", 0.02)
+    GeomFrictionMul("bip01 L Calf", 0.08)
+    GeomFrictionMul("bip01 R Calf", 0.08)
+    GeomFrictionMul("bip01 L Foot", 0.06)
+    GeomFrictionMul("bip01 R Foot", 0.06)
+}
+
+///////////////////////////////////////////////////////////////////////////////////////////////////
+Joints()
+{
+    // definicja jointow
+    DefineJoint("bip01 pelvis",     "bip01 spine1",       "ball",  0,  1,  0,    0,  0,  1)
+    DefineJoint("bip01 spine1",     "bip01 spine3",       "ball",  0,  1,  0,    0,  0,  1)
+    DefineJoint("bip01 spine3",     "bip01 head",         "ball",  0,  1,  0,    1,  0,  0)
+    DefineJoint("bip01 pelvis",     "bip01 L Thigh",      "ball",  0,  1,  0,    0,  0,  1)
+    DefineJoint("bip01 pelvis",     "bip01 R Thigh",      "ball",  0,  1,  0,    0,  0,  1)
+    DefineJoint("bip01 L Thigh",    "bip01 L Calf",       "hinge", 0,  1,  0,    0,  0,  0)
+    DefineJoint("bip01 R Thigh",    "bip01 R Calf",       "hinge", 0,  1,  0,    0,  0,  0)
+    DefineJoint("bip01 spine3",     "bip01 L Upperarm",   "ball",  0,  0,  1,    0,  1,  0)
+    DefineJoint("bip01 spine3",     "bip01 R Upperarm",   "ball",  0,  0, -1,    0,  1,  0)
+    DefineJoint("bip01 L Upperarm", "bip01 L Forearm",    "ball",  0,  1,  0,    1,  0,  0)
+    DefineJoint("bip01 R Upperarm", "bip01 R Forearm",    "ball",  0,  1,  0,    1,  0,  0)
+    DefineJoint("bip01 L Forearm",  "bip01 L Hand",       "hinge", 0,  1,  0,    0,  0,  0)
+    DefineJoint("bip01 R Forearm",  "bip01 R Hand",       "hinge", 0,  1,  0,    0,  0,  0)
+
+    // parametry stopu
+    Set3DOFStops("bip01 pelvis bip01 spine1",        -0.10, 0.05,   -0.05, 0.05,   -0.05, 0.05,  0, 0, 0)
+    Set3DOFStops("bip01 spine1 bip01 spine3",        -0.10, 0.10,   -0.10, 0.10,   -0.10, 0.10,  0, 0, 0)
+    Set3DOFStops("bip01 spine3 bip01 head",          -0.10, 0.10,   -0.10, 0.10,   -0.20, 0.20,  0, 0, 0)
+    Set3DOFStops("bip01 pelvis bip01 L Thigh",       -0.05, 0.30,   -0.05, 0.05,   -0.02, 0.04,  0, 0, 0)
+    Set3DOFStops("bip01 pelvis bip01 R Thigh",       -0.05, 0.30,   -0.05, 0.05,   -0.02, 0.04,  0, 0, 0)
+    Set1DOFStops("bip01 L Thigh bip01 L Calf",       -0.05, 0.48,  0)
+    Set1DOFStops("bip01 R Thigh bip01 R Calf",       -0.05, 0.48,  0)
+
+    Set3DOFStops("bip01 spine3 bip01 L Upperarm",    -0.10, 0.30,   -0.30, 0.10,   -0.10, 0.20,  0, 0, 0)
+    Set3DOFStops("bip01 spine3 bip01 R Upperarm",    -0.10, 0.30,   -0.30, 0.10,   -0.10, 0.20,  0, 0, 0)
+
+    Set3DOFStops("bip01 L Upperarm bip01 L Forearm", -0.10, 0.30,   -0.05, 0.40,   -0.00, 0.30,  0, 0, 0)
+    Set3DOFStops("bip01 R Upperarm bip01 R Forearm", -0.10, 0.30,   -0.40, 0.05,   -0.30, 0.00,  0, 0, 0)
+    Set1DOFStops("bip01 L Forearm bip01 L Hand",     -0.20, 0.20,  0)
+    Set1DOFStops("bip01 R Forearm bip01 R Hand",     -0.20, 0.20,  0)
+
+	// tendons
+    Tendon("bip01 pelvis bip01 L Thigh", 0, "bip01 L Thigh bip01 L Calf", 0, 0.05, 0.30, 0, -0.05, 0.40)
+    Tendon("bip01 pelvis bip01 R Thigh", 0, "bip01 R Thigh bip01 R Calf", 0, 0.05, 0.30, 0, -0.05, 0.40)
+
+    //?? Tendon("spine3 L Upperarm", 0, "L Upperarm L Forearm", 1, 0.00, 0.30, 0, -0.05, 0.20)
+    //?? Tendon("spine3 R Upperarm", 0, "R Upperarm R Forearm", 1, 0.00, 0.30, 1, 0.05, -0.20)
+	
+    // sily tarcia stawow
+    SetFrictionRandomFactors(0.3, 1.4)
+    SetFrictionForceAll(4)
+    SetFrictionForce("bip01 L Thigh bip01 L Calf", 1)
+    SetFrictionForce("bip01 R Thigh bip01 R Calf", 1)
+    SetFrictionForce("bip01 L Upperarm bip01 L Forearm", 1)
+    SetFrictionForce("bip01 R Upperarm bip01 R Forearm", 1)
+    SetFrictionForce("bip01 L Forearm bip01 L Hand", 1)
+    SetFrictionForce("bip01 R Forearm bip01 R Hand", 1)
+    SetFrictionForce("bip01 spine3 bip01 head", 1)
+    
+    SetFrictionForceAll(0.1)
+    
+    // wspolczynniki dopuszczalnych bledow stopow
+    SetStopERPAll(0.8)
+
+    // wspolczynniki sprezystosci jointow po osiagnieciu stopow
+    SetStopCFMAll(0.12)
+    
+    // wspolczynniki sprezystosci jointow
+    SetCFMAll(0)
+
+    // wspolczynniki tlumienia sily oddalajacej od stopu (1 - brak tlumienia, 0.5 - sila zmniejszona dwukrotnie)
+    SetFudgeFactorAll(0)
+}
+
+///////////////////////////////////////////////////////////////////////////////////////////////////
+RagdollUnconditionedReflexes()
+{
+    // draw in legs
+    Rur(RUR_TORQUE_REFLEX, "bip01 L Thigh", "bip01 spine1", -1, RUR_DIR_LOCAL_A, [0, 1, 0], RUR_SPEED_STEERING_LINVEL, 0.4, 3, 10, [0, 0, 0])
+    Rur(RUR_TORQUE_REFLEX, "bip01 R Thigh", "bip01 spine1", -1, RUR_DIR_LOCAL_A, [0, 1, 0], RUR_SPEED_STEERING_LINVEL, 0.3, 3, 10, [0, 0, 0])
+    Rur(RUR_TORQUE_REFLEX, "bip01 L Calf", "bip01 L Thigh", -1, RUR_DIR_LOCAL_A, [0, -1, 0], RUR_SPEED_STEERING_LINVEL, 0.3, 3, 10, [0, 0, 0])
+    Rur(RUR_TORQUE_REFLEX, "bip01 R Calf", "bip01 R Thigh", -1, RUR_DIR_LOCAL_A, [0, -1, 0], RUR_SPEED_STEERING_LINVEL, 0.4, 3, 10, [0, 0, 0])
+
+    // balancing hands when up speed
+    Rur(RUR_FORCE_REFLEX, "bip01 L Hand", "bip01 spine1", -1, RUR_DIR_A_TO_B, [0, 0, 0], RUR_SPEED_STEERING_VERTVEL, -30, 3, 10, [0, 0, 0])
+    Rur(RUR_FORCE_REFLEX, "bip01 R Hand", "bip01 spine1", -1, RUR_DIR_A_TO_B, [0, 0, 0], RUR_SPEED_STEERING_VERTVEL, -30, 3, 10, [0, 0, 0])
+
+    // fall secured by hands
+    Rur(RUR_FORCE_REFLEX, "bip01 L Hand", "bip01 spine1", -1, RUR_DIR_WORLD, [0, -1, 0], RUR_SPEED_STEERING_VERTVEL, -20, -1, -10, [0, 0, 0])
+    Rur(RUR_FORCE_REFLEX, "bip01 R Hand", "bip01 spine1", -1, RUR_DIR_WORLD, [0, -1, 0], RUR_SPEED_STEERING_VERTVEL, -20, -1, -10, [0, 0, 0])
+    
+    // head secured by hands, head hounched
+    Rur(RUR_FORCE_REFLEX, "bip01 L Hand", "bip01 head", -1, RUR_DIR_A_TO_B, [0, 0, 0], RUR_SPEED_STEERING_LINVEL, 16, 1, 5, [0, 0, 0])
+    Rur(RUR_FORCE_REFLEX, "bip01 R Hand", "bip01 head", -1, RUR_DIR_A_TO_B, [0, 0, 0], RUR_SPEED_STEERING_LINVEL, 16, 1, 5, [0, 0, 0])
+    Rur(RUR_TORQUE_REFLEX, "bip01 head", "", 0, RUR_DIR_LOCAL_A, [0, 1, 0], RUR_SPEED_STEERING_LINVEL, 2, 1, 5, [0, 0, 0])
+    
+    // random body twist
+    Rur(RUR_TORQUE_REFLEX, "bip01 spine1", "", 0, RUR_DIR_RANDOM, [1, 1, 1], RUR_SPEED_STEERING_LINVEL, 1, 2, 10, [0, 0, 0])
+}

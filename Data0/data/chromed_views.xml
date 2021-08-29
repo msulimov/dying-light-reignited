@@ -1,0 +1,8 @@
+<documents>
+	<document path="data/maps/old_town/old_town.map">
+		<docksite id="0000000000000000" data="">
+			<view name="old_town" location="-1" float_rc="0;0;0;0" data="41;1.000000;0.999578;0.000000;0.029048;0.005713;0.980466;-0.196607;-0.028480;0.196690;0.980052;38.530956;37.954060;-36.823536;0.100000;500.000000;"/>
+		</docksite>
+	</document>
+</documents>
+

@@ -1,0 +1,23 @@
+import "inventorystuff.scr"
+
+sub customItems(){
+
+	Item("Craft_TruckBattery", CategoryType_CraftComponent)
+    {
+		Name("&Truck_Battery_N&");
+        Description('&Truck_Battery_D&');
+        ItemType(ItemType_CraftComponent);
+        Visibility(true);
+        Price(878);
+        HudIcon("component_electronic");
+        Mesh("truck_battery_a.msh");
+        Skin("default");
+        MaxStackCount(999999);
+        PhysicsScript("single_dropped_inventory.phx");
+        Color(Color_Orange);
+        GenType(GenType_None);
+    }
+
+	
+
+}

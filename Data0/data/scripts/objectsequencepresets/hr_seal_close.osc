@@ -1,0 +1,109 @@
+ sub hr_seal_close()
+{
+Preset("hr_seal_close")
+
+// 0 - SES Pulse
+// 1 - SES Just Taken
+// 2 - Ambient Ritual
+// 3 - EQ
+// 4 - 
+// 5 - LO Ambient Top
+// 6 - LO Moving 1
+// 7 - LO Moving 2
+// 8 - FX Taken
+// 9 - FX Beam
+// 10 - SES Rumble
+// 11 - MO Shafts
+
+    {
+		OnLevelStart()
+	    {
+        EnableSoundEmitter(0, false);
+		EnableSoundEmitter(1, false);
+		Enable(2, false);
+		Enable(3, false);
+		
+		SetLightIntensity(5, 0.0, 0.0);
+		SetLightIntensity(6, 0.0, 0.0);
+		SetLightIntensity(7, 0.0, 0.0);
+		EnableFX(8, false);
+		EnableFX(9, false);
+		EnableSoundEmitter(10, false);
+		
+		SetScale(11, 0.0, [0.01, 0.01, 0.01]);
+   		}
+		
+		OnEnable()
+	    {
+        EnableSoundEmitter(0, true);
+		EnableSoundEmitter(1, false);
+		Enable(2, true);
+		Enable(3, false);
+		
+		SetLightIntensity(5, 0.1, 0.8);
+		SetLightIntensity(6, 0.1, 2.0);
+		SetLightIntensity(7, 0.1, 2.0);
+		EnableFX(8, false);
+		EnableFX(9, true);
+		EnableSoundEmitter(10, false);
+		
+		SetScale(11, 0.0, [1.0, 1.0, 1.0]);
+   		}
+		
+		OnDisable()
+		{
+        EnableSoundEmitter(0, false);
+		EnableSoundEmitter(1, false);
+		Enable(2, false);
+		Enable(3, false);
+		
+		SetLightIntensity(5, 0.0, 0.0);
+		SetLightIntensity(6, 0.0, 0.0);
+		SetLightIntensity(7, 0.0, 0.0);
+		EnableFX(8, false);
+		EnableFX(9, false);
+		EnableSoundEmitter(10, false);
+		
+		SetScale(11, 0.0, [0.01, 0.01, 0.01]);
+		}
+		
+		// Group, Time, Value
+		
+        TimedEvent(0.0)
+        {
+		Enable(3, true);
+		EnableSoundEmitter(10, true);
+		
+		SetScale(11, 3.5, [0.01, 0.01, 0.01]);
+     	}
+        TimedEvent(2.0)
+        {
+		EnableSoundEmitter(0, false);
+		EnableSoundEmitter(1, true);
+		Enable(2, false);
+		EnableFX(8, true);
+
+		SetLightIntensity(5, 6.0, 0.0);
+		SetLightIntensity(6, 6.0, 0.0);
+		SetLightIntensity(7, 6.0, 0.0);
+     	}
+		TimedEvent(3.5)
+		{
+		EnableFX(9, false);
+		}
+        TimedEvent(6.0)
+        {
+		EnableSoundEmitter(1, false);
+     	}
+		TimedEvent(7.0)
+        {
+		Enable(3, false);
+     	}
+		TimedEvent(8.0)
+        {
+		EnableSoundEmitter(10, false);
+		Enable(2, false);
+     	}		
+		
+    }
+}

@@ -1,0 +1,77 @@
+//VOLKAN COMBAT BUNDLE (prev. SPACE COMMANDO)
+
+import "inventorystuff.scr" 
+sub main() 
+{		
+	Item("Craftplan_Melee_Sword_Space_Commando", CategoryType_Collectable)
+    {
+        Name("&Craftplan_Melee_Sword_Space_Commando_N&");
+        Description('&Craftplan_Melee_Sword_Space_Commando_D&');
+        ItemType(ItemType_CraftPlan);
+        Price(6400);
+        Mesh("blueprint.msh");
+        Skin("default");
+        BaseItem("Melee_ShortSword", "", "");
+        BaseItem("Melee_LongSword", "", "");
+        BaseItem("Melee_Khopesh", "", "");
+        BaseItem("Melee_Machete", "", "");
+        BaseItem("Melee_Handsaw", "", "");
+        BaseItem("Melee_Scythe", "", "");
+        RequiredItem("Craft_MetalScrap", 2);
+        RequiredItem("Craft_Bleach", 2);
+        RequiredItem("Craft_Electronics", 1);
+        Color(Color_Blue);
+        CraftedItem("Melee_Sword_Space_Commando", 1, 1);
+        CraftplanType("WeaponDLC");
+        UniqueSaveID(9691);
+        HudIcon("blueprint_b");
+        GameVersion(33);
+        InheritBaseStats();
+        OwnedAtStart();
+    }
+	
+	Item("Craftplan_Firearm_Pistol_Space_Commando", CategoryType_Collectable)
+    {
+        Name("&Craftplan_Firearm_Pistol_Space_Commando_N&");
+        Description('&Craftplan_Firearm_Pistol_Space_Commando_D&');
+        ItemType(ItemType_CraftPlan);
+        Price(1000);
+        Mesh("blueprint.msh");
+        Skin("default");
+		BaseItem("Firearm_Pistol", "", "");
+        RequiredItem("Craft_MetalScrap", 4);
+		RequiredItem("Craft_Batteries", 1);
+		RequiredItem("Craft_PowerCable", 1);
+		InheritBaseStats();
+        Color(Color_Blue);
+        CraftedItem("Firearm_Pistol_Space_Commando", 1, 1);
+        CraftplanType("WeaponDLC");
+        UniqueSaveID(9692);
+		OwnedAtStart();
+        HudIcon("blueprint_b");
+		GameVersion(33);
+    }
+	
+	Item("Craftplan_Firearm_Rifle_Space_Commando", CategoryType_Collectable)
+    {
+        Name("&Craftplan_Firearm_Rifle_Space_Commando_N&");
+        Description("&Craftplan_Firearm_Rifle_Space_Commando_D&");
+        ItemType(ItemType_CraftPlan);
+        Price(1000);
+        Mesh("blueprint.msh");
+        Skin("default");
+        BaseItem("Firearm_Rifle", "", "");
+		RequiredItem("Craft_MetalScrap", 4);
+		RequiredItem("Craft_Batteries", 1);
+		RequiredItem("Craft_PlasticTube", 1);
+		RequiredItem("Craft_PowerCable", 2);
+        Color(Color_Blue);
+        CraftedItem("Firearm_Rifle_Space_Commando", 1, 1);
+        CraftplanType("WeaponDLC");
+		InheritBaseStats();
+        UniqueSaveID(9693);
+		OwnedAtStart();
+        HudIcon("blueprint_b");
+		GameVersion(33);	
+    }	
+}

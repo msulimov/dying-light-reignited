@@ -1,0 +1,92 @@
+ sub hr_lamp_d()
+{
+Preset("hr_lamp_d")
+
+// 0 - Light Omni Floor Amb 0.79
+// 1 - Light Omni Amb       0.45
+// 2 - Light Omni Proj      1.60
+// 3 - FX Pulse
+    {
+		OnLevelStart()
+	    {
+        SetLightIntensity(0, 0.0, 0.0);
+		SetLightIntensity(1, 0.0, 0.0);
+		SetLightIntensity(2, 0.0, 0.0);
+		EnableFX(3, false);
+   		}
+		
+		OnEnable()
+	    {
+        SetLightIntensity(0, 0.0, 0.79);
+		SetLightIntensity(1, 0.0, 0.45);
+		SetLightIntensity(2, 0.0, 1.60);
+		EnableFX(3, true);
+   		}
+		
+		OnDisable()
+		{
+        SetLightIntensity(0, 0.0, 0.0);
+		SetLightIntensity(1, 0.0, 0.0);
+		SetLightIntensity(2, 0.0, 0.0);
+		EnableFX(3, false);
+		}
+		
+		// Group, Time, Value
+        
+		TimedEvent(0.0)
+        {
+        SetLightIntensity(0, 0.14, 0.89);
+		SetLightIntensity(1, 0.14, 0.55);
+		SetLightIntensity(2, 0.14, 1.70);
+		MoveTo(3, 0.07, [0.0, 0.03, 0.06]);
+     	}
+        
+		TimedEvent(0.07)
+        {
+		MoveTo(3, 0.07, [0.0, 0.0, 0.00]);
+		}
+        
+		TimedEvent(0.15)
+        {
+        SetLightIntensity(0, 0.14, 0.79);
+		SetLightIntensity(1, 0.14, 0.45);
+		SetLightIntensity(2, 0.14, 1.60);
+		MoveTo(3, 0.07, [0.0, -0.04, -0.07]);
+        }
+        
+		TimedEvent(0.22)
+        {
+		MoveTo(3, 0.07, [0.0, 0.0, 0.00]);
+		}
+		
+		TimedEvent(0.30)
+        {
+        SetLightIntensity(0, 0.14, 0.73);
+		SetLightIntensity(1, 0.14, 0.39);
+		SetLightIntensity(2, 0.14, 1.54);
+		MoveTo(0, 0.14, [0.0, 0.03, 0.05]);
+     	}
+        
+		TimedEvent(0.37)
+        {
+		MoveTo(3, 0.07, [0.0, -0.01, -0.02]);
+		}
+        
+		TimedEvent(0.45)
+        {
+        SetLightIntensity(0, 0.14, 0.79);
+		SetLightIntensity(1, 0.14, 0.45);
+		SetLightIntensity(2, 0.14, 1.60);
+		MoveTo(0, 0.14, [0.0, 0.0, -0.07]);
+     	}
+        
+		TimedEvent(0.52)
+        {
+		MoveTo(3, 0.07, [0.0, 0.0, -0.01]);
+		}
+		
+		GoToBegin(0.60)
+		{
+		}
+    }
+}

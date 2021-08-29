@@ -1,0 +1,152 @@
+//VIKING BUNDLE
+
+import "inventorystuff.scr" 
+sub main() 
+{	
+	Item("Craftplan_Melee_AxeBig_Viking", CategoryType_Collectable)
+    {
+        Name("&Craftplan_Melee_AxeBig_Viking_N&");
+        Description("&Craftplan_Melee_AxeBig_Viking_D&");
+        ItemType(ItemType_CraftPlan);
+        Price(1000);
+        Mesh("blueprint.msh");
+        Skin("default");
+        BaseItem("Melee_BigHammer", "", "");
+        BaseItem("Melee_AxeBig", "", "");
+        BaseItem("Melee_Pickaxe", "", "");
+        RequiredItem("Craft_MetalScrap", 2);
+        RequiredItem("Craft_Bleach", 2);
+        Color(Color_Blue);
+        CraftedItem("Melee_AxeBig_Viking", 1, 1);
+        CraftplanType("WeaponDLC");
+        UniqueSaveID(9924); 
+        HudIcon("blueprint_b");
+        GameVersion(36);
+        InheritBaseStats();
+        OwnedAtStart();
+    }
+	
+	Item("Craftplan_Melee_AxeBig_Viking_Fire", CategoryType_Collectable)
+    {
+        Name("&Craftplan_Melee_AxeBig_Viking_Fire_N&");
+        Description("&Craftplan_Melee_AxeBig_Viking_Fire_D&");
+        ItemType(ItemType_CraftPlan);
+        Price(1000);
+        Mesh("blueprint.msh");
+        Skin("default");
+        BaseItem("Melee_BigHammer", "", "");
+        BaseItem("Melee_AxeBig", "", "");
+        BaseItem("Melee_Pickaxe", "", "");
+        RequiredItem("Craft_MetalScrap", 3);
+        RequiredItem("Craft_Bleach", 2);
+        RequiredItem("Craft_Insecticide", 2);
+		RequiredItem("Craft_ToxicPlant", 1);
+        Elemental(Elemental_Burning, 3);
+        Color(Color_Orange);
+        CraftedItem("Burning_AxeBig_Viking", 1, 1);
+        CraftplanType("WeaponDLC");
+        UniqueSaveID(9925);
+        HudIcon("blueprint_b");
+        GameVersion(36);
+        InheritBaseStats();
+        OwnedAtStart();
+    }
+	
+	Item("Craftplan_Melee_ShortSword_Viking", CategoryType_Collectable)
+    {
+        Name("&Craftplan_Melee_ShortSword_Viking_N&");
+        Description("&Craftplan_Melee_ShortSword_Viking_D&");
+        ItemType(ItemType_CraftPlan);
+        Price(1000);
+        Mesh("blueprint.msh");
+        Skin("default");
+		BaseItem("Melee_Machete", "", "");
+		BaseItem("Melee_TahirsWeapon", "", "");
+        BaseItem("Melee_RaisMachete", "", "");
+		BaseItem("Melee_Knife", "", "");
+		BaseItem("Melee_ShortSword", "", "");
+        RequiredItem("Craft_MetalScrap", 3);
+		RequiredItem("Craft_String", 2);
+		RequiredItem("Craft_Bleach", 2);
+		InheritBaseStats();
+        Color(Color_Blue);
+        CraftedItem("Melee_ShortSword_Viking", 1, 1);
+        CraftplanType("WeaponDLC");
+        UniqueSaveID(9926); 
+		OwnedAtStart();
+        HudIcon("blueprint_b");
+		GameVersion(36);
+    }
+	
+	Item("Craftplan_Melee_ShortSword_Viking_Fire", CategoryType_Collectable)
+    {
+        Name("&Craftplan_Melee_ShortSword_Viking_Fire_N&");
+        Description("&Craftplan_Melee_ShortSword_Viking_Fire_D&");
+        ItemType(ItemType_CraftPlan);
+        Price(1000);
+        Mesh("blueprint.msh");
+        Skin("default");
+		BaseItem("Melee_Machete", "", "");
+		BaseItem("Melee_TahirsWeapon", "", "");
+        BaseItem("Melee_RaisMachete", "", "");
+		BaseItem("Melee_Knife", "", "");
+		BaseItem("Melee_ShortSword", "", "");
+        RequiredItem("Craft_MetalScrap", 3);
+		RequiredItem("Craft_String", 2);
+		RequiredItem("Craft_Bleach", 2);
+		RequiredItem("Craft_Insecticide", 2);
+		RequiredItem("Craft_ToxicPlant", 1);
+		Elemental(Elemental_Burning, 3);
+        Color(Color_Orange);
+        CraftedItem("Burning_ShortSword_Viking", 1, 1);
+        CraftplanType("WeaponDLC");
+        HudIcon("blueprint_b");
+        UniqueSaveID(9927);
+		OwnedAtStart();
+		InheritBaseStats();
+		GameVersion(36);
+    }
+	
+	Item("Craftplan_Shield_Pro_Viking", CategoryType_Collectable)
+    {
+        Name("&Craftplan_Shield_Pro_Viking_N&");
+        Description("&Craftplan_Shield_Pro_Viking_D&");
+        ItemType(ItemType_CraftPlan);
+        Price(1000);
+        Mesh("blueprint.msh");
+        Skin("default");
+        RequiredItem("Craft_MetalScrap", 3);
+        RequiredItem("Craft_Nails", 4);
+        Color(Color_Blue);
+        CraftedItem("Shield_Pro_Viking", 1, 1);
+        CraftplanType("Utility");
+        UniqueSaveID(9928);
+        HudIcon("blueprint_b");
+		GameVersion(36);
+		OwnedAtStart();
+		InheritBaseStats();
+    }
+	
+	Item("Craftplan_Shield_Pro_Viking_Fire", CategoryType_Collectable)
+    {
+        Name("&Craftplan_Shield_Pro_Viking_Fire_N&");
+        Description("&Craftplan_Shield_Pro_Viking_Fire_D&");
+        ItemType(ItemType_CraftPlan);
+        Price(1000);
+        Mesh("blueprint.msh");
+        Skin("default");
+        RequiredItem("Craft_MetalScrap", 3);
+        RequiredItem("Craft_Nails", 4);
+		RequiredItem("Craft_Insecticide", 2);
+		RequiredItem("Craft_ToxicPlant", 1);
+		Elemental(Elemental_Burning, 3);
+        Color(Color_Orange);
+        CraftedItem("Burning_Shield_Pro_Viking", 1, 1);
+        CraftplanType("Utility");
+        UniqueSaveID(9929); 
+        HudIcon("blueprint_b");
+		GameVersion(36);
+		OwnedAtStart();
+		InheritBaseStats();
+    }
+}

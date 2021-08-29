@@ -1,0 +1,78 @@
+export int ColorSet_Tier0 = 40;
+export int ColorSet_Tier1 = 41;
+export int ColorSet_Tier2 = 42;
+
+sub DefineColors()
+{
+
+    DefColorSet(ColorSet_Tier0)
+    {
+        ColorWeight(Color_White,    0);
+        ColorWeight(Color_Green,    0);
+        ColorWeight(Color_Blue,     100);
+        ColorWeight(Color_Violet,   0);
+        ColorWeight(Color_Orange,   0);
+    }
+
+    DefColorSet(ColorSet_Tier1)
+    {
+        ColorWeight(Color_White,    0);
+        ColorWeight(Color_Green,    100);
+        ColorWeight(Color_Blue,     0);
+        ColorWeight(Color_Violet,   0);
+        ColorWeight(Color_Orange,   0);
+    }
+
+    DefColorSet(ColorSet_Tier2)
+    {
+        ColorWeight(Color_White,    100);
+        ColorWeight(Color_Green,    0);
+        ColorWeight(Color_Blue,     0);
+        ColorWeight(Color_Violet,   0);
+        ColorWeight(Color_Orange,   0);
+    }
+
+    
+
+}
+//------------------------------------------------------------------------
+//------------------------------------------------------------------------
+//------------------------------------------------------------------------ HARD
+//------------------------------------------------------------------------
+//------------------------------------------------------------------------
+
+
+sub DefineColorsHard()
+{
+    DefColorSet(ColorSet_Default)
+    {
+        ColorWeight(Color_White, 17);
+        ColorWeight(Color_Green, 40.85);
+        ColorWeight(Color_Blue, 35);
+        ColorWeight(Color_Violet, 5);
+        ColorWeight(Color_Orange, 2);
+        ColorWeight(Color_Platinum, 0.15);
+    }
+    
+}
+
+//------------------------------------------------------------------------
+//------------------------------------------------------------------------
+//------------------------------------------------------------------------ NIGHTMARE
+//------------------------------------------------------------------------
+//------------------------------------------------------------------------
+
+
+sub DefineColorsNightmare()
+{
+    DefColorSet(ColorSet_Default)
+    {
+        ColorWeight(Color_White, 17);
+        ColorWeight(Color_Green, 40.85);
+        ColorWeight(Color_Blue, 35);
+        ColorWeight(Color_Violet, 5);
+        ColorWeight(Color_Orange, 2);
+        ColorWeight(Color_Platinum, 0.15);
+    }
+	
+}

@@ -1,0 +1,81 @@
+//DLC_CHIVALRY_Crossover
+
+import "inventorystuff.scr" 
+sub main() 
+{
+	
+	Item("Craftplan_Shield_CHV_A", CategoryType_Collectable)
+    {
+        Name("&Craftplan_Shield_CHV_A_N&");
+        Description('&Craftplan_Shield_CHV_A_D&');
+        ItemType(ItemType_CraftPlan);
+        Price(40);
+        Mesh("blueprint.msh");
+        Skin("default");
+		
+		BaseItem("Shield_Pro", "", "");
+		BaseItem("Shield_Pro_Gold", "", "");
+		BaseItem("CHV_Shield_Pro_A", "", "");
+		BaseItem("CHV_Shield_Pro_M", "", "");
+		
+        Color(Color_Blue);
+        CraftedItem("CHV_Shield_Pro_A", 1, 1);
+        CraftplanType("Weapon10in12");
+		InheritBaseStats();
+        UniqueSaveID(9600);
+		//OwnedAtStart();
+        HudIcon("blueprint_b");
+		GameVersion(30);
+    }
+	
+	Item("Craftplan_Shield_CHV_M", CategoryType_Collectable)
+    {
+        Name("&Craftplan_Shield_CHV_M_N&");
+        Description('&Craftplan_Shield_CHV_M_D&');
+        ItemType(ItemType_CraftPlan);
+        Price(40);
+        Mesh("blueprint.msh");
+        Skin("default");
+		
+		BaseItem("Shield_Pro", "", "");
+		BaseItem("Shield_Pro_Gold", "", "");
+		BaseItem("CHV_Shield_Pro_A", "", "");
+		BaseItem("CHV_Shield_Pro_M", "", "");
+		
+        Color(Color_Blue);
+        CraftedItem("CHV_Shield_Pro_M", 1, 1);
+        CraftplanType("Weapon10in12");
+		InheritBaseStats();
+        UniqueSaveID(9601);
+		//OwnedAtStart();
+        HudIcon("blueprint_b");
+		GameVersion(30);
+    }
+	
+	Item("Craftplan_Melee_LongSword_ZweihanderCHV", CategoryType_Collectable)
+    {
+        Name("&Craftplan_Melee_LongSword_ZweihanderCHV_N&");
+        Description("&Craftplan_Melee_LongSword_ZweihanderCHV_D&");
+        ItemType(ItemType_CraftPlan);
+        Price(40);
+        Mesh("blueprint.msh");
+        Skin("default");
+        BaseItem("Melee_LongSword", "", "");
+		RequiredItem("Craft_MetalScrap", 5);
+        RequiredItem("Craft_DuctTape", 3);
+        RequiredItem("Craft_Nails", 4);
+        RequiredItem("Craft_RazorBlade", 2);
+        RequiredItem("Craft_Electronics", 1);
+        RequiredItem("Craft_Batteries", 2);
+		RequiredItem("Craft_PowerCable", 1);
+		RequiredItem("Craft_Gauze", 4);
+        Color(Color_Blue);
+        CraftedItem("Melee_LongSword_ZweihanderCHV", 1, 1);
+        CraftplanType("Developer");
+		InheritBaseStats();
+        UniqueSaveID(9602);
+		//OwnedAtStart();
+        HudIcon("blueprint_b");
+		GameVersion(30);	
+    }	
+}

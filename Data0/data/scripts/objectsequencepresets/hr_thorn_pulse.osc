@@ -1,0 +1,50 @@
+ sub hr_thorn_pulse()
+{
+Preset("hr_thorn_pulse")
+
+// 0 - LO Thorn 1.4
+
+
+    {
+		OnLevelStart()
+	    {
+		SetLightIntensity(0, 0.0, 1.3);
+   		}
+		
+		OnEnable()
+	    {
+		SetLightIntensity(0, 0.0, 1.3);
+   		}
+		
+		OnDisable()
+		{
+		SetLightIntensity(0, 0.0, 0.0);
+		}
+		
+		// Group, Time, Value
+		
+        TimedEvent(0.0)
+        {
+			SetLightIntensity(0, 1.0, 1.9);
+		}
+
+		TimedEvent(1.0)
+		{
+			SetLightIntensity(0, 1.0, 1.3);
+		}
+		
+		TimedEvent(2.0)
+		{
+			SetLightIntensity(0, 1.0, 1.9);
+		}
+		
+		TimedEvent(3.0)
+		{
+			SetLightIntensity(0, 1.0, 1.3);
+		}		
+		
+		GoToBegin(4.0)
+		{
+		}
+    }
+}

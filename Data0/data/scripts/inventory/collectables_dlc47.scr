@@ -1,0 +1,79 @@
+//DLC_Retrowave_WeaponPack
+
+import "inventorystuff.scr" 
+sub main() 
+{
+	Item("Craftplan_Melee_Machete_Retro", CategoryType_Collectable)
+    {
+        Name("&Craftplan_Melee_Machete_Retro_N&");
+        Description('&Craftplan_Melee_Machete_Retro_D&');
+        ItemType(ItemType_CraftPlan);
+        Price(1000);
+        Mesh("blueprint.msh");
+        Skin("default");
+		BaseItem("Melee_Machete", "", "");
+		BaseItem("Melee_TahirsWeapon", "", "");
+        BaseItem("Melee_RaisMachete", "", "");
+		BaseItem("Melee_Knife", "", "");
+		BaseItem("Melee_ShortSword", "", "");
+        RequiredItem("Craft_MetalScrap", 3);
+		RequiredItem("Craft_DuctTape", 1);
+		RequiredItem("Craft_Batteries", 1);
+		InheritBaseStats();
+        Color(Color_Blue);
+        CraftedItem("Melee_Machete_Retro", 1, 1);
+        CraftplanType("WeaponDLC");
+        UniqueSaveID(9610);
+		OwnedAtStart();
+        HudIcon("blueprint_b");
+		GameVersion(30);
+    }
+	
+	Item("Craftplan_Firearm_Revolver_Retro", CategoryType_Collectable)
+    {
+        Name("&Craftplan_Firearm_Revolver_Retro_N&");
+        Description('&Craftplan_Firearm_Revolver_Retro_D&');
+        ItemType(ItemType_CraftPlan);
+        Price(1000);
+        Mesh("blueprint.msh");
+        Skin("default");
+		BaseItem("Firearm_Pistol", "", "");
+		BaseItem("Firearm_Revolver", "", "");
+        RequiredItem("Craft_MetalScrap", 4);
+		RequiredItem("Craft_DuctTape", 1);
+		RequiredItem("Craft_Batteries", 1);
+		RequiredItem("Craft_Shroom", 1);
+		InheritBaseStats();
+        Color(Color_Blue);
+        CraftedItem("Firearm_Revolver_Retro", 1, 1);
+        CraftplanType("WeaponDLC");
+        UniqueSaveID(9611);
+		OwnedAtStart();
+        HudIcon("blueprint_b");
+		GameVersion(30);
+    }
+	
+	Item("Craftplan_Firearm_Rifle_Retro", CategoryType_Collectable)
+    {
+        Name("&Craftplan_Firearm_Rifle_Retro_N&");
+        Description("&Craftplan_Firearm_Rifle_Retro_D&");
+        ItemType(ItemType_CraftPlan);
+        Price(1000);
+        Mesh("blueprint.msh");
+        Skin("default");
+        BaseItem("Firearm_Rifle", "", "");
+		RequiredItem("Craft_MetalScrap", 4);
+		RequiredItem("Craft_Batteries", 1);
+		RequiredItem("Craft_PlasticTube", 1);
+		RequiredItem("Craft_PowerCable", 2);
+		RequiredItem("Craft_Electronics", 1);
+        Color(Color_Blue);
+        CraftedItem("Firearm_Rifle_Retro", 1, 1);
+        CraftplanType("WeaponDLC");
+		InheritBaseStats();
+        UniqueSaveID(9612);
+		OwnedAtStart();
+        HudIcon("blueprint_b");
+		GameVersion(30);	
+    }	
+}

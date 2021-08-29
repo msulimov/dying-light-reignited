@@ -1,0 +1,752 @@
+import "inventorystuff.scr"
+
+sub customRecipes(){
+	
+	Item("Craftplan_Truck_Battery", CategoryType_Collectable)
+    {
+        Name("&Craftplan_Truck_Battery_N&");
+        Description('&Craftplan_Truck_Battery_D&');
+        ItemType(ItemType_CraftPlan);
+        Price(40);
+		Mesh("blueprint.msh");
+        Skin("default_hl");
+		RequiredItem("Craft_MetalScrap", 4);
+		RequiredItem("Craft_PlasticTube", 4);
+		RequiredItem("Craft_Batteries", 2);
+		RequiredItem("Craft_Bleach", 7);
+		RequiredItem("Craft_DuctTape", 5);
+		RequiredItem("Craft_Insecticide", 7);
+		RequiredItem("ZZZZ3_Component_Lubricant", 5);
+		RequiredItem("ZZZZ3_Component_NutsBolts", 10);
+		
+        Color(Color_Orange);
+        CraftedItem("Craft_TruckBattery", 1, 2);
+        CraftplanType("Top");
+        UniqueSaveID(74978);
+        HudIcon("blueprint_b");
+		//OwnedAtStart();
+    }
+	
+	
+	Item("Craftplan_SteelTubing", CategoryType_Collectable)
+    {
+        Name("&Craftplan_SteelTubing_N&");
+        Description('&Craftplan_SteelTubing_D&');
+        ItemType(ItemType_CraftPlan);
+        Price(40);
+		Mesh("blueprint.msh");
+        Skin("default_hl");
+		RequiredItem("Craft_MetalScrap", 2);
+		//RequiredItem("Craft_DuctTape", 2);
+		RequiredItem("ZZZZ3_Component_Lubricant", 2);
+		RequiredItem("ZZZZ3_Component_NutsBolts", 2);
+		
+        Color(Color_Green);
+        CraftedItem("ZZZZ3_Component_SteelTubing", 2, 3);
+        CraftplanType("Top");
+        UniqueSaveID(74979);
+        HudIcon("blueprint_b");
+		//OwnedAtStart();
+    }
+	
+	Item("Craftplan_ZaidFlare2", CategoryType_Collectable)
+    {
+        Name("&Craftplan_ZaidFlare2_N&");
+        Description('&Craftplan_ZaidFlare2_D&');
+        ItemType(ItemType_CraftPlan);
+        Price(40);
+		Mesh("blueprint.msh");
+        Skin("default_hl");
+		RequiredItem("Throwable_Btz_Flare", 2);
+		RequiredItem("Craft_DuctTape", 1);
+		RequiredItem("Craft_PlasticTube", 2);
+		RequiredItem("Craft_String", 1);
+        Color(Color_Violet);
+        CraftedItem("Throwable_ZaidFlare", 1, 2);
+        CraftplanType("Top");
+        UniqueSaveID(74978);
+        HudIcon("blueprint_b");
+		//OwnedAtStart();
+    }
+	
+	Item("Craftplan_Wire", CategoryType_Collectable)
+    {
+        Name("&Craftplan_Wire_N&");
+        Description('&Craftplan_Wire_D&');
+        ItemType(ItemType_CraftPlan);
+        Price(40);
+		Mesh("blueprint.msh");
+        Skin("default_hl");
+		RequiredItem("Craft_MetalScrap", 2);
+        RequiredItem("Craft_Nails", 3);
+		RequiredItem("Craft_PlasticTube", 3);
+		RequiredItem("Craft_DuctTape", 2);
+		RequiredItem("ZZZZ3_Component_Rubber", 4);
+		RequiredItem("ZZZZ3_Component_Lubricant", 1);
+        Color(Color_Green);
+        CraftedItem("ZZZZ3_Component_Wire", 3, 4);
+        CraftplanType("Top");
+        UniqueSaveID(74979);
+        HudIcon("blueprint_b");
+		OwnedAtStart();
+    }
+	
+	Item("Craftplan_RazorBlade", CategoryType_Collectable)
+    {
+        Name("&Craftplan_RazorBlade_N&");
+        Description('&Craftplan_RazorBlade_D&');
+        ItemType(ItemType_CraftPlan);
+        Price(40);
+		Mesh("blueprint.msh");
+        Skin("default_hl");
+		RequiredItem("Craft_MetalScrap", 4);
+        RequiredItem("ZZZZ3_Component_NutsBolts", 2);
+		RequiredItem("Craft_PlasticTube", 2);
+		RequiredItem("Craft_Nails", 4);
+		RequiredItem("Craft_TinCan", 1);
+		RequiredItem("Craft_String", 2);
+		RequiredItem("ZZZZ3_Component_Lubricant", 1);
+        Color(Color_Green);
+        CraftedItem("Craft_RazorBlade", 1, 2);
+        CraftplanType("Top");
+        UniqueSaveID(74980);
+        HudIcon("blueprint_b");
+		OwnedAtStart();
+    }
+	
+	Item("Craftplan_Screws", CategoryType_Collectable)
+    {
+        Name("&Craftplan_Screws_N&");
+        Description('&Craftplan_Screws_D&');
+        ItemType(ItemType_CraftPlan);
+        Price(40);
+		Mesh("blueprint.msh");
+        Skin("default_hl");
+		RequiredItem("Craft_MetalScrap", 2);
+		RequiredItem("Craft_Nails", 4);
+		RequiredItem("Craft_DuctTape", 1);
+		RequiredItem("ZZZZ3_Component_Lubricant", 1);
+        Color(Color_White);
+        CraftedItem("ZZZZ3_Component_NutsBolts", 2, 4);
+        CraftplanType("Top");
+        UniqueSaveID(74981);
+        HudIcon("blueprint_b");
+		OwnedAtStart();
+    }
+	
+	Item("Craftplan_PowerCable", CategoryType_Collectable)
+    {
+	
+        Name("&Craftplan_PowerCable_N&");
+        Description('&Craftplan_PowerCable_D&');	
+		ItemType(ItemType_CraftPlan);
+        Price(40);
+        Mesh("blueprint.msh");
+        Skin("default_hl");
+        RequiredItem("Craft_PlasticTube", 5);
+		RequiredItem("Craft_Nails", 4);
+		RequiredItem("Craft_MetalScrap", 3);
+		RequiredItem("Craft_DuctTape", 2);
+		RequiredItem("Craft_String", 2);
+        RequiredItem("ZZZZ3_Component_NutsBolts", 4);
+		RequiredItem("ZZZZ3_Component_Wire", 6);
+		RequiredItem("ZZZZ3_Component_Rubber", 4);
+		RequiredItem("ZZZZ3_Component_SteelTubing", 5);
+		RequiredItem("ZZZZ3_Component_Lubricant", 4);
+        Color(Color_Green);
+        CraftedItem("Craft_PowerCable", 2, 3);
+        CraftplanType("Top");
+        UniqueSaveID(74982);
+        HudIcon("blueprint_b");
+		OwnedAtStart();
+		
+    }
+
+	Item("Craftplan_Batteries", CategoryType_Collectable)
+    {
+        Name("&Craftplan_Batteries_N&");
+        Description('&Craftplan_Batteries_D&');
+        ItemType(ItemType_CraftPlan);
+        Price(41);
+        Mesh("blueprint.msh");
+        Skin("default_hl");
+        RequiredItem("Craft_PlasticTube", 4);
+		RequiredItem("Craft_TinCan", 4);
+        RequiredItem("Craft_Bleach", 6);	
+		RequiredItem("Craft_String", 3);		
+        RequiredItem("Craft_Insecticide", 6);
+		RequiredItem("ZZZZ3_Component_Rubber", 2);
+		RequiredItem("ZZZZ3_Component_SteelTubing", 4);
+		RequiredItem("ZZZZ3_Component_NutsBolts", 3);
+        RequiredItem("Craft_MetalScrap", 3);
+        Color(Color_Green);
+        CraftedItem("Craft_Batteries", 2, 3);
+        CraftplanType("Top");
+        UniqueSaveID(74983);
+        HudIcon("blueprint_b");
+		OwnedAtStart();
+    }
+	
+	Item("Craftplan_Electronics", CategoryType_Collectable)
+    {
+        Name("&Craftplan_Electronics_N&");
+        Description('&Craftplan_Electronics_D&');
+        ItemType(ItemType_CraftPlan);
+        Price(41);
+        Mesh("blueprint.msh");
+        Skin("default_hl");
+		RequiredItem("Craft_MetalScrap", 6);
+        RequiredItem("ZZZZ3_Component_NutsBolts", 5);
+		RequiredItem("ZZZZ3_Component_Rubber", 4);
+        RequiredItem("Craft_PowerCable", 2);
+        RequiredItem("Craft_Batteries", 2);
+		RequiredItem("Craft_Shroom", 6);
+		RequiredItem("Craft_DuctTape", 3);
+		RequiredItem("ZZZZ3_Component_Wire", 5);
+		RequiredItem("ZZZZ3_Component_Synthetic", 3);
+		RequiredItem("ZZZZ3_Component_Lubricant", 4);
+        Color(Color_Violet);
+        CraftedItem("Craft_Electronics", 2, 3);
+        CraftplanType("Top");
+        UniqueSaveID(74984);
+        HudIcon("blueprint_b");
+		OwnedAtStart();
+    }
+	
+	Item("Craftplan_MetalScrap", CategoryType_Collectable)
+    {
+        Name("&Craftplan_MetalScrap_N&");
+        Description('&Craftplan_MetalScrap_D&');
+        ItemType(ItemType_CraftPlan);
+        Price(40);
+		Mesh("blueprint.msh");
+        Skin("default_hl");
+		RequiredItem("Craft_TinCan", 2);
+        Color(Color_Green);
+        CraftedItem("Craft_MetalScrap", 2, 3);
+        CraftplanType("Top");
+        UniqueSaveID(74985);
+        HudIcon("blueprint_b");
+		OwnedAtStart();
+    }
+	
+	Item("Craftplan_FreezeMelee", CategoryType_Collectable)
+    {
+        Name("&Craftplan_FreezeMelee_N&");
+        Description('&Craftplan_FreezeMelee_D&');
+        ItemType(ItemType_CraftPlan);
+        Price(84);
+        Mesh("blueprint.msh");
+        Skin("default");
+        BaseItem("Melee_", "", "");
+        
+		RequiredItem("Craft_MetalScrap", 4);
+		RequiredItem("Craft_PlasticTube", 3);
+		RequiredItem("Craft_Nails", 3);
+        RequiredItem("Craft_Bleach", 6);
+		RequiredItem("Craft_Shroom", 10);
+        RequiredItem("Craft_Electronics", 2);
+        RequiredItem("Craft_Batteries", 2);
+		RequiredItem("Craft_PowerCable", 2);
+		
+        NamePrefix("&ModifiedItemName&");
+        Elemental(Elemental_Freezing, 3);
+        Color(Color_White);
+        CraftplanType("WeaponDLC");
+        UniqueSaveID(12005);
+        HudIcon("blueprint_b");
+		//OwnedAtStart();
+    }
+
+	Item("Craftplan_Burn_Upgrade", CategoryType_Collectable) // Barbarian (Burn)
+    {
+        Name("&Craftplan_Burn_Upgrade_N&");
+        Description('&Craftplan_BurnMelee_D&');
+        ItemType(ItemType_CraftPlan);
+        Price(838);
+        Mesh("blueprint.msh");
+        Skin("default");
+        
+		RequiredItem("Craft_MetalScrap", 8);
+        RequiredItem("Craft_String", 5);
+        RequiredItem("Craft_Insecticide", 6);
+        RequiredItem("Craft_Electronics", 4);
+        RequiredItem("Craft_Batteries", 3);
+		RequiredItem("Craft_PowerCable", 3);
+		RequiredItem("Craft_Alcohol", 15);
+		
+        Color(Color_Orange);
+        CraftedItem("Craft_Upgrade_DamL2DurL2", 1);
+        CraftplanType("WeaponDLC");
+        UniqueSaveID(12006);
+        HudIcon("effect_inc_chance_for_burning");
+        //OwnedAtStart();
+    }
+	
+	Item("Craftplan_Toxic_Upgrade", CategoryType_Collectable) // Titan (Toxic)
+    {
+        Name("&Craftplan_Toxic_Upgrade_N&");
+        Description('&Craftplan_PoisonMelee_D&');
+        ItemType(ItemType_CraftPlan);
+        Price(838);
+        Mesh("blueprint.msh");
+        Skin("default");
+      
+		RequiredItem("Craft_MetalScrap", 8);
+		RequiredItem("Craft_PrimeTissue", 2);
+        RequiredItem("Craft_Gauze", 5);
+		RequiredItem("Craft_Lichen", 10);
+        RequiredItem("Craft_Electronics", 3);
+        RequiredItem("Craft_Batteries", 2);
+		RequiredItem("Craft_PowerCable", 2);
+		RequiredItem("Craft_ToxicPlant", 25);
+	  
+        Color(Color_Green);
+        CraftedItem("Craft_Upgrade_DurL2", 1);
+        CraftplanType("WeaponDLC");
+        UniqueSaveID(12007);
+        HudIcon("effect_inc_chance_for_poison");
+        //OwnedAtStart();
+    }
+	
+	Item("Craftplan_Shock_Upgrade", CategoryType_Collectable) // Brawler (Shock)
+    {
+        Name("&Craftplan_Shock_Upgrade_N&");
+        Description('&Craftplan_ElectricMelee_D&');
+        ItemType(ItemType_CraftPlan);
+        Price(838);
+        Mesh("blueprint.msh");
+        Skin("default");
+       
+	    RequiredItem("Craft_MetalScrap", 8);
+		RequiredItem("Craft_DuctTape", 8);
+		RequiredItem("ZZZZ3_Component_Rubber", 6);
+        RequiredItem("Craft_Electronics", 5);
+        RequiredItem("Craft_Batteries", 4);
+		RequiredItem("Craft_PowerCable", 4);
+		RequiredItem("ZZZZ3_Component_Wire", 8);
+	   
+        Color(Color_Blue);
+        CraftedItem("Craft_Upgrade_DamL2BalL2", 1);
+        CraftplanType("WeaponDLC");
+        UniqueSaveID(12008);
+        HudIcon("effect_inc_chance_for_shock_electricity");
+        //OwnedAtStart();
+    }
+	
+	Item("Craftplan_Impact_Upgrade", CategoryType_Collectable) // Gladiator (Impact)
+    {
+        Name("&Craftplan_Impact_Upgrade_N&");
+        Description('&Craftplan_BlastMelee_D&');
+        ItemType(ItemType_CraftPlan);
+        Price(838);
+        Mesh("blueprint.msh");
+        Skin("default");
+        
+		RequiredItem("Craft_MetalScrap", 8);
+		RequiredItem("Craft_TinCan", 7);
+        RequiredItem("Craft_Insecticide", 6);
+		RequiredItem("Craft_Bleach", 6);
+        RequiredItem("Craft_Electronics", 4);
+        RequiredItem("Craft_Batteries", 4);
+		RequiredItem("Craft_PowerCable", 3);
+		
+        Color(Color_Platinum);
+        CraftedItem("Craft_Upgrade_DamL2", 1);
+        CraftplanType("WeaponDLC");
+        UniqueSaveID(12009);
+        HudIcon("effect_inc_stun_chance");
+        //OwnedAtStart();
+    }
+	
+	Item("Craftplan_Freeze_Upgrade", CategoryType_Collectable) // Paladin (Freeze)
+    {
+        Name("&Craftplan_Freeze_Upgrade_N&");
+        Description('&Craftplan_FreezeMelee_D&');
+        ItemType(ItemType_CraftPlan);
+        Price(838);
+        Mesh("blueprint.msh");
+        Skin("default");
+        
+		RequiredItem("Craft_MetalScrap", 4);
+		RequiredItem("Craft_PlasticTube", 3);
+		RequiredItem("Craft_Nails", 3);
+        RequiredItem("Craft_Bleach", 6);
+		RequiredItem("Craft_Shroom", 10);
+        RequiredItem("Craft_Electronics", 2);
+        RequiredItem("Craft_Batteries", 2);
+		RequiredItem("Craft_PowerCable", 2);
+		
+        Color(Color_White);
+        CraftedItem("Craft_Upgrade_DurL2BalL2", 1);
+        CraftplanType("WeaponDLC");
+        UniqueSaveID(12010);
+        HudIcon("effect_inc_chance_for_freezing");
+        //OwnedAtStart();
+    }
+	
+	Item("Craftplan_Bleed_Upgrade", CategoryType_Collectable) // Fencer (Bleed)
+    {
+        Name("&Craftplan_Bleed_Upgrade_N&");
+        Description('&Craftplan_BleedMelee_D&');
+        ItemType(ItemType_CraftPlan);
+        Price(838);
+        Mesh("blueprint.msh");
+        Skin("default");
+        
+		RequiredItem("Craft_MetalScrap", 8);
+		RequiredItem("Craft_RazorBlade", 6);
+        RequiredItem("ZZZZ3_Component_NutsBolts", 10);
+        RequiredItem("Craft_Electronics", 3);
+        RequiredItem("Craft_Batteries", 2);
+		RequiredItem("Craft_PowerCable", 2);
+		
+        Color(Color_Violet);
+        CraftedItem("Craft_Upgrade_BalL2", 1);
+        CraftplanType("WeaponDLC");
+        UniqueSaveID(12011);
+        HudIcon("effect_inc_chance_for_bleeding");
+        //OwnedAtStart();
+    }
+	
+    Item("Craftplan_Juggernaut", CategoryType_Collectable) // Juggernaut
+    {
+        Name("&Craftplan_Juggernaut_N&");
+        Description('&Craftplan_Juggernaut_D&');
+        ItemType(ItemType_CraftPlan);
+        Price(317);
+        Mesh("blueprint.msh");
+        Skin("default");
+        RequiredItem("Craft_ToxicPlant", 5);
+        RequiredItem("ZZZZ3_Component_NutsBolts", 2);
+        RequiredItem("Craft_DuctTape", 2);
+		RequiredItem("ZZZZ3_Component_Wire", 2);
+		RequiredItem("ZZZZ3_Component_Lubricant", 2);
+        Color(Color_White);
+        CraftedItem("Craft_Upgrade_Dur", 1);
+        CraftplanType("Utility");
+        UniqueSaveID(12012);
+        HudIcon("blueprint_b");
+        OwnedAtStart();
+    }
+
+    Item("Craftplan_Assassin", CategoryType_Collectable) // Assassin
+    {
+        Name("&Craftplan_Assassin_N&");
+        Description('&Craftplan_Assassin_D&');
+        ItemType(ItemType_CraftPlan);
+        Price(317);
+        Mesh("blueprint.msh");
+        Skin("default");
+        RequiredItem("Craft_TinCan", 2);
+        RequiredItem("ZZZZ3_Component_NutsBolts", 2);
+        RequiredItem("Craft_UnderwaterAlgae", 6);
+		RequiredItem("Craft_Insecticide", 2);
+		RequiredItem("ZZZZ3_Component_Lubricant", 2);
+        Color(Color_White);
+        CraftedItem("Craft_Upgrade_Bal", 1);
+        CraftplanType("Utility");
+        UniqueSaveID(12013);
+        HudIcon("blueprint_b");
+        OwnedAtStart();
+    }
+
+    Item("Craftplan_Enforcer", CategoryType_Collectable) // Enforcer
+    {
+        Name("&Craftplan_Enforcer_N&");
+        Description('&Craftplan_Enforcer_D&');
+        ItemType(ItemType_CraftPlan);
+        Price(317);
+        Mesh("blueprint.msh");
+        Skin("default");
+        RequiredItem("Craft_Insecticide", 2);
+        RequiredItem("ZZZZ3_Component_NutsBolts", 2);
+        RequiredItem("Craft_Bleach", 3);
+		RequiredItem("ZZZZ3_Component_SteelTubing", 1);
+		RequiredItem("ZZZZ3_Component_Lubricant", 2);
+        Color(Color_White);
+        CraftedItem("Craft_Upgrade_Dam", 1);
+        CraftplanType("Utility");
+        UniqueSaveID(12014);
+        HudIcon("blueprint_b");
+        OwnedAtStart();
+    }
+
+	
+
+    Item("Craftplan_Crusader", CategoryType_Collectable) // Crusader
+    {
+        Name("&Craftplan_Crusader_N&");
+        Description('&Craftplan_Crusader_D&');
+        ItemType(ItemType_CraftPlan);
+        Price(891);
+        Mesh("blueprint.msh");
+        Skin("default_hl");
+        RequiredItem("Craft_Upgrade_Bal", 1);
+        RequiredItem("Craft_Upgrade_Dur", 1);
+        RequiredItem("Craft_PlasticTube", 6);
+        RequiredItem("ZZZZ3_Component_Wire", 4);
+        RequiredItem("ZZZZ3_Component_Rubber", 3);
+		RequiredItem("ZZZZ3_Component_SteelTubing", 2);
+		RequiredItem("Craft_DuctTape", 2);
+        Color(Color_Blue);
+        CraftedItem("Craft_Upgrade_DurBal", 1);
+        CraftplanType("Utility");
+        UniqueSaveID(12016);
+        HudIcon("blueprint_b");
+        OwnedAtStart();
+    }
+
+    Item("Craftplan_PitFighter", CategoryType_Collectable) // Pit Fighter
+    {
+        Name("&Craftplan_PitFighter_N&");
+        Description('&Craftplan_PitFighter_D&');
+        ItemType(ItemType_CraftPlan);
+        Price(891);
+        Mesh("blueprint.msh");
+        Skin("default_hl");
+        RequiredItem("Craft_Upgrade_Dam", 1);
+        RequiredItem("Craft_Upgrade_Bal", 1);
+        RequiredItem("Craft_Insecticide", 3);
+        RequiredItem("ZZZZ3_Component_Wire", 4);
+        RequiredItem("ZZZZ3_Component_Rubber", 3);
+		RequiredItem("ZZZZ3_Component_SteelTubing", 2);
+		RequiredItem("Craft_DuctTape", 2);
+        Color(Color_Blue);
+        CraftedItem("Craft_Upgrade_DamBal", 1);
+        CraftplanType("Utility");
+        UniqueSaveID(12017);
+        HudIcon("blueprint_b");
+        OwnedAtStart();
+    }
+
+	Item("Craftplan_Berserker", CategoryType_Collectable) // Berserker
+    {
+        Name("&Craftplan_Berserker_N&");
+        Description('&Craftplan_Berserker_D&');
+        ItemType(ItemType_CraftPlan);
+        Price(891);
+        Mesh("blueprint.msh");
+        Skin("default_hl");
+        RequiredItem("Craft_Upgrade_Dam", 1);
+        RequiredItem("Craft_Upgrade_Dur", 1);
+        RequiredItem("Craft_Bleach", 4);
+        RequiredItem("ZZZZ3_Component_Wire", 3);
+        RequiredItem("ZZZZ3_Component_Rubber", 2);
+		RequiredItem("ZZZZ3_Component_SteelTubing", 2);
+		RequiredItem("Craft_DuctTape", 2);
+        Color(Color_Blue);
+        CraftedItem("Craft_Upgrade_DamDur", 1);
+        CraftplanType("Utility");
+        UniqueSaveID(12015);
+        HudIcon("blueprint_b");
+        OwnedAtStart();
+    }
+
+	Item("Craftplan_Brute", CategoryType_Collectable)  // Brute
+    {
+        Name("&Craftplan_Brute_N&");
+        Description('&Craftplan_Brute_D&');
+        ItemType(ItemType_CraftPlan);
+        Price(838);
+        Mesh("blueprint.msh");
+        Skin("default");
+        RequiredItem("Craft_Upgrade_DamDur", 1);
+        RequiredItem("Craft_Upgrade_Dam", 2);
+        RequiredItem("Craft_Batteries", 2);
+        RequiredItem("ZZZZ3_Component_SteelTubing", 4);
+        RequiredItem("ZZZZ3_Component_NutsBolts", 3);
+        RequiredItem("ZZZZ3_Component_Synthetic", 2);
+        Color(Color_Violet);
+        CraftedItem("Craft_Upgrade_DamL2Dur", 1);
+        CraftplanType("Utility");
+        UniqueSaveID(12018);
+        HudIcon("blueprint_b");
+        OwnedAtStart();
+    }
+
+    Item("Craftplan_Bruiser", CategoryType_Collectable)  // Bruiser
+    {
+        Name("&Craftplan_Bruiser_N&");
+        Description('&Craftplan_Bruiser_D&');
+        ItemType(ItemType_CraftPlan);
+        Price(838);
+        Mesh("blueprint.msh");
+        Skin("default");
+        RequiredItem("Craft_Upgrade_DamBal", 1);
+        RequiredItem("Craft_Upgrade_Dam", 2);
+        RequiredItem("Craft_RazorBlade", 2);
+        RequiredItem("ZZZZ3_Component_SteelTubing", 4);
+        RequiredItem("ZZZZ3_Component_NutsBolts", 4);
+        RequiredItem("ZZZZ3_Component_Synthetic", 2);
+        Color(Color_Violet);
+        CraftedItem("Craft_Upgrade_DamL2Bal", 1);
+        CraftplanType("Utility");
+        UniqueSaveID(12019);
+        HudIcon("blueprint_b");
+        OwnedAtStart();
+    }
+
+    
+    Item("Craftplan_Duelist", CategoryType_Collectable) // Duelist
+    {
+        Name("&Craftplan_Duelist_N&");
+        Description('&Craftplan_Duelist_D&');
+        ItemType(ItemType_CraftPlan);
+        Price(851);
+        Mesh("blueprint.msh");
+        Skin("default_hl");
+        RequiredItem("Craft_Upgrade_DamBal", 1);
+		RequiredItem("Craft_Upgrade_Bal", 2);
+        RequiredItem("Craft_PowerCable", 2);
+        RequiredItem("ZZZZ3_Component_SteelTubing", 4);
+        RequiredItem("ZZZZ3_Component_NutsBolts", 4);
+        RequiredItem("ZZZZ3_Component_Synthetic", 2);
+        Color(Color_Violet);
+        CraftedItem("Craft_Upgrade_BalL2Dam", 1);
+        CraftplanType("Utility");
+        UniqueSaveID(12021);
+        HudIcon("blueprint_b");
+        OwnedAtStart();
+    }
+
+    Item("Craftplan_Mercenary", CategoryType_Collectable) // Mercenary
+    {
+        Name("&Craftplan_Mercenary_N&");
+        Description('&Craftplan_Mercenary_D&');
+        ItemType(ItemType_CraftPlan);
+        Price(891);
+        Mesh("blueprint.msh");
+        Skin("default_hl");
+        RequiredItem("Craft_Upgrade_DamDur", 1);
+        RequiredItem("Craft_Upgrade_Dur", 2);
+        RequiredItem("Craft_Shroom", 4);
+        RequiredItem("ZZZZ3_Component_SteelTubing", 4);
+        RequiredItem("ZZZZ3_Component_NutsBolts", 3);
+        RequiredItem("ZZZZ3_Component_Synthetic", 2);
+        Color(Color_Violet);
+        CraftedItem("Craft_Upgrade_DurL2Dam", 1);
+        CraftplanType("Utility");
+        UniqueSaveID(12022);
+        HudIcon("blueprint_b");
+        OwnedAtStart();
+    }
+
+    Item("Craftplan_Knight", CategoryType_Collectable) // Knight
+    {
+        Name("&Craftplan_Knight_N&");
+        Description('&Craftplan_Knight_D&');
+        ItemType(ItemType_CraftPlan);
+        Price(891);
+        Mesh("blueprint.msh");
+        Skin("default_hl");
+        RequiredItem("Craft_Upgrade_DurBal", 1);
+        RequiredItem("Craft_Upgrade_Dur", 2);
+        RequiredItem("Craft_Lichen", 6);
+        RequiredItem("ZZZZ3_Component_SteelTubing", 4);
+        RequiredItem("ZZZZ3_Component_NutsBolts", 3);
+        RequiredItem("ZZZZ3_Component_Synthetic", 2);
+        Color(Color_Violet);
+        CraftedItem("Craft_Upgrade_DurL2Bal", 1);
+        CraftplanType("Utility");
+        UniqueSaveID(12023);
+        HudIcon("blueprint_b");
+        OwnedAtStart();
+    }
+
+    Item("Craftplan_Templar", CategoryType_Collectable) // Templar
+    {
+        Name("&Craftplan_Templar_N&");
+        Description('&Craftplan_Templar_D&');
+        ItemType(ItemType_CraftPlan);
+        Price(891);
+        Mesh("blueprint.msh");
+        Skin("default_hl");
+        RequiredItem("Craft_Upgrade_DurBal", 1);
+        RequiredItem("Craft_Upgrade_Bal", 2);
+        RequiredItem("Craft_PrimeTissue", 1);
+        RequiredItem("ZZZZ3_Component_SteelTubing", 4);
+        RequiredItem("ZZZZ3_Component_NutsBolts", 3);
+        RequiredItem("ZZZZ3_Component_Synthetic", 2);
+        Color(Color_Violet);
+        CraftedItem("Craft_Upgrade_BalL2Dur", 1);
+        CraftplanType("Utility");
+        UniqueSaveID(12024);
+        HudIcon("blueprint_b");
+        OwnedAtStart();
+    }
+
+	Item("Craftplan_Champion", CategoryType_Collectable) // Champion
+    {
+        Name("&Craftplan_Champion_N&");
+        Description('&Craftplan_Champion_D&');
+        ItemType(ItemType_CraftPlan);
+        Price(891);
+        Mesh("blueprint.msh");
+        Skin("default_hl");
+        RequiredItem("Craft_Upgrade_Dam", 1);
+		RequiredItem("Craft_Upgrade_Dur", 1);
+        RequiredItem("Craft_Upgrade_Bal", 1);
+        RequiredItem("Craft_Electronics", 2);
+        RequiredItem("ZZZZ3_Component_SteelTubing", 2);
+        RequiredItem("ZZZZ3_Component_NutsBolts", 3);
+        RequiredItem("ZZZZ3_Component_Synthetic", 2);
+        Color(Color_Violet);
+        CraftedItem("Craft_Upgrade_DamDurBal", 1);
+        CraftplanType("Utility");
+        UniqueSaveID(12020);
+        HudIcon("blueprint_b");
+        OwnedAtStart();
+    }
+
+
+	Item("Craftplan_King", CategoryType_Collectable)
+    {
+        Name("&Craftplan_King_N&");
+        Description('&Craftplan_King_D&');
+        ItemType(ItemType_CraftPlan);
+        Price(838);
+        Mesh("blueprint.msh");
+        Skin("default");
+        RequiredItem("Craft_Upgrade_DamDurBal", 2);  //champion
+        RequiredItem("Craft_Upgrade_DamL2Dur", 2);  //brute
+        RequiredItem("Craft_Upgrade_BalL2Dam", 2);  //duelist
+		RequiredItem("Craft_Upgrade_DurL2Bal", 2);  //Knight
+		RequiredItem("Craft_PowerCable", 3);
+		RequiredItem("Craft_Batteries", 3);
+        RequiredItem("Craft_Electronics", 2);
+        RequiredItem("ZZZZ3_Component_Synthetic", 3);
+		
+        Color(Color_Orange);
+        CraftedItem("Craft_Upgrade_DamL2DurL2BalL2", 1);
+        CraftplanType("Utility");
+        UniqueSaveID(12025);
+        HudIcon("blueprint_b");
+        OwnedAtStart();
+    }
+
+    Item("Craftplan_Clicker", CategoryType_Collectable)
+    {
+        Name("&Craftplan_Clicker_N&");
+        Description('&Craftplan_Clicker_D&');
+        ItemType(ItemType_CraftPlan);
+        Price(838);
+        Mesh("blueprint.msh");
+        Skin("default");
+        RequiredItem("Craft_Upgrade_DamDurBal", 2);  // champion
+        RequiredItem("Craft_Upgrade_DamL2Bal", 2);   // bruiser
+        RequiredItem("Craft_Upgrade_DurL2Dam", 2);   // mercenary
+        RequiredItem("Craft_Upgrade_BalL2Dur", 2);  //Templar	
+        RequiredItem("Craft_PowerCable", 3);
+		RequiredItem("Craft_Batteries", 3);
+        RequiredItem("Craft_Electronics", 2);
+        RequiredItem("ZZZZ3_Component_Synthetic", 3);
+        Color(Color_Orange);
+        CraftedItem("Craft_Upgrade_DamL2DurL2BalL2_Clicker", 1);
+        CraftplanType("Utility");
+        UniqueSaveID(12026);
+        HudIcon("blueprint_b");
+        OwnedAtStart();
+    }
+
+}

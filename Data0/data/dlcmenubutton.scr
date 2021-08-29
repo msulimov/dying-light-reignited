@@ -1,0 +1,28 @@
+sub main()
+{
+	DLCName("DLC17") //TheFollowing
+	{
+		SteamID(325724);
+		DurangoID("6d72e244-4e22-44af-bc7b-35d15c698f9b");
+		OrbisID("THEFOLLOWING0000");
+		
+		showButtonIfNotOwned(true);
+		enableButtonIfNotOwned(true);
+		
+ 		PromptN("&no_dlc_the_following_prompt_n&");
+ 		PromptD("&no_dlc_the_following_prompt_d&");
+	}
+}
+
+// DLCName("DLC_id")
+// {
+//		SteamID(1);
+//		DurangoID("");
+// 		OrbisID("");
+// 		OwnedVisual("ButtonMainNewV");
+// 		NotOwnedVisual("ButtonMainPulsatingNewV");
+// 		showButtonIfNotOwned(false);
+// 		enableButtonIfNotOwned(false);
+// 		PromptN("&dlc_not_owned_N&");
+// 		PromptD("&dlc_not_owned_D&");
+// }

@@ -1,0 +1,213 @@
+//HELLRAID DLC WEAPONS ONLY
+
+import "inventorystuff.scr" 
+sub main() 
+{	
+	Item("Collectable_Note_Hellraid_01", CategoryType_Collectable)
+    {
+        Name("&Collectable_Note_Hellraid_01_N&");
+        Description("&Collectable_Note_Hellraid_01_D&");
+        ItemType(ItemType_NoteHellraid);
+        Mesh("secret_roll_medi_a.msh");
+        Skin("Default");
+        Color(Color_White);
+        UniqueSaveID(9901);
+    }
+	
+	Item("Collectable_Note_Hellraid_02", CategoryType_Collectable)
+    {
+        Name("&Collectable_Note_Hellraid_02_N&");
+        Description("&Collectable_Note_Hellraid_02_D&");
+        ItemType(ItemType_NoteHellraid);
+        Mesh("old_paper_a.msh");
+        Skin("Default");
+        Color(Color_White);
+        UniqueSaveID(9902);
+    }
+	
+	Item("Collectable_Note_Hellraid_03", CategoryType_Collectable)
+    {
+        Name("&Collectable_Note_Hellraid_03_N&");
+        Description("&Collectable_Note_Hellraid_03_D&");
+        ItemType(ItemType_NoteHellraid);
+        Mesh("secret_roll_medi_a.msh");
+        Skin("Default");
+        Color(Color_White);
+        UniqueSaveID(9903);
+    }
+	
+	Item("Collectable_Note_Hellraid_04", CategoryType_Collectable)
+    {
+        Name("&Collectable_Note_Hellraid_04_N&");
+        Description("&Collectable_Note_Hellraid_04_D&");
+        ItemType(ItemType_NoteHellraid);
+        Mesh("old_paper_a.msh");
+        Skin("Default");
+        Color(Color_White);
+        UniqueSaveID(9904);
+    }
+	
+	Item("Collectable_Note_Hellraid_05", CategoryType_Collectable)
+    {
+        Name("&Collectable_Note_Hellraid_05_N&");
+        Description("&Collectable_Note_Hellraid_05_D&");
+        ItemType(ItemType_NoteHellraid);
+        Mesh("secret_roll_medi_a.msh");
+        Skin("Default");
+        Color(Color_White);
+        UniqueSaveID(9905);
+    }
+
+	Item("Collectable_Note_Hellraid_06", CategoryType_Collectable)
+    {
+        Name("&Collectable_Note_Hellraid_06_N&");
+        Description("&Collectable_Note_Hellraid_06_D&");
+        ItemType(ItemType_NoteHellraid);
+        Mesh("old_paper_a.msh");
+        Skin("Default");
+        Color(Color_White);
+        UniqueSaveID(9906);
+    }
+	
+	Item("Collectable_Note_Hellraid_07", CategoryType_Collectable)
+    {
+        Name("&Collectable_Note_Hellraid_07_N&");
+        Description("&Collectable_Note_Hellraid_07_D&");
+        ItemType(ItemType_NoteHellraid);
+        Mesh("secret_roll_medi_a.msh");
+        Skin("Default");
+        Color(Color_White);
+        UniqueSaveID(9907);
+    }
+	
+	Item("Collectable_Note_Hellraid_08", CategoryType_Collectable)
+    {
+        Name("&Collectable_Note_Hellraid_08_N&");
+        Description("&Collectable_Note_Hellraid_08_D&");
+        ItemType(ItemType_NoteHellraid);
+        Mesh("secret_roll_medi_a.msh");
+        Skin("Default");
+        Color(Color_White);
+        UniqueSaveID(9908);
+    }
+	
+	Item("Collectable_Note_Hellraid_09", CategoryType_Collectable)
+    {
+        Name("&Collectable_Note_Hellraid_09_N&");
+        Description("&Collectable_Note_Hellraid_09_D&");
+        ItemType(ItemType_NoteHellraid);
+        Mesh("secret_roll_medi_a.msh");
+        Skin("Default");
+        Color(Color_White);
+        UniqueSaveID(9909);
+    }
+	
+	Item("Collectable_Note_Hellraid_10", CategoryType_Collectable)
+    {
+        Name("&Collectable_Note_Hellraid_10_N&");
+        Description("&Collectable_Note_Hellraid_10_D&");
+        ItemType(ItemType_NoteHellraid);
+        Mesh("book_medi_a.msh");
+        Skin("A");
+        Color(Color_White);
+        UniqueSaveID(9910);
+    }
+	
+	Item("Collectable_Note_Hellraid_11", CategoryType_Collectable)
+    {
+        Name("&Collectable_Note_Hellraid_11_N&");
+        Description("&Collectable_Note_Hellraid_11_D&");
+        ItemType(ItemType_NoteHellraid);
+        Mesh("old_paper_a.msh");
+        Skin("Default");
+        Color(Color_White);
+        UniqueSaveID(9911);
+    }
+	
+	Item("Collectable_Note_Hellraid_12", CategoryType_Collectable)
+    {
+        Name("&Collectable_Note_Hellraid_12_N&");
+        Description("&Collectable_Note_Hellraid_12_D&");
+        ItemType(ItemType_NoteHellraid);
+        Mesh("old_paper_a.msh");
+        Skin("Default");
+        Color(Color_White);
+        UniqueSaveID(9912);
+    }
+	
+	Item("Collectable_Note_Hellraid_13", CategoryType_Collectable)
+    {
+        Name("&Collectable_Note_Hellraid_13_N&");
+        Description("&Collectable_Note_Hellraid_13_D&");
+        ItemType(ItemType_NoteHellraid);
+        Mesh("old_paper_a.msh");
+        Skin("Default");
+        Color(Color_White);
+        UniqueSaveID(9913);
+    }
+	
+	//Bundles
+	
+	Item("Bundle_ThrowingItems", CategoryType_ItemBundle)
+    {
+		GameVersion(27);
+		Name("&Bundle_ThrowingItems_N&");
+        Description('&Bundle_ThrowingItems_D&');
+        ItemType(ItemType_ItemBundle);
+        BundleItems()
+        {
+            Item("Throwable_HRGrenade_Explosive", 10);
+            Item("Throwable_HRGrenade_Electric", 5);
+            Item("Throwable_HRGrenade_Poison", 5);
+        }
+        Mesh("box_plastic_closed_ho.msh");
+        HudIcon("component_misc");
+        Color(Color_Blue);
+    }
+	
+	// Weapon Blueprints
+	
+	Item("Craftplan_HRSword_R11_SHOP", CategoryType_Collectable)
+    {
+        Name("&Craftplan_HRSword_R11_SHOP_N&");
+        Description('&Craftplan_HRSword_R11_SHOP_D&');
+        ItemType(ItemType_CraftPlan);
+        Price(1000);
+        Mesh("blueprint.msh");
+        Skin("default");
+		BaseItem("Melee_Machete", "", "");
+		BaseItem("Melee_ShortSword", "", "");
+		BaseItem("Melee_Khopesh", "", "");
+		RequiredItem("Craft_MetalScrap", 4);
+		RequiredItem("Craft_PowerCable", 2);
+		RequiredItem("Craft_Electronics", 1);	
+		InheritBaseStats();
+        Color(Color_Platinum);
+        CraftedItem("HRSword_R11_SHOP", 1, 1);
+        CraftplanType("WeaponDLC");
+        UniqueSaveID(9700);
+        HudIcon("blueprint_b");
+		GameVersion(33);
+    }
+	
+	Item("Craftplan_HRBow_R13", CategoryType_Collectable)
+    {
+        Name("&Craftplan_HRBow_R13_N&");
+        Description('&Craftplan_HRBow_R13_D&');
+        ItemType(ItemType_CraftPlan);
+        Price(6400);
+        Mesh("blueprint.msh");
+        Skin("default");
+        RequiredItem("Craft_MetalScrap", 4);
+        RequiredItem("Craft_DuctTape", 2);	
+        RequiredItem("Craft_String", 1);
+		RequiredItem("Craft_Electronics", 1);
+        Color(Color_Platinum);
+        CraftedItem("HRBow_R13_SHOP", 1, 1);
+        CraftplanType("WeaponDLC");
+        UniqueSaveID(9701);
+        HudIcon("blueprint_b");
+        GameVersion(42);
+    }
+	
+}

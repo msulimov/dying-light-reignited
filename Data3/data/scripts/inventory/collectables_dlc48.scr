@@ -1,0 +1,190 @@
+//DLC_SHUWARRIOR_WeaponPack
+
+import "inventorystuff.scr" 
+sub main() 
+{	
+	Item("Craftplan_Melee_ShortSword_Dao_SHU", CategoryType_Collectable)
+    {
+        Name("&Craftplan_Melee_ShortSword_Dao_SHU_N&");
+        Description('&Craftplan_Melee_ShortSword_Dao_SHU_D&');
+        ItemType(ItemType_CraftPlan);
+        Price(40);
+        Mesh("blueprint.msh");
+        Skin("default");
+		BaseItem("Melee_ShortSword", "", "");
+		BaseItem("Melee_Knife", "", "");
+		BaseItem("Melee_Scythe", "", "");
+        BaseItem("Melee_Machete", "", "");
+		BaseItem("Melee_TahirsWeapon", "", "");
+        BaseItem("Melee_RaisMachete", "", "");
+        BaseItem("Melee_Sickle", "", "");
+		BaseItem("Melee_ReedKnife", "", "");
+		BaseItem("Melee_Cleaver", "", "");
+        RequiredItem("Craft_MetalScrap", 5);
+        RequiredItem("Craft_DuctTape", 3);
+        RequiredItem("Craft_Nails", 4);
+        RequiredItem("Craft_RazorBlade", 2);
+        RequiredItem("Craft_Electronics", 4);
+        RequiredItem("Craft_Batteries", 3);
+		RequiredItem("Craft_PowerCable", 2);
+		InheritBaseStats();
+        Color(Color_Blue);
+        CraftedItem("Melee_ShortSword_Dao_SHU", 1, 1);
+        CraftplanType("WeaponDLC");
+        UniqueSaveID(9620);
+		OwnedAtStart();
+        HudIcon("blueprint_b");
+		GameVersion(31);
+    }
+	
+	Item("Craftplan_Melee_Axe_Sky_Piercer_SHU", CategoryType_Collectable)
+    {
+        Name("&Craftplan_Melee_Axe_Sky_Piercer_SHU_N&");
+        Description('&Craftplan_Melee_Axe_Sky_Piercer_SHU_D&');
+        ItemType(ItemType_CraftPlan);
+        Price(40);
+        Mesh("blueprint.msh");
+        Skin("default");
+        BaseItem("Melee_LongSword", "", "");
+        BaseItem("Melee_Handsaw", "", "");
+        BaseItem("Melee_Scythe", "", "");
+		BaseItem("Melee_ShortAxe", "", "");
+		BaseItem("Melee_Khopesh", "", "");
+		RequiredItem("Craft_Shroom", 1);
+		RequiredItem("Craft_MetalScrap", 5);
+        RequiredItem("Craft_DuctTape", 3);
+        RequiredItem("Craft_Nails", 4);
+        RequiredItem("Craft_RazorBlade", 2);
+        RequiredItem("Craft_Electronics", 4);
+        RequiredItem("Craft_Batteries", 3);
+		RequiredItem("Craft_PowerCable", 2);
+		InheritBaseStats();
+		OwnedAtStart();
+        Color(Color_Blue);
+        CraftedItem("Melee_Axe_Sky_Piercer_SHU", 1, 1);
+        CraftplanType("WeaponDLC");
+        UniqueSaveID(9621);
+        HudIcon("blueprint_b");
+		GameVersion(31);
+    }
+	
+	Item("Craftplan_Crossbow_SHU", CategoryType_Collectable)
+    {
+        Name("&Craftplan_Crossbow_SHU_N&");
+        Description("&Craftplan_Crossbow_SHU_D&");
+        ItemType(ItemType_CraftPlan);
+        Price(40);
+        Mesh("blueprint.msh");
+        Skin("default");
+		RequiredItem("Craft_MetalScrap", 10);
+        RequiredItem("Craft_DuctTape", 4);
+        RequiredItem("Craft_Sugar", 2);
+        RequiredItem("Craft_PlasticTube", 3);
+        RequiredItem("Craft_String", 3);
+        RequiredItem("ZZZZ3_Component_SteelTubing", 2);
+        RequiredItem("Craft_RazorBlade", 5);
+		RequiredItem("Craft_Electronics", 4);
+		RequiredItem("Craft_Batteries", 4);
+		RequiredItem("Craft_PowerCable", 2);
+        Color(Color_Blue);
+        CraftedItem("Crossbow_SHU", 1, 1);
+        CraftplanType("WeaponDLC");
+		InheritBaseStats();
+        UniqueSaveID(9622);
+		OwnedAtStart();
+        HudIcon("blueprint_b");
+		GameVersion(31);	
+    }	
+	Item("Craftplan_Crossbow_Bolt_SHU", CategoryType_Collectable)
+    {
+        Name("&Craftplan_Crossbow_Bolt_SHU_N&");
+        Description('&Craftplan_Crossbow_Bolt_SHU_D&');
+        ItemType(ItemType_CraftPlan);
+        Price(42);
+        Mesh("blueprint.msh");
+        Skin("default");
+        RequiredItem("Craft_MetalScrap", 4);
+        RequiredItem("Craft_RazorBlade", 2);
+        RequiredItem("Craft_PlasticTube", 2);
+		RequiredItem("ZZZZ3_Component_Rubber", 1);
+        RequiredItem("ZZZZ3_Component_SteelTubing", 2);
+        Color(Color_Green);
+        CraftedItem("ZZZZ3_Ammo_Crossbow", 10, 15);
+        CraftplanType("WeaponDLC");
+        UniqueSaveID(9623);
+        HudIcon("blueprint_b");
+        OwnedAtStart();
+        GameVersion(31);
+    }
+
+    Item("Craftplan_Crossbow_BoltPoison_SHU", CategoryType_Collectable)
+    {
+        Name("&Craftplan_Crossbow_BoltPoison_SHU_N&");
+        Description('&Craftplan_Crossbow_BoltPoison_SHU_D&');
+        ItemType(ItemType_CraftPlan);
+        Price(57);
+        Mesh("blueprint.msh");
+        Skin("default");
+        RequiredItem("Craft_MetalScrap", 4);
+        RequiredItem("Craft_RazorBlade", 2);
+        RequiredItem("Craft_PlasticTube", 2);
+		RequiredItem("ZZZZ3_Component_Rubber", 1);
+        RequiredItem("ZZZZ3_Component_SteelTubing", 2);
+        RequiredItem("Craft_ToxicPlant", 2);
+        Color(Color_Blue);
+        CraftedItem("ZZZZ3_Ammo_Crossbow_Poison", 10, 15);
+        CraftplanType("WeaponDLC");
+        UniqueSaveID(9624);
+        HudIcon("blueprint_b");
+        OwnedAtStart();
+        GameVersion(31);
+    }
+
+    Item("Craftplan_Crossbow_BoltStunning_SHU", CategoryType_Collectable)
+    {
+        Name("&Craftplan_Crossbow_BoltStunning_SHU_N&");
+        Description('&Craftplan_Crossbow_BoltStunning_SHU_D&');
+        ItemType(ItemType_CraftPlan);
+        Price(57);
+        Mesh("blueprint.msh");
+        Skin("default");
+        RequiredItem("Craft_MetalScrap", 4);
+        RequiredItem("Craft_RazorBlade", 2);
+        RequiredItem("Craft_PlasticTube", 2);
+		RequiredItem("ZZZZ3_Component_Rubber", 1);
+        RequiredItem("ZZZZ3_Component_SteelTubing", 2);
+		RequiredItem("Craft_Bleach", 2);
+        RequiredItem("Craft_Insecticide", 1);
+        Color(Color_Blue);
+        CraftedItem("ZZZZ3_Ammo_Crossbow_Stunning", 10, 15);
+        CraftplanType("WeaponDLC");
+        UniqueSaveID(9625);
+        HudIcon("blueprint_b");
+        OwnedAtStart();
+        GameVersion(31);
+    }
+
+    Item("Craftplan_Crossbow_BoltImpact_SHU", CategoryType_Collectable)
+    {
+        Name("&Craftplan_Crossbow_BoltImpact_SHU_N&");
+        Description('&Craftplan_Crossbow_BoltImpact_SHU_D&');
+        ItemType(ItemType_CraftPlan);
+        Price(57);
+        Mesh("blueprint.msh");
+        Skin("default");
+        RequiredItem("Craft_MetalScrap", 4);
+        RequiredItem("Craft_RazorBlade", 2);
+        RequiredItem("Craft_PlasticTube", 2);
+		RequiredItem("ZZZZ3_Component_Rubber", 1);
+        RequiredItem("ZZZZ3_Component_SteelTubing", 2);
+		RequiredItem("Craft_Bleach", 3);
+        RequiredItem("Craft_Insecticide", 3);
+        Color(Color_Blue);
+        CraftedItem("ZZZZ3_Ammo_Crossbow_Impact", 10, 15);
+        CraftplanType("WeaponDLC");
+        UniqueSaveID(9626);
+        HudIcon("blueprint_b");
+        OwnedAtStart();
+        GameVersion(31);
+    }
+}

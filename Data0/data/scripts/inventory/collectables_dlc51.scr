@@ -1,0 +1,71 @@
+//UNTURNED FREE DLC
+
+import "inventorystuff.scr" 
+sub main() 
+{	
+	Item("Craftplan_Unturned_HockeyStick", CategoryType_Collectable)
+    {
+        Name("&Craftplan_Unturned_HockeyStick_N&");
+        Description("&Craftplan_Unturned_HockeyStick_D&");
+        ItemType(ItemType_CraftPlan);
+        Price(1000);
+        Mesh("blueprint.msh");
+        Skin("default");
+        RequiredItem("Craft_PlasticTube", 2);
+		RequiredItem("Craft_DuctTape", 2);
+		RequiredItem("Craft_Lichen", 1);
+		RequiredItem("Craft_Gauze", 1);
+        Color(Color_Blue);
+        CraftedItem("Unturned_HockeyStick", 1, 1);
+		InheritBaseStats();
+		OwnedAtStart();
+        CraftplanType("WeaponDLC");
+        UniqueSaveID(9710);
+        HudIcon("blueprint_b");
+		GameVersion(33);
+    }
+	
+	Item("Craftplan_Unturned_Rake", CategoryType_Collectable)
+    {
+        Name("&Craftplan_Unturned_Rake_N&");
+        Description("&Craftplan_Unturned_Rake_D&");
+        ItemType(ItemType_CraftPlan);
+        Price(1000);
+        Mesh("blueprint.msh");
+        Skin("default");
+        RequiredItem("Craft_PlasticTube", 2);
+		RequiredItem("Craft_DuctTape", 2);
+		RequiredItem("Craft_Lichen", 1);
+		RequiredItem("Craft_Gauze", 1);
+        Color(Color_Blue);
+        CraftedItem("Unturned_Rake", 1, 1);
+		InheritBaseStats();
+        CraftplanType("WeaponDLC");
+		OwnedAtStart();
+        UniqueSaveID(9711);
+        HudIcon("blueprint_b");
+		GameVersion(33);
+    }
+
+	Item("Craftplan_Unturned_Machete", CategoryType_Collectable)
+    {
+        Name("&Craftplan_Unturned_Machete_N&");
+        Description("&Craftplan_Unturned_Machete_D&");
+        ItemType(ItemType_CraftPlan);
+        Price(1000);
+        Mesh("blueprint.msh");
+        Skin("default");
+		RequiredItem("Craft_PlasticTube", 2);
+		RequiredItem("Craft_DuctTape", 2);
+		RequiredItem("Craft_Lichen", 1);
+		RequiredItem("Craft_Gauze", 1);
+        Color(Color_Blue);
+        CraftedItem("Unturned_Machete", 1, 1);
+		InheritBaseStats();
+        CraftplanType("WeaponDLC");
+		OwnedAtStart();
+        UniqueSaveID(9712);
+        HudIcon("blueprint_b");
+		GameVersion(33);
+    }
+}

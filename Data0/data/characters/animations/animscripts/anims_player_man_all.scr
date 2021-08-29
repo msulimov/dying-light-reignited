@@ -1,0 +1,32 @@
+!include("Anims_Player.scr")
+
+//Man_ALL
+
+!include("face_anims.scr")
+//!include( "Anims_Player.scr")
+!include("Anims_Man_NPC.scr")
+!include("Anims_Woman_ALL.scr")
+!include("Anims_Kids_NPC.scr")
+
+!include("DeadBody_Poses.scr")
+
+//Anims_Man_NPC
+!include("MZ_Vessel.scr")
+!include("MZ_Infected.scr")
+//!include( "Corruptor.scr")
+//!include( "Rusher.scr")
+!include("Jumper.scr")
+!include("Prime.scr")
+!include("PrimeVolatile.scr")
+!include("Armored.scr")
+!include("Volatile.scr")
+!include("Spitter.scr")
+!include("Suicider.scr")
+!include("Thug.scr")
+!include("HiveBrood.scr")
+
+//!include("M_TPP_Interaction.scr")
+//!include("M_FPP_Grab.scr")
+//!include("M_TPP_Grab.scr")
+
+!include("Anims_Test.scr")

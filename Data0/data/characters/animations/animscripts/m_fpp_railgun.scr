@@ -1,0 +1,121 @@
+!include("ai_timing.def")
+
+//<--------------------- M_FPP_M16.scr --------------------------------->
+//----- animacje z M16
+// nois
+SeqTrackAlias("FPP_Railgun_StandNoise", "FPP_M16_StandNoise")
+SeqTrackAlias("FPP_Railgun_MoveNoise", "FPP_M16_MoveNoise")
+SeqTrackAlias("FPP_Railgun_SprintNoise", "FPP_M16_SprintNoise")
+
+// stand 
+SeqTrackAlias("FPP_Railgun_Stand", "FPP_M16_Stand")
+SeqTrackAlias("FPP_Railgun_Wall", "FPP_M16_Wall")// no anim for wall now added so we have no assetions
+SeqTrackAlias("FPP_Railgun_Cover_StandPos", "FPP_M16_Cover_StandPos")// no anim for wall now added so we have no assetions
+SeqTrackAlias("FPP_Railgun_StandEmpty", "FPP_M16_StandEmpty")
+
+// idle
+SeqTrackAlias("FPP_Railgun_Idle", "FPP_M16_Idle")
+
+// podstawowe
+
+
+///RELOAD NEW
+SeqTrack("FPP_Railgun_ReloadBegin", 			"M_FPP_Railgun_Reload.anm2"			, 0, 25, 30, 1, 0.3)
+{
+	Event(5, EVENT_RELOAD_FORBID_BREAK, -1)
+	Event(0, 0, -1)
+    {
+       PlaySound2DExternal(GameVolumeSource_SoundPlayer, "astro_rifle_magazine_draw.wav", 1, 0, 1)
+    }
+}
+SeqTrack("FPP_Railgun_ReloadManage", 			"M_FPP_Railgun_Reload.anm2"			, 25, 25, 30, 1, 0.0)
+SeqTrack("FPP_Railgun_ReloadLoop", 				"M_FPP_Railgun_Reload.anm2"			, 25, 67, 30, 1, 0.0)
+{	
+	Event(30, 0, -1)
+    {
+        PlaySound2DExternal(GameVolumeSource_SoundPlayer, "astro_rifle_magazine_load.wav", 1, 1, 1)
+    }
+	Event(35, EVENT_RELOAD_ADD_BULLET, -1)
+	Event(35, 0, -1)
+    {
+        PlaySound2DExternal(GameVolumeSource_SoundPlayer, "m16_rack.wav", 1, 1, 1)
+    }	
+}
+
+SeqTrack("FPP_Railgun_ReloadFinish", 		"M_FPP_Railgun_Reload.anm2",		67, 95, 30, 1, 0.0)
+{	
+	Event(4, EVENT_RELOAD_ALLOW_BREAK, -1)
+	Event(28, END_ANIMATION, 1)
+}
+
+
+
+// shoot
+SeqTrackAlias("FPP_Railgun_Shot", "FPP_M16_Shot")
+SeqTrackAlias("FPP_Railgun_ShotEmpty", "FPP_M16_ShotEmpty")
+SeqTrackAlias("FPP_Railgun_ShotRecoil0", "FPP_M16_ShotRecoil0")
+SeqTrackAlias("FPP_Railgun_ShotRecoil1", "FPP_M16_ShotRecoil1")
+SeqTrackAlias("FPP_Railgun_ShotRecoil2", "FPP_M16_ShotRecoil2")
+
+// aim
+// stand
+SeqTrackAlias("FPP_Railgun_Aim_Stand", "FPP_M16_Aim_Stand")
+SeqTrackAlias("FPP_Railgun_Aim_Shot", "FPP_M16_Aim_Shot")
+SeqTrackAlias("FPP_Railgun_Aim_ShotEmpty", "FPP_M16_Aim_ShotEmpty")
+SeqTrackAlias("FPP_Railgun_Aim_ShotRecoil0", "FPP_M16_Aim_ShotRecoil0")
+SeqTrackAlias("FPP_Railgun_Aim_ShotRecoil1", "FPP_M16_Aim_ShotRecoil1")
+SeqTrackAlias("FPP_Railgun_Aim_ShotRecoil2", "FPP_M16_Aim_ShotRecoil2")
+
+SeqTrackAlias("FPP_Railgun_TakeDamageHitRight", "FPP_M16_TakeDamageHitRight")
+SeqTrackAlias("FPP_Railgun_TakeDamageHitRight_Rest", "FPP_M16_TakeDamageHitRight_Rest")
+
+SeqTrackAlias("FPP_Railgun_TakeDamageHitLeft", "FPP_M16_TakeDamageHitLeft")
+SeqTrackAlias("FPP_Railgun_TakeDamageHitLeft_Rest", "FPP_M16_TakeDamageHitLeft_Rest")
+
+SeqTrackAlias("FPP_Railgun_TakeDamageHitRight1", "FPP_M16_TakeDamageHitRight1")
+SeqTrackAlias("FPP_Railgun_TakeDamageHitRight1_Rest", "FPP_M16_TakeDamageHitRight1_Rest")
+
+SeqTrackAlias("FPP_Railgun_TakeDamageHitLeft1", "FPP_M16_TakeDamageHitLeft1")
+SeqTrackAlias("FPP_Railgun_TakeDamageHitLeft1_Rest", "FPP_M16_TakeDamageHitLeft1_Rest")
+
+SeqTrackAlias("FPP_Railgun_TakeDamageHitRight2", "FPP_M16_TakeDamageHitRight2")
+SeqTrackAlias("FPP_Railgun_TakeDamageHitRight2_Rest", "FPP_M16_TakeDamageHitRight2_Rest")
+
+SeqTrackAlias("FPP_Railgun_TakeDamageHitLeft2", "FPP_M16_TakeDamageHitLeft2")
+SeqTrackAlias("FPP_Railgun_TakeDamageHitLeft2_Rest", "FPP_M16_TakeDamageHitLeft2_Rest")
+
+//<--------------------- M_FPP_HitReactions.scr --------------------------------->
+
+SeqTrackAlias("FPP_Railgun_PokeRight", "FPP_M16_PokeRight")
+SeqTrackAlias("FPP_Railgun_PokeLeft", "FPP_M16_PokeLeft")
+
+SeqTrackAlias("FPP_Railgun_CrowdBumpRight", "FPP_M16_CrowdBumpRight")
+SeqTrackAlias("FPP_Railgun_CrowdBumpLeft", "FPP_M16_CrowdBumpLeft")
+
+//<--------------------- M_FPP_NM_Ballance.scr --------------------------------->
+
+SeqTrackAlias("FPP_Railgun_Ballance_Stand", "FPP_M16_Ballance_Stand")
+SeqTrackAlias("FPP_Railgun_Ballance_StandNoise", "FPP_M16_Ballance_StandNoise")
+SeqTrackAlias("FPP_Railgun_Ballance_MoveNoise", "FPP_M16_Ballance_MoveNoise")
+SeqTrackAlias("FPP_Railgun_Ballance_SprintNoise", "FPP_M16_Ballance_SprintNoise")
+SeqTrackAlias("FPP_Railgun_Ballance_Right", "FPP_M16_Ballance_Right")
+SeqTrackAlias("FPP_Railgun_Ballance_Left", "FPP_M16_Ballance_Left")
+
+SeqTrackAlias("FPP_Railgun_Right_Obstacle", "FPP_M16_Right_Obstacle")
+SeqTrackAlias("FPP_Railgun_Left_Obstacle", "FPP_M16_Left_Obstacle")
+
+//<--------------------- M_FPP_NM_Jump.scr --------------------------------->
+
+SeqTrackAlias("FPP_Railgun_Jump_Begin", "FPP_M16_Jump_Begin")
+SeqTrackAlias("FPP_Railgun_Jump_Loop", "FPP_M16_Jump_Loop")
+SeqTrackAlias("FPP_Railgun_Jump_Begin_1", "FPP_M16_Jump_Begin_1")
+SeqTrackAlias("FPP_Railgun_Jump_Loop_1", "FPP_M16_Jump_Loop_1")
+SeqTrackAlias("FPP_Railgun_JumpOnLowStand", "FPP_M16_JumpOnLowStand")
+SeqTrackAlias("FPP_Railgun_JumpOnLowStand_1", "FPP_M16_JumpOnLowStand_1")
+SeqTrackAlias("FPP_Railgun_JumpOnLowStand_2", "FPP_M16_JumpOnLowStand_2")
+
+SeqTracksBlend("FPP_Railgun_Jump_Begin", "FPP_Railgun_Jump_Loop", 0.1)
+
+SeqTrackAlias("FPP_Railgun_DodgeLeft", "FPP_M16_DodgeLeft")
+SeqTrackAlias("FPP_Railgun_DodgeRight", "FPP_M16_DodgeRight")
+SeqTrackAlias("FPP_Railgun_DodgeBack", "FPP_M16_DodgeBack")

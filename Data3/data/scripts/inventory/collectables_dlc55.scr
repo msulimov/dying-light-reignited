@@ -1,0 +1,181 @@
+//VIKING BUNDLE
+
+import "inventorystuff.scr" 
+sub main() 
+{	
+	Item("Craftplan_Melee_AxeBig_Viking", CategoryType_Collectable)
+    {
+        Name("&Craftplan_Melee_AxeBig_Viking_N&");
+        Description("&Craftplan_Melee_AxeBig_Viking_D&");
+        ItemType(ItemType_CraftPlan);
+        Price(45);
+        Mesh("blueprint.msh");
+        Skin("default");
+        BaseItem("Melee_BigHammer", "", "");
+        BaseItem("Melee_AxeBig", "", "");
+        BaseItem("Melee_Pickaxe", "", "");
+        RequiredItem("Craft_MetalScrap", 6);
+        RequiredItem("Craft_DuctTape", 4);
+		RequiredItem("Craft_String", 4);
+		RequiredItem("Craft_Nails", 4);
+		RequiredItem("Craft_RazorBlade", 2);
+        RequiredItem("Craft_Electronics", 4);
+		RequiredItem("Craft_Batteries", 3);
+		RequiredItem("Craft_Power_Cable", 2);
+		RequiredItem("Craft_PlasticTube", 3);
+		RequiredItem("Craft_RazorBlade", 3);
+		RequiredItem("ZZZZ3_Component_NutsBolts", 2);
+        Color(Color_Blue);
+        CraftedItem("Melee_AxeBig_Viking", 1, 1);
+        CraftplanType("Developer");
+        UniqueSaveID(9924); 
+        HudIcon("blueprint_b");
+        GameVersion(36);
+        InheritBaseStats();
+        OwnedAtStart();
+    }
+	
+	Item("Craftplan_Melee_AxeBig_Viking_Fire", CategoryType_Collectable)
+    {
+        Name("&Craftplan_Melee_AxeBig_Viking_Fire_N&");
+        Description("&Craftplan_Melee_AxeBig_Viking_Fire_D&");
+        ItemType(ItemType_CraftPlan);
+        Price(50);
+        Mesh("blueprint.msh");
+        Skin("default");
+        BaseItem("Melee_BigHammer", "", "");
+        BaseItem("Melee_AxeBig", "", "");
+        BaseItem("Melee_Pickaxe", "", "");
+        RequiredItem("Craft_MetalScrap", 8);
+        RequiredItem("Craft_String", 5);
+        RequiredItem("Craft_Insecticide", 6);
+        RequiredItem("Craft_Electronics", 4);
+        RequiredItem("Craft_Batteries", 4);
+		RequiredItem("Craft_PowerCable", 4);
+		RequiredItem("Craft_Alcohol", 15);
+        Elemental(Elemental_Burning, 3);
+        Color(Color_Orange);
+        CraftedItem("Burning_AxeBig_Viking", 1, 1);
+        CraftplanType("Developer");
+        UniqueSaveID(9925);
+        HudIcon("blueprint_b");
+        GameVersion(36);
+        InheritBaseStats();
+        OwnedAtStart();
+    }
+	
+	Item("Craftplan_Melee_ShortSword_Viking", CategoryType_Collectable)
+    {
+        Name("&Craftplan_Melee_ShortSword_Viking_N&");
+        Description("&Craftplan_Melee_ShortSword_Viking_D&");
+        ItemType(ItemType_CraftPlan);
+        Price(45);
+        Mesh("blueprint.msh");
+        Skin("default");
+		BaseItem("Melee_Machete", "", "");
+		BaseItem("Melee_TahirsWeapon", "", "");
+        BaseItem("Melee_RaisMachete", "", "");
+		BaseItem("Melee_Knife", "", "");
+		BaseItem("Melee_ShortSword", "", "");
+        RequiredItem("Craft_MetalScrap", 6);
+        RequiredItem("Craft_DuctTape", 4);
+		RequiredItem("Craft_String", 4);
+		RequiredItem("Craft_Nails", 4);
+		RequiredItem("Craft_RazorBlade", 2);
+        RequiredItem("Craft_Electronics", 4);
+		RequiredItem("Craft_Batteries", 3);
+		RequiredItem("Craft_Power_Cable", 2);
+		RequiredItem("Craft_PlasticTube", 3);
+		RequiredItem("Craft_RazorBlade", 3);
+		RequiredItem("ZZZZ3_Component_NutsBolts", 2);
+		InheritBaseStats();
+        Color(Color_Blue);
+        CraftedItem("Melee_ShortSword_Viking", 1, 1);
+        CraftplanType("Developer");
+        UniqueSaveID(9926); 
+		OwnedAtStart();
+        HudIcon("blueprint_b");
+		GameVersion(36);
+    }
+	
+	Item("Craftplan_Melee_ShortSword_Viking_Fire", CategoryType_Collectable)
+    {
+        Name("&Craftplan_Melee_ShortSword_Viking_Fire_N&");
+        Description("&Craftplan_Melee_ShortSword_Viking_Fire_D&");
+        ItemType(ItemType_CraftPlan);
+        Price(50);
+        Mesh("blueprint.msh");
+        Skin("default");
+		BaseItem("Melee_Machete", "", "");
+		BaseItem("Melee_TahirsWeapon", "", "");
+        BaseItem("Melee_RaisMachete", "", "");
+		BaseItem("Melee_Knife", "", "");
+		BaseItem("Melee_ShortSword", "", "");
+        RequiredItem("Craft_MetalScrap", 8);
+        RequiredItem("Craft_String", 5);
+        RequiredItem("Craft_Insecticide", 6);
+        RequiredItem("Craft_Electronics", 4);
+        RequiredItem("Craft_Batteries", 4);
+		RequiredItem("Craft_PowerCable", 4);
+		RequiredItem("Craft_Alcohol", 15);
+		Elemental(Elemental_Burning, 3);
+        Color(Color_Orange);
+        CraftedItem("Burning_ShortSword_Viking", 1, 1);
+        CraftplanType("Developer");
+        HudIcon("blueprint_b");
+        UniqueSaveID(9927);
+		OwnedAtStart();
+		InheritBaseStats();
+		GameVersion(36);
+    }
+	
+	Item("Craftplan_Shield_Pro_Viking", CategoryType_Collectable)
+    {
+        Name("&Craftplan_Shield_Pro_Viking_N&");
+        Description("&Craftplan_Shield_Pro_Viking_D&");
+        ItemType(ItemType_CraftPlan);
+        Price(45);
+        Mesh("blueprint.msh");
+        Skin("default");
+        RequiredItem("Craft_MetalScrap", 9);
+        RequiredItem("Craft_DuctTape", 6);
+		RequiredItem("Craft_String", 4);
+        RequiredItem("Craft_PlasticTube", 4);
+		RequiredItem("Craft_Gauze", 5);
+        Color(Color_Blue);
+        CraftedItem("Shield_Pro_Viking", 1, 1);
+        CraftplanType("Weapon10in12");
+        UniqueSaveID(9928);
+        HudIcon("blueprint_b");
+		GameVersion(36);
+		OwnedAtStart();
+		InheritBaseStats();
+    }
+	
+	Item("Craftplan_Shield_Pro_Viking_Fire", CategoryType_Collectable)
+    {
+        Name("&Craftplan_Shield_Pro_Viking_Fire_N&");
+        Description("&Craftplan_Shield_Pro_Viking_Fire_D&");
+        ItemType(ItemType_CraftPlan);
+        Price(50);
+        Mesh("blueprint.msh");
+        Skin("default");
+		RequiredItem("Craft_MetalScrap", 9);
+		RequiredItem("Craft_Gauze", 5);
+        RequiredItem("Craft_Batteries", 4);
+		RequiredItem("Craft_PlasticTube", 4);
+		RequiredItem("Craft_String", 4);
+		RequiredItem("Craft_PowerCable", 4);
+		RequiredItem("Craft_Electronics", 3);
+		RequiredItem("Craft_DuctTape", 7);
+		Elemental(Elemental_Burning, 3);
+        Color(Color_Orange);
+        CraftedItem("Burning_Shield_Pro_Viking", 1, 1);
+        CraftplanType("Weapon10in12");
+        UniqueSaveID(9929); 
+        HudIcon("blueprint_b");
+		GameVersion(36);
+		OwnedAtStart();
+		InheritBaseStats();
+    }
+}

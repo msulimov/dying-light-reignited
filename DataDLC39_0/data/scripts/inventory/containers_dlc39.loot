@@ -1,0 +1,43 @@
+import "containers_object_type.def"
+
+export int Trigger_Open = 0;
+export int Trigger_Search = 1;
+
+export int Color_White =  0;
+export int Color_Green =  1;
+export int Color_Blue =  2;
+export int Color_Violet =  3;
+export int Color_Orange =  4;
+
+sub main()
+{
+    //(mesh, skin, container_type, open_sound, open_text, interaction_name, lockpick_difficulty, initialy_open, sense_color)
+    MeshLootType("chest_loot_big.msh",  "PrisonBox_01","Prison_Chest_WeaponsAndMods", "open_cashdesk", Trigger_Open, "military_box", "hard", false, Color_Orange)	//hard
+    {
+        SetSlotLootType("hook_loot_weapon", "Prison_Chest_Weapon", 1.0);
+        SetSlotLootType("hook_loot_01", "", 0.0); //not used - if weapon hook is used this needs to be disabled, otherwise object in hook_01 will collide with weapon.
+        SetSlotLootType("hook_loot_02", "Prison_Chest_Mod", 1.0);
+    }
+    
+    MeshLootType("tools_box_a.msh", "Prison_toolbox", "Prison_Toolbox", "open_wooden_chest", Trigger_Open, "toolbox_opening", "", false, Color_White)
+    {
+        SetSlotLootType("hook_loot_01", "Prison_Toolbox_A", 1.0);
+        SetSlotLootType("hook_loot_02", "Prison_Toolbox_B", 0.0);   
+    }
+
+    
+    MeshLootType("steel_locker_single_door_a_loot.msh", "prison_steel_locker",  "Prison_Steel_Locker", "open_wooden_wardrobe", Trigger_Open, "steel_locker_opening", "", false, Color_White)
+    {
+        SetSlotLootType("hook_loot_01", "Prison_Steel_Locker", 1.0);
+        SetSlotLootType("hook_loot_02", "Prison_Steel_Locker", 0.0);
+    }
+
+    // MeshLootType("first_aid_container_loot_anm.msh", "medbox", Cont_Med_Box, "", Trigger_Open,  "first_aid_box_opening", "", false, Color_White);
+
+    MeshLootType("first_aid_container_loot_anm.msh", "prison_medbox", "Prison_Medbox", "", Trigger_Open,  "first_aid_box_opening", "", false, Color_White)
+    {
+        SetSlotLootType("hook_loot001", "Prison_Medbox", 1.0);
+        SetSlotLootType("hook_loot002", "Prison_Powerups", 0.5); 
+    }
+    
+}

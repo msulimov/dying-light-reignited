@@ -1,0 +1,64 @@
+sub hr_rand_lever_activate()
+{
+Preset("hr_rand_lever_activate")
+
+// OnLevelStart - lever is disabled and
+
+// 0 - PhysicalSwitch lever
+// 1 - MO base                       
+// 2 - Decal base            
+// 3 -                      
+// 4 -  
+// 5 - Light
+// 6 - FX            
+
+	{
+		OnLevelStart()
+			{
+				Enable(0, false);
+				SetScale(0, 0.1, [0.01, 0.01, 0.01]);
+				SetScale(1, 0.1, [0.01, 0.01, 0.01]);
+				SetScale(2, 0.1, [0.01, 0.01, 0.01]);
+				SetLightIntensity(5, 0.0, 0.0);
+				EnableFX(6, false);
+			}
+
+		OnEnable()	
+			{
+				Enable(0, true);
+				SetScale(0, 0.1, [1.0, 1.0, 1.0]);
+				SetScale(1, 0.1, [1.0, 1.0, 1.0]);
+				SetScale(2, 0.1, [1.0, 1.0, 1.0]);
+				// Enable(3, true);
+				SetLightIntensity(5, 0.0, 2.6);
+				EnableFX(6, true);
+			}
+			
+		OnDisable()
+			{
+				Enable(0, false);
+				SetScale(0, 0.1, [0.01, 0.01, 0.01]);
+				SetScale(1, 0.1, [0.01, 0.01, 0.01]);
+				SetScale(2, 0.1, [0.01, 0.01, 0.01]);
+				SetLightIntensity(5, 0.0, 0.0);
+				EnableFX(6, false);
+			}
+			
+		// Group, Time, Value
+			
+		TimedEvent(0.0)
+		{ 
+			SetLightIntensity(5, 1.6, 1.3);
+		}
+		TimedEvent(1.6)
+		{ 
+			SetLightIntensity(5, 1.6, 0.6);
+		}
+		GoToBegin(3.2)
+		{
+		}	
+
+	}
+}
+
+

@@ -1,0 +1,120 @@
+//!MusicPreset(preset_name)
+//!Music(ID, file_name, fade_in, fade_out, bpm, volume, loops)
+//!Music(ID, file_name, fade_in, fade_out, SPOOKY reset TIME, volume, loops)
+//! WARNING!! for SPOOKY music, SPOOKY reset TIME if value == 0 ( default 200 sec reset time)
+//!			        SPOOKY reset TIME if value == -1 ( no reset time )
+//!                             SPOOKY reset TIME if value > 0 ( then reset time set to value )
+
+
+MusicPreset("Prison_Time_Run")
+{	
+    NoBlockingByEvents()
+
+	Music(DAY,                      	"DL_Attack_Soldiers_04.ogg",     			0, 0, 0, 1.8, -1, 0) //Dlcdw
+	Music(DAY_COMMING,                  "DL_Attack_Soldiers_04.ogg",    			0, 0, 0, 1.8, -1, 0)
+	Music(NIGHT,                    	"DL_Attack_Soldiers_04.ogg",    		    0, 0, 0, 1.8, -1, 0)
+	//Music(DAY,                      	"DL_Attack_Soldiers_04.ogg",     			0, 0, 0, 1.8, -1, 0) //DW  DWDL_Escape_00.ogg   DL_DLC_Stadion_Attack_01VERB.ogg DL_Run_01.ogg
+}
+/*
+MusicPreset("Prison_Time_Run_End")
+{	
+    NoBlockingByEvents()
+
+	Music(DAY,                      	"DL_Attack_Soldiers_04.ogg",     		   2, 2, 0, 1.3, -1, 0) //Dlcdw
+	Music(DAY_COMMING,                  "DL_Attack_Soldiers_04.ogg",    		   2, 2, 0, 1.3, -1, 0)
+	Music(NIGHT,                    	"DL_Attack_Soldiers_04.ogg",    		   2, 2, 0, 1.3, -1, 0)
+}
+
+MusicPreset("Block_Area_A")
+{
+	NoBlockingByEvents()
+	
+    Music(DAY,                          "DL_Attack_Soldiers_04.ogg", 			2, 1, 0, 1.3, -1, 0)//DW
+    Music(DAY_COMMING,                  "DL_Attack_Soldiers_04.ogg", 			2, 1, 0, 1.3, -1, 0)
+    Music(NIGHT,                        "DL_Attack_Soldiers_04.ogg", 			2, 1, 0, 1.3, -1, 0)
+	//Music(DAY,                        "DL_Attack_Soldiers_04.ogg", 					3, 5, 0, 1.0, -1, 0)//DW
+}
+
+MusicPreset("Block_Area_B")
+{
+	NoBlockingByEvents()
+	
+	Music(DAY,                      	"DL_Attack_Soldiers_04.ogg",	    	1, 1, 0, 1.3, -1, 0)//DW DL_Attack_Walkers_01.ogg
+	Music(DAY_COMMING,                  "DL_Attack_Soldiers_04.ogg",	    	1, 1, 0, 1.3, -1, 0)
+	Music(NIGHT,                    	"DL_Attack_Soldiers_04.ogg",         	1, 1, 0, 1.3, -1, 0)
+}
+
+MusicPreset("Dinner_Fight")
+{
+	NoBlockingByEvents()
+	
+    Music(DAY,                          "DL_Attack_Soldiers_04.ogg", 			1, 1, 0, 1.3, -1, 0) //DL_Arena_02.ogg DL_Nest_Goons_Fight.ogg  DL_Escape_from_Tower.ogg DL_Fight_Demolisher.ogg
+    Music(DAY_COMMING,                  "DL_Attack_Soldiers_04.ogg", 			1, 1, 0, 1.3, -1, 0)
+    Music(NIGHT,                        "DL_Attack_Soldiers_04.ogg", 			1, 1, 0, 1.3, -1, 0)
+}
+
+MusicPreset("Courtyard_Fight")
+{
+	NoBlockingByEvents()
+	
+    Music(DAY,                          "DL_Attack_Soldiers_04.ogg", 		1, 1, 0, 1.2, -1, 0)
+    Music(DAY_COMMING,                  "DL_Attack_Soldiers_04.ogg", 		1, 1, 0, 1.2, -1, 0)
+    Music(NIGHT,                        "DL_Attack_Soldiers_04.ogg", 		1, 1, 0, 1.2, -1, 0)
+}
+
+MusicPreset("Lobby_Fight")
+{
+	NoBlockingByEvents()
+	
+    Music(DAY,                          "DL_Attack_Soldiers_04.ogg", 		2, 1, 0, 1.3, -1, 0)
+    Music(DAY_COMMING,                  "DL_Attack_Soldiers_04.ogg", 		2, 1, 0, 1.3, -1, 0)
+    Music(NIGHT,                        "DL_Attack_Soldiers_04.ogg", 		2, 1, 0, 1.3, -1, 0)
+	//DL_Walk_Fight_Arena_01.ogg
+}
+
+MusicPreset("WC_Fight")
+{
+	NoBlockingByEvents()
+	
+    Music(DAY,                          "DL_Attack_Soldiers_04.ogg", 		1, 1, 0, 1.5, -1, 0)
+    Music(DAY_COMMING,                  "DL_Attack_Soldiers_04.ogg", 		1, 1, 0, 1.5, -1, 0)
+    Music(NIGHT,                        "DL_Attack_Soldiers_04.ogg", 		1, 1, 0, 1.5, -1, 0)
+	//DL_Fight_Warehouse_01.ogg
+}
+
+MusicPreset("Final_Arena_Fight_Part_1")
+{
+	NoBlockingByEvents()
+	
+    Music(DAY,                          "DL_Attack_Soldiers_04.ogg", 		1, 1, 0, 1.3, -1, 0)
+    Music(DAY_COMMING,                  "DL_Attack_Soldiers_04.ogg", 		1, 1, 0, 1.3, -1, 0)
+    Music(NIGHT,                        "DL_Attack_Soldiers_04.ogg", 		1, 1, 0, 1.3, -1, 0)
+}
+
+MusicPreset("Final_Arena_Boss")
+{
+	NoBlockingByEvents()
+	
+    Music(DAY,                          "DL_Attack_Soldiers_04.ogg", 		1, 1, 0, 1.3, -1, 0)
+    Music(DAY_COMMING,                  "DL_Attack_Soldiers_04.ogg", 		1, 1, 0, 1.3, -1, 0)
+    Music(NIGHT,                        "DL_Attack_Soldiers_04.ogg", 		1, 1, 0, 1.3, -1, 0)
+}
+
+MusicPreset("Music_Gas")
+{
+	NoBlockingByEvents()
+	
+    Music(DAY,                          "DL_Attack_Soldiers_04.ogg", 		1, 1, 0, 1.3, -1, 0)
+    Music(DAY_COMMING,                  "DL_Attack_Soldiers_04.ogg", 		1, 1, 0, 1.3, -1, 0)
+    Music(NIGHT,                        "DL_Attack_Soldiers_04.ogg", 		1, 1, 0, 1.3, -1, 0)
+}*/
+
+MusicPreset("Revard_Room")
+{
+	NoBlockingByEvents()
+	
+    Music(DAY,                          "DL_Attack_Soldiers_04.ogg", 		0, 0, 0, 1.8, -1, 0)
+    Music(DAY_COMMING,                  "DL_Attack_Soldiers_04.ogg", 		0, 0, 0, 1.8, -1, 0)
+    Music(NIGHT,                        "DL_Attack_Soldiers_04.ogg", 		0, 0, 0, 1.8, -1, 0)
+}
+

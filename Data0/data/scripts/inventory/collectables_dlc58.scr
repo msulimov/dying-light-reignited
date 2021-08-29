@@ -1,0 +1,30 @@
+//SPECIAL AGENT BUNDLE
+
+import "inventorystuff.scr" 
+sub main() 
+{		
+	Item("Craftplan_Firearm_Shotgun_Ox", CategoryType_Collectable)
+    {
+        Name("&Craftplan_Firearm_Shotgun_Ox_N&");
+        Description('&Craftplan_Firearm_Shotgun_Ox_D&');
+        ItemType(ItemType_CraftPlan);
+        Price(6400);
+        Mesh("blueprint.msh");
+        Skin("default");
+        BaseItem("Firearm_ShotgunA", "", "");
+		BaseItem("Firearm_ShotgunCGen", "", "");
+        RequiredItem("Craft_MetalScrap", 6);
+        RequiredItem("Craft_DuctTape", 3);
+		RequiredItem("Craft_Bleach", 2);
+		RequiredItem("Craft_Alcohol", 2);
+		RequiredItem("Craft_ToxicPlant", 2);
+        Color(Color_Blue);
+        CraftedItem("Firearm_Shotgun_Ox", 1, 1);
+        CraftplanType("WeaponDLC");
+        UniqueSaveID(9930);
+        HudIcon("blueprint_b");
+        GameVersion(38);
+        OwnedAtStart();
+        InheritBaseStats();
+    }
+}

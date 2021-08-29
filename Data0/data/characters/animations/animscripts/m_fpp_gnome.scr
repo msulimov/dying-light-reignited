@@ -1,0 +1,418 @@
+//SeqTrackAlias("FPP_Gnome_Stand", "FPP_Stick2_Stand")
+SeqTrack( "FPP_Gnome_StandNoise",		"FPP_Gnome_StandNoise.anm2", 		        0, 170, 30, 1, 0.3)
+SeqTrack( "FPP_Gnome_MoveNoise",		"FPP_Gnome_MoveNoise.anm2",				0, 30, 30, 1, 0.5)
+SeqTrack( "FPP_Gnome_SprintNoise", 			"FPP_Gnome_SprintNoise.anm2",		0, 20, 34, 1, 0.5) 
+
+SeqTrack("FPP_Gnome_Stand", "FPP_Gnome_StandNoise.anm2", 0, 10, 30, 1, 0.5)
+
+SeqTracksBlend("FPP_Unarmed_FurySprintPose", 							"FPP_Gnome_Stand", 		  0.3)
+SeqTracksBlend("FPP_Unarmed_FuryRamHit_L_0", 							"FPP_Gnome_Stand", 		  0.3)
+SeqTracksBlend("FPP_Unarmed_FuryRamHit_L_1", 							"FPP_Gnome_Stand", 		  0.3)
+SeqTracksBlend("FPP_Unarmed_FuryRamHit_R_0", 							"FPP_Gnome_Stand", 		  0.3)
+SeqTracksBlend("FPP_Unarmed_FuryRamHit_R_1", 							"FPP_Gnome_Stand", 		  0.3)
+
+//===================================== M_FPP_Stick2Heavy_Melee ============================================
+SeqTrack("FPP_Gnome_Melee_Attack_RL_Begin",			"FPP_Gnome_Melee_Attack.anm2", 		0, 28, 60, 1, 0.1)
+{
+	Event(0, 0, 1)
+	{
+		PlayPlayerSound6(GameVolumeSource_SpeechPlayer, "Speech_Attack_Heavy_Begin_XX.wav", 1, 0, 1, 1.0)
+	}
+}
+SeqTrack("FPP_Gnome_Melee_Attack_RL_Empty",			"FPP_Gnome_Melee_Attack.anm2", 		28, 94, 30, 1, 0.1)
+{
+	Event(0, 0, 1)
+	{
+		PlayPlayerSound6(GameVolumeSource_SpeechPlayer, "Speech_Attack_Heavy_XX.wav", 1, 0, 1, 1.0)
+	}
+	Event(59, 0, 1)
+	{
+		PlaySound23D(GameVolumeSource_SoundPlayer, "empty_hammer_heavy_grip.wav", 1, 3, "head", 1, [0,0,0], 1)
+	}	
+	Event(0, MELEE_SWING_RIGHT, 1) 
+	Event(6, PUNCH_HIT, 1)	
+	Event(3.5, START_GIVE_DAMAGE, -1)
+	Event(36.5, CAN_START_KICK, -1)
+	Event(9.5, END_GIVE_DAMAGE, -1)
+}
+
+SeqTrack("FPP_Gnome_Melee_Attack_UD_Begin",			"FPP_Gnome_Melee_Attack_UD.anm2", 		0, 28, 60, 1, 0.1)
+{
+	Event(0, 0, 1)
+	{
+		PlayPlayerSound6(GameVolumeSource_SpeechPlayer, "Speech_Attack_Heavy_Begin_XX.wav", 1, 0, 1, 1.0)
+	}
+}
+SeqTrack("FPP_Gnome_Melee_Attack_UD_Empty",			"FPP_Gnome_Melee_Attack_UD.anm2", 		28, 94, 30, 1, 0.1)
+{
+	Event(0, 0, 1)
+	{
+		PlayPlayerSound6(GameVolumeSource_SpeechPlayer, "Speech_Attack_Heavy_XX.wav", 1, 0, 1, 1.0)
+	}
+	Event(59, 0, 1)
+	{
+		PlaySound23D(GameVolumeSource_SoundPlayer, "empty_hammer_heavy_grip.wav", 1, 3, "head", 1, [0,0,0], 1)
+	}	
+	Event(0, MELEE_SWING_RIGHT, 1) 
+	Event(6, PUNCH_HIT, 1)	
+	Event(6, START_GIVE_DAMAGE, -1)
+	Event(36.5, CAN_START_KICK, -1)
+	Event(12, END_GIVE_DAMAGE, -1)
+}
+
+SeqTrack("FPP_Gnome_Idle_Rest",			"FPP_Gnome_StandNoise.anm2", 		        0, 170, 30, 1, 0.5)
+SeqTracksBlend("FPP_Gnome_Melee_Attack_UD_Empty", 	"FPP_Gnome_Idle_Rest",		0.7)
+SeqTracksBlend("FPP_Gnome_Melee_Attack_RL_Empty", 	"FPP_Gnome_Idle_Rest",		0.7)
+
+SeqTrack("FPP_Gnome_Melee_Attack_CH_RL_Begin", 			"FPP_Gnome_Melee_Attack_UD.anm2", 		0, 28, 60, 1, 0.4)
+SeqTrack("FPP_Gnome_Melee_Attack_CH_RL_Loop", 			"FPP_Gnome_Melee_Attack_UD.anm2"	, 184, 244, 30, 1, 0.6)
+SeqTrack("FPP_Gnome_Melee_Attack_CH_RL_Empty",			"FPP_Gnome_Melee_Attack_UD.anm2"	, 245, 345, 25, 1, 0.0)
+{
+	//Event(180 do 220)
+	Event(0, 0, 1)
+		{
+			PlayPlayerSound6(GameVolumeSource_SpeechPlayer, "Speech_Attack_Heavy_Charge_XX.wav", 1, 1, 1, 1.0)
+		} 
+	Event(10, PUNCH_HIT, 1)	
+	Event(60, CAN_START_KICK, -1)
+	Event(0, MELEE_SWING_RIGHT,0) 
+	Event(10, START_GIVE_DAMAGE, -1)	
+	Event(32, END_GIVE_DAMAGE, -1)
+}
+SeqTrack("FPP_Gnome_Melee_Attack_GP_Begin", 			"FPP_Gnome_Melee_Attack_GP.anm2" , 0, 60, 260, 0, 0.0)
+{
+	Event(1, EVENT_JUMP_ATTACK, 1)
+	{
+		PlaySound23D(GameVolumeSource_SoundPlayer, "hammer_heavy_gp_begin.wav", 1, 3, "head", 1, [0,0,0], 0)
+	}
+	Event(0, 0, 1)
+	{
+		PlayPlayerSound6(GameVolumeSource_SpeechPlayer, "Speech_Attack_Hammer_GP.wav", 1, 0, 1, 1.0)
+	}
+}
+SeqTrack("FPP_Gnome_Melee_Attack_GP_Empty", 			"FPP_Gnome_Melee_Attack_GP.anm2" , 60, 116, 30, 0, 0.1)
+{
+	Event(3.5, START_GIVE_DAMAGE, -1)	
+	Event(3.5, PUNCH_HIT, 1)
+	Event(6, SPECIAL_EFFECT, 1)
+	{		
+		PlaySound23D(GameVolumeSource_SoundPlayer, "hammer_heavy_gp_hit.wav", 1, 3, "head", 1, [0,0,0], 0)
+	}	
+	Event(9, END_GIVE_DAMAGE, -1)	
+}
+SeqTrack("FPP_Gnome_Melee_Attack_GP_Empty_Rest", 			"FPP_Gnome_Melee_Attack_GP.anm2" , 117, 145, 30, 0, 0.0)
+
+SeqTrack("FPP_Gnome_Melee_Attack_ExhaustedPunch", 		"FPP_Gnome_Melee_Attack_ExhaustedPunch.anm2"	, 0, 72, 30, 1, 0.1)
+{
+	Event(0, 0, 1)
+	{
+		PlayPlayerSound6(GameVolumeSource_SpeechPlayer, "Speech_Attack_Heavy_Stamina_Low_XX.wav", 1, 0, 1, 1.0)
+	}
+	Event(25, MELEE_SWING_RIGHT,1) 
+	Event(30, PUNCH_HIT, 1)	
+	Event(30, START_GIVE_DAMAGE, -1)	
+	Event(39, END_GIVE_DAMAGE, -1)
+	Event(70, CAN_START_KICK, -1)
+}
+SeqTrack("FPP_Gnome_Melee_Attack_ExhaustedPunch_Rest", 	"FPP_Gnome_Melee_Attack_ExhaustedPunch.anm2"	, 72, 151, 30, 1, 0.0)
+{
+	Event(3, END_ANIMATION, 1)
+}
+SeqTrack("FPP_Gnome_Exhausted_Idle", 						"FPP_Gnome_Melee_Attack_ExhaustedPunch.anm2"	, 152, 212, 30, 1, 1.0)
+
+SeqTracksBlend("FPP_Gnome_Melee_Attack_ExhaustedPunch_Rest", 			"FPP_Gnome_Exhausted_Idle", 2.5)
+SeqTracksBlend("FPP_Gnome_Exhausted_Idle", 							"FPP_Gnome_Stand", 		  0.7)
+
+////////////////////////////////////////////////////////////////////////////////////////////////////////
+/// Other
+SeqTrack( "FPP_Gnome_Melee_Throw_Aim",		"FPP_Gnome_Melee_Throw.anm2",			0, 57, 30, 1, 0.2)
+SeqTrack( "FPP_Gnome_Melee_Throw",			"FPP_Gnome_Melee_Throw.anm2",			59, 118, 30, 1, 0.0)
+{
+	Event(27, PUNCH_HIT, 1)
+	Event(18, MELEE_SWING_RIGHT, 1) 
+	Event(0, START_GIVE_DAMAGE, -1)	
+}
+
+SeqTrack( "FPP_Gnome_Melee_RopeThrow_Aim",		"FPP_Gnome_Melee_Throw.anm2",			0, 57, 30, 1, 0.2)
+SeqTrack( "FPP_Gnome_Melee_RopeThrow",			"FPP_Gnome_Melee_Throw.anm2",			59, 118, 30, 1, 0.0)
+{
+	Event(27, PUNCH_HIT, 1)
+	Event(27, ROPE_LOCOMOTION_ATTACH, 1)
+	Event(18, MELEE_SWING_RIGHT, 1) 
+	Event(0, START_GIVE_DAMAGE, -1)		
+}
+SeqTrack( "FPP_Gnome_Melee_RopeThrowBack",		"FPP_Gnome_Melee_Weaponthrow.anm2",			61, 81, 30, 1, 0.3)
+{
+	Event(0, 0, 1)
+    {
+        PlaySound23D(GameVolumeSource_LoudSound, "weapon_rope_throw_back.wav", 1, 3, "head", 1, [0,0,0], 1)
+    }
+	Event(9, PUNCH_HIT, 1)
+}
+SeqTrack( "FPP_Gnome_Melee_RopeThrowBack_Rest",	"FPP_Gnome_Melee_Weaponthrow.anm2",			81, 125, 60, 1, 0.0)
+
+//===================================== M_FPP_NM_Jump.scr ================================================
+/////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+SeqTrack("FPP_Gnome_Jump_Begin", "FPP_Gnome_Jump.anm2", 0, 15, 30, 1, 0.1)
+{
+    Event(0, EVENT_JUMP, -1)
+}
+SeqTrack("FPP_Gnome_Jump_Loop", "FPP_Gnome_Jump.anm2", 15, 75, 30, 1, 0.3)
+
+SeqTrack("FPP_Gnome_Jump_Begin_1", "FPP_Gnome_Jump.anm2", 0, 15, 30, 1, 0.1)
+{
+    Event(0, EVENT_JUMP, -1)
+}
+SeqTrack("FPP_Gnome_Jump_Loop_1", "FPP_Gnome_Jump.anm2", 15, 75, 30, 1, 0.3)
+
+/////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+SeqTrack("FPP_Gnome_JumpOverLow", "FPP_Gnome_JumpOverLow.anm2", 5, 40, 30, 1, 0.1)
+{
+    Event(0, 0, 1)
+    {
+        PlaySound2D(GameVolumeSource_SoundPlayer, JUMP_OVER_SOUND, 1, 1)
+    }
+    Event(5, PUNCH_HIT, 2)
+        Event(23, ENABLE_DUCK, -1)
+        Event(30, END_ANIMATION, 1)
+}
+
+SeqTrack("FPP_Gnome_JumpOverLow_1", "FPP_Gnome_JumpOverLow_1.anm2", 0, 35, 30, 1, 0.2)
+{
+    Event(0, 0, 1)
+    {
+        PlaySound2D(GameVolumeSource_SoundPlayer, JUMP_OVER_SOUND, 1, 1)
+    }
+    Event(5, PUNCH_HIT, 2)
+        Event(23, ENABLE_DUCK, -1)
+        Event(30, END_ANIMATION, 1)
+}
+
+/////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+SeqTrack("FPP_Gnome_JumpOnLowStand", "FPP_Gnome_JumpOnLowStand.anm2", 0, 15, 30, 1, 0.0)
+{
+    Event(0, 0, 1)
+    {
+        PlaySound23D(GameVolumeSource_SoundPlayer, "clothes_jump_on_low_stand.wav", 1, 3, "head", 1, [0, 0, 0], 0)
+    }
+}
+
+SeqTrack("FPP_Gnome_JumpOnLowStand_1", "FPP_Gnome_JumpOnLowStand_1.anm2", 0, 15, 30, 1, 0.1)
+{
+    Event(0, 0, 1)
+    {
+        PlaySound23D(GameVolumeSource_SoundPlayer, "clothes_jump_on_low_stand.wav", 1, 3, "head", 1, [0, 0, 0], 0)
+    }
+}
+SeqTrack("FPP_Gnome_JumpOnLowStand_2", "FPP_Gnome_JumpOnLowStand_2.anm2", 0, 15, 30, 1, 0.1)
+{
+    Event(0, 0, 1)
+    {
+        PlaySound23D(GameVolumeSource_SoundPlayer, "clothes_jump_on_low_stand.wav", 1, 3, "head", 1, [0, 0, 0], 0)
+    }
+}
+
+/////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+SeqTracksBlend("FPP_Gnome_Jump_Begin", "FPP_Gnome_Jump_Loop", 0.1)
+SeqTracksBlend("FPP_Gnome_Jump_Begin_1", "FPP_Gnome_Jump_Loop_1", 0.1)
+
+/////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+SeqTrack("FPP_Gnome_DodgeLeft", "FPP_Gnome_DodgeLeft.anm2", 0, 30, 45, 1, 0.1)
+{
+    Event(0, 0, 1)
+    {
+        PlaySound23D(GameVolumeSource_SoundPlayer, "clothes_wall_jump_right.wav", 1, 3, "head", 1, [0, 0, 0], 0)
+    }
+    Event(5, JUMP_PUSH_OFF, -1)
+        Event(18, END_ANIMATION, 1)
+}
+SeqTrack("FPP_Gnome_DodgeRight", "FPP_Gnome_DodgeRight.anm2", 0, 30, 45, 1, 0.1)
+{
+    Event(0, 0, 1)
+    {
+        PlaySound23D(GameVolumeSource_SoundPlayer, "clothes_wall_jump_left.wav", 1, 3, "head", 1, [0, 0, 0], 0)
+    }
+    Event(5, JUMP_PUSH_OFF, -1)
+        Event(18, END_ANIMATION, 1)
+}
+SeqTrack("FPP_Gnome_DodgeBack", "FPP_Gnome_DodgeBack.anm2", 0, 30, 30, 1, 0.1)
+{
+    Event(0, 0, 1)
+    {
+        PlaySound23D(GameVolumeSource_SoundPlayer, "clothes_wall_jump_left.wav", 1, 3, "head", 1, [0, 0, 0], 0)
+    }
+    Event(5, JUMP_PUSH_OFF, -1)
+        Event(13, END_ANIMATION, 1)
+}
+
+//===================================== M_FPP_NM_Ballance.scr ================================================
+/////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+//SeqTrack("FPP_Gnome_Ballance_Stand", "M_FPP_Stick2Heavy_PlankStand.anm2", 0, 10, 27, 1, 0.5)
+//SeqTrack("FPP_Gnome_Ballance_StandNoise", "M_FPP_Stick2Heavy_PlankStand.anm2", 10, 130, 30, 1, 0.5)
+//SeqTrack("FPP_Gnome_Ballance_MoveNoise", "M_FPP_Plank_Stick_Stand_01.anm2", 0, 120, 30, 1, 0.5)
+//SeqTrack("FPP_Gnome_Ballance_SprintNoise", "M_FPP_Stick_NM_Sprint_footbridge.anm2", 0, 31, 30, 1, 0.5)
+//SeqTrack("FPP_Gnome_Ballance_Right", "M_FPP_Stick2Heavy_PlankStand.anm2", 257, 377, 30, 1, 0.5)
+//SeqTrack("FPP_Gnome_Ballance_Left", "M_FPP_Stick2Heavy_PlankStand.anm2", 133, 253, 30, 1, 0.5)
+//
+//SeqTrack("FPP_Gnome_Right_Obstacle", "M_FPP_Stick2Heavy_Obstacle_Right.anm2", 0, 12, 30, 1, 0.1)
+//SeqTrack("FPP_Gnome_Left_Obstacle", "M_FPP_Stick2Heavy_Obstacle_Left.anm2", 0, 12, 30, 1, 0.1)SeqTrack("FPP_Gnome_Ballance_Stand", "M_FPP_Stick2Heavy_PlankStand.anm2", 0, 10, 27, 1, 0.5)
+
+SeqTrack("FPP_Gnome_Ballance_StandNoise", "FPP_Gnome_StandNoise.anm2", 0, 10, 30, 1, 0.5)
+SeqTrack("FPP_Gnome_Ballance_Stand", "FPP_Gnome_StandNoise.anm2", 0, 10, 30, 1, 0.5)
+SeqTrack("FPP_Gnome_Ballance_MoveNoise", "FPP_Gnome_StandNoise.anm2", 0, 10, 30, 1, 0.5)
+SeqTrack("FPP_Gnome_Ballance_SprintNoise", "FPP_Gnome_StandNoise.anm2", 0, 10, 30, 1, 0.5)
+SeqTrack("FPP_Gnome_Ballance_Right", "FPP_Gnome_StandNoise.anm2", 0, 10, 30, 1, 0.5)
+SeqTrack("FPP_Gnome_Ballance_Left", "FPP_Gnome_StandNoise.anm2", 0, 10, 30, 1, 0.5)
+
+SeqTrack("FPP_Gnome_Right_Obstacle", "FPP_Gnome_StandNoise.anm2", 0, 10, 30, 1, 0.5)
+SeqTrack("FPP_Gnome_Left_Obstacle", "FPP_Gnome_StandNoise.anm2", 0, 10, 30, 1, 0.5)
+
+//===================================== M_FPP_HitReactions.scr ================================================
+/////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+SeqTrack("FPP_Gnome_TakeDamageHitRight", "FPP_Gnome_TakeDamageHit.anm2", 32, 47, 30, 1, 0.3)
+SeqTrack("FPP_Gnome_TakeDamageHitRight_Rest", "FPP_Gnome_TakeDamageHit.anm2", 47, 62, 30, 1, 0.5)
+
+SeqTrack("FPP_Gnome_TakeDamageHitLeft", "FPP_Gnome_TakeDamageHit.anm2", 0, 15, 30, 1, 0.3)
+SeqTrack("FPP_Gnome_TakeDamageHitLeft_Rest", "FPP_Gnome_TakeDamageHit.anm2", 15, 30, 30, 1, 0.5)
+
+SeqTrack("FPP_Gnome_TakeDamageHitRight1", "FPP_Gnome_TakeDamageHit.anm2", 96, 111, 30, 1, 0.3)
+SeqTrack("FPP_Gnome_TakeDamageHitRight1_Rest", "FPP_Gnome_TakeDamageHit.anm2", 111, 126, 30, 1, 0.5)
+
+SeqTrack("FPP_Gnome_TakeDamageHitLeft1", "FPP_Gnome_TakeDamageHit.anm2", 64, 79, 30, 1, 0.3)
+SeqTrack("FPP_Gnome_TakeDamageHitLeft1_Rest", "FPP_Gnome_TakeDamageHit.anm2", 79, 94, 30, 1, 0.5)
+
+SeqTrack("FPP_Gnome_TakeDamageHitRight2", "FPP_Gnome_TakeDamageHit.anm2", 160, 175, 30, 1, 0.3)
+SeqTrack("FPP_Gnome_TakeDamageHitRight2_Rest", "FPP_Gnome_TakeDamageHit.anm2", 175, 190, 30, 1, 0.5)
+
+SeqTrack("FPP_Gnome_TakeDamageHitLeft2", "FPP_Gnome_TakeDamageHit.anm2", 128, 143, 30, 1, 0.3)
+SeqTrack("FPP_Gnome_TakeDamageHitLeft2_Rest", "FPP_Gnome_TakeDamageHit.anm2", 143, 158, 30, 1, 0.5)
+
+/////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+SeqTrack("FPP_Gnome_PokeRight", "FPP_Gnome_Poke.anm2", 0, 65, 30, 1, 0.1)
+{
+    Event(0, 0, 1)
+    {
+        PlaySound23D(GameVolumeSource_LoudSound, "clothes_grab_failed_right_XX.wav", 1, 3, "head", 1, [0, 0, 0], 0)
+    }
+    Event(6, 0, 1)
+    {
+        PlayPlayerSound6(GameVolumeSource_SpeechPlayer, "Speech_Reaction_Grab_Failed_XX.wav", 1, 1, 0, 0.6)
+    }
+    Event(14, GRAB_FAILED_RELEASE, 1)
+        Event(16, REST_START, 1)
+        Event(65, END_ANIMATION, 1)
+}
+SeqTrack("FPP_Gnome_PokeLeft", "FPP_Gnome_Poke.anm2", 67, 132, 30, 1, 0.1)
+{
+    Event(0, 0, 1)
+    {
+        PlaySound23D(GameVolumeSource_LoudSound, "clothes_grab_failed_left_XX.wav", 1, 3, "head", 1, [0, 0, 0], 0)
+    }
+    Event(6, 0, 1)
+    {
+        PlayPlayerSound6(GameVolumeSource_SpeechPlayer, "Speech_Reaction_Grab_Failed_XX.wav", 1, 1, 0, 0.6)
+    }
+    Event(14, GRAB_FAILED_RELEASE, 1)
+        Event(16, REST_START, 1)
+        Event(65, END_ANIMATION, 1)
+}
+
+/////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+//SeqTrack("FPP_Gnome_CrowdBumpLeft", "FPP_Gnome_Poke.anm2", 82, 132, 30, 1, 0.3)
+//{
+//    Event(CROWD_BUMP_EVENT_TIME, 0, 1)
+//    {
+//        PlaySound2D(GameVolumeSource_SoundPlayer, CROWD_BUMP_SOUND, 1, 0)
+//    }
+//    Event(2, 0, 1)
+//    {
+//        PlayPlayerSound6(GameVolumeSource_SpeechPlayer, "Speech_Bump_Crowd_XX.wav", 1, 0, 1, 0.8)
+//    }
+//    Event(4, GRAB_FAILED_RELEASE, 1)
+//        Event(6, REST_START, 1)
+//        Event(50, END_ANIMATION, 1)
+//}
+//
+//SeqTrackAlias("FPP_Gnome_CrowdBumpRight", "FPP_Gnome_CrowdBumpLeft")
+
+SeqTrack("FPP_Gnome_CrowdBumpLeft", "FPP_Gnome_TakeDamageHit.anm2", 32, 47, 30, 1, 0.1)
+{
+    Event(CROWD_BUMP_EVENT_TIME, 0, 1)
+    {
+        PlaySound2D(GameVolumeSource_SoundPlayer, CROWD_BUMP_SOUND, 1, 0)
+    }
+    Event(2, 0, 1)
+    {
+        PlayPlayerSound6(GameVolumeSource_SpeechPlayer, "Speech_Bump_Crowd_XX.wav", 1, 0, 1, 0.8)
+    }
+    Event(4, GRAB_FAILED_RELEASE, 1)
+    Event(6, REST_START, 1)
+    Event(14, END_ANIMATION, 1)
+}
+SeqTrack("FPP_Gnome_CrowdBumpRight", "FPP_Gnome_TakeDamageHit.anm2", 47, 62, 30, 1, 0.2)
+
+
+/////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+/// Baseball Hit reactions on push damage
+//SeqTrack("FPP_Gnome_TakeDamagePush", "M_FPP_Stick2Heavy_KickReaction_04.anm2", 0, 22, 30, 1, 0.033)
+//SeqTrack("FPP_Gnome_TakeDamagePush_Rest", "M_FPP_Stick2Heavy_KickReaction_04.anm2", 22, 40, 30, 1, 0.0)
+//
+//SeqTrack("FPP_Gnome_TakeDamagePush1", "M_FPP_Stick2Heavy_KickReaction_01.anm2", 0, 22, 30, 1, 0.033)
+//SeqTrack("FPP_Gnome_TakeDamagePush1_Rest", "M_FPP_Stick2Heavy_KickReaction_01.anm2", 22, 40, 30, 1, 0.0)
+//
+//SeqTrack("FPP_Gnome_TakeDamagePush2", "M_FPP_Stick2Heavy_KickReaction_02.anm2", 0, 22, 30, 1, 0.033)
+//SeqTrack("FPP_Gnome_TakeDamagePush2_Rest", "M_FPP_Stick2Heavy_KickReaction_02.anm2", 22, 40, 30, 1, 0.0)
+//
+//SeqTrack("FPP_Gnome_TakeDamagePush3", "M_FPP_Stick2Heavy_KickReaction_03.anm2", 0, 22, 30, 1, 0.033)
+//SeqTrack("FPP_Gnome_TakeDamagePush3_Rest", "M_FPP_Stick2Heavy_KickReaction_03.anm2", 22, 40, 30, 1, 0.0)
+
+SeqTrack("FPP_Gnome_TakeDamagePush", "FPP_Gnome_TakeDamageHit.anm2", 32, 47, 30, 1, 0.2)
+SeqTrack("FPP_Gnome_TakeDamagePush_Rest", "FPP_Gnome_TakeDamageHit.anm2", 47, 62, 30, 1, 0.2)
+
+/////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+//SeqTrack("FPP_Gnome_TakeDamageCollision", "M_FPP_Stick2Heavy_TakeDamageColided_01.anm2", 0, 30, 30, 1, 0.033)
+//{
+//    Event(CROWD_BUMP_EVENT_TIME, 0, 1)
+//    {
+//        PlaySound2D(GameVolumeSource_SoundPlayer, COLLISON_SOUND, 2.2, 0)
+//    }
+//    Event(2, 0, 1)
+//    {
+//        PlayPlayerSound6(GameVolumeSource_SpeechPlayer, "Speech_Bump_Crowd_XX.wav", 1, 0, 1, 0.8)
+//    }
+//}
+//SeqTrack("FPP_Gnome_TakeDamageCollision_Rest", "M_FPP_Stick2Heavy_TakeDamageColided_01.anm2", 30, 40, 30, 1, 0.0)
+//
+//SeqTrack("FPP_Gnome_TakeDamageCollision1", "M_FPP_Stick2Heavy_TakeDamageColided_02.anm2", 0, 30, 30, 1, 0.033)
+//{
+//    Event(CROWD_BUMP_EVENT_TIME, 0, 1)
+//    {
+//        PlaySound2D(GameVolumeSource_SoundPlayer, COLLISON_SOUND, 2.2, 0)
+//    }
+//    Event(2, 0, 1)
+//    {
+//        PlayPlayerSound6(GameVolumeSource_SpeechPlayer, "Speech_Bump_Crowd_XX.wav", 1, 0, 1, 0.8)
+//    }
+//}
+//SeqTrack("FPP_Gnome_TakeDamageCollision1_Rest", "M_FPP_Stick2Heavy_TakeDamageColided_02.anm2", 30, 40, 30, 1, 0.0)
+
+SeqTrack("FPP_Gnome_TakeDamageCollision", "FPP_Gnome_TakeDamageHit.anm2", 32, 47, 30, 1, 0.1)
+{
+    Event(CROWD_BUMP_EVENT_TIME, 0, 1)
+    {
+        PlaySound2D(GameVolumeSource_SoundPlayer, COLLISON_SOUND, 2.2, 0)
+    }
+    Event(2, 0, 1)
+    {
+        PlayPlayerSound6(GameVolumeSource_SpeechPlayer, "Speech_Bump_Crowd_XX.wav", 1, 0, 1, 0.8)
+    }
+}
+SeqTrack("FPP_Gnome_TakeDamageCollision_Rest", "FPP_Gnome_TakeDamageHit.anm2", 47, 62, 30, 1, 0.2)

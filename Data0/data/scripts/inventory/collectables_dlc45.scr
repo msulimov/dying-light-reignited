@@ -1,0 +1,79 @@
+//DLC_SkinPack_HarranInmate
+
+import "inventorystuff.scr" 
+sub main() 
+{
+	Item("Craftplan_Wrench_Inmate", CategoryType_Collectable)
+    {
+        Name("&Craftplan_Wrench_Inmate_N&");
+        Description("&Craftplan_Wrench_Inmate_D&");
+        ItemType(ItemType_CraftPlan);
+        Price(10);
+        Mesh("blueprint.msh");
+        Skin("default");
+		BaseItem("Melee_Pipe", "", "");
+        BaseItem("Melee_Baton", "", "");
+		BaseItem("Melee_Pick", "", "");
+        BaseItem("Melee_Crowbar", "", "");
+        BaseItem("Melee_Wrench", "", "");
+        BaseItem("Melee_Hammer", "", "");
+        BaseItem("Melee_MilitaryShovel", "", "");
+        BaseItem("Melee_Baseball", "", "");
+        BaseItem("Melee_ShortAxe", "", "");
+        RequiredItem("Craft_MetalScrap", 2);
+        RequiredItem("Craft_DuctTape", 2);
+		RequiredItem("Craft_PlasticTube", 1);
+        Color(Color_Blue);
+        CraftedItem("Melee_Wrench_Inmate", 1, 1);
+		CraftplanType("WeaponDLC");
+        InheritBaseStats();
+        UniqueSaveID(9556);
+        HudIcon("blueprint_b");
+        OwnedAtStart();
+		GameVersion(29);
+    }
+	
+	Item("Craftplan_ShortKnife_Inmate", CategoryType_Collectable)
+    {
+        Name("&Craftplan_ShortKnife_Inmate_N&");
+        Description("&Craftplan_ShortKnife_Inmate_D&");
+        ItemType(ItemType_CraftPlan);
+        Price(10);
+        Mesh("blueprint.msh");
+        Skin("default");
+        BaseItem("Melee_ShortKnife", "", "");
+        RequiredItem("Craft_MetalScrap", 3);
+        RequiredItem("Craft_RazorBlade", 1);
+		RequiredItem("Craft_DuctTape", 1);
+        Color(Color_Blue);
+        CraftedItem("Melee_ShortKnife_Inmate", 1, 1);
+		CraftplanType("WeaponDLC");
+        InheritBaseStats();
+        UniqueSaveID(9557);
+        HudIcon("blueprint_b");
+        OwnedAtStart();
+		GameVersion(29);
+    }
+	
+	Item("Craftplan_Rifle_Inmate", CategoryType_Collectable)
+    {
+        Name("&Craftplan_Rifle_Inmate_N&");
+        Description("&Craftplan_Rifle_Inmate_D&");
+        ItemType(ItemType_CraftPlan);
+        Price(10);
+        Mesh("blueprint.msh");
+        Skin("default");
+        BaseItem("Firearm_Rifle", "", "");
+        RequiredItem("Craft_MetalScrap", 3);
+        RequiredItem("Craft_DuctTape", 3);
+        Color(Color_Blue);
+        CraftedItem("Firearm_Rifle_Inmate", 1, 1);
+		CraftplanType("WeaponDLC");
+        InheritBaseStats();
+        UniqueSaveID(9558);
+        HudIcon("blueprint_b");
+        OwnedAtStart();
+		GameVersion(29);
+    }
+	
+}

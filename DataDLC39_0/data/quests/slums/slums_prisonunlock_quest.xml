@@ -1,0 +1,112 @@
+<?xml version="1.0"?>
+<QuestsDefinitions
+     level="slums"
+     source="dlc39"
+     quest_tree="tree18"
+     pxsl_line="3">
+    <Quest
+         name="Slums_PrisonUnlock"
+         final="true"
+         pxsl_line="5">
+        <Phase
+             type="started quest guard"
+             name="_"
+             quest_name="Blackout1_5c"
+             finished="true"
+             pxsl_line="6" />
+        <Phase
+             type="enable"
+             name="_"
+             pxsl_line="7">
+            <Object
+                 pxsl_line="8">
+                <QuestObject
+                     class="SensorGoTo"
+                     name="Unlock_Poster_To_Prison_Sensor"
+                     pxsl_line="8" />
+            </Object>
+            <Object
+                 pxsl_line="9">
+                <QuestObject
+                     class="MapPortal"
+                     name="Portal_To_Prison"
+                     pxsl_line="9" />
+            </Object>
+        </Phase>
+        <Phase
+             type="go to"
+             name="_"
+             distance="0"
+             pxsl_line="10">
+            <Destination
+                 pxsl_line="10">
+                <QuestObject
+                     class="SensorGoTo"
+                     name="Unlock_Poster_To_Prison_Sensor"
+                     pxsl_line="10" />
+            </Destination>
+        </Phase>
+        <Phase
+             type="appear"
+             name="_"
+             mode="show"
+             pxsl_line="11">
+            <Object
+                 pxsl_line="12">
+                <QuestObject
+                     class="MapPortal"
+                     name="dlc_3_map"
+                     pxsl_line="12" />
+            </Object>
+            <Object
+                 pxsl_line="13">
+                <QuestObject
+                     class="Decal"
+                     name="dlc_3_map_shadow"
+                     pxsl_line="13" />
+            </Object>
+        </Phase>
+        <Phase
+             type="enable"
+             name="_"
+             pxsl_line="14">
+            <Object
+                 pxsl_line="14">
+                <QuestObject
+                     class="MapPortal"
+                     name="dlc_3_map"
+                     pxsl_line="14" />
+            </Object>
+        </Phase>
+        <Phase
+             type="checkpoint"
+             name="_"
+             pxsl_line="15">
+            <Destination
+                 pxsl_line="15">
+                <QuestObject
+                     class="SpawnPoint"
+                     name="prison_sp"
+                     pxsl_line="15" />
+            </Destination>
+        </Phase>
+        <Phase
+             type="semaphore"
+             name="_"
+             pxsl_line="16" />
+    </Quest>
+    <!-- quest Slums_PrisonUnlock -required_chapter=Chapter01 -replayable=true  -->
+        <!-- ,cnd-quest-started _ Blackout1_5c -finished=true -->
+        <!-- ,enable-multi _  -->
+            <!-- ,o SensorGoTo Unlock_Poster_To_Prison_Sensor -->
+            <!-- ,o MapPortal Portal_To_Prison -->
+        <!-- ,goto _ SensorGoTo Unlock_Poster_To_Prison_Sensor -distance=0 -->
+        <!-- ,show-multi _ -->
+            <!-- ,o MapPortal dlc_3_map -->
+            <!-- ,o Decal dlc_3_map_shadow         -->
+        <!-- ,enable _ MapPortal dlc_3_map -->
+        <!-- ,checkpoint _ SpawnPoint prison_sp -->
+            <!--  -->
+    <!-- quest Slums_PrisonUnlock_end -parent=Slums_PrisonUnlock -glued=true -final=true -->
+        <!-- ,semaphore _     -->
+</QuestsDefinitions>

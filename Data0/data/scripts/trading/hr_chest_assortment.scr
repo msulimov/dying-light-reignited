@@ -1,0 +1,20 @@
+import "hr_assortment_sets.scr"
+
+sub main() 
+{
+	Assortment("Chest_Hellraid")
+    {
+        Buy()
+        {
+			use Hellraid_Items_Shop();
+		}	
+	}
+	
+	Assortment("Chest_QM_Hellraid")
+    {
+        Buy()
+        {
+			use Hellraid_Items();
+		}	
+	}
+}	

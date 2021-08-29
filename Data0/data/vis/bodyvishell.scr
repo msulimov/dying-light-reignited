@@ -1,0 +1,63 @@
+import "BodyVis.def"
+
+sub BodyVisHell()
+{
+	BoneInfo(_BONE_ROOT, 				"Bip01", 				_BONE_UNKNOWN);
+	BoneInfo(_BONE_PELVIS,				"Bip01 Pelvis", 		_BONE_ROOT);
+	BoneInfo(_BONE_HSPINE, 				"Bip01 HSpine", 		_BONE_PELVIS);
+	BoneInfo(_BONE_SPINE_0, 				"Bip01 Spine", 			_BONE_HSPINE);
+	BoneInfo(_BONE_SPINE_1, 				"Bip01 Spine1", 		_BONE_SPINE_0);
+	BoneInfo(_BONE_SPINE_2, 				"Bip01 Spine2", 		_BONE_SPINE_1);
+	BoneInfo(_BONE_SPINE_3, 				"Bip01 Spine3", 		_BONE_SPINE_2);    
+    BoneInfo(_BONE_SPINE_4, 				"Bip01 Spine4", 		_BONE_SPINE_3);    
+    BoneInfo(_BONE_HSPINE1, 				"Bip01 HSpine1", 		_BONE_SPINE_4);
+	BoneInfo(_BONE_NECK_0, 				"Bip01 Neck", 			_BONE_HSPINE1);
+	BoneInfo(_BONE_NECK_1, 				"Bip01 Neck1", 			_BONE_NECK_0);
+	BoneInfo(_BONE_NECK_2, 				"Bip01 Neck2", 			_BONE_NECK_1);
+	BoneInfo(_BONE_NECK_3, 				"Bip01 Neck3", 			_BONE_NECK_2);
+	BoneInfo(_BONE_HEAD, 				"Bip01 Head", 			_BONE_NECK_3);
+
+    BoneInfo(_BONE_FACE, 				"Bip01 Head", 	_BONE_HEAD);
+
+	BoneInfo(_BONE_L_HOLDER, 			"Bip01 L Holder", 		_BONE_HSPINE1);
+	BoneInfo(_BONE_L_CLAVICLE, 			"Bip01 L Clavicle", 	_BONE_HSPINE1);
+	BoneInfo(_BONE_L_UPPERARM, 			"Bip01 L UpperArm", 	_BONE_L_CLAVICLE);
+	BoneInfo(_BONE_L_UPPERARM_TWIST_0, 	"Bip01 L UpArmTwist", 	_BONE_L_UPPERARM);
+	BoneInfo(_BONE_L_UPPERARM_TWIST_1, 	"Bip01 L UpArmTwist1", 	_BONE_L_UPPERARM_TWIST_0);
+	BoneInfo(_BONE_L_FOREARM, 			"Bip01 L ForeArm", 		_BONE_L_UPPERARM);
+	BoneInfo(_BONE_L_FOREARM_TWIST_0, 	"Bip01 L ForeTwist", 	_BONE_L_FOREARM);
+	BoneInfo(_BONE_L_FOREARM_TWIST_1, 	"Bip01 L ForeTwist1", 	_BONE_L_FOREARM_TWIST_0);
+	BoneInfo(_BONE_L_FOREARM_TWIST_2, 	"Bip01 L ForeTwist2", 	_BONE_L_FOREARM_TWIST_1);
+	BoneInfo(_BONE_L_FOREARM_TWIST_3, 	"Bip01 L ForeTwist3", 	_BONE_L_FOREARM_TWIST_2);
+	BoneInfo(_BONE_L_FOREARM_TWIST_4, 	"Bip01 L ForeTwist4", 	_BONE_L_FOREARM_TWIST_3);
+	BoneInfo(_BONE_L_HAND, 				"Bip01 L Hand", 		_BONE_L_FOREARM);
+	BoneInfo(_BONE_R_HOLDER, 			"Bip01 R Holder", 		_BONE_HSPINE1);
+	BoneInfo(_BONE_R_CLAVICLE, 			"Bip01 R Clavicle", 	_BONE_HSPINE1);
+	BoneInfo(_BONE_R_UPPERARM, 			"Bip01 R UpperArm", 	_BONE_R_CLAVICLE);
+	BoneInfo(_BONE_R_UPPERARM_TWIST_0, 	"Bip01 R UpArmTwist", 	_BONE_R_UPPERARM);
+	BoneInfo(_BONE_R_UPPERARM_TWIST_1, 	"Bip01 R UpArmTwist1", 	_BONE_R_UPPERARM_TWIST_0);
+	BoneInfo(_BONE_R_FOREARM, 			"Bip01 R ForeArm", 		_BONE_R_UPPERARM);
+	BoneInfo(_BONE_R_FOREARM_TWIST_0, 	"Bip01 R ForeTwist", 	_BONE_R_FOREARM);
+	BoneInfo(_BONE_R_FOREARM_TWIST_1, 	"Bip01 R ForeTwist1", 	_BONE_R_FOREARM_TWIST_0);
+	BoneInfo(_BONE_R_FOREARM_TWIST_2, 	"Bip01 R ForeTwist2", 	_BONE_R_FOREARM_TWIST_1);
+	BoneInfo(_BONE_R_FOREARM_TWIST_3, 	"Bip01 R ForeTwist3", 	_BONE_R_FOREARM_TWIST_2);
+	BoneInfo(_BONE_R_FOREARM_TWIST_4, 	"Bip01 R ForeTwist4", 	_BONE_R_FOREARM_TWIST_3);
+	BoneInfo(_BONE_R_HAND, 				"Bip01 R Hand", 		_BONE_R_FOREARM);
+	BoneInfo(_BONE_L_THIGH, 				"Bip01 L Thigh", 		_BONE_PELVIS);
+	BoneInfo(_BONE_R_THIGH, 				"Bip01 R Thigh", 		_BONE_PELVIS);
+	BoneInfo(_BONE_L_CALF, 				"Bip01 L Calf", 		_BONE_L_THIGH);
+	BoneInfo(_BONE_R_CALF, 				"Bip01 R Calf", 		_BONE_R_THIGH);
+	BoneInfo(_BONE_L_FOOT, 				"Bip01 L Foot", 		_BONE_L_CALF);
+	BoneInfo(_BONE_R_FOOT, 				"Bip01 R Foot", 		_BONE_R_CALF);
+	BoneInfo(_BONE_L_TOE, 				"Bip01 L Toe0", 		_BONE_L_FOOT);
+	BoneInfo(_BONE_R_TOE, 				"Bip01 R Toe0", 		_BONE_R_FOOT);
+
+    BoneInfo(_BONE_EYE_CAMERA,  		"Bip01 Head", 	_BONE_HSPINE1);
+    BoneInfo(_BONE_REF_CAMERA, 			"Bip01 Head",    _BONE_HSPINE1);
+	BoneInfo(_BONE_ITEM_ROOT1, 			"Bip01 L Hand",    _BONE_UNKNOWN);
+	BoneInfo(_BONE_ITEM_HOLDER11, 		"Bip01 L Hand", _BONE_ITEM_ROOT1);
+	BoneInfo(_BONE_ITEM_HOLDER12, 		"Bip01 L Hand", _BONE_ITEM_ROOT1);
+	BoneInfo(_BONE_ITEM_HOLDER13, 		"Bip01 L Hand", _BONE_ITEM_ROOT1);
+	BoneInfo(_BONE_ITEM_HOLDER14, 		"Bip01 L Hand", _BONE_ITEM_ROOT1);
+	BoneInfo(_BONE_ITEM_HOLDER15, 		"Bip01 L Hand", _BONE_ITEM_ROOT1);
+}

@@ -1,0 +1,1625 @@
+export int Color_White =  0;
+export int Color_Green =  1;
+export int Color_Blue =  2;
+export int Color_Violet =  3;
+export int Color_Orange =  4;
+//export int Color_Platinum =  5;
+
+export int AirDropsFound        = 0;
+export int SurvivorsRescued     = 1;
+export int PrimeKilled          = 2;
+export int RadkoPatrolsDefeated = 3;
+export int Quest                = 4;
+
+export int Diff_None        = 0;
+export int Diff_VeryEasy    = 1;
+export int Diff_Easy        = 2;
+export int Diff_Medium      = 3;
+export int Diff_Hard        = 4;
+export int Diff_VeryHard    = 5;
+
+// Xp(xp_to_gain)
+// Item("item_id", color, level, count)
+
+sub main() 
+{
+
+    Reward("StorylineReward_Prologue_reward")
+    {
+        Xp(0);
+    }
+
+    Reward("StorylineReward_HelpingMark_reward")
+    {
+        Xp(500);
+    }
+
+    Reward("StorylineReward_NaturalMovementTutorial_reward")
+    {
+        Xp(800);
+    }
+
+    Reward("StorylineReward_GoingOutside_reward")
+    {
+        Xp(1000);
+    }
+
+    Reward("StorylineReward_Blackout_reward")
+    {
+        Xp(15000);
+    }
+
+    Reward("StorylineReward_Airdrop_reward")
+    {
+        Xp(15000);
+    }
+
+    Reward("StorylineReward_Airdrop_LittleGirl_reward")
+    {
+        Xp(2500);
+    }
+
+    Reward("StorylineReward_PactWithRais_reward")
+    {
+        Xp(0);
+    }
+
+    Reward("StorylineReward_Antennas_GREContacted_reward")
+    {
+        Xp(15000);
+    }
+
+    Reward("StorylineReward_Antennas_CommunicationReinstated_reward")
+    {
+        Xp(10000);
+    }
+
+    Reward("StorylineReward_Antennas_reward")
+    {
+        Xp(7500);
+    }
+
+    Reward("StorylineReward_Courier_FishermansHutSecured_reward")
+    {
+        Xp(15000);
+    }
+
+    Reward("StorylineReward_Courier_MissingPatrol_reward")
+    {
+        Xp(15000);
+    }
+
+    Reward("StorylineReward_Courier_reward")
+    {
+        Xp(15000);
+    }
+
+    Reward("StorylineReward_Explosives_reward")
+    {
+        Xp(10000);
+    }
+
+    Reward("StorylineReward_PrimeHunting_reward")
+    {
+        Xp(15000);
+    }
+
+    Reward("StorylineReward_Demoliton_reward")
+    {
+        Xp(15000);
+    }
+
+    Reward("StorylineReward_Intruders_reward")
+    {
+        Xp(15000);
+		
+    }
+
+    Reward("StorylineReward_Warehouse_reward")
+    {
+        Xp(15000);
+    }
+
+    Reward("StorylineReward_Arena_reward")
+    {
+        Xp(15000);
+    }
+
+    Reward("StorylineReward_Runaway_reward")
+    {
+        Xp(10000);
+    }
+
+    Reward("StorylineReward_Saviors_reward")
+    {
+        Xp(15000);
+    }
+
+    Reward("StorylineReward_FindTheEmbers_reward")
+    {
+        Xp(10000);
+    }
+
+    Reward("StorylineReward_University_reward")
+    {
+        Xp(15000);
+    }
+
+    Reward("StorylineReward_ProjectMayhem_reward")
+    {
+        Xp(20000);
+    }
+
+    Reward("StorylineReward_MeetingWithJade_reward")
+    {
+        Xp(10000);
+    }
+
+    Reward("StorylineReward_Museum_reward")
+    {
+        Xp(20000);
+    }
+
+    Reward("StorylineReward_Contact_reward")
+    {
+        Xp(20000);
+    }
+
+    Reward("StorylineReward_Clinic_reward")
+    {
+        Xp(15000);
+    }
+
+    Reward("StorylineReward_ContactGRE_reward")
+    {
+        Xp(20000);
+    }
+
+    Reward("StorylineReward_Final_reward")
+    {
+    }
+
+    Reward("BringDawud_reward") // NO REWARD
+    {
+        Xp(15000);
+		Item("Craft_Shroom", Color_Violet, 30, 0); // Craft Shroom
+		Cash(500);
+    }
+
+    Reward("GoodNightBahir_reward") // NO REWARD fake antizen lab
+    {
+        Xp(15000);
+		Item("Craft_Shroom", Color_Violet, 30, 0); // Craft Shroom
+		Cash(750);
+    }
+
+    Reward("MothersDay_reward") // REWARDED Gazi movie chocolates
+    {
+        Xp(15000);
+		Item("zzz_Craftplan_ArrowBurn", Color_Orange, 1, 0); // Burning Arrow Craftplan
+        Cash(750);
+    }
+
+    Reward("VoltageEXP_reward")
+    {
+        Xp(7500);
+    }
+
+    Reward("VoltageCraftplan_reward") // REWARDED
+    {
+		Item("Craftplan_FreezeMelee", Color_White, 1, 0); // Freeze Melee Craftplan
+    }
+
+    Reward("Voltage_reward")
+    {
+        Xp(7500);
+		Cash(1000);
+    }
+
+    Reward("LandMine_reward") // REWARDED kurt bomb
+    {
+        Xp(7500);
+        Item("Craftplan_KurtBomb", Color_Orange, 1, 0);
+		Cash(750);
+		
+    }
+
+    Reward("Antibiotics_reward") // REWARDED  Tunnel Vision
+    {
+        Xp(15000);
+		Item("ZZZZ3_Craftplan_WaterDLC", Color_Blue, 1, 0);
+		Cash(500);
+		
+    }
+
+    Reward("ElectricMachete_reward") // REWARDED Alexei Bites Motel
+    {
+        Xp(15000);
+		Item("Craftplan_BlastMelee", Color_Orange, 1, 0); // Impact Melee Craftplan
+		Cash(750);
+        
+    }
+
+    Reward("PerfectMurder_reward") // DUPLICATE REWARD NOT ACCESSABLE Tunnel Vision Phenyl Nitrate 
+    {
+        Xp(15000);
+		Cash(250);
+		
+    }
+
+    Reward("SpareGlasses_reward") // REWARDED
+    {
+        Xp(3500);
+		Item("zzz_Craftplan_Arrow", Color_White, 1, 0); // Arrow Craftplan
+		Cash(250);
+    }
+
+    Reward("MedicalHerbs_reward")  // REWARDED Lavender 
+    {
+        Xp(15000);
+        Item("Craft_Upgrade_DamL2DurL2", Color_Orange, 1, 0); // Burn Upgrade
+		Cash(350);
+    }
+
+    
+
+    Reward("BringGalib_reward") // REWARDED rais hidden weapon stashes
+    {
+        Xp(15000);
+        Item("Craft_Upgrade_DamL2BalL2", Color_Blue, 1, 0); // Shock Upgrade
+		Cash(250);
+    }
+
+    Reward("WheresMyMother_reward") // REWARDED
+    {
+        Xp(15000);
+		Item("zzz_Craftplan_ArrowExploding", Color_Orange, 1, 0); // Exploding Arrow
+		Cash(750);
+    }
+
+    Reward("GuideToZombieland_reward") // REWARDED
+    {
+        Xp(15000);
+		Item("zzz_Craftplan_Bow", Color_Orange, 1, 0); // Craftplan Bow Reward
+		Cash(250);
+    }
+
+    Reward("BringJeff_reward") // NO REWARD Fort Jefferton Gas Apocalypse Wall
+    {
+        Xp(15000);
+		Cash(750);
+    }
+
+    Reward("BringMusa_reward") // REWARDED Shakir Gas Mask Man
+    {
+        Xp(15000);
+		Item("Craftplan_BleedMelee", Color_Violet, 1, 0); // Bleed Melee Craftplan
+    }
+
+    Reward("PoisonousHerbs_reward") // REWARDED Wolfsbane quest
+    {
+        Xp(3500);
+		Item("Craftplan_PoisonMelee", Color_Green, 1, 0); // Poison Melee Craftplan
+    }
+
+    Reward("Searchlights_reward") // REWARDED
+    {
+        Xp(10000);
+		Item("Craftplan_ElectricMelee", Color_Blue, 1, 0); // Shock Melee Craftplan
+		
+    }
+
+    Reward("Binoculars_reward") // REWARDED
+    {
+        Xp(3500);
+		Item("Craft_Upgrade_DamL2", Color_Orange, 1, 0); // Impact Upgrade
+		Cash(500);   
+    }
+
+    Reward("MidnightBride_reward") // REWARDED
+    {
+        Xp(3500);
+		Item("Craft_Upgrade_DamL2DurL2", Color_Orange, 1, 0); // Burn Upgrade
+		
+    }
+
+    Reward("Firebug_reward") // zaid flare quest
+    {
+        Xp(15000);
+        Item("Craftplan_ZaidFlare2", Color_Violet, 1, 0); // ZaidFlare2 Craftplan
+    }
+
+    Reward("Algae_reward") // Dulce Lake
+    {
+        Xp(3500);
+		Item("Craft_Upgrade_DurL2", Color_Green, 1, 0); // Poison Upgrade
+    }
+
+    Reward("BabyIsBorn_reward") // REWARDED Alcohol fetching quest
+    {
+        Xp(7500);
+		Item("Craftplan_ThrowableFuel", Color_Green, 1, 0); // Throwable Fuel Craftplan
+		Item("ZZZZ3_Craftplan_WaterDLC", Color_Blue, 1, 0); // Throwable Water Craftplan
+    }
+
+    Reward("Dynamites_reward") // REWARDED
+    {
+        Xp(7500);
+		Item("ZZZZ3_Craftplan_SuperMolotov", Color_Orange, 1, 0); // Super Molotov 
+    }
+
+	Reward("Twins02_reward") // REWARDED warehouse hooks
+    {
+        Xp(15000);
+		Item("zzz_Craftplan_ArrowElectric", Color_Blue, 1, 0); // Electric Arrow
+    }
+
+    Reward("Twins03_reward") // REWARDED bus batteries
+    {
+        Xp(15000);
+		Item("Craftplan_Truck_Battery", Color_Orange, 1, 0); // Truck Battery Craftplan
+		
+    }
+
+    Reward("Twins04_reward") // NO REWARD power cables, duct tape, sonar
+    {
+	   Xp(15000);
+	   Item("Craft_Shroom", Color_Violet, 30, 0); // Craft Shroom
+    }
+
+    Reward("TalesFromTheCrypt_reward") // REWARDED Stranded Survivors Apartment Electrocuted
+    {
+        Xp(7500);
+		Item("Craftplan_BurnMelee", Color_Orange, 1, 0); // Burn Melee Craftplan
+    }
+
+    Reward("WitchQueen_reward") // REWARDED
+    {
+        Xp(15000);
+		Item("ZZZZ3_Craftplan_Crossbow", Color_Blue, 1, 0); // Crossbow Craftplan 
+    }
+
+    Reward("WitchQueen02_reward") // REWARDED
+    {
+        Xp(15000);
+		Item("ZZZZ3_Craftplan_CrossbowBolt_Poison", Color_Green, 1, 0); // Crossbow Bolt Poison Craftplan
+    }
+
+    Reward("WitchQueen03_reward") // REWARDED
+    {
+        Xp(15000);
+		Item("ZZZZ3_Craftplan_CrossbowBolt_Stunning", Color_Orange, 1, 0); // Crossbow Bolt Stunning Craftplan
+    }
+
+    Reward("WitchQueen04_reward") // REWARDED
+    {
+        Xp(15000);
+		Item("ZZZZ3_Craftplan_CrossbowBolt_Impact", Color_Orange, 1, 0); // Crossbow Bolt Impact Craftplan
+    }
+
+    Reward("WitchQueen05_reward") // REWARDED
+    {
+        Xp(15000);
+		Item("ZZZZ3_Craftplan_UpgradedCrossbow", Color_Orange, 1, 0); // Upgraded Crossbow Craftplan
+    }
+
+    Reward("DeathNote_reward") // NO REWARD, INACCESSABLE Erol Rescue
+    {
+        Xp(10000);	
+    }
+
+    Reward("CrayonsForTheKids_reward") // REWARDED Get crayons from school
+    {
+        Xp(15000);
+		Item("Craft_Upgrade_DurL2BalL2", Color_White, 1, 0); // Freeze Upgrade
+    }
+
+    Reward("ElectronicParts_reward") // REWARDED turn in electronics to toygar
+    {
+        Xp(3500);
+		Item("Craft_Upgrade_DamL2BalL2", Color_Blue, 1, 0); // Shock Upgrade 
+    }
+
+    Reward("Cofee_reward") // REWARDED turn in coffee to toygar
+    {
+        Xp(3500);
+		Item("Craft_Upgrade_DamL2DurL2BalL2", Color_Orange, 1, 0); // King	
+    }
+
+    Reward("GasLighter_reward") // REWARDED turn in lighter gas to toygar
+    {
+        Xp(3500);
+		Item("Craft_Upgrade_DamL2DurL2", Color_Orange, 1, 0); // Burn Upgrade
+    }
+
+    Reward("BandagesAndMeds_reward") // REWARDED turn in syringes to toygar
+    {
+        Xp(3500);
+		Item("Craft_Upgrade_DamL2DurL2BalL2", Color_Orange, 1, 0); // King
+    }
+
+    Reward("EXPcalibur_reward")
+    {
+        Xp(3000);
+        Item("Melee_Expcalibur", Color_Orange, 1, 0);
+    }
+
+    Reward("LootCave_reward")
+    {
+        Xp(4250);
+    }
+
+    Reward("QuasiWorld_reward")
+    {
+        Xp(4250);
+    }
+	
+	//------------------------------------
+	// OLD Town Quests
+	//------------------------------------
+	
+    Reward("Bunker_reward") // NO REWARD Bunker under town hall
+    {
+        Xp(10000);
+		
+    }
+
+    Reward("Outposts_reward") // NO REWARD
+    {
+        Xp(15000);
+		
+    }
+
+    Reward("Outposts_Office_reward") // NO REWARD
+    {
+        Xp(10000);
+		
+    }
+
+    Reward("Outposts_Radio_reward") // NO REWARD
+    {
+        Xp(10000);
+		
+    }
+
+    Reward("LostInSpace_reward") // NO REWARD Dawud zombie, rescue Sami apartment
+    {
+        Xp(15000);
+		
+		
+    }
+
+    Reward("TheProphecy_reward") // NO REWARD Rais past hotel
+    {
+        Xp(7500);
+		
+		
+    }
+
+    Reward("FanZone_reward") // NO REWARD
+    {
+        Xp(10000);
+        
+		
+    }
+
+    Reward("TheProphet_reward") // REWARDED Bring night flowers to music house
+    {
+        Xp(10000);
+		Item("Craftplan_Freeze_Upgrade", Color_White, 1, 0); // Freeze Upgrade Craftplan
+
+    }
+
+    Reward("FindRupert_reward") // REWARDED Super easy meeting rupert at kindergarden
+    {
+        Xp(15000);
+		
+		
+    }
+
+    Reward("HealthPotion_reward") // REWARDED 
+    {
+        Xp(10000);
+		Item("Craftplan_Shock_Upgrade", Color_Blue, 1, 0); // Shock Upgrade Craftplan
+		
+    }
+
+    Reward("BricksForTheBoy01_reward") // REWARDED 
+    {
+        Xp(15000);
+		
+    }
+
+    Reward("BricksForTheBoy02_reward") // NO REWARD 
+    {
+        Xp(15000);
+    }
+
+    Reward("Twins05_reward") // REWARDED Antenna Corner Cave Submarine
+    {
+        Xp(15000);
+		
+    }
+
+    Reward("Dungeons_reward") // REWARDED super easy go to basement to kill biter
+    {
+        Xp(15000);
+		
+    }
+
+    Reward("UglyMonster_reward") // REWARDED Kill demolisher
+    {
+        Xp(10000);
+		Item("Craftplan_Burn_Upgrade", Color_Orange, 1, 0); // Burn Upgrade Craftplan
+		
+    }
+
+    Reward("FoodCourier_reward") // DUPLICATE Of Alien Quest
+    {
+        Xp(10000);
+        
+    }
+
+    Reward("ChildrenOfMatrix_reward") // REWARDED Alien Rocks Quest
+    {
+        Xp(15000);
+        Item("Firearm_ToyGun", Color_White, 1, 0);
+		Item("Craftplan_Impact_Upgrade", Color_Orange, 1, 0); // Impact Upgrade Craftplan
+		
+    }
+
+    Reward("Ghost_reward") // REWARDED haunted apartments tape recorder
+    {
+        Xp(10000);
+		Item("Craftplan_Toxic_Upgrade", Color_Green, 1, 0); // Toxic Upgrade Craftplan
+        
+    }
+
+    Reward("Challenge_JelaousRunner_reward") // REWARDED
+    {
+		Item("Craft_Batteries", Color_Green, 4, 0);
+    }
+
+    Reward("Challenge_JelaousRunner_02_reward") // REWARDED
+    {
+		Item("Craft_PowerCable", Color_Blue, 4, 0);
+    }
+
+    Reward("Challenge_JelaousRunner_03_reward") // REWARDED
+    {
+		Item("Craft_Electronics", Color_Violet, 4, 0);
+	}
+	
+    Reward("Challenge_JelaousRunner_04_reward") // REWARDED
+    {
+        Item("Craft_Upgrade_DamL2DurL2BalL2", Color_Orange, 1, 0); // King
+    }
+
+    Reward("Challenge_JelaousRunner_Summary_reward") // REWARDED
+    {
+        Item("Craft_Upgrade_DamL2DurL2BalL2", Color_Orange, 1, 0); // King
+    }
+
+    Reward("Challenge_FamilyDoctor_reward") // REWARDED
+    {
+		Item("Craft_PrimeTissue", Color_Orange, 2, 0);
+    }
+
+    Reward("Challenge_FamilyDoctor_01_reward") // REWARDED
+    {
+        Item("Craft_PrimeTissue", Color_Orange, 2, 0);
+    }
+
+    Reward("Challenge_FamilyDoctor_02_reward") // REWARDED
+    {
+        Item("Craft_PrimeTissue", Color_Orange, 2, 0);
+    }
+
+    Reward("Challenge_FamilyDoctor_03_reward") // REWARDED
+    {
+        Item("Craft_PrimeTissue", Color_Orange, 2, 0);
+    }
+
+    Reward("Challenge_FamilyDoctor_Summary_reward") // REWARDED
+    {
+        Item("Craft_Upgrade_DurL2", Color_Green, 1, 0); // Poison Upgrade
+    }
+
+    Reward("Challenge_UltimateWeapon_reward") // REWARDED
+    {
+        Item("Craft_Upgrade_DamL2", Color_Orange, 1, 0); // Impact Upgrade
+    }
+
+    Reward("Challenge_UltimateWeapon_02_reward") // REWARDED
+    {
+        Item("Craft_Upgrade_BalL2", Color_Violet, 1, 0);  // Bleed Upgrade
+    }
+
+    Reward("Challenge_UltimateWeapon_03_reward") // REWARDED
+    {
+        Item("Craft_Upgrade_DurL2BalL2", Color_White, 1, 0); // Freeze Upgrade
+    }
+
+    Reward("Challenge_UltimateWeapon_04_reward") // REWARDED
+    {
+        Item("Craft_Upgrade_DurL2", Color_Green, 1, 0); // Poison Upgrade
+    }
+
+    Reward("Challenge_UltimateWeapon_05_reward") // REWARDED
+    {
+        Item("Craft_Upgrade_DamL2BalL2", Color_Blue, 1, 0); // Shock Upgrade
+    }
+
+    Reward("Challenge_UltimateWeapon_Summary_reward") // REWARDED
+    {
+        Item("Craft_Upgrade_DamL2BalL2", Color_Blue, 1, 0); // Shock Upgrade
+		Item("Craft_Upgrade_DamL2", Color_Orange, 1, 0); // Impact Upgrade
+		Item("Craft_Upgrade_DamL2DurL2", Color_Orange, 1, 0); // Burn Upgrade
+		Item("Craft_Upgrade_DamL2DurL2BalL2", Color_Orange, 2, 0); // King
+    }
+
+    Reward("Challenge_KillingGuide_reward") // REWARDED
+    {
+		Item("Craft_Upgrade_DurL2Dam", Color_Violet, 2, 0); // Mercenary
+    }
+
+    Reward("Challenge_KillingGuide_02_reward") // REWARDED
+    {
+		Item("Craft_Upgrade_DamL2Bal", Color_Violet, 2, 0); // Bruiser
+    }
+
+    Reward("Challenge_KillingGuide_Summary_reward") // REWARDED
+    {
+		Item("Craft_Upgrade_BalL2Dam", Color_Violet, 2, 0); // Duelist
+    }
+
+    Reward("Challenge_BestRunner_reward") // REWARDED
+    {
+		Item("Craft_PowerCable", Color_Blue, 4, 0);
+    }
+
+    Reward("Challenge_BestRunner_02_reward") // REWARDED
+    {
+		Item("Craft_Batteries", Color_Green, 4, 0);
+    }
+
+    Reward("Challenge_BestRunner_03_reward") // REWARDED
+    {
+		Item("Craft_Electronics", Color_Violet, 4, 0);
+    }
+
+    Reward("Challenge_BestRunner_04_reward") // REWARDED
+    {
+		Item("Craft_Upgrade_DamL2DurL2BalL2", Color_Orange, 1, 0); // King
+    }
+
+    Reward("Challenge_BestRunner_05_reward") // REWARDED
+    {
+        Item("Craft_Upgrade_DamL2DurL2BalL2", Color_Orange, 1, 0); // King
+    }
+
+    Reward("Challenge_BestRunner_Summary_reward") // REWARDED
+    {
+        Item("Craft_Upgrade_DamL2DurL2BalL2", Color_Orange, 1, 0); // King
+    }
+
+    Reward("Challenge_Psycho_reward") // REWARDED
+    {
+        Item("Craft_Upgrade_BalL2", Color_Violet, 1, 0);  // Bleed Upgrade
+    }
+
+    Reward("Challenge_Psycho_02_reward") // REWARDED
+    {
+        Item("Craft_Upgrade_DamL2DurL2BalL2", Color_Orange, 1, 0); // King
+    }
+
+    Reward("Challenge_Psycho_03_reward") // REWARDED
+    {
+        Item("Craft_Upgrade_DamL2", Color_Orange, 1, 0); // Impact Upgrade
+    }
+
+    Reward("Challenge_Psycho_04_reward") // REWARDED
+    {
+        Item("Craft_Upgrade_DamL2BalL2", Color_Blue, 1, 0); // Shock Upgrade
+    }
+
+    Reward("Challenge_Psycho_05_reward") // REWARDED
+    {
+        Item("Craft_Upgrade_DamL2DurL2", Color_Orange, 1, 0); // Burn Upgrade
+    }
+
+    Reward("Challenge_Psycho_Summary_reward") // REWARDED
+    {
+        Item("Craft_Upgrade_DamL2DurL2BalL2", Color_Orange, 1, 0); // King
+    }
+
+    Reward("Challenge_DyingLunch_reward") // REWARDED
+    {
+		Item("Craft_Upgrade_DamL2DurL2BalL2", Color_Orange, 1, 0); // King
+    }
+
+    Reward("Challenge_DyingLunch_02_reward") // REWARDED
+    {
+		Item("Craft_Upgrade_DamL2DurL2BalL2", Color_Orange, 1, 0); // King
+    }
+
+    Reward("Challenge_DyingLunch_03_reward") // REWARDED
+    {
+		Item("Craft_Upgrade_DamL2DurL2BalL2", Color_Orange, 1, 0); // King
+    }
+
+    Reward("Challenge_DyingLunch_Summary_reward") // REWARDED
+    {
+        Item("Craft_Upgrade_DamL2DurL2BalL2", Color_Orange, 1, 0); // King
+    }
+
+    Reward("Challenge_BeingAHero_reward") // REWARDED kid bell tower running challenge
+    {
+		Item("Craft_Upgrade_DurL2Bal", Color_Violet, 1, 0); // Knight
+    }
+
+    Reward("Challenge_BeingAHero_02_reward") // REWARDED
+    {
+		Item("Craft_Upgrade_BalL2Dur", Color_Violet, 1, 0); // Templar
+    }
+ 
+    Reward("Challenge_BeingAHero_03_reward") // REWARDED
+    {
+        Item("Craft_Upgrade_DamL2DurL2BalL2", Color_Orange, 1, 0); // King
+    }
+
+    Reward("Challenge_BeingAHero_Summary_reward") // REWARDED
+    {
+        Item("Craft_Upgrade_DamL2DurL2BalL2", Color_Orange, 1, 0); // King
+    }
+
+    Reward("Challenge_RunForYourLife_reward") // REWARDED Night running with pursuit
+    {
+        Item("Craft_Upgrade_DamL2DurL2BalL2", Color_Orange, 1, 0); // King
+    }
+
+    Reward("Challenge_RunForYourLife_02_reward") // REWARDED
+    {
+        Item("Craft_Upgrade_DamL2DurL2BalL2", Color_Orange, 1, 0); // King
+    }
+
+    Reward("Challenge_RunForYourLife_03_reward") // REWARDED
+    {
+        Item("Craft_Upgrade_DamL2DurL2BalL2", Color_Orange, 1, 0); // King
+    }
+
+    Reward("Challenge_RunForYourLife_04_reward") // REWARDED
+    {
+        Item("Craft_Upgrade_DamL2DurL2BalL2", Color_Orange, 1, 0); // King
+    }
+
+    Reward("Challenge_RunForYourLife_Summary_reward") // REWARDED
+    {
+        Item("Craft_Upgrade_DamL2DurL2BalL2", Color_Orange, 1, 0); // King
+    }
+
+    Reward("Challenge_Posters_reward") // REWARDED
+    {
+        Xp(15000);
+		Item("Craft_Upgrade_BalL2", Color_Violet, 1, 0);  // Bleed Upgrade
+    }
+
+    Reward("Challenge_Posters_Summary_reward") // REWARDED
+    {
+        Xp(15000);
+		Item("Craft_Upgrade_DamL2DurL2", Color_Orange, 1, 0); // Burn Upgrade
+    }
+
+    Reward("Challenge_climb_01_reward") // REWARDED
+    {
+		Item("Craft_Batteries", Color_Green, 4, 0);
+    }
+
+    Reward("Challenge_climb_02_reward") // REWARDED
+    {
+		Item("Craft_PowerCable", Color_Blue, 4, 0);
+    }
+
+    Reward("Challenge_run_reach_x_checkpoints_06_reward") // REWARDED
+    {
+        Item("Craft_Electronics", Color_Green, 4, 0);
+    }
+
+    Reward("slums_18_challenge_01_reward") // REWARDED
+    {
+        Item("Craft_Upgrade_DamDurBal", Color_Violet, 1, 0);
+		Item("Craft_Upgrade_BalL2Dur", Color_Violet, 1, 0); // Templar
+    }
+
+    Reward("slums_21_challenge_01_reward_reward") // REWARDED
+    {
+		Item("Craft_Upgrade_BalL2Dam", Color_Violet, 1, 0); // Duelist
+    }
+
+    Reward("oldtown_07_challenge_01_reward_reward") // REWARDED
+    {
+		Item("Craft_Upgrade_DamL2Dur", Color_Violet, 1, 0); // Brute
+    }
+
+    Reward("oldtown_08_challenge_01_reward_reward") // REWARDED
+    {
+		Item("Craft_Upgrade_DurL2Bal", Color_Violet, 1, 0); // Knight
+    }
+
+    Reward("oldtown_09_challenge_01_reward_reward") // REWARDED
+    {
+		Item("Craft_Upgrade_DurL2Dam", Color_Violet, 1, 0); // Mercenary
+    }
+
+    Reward("Default_reward")
+    {
+        Xp(100);
+        Item("Craft_Upgrade_DamL2Dur", Color_Violet, 1, 0); // Brute
+    }
+
+    Reward("Gas_Station_Safezone_reward") // NO REWARD
+    {
+        Xp(8000);
+    }
+
+    Reward("Gas_Station_SafeZone_02_reward") // NO REWARD
+    {
+        Xp(8000);
+    }
+
+    Reward("Playefield_Safezone_reward") // NO REWARD
+    {
+        Xp(8000);
+		Item("Craft_Electronics", Color_Violet, 2, 0);
+    }
+
+    Reward("Playefield_Safezone2_reward") // NO REWARD
+    {
+        Xp(8000);
+    }
+
+    Reward("Construction_Site_Safezone_reward") // NO REWARD
+    {
+        Xp(8000);
+    }
+
+    Reward("Interior_01_Site_Safezone_reward") // NO REWARD
+    {
+        Xp(8000);
+    }
+
+    Reward("Interior_02_Site_Safezone_reward") // NO REWARD
+    {
+        Xp(8000);
+    }
+
+    Reward("Antenna_01_Site_Safezone_reward") // NO REWARD
+    {
+        Xp(8000);
+    }
+
+    Reward("Tunnel_01_Site_Safezone_reward") // NO REWARD
+    {
+        Xp(8000);
+    }
+
+    Reward("Bar_Site_Safezone_reward") // NO REWARD
+    {
+        Xp(8000);
+    }
+
+    Reward("Roof_Site_Safezone_reward") // NO REWARD
+    {
+        Xp(8000);
+    }
+
+    Reward("Interior_03_Safezone_reward") // NO REWARD
+    {
+        Xp(8000);
+    }
+
+    Reward("SafeZone_ElectricalSubstation_reward") // NO REWARD
+    {
+        Xp(8000);
+    }
+
+    Reward("blue_tower_Safezone_reward") // NO REWARD
+    {
+        Xp(14000);
+    }
+
+    Reward("house_interior01_Safezone_reward") // NO REWARD
+    {
+        Xp(8000);
+    }
+
+    Reward("house_interior02_Safezone_reward") // NO REWARD
+    {
+        Xp(8000);
+    }
+
+    Reward("house_interior04_Safezone_reward") // NO REWARD
+    {
+        Xp(8000);
+    }
+
+    Reward("restaurant_Safezone_reward") // NO REWARD
+    {
+        Xp(14000);
+    }
+
+
+	// -------------------------------------------------------------------------------------------------------
+	// ---------------------             The Following Quests             ------------------------------------
+	// -------------------------------------------------------------------------------------------------------
+
+
+    Reward("WL_Oasis_reward")
+    {
+        Xp(15000);
+    }
+
+    Reward("WL_HolyWater_reward")
+    {
+        Xp(50, 4);
+    }
+
+    Reward("WL_FinalAssigment_reward")
+    {
+        Xp(10000);
+    }
+
+    Reward("WL_TheEnd_reward")
+    {
+        Xp(10000);
+    }
+
+    Reward("WL_FinalBoss_reward")
+    {
+        Xp(15000);
+    }
+
+    Reward("WL_WaterFacility_reward")
+    {
+        Xp(10000);
+        Xp(250, 4);
+    }
+
+    Reward("WL_Revenge_reward")
+    {
+        Xp(15000);
+        Xp(250, 4);
+    }
+
+    Reward("WL_Letter_reward")
+    {
+        Xp(2000);
+        Xp(50, 4);
+    }
+
+    Reward("WL_Algae_reward")
+    {
+        Xp(2500);
+        Xp(250, 4);
+    }
+
+    Reward("WL_Algae_thief_reward")
+    {
+        Xp(2500);
+        Xp(250, 4);
+    }
+
+    Reward("WL_Racer_reward")
+    {
+        Xp(2500);
+        Xp(100, 4);
+        Item("ZZZZ_Collectable_Collectable_Livery_07", Color_White, 1, 0);
+    }
+
+    Reward("WL_PrimeHunting_reward")
+    {
+        Xp(15000);
+        Xp(250, 4);
+    }
+
+    Reward("WL_RadioBoy_reward")
+    {
+        Xp(10000);
+        Xp(250, 4);
+    }
+
+    Reward("WL_Mechanic_reward")
+    {
+        Xp(25, 4);
+        Item("ZZZZ3_Bundle_Paintjobs_Bundle", Color_White, 1, 0);
+    }
+
+    Reward("WL_Silas_reward")
+    {
+        Xp(3500);
+    }
+
+    Reward("WL_Electrician_reward")
+    {
+        Xp(10000);
+        Xp(500, 4);
+    }
+
+    Reward("WL_Postman_reward")
+    {
+        Xp(7500);
+        Xp(250, 4);
+    }
+
+    Reward("WL_Postman_Letter_02_reward")
+    {
+        Xp(25, 4);
+    }
+
+    Reward("WL_Postman_Letter_03_reward")
+    {
+        Xp(25, 4);
+    }
+
+    Reward("WL_Postman_Letter_06_reward")
+    {
+        Xp(25, 4);
+    }
+
+    Reward("WL_WaterFacilityFinal_reward")
+    {
+        Xp(10000);
+        Xp(250, 4);
+    }
+
+    Reward("WL_HerbalMedication_reward")
+    {
+        Xp(15000);
+        Xp(250, 4);
+    }
+
+    Reward("WL_HerbalMedication2_reward")
+    {
+        Xp(3500);
+        Xp(50, 4);
+    }
+
+    Reward("WL_PoisonousHerbs_reward")
+    {
+        Item("ZZZZ3_Craftplan_CountrysideBane", Color_Violet, 1, 0);
+    }
+
+    Reward("WL_Airplane_reward")
+    {
+        Xp(2500);
+        Xp(100, 4);
+    }
+
+    Reward("WL_Airplane_backpack_reward")
+    {
+        Item("Craft_Upgrade_DamDurBal", Color_Violet, 1, 0);
+    }
+
+    Reward("WL_Airplane_body_reward")
+    {
+        Item("Craft_Upgrade_DamDurBal", Color_Violet, 1, 0);
+    }
+
+    Reward("WL_TrainRobbery_reward")
+    {
+        Xp(7500);
+        Xp(100, 4);
+    }
+
+    Reward("WL_RocketWagoon_reward")
+    {
+        Xp(3500);
+    }
+
+    Reward("WL_NukePrincess_reward")
+    {
+        Xp(3500);
+    }
+
+    Reward("WL_CampingScenarioA_reward")
+    {
+        Xp(15000);
+        Xp(200, 4);
+    }
+
+    Reward("WL_CampingScenarioB_reward")
+    {
+        Xp(15000);
+    }
+
+    Reward("WL_Camping_TunnelActions_reward")
+    {
+        Xp(15000);
+        Xp(50, 4);
+    }
+
+    Reward("WL_AnomaliesA_reward")
+    {
+        Xp(12500);
+        Xp(100, 4);
+    }
+
+    Reward("WL_Screamers_reward")
+    {
+        Xp(12500);
+        Xp(250, 4);
+    }
+
+    Reward("WL_WeaponsCollector_reward")
+    {
+        Xp(7500);
+        Xp(250, 4);
+    }
+
+    Reward("WL_HillHouse_reward")
+    {
+        Xp(15000);
+        Xp(150, 4);
+    }
+
+    Reward("WL_UnfinishedStory_reward")
+    {
+        Xp(12500);
+        Xp(350, 4);
+    }
+
+    Reward("WL_UnfinishedStoryEpilogue_reward")
+    {
+        Xp(3500);
+        Xp(50, 4);
+    }
+
+    Reward("WL_Postman_Silas_Package_reward")
+    {
+        Item("ZZZZ_Collectable_Collectable_Livery_54", Color_White, 1, 0);
+    }
+
+    Reward("WL_Stronghold_reward")
+    {
+        Xp(15000);
+        Xp(500, 4);
+    }
+
+    Reward("WL_CleansingWasteland_reward")
+    {
+    }
+
+    Reward("WL_Reputation_Crossbow_reward")
+    {
+        Item("ZZZZ3_Bundle_Crossbow_Bundle", Color_Blue, 1, 0);
+    }
+
+    Reward("WL_Pipeline_reward")
+    {
+        Xp(10, 4);
+    }
+
+    Reward("WL_Safezone_Oasis_reward")
+    {
+        Xp(2000);
+        Xp(50, 4);
+    }
+
+    Reward("WL_Safezone_ElectricPole_reward")
+    {
+        Xp(2000);
+        Xp(50, 4);
+    }
+
+    Reward("WL_Gas_Station_A_reward")
+    {
+    }
+
+    Reward("WL_Safezone_Bridge_reward")
+    {
+        Xp(2000);
+    }
+
+    Reward("WL_Island_reward")
+    {
+        Xp(2000);
+        Xp(50, 4);
+    }
+
+    Reward("WL_Quarantine_reward")
+    {
+        Xp(2000);
+        Xp(50, 4);
+    }
+
+    Reward("WL_Safezone_HorseshoeDrive_reward")
+    {
+        Xp(2000);
+        Xp(50, 4);
+    }
+
+    Reward("WL_Safezone_GasStationB_reward")
+    {
+        Xp(2000);
+        Xp(50, 4);
+    }
+
+    Reward("WL_Safezone_Antenna_reward")
+    {
+        Xp(2000);
+        Xp(50, 4);
+    }
+
+    Reward("WL_Safezone_NicoBar_reward")
+    {
+        Xp(2000);
+        Xp(50, 4);
+    }
+
+    Reward("WL_Hunting_Tower_reward")
+    {
+        Xp(2000);
+    }
+
+    Reward("WL_Safezone_PondHouse_reward")
+    {
+        Xp(2000);
+        Xp(50, 4);
+    }
+
+    Reward("WL_Lighthouse_reward")
+    {
+        Xp(2000);
+        Xp(50, 4);
+    }
+
+    Reward("WL_Villa_reward")
+    {
+        Xp(2000);
+    }
+
+    Reward("WL_Safezone_RiverHouse_reward")
+    {
+        Xp(2000);
+        Xp(50, 4);
+    }
+
+    Reward("WL_Safezone_ScreamersTower_reward")
+    {
+        Xp(2000);
+        Xp(50, 4);
+    }
+
+    Reward("WL_Hive01_reward")
+    {
+        Xp(15000);
+        Xp(300, 4);
+    }
+
+    Reward("WL_Hive02_reward")
+    {
+        Xp(15000);
+        Xp(300, 4);
+    }
+
+    Reward("WL_Hive03_reward")
+    {
+        Xp(50, 4);
+    }
+
+    Reward("WL_Hive04_reward")
+    {
+        Xp(15000);
+        Xp(300, 4);
+    }
+
+    Reward("WL_Hive05_reward")
+    {
+        Xp(15000);
+        Xp(300, 4);
+    }
+
+    Reward("WL_Hive06_reward")
+    {
+        Xp(15000);
+        Xp(300, 4);
+    }
+
+    Reward("WL_Hive07_reward")
+    {
+        Xp(15000);
+        Xp(300, 4);
+    }
+
+    Reward("WL_Hive08_reward")
+    {
+        Xp(15000);
+        Xp(300, 4);
+    }
+
+    Reward("WL_Hive09_reward")
+    {
+        Xp(15000);
+        Xp(300, 4);
+    }
+
+    Reward("WL_Hive10_reward")
+    {
+        Xp(15000);
+        Xp(300, 4);
+    }
+
+    Reward("WL_Cleansing04_reward")
+    {
+        Xp(15000);
+        Xp(75, 4);
+    }
+
+    Reward("WL_Missing01_reward")
+    {
+        Xp(25, 4);
+    }
+
+    Reward("WL_Missing02_reward")
+    {
+        Xp(25, 4);
+    }
+
+    Reward("WL_Missing03_reward")
+    {
+        Xp(25, 4);
+    }
+
+    Reward("WL_Missing04_reward")
+    {
+        Xp(25, 4);
+    }
+
+    Reward("WL_Missing05_reward")
+    {
+        Xp(25, 4);
+    }
+
+    Reward("WL_Missing06_reward")
+    {
+        Xp(25, 4);
+    }
+
+    Reward("WL_Missing07_reward")
+    {
+        Xp(25, 4);
+    }
+
+    Reward("WL_Missing08_reward")
+    {
+        Xp(25, 4);
+    }
+
+    Reward("WL_Missing09_reward")
+    {
+        Xp(25, 4);
+    }
+
+    Reward("WL_Missing10_reward")
+    {
+        Xp(25, 4);
+    }
+
+    Reward("WL_Missing11_reward")
+    {
+        Xp(25, 4);
+    }
+
+    Reward("WL_Missing12_reward")
+    {
+        Xp(25, 4);
+    }
+
+    Reward("WL_Missing13_reward")
+    {
+        Xp(25, 4);
+    }
+
+    Reward("WL_Missing14_reward")
+    {
+        Xp(25, 4);
+    }
+
+    Reward("WL_Missing15_reward")
+    {
+        Xp(25, 4);
+    }
+
+    Reward("WL_Missing16_reward")
+    {
+        Xp(25, 4);
+    }
+
+    Reward("WL_Missing17_reward")
+    {
+        Xp(25, 4);
+    }
+
+    Reward("WL_Missing18_reward")
+    {
+        Xp(25, 4);
+    }
+
+    Reward("WL_Missing19_reward")
+    {
+        Xp(25, 4);
+    }
+
+    Reward("WL_Missing20_reward")
+    {
+        Xp(25, 4);
+    }
+
+    Reward("ULTRA_ENEMY_TOAD_reward")
+    {
+        Xp(10000);
+        Xp(100, 4);
+    }
+
+    Reward("ULTRA_ENEMY_ARMORED_B_reward")
+    {
+        Xp(10000);
+        Xp(100, 4);
+    }
+
+    Reward("ULTRA_ENEMY_ARMORED_H_reward")
+    {
+        Xp(10000);
+        Xp(100, 4);
+    }
+
+    Reward("ULTRA_ENEMY_THUG_reward")
+    {
+        Xp(10000);
+        Xp(100, 4);
+    }
+
+    Reward("ULTRA_ENEMY_GOON_reward")
+    {
+        Xp(10000);
+        Xp(100, 4);
+    }
+
+    Reward("tableCleansing2_reward")
+    {
+        Xp(10000);
+        Xp(100, 4);
+    }
+
+    Reward("Fountain_reward")
+    {
+        Xp(15000);
+        Item("Craftplan_Bleed_Upgrade", Color_Violet, 1, 0); // Bleed Upgrade Craftplan
+    }
+   //main 
+ QuestDef("Prologue") { ForceDifficulty(Diff_Easy); }
+ QuestDef("GoingOutside") { ForceDifficulty(Diff_Easy); }
+ QuestDef("Blackout") { ForceDifficulty(Diff_Medium); }
+ QuestDef("Airdrop") { ForceDifficulty(Diff_Medium); }
+ QuestDef("PactWithRais") { ForceDifficulty(Diff_Easy); }
+ QuestDef("Antennas") { ForceDifficulty(Diff_Hard); }
+ QuestDef("Courier") { ForceDifficulty(Diff_Medium); }
+ QuestDef("Explosives") { ForceDifficulty(Diff_Medium); }
+ QuestDef("PrimeHunting") { ForceDifficulty(Diff_Medium); }
+ QuestDef("Demoliton") { ForceDifficulty(Diff_Medium); }
+ QuestDef("Intruders") { ForceDifficulty(Diff_Medium); }
+ QuestDef("Warehouse") { ForceDifficulty(Diff_Medium); }
+ QuestDef("Arena") { ForceDifficulty(Diff_Hard); }
+ QuestDef("Runaway") { ForceDifficulty(Diff_Medium); }
+ QuestDef("Saviors") { ForceDifficulty(Diff_Medium); }
+ QuestDef("OldTown") { ForceDifficulty(Diff_Medium); }
+ QuestDef("FindTheEmbers") { ForceDifficulty(Diff_Medium); }
+ QuestDef("University") { ForceDifficulty(Diff_Medium); }
+ QuestDef("Randezvous") { ForceDifficulty(Diff_Medium); }
+ QuestDef("Provider") { ForceDifficulty(Diff_Medium); }
+ QuestDef("ProjectMayhem") { ForceDifficulty(Diff_Hard); }
+ QuestDef("MeetingWithJade") { ForceDifficulty(Diff_Easy); }
+ QuestDef("Museum") { ForceDifficulty(Diff_Hard); }
+ QuestDef("Contact") { ForceDifficulty(Diff_Medium); }
+ QuestDef("Clinic") { ForceDifficulty(Diff_Medium); }
+ QuestDef("ContactGRE") { ForceDifficulty(Diff_Hard); }
+ QuestDef("OutOfTheAir") { ForceDifficulty(Diff_Hard); }
+ QuestDef("CheckEmbers") { ForceDifficulty(Diff_Medium); }
+ QuestDef("Final") { ForceDifficulty(Diff_Hard); }
+
+ //side
+ QuestDef("BringDawud1") { ForceDifficulty(Diff_Medium); }
+ QuestDef("GoodNightBahir") { ForceDifficulty(Diff_Medium); }
+ QuestDef("MothersDay") { ForceDifficulty(Diff_Medium); }
+ QuestDef("Voltage") { ForceDifficulty(Diff_Medium); }
+ QuestDef("LandMine") { ForceDifficulty(Diff_Medium); }
+ QuestDef("BringAntibiotics") { ForceDifficulty(Diff_Medium); }
+ QuestDef("ElectricMachete") { ForceDifficulty(Diff_Medium); }
+ QuestDef("PerfectMurder") { ForceDifficulty(Diff_Easy); }
+ QuestDef("SpareGlasses") { ForceDifficulty(Diff_Easy); }
+ QuestDef("MedicalHerbs") { ForceDifficulty(Diff_Easy); }
+ QuestDef("Twins02") { ForceDifficulty(Diff_Medium); }
+ QuestDef("Twins03") { ForceDifficulty(Diff_Medium); }
+ QuestDef("Twins04") { ForceDifficulty(Diff_Medium); }
+ QuestDef("BringGalib") { ForceDifficulty(Diff_Medium); }
+ QuestDef("WheresMyMother") { ForceDifficulty(Diff_Medium); }
+ QuestDef("GuideToZombieland") { ForceDifficulty(Diff_Medium); }
+ QuestDef("BringJeff") { ForceDifficulty(Diff_Medium); }
+ QuestDef("BringMusa") { ForceDifficulty(Diff_Medium); }
+ QuestDef("PoisonousHerbs") { ForceDifficulty(Diff_Easy); }
+ QuestDef("Searchlights") { ForceDifficulty(Diff_Medium); }
+ QuestDef("Binoculars") { ForceDifficulty(Diff_Easy); }
+ QuestDef("MidnightBride") { ForceDifficulty(Diff_Easy); }
+ QuestDef("Firebug") { ForceDifficulty(Diff_Medium); }
+ QuestDef("Algae") { ForceDifficulty(Diff_Easy); }
+ QuestDef("BabyIsBorn") { ForceDifficulty(Diff_Easy); }
+ QuestDef("Dynamites") { ForceDifficulty(Diff_Medium); }
+ QuestDef("TalesFromTheCrypt") { ForceDifficulty(Diff_Medium); }
+ QuestDef("WitchQueen") { ForceDifficulty(Diff_Medium); }
+    QuestDef("WitchQueen02") { ForceDifficulty(Diff_Medium); }
+    QuestDef("WitchQueen03") { ForceDifficulty(Diff_Medium); }
+    QuestDef("WitchQueen04") { ForceDifficulty(Diff_Medium); }
+    QuestDef("WitchQueen05") { ForceDifficulty(Diff_Hard); }
+ QuestDef("DeathNote") { ForceDifficulty(Diff_Medium); }
+    QuestDef("CrayonsForTheKids") { ForceDifficulty(Diff_Easy); }
+    QuestDef("ElectronicParts") { ForceDifficulty(Diff_Easy); }
+ QuestDef("Cofee") { ForceDifficulty(Diff_Easy); }
+ QuestDef("GasLighter") { ForceDifficulty(Diff_Easy); }
+    QuestDef("BandagesAndMeds") { ForceDifficulty(Diff_Easy); }
+ QuestDef("EXPcalibur") { ForceDifficulty(Diff_Easy); }
+ QuestDef("LootCave") { ForceDifficulty(Diff_Medium); }
+ QuestDef("QuasiWorld") { ForceDifficulty(Diff_Medium); }
+ QuestDef("Outposts") { ForceDifficulty(Diff_Hard); }
+    QuestDef("FanZone") { ForceDifficulty(Diff_Medium); }
+    QuestDef("TheProphet") { ForceDifficulty(Diff_Medium); }
+    QuestDef("sq_FindRupert01") { ForceDifficulty(Diff_Easy); }
+ QuestDef("sq_HealthPotion01") { ForceDifficulty(Diff_Medium); }
+    QuestDef("sq_BricksForTheBoy01") { ForceDifficulty(Diff_Easy); }
+    QuestDef("sq_BricksForTheBoy02") { ForceDifficulty(Diff_Easy); }
+ QuestDef("sq_Dungeons01") { ForceDifficulty(Diff_Easy); }
+    QuestDef("UglyMonster01") { ForceDifficulty(Diff_Hard); }
+    QuestDef("FoodCourier") { ForceDifficulty(Diff_Medium); }
+ QuestDef("ChildrenOfTheMatrix01") { ForceDifficulty(Diff_Medium); }
+ QuestDef("sq_ghost01") { ForceDifficulty(Diff_Easy); }
+QuestDef("TheProphecy") { ForceDifficulty(Diff_Easy); }
+
+//TheFollowing
+
+ QuestDef("WL_Oasis_01") { ForceDifficulty(Diff_Medium); }
+ QuestDef("WaterFacility") { ForceDifficulty(Diff_Hard); }
+ QuestDef("WaterFacility_B") { ForceDifficulty(Diff_Medium); }
+ QuestDef("Electrician") { ForceDifficulty(Diff_Hard); }
+ QuestDef("Postman") { ForceDifficulty(Diff_Medium); }
+ QuestDef("WastelandHerbalMedication") { ForceDifficulty(Diff_Medium); }
+ QuestDef("WastelandHerbalMedication2") { ForceDifficulty(Diff_Medium); }
+ QuestDef("WL_Algae") { ForceDifficulty(Diff_Easy); }
+ QuestDef("WL_Algae_thief") { ForceDifficulty(Diff_Easy); }
+ QuestDef("WastelandRevenge") { ForceDifficulty(Diff_Medium); }
+ QuestDef("WL_Racer_A") { ForceDifficulty(Diff_Easy); }
+ QuestDef("WL_Screamers") { ForceDifficulty(Diff_VeryHard); }
+ QuestDef("RadioBoy") { ForceDifficulty(Diff_Hard); }
+ QuestDef("WL_Airplane") { ForceDifficulty(Diff_Easy); }
+ QuestDef("Anomalies") { ForceDifficulty(Diff_Medium); }
+ QuestDef("WL_Camping") { ForceDifficulty(Diff_Medium); }
+ QuestDef("WL_HillHouse") { ForceDifficulty(Diff_Medium); }
+ QuestDef("WL_UnfinishedStory") {  ForceDifficulty(Diff_Hard); }
+ QuestDef("WL_Unfinishedstory_epilogue") { ForceDifficulty(Diff_Easy); }
+ QuestDef("WL_JasirSaber") { ForceDifficulty(Diff_Medium); }
+ QuestDef("WL_Stronghold") { ForceDifficulty(Diff_Hard); }
+ QuestDef("WL_PrimeHunting") { ForceDifficulty(Diff_Medium); }
+ QuestDef("WL_JasirsFarm") { ForceDifficulty(Diff_VeryEasy); }
+ QuestDef("WL_Silas") { ForceDifficulty(Diff_VeryEasy); }
+ QuestDef("HiveB_Wasteland") { ForceDifficulty(Diff_VeryHard); }
+ QuestDef("HiveA_Wasteland") { ForceDifficulty(Diff_VeryHard); }
+ QuestDef("WL_Uber1") { ForceDifficulty(Diff_VeryHard); }
+ QuestDef("WL_Uber2") { ForceDifficulty(Diff_VeryHard); }
+ QuestDef("WL_Mechanic") { ForceDifficulty(Diff_Medium); }
+ QuestDef("WastelandPoisonousHerbs") { ForceDifficulty(Diff_VeryHard); }
+ QuestDef("WL_TrainRobbery") { ForceDifficulty(Diff_Hard); }
+ QuestDef("WL_RocketWagoonPre") { ForceDifficulty(Diff_Easy); }
+ QuestDef("WL_HolyWater") { ForceDifficulty(Diff_Medium); }
+ QuestDef("WL_Airplane") { ForceDifficulty(Diff_Easy); }
+ QuestDef("WL_FinalAssignment_dam") { ForceDifficulty(Diff_Medium); }
+ QuestDef("WL_FinalBoss") { ForceDifficulty(Diff_Hard); }
+ QuestDef("tableCleansing2") { ForceDifficulty(Diff_VeryHard); }
+ }

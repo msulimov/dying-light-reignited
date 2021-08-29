@@ -1,0 +1,8 @@
+sub main()
+{    
+    DLCMap("stadium", "DLC16");
+    DLCMap("wasteland", "DLC17");
+    DLCMap("wasteland_final", "DLC17");
+    DLCMap("prison", "DLC39");
+	DLCMap("hellraid", "DLC49");
+}
