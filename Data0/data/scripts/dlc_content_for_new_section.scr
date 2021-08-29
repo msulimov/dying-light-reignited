@@ -1,0 +1,420 @@
+sub main()
+{
+	// DLC(steam_product_id, ps4_entitlement_label, xbo_product_id, product_type, sales_type, is_featured)
+	//   steam_product_id		- integer
+	//   ps4_entitlement_label	- string, 16 characters
+	//   xbo_product_id			- guid string, format "00000000-0000-0000-0000-000000000000"
+	//   product_type           - "Preorder", "Bundle", "Expansion"
+	//	 sales_type             - "Preorder", "Paid", "OnSale", "Free"
+	//   is_featured            - bool
+
+	// Platforms(true, true, true, true); - (isOnSteam, isOnXone, isOnPs4, isOnGog)
+
+	// SteamUrl("https://store.steampowered.com/app/239140/Dying_Light/");                                   - address of website on Steam if we want to open a browser, not shop
+	// XoneUrl("https://www.microsoft.com/pl-pl/p/dying-light/bxn9lb6r3zpg?activetab=pivot:overviewtab");    - address of website on Microsoft Store if we want to open a browser, not shop
+	// Ps4Url("https://store.playstation.com/pl-pl/product/EP1018-CUSA02010_00-DYINGLIGHTGAME00");           - address of website on PlayStatiion Store if we want to open a browser, not shop
+	// GogUrl("https://www.gog.com/game/dying_light_the_following_enhanced_edition");                        - address of website on GoG if we want to open a browser, not shop
+
+	//////////////////////////////////////////////////////////////////////////////////////////////////////
+	// PREORDERS
+	//////////////////////////////////////////////////////////////////////////////////////////////////////
+	
+	// Preorder DL2 ultimate
+	DLC(534380, "empty", "30355039-4233-3037-c054-39514e35fb00", "Preorder", "Preorder", false)
+    {
+        Image("dlc_new_section_DL2_ultimate");
+		Platforms(true, true, true, true);
+		Ps4Url("https://store.playstation.com/concept/232374");
+    }
+	
+	// Preorder DL2 delux
+	DLC(534380, "empty", "32355039-4b44-3046-c058-563236431e00", "Preorder", "Preorder", false)
+    {
+        Image("dlc_new_section_DL2_deluxe");
+		Platforms(true, true, true, true);
+		Ps4Url("https://store.playstation.com/concept/232374");
+    }
+
+	// Preorder DL2 standard
+	DLC(534380, "empty", "5a514e39-514b-3036-c035-423842332800", "Preorder", "Preorder", false)
+    {
+        Image("dlc_new_section_DL2_standard");
+		Platforms(true, true, true, true);
+		Ps4Url("https://store.playstation.com/concept/232374");
+    }
+
+	//////////////////////////////////////////////////////////////////////////////////////////////////////
+	// GATHER
+	//////////////////////////////////////////////////////////////////////////////////////////////////////
+	
+	DLC(0, "", "", "Bundle", "Paid", true)
+    {
+        Image("dlc_new_section_astronaut");
+    }
+	
+	DLC(0, "", "", "Bundle", "Paid", true)
+    {
+        Image("dlc_new_section_lowgrav");
+    }
+
+	//////////////////////////////////////////////////////////////////////////////////////////////////////
+	// FEATURED
+	//////////////////////////////////////////////////////////////////////////////////////////////////////
+
+	// Savvy
+	DLC(1647900, "SAVVYGAMER000000", "474d4e39-5048-3033-c044-503434523400", "Bundle", "Paid", true)
+    {
+        Image("dlc_new_section_savvy");
+		Platforms(true, true, true, true);
+    }
+
+	// Rust
+	DLC(1599030, "RUSTCROSS0000000", "48504e39-5a48-3042-c056-363042343500", "Bundle", "Free", true)
+    {
+        Image("dlc_new_section_rust");
+		Platforms(true, true, true, true);
+    }
+	
+	// Rust v2
+	DLC(1599030, "", "", "Bundle", "Free", true)
+    {
+        Image("dlc_new_section_rust_crossover");
+		//Platforms(true, false, false, false);
+    }
+
+	// Harran Tactical
+	DLC(1543420, "HARRANTACTICAL00", "5a474e39-3046-3036-c037-48344d431700", "Bundle", "Paid", true)
+    {
+        Image("dlc_new_section_tactical_unit");
+		Platforms(true, true, true, true);
+    }
+
+	// Ox
+	DLC(1524890, "OXWARRIORBUNDLE0", "464b4e39-4737-3048-c035-31334b531500", "Bundle", "Free", true)
+    {
+        Image("dlc_new_section_ox");
+		Platforms(true, true, true, true);
+    }
+	
+	// Viking
+	DLC(1498210, "VIKING0000000000", "34574e39-4251-304d-c048-473552474f00", "Bundle", "Paid", true)
+    {
+        Image("dlc_new_section_viking");
+		Platforms(true, true, true, true);
+    }
+
+	// Special agent
+	DLC(1468290, "SPECIALAGENT2020", "44505039-5434-3054-c039-515436475400", "Bundle", "Paid", true)
+    {
+        Image("dlc_new_section_special_agent");
+		Platforms(true, true, true, true);
+    }
+
+	// L4D2
+	DLC(1454750, "L4DCROSS20000000", "52574e39-5350-3030-c047-57484b477b00", "Bundle", "Free", true)
+    {
+        Image("dlc_new_section_left_4_dead_2");
+		Platforms(true, true, true, true);
+    }
+
+	// Volkan
+	DLC(1354960, "COMMANDO00000000", "56395039-3233-3033-c035-424758470d00", "Bundle", "Paid", true)
+    {
+        Image("dlc_new_section_Volkan");
+		Platforms(true, true, true, true);
+    }
+
+	//5th anniversary
+    DLC(1241570, "ANNIVERSARY5TH00", "34445039-5143-3036-c04e-575448566200", "Bundle", "Paid", true)
+    {
+        Title("&dlc_5th_anniversary_name&");
+        Image("dlc_new_section_5th_anniversary_skin");
+		Platforms(true, true, true, true);
+    }
+	
+	// Hellraid
+	DLC(1300710, "HELLRAID00000000", "44374e39-3852-3051-c034-514b46574a00", "Expansion", "Paid", true)
+	{
+		Title("&dlccontent_hellraid_h_1&");
+		Image("dlc_new_section_hellraid");
+		Platforms(true, true, true, true);
+	}
+
+	// The Following
+	DLC(325724, "THEFOLLOWING0000", "6d72e244-4e22-44af-bc7b-35d15c698f9b", "Expansion", "Paid", true)
+	{
+		Title("&DLC17_DlcContent_Name&");
+		Image("dlc_new_section_the_following");
+		Platforms(true, true, true, true);
+	}
+
+	// Shu Warrior
+    DLC(1184350, "SHUWARRIOR000000", "56394e39-5439-3042-c056-343053524400", "Bundle", "Paid", true)
+    {
+        Title("&dlc_Shu_Warrior_skin_name&");
+        Image("dlc_new_section_Shu_Warrior_skin");
+		Platforms(true, true, true, true);
+    }
+
+    // RETROWAVE SKIN PACK
+    DLC(1177880, "RETROWAVE0000000", "38534e39-5a53-304d-c04d-515143448200", "Bundle", "Paid", true)
+    {
+        Title("&dlc_retrowave_skin_name&");
+        Image("dlc_new_section_retrowave_skin");
+		Platforms(true, true, true, true);
+    }
+	
+	// Unturned 
+	DLC(1272090, "UNTURNEDCROSS000", "4d504e39-484e-3054-c043-4d4e42578500", "Bundle", "Free", true)
+    {
+        Title("&&");
+        Image("dlc_new_section_unturned");
+		Platforms(true, true, true, true);
+    }
+	
+	// Rise Elite pack
+    DLC(1112520, "RAISELITE0000000", "86e07434-17be-453f-934e-d9aa59d01951", "Bundle", "Paid", true)
+    {
+        Title("&dlc_rais_elite_Name&");
+        Image("dlc_new_section_rais_elite");
+		Platforms(true, true, true, true);
+    }
+
+
+	//////////////////////////////////////////////////////////////////////////////////////////////////////
+	// EXPANSIONS
+	//////////////////////////////////////////////////////////////////////////////////////////////////////
+
+
+	// The Following
+	DLC(325724, "THEFOLLOWING0000", "6d72e244-4e22-44af-bc7b-35d15c698f9b", "Expansion", "Paid", false)
+	{
+		Title("&DLC17_DlcContent_Name&");
+		Image("dlc_new_section_the_following");
+		Platforms(true, true, true, true);
+	}
+
+	// Hellraid
+	DLC(1300710, "HELLRAID00000000", "44374e39-3852-3051-c034-514b46574a00", "Expansion", "Paid", false)
+	{
+		Title("&dlccontent_hellraid_h_1&");
+		Image("dlc_new_section_hellraid");
+		Platforms(true, true, true, true);
+	}
+
+	// The Bozak Horde
+	DLC(325723, "THEZOMBIEGAMES00", "3b3d70db-822d-4fab-9623-b74d044f1296", "Expansion", "Paid", false)
+	{
+		Title("&DLC16_DlcContent_Name&");
+		Image("dlc_new_section_bozak_horde");
+		Platforms(true, true, true, true);
+	}
+
+	// Cuisine & Cargo 
+	DLC(302101, "CUISINEANDCARGO0", "ddf0f478-8bc4-4f4c-9208-3d4a189c3ea3", "Expansion", "Free", false)
+    {
+        Title("&DLC_SeasonPass_Desc_Header_5&");
+        Image("dlc_new_section_cuisine_cargo");
+		Platforms(true, true, true, true);
+    }
+
+
+	//////////////////////////////////////////////////////////////////////////////////////////////////////
+	// BUNDLE
+	//////////////////////////////////////////////////////////////////////////////////////////////////////
+
+	// Savvy
+	DLC(1647900, "SAVVYGAMER000000", "474d4e39-5048-3033-c044-503434523400", "Bundle", "Paid", false)
+    {
+        Image("dlc_new_section_savvy");
+		Platforms(true, true, true, true);
+    }
+
+	// Rust
+	DLC(1599030, "RUSTCROSS0000000", "48504e39-5a48-3042-c056-363042343500", "Bundle", "Free", false)
+    {
+        Image("dlc_new_section_rust");
+		Platforms(true, true, true, true);
+    }
+
+	// Harran Tactical
+	DLC(1543420, "HARRANTACTICAL00", "5a474e39-3046-3036-c037-48344d431700", "Bundle", "Paid", false)
+    {
+        Image("dlc_new_section_tactical_unit");
+		Platforms(true, true, true, true);
+    }
+
+	// Ox
+	DLC(1524890, "OXWARRIORBUNDLE0", "464b4e39-4737-3048-c035-31334b531500", "Bundle", "Free", false)
+    {
+        Image("dlc_new_section_ox");
+		Platforms(true, true, true, true);
+    }
+	
+	// Viking
+	DLC(1498210, "VIKING0000000000", "34574e39-4251-304d-c048-473552474f00", "Bundle", "Paid", false)
+    {
+        Image("dlc_new_section_viking");
+		Platforms(true, true, true, true);
+    }
+
+	// Special agent
+	DLC(1468290, "SPECIALAGENT2020", "44505039-5434-3054-c039-515436475400", "Bundle", "Paid", false)
+    {
+        Image("dlc_new_section_special_agent");
+		Platforms(true, true, true, true);
+    }
+
+	// L4D2
+	DLC(1454750, "L4DCROSS20000000", "52574e39-5350-3030-c047-57484b477b00", "Bundle", "Free", false)
+    {
+        Image("dlc_new_section_left_4_dead_2");
+		Platforms(true, true, true, true);
+    }
+
+	// Volkan
+	DLC(1354960, "COMMANDO00000000", "56395039-3233-3033-c035-424758470d00", "Bundle", "Paid", false)
+    {
+        Image("dlc_new_section_Volkan");
+		Platforms(true, true, true, true);
+    }
+
+	// Left 4 Dead 2 Weapon Pack
+	DLC(1174581, "L4DCROSS00000000", "65e034bf-93b2-4444-8b15-f0da690e2c76", "Bundle", "Free", false)
+    {
+        Title("&&");
+        Image("dlc_new_section_left_4_dead");
+		Platforms(true, true, true, true);
+    }
+	
+	//5th anniversary
+    DLC(1241570, "ANNIVERSARY5TH00", "34445039-5143-3036-c04e-575448566200", "Bundle", "Paid", false)
+    {
+        Title("&dlc_5th_anniversary_name&");
+        Image("dlc_new_section_5th_anniversary_skin");
+		Platforms(true, true, true, true);
+    }
+
+	// Shu Warrior
+    DLC(1184350, "SHUWARRIOR000000", "56394e39-5439-3042-c056-343053524400", "Bundle", "Paid", false)
+    {
+        Title("&dlc_Shu_Warrior_skin_name&");
+        Image("dlc_new_section_Shu_Warrior_skin");
+		Platforms(true, true, true, true);
+    }
+
+	// RETROWAVE SKIN PACK
+    DLC(1177880, "RETROWAVE0000000", "38534e39-5a53-304d-c04d-515143448200", "Bundle", "Paid", false)
+    {
+        Title("&dlc_retrowave_skin_name&");
+        Image("dlc_new_section_retrowave_skin");
+		Platforms(true, true, true, true);
+    }
+	
+	// Rise Elite pack
+    DLC(1112520, "RAISELITE0000000", "86e07434-17be-453f-934e-d9aa59d01951", "Bundle", "Paid", false)
+    {
+        Title("&dlc_rais_elite_Name&");
+        Image("dlc_new_section_rais_elite");
+		Platforms(true, true, true, true);
+    }
+
+	// GodFather DLC PACK
+    DLC(1112521, "GODFATHER0000000", "a093671c-a252-4c61-829d-fe2404487474", "Bundle", "Paid", false)
+    {
+        Title("&dlc_godfather_Name&");
+        Image("dlc_new_section_godfather");
+		Platforms(true, true, true, true);
+    }
+
+	// Unturned 
+	DLC(1272090, "UNTURNEDCROSS000", "4d504e39-484e-3054-c043-4d4e42578500", "Bundle", "Free", false)
+    {
+        Title("&&");
+        Image("dlc_new_section_unturned");
+		Platforms(true, true, true, true);
+    }
+
+	// HARRAN INMATE PACK
+    DLC(1174580, "HARRANINMATE0000", "34564d39-4235-3056-c039-543831471a00", "Bundle", "Paid", false)
+    {
+        Title("&dlc_harran_inmate_name&");
+        Image("dlc_new_section_harran_inmate");
+		Platforms(true, true, true, true);
+    }
+
+	// Harran Ranger Bundle
+	DLC(436080, "OUTFITANDLIVERY3", "0e5cfccd-6484-47b1-8e37-d09336cb6e05", "Bundle", "Paid", false)
+	{
+		Title("&DLC30_DlcContent_Name&");
+		Image("dlc_new_section_harran_ranger_bundle");
+		Platforms(true, true, true, true);
+	}
+
+	// Volatile Hunter Bundle
+	DLC(436082, "OUTFITANDLIVERY5", "c040958b-070f-49ac-a937-197e708e1395", "Bundle", "Paid", false)
+	{
+		Title("&DLC32_DlcContent_Name&");
+		Image("dlc_new_section_volatile_hunter_bundle");
+		Platforms(true, true, true, true);
+	}
+
+	// Chivalry
+	DLC(1184351, "CHIVALRYCROSS000", "53475039-3334-3030-c036-50344743fe00", "Bundle", "Free", false)
+    {
+        Title("&&");
+        Image("dlc_new_section_chivalry");
+		Platforms(true, true, true, true);
+    }
+
+	// White Death Bundle
+	DLC(748340, "WHITEDEATHBUNDLE", "71fdf9e1-9738-43a8-af5f-24b38440e55b", "Bundle", "Paid", false)
+	{
+		Title("&DLC37_DlcContent_Name&");
+		Image("dlc_new_section_white_death_bundle");
+		Platforms(true, true, true, true);
+	}
+
+	// Vintage Gunslinger Bundle
+	DLC(748341, "VINTAGEBUNDLE000", "67df3b08-8943-45fc-9781-4d4c3986b763", "Bundle", "Paid", false)
+	{
+		Title("&DLC38_DlcContent_Name&");
+		Image("dlc_new_section_vintage_gunslinger_bundle");
+		Platforms(true, true, true, true);
+	}
+	
+	// Gun Psycho Bundle
+	DLC(436081, "OUTFITANDLIVERY4", "855f31a9-46b3-4ecb-af36-276e54e3851c", "Bundle", "Paid", false)
+	{
+		Title("&DLC31_DlcContent_Name&");
+		Image("dlc_new_section_gun_psycho_bundle");
+		Platforms(true, true, true, true);
+	}
+	
+	// Crash Test Skin Pack
+	DLC(435111, "OUTFITANDLIVERY2", "1c78f230-75ff-4480-9b43-5db0ef2e417e", "Bundle", "Paid", false)
+	{
+		Title("&DLC29_DlcContent_Name&");
+		Image("dlc_new_section_crash_test_skin_pack");
+		Platforms(true, true, true, true);
+	}
+	
+	// Ultimate Survivor Bundle
+	DLC(347090, "ULTIMATESURVIVOR", "12fff3c1-356e-442b-8468-726bab622a6f", "Bundle", "Paid", false)
+	{
+		Title("&DLC23_DlcContent_Name&");
+		Image("dlc_new_section_ultimate_survivor_bundle");
+		Platforms(true, true, true, true);
+	}
+
+
+
+
+	// Season Pass
+	//DLC(335810, "DLSEASONPASS0000", "c89d8626-8301-411b-8929-d7fd09875a21", "Expansion", "Paid", false)
+	//{
+	//	Title("&DLC_SeasonPass_Name&");
+	//	Image("dlc_new_section_season_pass");
+	//  Platforms(true, true, true, true);
+	//}
+}

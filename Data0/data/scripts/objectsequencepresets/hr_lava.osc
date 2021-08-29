@@ -1,0 +1,43 @@
+ sub hr_lava()
+{
+Preset("hr_lava")
+
+// 0 - Small 0.7
+// 1 - Big   1.4
+
+    {
+		OnLevelStart()
+	    {
+        SetLightIntensity(0, 0.0, 0.0);
+		SetLightIntensity(1, 0.0, 0.0);
+   		}
+		
+		OnEnable()
+	    {
+        SetLightIntensity(0, 0.0, 0.7);
+		SetLightIntensity(1, 0.0, 1.4);
+   		}
+		
+		OnDisable()
+		{
+        SetLightIntensity(0, 0.0, 0.0);
+		SetLightIntensity(1, 0.0, 0.0);
+		}
+		        
+		TimedEvent(0.0)
+        {
+        SetLightIntensity(0, 1.5, 0.9);
+		SetLightIntensity(1, 1.5, 1.6);
+     	}
+        
+		TimedEvent(1.50)
+        {
+        SetLightIntensity(0, 1.5, 0.7);
+		SetLightIntensity(1, 1.5, 1.4);
+        }
+		
+		GoToBegin(3.00)
+		{
+		}
+    }
+}

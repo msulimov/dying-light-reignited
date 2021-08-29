@@ -1,0 +1,13 @@
+sub main() 
+{
+    TitleId("default")
+    {
+        DlcIncluded()
+        {
+            EntitlementLabel("BETHEZOMBIE00000");
+            EntitlementLabel("CUSTOMMAPS100000");
+            EntitlementLabel("CUSTOMMAPS200000");
+            EntitlementLabel("PRISON0000000000");
+        }
+    }
+}

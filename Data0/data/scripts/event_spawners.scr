@@ -1,0 +1,14 @@
+sub main()
+{
+	// AIEventSpawnBoxCompound(spawner_type, should_be_enabled)
+	// spawner_type: "Default", "ZombieHuntEvent", ...
+	// should_be_enabled - if true then the spawner is enabled and will be spawn enemies
+
+	// Examples
+	// AIEventSpawnBoxCompound("Default", false);
+	
+	// AIEventSpawnBoxCompound("ZombieHuntGoons", true);
+	// AIEventSpawnBoxCompound("ZombieHuntDemolishers", true);
+	//AIEventSpawnBoxCompound("RustScientists", true);
+	//AIEventSpawnBoxCompound("Astronauts", true);
+}

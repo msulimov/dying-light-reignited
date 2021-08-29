@@ -1,0 +1,102 @@
+export int Consumables = 1;
+export int Ammo = 2;
+export int Valuables = 3;
+export int Weapon = 4;
+export int Dirty = 5;
+export int CraftPart = 6;
+export int Lockpick = 7;
+export int Mods = 8;
+export int Other = 9;
+
+     sub Items_Ammo_Subsonic(float weight = 1.0, float prob = 1.0)
+    {
+        Set(Weapon, weight, prob)
+        {
+            Item("Ammo_Pistol_Subsonic_Small", 1.0);
+            Item("Ammo_Pistol_Subsonic_Big", 1.0);
+			Item("ZZZZZ_Ammo_SMG_Big", 1.0);
+			
+        }
+    }
+
+     sub Prison_Crafting(float weight = 1.0, float prob = 1.0)
+    {
+        Set(CraftPart, weight, prob)
+        {
+            Item("Craft_MetalScrap", 1.0);
+            Item("Craft_PlasticTube", 1.0);
+			Item("Craft_Alcohol", 1.0);
+            
+            Item("Craft_DuctTape", 1.0);
+            Item("Craft_Gauze", 1.0);
+			Item("ZZZZ3_Component_Rubber", 1.0);
+            
+            Item("Craft_Bleach", 1.0);
+			Item("Craft_Nails", 1.0);
+			Item("ZZZZ3_Component_Wire", 1.0);
+            
+			Item("misc_pouch", 1.0);
+            Item("ZZZZ3_Component_Synthetic", 1.0);
+			
+			//Item("ZZZZ3_Component_NutsBolts", 1.0);
+			//Item("Craft_RazorBlade", 1.0);
+			//Item("Craft_Sugar", 1.0);
+			//Item("Craft_String", 1.0);
+			//Item("Craft_Batteries", 1.0);
+            //Item("Craft_TinCan", 1.0);
+            // Item("Craft_InstantColdPack", 1.0);
+            //Item("Craft_PowerCable", 1.0);
+            //Item("Craft_Electronics", 1.0);
+            // Item("Craft_ToxicPlant", 1.0);
+            // Item("Craft_UnderwaterAlgae", 1.0);
+            // Item("Craft_Lichen", 1.0);
+            // Item("Craft_Shroom", 1.0);
+            // Item("Craft_GreenAlgae", 1.0);
+            //Item("Craft_LighterGas", 1.0);
+            //Item("Craft_Syringe", 1.0);
+            // Item("Craft_Painkiller", 1.0);
+            // Item("Craft_PrimeTissue", 1.0);
+            //Item("Craft_HunterGland", 1.0);
+            // Item("Craft_VenomGland", 1.0);
+            //Item("Craft_BomberKidney", 1.0);
+            //Item("Craft_PutrescentLiver", 1.0);
+            // Item("ZZZZ3_Craft_PrimeGland", 1.0);
+            // Item("Craft_ZZZZ3_FollowingAlgae", 1.0);
+        }
+    }
+
+     sub Prison_Mods(float weight = 1.0, float prob = 1.0)
+    {
+        Set(CraftPart, weight, prob)
+        {
+            Item("Craft_Upgrade_Dam", 1.0);
+            Item("Craft_Upgrade_Dur", 1.0);
+            Item("Craft_Upgrade_Bal", 1.0);
+            Item("Craft_Upgrade_DamDur", 1.0);
+            Item("Craft_Upgrade_DamBal", 1.0);
+            Item("Craft_Upgrade_DurBal", 1.0);
+            Item("Craft_Upgrade_DamL2Dur", 1.0);
+            Item("Craft_Upgrade_DamL2Bal", 1.0);
+            Item("Craft_Upgrade_DurL2Bal", 1.0);
+            Item("Craft_Upgrade_DurL2Dam", 1.0);
+            Item("Craft_Upgrade_BalL2Dam", 1.0);
+            Item("Craft_Upgrade_BalL2Dur", 1.0);
+            Item("Craft_Upgrade_DamL2DurL2BalL2", 1.0);
+      
+        }
+    }
+
+    sub Prison_Healing(float weight = 1.0, float prob = 1.0)
+    {
+        Set(Consumables, weight, prob)
+        {
+            Item("Medkit_HealthPackLarge", 1.0);
+        }
+    }
+
+    sub Prison_Powerups(float weight = 1.0, float prob = 1.0)
+    {
+        Set(Consumables, weight, prob)
+        {
+        }
+    }

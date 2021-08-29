@@ -1,0 +1,74 @@
+//DLC_L4D_Crossover
+
+import "inventorystuff.scr" 
+sub main() 
+{
+	Item("Craftplan_L4D_Golf_Club_DLC", CategoryType_Collectable)
+    {
+        Name("&Craftplan_L4D_Golf_Club_DLC_N&");
+        Description("&Craftplan_L4D_Golf_Club_DLC_D&");
+        ItemType(ItemType_CraftPlan);
+        Price(10);
+        Mesh("blueprint.msh");
+        Skin("default");
+        BaseItem("Melee_", "", "");
+        RequiredItem("Craft_MetalScrap", 2);
+		RequiredItem("Craft_DuctTape", 2);
+		RequiredItem("Craft_Gauze", 1);
+		RequiredItem("Craft_TinCan", 1);
+        Color(Color_Blue);
+        CraftedItem("L4D_Golf_Club", 1, 1);
+		InheritBaseStats();
+        CraftplanType("WeaponDLC");
+		OwnedAtStart();
+        UniqueSaveID(9553);
+        HudIcon("blueprint_b");
+		GameVersion(28);
+    }
+	
+	Item("Craftplan_L4D_Frying_Pan_DLC", CategoryType_Collectable)
+    {
+        Name("&Craftplan_L4D_Frying_Pan_DLC_N&");
+        Description("&Craftplan_L4D_Frying_Pan_DLC_D&");
+        ItemType(ItemType_CraftPlan);
+        Price(10);
+        Mesh("blueprint.msh");
+        Skin("default");
+        BaseItem("Melee_", "", "");
+		RequiredItem("Craft_MetalScrap", 2);
+        RequiredItem("Craft_DuctTape", 2);
+		RequiredItem("Craft_Gauze", 1);
+		RequiredItem("Craft_TinCan", 1);
+        Color(Color_Blue);
+        CraftedItem("L4D_Frying_Pan", 1, 1);
+        CraftplanType("WeaponDLC");
+		OwnedAtStart();
+		InheritBaseStats();
+        UniqueSaveID(9554);
+        HudIcon("blueprint_b");
+		GameVersion(28);
+    }
+	
+	Item("Craftplan_L4D_Electric_Guitar_DLC", CategoryType_Collectable)
+    {
+        Name("&Craftplan_L4D_Electric_Guitar_DLC_N&");
+        Description("&Craftplan_L4D_Electric_Guitar_DLC_D&");
+        ItemType(ItemType_CraftPlan);
+        Price(10);
+        Mesh("blueprint.msh");
+        Skin("default");
+        BaseItem("Melee_", "", "");
+		RequiredItem("Craft_MetalScrap", 2);
+        RequiredItem("Craft_DuctTape", 2);
+		RequiredItem("Craft_String", 6);
+		RequiredItem("Craft_PowerCable", 1);
+        Color(Color_Blue);
+        CraftedItem("L4D_Electric_Guitar", 1, 1);
+        CraftplanType("WeaponDLC");
+		InheritBaseStats();
+		OwnedAtStart();
+        UniqueSaveID(9555);
+        HudIcon("blueprint_b");
+		GameVersion(28);
+    }
+}

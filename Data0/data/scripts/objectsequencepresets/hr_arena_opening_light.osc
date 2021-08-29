@@ -1,0 +1,33 @@
+ sub hr_arena_opening_light()
+{
+Preset("hr_arena_opening_light")
+
+// 0 - Omni 0.5
+
+    {
+		OnLevelStart()
+	    {
+		SetLightIntensity(0, 0.0, 0.0);
+   		}
+		
+		OnEnable()
+	    {
+		SetLightIntensity(0, 0.0, 0.0);
+   		}
+		
+		OnDisable()
+		{
+		SetLightIntensity(0, 0.0, 0.0);
+		}
+		
+        TimedEvent(0.0)
+        {
+		SetLightIntensity(0, 0.1, 0.0);
+     	}		
+        TimedEvent(2.0)
+        {
+		SetLightIntensity(0, 6.0, 0.5);
+     	}
+
+    }
+}

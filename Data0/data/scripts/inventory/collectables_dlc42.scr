@@ -1,0 +1,92 @@
+//DLC_SkinPack_RaisElite
+
+import "inventorystuff.scr" 
+sub main() 
+{
+	Item("Craftplan_Firearm_RifleA_RaisElite", CategoryType_Collectable)
+    {
+        Name("&Craftplan_Firearm_RifleA_RaisElite_N&");
+        Description('&Craftplan_Firearm_RifleA_RaisElite_D&');
+        ItemType(ItemType_CraftPlan);
+        Price(6400);
+        Mesh("blueprint.msh");
+        Skin("default");
+		RequiredItem("Craft_MetalScrap", 6);
+        RequiredItem("Craft_DuctTape", 3);
+        BaseItem("Firearm_Rifle", "", "");
+        CraftedItem("Firearm_RifleA_RaisElite", 1, 1);
+        CraftplanType("WeaponDLC");
+		Color(Color_Blue);
+        UniqueSaveID(9540);
+        HudIcon("blueprint_a");
+		GameVersion(27);
+		OwnedAtStart();
+		InheritBaseStats();
+    }
+	
+	Item("Craftplan_Melee_ShortKnifeARaisElite", CategoryType_Collectable)
+    {
+        Name("&Craftplan_Melee_ShortKnifeARaisElite_N&");
+        Description('&Craftplan_Melee_ShortKnifeARaisElite_D&');
+        ItemType(ItemType_CraftPlan);
+        Price(6400);
+        Mesh("blueprint.msh");
+        Skin("default");
+		RequiredItem("Craft_MetalScrap", 6);
+        RequiredItem("Craft_DuctTape", 3);
+		RequiredItem("Craft_RazorBlade", 1);
+        BaseItem("Melee_ShortKnife", "", "");
+        CraftedItem("Melee_ShortKnifeARaisElite", 1, 1);
+        CraftplanType("WeaponDLC");
+		Color(Color_Blue);
+		InheritBaseStats();
+        UniqueSaveID(9541);
+        HudIcon("blueprint_a");
+		GameVersion(27);
+		OwnedAtStart();
+    }
+	
+	Item("Craftplan_Firearm_PistolARaisElite", CategoryType_Collectable)
+    {
+        Name("&Craftplan_Firearm_PistolARaisElite_N&");
+        Description('&Craftplan_Firearm_PistolARaisElite_D&');
+        ItemType(ItemType_CraftPlan);
+        Price(6400);
+        Mesh("blueprint.msh");
+        Skin("default");
+		RequiredItem("Craft_MetalScrap", 6);
+        RequiredItem("Craft_DuctTape", 3);
+        BaseItem("Firearm_Pistol", "", "");
+        CraftedItem("Firearm_PistolARaisElite", 1, 1);
+        CraftplanType("WeaponDLC");
+		Color(Color_Blue);
+        UniqueSaveID(9542);
+        HudIcon("blueprint_a");
+		GameVersion(27);
+		OwnedAtStart();
+		InheritBaseStats();
+    }
+	
+	Item("Craftplan_Melee_MacheteARaisElite_DLC", CategoryType_Collectable)
+    {
+        Name("&Craftplan_Melee_MacheteARaisElite_DLC_N&");
+        Description('&Craftplan_Melee_MacheteARaisElite_DLC_D&');
+        ItemType(ItemType_CraftPlan);
+        Price(6400);
+        Mesh("blueprint.msh");
+        Skin("default");
+        BaseItem("Melee_Machete", "", "");
+		BaseItem("Melee_TahirsWeapon", "", "");
+        BaseItem("Melee_RaisMachete", "", "");
+        RequiredItem("Craft_MetalScrap", 4);
+        RequiredItem("Craft_DuctTape", 2);
+        CraftedItem("Melee_MacheteARaisElite_DLC", 1, 1);
+        CraftplanType("WeaponDLC");
+		Color(Color_Blue);
+		InheritBaseStats();
+        UniqueSaveID(9545);
+        HudIcon("blueprint_a");
+		GameVersion(27);
+		OwnedAtStart();
+    }
+}

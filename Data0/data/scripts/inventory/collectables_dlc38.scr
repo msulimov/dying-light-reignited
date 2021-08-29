@@ -1,0 +1,90 @@
+//WILDWEST PACK DLC
+
+import "inventorystuff.scr" 
+sub main() 
+{
+	Item("Craftplan_AddOn_Shotgun_WildWest", CategoryType_Collectable)
+    {
+        Name("&Craftplan_AddOn_Shotgun_WildWest_N&");
+        Description('&Craftplan_AddOn_Shotgun_WildWest_D&');
+        ItemType(ItemType_CraftPlan);
+        Price(6400);
+        Mesh("blueprint.msh");
+        Skin("default");
+        BaseItem("Firearm_ShotgunA", "", "");
+        RequiredItem("Craft_MetalScrap", 6);
+        RequiredItem("Craft_DuctTape", 3);
+        Color(Color_Blue);
+        CraftedItem("Firearm_ShotgunAGen_AddOn_WildWest", 1, 1);
+        CraftplanType("WeaponDLC");
+        UniqueSaveID(3090);
+        HudIcon("blueprint_b");
+        GameVersion(22);
+        OwnedAtStart();
+        InheritBaseStats();
+    }
+
+    Item("Craftplan_AddOn_Revolver_WildWest", CategoryType_Collectable)
+    {
+        Name("&Craftplan_AddOn_Revolver_WildWest_N&");
+        Description('&Craftplan_AddOn_Revolver_WildWest_D&');
+        ItemType(ItemType_CraftPlan);
+        Price(6400);
+        Mesh("blueprint.msh");
+        Skin("default");
+        BaseItem("Firearm_Revolver", "", "");
+        RequiredItem("Craft_MetalScrap", 6);
+        RequiredItem("Craft_DuctTape", 3);
+        Color(Color_Blue);
+        CraftedItem("Firearm_RevolverRanger_AddOn_WildWest", 1, 1);
+        CraftplanType("WeaponDLC");
+        UniqueSaveID(3091);
+        HudIcon("blueprint_b");
+        GameVersion(22);
+        OwnedAtStart();
+        InheritBaseStats();
+    }
+
+    Item("Craftplan_AddOn_Knife_WildWest", CategoryType_Collectable)
+    {
+        Name("&Craftplan_AddOn_Knife_WildWest_N&");
+        Description('&Craftplan_AddOn_Knife_WildWest_D&');
+        ItemType(ItemType_CraftPlan);
+        Price(6400);
+        Mesh("blueprint.msh");
+        Skin("default");
+        BaseItem("Melee_Knife", "", "");
+        RequiredItem("Craft_MetalScrap", 6);
+        RequiredItem("Craft_DuctTape", 3);
+        Color(Color_Blue);
+        CraftedItem("Melee_KnifeDGen_AddOn_WildWest", 1, 1);
+        CraftplanType("WeaponDLC");
+        UniqueSaveID(3092);
+        HudIcon("blueprint_b");
+        GameVersion(22);
+        OwnedAtStart();
+        InheritBaseStats();
+        RepairWhenCrafting(false);
+    }
+	
+	Item("Craftplan_AddOn_Shotgun_WildWest_Gunslinger", CategoryType_Collectable)
+    {
+        Name("&Craftplan_AddOn_Shotgun_WildWest_Gunslinger_N&");
+        Description('&Craftplan_AddOn_Shotgun_WildWest_Gunslinger_D&');
+        ItemType(ItemType_CraftPlan);
+        Price(6400);
+        Mesh("blueprint.msh");
+        Skin("default");
+        BaseItem("Firearm_ShotgunA", "", "");
+        RequiredItem("Craft_MetalScrap", 6);
+        RequiredItem("Craft_DuctTape", 3);
+        Color(Color_Blue);
+        CraftedItem("Firearm_ShotgunAGen_AddOn_WildWest_Gunslinger", 1, 1);
+        CraftplanType("WeaponDLC");
+        UniqueSaveID(3093);
+        HudIcon("blueprint_b");
+        GameVersion(34);
+        OwnedAtStart();
+        InheritBaseStats();
+    }
+}

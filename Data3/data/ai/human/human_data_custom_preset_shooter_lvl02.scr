@@ -1,0 +1,4 @@
+!include("human_data_custom_preset_shooter.scr")
+
+ParamFloat("health_mul", 6.0)
+ParamFloat("damage_mul_vs_other_ai", 40.0)

@@ -1,0 +1,214 @@
+sub main()
+{	
+	//VOLKAN COMBAT ARMOR
+	
+	Item("Melee_Sword_Space_Commando1")
+    {
+		Trick("ConsecutiveHits", 3, 10.0)
+		{
+			DamageMultiplier(1.1);
+			IgnoreArmor(); 			
+			ForcePostHitFx("fire_sparks_sequence.fx");
+		}
+    }
+
+	//RETROWAVE
+	
+	Item("Firearm_Rifle_Retro")
+    {
+		Trick("Hold")
+        {
+			BulletDescReplace("Bullet_Rifle_Shock");
+        }
+    }
+	
+	Item("Firearm_Rifle_Retro1")
+    {
+		Trick("Hold")
+        {
+			BulletDescReplace("Bullet_Rifle_Shock");
+        }
+    }
+	
+	//ANNIVERSARY
+	
+	Item("Melee_Pipe_Anniversary5")
+	{
+	    Trick("ConsecutiveHits", 3, 10.0)
+		{
+			DamageMultiplier(1.5);
+			IgnoreArmor(); 			
+			ForcePostHitFx("Poison_Pipe_Trick_sequence.fx");
+		}
+	}	
+	
+	//SHU WARRIOR 
+	
+	Item("Melee_Axe_Sky_Piercer_SHU")
+	{
+	    Trick("ConsecutiveHits", 3, 10.0)
+		{
+			SetMeshAlpha(1.0, 0.0);
+			DamageMultiplier(1.1);
+			IgnoreArmor(); 			
+			ForcePostHitFx("fire_sparks_sequence.fx");
+		}
+		
+		Trick("ChargeAttack")
+		{
+			SetMeshAlpha(1.0, 0.0);
+			ForcePostHitFx("fire_polearm_trail_sequence.fx");
+			IgnoreArmor(); 
+			IgnoreMinHitsToKill();
+			IgnoreBulletProofVest();
+			DamageMultiplier(2.0);
+			ResetParentOnDeactivate();
+		}
+	}
+	
+	Item("Melee_ShortSword_Dao_SHU1")
+	{
+	    Trick("ConsecutiveHits", 3, 4.0)
+		{
+			SetMeshAlpha(1.0, 0.0);
+			DamageMultiplier(1.1);
+			IgnoreArmor(); 			
+			ForcePostHitFx("fire_sparks_sequence.fx");
+		}
+	}
+	
+    Item("Firearm_Gaas_Revolver")
+    {
+        Trick("LastBulletShot")
+        {
+            // StackableDamageMultiplier(x,y)
+            //  x - base damage multiplier you get on last shot
+            //  y - additional multiplier which is added to base damage if you
+            //      hit headshots consecutively
+            StackableDamageMultiplier(1.5, 0.5);
+            ForceShootFx("big_revolver_muzzle_flash_sequence.fx");
+            ForceShootSound("grenade_explosion_XX.wav");
+            BulletDescReplace("Bullet_Impact");
+        }
+        Trick("BulletsLeft", 2)
+        {
+            // SetMeshAlpha(x, y)
+            //  x - alpha value when trick is active
+            //  y - alpha value when trick is inactive
+            SetMeshAlpha(1.0, 0.0);
+        }
+    }
+
+    Item("Gaas_ShortKnife")
+    {
+        Trick("Hold")
+        {
+            ForceSkill("Momentum");
+        }
+    }
+
+    Item("Gaas_Axe")
+    {
+        Trick("CutOff")
+        {
+            // SetMeshAlpha(x, y)
+            //  x - alpha value when trick is active
+            //  y - alpha value when trick is inactive
+            DamageMultiplier(2.0);
+            ForcePostHitFx("blood_from_axe_sequence.fx");
+            SetMeshAlpha(1.0, 0.0);
+            IgnoreMinHitsToKill();
+            IgnoreBulletProofVest();
+        }
+    }
+	
+	Item("zzz01_Melee_HrHlAxeD")
+    {
+        Trick("CutOff")
+        {
+            // SetMeshAlpha(x, y)
+            //  x - alpha value when trick is active
+            //  y - alpha value when trick is inactive
+            DamageMultiplier(1.5);
+            ForcePostHitFx("blood_from_axe_sequence.fx");
+            SetMeshAlpha(1.0, 0.0);
+            IgnoreMinHitsToKill();
+            IgnoreBulletProofVest();
+        }
+    }
+
+    Item("LiveOps_Trick_Pick")
+    {
+        // ConsecutiveHits, x, y
+        //  x - number of consecutive hits
+        //  y - active time, after this amount of time trick will deactivate
+        Trick("ConsecutiveHits", 3, 4.0)
+        {
+            SetMeshAlpha(1.0, 0.0);
+            // Nested tricks only work if parent trick is active
+            Trick("ChargeAttack")
+            {
+                IgnoreArmor();
+                IgnoreMinHitsToKill();
+                IgnoreBulletProofVest();
+                DamageMultiplier(2.0);
+                ResetParentOnDeactivate();
+            }
+        }
+    }
+	
+	//Necessary duplicate for Lunar Event
+	
+	Item("Melee_ShortSword_Dao_SHU_Gold")
+	{
+	    Trick("ConsecutiveHits", 3, 4.0)
+		{
+			SetMeshAlpha(1.0, 0.0);
+			DamageMultiplier(1.1);
+			IgnoreArmor(); 			
+			ForcePostHitFx("fire_sparks_sequence.fx");
+		}
+	}
+	
+	///////////////// HELLRAID ////////////////
+	
+	Item("Melee_HRBigAxe_R10")
+    {
+		Trick("ConsecutiveHits", 2, 10.0)
+		{
+			DamageMultiplier(1.3);
+			IgnoreArmor(); 			
+			ForcePostHitFx("fire_sparks_sequence.fx");
+		}
+		
+		Trick("ChargeAttack")
+		{
+			SetMeshAlpha(1.0, 0.0);
+			IgnoreArmor(); 
+			IgnoreMinHitsToKill();
+			DamageMultiplier(2.0);
+			ResetParentOnDeactivate();
+		}
+    }
+	
+	Item("HRBigAxe_R10_SHOP")
+    {
+		Trick("ConsecutiveHits", 2, 10.0)
+		{
+			DamageMultiplier(1.3);
+			IgnoreArmor(); 			
+			ForcePostHitFx("fire_sparks_sequence.fx");
+		}
+		
+		Trick("ChargeAttack")
+		{
+			SetMeshAlpha(1.0, 0.0);
+			IgnoreArmor(); 
+			IgnoreMinHitsToKill();
+			IgnoreBulletProofVest();
+			DamageMultiplier(2.0);
+			ResetParentOnDeactivate();
+		}
+    }
+	
+}

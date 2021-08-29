@@ -1,0 +1,69 @@
+//DLC_SkinPack_GodFather
+
+import "inventorystuff.scr" 
+sub main() 
+{
+	Item("Craftplan_Firearm_SubmachineBGodFather", CategoryType_Collectable)
+    {
+        Name("&Craftplan_Firearm_SubmachineBGodFather_N&");
+        Description('&Craftplan_Firearm_SubmachineBGodFather_D&');
+        ItemType(ItemType_CraftPlan);
+        Price(6400);
+        Mesh("blueprint.msh");
+        Skin("default");
+		RequiredItem("Craft_MetalScrap", 6);
+        RequiredItem("Craft_DuctTape", 3);
+        BaseItem("Firearm_Submachine", "", "");
+        CraftedItem("Firearm_SubmachineBGodFather", 1, 1);
+        CraftplanType("WeaponDLC");
+		Color(Color_Blue);
+        UniqueSaveID(9537);
+        HudIcon("blueprint_a");
+		GameVersion(28);
+		OwnedAtStart();
+		InheritBaseStats();
+    }
+	
+	Item("Craftplan_Melee_KnifeBGodFather", CategoryType_Collectable)
+    {
+        Name("&Craftplan_Melee_KnifeBGodFather_N&");
+        Description('&Craftplan_Melee_KnifeBGodFather_D&');
+        ItemType(ItemType_CraftPlan);
+        Price(6400);
+        Mesh("blueprint.msh");
+        Skin("default");
+		RequiredItem("Craft_MetalScrap", 6);
+        RequiredItem("Craft_DuctTape", 3);
+		RequiredItem("Craft_RazorBlade", 1);
+        BaseItem("Melee_Knife", "", "");
+        CraftedItem("Melee_KnifeBGodFather", 1, 1);
+        CraftplanType("WeaponDLC");
+		Color(Color_Blue);
+		InheritBaseStats();
+        UniqueSaveID(9538);
+        HudIcon("blueprint_a");
+		GameVersion(28);
+		OwnedAtStart();
+    }
+	
+	Item("Craftplan_Firearm_PistolAGodFather", CategoryType_Collectable)
+    {
+        Name("&Craftplan_Firearm_PistolAGodFather_N&");
+        Description('&Craftplan_Firearm_PistolAGodFather_D&');
+        ItemType(ItemType_CraftPlan);
+        Price(6400);
+        Mesh("blueprint.msh");
+        Skin("default");
+        RequiredItem("Craft_MetalScrap", 6);
+        RequiredItem("Craft_DuctTape", 3);
+        BaseItem("Firearm_Pistol", "", "");
+        CraftedItem("Firearm_PistolAGodFather", 1, 1);
+        CraftplanType("WeaponDLC");
+		Color(Color_Blue);
+        UniqueSaveID(9539);
+        HudIcon("blueprint_a");
+		GameVersion(28);
+		OwnedAtStart();
+		InheritBaseStats();
+    }
+}

@@ -1,0 +1,36 @@
+//SPECIAL AGENT BUNDLE
+
+import "inventorystuff.scr" 
+sub main() 
+{		
+	Item("Craftplan_Firearm_Shotgun_Ox", CategoryType_Collectable)
+    {
+        Name("&Craftplan_Firearm_Shotgun_Ox_N&");
+        Description('&Craftplan_Firearm_Shotgun_Ox_D&');
+        ItemType(ItemType_CraftPlan);
+        Price(60);
+        Mesh("blueprint.msh");
+        Skin("default");
+        BaseItem("Firearm_ShotgunA", "", "");
+		BaseItem("Firearm_ShotgunCGen", "", "");
+        RequiredItem("Craft_MetalScrap", 12);
+        RequiredItem("Craft_DuctTape", 5);
+		RequiredItem("Craft_String", 2);
+		RequiredItem("Craft_Nails", 5);
+        RequiredItem("Craft_Bleach", 6);
+        RequiredItem("Craft_Electronics", 8);
+		RequiredItem("Craft_Batteries", 8);
+		RequiredItem("Craft_Power_Cable", 7);
+		RequiredItem("Craft_PlasticTube", 5);
+		RequiredItem("Craft_RazorBlade", 4);
+		RequiredItem("ZZZZ3_Component_NutsBolts", 2);
+        Color(Color_Blue);
+        CraftedItem("Firearm_Shotgun_Ox", 1, 1);
+        CraftplanType("Developer");
+        UniqueSaveID(9930);
+        HudIcon("blueprint_b");
+        GameVersion(38);
+        OwnedAtStart();
+        InheritBaseStats();
+    }
+}

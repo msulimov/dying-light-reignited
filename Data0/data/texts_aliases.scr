@@ -1,0 +1,537 @@
+!String(s, s)
+!PlatformSpecific(s)
+
+// Here we can define an alias of any existing text.
+
+//header for dialog: String( "MShop_BuyFail_StatusLevel", "You need Survivor Rank %2s to buy %1s!", "", "")
+String( "MShop_BuyFail_StatusLevel_Title", "&MenuDlg_InfoTitle&")
+
+//String( "MPlayGame_RestartCampaignConfirmation", "You're trying to play this campaign again from the beginning, your game progress will be reset but your inventory and player development will be kept. Are you sure?", "", "")
+String( "MPlayGame_NewGamePlusPlusConfirmation", "&MPlayGame_RestartCampaignConfirmation&")
+
+//header for dialog: String( "MPlayGame_NewGamePlusConfirmation", "You're trying to play this campaign again from the beginning, your game progress will be reset but your inventory and player development will be kept. Please note enemies are going to be tougher. Are you sure?")
+String( "MPlayGame_NewGamePlusConfirmation_Title", "&MenuDlg_WarningExclamationTitle&")
+//header for dialog: String( "MPlayGame_NewGamePlusPlusConfirmation", "&MPlayGame_RestartCampaignConfirmation&") -> String( "MPlayGame_RestartCampaignConfirmation", "You're trying to play this campaign again from the beginning, your game progress will be reset but your inventory and player development will be kept. Are you sure?", "", "")
+String( "MPlayGame_NewGamePlusPlusConfirmation_Title", "&MenuDlg_WarningTitle&")
+
+String( "MPlayGame_ReturnToMainCampaignConfirmation_Title", "&MenuDlg_WarningTitle&")
+
+String( "MPlayGame_SlotLabel_NewGamePlus",      "&MPlayGameSub_BtnNewGamePlus&")
+String( "MPlayGame_PictInfo_NewGamePlus",       "&MPlayGameSub_BtnNewGamePlus&")
+
+String( "MPlayGame_SlotLabel_NewGameFromQuest", "&MPlayGameSub_BtnNewGameFromQuest&")
+String( "MPlayGame_SlotLabel_RestartFromQuest", "&MPlayGameSub_BtnRestartFromQuest&")
+
+//String( "MPlayGame_SaveInfo_Label_Difficulty", "Difficulty", "", "")
+String( "MPlayGame_SlotInfo_Label_Difficulty", "&MPlayGame_SaveInfo_Label_Difficulty&")
+
+
+//redefined empty text
+String( "MPlayGame_ContentNotInstalled_Title_$", "&MenuDlg_WarningExclamationTitle&")
+
+String( "MPlayGameSub_Dlg_DifficultyNotYetAvailable_Title", "&MenuDlg_WarningExclamationTitle&")
+String( "MPlayGameSub_Dlg_DifficultyQuestNotYetAvailable_Title", "&MenuDlg_WarningExclamationTitle&")
+
+//String( "MPlayGameSub_Tip_AvailableDifficulties", "Available difficulties", "", "")
+String( "MPlayGame_SlotInfo_Label_AvailableDifficulties" , "&MPlayGame_SlotInfo_Label_Difficulty&")
+
+//String( "MPlayGame_ContentNotInstalled_$", "Required content not yet installed.", "", "")
+String( "MapPortal_ContentNotInstalled", "&MPlayGame_ContentNotInstalled_$&")
+//String( "MapPortal_DownloadingProgress", "&InstallingWithProgressPercent&"); -> String( "InstallingWithProgressPercent", "Installing... %s%", "", "")
+String( "MapPortal_DownloadingProgress", "&InstallingWithProgressPercent&")
+//String( "MapPortal_DownloadingTime",     "&InstallingWithProgressTime&");    -> String( "InstallingWithProgressTime",    "Installing... %s",  "", "")
+String( "MapPortal_DownloadingTime",     "&InstallingWithProgressTime&")
+
+//String( "MPlayGame_ContentNotInstalled_$", "Required content not yet installed.", "", "")
+String( "MenuMain_Continue_ContentNotInstalled", "&MPlayGame_ContentNotInstalled_$&")
+
+
+//String( "ContentNotAvailable", "Content not available", "", "")
+String( "InstallContentPresenter_NotAvailable", "&ContentNotAvailable&")
+
+String("MPlayGame_ContentNotAvailable_Title", "&MenuDlg_WarningExclamationTitle&")
+
+//String("Installing",                    "Installing...")
+String( "InstallContentPresenter_Installing", "&Installing&")
+
+// mapping moved from code.
+String( "[Button_Select]", "&[A]&")
+String( "[Button_Cancel]", "&[B]&")
+
+String("Menu_Docket_N",  "&Docket_Name&")
+String("Menu_Docket_D",  "&Docket_Description&")
+String("ZZ1Patch_Menu_Docket_SD", "&Docket_Description&")
+
+String("Menu_DocketA_N",  "&DocketA_Name&")
+String("Menu_DocketA_D",  "&DocketA_Description&")
+String("ZZ3Patch_Menu_DocketA_SD", "&DocketA_Description&")
+
+String("Menu_DocketB_N",  "&DocketB_Name&")
+String("Menu_DocketB_D",  "&DocketB_Description&")
+String("ZZ3Patch_Menu_DocketB_SD", "&DocketB_Description&")
+
+String("Menu_DocketC_N",  "&DocketC_Name&")
+String("Menu_DocketC_D",  "&DocketC_Description&")
+String("ZZ3Patch_Menu_DocketC_SD", "&DocketC_Description&")
+
+String("Menu_DocketD_N",  "&DocketD_Name&")
+String("Menu_DocketD_D",  "&DocketD_Description&")
+String("ZZ3Patch_Menu_DocketD_SD", "&DocketD_Description&")
+
+String("Menu_DocketBozak_N",  "&DocketBozak_Name&")
+String("Menu_DocketBozak_D",  "&DocketBozak_Description&")
+String("ZZ3Patch_Menu_DocketBozak_SD", "&DocketBozak_Description&")
+
+String("Menu_DocketE01_N",  "&DocketBuggySkin_Name& (&CarApp_Livery_34&)")
+String("Menu_DocketE01_D",  "&DocketBuggySkin_Description&")
+String("Menu_DocketE01_SD", "&DocketBuggySkin_Description&")
+
+String("Menu_DocketE02_N",  "&DocketBuggySkin_Name& (&CarApp_Livery_50&)")
+String("Menu_DocketE02_D",  "&DocketBuggySkin_Description&")
+String("Menu_DocketE02_SD", "&DocketBuggySkin_Description&")
+                                    
+String("Menu_DocketE03_N",  "&DocketBuggySkin_Name& (&CarApp_Livery_Lemon&)")
+String("Menu_DocketE03_D",  "&DocketBuggySkin_Description&")
+String("Menu_DocketE03_SD", "&DocketBuggySkin_Description&")
+
+String("Menu_DocketE04_N",  "&DocketBuggySkin_Name& (&CarApp_Livery_43&)")
+String("Menu_DocketE04_D",  "&DocketBuggySkin_Description&")
+String("Menu_DocketE04_SD", "&DocketBuggySkin_Description&")
+
+String("Menu_DocketE05_N",  "&DocketBuggySkin_Name& (&CarApp_Livery_51&)")
+String("Menu_DocketE05_D",  "&DocketBuggySkin_Description&")
+String("Menu_DocketE05_SD", "&DocketBuggySkin_Description&")
+
+String("Menu_DocketE06_N",  "&DocketBuggySkin_Name& (&CarApp_Livery_52&)")
+String("Menu_DocketE06_D",  "&DocketBuggySkin_Description&")
+String("Menu_DocketE06_SD", "&DocketBuggySkin_Description&")
+
+String("Menu_DocketE07_N",  "&DocketBuggySkin_Name& (&CarApp_Livery_74&)")
+String("Menu_DocketE07_D",  "&DocketBuggySkin_Description&")
+String("Menu_DocketE07_SD", "&DocketBuggySkin_Description&")
+
+// String("Menu_DocketE08_N",  "&DocketBuggySkin_Name& 08")
+String("Menu_DocketE08_D",  "&DocketG_PlsOffline_Description&")
+// String("Menu_DocketE08_SD", "&Menu_DocketE08_D&")
+
+String("Menu_DocketE09_N",  "&DocketBuggySkin_Name& 09")
+String("Menu_DocketE09_D",  "&DocketG_PlsOffline_Description&")
+String("Menu_DocketE09_SD", "&Menu_DocketE09_D&")
+
+String("Menu_DocketE10_N",  "&DocketBuggySkin_Name& 10")
+String("Menu_DocketE10_D",  "&DocketG_PlsOffline_Description&")
+String("Menu_DocketE10_SD", "&Menu_DocketE10_D&")
+
+
+String("Menu_DocketF01_N",  "&DocketOutfit_Name& (&Outfit_Collectable_Outfit_02&)")
+String("Menu_DocketF01_D",  "&DocketOutfit_Description&")
+String("Menu_DocketF01_SD", "&DocketOutfit_Description&")
+
+// String("Menu_DocketF02_N",  "&DocketOutfit_Name& 02")
+String("Menu_DocketF02_D",  "&DocketG_PlsOffline_Description&")
+// String("Menu_DocketF02_SD", "&Menu_DocketF02_D&")
+
+//String("Menu_DocketF03_N",  "&DocketOutfit_Name& 03")
+//String("Menu_DocketF03_D",  "&DocketG_PlsOffline_Description&")
+String("Menu_DocketF03_SD", "&Menu_DocketF03_D&")
+
+String("Menu_DocketF04_N",  "&DocketOutfit_Name& 04")
+String("Menu_DocketF04_D",  "&DocketG_PlsOffline_Description&")
+String("Menu_DocketF04_SD", "&Menu_DocketF04_D&")
+
+String("Menu_DocketF05_N",  "&DocketOutfit_Name& - &Outfit_Collectable_Liveops_Outfit_Halloween_Rat&")
+String("Menu_DocketF05_D",  "&DocketG_PlsOffline_Description&")
+String("Menu_DocketF05_SD", "&Menu_DocketF05_D&")
+
+String("Menu_DocketF06_N",  "&DocketOutfit_Name& - &Collectable_Liveops_CollectableOutfit_Winter_Frost_N&")
+String("Menu_DocketF06_D",  "&DocketG_PlsOffline_Description&")
+String("Menu_DocketF06_SD", "&Menu_DocketF06_D&")
+
+String("Menu_DocketF07_N",  "&DocketOutfit_Name& 07")
+String("Menu_DocketF07_D",  "&DocketG_PlsOffline_Description&")
+String("Menu_DocketF07_SD", "&Menu_DocketF07_D&")
+
+String("Menu_DocketF08_N",  "&DocketOutfit_Name& 08")
+String("Menu_DocketF08_D",  "&DocketG_PlsOffline_Description&")
+String("Menu_DocketF08_SD", "&Menu_DocketF08_D&")
+
+String("Menu_DocketF09_N",  "&DocketBuggyParts_Name&")
+String("Menu_DocketF09_D",  "&DocketBuggyParts_Description&")
+String("Menu_DocketF09_SD", "&DocketBuggyParts_Description&")
+
+String("Menu_DocketF10_N",  "&Valentine_Pack_Docket&")
+String("Menu_DocketF10_D",  "&Valentine_Pack_Docket_Description&")
+String("Menu_DocketF10_SD", "&Valentine_Pack_Docket_Description&")
+
+
+String("Menu_DocketG01_N",  "&Valentine_Pack_Docket&")
+String("Menu_DocketG01_D",  "&Valentine_Pack_Docket_Description&")
+String("Menu_DocketG01_SD", "&Menu_DocketG01_D&")
+
+String("Menu_DocketG02_N",  "&DocketG_PlsOffline_Name& 02")
+String("Menu_DocketG02_D",  "&DocketG_PlsOffline_Description&")
+String("Menu_DocketG02_SD", "&Menu_DocketG02_D&")
+
+String("Menu_DocketG03_N",  "&DocketG_PlsOffline_Name& 03")
+String("Menu_DocketG03_D",  "&DocketG_PlsOffline_Description&")
+String("Menu_DocketG03_SD", "&Menu_DocketG03_D&")
+
+String("Menu_DocketG04_N",  "&DocketG_PlsOffline_Name& 04")
+String("Menu_DocketG04_D",  "&DocketG_PlsOffline_Description&")
+String("Menu_DocketG04_SD", "&Menu_DocketG04_D&")
+
+String("Menu_DocketG05_N",  "&DocketG_PlsOffline_Name& 05")
+String("Menu_DocketG05_D",  "&DocketG_PlsOffline_Description&")
+String("Menu_DocketG05_SD", "&Menu_DocketG05_D&")
+
+String("Menu_DocketG06_N",  "&DocketG_PlsOffline_Name& 06")
+String("Menu_DocketG06_D",  "&DocketG_PlsOffline_Description&")
+String("Menu_DocketG06_SD", "&Menu_DocketG06_D&")
+
+String("Menu_DocketG07_N",  "&DocketG_PlsOffline_Name& 07")
+String("Menu_DocketG07_D",  "&DocketG_PlsOffline_Description&")
+String("Menu_DocketG07_SD", "&Menu_DocketG07_D&")
+
+String("Menu_DocketG08_N",  "&DocketG_PlsOffline_Name& 08")
+String("Menu_DocketG08_D",  "&DocketG_PlsOffline_Description&")
+String("Menu_DocketG08_SD", "&Menu_DocketG08_D&")
+
+// String("Menu_DocketG09_N",  "&DocketG_PlsOffline_Name& 09")
+String("Menu_DocketG09_D",  "&DocketG_PlsOffline_Description&")
+// String("Menu_DocketG09_SD", "&Menu_DocketG09_D&")
+
+// String("Menu_DocketG10_N",  "&DocketG_PlsOffline_Name& 10")
+String("Menu_DocketG10_D",  "&DocketG_PlsOffline_Description&")
+// String("Menu_DocketG10_SD", "&Menu_DocketG10_D&")
+
+String("Menu_DocketG11_SD", "&Menu_DocketG11_D&")
+String("Menu_DocketG12_SD", "&Menu_DocketG12_D&")
+String("Menu_DocketG13_SD", "&Menu_DocketG13_D&")
+String("Menu_DocketG14_SD", "&Menu_DocketG14_D&")
+
+String("Menu_DocketG15_N",  "&DocketG_PlsOffline_Name& 15")
+String("Menu_DocketG15_D",  "&DocketG_PlsOffline_Description&")
+String("Menu_DocketG15_SD", "&Menu_DocketG15_D&")
+
+String("Menu_DocketG16_N",  "&DocketG_PlsOffline_Name& 16")
+String("Menu_DocketG16_D",  "&DocketG_PlsOffline_Description&")
+String("Menu_DocketG16_SD", "&Menu_DocketG16_D&")
+
+String("Menu_DocketG17_N",  "&DocketG_PlsOffline_Name& - &Melee_Bow_Composite_LunarN&")
+String("Menu_DocketG17_D",  "&DocketG_PlsOffline_Description&")
+String("Menu_DocketG17_SD", "&Menu_DocketG17_D&")
+
+String("Menu_DocketG18_N",  "&DocketG_PlsOffline_Name& - &Melee_ShortAxe_AddOn_LastHope_N&")
+String("Menu_DocketG18_D",  "&DocketG_PlsOffline_Description&")
+String("Menu_DocketG18_SD", "&Menu_DocketG18_D&")
+
+String("Menu_DocketG19_N",  "&DocketG_PlsOffline_Name& - &Melee_BaseballBatASpectral_N&")
+String("Menu_DocketG19_D",  "&DocketG_PlsOffline_Description&")
+String("Menu_DocketG19_SD", "&Menu_DocketG19_D&")
+
+String("Menu_DocketG20_N",  "&DocketG_PlsOffline_Name& - &Craft_Upgrade_DamL2DurL2BalL2_N&")
+String("Menu_DocketG20_D",  "&DocketG_PlsOffline_Description&")
+String("Menu_DocketG20_SD", "&Menu_DocketG20_D&")
+
+String("Menu_DocketG21_N",  "&DocketOutfit_Name& - &Outfit_Collectable_Liveops_Outfit_Halloween_Pumpkin_Mask&")
+String("Menu_DocketG21_D",  "&DocketG_PlsOffline_Description&")
+String("Menu_DocketG21_SD", "&Menu_DocketG21_D&")
+
+String("Menu_DocketG22_N",  "&DocketG_PlsOffline_Name& - &Craftplan_L4D_Golf_Club_N&")
+String("Menu_DocketG22_D",  "&DocketG_PlsOffline_Description&")
+String("Menu_DocketG22_SD", "&Menu_DocketG22_D&")
+
+String("Menu_DocketG23_N",  "&DocketG_PlsOffline_Name& - &Craftplan_L4D_Frying_Pan_N&")
+String("Menu_DocketG23_D",  "&DocketG_PlsOffline_Description&")
+String("Menu_DocketG23_SD", "&Menu_DocketG23_D&")
+
+String("Menu_DocketG24_N",  "&DocketG_PlsOffline_Name& - &Craftplan_L4D_Electric_Guitar_N&")
+String("Menu_DocketG24_D",  "&DocketG_PlsOffline_Description&")
+String("Menu_DocketG24_SD", "&Menu_DocketG24_D&")
+
+String("Menu_DocketG25_N",  "&DocketOutfit_Name& - &Outfit_Collectable_Liveops_Outfit_Chivalry&")
+String("Menu_DocketG25_D",  "&DocketG_PlsOffline_Description&")
+String("Menu_DocketG25_SD", "&Menu_DocketG25_D&")
+
+String("Menu_DocketG26_N",  "&DocketG_PlsOffline_Name& - &Craftplan_Melee_Crowbar_CandyCane_N&")
+String("Menu_DocketG26_D",  "&DocketG_PlsOffline_Description&")
+String("Menu_DocketG26_SD", "&Menu_DocketG26_D&")
+
+String("Menu_DocketG27_N",  "&DocketG_PlsOffline_Name& - &Melee_ShortSword_Dao_SHU_Gold_N&")
+String("Menu_DocketG27_D",  "&DocketG_PlsOffline_Description&")
+String("Menu_DocketG27_SD", "&Menu_DocketG27_D&")
+
+String("Menu_DocketG28_N",  "&DocketG_PlsOffline_Name& - &Craftplan_HRW_Melee_Scepter_N&")
+String("Menu_DocketG28_D",  "&DocketG_PlsOffline_Description&")
+String("Menu_DocketG28_SD", "&Menu_DocketG28_D&")
+
+String("Menu_DocketG29_N",  "&DocketG_PlsOffline_Name& - &Melee_Sword_Space_Commando_N&")
+String("Menu_DocketG29_D",  "&DocketG_PlsOffline_Description&")
+String("Menu_DocketG29_SD", "&Menu_DocketG29_D&")
+
+String("Menu_DocketG30_N",  "&DocketG_PlsOffline_Name& - &Craftplan_Throwable_ExplosiveBomb_N&")
+String("Menu_DocketG30_D",  "&DocketG_PlsOffline_Description&")
+String("Menu_DocketG30_SD", "&Menu_DocketG30_D&")
+
+String("Menu_DocketG31_N",  "&DocketOutfit_Name& - &Outfit_Collectable_Liveops_Outfit_Bestcrane&")
+String("Menu_DocketG31_D",  "&DocketG_PlsOffline_Description&")
+String("Menu_DocketG31_SD", "&Menu_DocketG31_D&")
+
+String("Menu_DocketG32_N",  "&DocketG_PlsOffline_Name& - &L4D_Gnome_N&")
+String("Menu_DocketG32_D",  "&DocketG_PlsOffline_Description&")
+String("Menu_DocketG32_SD", "&Menu_DocketG32_D&")
+
+String("Menu_DocketG33_N",  "&DocketG_PlsOffline_Name& - &Collectable_Craftplan_Crossbow_DeadEye_N&")
+String("Menu_DocketG33_D",  "&DocketG_PlsOffline_Description&")
+String("Menu_DocketG33_SD", "&Menu_DocketG33_D&")
+
+String("Menu_DocketG34_N",  "&DocketG_PlsOffline_Name& - &Collectable_Craftplan_Bow_Composite_DeadEye_N&")
+String("Menu_DocketG34_D",  "&DocketG_PlsOffline_Description&")
+String("Menu_DocketG34_SD", "&Menu_DocketG34_D&")
+
+String("Menu_DocketG35_N",  "&DocketG_PlsOffline_Name& - &ZZZZZ_Craftplan_DevCraft_ChickenStick_Anniversary5_N&")
+String("Menu_DocketG35_D",  "&DocketG_PlsOffline_Description&")
+String("Menu_DocketG35_SD", "&Menu_DocketG35_D&")
+
+String("Menu_DocketG36_N",  "&DocketG_PlsOffline_Name& - &Craftplan_Throwable_Snowball_N&")
+String("Menu_DocketG36_D",  "&DocketG_PlsOffline_Description&")
+String("Menu_DocketG36_SD", "&Menu_DocketG36_D&")
+
+String("Menu_DocketG37_N",  "&DocketG_PlsOffline_Name& - &Craftplan_AddOn_SubsonicAmmo_N&")
+String("Menu_DocketG37_D",  "&DocketG_PlsOffline_Description&")
+String("Menu_DocketG37_SD", "&Menu_DocketG37_D&")
+
+String("Menu_DocketG38_N",  "&DocketG_PlsOffline_Name& - &Craftplan_Melee_MacheteARaisElite_N&")
+String("Menu_DocketG38_D",  "&DocketG_PlsOffline_Description&")
+String("Menu_DocketG38_SD", "&Menu_DocketG38_D&")
+
+String("Menu_DocketG39_N",  "&DocketG_PlsOffline_Name& - &Craftplan_Grandmas_Eggnog_N&")
+String("Menu_DocketG39_D",  "&DocketG_PlsOffline_Description&")
+String("Menu_DocketG39_SD", "&Menu_DocketG39_D&")
+
+String("Menu_DocketG40_N",  "&DocketG_PlsOffline_Name& - &Melee_ShortAxe_AddOn_RodAxe_N&")
+String("Menu_DocketG40_D",  "&DocketG_PlsOffline_Description&")
+String("Menu_DocketG40_SD", "&Menu_DocketG40_D&")
+
+String("Menu_DocketG41_N",  "&DocketG_PlsOffline_Name& - &docket_elemental_c4&")
+String("Menu_DocketG41_D",  "&DocketG_PlsOffline_Description&")
+String("Menu_DocketG41_SD", "&Menu_DocketG41_D&")
+
+String("Menu_DocketG42_N",  "&DocketG_PlsOffline_Name& - &Melee_Mace_AddOn_Bolted_N&")
+String("Menu_DocketG42_D",  "&DocketG_PlsOffline_Description&")
+String("Menu_DocketG42_SD", "&Menu_DocketG42_D&")
+
+String("Menu_DocketG43_N",  "&DocketG_PlsOffline_Name& - &Melee_Hammer_AddOn_Brilliant_N&")
+String("Menu_DocketG43_D",  "&DocketG_PlsOffline_Description&")
+String("Menu_DocketG43_SD", "&Menu_DocketG43_D&")
+
+String("Menu_DocketG44_N",  "&DocketG_PlsOffline_Name& - &Melee_Polearm_TSreward_N&")
+String("Menu_DocketG44_D",  "&DocketG_PlsOffline_Description&")
+String("Menu_DocketG44_SD", "&Menu_DocketG44_D&")
+
+String("Menu_DocketG45_N",  "&DocketG_PlsOffline_Name& 45")
+String("Menu_DocketG45_D",  "&DocketG_PlsOffline_Description&")
+String("Menu_DocketG45_SD", "&Menu_DocketG45_D&")
+
+String("Menu_DocketG46_N",  "&DocketG_PlsOffline_Name& 46")
+String("Menu_DocketG46_D",  "&DocketG_PlsOffline_Description&")
+String("Menu_DocketG46_SD", "&Menu_DocketG46_D&")
+
+String("Menu_DocketG47_N",  "&DocketG_PlsOffline_Name& 47")
+String("Menu_DocketG47_D",  "&DocketG_PlsOffline_Description&")
+String("Menu_DocketG47_SD", "&Menu_DocketG47_D&")
+
+String("Menu_DocketG48_N",  "&DocketG_PlsOffline_Name& 48")
+String("Menu_DocketG48_D",  "&DocketG_PlsOffline_Description&")
+String("Menu_DocketG48_SD", "&Menu_DocketG48_D&")
+
+String("Menu_DocketG49_N",  "&DocketG_PlsOffline_Name& 49")
+String("Menu_DocketG49_D",  "&DocketG_PlsOffline_Description&")
+String("Menu_DocketG49_SD", "&Menu_DocketG49_D&")
+
+String("Menu_DocketG50_N",  "&DocketG_PlsOffline_Name& 50")
+String("Menu_DocketG50_D",  "&DocketG_PlsOffline_Description&")
+String("Menu_DocketG50_SD", "&Menu_DocketG50_D&")
+
+String("Menu_DocketH01_N",  "&DocketH_PlsOffline_Name& 01")
+String("Menu_DocketH01_D",  "&DocketH_PlsOffline_Description&")
+String("Menu_DocketH01_SD", "&Menu_DocketH01_D&")
+
+String("Menu_DocketH02_N",  "&DocketH_PlsOffline_Name& 02")
+String("Menu_DocketH02_D",  "&DocketH_PlsOffline_Description&")
+String("Menu_DocketH02_SD", "&Menu_DocketH02_D&")
+
+String("Menu_DocketH03_N",  "&DocketH_PlsOffline_Name& 03")
+String("Menu_DocketH03_D",  "&DocketH_PlsOffline_Description&")
+String("Menu_DocketH03_SD", "&Menu_DocketH03_D&")
+
+String("Menu_DocketH04_N",  "&DocketH_PlsOffline_Name& 04")
+String("Menu_DocketH04_D",  "&DocketH_PlsOffline_Description&")
+String("Menu_DocketH04_SD", "&Menu_DocketH04_D&")
+
+String("Menu_DocketH05_N",  "&DocketH_PlsOffline_Name& 05")
+String("Menu_DocketH05_D",  "&DocketH_PlsOffline_Description&")
+String("Menu_DocketH05_SD", "&Menu_DocketH05_D&")
+
+String("Menu_DocketH06_N",  "&DocketH_PlsOffline_Name& 06")
+String("Menu_DocketH06_D",  "&DocketH_PlsOffline_Description&")
+String("Menu_DocketH06_SD", "&Menu_DocketH06_D&")
+
+String("Menu_DocketH07_N",  "&DocketH_PlsOffline_Name& 07")
+String("Menu_DocketH07_D",  "&DocketH_PlsOffline_Description&")
+String("Menu_DocketH07_SD", "&Menu_DocketH07_D&")
+
+String("Menu_DocketH08_N",  "&DocketH_PlsOffline_Name& 08")
+String("Menu_DocketH08_D",  "&DocketH_PlsOffline_Description&")
+String("Menu_DocketH08_SD", "&Menu_DocketH08_D&")
+
+String("Menu_DocketH09_N",  "&DocketH_PlsOffline_Name& 09")
+String("Menu_DocketH09_D",  "&DocketH_PlsOffline_Description&")
+String("Menu_DocketH09_SD", "&Menu_DocketH09_D&")
+
+String("Menu_DocketH10_N",  "&DocketH_PlsOffline_Name& 10")
+String("Menu_DocketH10_D",  "&DocketH_PlsOffline_Description&")
+String("Menu_DocketH10_SD", "&Menu_DocketH10_D&")
+
+String("Menu_DocketConsumableDlc01_N",  "&DocketConsumableDlc_Name& 01")
+String("Menu_DocketConsumableDlc01_D",  "&DocketConsumableDlc_Description&")
+String("Menu_DocketConsumableDlc01_SD", "&DocketConsumableDlc_Description&")
+
+String("Menu_DocketConsumableDlc02_N",  "&DocketConsumableDlc_Name& 02")
+String("Menu_DocketConsumableDlc02_D",  "&DocketConsumableDlc_Description&")
+String("Menu_DocketConsumableDlc02_SD", "&DocketConsumableDlc_Description&")
+
+String("Menu_DocketConsumableDlc03_N",  "&DocketConsumableDlc_Name& 03")
+String("Menu_DocketConsumableDlc03_D",  "&DocketConsumableDlc_Description&")
+String("Menu_DocketConsumableDlc03_SD", "&DocketConsumableDlc_Description&")
+
+String("Menu_DocketConsumableDlc04_N",  "&DocketConsumableDlc_Name& 04")
+String("Menu_DocketConsumableDlc04_D",  "&DocketConsumableDlc_Description&")
+String("Menu_DocketConsumableDlc04_SD", "&DocketConsumableDlc_Description&")
+
+String("Menu_DocketConsumableDlc05_N",  "&DocketConsumableDlc_Name& 05")
+String("Menu_DocketConsumableDlc05_D",  "&DocketConsumableDlc_Description&")
+String("Menu_DocketConsumableDlc05_SD", "&DocketConsumableDlc_Description&")
+
+String("Menu_DocketConsumableDlc06_N",  "&DocketConsumableDlc_Name& 06")
+String("Menu_DocketConsumableDlc06_D",  "&DocketConsumableDlc_Description&")
+String("Menu_DocketConsumableDlc06_SD", "&DocketConsumableDlc_Description&")
+
+String("Menu_DocketConsumableDlc07_N",  "&DocketConsumableDlc_Name& 07")
+String("Menu_DocketConsumableDlc07_D",  "&DocketConsumableDlc_Description&")
+String("Menu_DocketConsumableDlc07_SD", "&DocketConsumableDlc_Description&")
+
+String("Menu_DocketConsumableDlc08_N",  "&DocketConsumableDlc_Name& 08")
+String("Menu_DocketConsumableDlc08_D",  "&DocketConsumableDlc_Description&")
+String("Menu_DocketConsumableDlc08_SD", "&DocketConsumableDlc_Description&")
+
+String("Menu_DocketConsumableDlc09_N",  "&DocketConsumableDlc_Name& 09")
+String("Menu_DocketConsumableDlc09_D",  "&DocketConsumableDlc_Description&")
+String("Menu_DocketConsumableDlc09_SD", "&DocketConsumableDlc_Description&")
+
+String("Menu_DocketConsumableDlc10_N",  "&DocketConsumableDlc_Name& 10")
+String("Menu_DocketConsumableDlc10_D",  "&DocketConsumableDlc_Description&")
+String("Menu_DocketConsumableDlc10_SD", "&DocketConsumableDlc_Description&")
+
+
+String("Menu_CampanionAppVoucher_N", "&CAItem_Name&")
+String("Menu_CampanionAppVoucher_D",  "&CAItem_Description&")
+String("ZZ1Patch_M_CampanionAppVoucher_SD", "&CAItem_Description&")
+
+String("MenuQuartermaster_CampanionAppVoucher_N", "&CAItem_Name&")
+String("MenuQuartermaster_CampanionAppVoucher_D",  "&CAItem_Description_Quartermaster&")
+String("ZZ1Patch_MQ_CampanionAppVoucher_SD", "&CAItem_Description_Quartermaster&")
+
+//String("MRewardGiver_InventoryFull_Header", "Inventory full")
+String("MQuartermaster_RedeemDocketFullInventory_DlgTitle", "&MRewardGiver_InventoryFull_Header&")
+
+
+//String( "MRewardGiverRepairman_Info", "Select either rewards or items to refurbish", "", "")
+String( "MRewardGiverRepairman_RewardGiverInfo", "&MRewardGiverRepairman_Info&")
+String( "MRewardGiverRepairman_RepairmanInfo",   "&MRewardGiverRepairman_Info&")
+
+String( "ZombieInvasionFrequency_Desc",   "&MOptionsOnline_ZombieInvasionFrequency_Hint&")
+String( "HumanCoopsAllowed_Desc",   "&MOptionsOnline_AllowCoops_Hint&")
+
+//%1s item name
+//%2s item multiplier
+String( "MQuartermaster_CAItem_ResultsDetails_NameWithCount", "%1s (x%2s)")
+
+//String( "MShop_OfferedItemCategory_Vouchers", "Vouchers", "", "")
+//String( "MShop_OfferedItemCategory_Specials", "Specials", "", "")
+String( "MShop_OfferedItemCategory_Vouchers", "&MShop_OfferedItemCategory_Specials&")
+
+//String( "Dashboard_Message_TryAgain", "Try again", "", "")
+String( "TUTORIAL_NM_FAIL", "&Dashboard_Message_TryAgain&")
+
+PlatformSpecific("ps4")
+{
+    // pc
+    //String( "NetError_ConnToXboxLiveHasBeenLost_$", "The connection to Internet Lobby has been lost!", "", "")
+    // xbo
+    //String( "NetError_ConnToXboxLiveHasBeenLost_$", "The connection to Xbox Live has been lost!", "", "")
+    // missing on ps4!
+
+    //String( "NetError_ConnToPSNLiveHasBeenLost_$", "The connection to PSN? has been lost!", "", "")
+    String("NetError_ConnToXboxLiveHasBeenLost_$", "&NetError_ConnToPSNLiveHasBeenLost_$&")
+}
+
+String( "PleaseWait_ProcessingSaves", "&PleaseWait_CachingSaves_$&")
+
+String( "ZZZZ3_misc_premium_cosmetics_N", "&ZZZZ3_misc_premium_cosmetic_N&")
+String( "ZZZZ3_misc_premium_cosmetics_D", "&ZZZZ3_misc_premium_cosmetic_D&")
+String( "Craftplan_Gaas_Halloween_Sickle_N", "&Gaas_Melee_Halloween_Sickle_N&")
+String( "Craftplan_Gaas_Halloween_Shotgun_N", "&Gaas_Firearm_Halloween_Shotgun_N&")
+
+String( "CarApp_Livery_Gaas_Drop_1", "&Collectable_Gaas_Collectable_Livery_1&")
+
+String("Base_Wpn_Firearm_PistolAGen", "&Firearm_PistolAGen_N&")
+String("Base_Wpn_Firearm_PistolBGen", "&Firearm_PistolBGen_N&")
+String("Base_Wpn_Melee_KnifeD", "&Melee_KnifeDGen_N&")
+String("Base_Wpn_Firearm_RevolverRanger", "&ZZZZZ_Firearm_RevolverRanger_D&")
+String("Base_Wpn_Firearm_ShotgunA", "&Firearm_ShotgunAGen_N&")
+
+String("Ammo_Pistol_Subsonic_Small_n", "Bullet_Pistol_Subsonic_N")
+String("Ammo_Pistol_Subsonic_Big_n", "&Bullet_Pistol_Subsonic_N&")
+
+String("Base_Wpn_ZZZZ3_Crossbow", "&wep_crossbow_n&")
+String("Base_Wpn_ZZZZ_Bow_Composite", "&Melee_Bow_Composite_N&")
+String("Base_Wpn_ZZZZ_Bow_Composite_icon", "weapon_bow_recurve_big")
+
+
+String( "Craftplan_Firearm_ShotgunAGen_AddOn_PostApo_N", "&Firearm_ShotgunAGen_AddOn_PostApo_N&")
+String( "Craftplan_Melee_Machete_AddOn_PostApo_N", "&Melee_Machete_AddOn_PostApo_N&")
+String( "Craftplan_ZZZZ3_Crossbow_PostApo_N", "&ZZZZ3_Crossbow_PostApo_N&")
+
+String( "Craftplan_AddOn_SubsonicAmmo_N", "&Bullet_Pistol_Subsonic_N&")
+
+//LIVEOPS
+//HEADS
+String("Outfit_AddOn_Dallan1", "&Outfit_Training&")
+String("Outfit_AddOn_Dallan2", "&Outfit_UrbanExplorerDLC&")
+String("Outfit_AddOn_Dallan3", "&Outfit_SpecialAgentDLC&")
+String("Outfit_AddOn_Jurn1", "&Outfit_Training&")
+String("Outfit_AddOn_Jurn2", "&Outfit_UrbanExplorerDLC&")
+String("Outfit_AddOn_Jurn3", "&Outfit_SpecialAgentDLC&")
+String("Outfit_AddOn_Khaleel1", "&Outfit_Training&")
+String("Outfit_AddOn_Khaleel2", "&Outfit_UrbanExplorerDLC&")
+String("Outfit_AddOn_Khaleel3", "&Outfit_SpecialAgentDLC&")
+String("HeadNext", "&MenuNext&")
+String("HeadPrev", "&MenuPrev&")
+String("MInGame_RestartPrison", "&MInGame_RestartChallenge&")
+String("RD_Prison_OBJ_Team_Up","&Bounty_Obj_Goto&")
+
+String("SSA_18030501_DialogNameAccomplished","&SSA_16021001_DialogNameAccomplished&")
+String("SSA_18030501_DialogDescriptionAccomplished","&SSA_16021001_DialogDescriptionAccomplished&")
+String("SSA_18030501_DialogNameFailed","&SSA_16021001_DialogNameFailed&")
+String("SSA_18030501_DialogDescriptionFailed","&SSA_16021001_DialogDescriptionFailed&")
+String("SSA_18030501_DialogNameFailedLocal","&SSA_16021001_DialogNameFailedLocal&")
+String("SSA_18030501_DialogDescriptionFailedLocal","&SSA_16021001_DialogDescriptionFailedLocal&")
+
+String("Slums_PrisonUnlock_Name","&RD_Prison_Name&")
+String("prison", "&Level_Name_prison&")
+
+String( "Menu_DocketF02_N", "&Outfit_Collectable_Gaas_Outfit_2&")
+String( "Menu_DocketF02_SD", "&DocketG_PlsOffline_Description&")
+
+String( "Collectable_Liveops_CollectableOutfit_Halloween_Rat_N", "&Outfit_Collectable_Liveops_Outfit_Halloween_Rat&")

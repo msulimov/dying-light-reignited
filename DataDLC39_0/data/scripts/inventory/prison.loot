@@ -1,0 +1,653 @@
+//This script is generated from Inventory.xlsm. Don't modify it!!!
+
+import "color_sets.loot"
+import "color_sets_special.loot"
+import "item_sets.loot"
+import "item_sets_Gaas.loot"
+import "containers_object_type.def"
+
+export int LootType_None            = 0;
+export int LootType_Knuckles        = 1;
+export int LootType_Blunt           = 2;
+export int LootType_Sharp           = 3;
+export int LootType_Firearm_Short   = 4;
+export int LootType_Firearm_Long    = 5;
+export int LootType_Firearm_Auto    = 6;
+export int LootType_Throwable       = 7;
+export int LootType_Powerup         = 8;
+
+//----- CONTAINERS -----
+sub Loot()
+{
+
+    LootedObject("Prison_Chest_Mod_0")
+    {
+        // ColorSet(ColorSet_cs_crafting);
+        ColorSet(ColorSet_OrangeOnly);
+        
+        use Empty(weight = 0.0);
+        use Prison_Mods(weight = 1.0);
+    }
+
+    LootedObject("Prison_Chest_Mod_1")
+    {
+        ColorSet(ColorSet_VioletOnly);
+        
+        use Empty(weight = 0.0);
+        use Prison_Mods(weight = 1.0);
+    }
+
+    LootedObject("Prison_Chest_Mod_2")
+    {
+        ColorSet(ColorSet_BlueOnly);        
+        
+        use Empty(weight = 0.0);
+        use Prison_Mods(weight = 1.0);
+    }
+
+    LootedObject("Prison_Chest_Mod_3")
+    {
+        ColorSet(ColorSet_GreenOnly);        
+        
+        use Empty(weight = 0.0);
+        use Prison_Mods(weight = 1.0);
+    }
+
+    LootedObject("Prison_Chest_Mod_4")
+    {
+        ColorSet(ColorSet_WhiteOnly);        
+        
+        use Empty(weight = 0.0);
+        use Prison_Mods(weight = 1.0);
+    }
+
+    LootedObject("Prison_Chest_Mod_5")
+    {
+        ColorSet(ColorSet_WhiteOnly);        
+        
+        use Empty(weight = 1.0);
+        use Prison_Mods(weight = 0.0);
+    }
+
+    LootedObject("Prison_Chest_Weapon_0")
+    {
+        IgnorePlatinumRestrictions(); 
+        ColorSet(ColorSet_PlatinumOnly);
+        
+        
+        Set(Weapon, 1.0, 1.0)
+        {
+            AvoidGeneratingDuplicates();
+
+            ImportFromShop("Melee_Level_5", 1, 2);
+            ImportFromShop("Melee_Level_6", 2, 3);
+            ImportFromShop("Melee_Level_7", 3, 4);
+            ImportFromShop("Melee_Level_8", 4, 5);
+            ImportFromShop("Melee_Level_9", 5, 6);
+            ImportFromShop("Melee_Level_10", 6, 7);
+            ImportFromShop("Melee_Level_11", 7, 8);
+            ImportFromShop("Melee_Level_12", 8, 9);
+            ImportFromShop("Melee_Level_13", 9, 10);
+            ImportFromShop("Melee_Level_14", 10, 11);
+            ImportFromShop("Melee_Level_15", 11, 12);
+            ImportFromShop("Melee_Level_16", 12, 13);
+            ImportFromShop("Melee_Level_17", 13, 14);
+            ImportFromShop("Melee_Level_18", 14, 15);
+            ImportFromShop("Melee_Level_19", 15, 16);
+            ImportFromShop("Melee_Level_20", 16, 17);
+            ImportFromShop("Melee_Level_21", 17, 18);
+            ImportFromShop("Melee_Level_22", 18, 19);
+            ImportFromShop("Melee_Level_23", 19, 20);
+            ImportFromShop("Melee_Level_24", 20, 21);
+            ImportFromShop("Melee_Level_25", 21, 50);
+            ImportFromShop("Melee_Level_25_Platinum_Chest", 21, 50);
+            ImportFromShop("Melee_Level_25_Platinum", 21, 50);
+        }
+
+        Set(Weapon, 0.1, 1.0)
+        {
+            AvoidGeneratingDuplicates();         
+            ImportFromShop("Melee_2H_Level_5", 1, 2);
+            ImportFromShop("Melee_2H_Level_6", 2, 3);
+            ImportFromShop("Melee_2H_Level_7", 3, 4);
+            ImportFromShop("Melee_2H_Level_8", 4, 5);
+            ImportFromShop("Melee_2H_Level_9", 5, 6);
+            ImportFromShop("Melee_2H_Level_10", 6, 7);
+            ImportFromShop("Melee_2H_Level_11", 7, 8);
+            ImportFromShop("Melee_2H_Level_12", 8, 9);
+            ImportFromShop("Melee_2H_Level_13", 9, 10);
+            ImportFromShop("Melee_2H_Level_14", 10, 11);
+            ImportFromShop("Melee_2H_Level_15", 11, 12);
+            ImportFromShop("Melee_2H_Level_16", 12, 13);
+            ImportFromShop("Melee_2H_Level_17", 13, 14);
+            ImportFromShop("Melee_2H_Level_18", 14, 15);
+            ImportFromShop("Melee_2H_Level_19", 15, 16);
+            ImportFromShop("Melee_2H_Level_20", 16, 17);
+            ImportFromShop("Melee_2H_Level_21", 17, 18);
+            ImportFromShop("Melee_2H_Level_22", 18, 50);
+            ImportFromShop("Melee_2H_Level_23", 19, 50);
+            ImportFromShop("Melee_2H_Level_24", 20, 50);
+            ImportFromShop("Melee_2H_Level_25", 21, 50);
+        }
+    }
+
+    LootedObject("Prison_Chest_Weapon_1")
+    {
+        IgnorePlatinumRestrictions(); 
+        ColorSet(ColorSet_OrangeOnly);
+        
+        Set(Weapon, 1.0, 1.0)
+        {
+            AvoidGeneratingDuplicates();
+
+            ImportFromShop("Melee_Level_5", 1, 2);
+            ImportFromShop("Melee_Level_6", 2, 3);
+            ImportFromShop("Melee_Level_7", 3, 4);
+            ImportFromShop("Melee_Level_8", 4, 5);
+            ImportFromShop("Melee_Level_9", 5, 6);
+            ImportFromShop("Melee_Level_10", 6, 7);
+            ImportFromShop("Melee_Level_11", 7, 8);
+            ImportFromShop("Melee_Level_12", 8, 9);
+            ImportFromShop("Melee_Level_13", 9, 10);
+            ImportFromShop("Melee_Level_14", 10, 11);
+            ImportFromShop("Melee_Level_15", 11, 12);
+            ImportFromShop("Melee_Level_16", 12, 13);
+            ImportFromShop("Melee_Level_17", 13, 14);
+            ImportFromShop("Melee_Level_18", 14, 15);
+            ImportFromShop("Melee_Level_19", 15, 16);
+            ImportFromShop("Melee_Level_20", 16, 17);
+            ImportFromShop("Melee_Level_21", 17, 18);
+            ImportFromShop("Melee_Level_22", 18, 19);
+            ImportFromShop("Melee_Level_23", 19, 20);
+            ImportFromShop("Melee_Level_24", 20, 21);
+            ImportFromShop("Melee_Level_25", 21, 50);
+        }
+
+        Set(Weapon, 0.1, 1.0)
+        {
+            AvoidGeneratingDuplicates();         
+            ImportFromShop("Melee_2H_Level_5", 1, 2);
+            ImportFromShop("Melee_2H_Level_6", 2, 3);
+            ImportFromShop("Melee_2H_Level_7", 3, 4);
+            ImportFromShop("Melee_2H_Level_8", 4, 5);
+            ImportFromShop("Melee_2H_Level_9", 5, 6);
+            ImportFromShop("Melee_2H_Level_10", 6, 7);
+            ImportFromShop("Melee_2H_Level_11", 7, 8);
+            ImportFromShop("Melee_2H_Level_12", 8, 9);
+            ImportFromShop("Melee_2H_Level_13", 9, 10);
+            ImportFromShop("Melee_2H_Level_14", 10, 11);
+            ImportFromShop("Melee_2H_Level_15", 11, 12);
+            ImportFromShop("Melee_2H_Level_16", 12, 13);
+            ImportFromShop("Melee_2H_Level_17", 13, 14);
+            ImportFromShop("Melee_2H_Level_18", 14, 15);
+            ImportFromShop("Melee_2H_Level_19", 15, 16);
+            ImportFromShop("Melee_2H_Level_20", 16, 17);
+            ImportFromShop("Melee_2H_Level_21", 17, 18);
+            ImportFromShop("Melee_2H_Level_22", 18, 50);
+            ImportFromShop("Melee_2H_Level_23", 19, 50);
+            ImportFromShop("Melee_2H_Level_24", 20, 50);
+            ImportFromShop("Melee_2H_Level_25", 21, 50);
+        }
+    }
+
+    LootedObject("Prison_Chest_Weapon_2")
+    {
+        IgnorePlatinumRestrictions(); 
+        ColorSet(ColorSet_VioletOnly);
+        
+        Set(Weapon, 1.0, 1.0)
+        {
+            AvoidGeneratingDuplicates();
+
+            ImportFromShop("Melee_Level_5", 1, 2);
+            ImportFromShop("Melee_Level_6", 2, 3);
+            ImportFromShop("Melee_Level_7", 3, 4);
+            ImportFromShop("Melee_Level_8", 4, 5);
+            ImportFromShop("Melee_Level_9", 5, 6);
+            ImportFromShop("Melee_Level_10", 6, 7);
+            ImportFromShop("Melee_Level_11", 7, 8);
+            ImportFromShop("Melee_Level_12", 8, 9);
+            ImportFromShop("Melee_Level_13", 9, 10);
+            ImportFromShop("Melee_Level_14", 10, 11);
+            ImportFromShop("Melee_Level_15", 11, 12);
+            ImportFromShop("Melee_Level_16", 12, 13);
+            ImportFromShop("Melee_Level_17", 13, 14);
+            ImportFromShop("Melee_Level_18", 14, 15);
+            ImportFromShop("Melee_Level_19", 15, 16);
+            ImportFromShop("Melee_Level_20", 16, 17);
+            ImportFromShop("Melee_Level_21", 17, 18);
+            ImportFromShop("Melee_Level_22", 18, 19);
+            ImportFromShop("Melee_Level_23", 19, 20);
+            ImportFromShop("Melee_Level_24", 20, 21);
+            ImportFromShop("Melee_Level_25", 21, 50);           
+        }
+
+        Set(Weapon, 0.1, 1.0)
+        {
+            AvoidGeneratingDuplicates();         
+            ImportFromShop("Melee_2H_Level_5", 1, 2);
+            ImportFromShop("Melee_2H_Level_6", 2, 3);
+            ImportFromShop("Melee_2H_Level_7", 3, 4);
+            ImportFromShop("Melee_2H_Level_8", 4, 5);
+            ImportFromShop("Melee_2H_Level_9", 5, 6);
+            ImportFromShop("Melee_2H_Level_10", 6, 7);
+            ImportFromShop("Melee_2H_Level_11", 7, 8);
+            ImportFromShop("Melee_2H_Level_12", 8, 9);
+            ImportFromShop("Melee_2H_Level_13", 9, 10);
+            ImportFromShop("Melee_2H_Level_14", 10, 11);
+            ImportFromShop("Melee_2H_Level_15", 11, 12);
+            ImportFromShop("Melee_2H_Level_16", 12, 13);
+            ImportFromShop("Melee_2H_Level_17", 13, 14);
+            ImportFromShop("Melee_2H_Level_18", 14, 15);
+            ImportFromShop("Melee_2H_Level_19", 15, 16);
+            ImportFromShop("Melee_2H_Level_20", 16, 17);
+            ImportFromShop("Melee_2H_Level_21", 17, 18);
+            ImportFromShop("Melee_2H_Level_22", 18, 50);
+            ImportFromShop("Melee_2H_Level_23", 19, 50);
+            ImportFromShop("Melee_2H_Level_24", 20, 50);
+            ImportFromShop("Melee_2H_Level_25", 21, 50);
+        }
+    }
+
+    LootedObject("Prison_Chest_Weapon_3")
+    {
+        IgnorePlatinumRestrictions(); 
+        ColorSet(ColorSet_BlueOnly);
+        
+        
+        Set(Weapon, 1.0, 1.0)
+        {
+            AvoidGeneratingDuplicates();
+
+			ImportFromShop("Melee_Level_5", 1, 2);
+            ImportFromShop("Melee_Level_6", 2, 3);
+            ImportFromShop("Melee_Level_7", 3, 4);
+            ImportFromShop("Melee_Level_8", 4, 5);
+            ImportFromShop("Melee_Level_9", 5, 6);
+            ImportFromShop("Melee_Level_10", 6, 7);
+            ImportFromShop("Melee_Level_11", 7, 8);
+            ImportFromShop("Melee_Level_12", 8, 9);
+            ImportFromShop("Melee_Level_13", 9, 10);
+            ImportFromShop("Melee_Level_14", 10, 11);
+            ImportFromShop("Melee_Level_15", 11, 12);
+            ImportFromShop("Melee_Level_16", 12, 13);
+            ImportFromShop("Melee_Level_17", 13, 14);
+            ImportFromShop("Melee_Level_18", 14, 15);
+            ImportFromShop("Melee_Level_19", 15, 16);
+            ImportFromShop("Melee_Level_20", 16, 17);
+            ImportFromShop("Melee_Level_21", 17, 18);
+            ImportFromShop("Melee_Level_22", 18, 19);
+            ImportFromShop("Melee_Level_23", 19, 20);
+            ImportFromShop("Melee_Level_24", 20, 21);
+            ImportFromShop("Melee_Level_25", 21, 50);          
+        }
+
+        Set(Weapon, 0.1, 1.0)
+        {
+            AvoidGeneratingDuplicates();         
+            ImportFromShop("Melee_2H_Level_5", 1, 2);
+            ImportFromShop("Melee_2H_Level_6", 2, 3);
+            ImportFromShop("Melee_2H_Level_7", 3, 4);
+            ImportFromShop("Melee_2H_Level_8", 4, 5);
+            ImportFromShop("Melee_2H_Level_9", 5, 6);
+            ImportFromShop("Melee_2H_Level_10", 6, 7);
+            ImportFromShop("Melee_2H_Level_11", 7, 8);
+            ImportFromShop("Melee_2H_Level_12", 8, 9);
+            ImportFromShop("Melee_2H_Level_13", 9, 10);
+            ImportFromShop("Melee_2H_Level_14", 10, 11);
+            ImportFromShop("Melee_2H_Level_15", 11, 12);
+            ImportFromShop("Melee_2H_Level_16", 12, 13);
+            ImportFromShop("Melee_2H_Level_17", 13, 14);
+            ImportFromShop("Melee_2H_Level_18", 14, 15);
+            ImportFromShop("Melee_2H_Level_19", 15, 16);
+            ImportFromShop("Melee_2H_Level_20", 16, 17);
+            ImportFromShop("Melee_2H_Level_21", 17, 18);
+            ImportFromShop("Melee_2H_Level_22", 18, 50);
+            ImportFromShop("Melee_2H_Level_23", 19, 50);
+            ImportFromShop("Melee_2H_Level_24", 20, 50);
+            ImportFromShop("Melee_2H_Level_25", 21, 50);
+        }
+    }
+
+    LootedObject("Prison_Chest_Weapon_4")
+    {
+        IgnorePlatinumRestrictions(); 
+        ColorSet(ColorSet_GreenOnly);
+        
+        
+        Set(Weapon, 1.0, 1.0)
+        {
+            AvoidGeneratingDuplicates();
+
+            ImportFromShop("Melee_Level_5", 1, 2);
+            ImportFromShop("Melee_Level_6", 2, 3);
+            ImportFromShop("Melee_Level_7", 3, 4);
+            ImportFromShop("Melee_Level_8", 4, 5);
+            ImportFromShop("Melee_Level_9", 5, 6);
+            ImportFromShop("Melee_Level_10", 6, 7);
+            ImportFromShop("Melee_Level_11", 7, 8);
+            ImportFromShop("Melee_Level_12", 8, 9);
+            ImportFromShop("Melee_Level_13", 9, 10);
+            ImportFromShop("Melee_Level_14", 10, 11);
+            ImportFromShop("Melee_Level_15", 11, 12);
+            ImportFromShop("Melee_Level_16", 12, 13);
+            ImportFromShop("Melee_Level_17", 13, 14);
+            ImportFromShop("Melee_Level_18", 14, 15);
+            ImportFromShop("Melee_Level_19", 15, 16);
+            ImportFromShop("Melee_Level_20", 16, 17);
+            ImportFromShop("Melee_Level_21", 17, 18);
+            ImportFromShop("Melee_Level_22", 18, 19);
+            ImportFromShop("Melee_Level_23", 19, 20);
+            ImportFromShop("Melee_Level_24", 20, 21);
+            ImportFromShop("Melee_Level_25", 21, 50);                    
+        }
+
+        Set(Weapon, 0.1, 1.0)
+        {
+            AvoidGeneratingDuplicates();         
+            ImportFromShop("Melee_2H_Level_5", 1, 2);
+            ImportFromShop("Melee_2H_Level_6", 2, 3);
+            ImportFromShop("Melee_2H_Level_7", 3, 4);
+            ImportFromShop("Melee_2H_Level_8", 4, 5);
+            ImportFromShop("Melee_2H_Level_9", 5, 6);
+            ImportFromShop("Melee_2H_Level_10", 6, 7);
+            ImportFromShop("Melee_2H_Level_11", 7, 8);
+            ImportFromShop("Melee_2H_Level_12", 8, 9);
+            ImportFromShop("Melee_2H_Level_13", 9, 10);
+            ImportFromShop("Melee_2H_Level_14", 10, 11);
+            ImportFromShop("Melee_2H_Level_15", 11, 12);
+            ImportFromShop("Melee_2H_Level_16", 12, 13);
+            ImportFromShop("Melee_2H_Level_17", 13, 14);
+            ImportFromShop("Melee_2H_Level_18", 14, 15);
+            ImportFromShop("Melee_2H_Level_19", 15, 16);
+            ImportFromShop("Melee_2H_Level_20", 16, 17);
+            ImportFromShop("Melee_2H_Level_21", 17, 18);
+            ImportFromShop("Melee_2H_Level_22", 18, 50);
+            ImportFromShop("Melee_2H_Level_23", 19, 50);
+            ImportFromShop("Melee_2H_Level_24", 20, 50);
+            ImportFromShop("Melee_2H_Level_25", 21, 50);
+        }
+    }
+
+    LootedObject("Prison_Chest_Weapon_5")
+    {
+        IgnorePlatinumRestrictions(); 
+        ColorSet(ColorSet_WhiteOnly);
+        
+        
+        Set(Weapon, 1.0, 1.0)
+        {
+            AvoidGeneratingDuplicates();
+
+            ImportFromShop("Melee_Level_5", 1, 2);
+            ImportFromShop("Melee_Level_6", 2, 3);
+            ImportFromShop("Melee_Level_7", 3, 4);
+            ImportFromShop("Melee_Level_8", 4, 5);
+            ImportFromShop("Melee_Level_9", 5, 6);
+            ImportFromShop("Melee_Level_10", 6, 7);
+            ImportFromShop("Melee_Level_11", 7, 8);
+            ImportFromShop("Melee_Level_12", 8, 9);
+            ImportFromShop("Melee_Level_13", 9, 10);
+            ImportFromShop("Melee_Level_14", 10, 11);
+            ImportFromShop("Melee_Level_15", 11, 12);
+            ImportFromShop("Melee_Level_16", 12, 13);
+            ImportFromShop("Melee_Level_17", 13, 14);
+            ImportFromShop("Melee_Level_18", 14, 15);
+            ImportFromShop("Melee_Level_19", 15, 16);
+            ImportFromShop("Melee_Level_20", 16, 17);
+            ImportFromShop("Melee_Level_21", 17, 18);
+            ImportFromShop("Melee_Level_22", 18, 19);
+            ImportFromShop("Melee_Level_23", 19, 20);
+            ImportFromShop("Melee_Level_24", 20, 21);
+            ImportFromShop("Melee_Level_25", 21, 50);                     
+        }
+
+        Set(Weapon, 0.1, 1.0)
+        {
+            AvoidGeneratingDuplicates();         
+            ImportFromShop("Melee_2H_Level_5", 1, 2);
+            ImportFromShop("Melee_2H_Level_6", 2, 3);
+            ImportFromShop("Melee_2H_Level_7", 3, 4);
+            ImportFromShop("Melee_2H_Level_8", 4, 5);
+            ImportFromShop("Melee_2H_Level_9", 5, 6);
+            ImportFromShop("Melee_2H_Level_10", 6, 7);
+            ImportFromShop("Melee_2H_Level_11", 7, 8);
+            ImportFromShop("Melee_2H_Level_12", 8, 9);
+            ImportFromShop("Melee_2H_Level_13", 9, 10);
+            ImportFromShop("Melee_2H_Level_14", 10, 11);
+            ImportFromShop("Melee_2H_Level_15", 11, 12);
+            ImportFromShop("Melee_2H_Level_16", 12, 13);
+            ImportFromShop("Melee_2H_Level_17", 13, 14);
+            ImportFromShop("Melee_2H_Level_18", 14, 15);
+            ImportFromShop("Melee_2H_Level_19", 15, 16);
+            ImportFromShop("Melee_2H_Level_20", 16, 17);
+            ImportFromShop("Melee_2H_Level_21", 17, 18);
+            ImportFromShop("Melee_2H_Level_22", 18, 50);
+            ImportFromShop("Melee_2H_Level_23", 19, 50);
+            ImportFromShop("Melee_2H_Level_24", 20, 50);
+            ImportFromShop("Melee_2H_Level_25", 21, 50);
+        }
+    }
+
+    LootedObject("Prison_Toolbox_A_0")
+    {
+        ColorSet(ColorSet_cs_crafting);
+         
+        use Empty(weight = 0.0);
+        use Prison_Crafting(weight = 1.0);
+    }
+
+    LootedObject("Prison_Toolbox_A_1")
+    {
+        ColorSet(ColorSet_cs_crafting);
+         
+        use Empty(weight = 0.0);
+        use Prison_Crafting(weight = 1.0);
+    }
+
+    LootedObject("Prison_Toolbox_A_2")
+    {
+        ColorSet(ColorSet_cs_crafting);
+         
+        use Empty(weight = 0.0);
+        use Prison_Crafting(weight = 1.0);
+    }
+
+    LootedObject("Prison_Toolbox_A_3")
+    {
+        ColorSet(ColorSet_cs_crafting);
+         
+        use Empty(weight = 0.0);
+        use Prison_Crafting(weight = 1.0);
+    }
+
+    LootedObject("Prison_Toolbox_A_4")
+    {
+        ColorSet(ColorSet_cs_crafting);
+         
+        use Empty(weight = 0.0);
+        use Prison_Crafting(weight = 1.0);
+    }
+
+    LootedObject("Prison_Toolbox_A_5")
+    {
+        ColorSet(ColorSet_cs_crafting);
+         
+        use Empty(weight = 0.0);
+        use Prison_Crafting(weight = 1.0);
+    }
+
+    LootedObject("Prison_Toolbox_B_0")
+    {
+        ColorSet(ColorSet_Prison_Crafting_Tier_0);
+         
+        use Empty(weight = 0.0);
+        use Prison_Crafting(weight = 1.0);
+    }
+
+    LootedObject("Prison_Toolbox_B_1")
+    {
+        ColorSet(ColorSet_Prison_Crafting_Tier_12);
+         
+        use Empty(weight = 0.0);
+        use Prison_Crafting(weight = 1.0);
+    }
+
+    LootedObject("Prison_Toolbox_B_2")
+    {
+        ColorSet(ColorSet_Prison_Crafting_Tier_34);
+         
+        use Empty(weight = 0.0);
+        use Prison_Crafting(weight = 1.0);
+    }
+
+    LootedObject("Prison_Toolbox_B_3")
+    {
+        ColorSet(ColorSet_Prison_Crafting_Tier_0);
+         
+        use Empty(weight = 0.0);
+        use Prison_Crafting(weight = 0.0);
+    }
+
+    LootedObject("Prison_Toolbox_B_4")
+    {
+        ColorSet(ColorSet_Prison_Crafting_Tier_0);
+         
+        use Empty(weight = 0.0);
+        use Prison_Crafting(weight = 0.0);
+    }
+
+    LootedObject("Prison_Toolbox_B_5")
+    {
+        ColorSet(ColorSet_Prison_Crafting_Tier_0);
+         
+        use Empty(weight = 1.0);
+        use Prison_Crafting(weight = 0.0);
+    }
+
+    LootedObject("Prison_Medbox")           //No tiers by design. I want the medkit to be available all the time. Causes assertion but ignore it.
+    {
+        ColorSet(ColorSet_WhiteOnly);
+        use Empty(weight = 0.0);
+        use Prison_Healing(weight = 1.0);
+    }
+
+    LootedObject("Prison_Powerups_0")
+    {
+        ColorSet(ColorSet_Prison_Powerups_Tier_0);
+        use Empty(weight = 0.0);
+        use Prison_Powerups(weight = 1.0);
+    }
+
+    LootedObject("Prison_Powerups_1")
+    {
+        ColorSet(ColorSet_Prison_Powerups_Tier_12);
+        use Empty(weight = 0.0);
+        use Prison_Powerups(weight = 1.0);
+    }
+
+    LootedObject("Prison_Powerups_2")
+    {
+        ColorSet(ColorSet_Prison_Powerups_Tier_12);
+        use Empty(weight = 0.0);
+        use Prison_Powerups(weight = 1.0);
+    }
+
+    LootedObject("Prison_Powerups_3")
+    {
+        ColorSet(ColorSet_Prison_Powerups_Tier_34);
+        use Empty(weight = 0.0);
+        use Prison_Powerups(weight = 1.0);
+    }
+
+    LootedObject("Prison_Powerups_4")
+    {
+        ColorSet(ColorSet_Prison_Powerups_Tier_34);
+        use Empty(weight = 0.0);
+        use Prison_Powerups(weight = 1.0);
+    }
+
+    LootedObject("Prison_Powerups_5")
+    {
+        ColorSet(ColorSet_OrangeOnly);
+        use Empty(weight = 1.0);
+        use Prison_Powerups(weight = 0.0);
+    }
+
+    LootedObject("Prison_Steel_Locker_0")
+    {
+        ColorSet(ColorSet_Prison_Crafting_Tier_0);
+        use Empty(weight = 0.0);
+        use Prison_Crafting(weight = 1.0);
+        use Items_Ammo_Subsonic(weight = 0.25);
+    }
+
+    LootedObject("Prison_Steel_Locker_1")
+    {
+        ColorSet(ColorSet_Prison_Crafting_Tier_12);
+        use Empty(weight = 1.0);
+        use Prison_Crafting(weight = 1.0);
+        use Items_Ammo_Subsonic(weight = 0.1);
+    }
+
+    LootedObject("Prison_Steel_Locker_2")
+    {
+        ColorSet(ColorSet_Prison_Crafting_Tier_12);
+        use Empty(weight = 1.0);
+        use Prison_Crafting(weight = 1.0);
+        use Items_Ammo_Subsonic(weight = 0.0);
+    }
+
+    LootedObject("Prison_Steel_Locker_3")
+    {
+        ColorSet(ColorSet_Prison_Crafting_Tier_34);
+        use Empty(weight = 1.0);
+        use Prison_Crafting(weight = 1.0);
+        use Items_Ammo_Subsonic(weight = 0.0);
+    }
+
+    LootedObject("Prison_Steel_Locker_4")
+    {
+        ColorSet(ColorSet_Prison_Crafting_Tier_34);
+        use Empty(weight = 1.0);
+        use Prison_Crafting(weight = 1.0);
+        use Items_Ammo_Subsonic(weight = 0.0);
+    }
+
+    LootedObject("Prison_Steel_Locker_5")
+    {
+        ColorSet(ColorSet_Prison_Crafting_Tier_34);
+        use Empty(weight = 1.0);
+        use Prison_Crafting(weight = 1.0);
+        use Items_Ammo_Subsonic(weight = 0.00);
+    }
+
+    LootedObject("Prison_Chest_Crafting")
+    {
+        ColorSet(ColorSet_cs_crafting);
+        use Empty(weight = 0.0);
+        use Prison_Crafting(weight = 1.0);
+    }
+    
+}
+
+sub default()
+{
+    use DefineColors();
+    use DefineColorsSpecial();
+    use Loot();
+}
+
+sub default_hard() 
+{
+    use DefineColorsHard();
+    use DefineColorsSpecialHard();
+    use Loot();
+}
+
+sub default_nightmare() 
+{
+    use DefineColorsNightmare();
+    use DefineColorsSpecialNightmare();
+    use Loot();
+}

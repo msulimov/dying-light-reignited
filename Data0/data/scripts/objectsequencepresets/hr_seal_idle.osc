@@ -1,0 +1,131 @@
+ sub hr_seal_idle()
+{
+Preset("hr_seal_idle")
+
+// 0 - SES Pulse
+// 1 - SES Just Taken
+// 2 - Ambient Ritual
+// 3 - EQ
+// 4 - 
+// 5 - LO Ambient Top
+// 6 - LO Moving 1
+// 7 - LO Moving 2
+// 8 - FX Taken
+// 9 - FX Beam
+// 10 - SES Rumble
+// 11 - MO Shafts
+
+    {
+		OnLevelStart()
+	    {
+        EnableSoundEmitter(0, false);
+		EnableSoundEmitter(1, false);
+		Enable(2, false);
+		Enable(3, false);
+		
+		SetLightIntensity(5, 0.0, 0.0);
+		SetLightIntensity(6, 0.0, 0.0);
+		SetLightIntensity(7, 0.0, 0.0);
+		EnableFX(8, false);
+		EnableFX(9, true);
+		EnableSoundEmitter(10, false);
+		
+		SetScale(11, 0.0, [0.01, 0.01, 0.01]);
+   		}
+		
+		OnEnable()
+	    {
+        EnableSoundEmitter(0, true);
+		EnableSoundEmitter(1, false);
+		Enable(2, true);
+		Enable(3, false);
+		
+		SetLightIntensity(5, 0.1, 0.8);
+		SetLightIntensity(6, 0.1, 2.0);
+		SetLightIntensity(7, 0.1, 2.0);
+		EnableFX(8, false);
+		EnableFX(9, true);
+		EnableSoundEmitter(10, false);
+		
+		SetScale(11, 0.0, [1.0, 1.0, 1.0]);
+   		}
+		
+		OnDisable()
+		{
+        EnableSoundEmitter(0, false);
+		EnableSoundEmitter(1, false);
+		Enable(2, false);
+		Enable(3, false);
+		
+		SetLightIntensity(5, 0.0, 0.0);
+		SetLightIntensity(6, 0.0, 0.0);
+		SetLightIntensity(7, 0.0, 0.0);
+		EnableFX(8, false);
+		EnableFX(9, false);
+		EnableSoundEmitter(10, false);
+		
+		SetScale(11, 0.0, [0.01, 0.01, 0.01]);
+		}
+		
+		// Group, Time, Value
+		
+        TimedEvent(0.0)
+        {
+		EnableFX(9, true);
+		
+		// Top Pulse From 0.8 to 1.8
+		SetLightIntensity(5, 2.0, 1.8);
+		
+		// Move
+		MoveTo(6, 8.0, [0.0, 4.7, 0.0]);
+		SetLightIntensity(6, 0.0, 0.0);
+		MoveTo(7, 8.0, [0.0, 4.7, 0.0]);
+		SetLightIntensity(7, 0.0, 0.0);
+		}
+
+		TimedEvent(1.0)
+		{
+		// Move - Get Intensity To Max
+		SetLightIntensity(6, 1.0, 2.0);
+		SetLightIntensity(7, 1.0, 2.0);
+		}
+		
+		TimedEvent(2.0)
+		{
+		// Top Pulse From 1.8 to 0.8
+		SetLightIntensity(5, 2.0, 0.8);
+		
+		SetScale(11, 2.0, [0.8, 0.8, 0.8]);
+		}
+		
+		TimedEvent(4.0)
+		{
+		// Top Pulse From 0.8 to 1.8
+		SetLightIntensity(5, 2.0, 1.8);
+		}
+
+		TimedEvent(6.0)
+		{
+		// Top Pulse From 1.8 to 0.8
+		SetLightIntensity(5, 2.0, 0.8);
+		
+		// Move - Back To Base Intensity
+		SetLightIntensity(6, 1.0, 0.0);
+		SetLightIntensity(7, 1.0, 0.0);
+		
+		SetScale(11, 2.0, [1.0, 1.0, 1.0]);
+		}
+
+        TimedEvent(8.0)
+        {
+		// Top Pulse At Base
+		// Move - Come Back
+		MoveTo(6, 0.01, [0.0, 0.0, 0.0]);
+		MoveTo(7, 0.01, [0.0, 0.0, 0.0]);
+     	}
+
+		GoToBegin(8.01)
+		{
+		}
+    }
+}

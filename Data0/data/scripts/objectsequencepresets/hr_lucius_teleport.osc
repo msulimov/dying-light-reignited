@@ -1,0 +1,39 @@
+ sub hr_lucius_teleport()
+{
+Preset("hr_lucius_teleport")
+
+// 0 - lucius_pose.msh
+
+
+    {
+
+		OnLevelStart()
+		{
+		SetScale(0, 0.5, [0.01, 0.01, 0.01]);
+		}
+		
+		OnEnable()
+	    {
+		SetScale(0, 0.5, [0.01, 0.01, 0.01]);
+   		}
+		
+		OnDisable()
+		{
+
+		}
+		
+		// Group, Time, Value
+		
+        TimedEvent(0.0)
+        {
+		SetScale(0, 0.5, [1.0, 1.0, 1.0]);
+     	}
+	
+		TimedEvent(1.0)
+        {
+		SetScale(0, 0.3, [0.01, 0.7, 0.01]);
+     	}
+
+		
+    }
+}

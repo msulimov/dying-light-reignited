@@ -1,0 +1,15 @@
+sub main()
+{
+	RequiredGameVersion(0);
+	ProgressMode(Common);
+	ProgressCommon("main");
+    
+    ProvideData("Items");
+    ProvideData("Presets");
+    ProvideData("Texts");
+    ProvideData("Challenges");
+    ProvideData("Appearances");
+    ProvideData("MenuTextures");
+	
+	HintId("GameNotification_DLC_Prison");
+}

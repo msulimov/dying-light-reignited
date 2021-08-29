@@ -1,0 +1,74 @@
+//HARRAN TACTICAL BUNDLE
+
+import "inventorystuff.scr" 
+sub main() 
+{		
+	Item("Craftplan_Firearm_Rifle_Tactical", CategoryType_Collectable)
+    {
+        Name("&Craftplan_Firearm_Rifle_Tactical_N&");
+        Description("&Craftplan_Firearm_Rifle_Tactical_D&");
+        ItemType(ItemType_CraftPlan);
+        Price(6400);
+        Mesh("blueprint.msh");
+        Skin("default");
+        BaseItem("Firearm_Rifle", "", "");
+        RequiredItem("Craft_MetalScrap", 6);
+		RequiredItem("Craft_TinCan", 1);
+        RequiredItem("Craft_DuctTape", 3);
+        Color(Color_Blue);
+        CraftedItem("Firearm_Rifle_Tactical", 1, 1);
+        CraftplanType("WeaponDLC");
+        UniqueSaveID(9931);
+        HudIcon("blueprint_b");
+        GameVersion(39);
+        OwnedAtStart();
+        InheritBaseStats();
+    }
+	
+	Item("Craftplan_Firearm_Shotgun_Tactical", CategoryType_Collectable)
+    {
+        Name("&Craftplan_Firearm_Shotgun_Tactical_N&");
+        Description("&Craftplan_Firearm_Shotgun_Tactical_D&");
+        ItemType(ItemType_CraftPlan);
+        Price(6400);
+        Mesh("blueprint.msh");
+        Skin("default");
+        BaseItem("Firearm_ShotgunA", "", "");
+        RequiredItem("Craft_MetalScrap", 6);
+		RequiredItem("Craft_TinCan", 1);
+        RequiredItem("Craft_DuctTape", 3);
+        Color(Color_Blue);
+        CraftedItem("Firearm_Shotgun_Tactical", 1, 1);
+        CraftplanType("WeaponDLC");
+        UniqueSaveID(9932);
+        HudIcon("blueprint_b");
+        GameVersion(39);
+        OwnedAtStart();
+        InheritBaseStats();
+    }
+	
+	Item("Craftplan_Melee_BigHammer_Tactical", CategoryType_Collectable)
+    {
+        Name("&Craftplan_Melee_BigHammer_Tactical_N&");
+        Description("&Craftplan_Melee_BigHammer_Tactical_D&");
+        ItemType(ItemType_CraftPlan);
+        Price(6400);
+        Mesh("blueprint.msh");
+        Skin("default");
+        BaseItem("Melee_BigHammer", "", "");
+        BaseItem("Melee_AxeBig", "", "");
+        BaseItem("Melee_Pickaxe", "", "");
+        RequiredItem("Craft_MetalScrap", 4);
+        RequiredItem("Craft_TinCan", 2);
+		RequiredItem("Craft_Electronics", 1);
+		RequiredItem("Craft_PowerCable", 1);
+        Color(Color_Blue);
+        CraftedItem("Melee_BigHammer_Tactical", 1, 1);
+        CraftplanType("WeaponDLC");
+        UniqueSaveID(9933);
+        HudIcon("blueprint_b");
+        GameVersion(39);
+        InheritBaseStats();
+        OwnedAtStart();
+    }
+}

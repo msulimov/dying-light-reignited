@@ -1,0 +1,39 @@
+sub hr_rand_lever_deactivate()
+{
+Preset("hr_rand_lever_deactivate")
+
+// OnLevelStart - lever is disabled and
+// 0 - Light
+// 1 - FX
+// 2 - OSC_Activate              
+
+	{
+
+
+		OnEnable()	
+			{
+			// Enable(2, false);
+			}
+		OnDisable()
+			{
+
+			}
+		
+		// Group, Time, Value
+		
+        TimedEvent(0.0)
+        { 
+		SetLightIntensity(0, 2.2, 0.0);	
+     	}
+		TimedEvent(1.0)
+		{
+		EnableFX(1, false);
+		}
+		TimedEvent(2.2)
+		{
+		SetLightIntensity(0, 0.0, 0.0);	
+		}
+	}
+}
+
+

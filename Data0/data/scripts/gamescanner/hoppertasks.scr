@@ -1,0 +1,15 @@
+// Connectivity test - must match FConnectivityTest enum.
+export int NoTest                   = 0;
+export int LatencyTest              = 1;
+export int ConnectionTest           = 2;
+
+sub main()
+{
+    Params()
+    {
+        ScanInterval(5);
+        RefreshInterval(20);
+        MaxResults(10);
+        DefaultConnectivityTest(ConnectionTest);
+    }
+}

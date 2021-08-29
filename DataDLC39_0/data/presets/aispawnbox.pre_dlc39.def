@@ -1,0 +1,77 @@
+sub declare_ai_presets()
+{
+
+    Preset("Prison_Shooter_A")
+    {
+        SetField("m_AIPresets", "prison_shooter_A");
+    }
+
+    Preset("Prison_Shooter_B")
+    {
+        SetField("m_AIPresets", "prison_shooter_B");
+    }
+
+    Preset("Prison_Shooter_C")
+    {
+        SetField("m_AIPresets", "prison_shooter_C");
+    }
+
+    Preset("Prison_Shooter_D")
+    {
+        SetField("m_AIPresets", "prison_shooter_D");
+    }
+
+    Preset("Prison_Melee_A")
+    {
+        SetField("m_AIPresets", "prison_melee_A");
+    }
+
+    Preset("Prison_Melee_B")
+    {
+        SetField("m_AIPresets", "prison_melee_B");
+    }
+
+    Preset("Prison_Melee_C")
+    {
+        SetField("m_AIPresets", "prison_melee_C");
+    }
+
+    Preset("Prison_Melee_D")
+    {
+        SetField("m_AIPresets", "prison_melee_D");
+    }
+	Preset("Prison_Viral")
+    {
+        SetField("m_AIPresets", "Viral_Man;Viral_Man_Museum;Viral_RaisBandit");
+        SetField("m_BeforeSpawnSoundStartRange", "30.0");
+        SetField("m_BeforeSpawnSoundStartRangeMin", "15.0");
+        SetField("m_MinAIsToMakeSound", "4");
+        SetField("m_SpawnerBeforeSpawnSounds", "infected_spawner_exterior_00.wav;infected_spawner_exterior_01.wav;infected_spawner_exterior_02.wav;infected_spawner_exterior_03.wav;infected_spawner_exterior_04.wav");
+        SetField("m_DiffLevelTables", "Viral_Man");
+    }
+	Preset("Prison_Biter")
+    {
+        SetField("m_AIPresets", "Biter_Man;BTZ_Biter_Man;BiterStinger_Man");
+        SetField("m_DiffLevelTables", "Biter_Man;");
+        SetField("m_BeforeSpawnSoundStartRange", "40.0");
+        SetField("m_BeforeSpawnSoundStartRangeMin", "13.0");
+        SetField("m_MinAIsToMakeSound", "4");
+        SetField("m_SpawnerBeforeSpawnSounds", "");
+    }
+	Preset("Prison_Biter_Hard")
+    {
+        SetField("m_AIPresets", "BTZ_Biter_Man_Hard");
+        SetField("m_BeforeSpawnSoundStartRange", "40.0");
+        SetField("m_BeforeSpawnSoundStartRangeMin", "13.0");
+        SetField("m_MinAIsToMakeSound", "4");
+        SetField("m_SpawnerBeforeSpawnSounds", "");
+	}
+	Preset("Prison_Volatile")
+    {
+        SetField("m_AIPresets", "Volatile_Super");
+        SetField("m_BeforeSpawnSoundStartRange", "40.0");
+        SetField("m_BeforeSpawnSoundStartRangeMin", "13.0");
+        SetField("m_MinAIsToMakeSound", "4");
+        SetField("m_SpawnerBeforeSpawnSounds", "");
+	}
+}

@@ -1,0 +1,155 @@
+//SAVVY BUNDLE
+
+import "inventorystuff.scr" 
+sub main() 
+{			
+	Item("Craftplan_Melee_ShortAxe_Savvy", CategoryType_Collectable)
+    {
+        Name("&Craftplan_Melee_ShortAxe_Savvy_N&");
+        Description('&Craftplan_Melee_ShortAxe_Savvy_D&');
+        ItemType(ItemType_CraftPlan);
+        Price(6400);
+        Mesh("blueprint.msh");
+        Skin("default");
+        BaseItem("Melee_Pipe", "", "");
+        BaseItem("Melee_Crowbar", "", "");
+        BaseItem("Melee_Wrench", "", "");
+        BaseItem("Melee_Hammer", "", "");
+        BaseItem("Melee_MilitaryShovel", "", "");
+        BaseItem("Melee_ShortAxe", "", "");
+        BaseItem("Melee_Pick", "", "");
+        RequiredItem("Craft_MetalScrap", 5);
+		RequiredItem("Craft_DuctTape", 3);
+		RequiredItem("Craft_RazorBlade", 4);
+		RequiredItem("Craft_Nails", 10);
+        CraftedItem("Melee_ShortAxe_Savvy", 1, 1);
+        CraftplanType("WeaponDLC");
+		Color(Color_Blue);
+		InheritBaseStats();
+        UniqueSaveID(4001);
+		OwnedAtStart();
+        HudIcon("blueprint_a");
+		GameVersion(43);
+    }
+	
+	Item("Craftplan_Melee_BigHammer_Savvy", CategoryType_Collectable)
+    {
+        Name("&Craftplan_Melee_BigHammer_Savvy_N&");
+        Description('&Craftplan_Melee_BigHammer_Savvy_D&');
+        ItemType(ItemType_CraftPlan);
+        Price(1000);
+        Mesh("blueprint.msh");
+        Skin("default");
+        BaseItem("Melee_BigHammer", "", "");
+        BaseItem("Melee_AxeBig", "", "");
+        BaseItem("Melee_Pickaxe", "", "");
+        RequiredItem("Craft_MetalScrap", 4);
+        RequiredItem("Craft_DuctTape", 2);
+        RequiredItem("Craft_Gauze", 2);
+        Color(Color_Blue);
+        CraftedItem("Melee_BigHammer_Savvy", 1, 1);
+        CraftplanType("WeaponDLC");
+        UniqueSaveID(4002);
+        HudIcon("blueprint_b");
+        GameVersion(43);
+        InheritBaseStats();
+        OwnedAtStart();
+    }
+	
+	Item("Craftplan_Bow_Savvy", CategoryType_Collectable)
+    {
+        Name("&Craftplan_Bow_Savvy_N&");
+        Description('&Craftplan_Bow_Savvy_D&');
+        ItemType(ItemType_CraftPlan);
+        Price(6400);
+        Mesh("blueprint.msh");
+        Skin("default");
+        RequiredItem("Craft_MetalScrap", 3);
+        RequiredItem("Craft_Nails", 2);
+        RequiredItem("Craft_DuctTape", 2);
+        RequiredItem("Craft_String", 1);
+        Color(Color_Blue);
+        CraftedItem("Bow_Savvy", 1, 1);
+        CraftplanType("WeaponDLC");
+        UniqueSaveID(4003);
+        HudIcon("blueprint_b");
+        GameVersion(43);
+        OwnedAtStart();
+    }
+	
+	Item("Craftplan_Arrow_Savvy", CategoryType_Collectable)
+    {
+        Name("&Craftplan_Arrow_Savvy_N&");
+        Description('&Craftplan_Arrow_Savvy_D&');
+        ItemType(ItemType_CraftPlan);
+        Price(2000);
+        Mesh("blueprint.msh");
+        Skin("default");
+        RequiredItem("Craft_MetalScrap", 1);
+        RequiredItem("Craft_Nails", 1);
+        Color(Color_Green);
+        CraftedItem("ZZZZ_Ammo_Arrow", 5, 8);
+        CraftplanType("WeaponDLC");
+        UniqueSaveID(111);
+        HudIcon("blueprint_b");
+        OwnedAtStart();
+        GameVersion(43);
+    }
+
+    Item("Craftplan_ArrowBurn_Savvy", CategoryType_Collectable)
+    {
+        Name("&Craftplan_ArrowBurn_Savvy_N&");
+        Description('&Craftplan_ArrowBurn_Savvy_D&');
+        ItemType(ItemType_CraftPlan);
+        Price(5000);
+        Mesh("blueprint.msh");
+        Skin("default");
+        RequiredItem("Craft_MetalScrap", 1);
+        RequiredItem("Craft_Insecticide", 1);
+        Color(Color_Blue);
+        CraftedItem("ZZZZ_Ammo_Arrow_Burning", 5, 8);
+        CraftplanType("WeaponDLC");
+        UniqueSaveID(112);
+        HudIcon("blueprint_b");
+        OwnedAtStart();
+        GameVersion(43);
+    }
+
+    Item("Craftplan_ArrowElectric_Savvy", CategoryType_Collectable)
+    {
+        Name("&Craftplan_ArrowElectric_Savvy_N&");
+        Description('&Craftplan_ArrowElectric_Savvy_D&');
+        ItemType(ItemType_CraftPlan);
+        Price(5000);
+        Mesh("blueprint.msh");
+        Skin("default");
+        RequiredItem("Craft_MetalScrap", 1);
+        RequiredItem("Craft_Batteries", 1);
+        Color(Color_Blue);
+        CraftedItem("ZZZZ_Ammo_Arrow_Shock", 5, 8);
+        CraftplanType("WeaponDLC");
+        UniqueSaveID(113);
+        HudIcon("blueprint_b");
+        OwnedAtStart();
+        GameVersion(43);
+    }
+
+    Item("Craftplan_ArrowExploding_Savvy", CategoryType_Collectable)
+    {
+        Name("&Craftplan_ArrowExploding_Savvy_N&");
+        Description('&Craftplan_ArrowExploding_Savvy_D&');
+        ItemType(ItemType_CraftPlan);
+        Price(5000);
+        Mesh("blueprint.msh");
+        Skin("default");
+        RequiredItem("Craft_MetalScrap", 1);
+        RequiredItem("Craft_Bleach", 1);
+        Color(Color_Blue);
+        CraftedItem("ZZZZ_Ammo_Arrow_Explode", 5, 8);
+        CraftplanType("WeaponDLC");
+        UniqueSaveID(114);
+        HudIcon("blueprint_b");
+        OwnedAtStart();
+        GameVersion(43);
+    }
+}

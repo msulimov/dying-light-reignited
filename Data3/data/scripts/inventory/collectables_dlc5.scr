@@ -1,0 +1,27 @@
+import "inventorystuff.scr" 
+sub main() 
+{
+    Item("Craftplan_NightClub", CategoryType_Collectable)
+    {
+        Name("&Craftplan_NightClub_N&");
+        Description('&Craftplan_NightClub_D&');
+        ItemType(ItemType_CraftPlan);
+        Price(68);
+        Mesh("blueprint.msh");
+        Skin("default_hl");
+        BaseItem("Melee_Pipe", "", "");
+        RequiredItem("Craft_MetalScrap", 5);
+        RequiredItem("Craft_PlasticTube", 2);
+        RequiredItem("Craft_Batteries", 2);
+        RequiredItem("Craft_PowerCable", 2);
+        RequiredItem("Craft_Electronics", 1);
+        Elemental(Elemental_ShockElectricity, 2);
+        Elemental(Elemental_Burning, 1);
+        Color(Color_White);
+        CraftedItem("Melee_Night_Club", 1, 1);
+		CraftplanType("Developer");
+        InheritBaseStats();
+        UniqueSaveID(3002);
+        HudIcon("blueprint_a");
+    }
+}

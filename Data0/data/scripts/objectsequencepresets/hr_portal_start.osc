@@ -1,0 +1,96 @@
+ sub hr_portal_start()
+{
+Preset("hr_portal_start")
+
+// 0 - FX Symbol
+// 1 - FX Closing
+// 2 - FX Circle
+// 3 - EQ Shake
+// 4 - LO Main Glow 1.2
+// 5 - LO Symbol 1.2
+// 6 - LO Opening Flash --
+// 7 - SES Opening
+// 8 - SES Idle
+// 9 - SES Closing
+// 10 - FX Open Smoke
+// 11 - FX Circle Sparks
+// 12 - SES Rumble
+
+    {
+		OnLevelStart()
+	    {
+			EnableSoundEmitter(7, false);
+			EnableSoundEmitter(8, false);
+			EnableSoundEmitter(9, false);
+			EnableSoundEmitter(12, false);
+			Enable(3, false);
+			SetLightIntensity(4, 0.0, 0.0);
+			SetLightIntensity(5, 0.0, 0.0);
+			SetLightIntensity(6, 0.0, 0.0);
+			EnableSoundEmitter(7, false);
+			EnableSoundEmitter(8, false);
+			EnableSoundEmitter(9, false);
+			EnableFX(10, false);
+			EnableFX(11, false);
+			EnableSoundEmitter(12, false);
+		}
+		
+		OnEnable()
+	    {
+			EnableFX(1, false);
+			Enable(3, false);
+			EnableSoundEmitter(7, false);
+			EnableSoundEmitter(8, false);
+			EnableSoundEmitter(9, false);
+			EnableSoundEmitter(12, false);
+
+			EnableFX(0, true);
+			EnableFX(10, true);
+			SetLightIntensity(5, 0.2, 1.2);
+
+			EnableFX(2, true);
+			SetLightIntensity(4, 0.5, 1.2);
+
+			EnableFX(11, true);
+
+			SetLightIntensity(6, 1.0, 0.0);
+ 		}
+
+		OnDisable()
+		{
+			EnableFX(0, false);
+			EnableFX(1, false);
+			EnableFX(2, false);
+			Enable(3, false);
+			SetLightIntensity(4, 1.5, 0.0);
+			SetLightIntensity(5, 1.5, 0.0);
+			SetLightIntensity(6, 1.5, 0.0);
+			EnableSoundEmitter(7, false);
+			EnableSoundEmitter(8, false);
+			EnableSoundEmitter(9, false);
+			EnableFX(10, false);
+			EnableFX(11, false);
+			EnableSoundEmitter(12, false);
+		}
+		
+		TimedEvent(0.0)
+        {
+			Enable(3, true);
+			EnableSoundEmitter(12, true);
+		}	
+		TimedEvent(0.9)
+        {
+			EnableSoundEmitter(7, true);
+		}
+		TimedEvent(2.1)
+        {
+			EnableSoundEmitter(8, true);
+		}
+		TimedEvent(5.0)
+        {
+			EnableSoundEmitter(7, false);
+			Enable(3, false);
+			EnableSoundEmitter(12, false);
+		}
+    }
+}

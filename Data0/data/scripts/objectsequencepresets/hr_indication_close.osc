@@ -1,0 +1,42 @@
+sub hr_indication_close()
+{
+Preset("hr_indication_close")
+
+// 0 - Light Down
+// 3 - FX
+
+    {
+		OnLevelStart()
+	    {
+		SetLightIntensity(0, 0.0, 0.0);
+		EnableFX(1, false);
+		}
+		
+		OnEnable()
+	    {
+		SetLightIntensity(0, 0.0, 0.6);
+		EnableFX(1, true);	
+   	}
+		
+		OnDisable()
+		{
+		SetLightIntensity(0, 0.0, 0.0);
+		EnableFX(1, false);
+		}
+		
+		// Group, Time, Value
+		
+        TimedEvent(0.0)
+        { 
+		SetLightIntensity(0, 2.2, 0.0);	
+     	}
+		TimedEvent(1.0)
+		{
+		EnableFX(1, false);
+		}
+		TimedEvent(2.2)
+		{
+		SetLightIntensity(0, 0.0, 0.0);	
+		}
+    }
+}

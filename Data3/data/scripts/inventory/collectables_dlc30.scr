@@ -1,0 +1,125 @@
+import "inventorystuff.scr" 
+sub main() 
+{
+    Item("Craftplan_Bow_UrbanTrapper", CategoryType_Collectable)
+    {
+        Name("&Craftplan_Bow_UrbanTrapper_N&");
+        Description('&Craftplan_Bow_UrbanTrapper_D&');
+        ItemType(ItemType_CraftPlan);
+        Price(109);
+        Mesh("blueprint.msh");
+        Skin("default");
+        RequiredItem("Craft_MetalScrap", 10);
+        RequiredItem("Craft_Nails", 5);
+        RequiredItem("Craft_DuctTape", 4);
+        RequiredItem("Craft_String", 5);
+        RequiredItem("Craft_RazorBlade", 4);
+        RequiredItem("Craft_PlasticTube", 4);
+		RequiredItem("Craft_Electronics", 5);
+		RequiredItem("Craft_Batteries", 4);
+		RequiredItem("Craft_PowerCable", 2);
+        RequiredItem("ZZZZ_Bow", 1);
+        Color(Color_Blue);
+        CraftedItem("Bow_UrbanTrapper", 1, 1);
+        CraftplanType("CarUpgrade");
+        UniqueSaveID(3079);
+        HudIcon("blueprint_b");
+        GameVersion(11);
+		//OwnedAtStart();
+    }
+    
+    Item("Craftplan_Arrow_NightHunter", CategoryType_Collectable)
+    {
+        Name("&Craftplan_Arrow_NightHunter_N&");
+        Description('&Craftplan_Arrow_NightHunter_D&');
+        ItemType(ItemType_CraftPlan);
+        Price(42);
+        Mesh("blueprint.msh");
+        Skin("default");
+        RequiredItem("Craft_MetalScrap", 3);
+        RequiredItem("Craft_String", 2);
+        RequiredItem("Craft_RazorBlade", 2);
+        RequiredItem("ZZZZ3_Component_Rubber", 1);
+        RequiredItem("ZZZZ3_Component_SteelTubing", 1);
+        Color(Color_Green);
+        CraftedItem("ZZZZ_Ammo_Arrow", 3, 6);
+        CraftplanType("Weapon");
+        UniqueSaveID(106);
+        HudIcon("blueprint_b");
+        GameVersion(11);
+		//OwnedAtStart();
+    }
+
+    Item("Craftplan_ArrowBurn_NightHunter", CategoryType_Collectable)
+    {
+        Name("&Craftplan_ArrowBurn_NightHunter_N&");
+        Description('&Craftplan_ArrowBurn_NightHunter_D&');
+        ItemType(ItemType_CraftPlan);
+        Price(57);
+        Mesh("blueprint.msh");
+        Skin("default");
+        RequiredItem("Craft_MetalScrap", 3);
+        RequiredItem("Craft_String", 2);
+        RequiredItem("Craft_RazorBlade", 2);
+        RequiredItem("ZZZZ3_Component_Rubber", 1);
+        RequiredItem("ZZZZ3_Component_SteelTubing", 1);
+		RequiredItem("Craft_Alcohol", 5);
+        RequiredItem("Craft_Bleach", 1);
+        RequiredItem("ZZZZ3_Component_Lubricant", 1);
+        Color(Color_Blue);
+        CraftedItem("ZZZZ_Ammo_Arrow_Burning", 2, 3);
+        CraftplanType("Weapon");
+        UniqueSaveID(107);
+        HudIcon("blueprint_b");
+        GameVersion(11);
+		//OwnedAtStart();
+    }
+
+    Item("Craftplan_ArrowElectric_NightHunter", CategoryType_Collectable)
+    {
+        Name("&Craftplan_ArrowElectric_NightHunter_N&");
+        Description('&Craftplan_ArrowElectric_NightHunter_D&');
+        ItemType(ItemType_CraftPlan);
+        Price(57);
+        Mesh("blueprint.msh");
+        Skin("default");
+        RequiredItem("Craft_MetalScrap", 3);
+        RequiredItem("Craft_String", 2);
+        RequiredItem("Craft_RazorBlade", 2);
+        RequiredItem("Craft_PowerCable", 1);
+        RequiredItem("ZZZZ3_Component_SteelTubing", 1);
+        RequiredItem("ZZZZ3_Component_Lubricant", 1);
+        Color(Color_Blue);
+        CraftedItem("ZZZZ_Ammo_Arrow_Shock", 2, 3);
+        CraftplanType("Weapon");
+        UniqueSaveID(108);
+        HudIcon("blueprint_b");
+        GameVersion(11);
+		//OwnedAtStart();
+    }
+
+    Item("Craftplan_ArrowExploding_NightHunter", CategoryType_Collectable)
+    {
+        Name("&Craftplan_ArrowExploding_NightHunter_N&");
+        Description('&Craftplan_ArrowExploding_NightHunter_D&');
+        ItemType(ItemType_CraftPlan);
+        Price(57);
+        Mesh("blueprint.msh");
+        Skin("default");
+        RequiredItem("Craft_MetalScrap", 3);
+        RequiredItem("Craft_String", 2);
+        RequiredItem("Craft_RazorBlade", 2);
+        RequiredItem("ZZZZ3_Component_Rubber", 1);
+        RequiredItem("ZZZZ3_Component_SteelTubing", 1);
+		RequiredItem("Craft_Insecticide", 3);
+        RequiredItem("Craft_Bleach", 3);
+        RequiredItem("ZZZZ3_Component_Lubricant", 1);
+        Color(Color_Blue);
+        CraftedItem("ZZZZ_Ammo_Arrow_Explode", 2, 3);
+        CraftplanType("Weapon");
+        UniqueSaveID(109);
+        HudIcon("blueprint_b");
+        GameVersion(11);
+		//OwnedAtStart();
+    }
+}

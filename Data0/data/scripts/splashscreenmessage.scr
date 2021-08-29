@@ -1,0 +1,107 @@
+export int FTextAlign_left      = 272;
+export int FTextAlign_center    = 288;
+export int FTextAlign_right     = 320;
+
+export int FUIAnchor_left       = 1;
+export int FUIAnchor_right      = 4;       
+export int FUIAnchor_center     = 16;
+
+sub main()
+{
+	News()
+	{
+		//Enable();
+		//Enable(PC, XBOX, PS4, GOG);
+
+		ShowScrollView(true);
+		//ScrollViewSize(645, 600);
+		//ScrollViewPosition(220, 40);
+
+		ShowBackgroundImage(true);
+		//BackgroundImage("menu_main_background");
+		//BackgroundSize(1280, 720);
+		//BackgroundPosition(0, 0);
+
+		MessageListPosition(220, -295);
+
+		BackButtonText("&ScreenBuyNow_BtnBackToMenu&");
+
+		Data()
+		{
+			Header("HEADER")
+			{
+				font("boxed_m_12");
+			}
+
+			Image("splashscreen_tactical_unit");
+
+			Paragraph("TEXT")
+			{
+				bold();
+				enableColorControlSequence();
+				font("boxed_l_9");
+				textColor([1.0, 1.0, 1.0]);
+			}
+
+		}//Data
+	}//News
+	
+	News() //Empty news for gathering 
+	{	
+		BackgroundImage("menu_main_background");
+		
+		Data()
+		{
+			Image("splash_art1");
+			Image("splash_art2");
+			Image("splash_art3");
+			Image("splash_BTZ");
+			Image("splash_carnage");
+			Image("splash_DL_EE");
+			Image("splash_DL1");
+			Image("splash_DL2");
+			Image("splash_double_XP");
+			Image("splash_fixing_bugs");
+			Image("splash_hypermode");
+			Image("splash_unturned");
+			Image("splash_viral_rush");
+			Image("WhatsNew_Event3_Image1");
+			Image("dyinglight_logo_white");
+			Image("menu_FRONTEND_background_black");
+			Image("splash_5th_anniversary");
+			Image("splash_rais");
+			Image("splash_retrowave");
+			Image("splash_shu_warrior");
+			Image("splash_godfather");
+			Image("splash_hellraid"); //Patch 1.28
+			Image("splash_hellraid2"); //Patch 1.28
+			Image("splash_DL2_preorder_v2"); //Patch 1.28
+			Image("splash_volcan"); //Patch 1.30
+			Image("splashscreen_bozak_horde"); //Patch 1.31
+			Image("splashscreen_cuisine_cargo"); //Patch 1.31
+			Image("splashscreen_gamestop"); //Patch 1.31
+			Image("splashscreen_inmate"); //Patch 1.31
+			Image("splashscreen_psycho_bundle"); //Patch 1.31
+			Image("splashscreen_psycho_white_death"); //Patch 1.31
+			Image("splashscreen_ranger"); //Patch 1.31
+			Image("splashscreen_ranger33"); //Patch 1.31
+			Image("splashscreen_ulrimate_survivor"); //Patch 1.31
+			Image("splashscreen_volatile_hunter"); //Patch 1.31
+			Image("splash_1_L4D2"); //Patch 1.33
+			Image("splash_2_L4D2"); //Patch 1.33
+			Image("splashscreen_halloween"); //Patch 1.33
+			Image("splashscreen_special_agent"); //Patch 1.34
+			Image("splashscreen_viking"); //Patch 1.38
+			Image("splashscreen_ox"); //Patch 1.38
+			Image("splashscreen_tactical_unit"); //Patch 1.39
+			Image("splashscreen_rust"); //Patch 1.41
+			Image("splashscreen_rust_crossover"); //Patch 1.41
+			Image("splashscreen_savvy"); //Patch 1.43 only PC //1.44 Consoles
+			Image("splash_DL2_D2K_2a"); //Patch 1.43.2 only PC //1.44 Consoles
+			Image("splash_DL2_D2K_2b"); //Patch 1.43.2 only PC //1.44 Consoles
+			Image("splash_astronaut"); //Patch 1.44
+			Image("splash_lowgrav"); //Patch 1.44
+		}
+
+	} //Empty news for gathering 
+}

@@ -1,0 +1,115 @@
+//HELLRAID DLC WEAPONS ONLY
+
+import "inventorystuff.scr" 
+sub main() 
+{	
+	Item("Collectable_Note_Hellraid_01", CategoryType_Collectable)
+    {
+        Name("&Collectable_Note_Hellraid_01_N&");
+        Description("&Collectable_Note_Hellraid_01_D&");
+        ItemType(ItemType_NoteHellraid);
+        Mesh("secret_roll_medi_a.msh");
+        Skin("Default");
+        Color(Color_White);
+        UniqueSaveID(9901);
+    }
+	
+	Item("Collectable_Note_Hellraid_02", CategoryType_Collectable)
+    {
+        Name("&Collectable_Note_Hellraid_02_N&");
+        Description("&Collectable_Note_Hellraid_02_D&");
+        ItemType(ItemType_NoteHellraid);
+        Mesh("old_paper_a.msh");
+        Skin("Default");
+        Color(Color_White);
+        UniqueSaveID(9902);
+    }
+	
+	Item("Collectable_Note_Hellraid_03", CategoryType_Collectable)
+    {
+        Name("&Collectable_Note_Hellraid_03_N&");
+        Description("&Collectable_Note_Hellraid_03_D&");
+        ItemType(ItemType_NoteHellraid);
+        Mesh("secret_roll_medi_a.msh");
+        Skin("Default");
+        Color(Color_White);
+        UniqueSaveID(9903);
+    }
+	
+	Item("Collectable_Note_Hellraid_04", CategoryType_Collectable)
+    {
+        Name("&Collectable_Note_Hellraid_04_N&");
+        Description("&Collectable_Note_Hellraid_04_D&");
+        ItemType(ItemType_NoteHellraid);
+        Mesh("old_paper_a.msh");
+        Skin("Default");
+        Color(Color_White);
+        UniqueSaveID(9904);
+    }
+	
+	Item("Collectable_Note_Hellraid_05", CategoryType_Collectable)
+    {
+        Name("&Collectable_Note_Hellraid_05_N&");
+        Description("&Collectable_Note_Hellraid_05_D&");
+        ItemType(ItemType_NoteHellraid);
+        Mesh("secret_roll_medi_a.msh");
+        Skin("Default");
+        Color(Color_White);
+        UniqueSaveID(9905);
+    }
+
+	Item("Collectable_Note_Hellraid_06", CategoryType_Collectable)
+    {
+        Name("&Collectable_Note_Hellraid_06_N&");
+        Description("&Collectable_Note_Hellraid_06_D&");
+        ItemType(ItemType_NoteHellraid);
+        Mesh("old_paper_a.msh");
+        Skin("Default");
+        Color(Color_White);
+        UniqueSaveID(9906);
+    }
+	
+	Item("Collectable_Note_Hellraid_07", CategoryType_Collectable)
+    {
+        Name("&Collectable_Note_Hellraid_07_N&");
+        Description("&Collectable_Note_Hellraid_07_D&");
+        ItemType(ItemType_NoteHellraid);
+        Mesh("secret_roll_medi_a.msh");
+        Skin("Default");
+        Color(Color_White);
+        UniqueSaveID(9907);
+    }
+	
+	Item("Collectable_Note_Hellraid_08", CategoryType_Collectable)
+    {
+        Name("&Collectable_Note_Hellraid_08_N&");
+        Description("&Collectable_Note_Hellraid_08_D&");
+        ItemType(ItemType_NoteHellraid);
+        Mesh("secret_roll_medi_a.msh");
+        Skin("Default");
+        Color(Color_White);
+        UniqueSaveID(9908);
+    }
+	
+	Item("Collectable_Note_Hellraid_09", CategoryType_Collectable)
+    {
+        Name("&Collectable_Note_Hellraid_09_N&");
+        Description("&Collectable_Note_Hellraid_09_D&");
+        ItemType(ItemType_NoteHellraid);
+        Mesh("secret_roll_medi_a.msh");
+        Skin("Default");
+        Color(Color_White);
+        UniqueSaveID(9909);
+    }
+	
+	Item("Collectable_Note_Hellraid_10", CategoryType_Collectable)
+    {
+        Name("&Collectable_Note_Hellraid_10_N&");
+        Description("&Collectable_Note_Hellraid_10_D&");
+        ItemType(ItemType_NoteHellraid);
+        Mesh("book_medi_a.msh");
+        Skin("A");
+        Color(Color_White);
+        UniqueSaveID(9910);
+    }
+}

@@ -1,0 +1,4 @@
+!include("human_data_custom_preset_melee_fighter_a_enc_lvl05_gaas.scr")
+
+ParamFloat("max_ai_grab_angle", 0.0)
+

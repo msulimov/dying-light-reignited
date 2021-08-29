@@ -1,0 +1,33 @@
+//Override(MapName)
+//{
+//	DecalPLS(MeshName, SkinName, OverrideSkinName);
+//}
+
+//Gather(MapName)
+//{
+//	Skin(MeshName, SkinName);
+//}
+
+
+sub main()
+{
+
+
+	Gather("slums")
+	{
+		Skin("slums_poster_b.msh", "alternative");
+		Skin("decal_plane_a.msh", "decal_lrp_mul_graffiti_mural_a_alternative");
+		Skin("decal_plane_a.msh", "decal_lrp_mul_graffiti_mural_b_alternative");
+		Skin("decal_plane_a.msh", "decal_lrp_mul_graffiti_mural_c_alternative");
+		Skin("decal_plane_a.msh", "decal_lrp_mul_graffiti_mural_d_alternative");
+	}
+	
+	Gather("old_town")
+	{
+		Skin("murale_decal_b.msh", "002_alternative");
+		Skin("decal_plane_a.msh", "decal_lrp_mul_graffiti_mural_a_alternative");
+		Skin("decal_plane_a.msh", "decal_lrp_mul_graffiti_mural_b_alternative");
+		Skin("decal_plane_a.msh", "decal_lrp_mul_graffiti_mural_c_alternative");
+		Skin("decal_plane_a.msh", "decal_lrp_mul_graffiti_mural_d_alternative");
+	}
+}

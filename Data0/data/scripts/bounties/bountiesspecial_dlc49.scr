@@ -1,0 +1,282 @@
+sub main()
+{
+	//Worthy of Surtr //pops up error about multiple counts within primary objective
+	Stat("SuperServerAchievement")
+    {
+        XlastId(14001);
+        ProgressType("number");
+        Category("Bounty");
+        BountyType("Special");
+        ResetOnStartHellraid();
+        Tag("Hellraid");
+
+        AvailableConditions()
+        {
+            PlayerTeam("Default");
+        }
+
+        PrerequisiteConditions()
+        {
+            Map("Hellraid");
+        }
+		
+        PrimaryObjective()
+        {
+            XpReward("Hellraid", 1000);
+			HellraidCoinsReward(200);
+			
+			PoolReward_IgnorePlatinumRestrictions("Loot_Melee_HRBigAxe_R10");
+			
+			RewardsDescription("&SSA_14001_Reward_Hellraid&");
+            RewardsIcon("weapon_hellraid_axe_u_big");
+			
+			Count(20)
+			{
+				Name("&SSA_14001_Hellraid_Obj1_WorthyOfSurtr&");
+				Objective()
+				{
+					Count(1)
+					{
+						RefName("Limbs");
+						Event("Evn_GiveDamage")
+						{
+							Alive();
+							Conditions()
+							{
+								IsMeleeAttacking();
+							}
+							BodyPartDestroyed();
+							PlayerDamagerAiVictim();
+							BodyParts("left_leg;right_leg;right_foot;left_foot;left_hand;right_hand;");
+							DamageType("cut");
+						}
+					}
+					Count(19)
+					{
+						PrerequisiteCount("Limbs", "Reached");
+						Event("Evn_GameDeltaTimePassed")
+						{
+							AfterTime(100);
+						}
+					}
+				}				
+			}
+			Count(10)
+			{
+				Name("&SSA_14001_Hellraid_Obj2_WorthyOfSurtr&");
+				Objective()
+				{
+					Count(1)
+					{
+						RefName("Head");
+						Event("Evn_GiveDamage")
+						{
+							Alive();
+							Conditions()
+							{
+								IsMeleeAttacking();
+							}
+							BodyPartDestroyed();
+							PlayerDamagerAiVictim();
+							BodyParts("head;");
+							DamageType("cut");
+						}
+					}
+					Count(9)
+					{
+						PrerequisiteCount("Limbs", "Reached");
+						Event("Evn_GameDeltaTimePassed")
+						{
+							AfterTime(100);
+						}
+					}
+				}				
+			}
+        }
+    }		
+
+	//Swordsmanship Trial
+	Stat("SuperServerAchievement")
+    {
+        XlastId(14002);
+        ProgressType("number");
+        Category("Bounty");
+        BountyType("Special");
+		IsNotRecyclable();
+        Tag("Hellraid");
+		MinHellraidRank(10);
+
+        AvailableConditions()
+        {
+			PlayerTeam("Default");
+        }
+
+        PrerequisiteConditions()
+        {
+            Map("Hellraid");
+        }
+		
+        PrimaryObjective()
+        {
+            HellraidCoinsReward(200);
+			XpReward("Hellraid", 200);
+			
+			PoolReward_IgnorePlatinumRestrictions("Loot_Craftplan_HRSword_R11_SHOP");
+
+            RewardsDescription("&SSA_14002_Reward_Hellraid&"); 
+            RewardsIcon("weapon_hellraid_short_sword_knight_big");
+			
+			Count(20)
+			{
+				Name("&SSA_14002_Hellraid_Obj1_Swordsmanship&");
+				Event("Evn_Kill")
+				{
+					Victim("Infected");
+				}			
+			}
+			Count(15)
+			{
+				Name("&SSA_14002_Hellraid_Obj2_Swordsmanship&");
+				Event("Evn_Kill")
+				{
+					Victim("Bones");
+				}			
+			}
+			Count(8)
+			{
+				RefName("Mage");
+				Name("&SSA_14002_Hellraid_Obj3_Swordsmanship&");
+				Event("Evn_Kill")
+				{
+					Victim("Mage");
+				}			
+			}
+			Count(4)
+			{
+				RefName("Torturer");
+				Name("&SSA_14002_Hellraid_Obj4_Swordsmanship&");
+				Event("Evn_Kill")
+				{
+					VictimPresetPrefix("HR_Torturer");
+				}			
+			}		
+				
+        }
+    }
+	
+	//Anarchist Challenge
+    Stat("SuperServerAchievement")
+    {
+        XlastId(14003);
+        ProgressType("number");
+        Category("Bounty");
+        BountyType("Special");
+        ResetOnStartHellraid();
+        Tag("Hellraid");
+
+        AvailableConditions()
+        {
+            PlayerTeam("Default");
+        }
+
+        PrerequisiteConditions()
+        {
+            Map("Hellraid");
+        }
+
+        PrimaryObjective()
+        {
+			XpReward("Hellraid", 500);
+			HellraidCoinsReward(200);
+			
+			PoolReward("Loot_Bundle_ThrowingItems");
+			
+			RewardsDescription("&SSA_14003_Reward_Hellraid&"); 
+            RewardsIcon("component_misc_big");
+
+			Count(5)
+            {
+				Name("&SSA_14003_Hellraid_MainObj_Anarchist&");
+                Event("Evn_Kill")
+                {
+                    WeaponNames("Throwable_HRGrenade_Electric;Throwable_HRGrenade_Poison;Throwable_HRGrenade_Explosive;");
+                }
+            }
+        }
+    }
+	
+	//Kicking asses
+	Stat("SuperServerAchievement")
+    {
+		XlastId(14004);
+        ProgressType("number");
+        Category("Bounty");
+        BountyType("Special");
+        ResetOnStartHellraid();
+        Tag("Hellraid");
+
+        AvailableConditions()
+        {
+            PlayerTeam("Default");
+        }
+
+        PrerequisiteConditions()
+        {
+            Map("Hellraid");
+        }
+
+        PrimaryObjective() 
+        {
+			XpRewardCurve("Runner", "bounty_xp_reward_basic_agility");
+			HellraidCoinsReward(500);
+			XpReward("Hellraid", 2000);
+			
+			Count(20)
+			{
+                Name("&SSA_14004_Hellraid_MainObj_Ledges&");
+				
+				Event("Evn_Kill")
+				{		
+					Victim("Zombie;Infected;Bones;Mage");
+					HasFallen();
+				}	  
+			}
+        }
+    }	
+	
+	Stat("SuperServerAchievement")
+    {
+        XlastId(14005);
+        ProgressType("number");
+        Category("Bounty");
+        BountyType("Special");
+        ResetOnStartHellraid();
+        Tag("Hellraid");
+
+        AvailableConditions()
+        {
+            PlayerTeam("Default");
+        }
+
+        PrerequisiteConditions()
+        {
+            Map("Hellraid");
+        }
+
+        PrimaryObjective()
+        {
+			Name("&SSA_14005_Hellraid_MainObj_Secret&");
+			HellraidCoinsReward(500);
+			XpReward("Hellraid", 2000);
+			XpRewardCurve("Status", "bounty_xp_reward_basic");
+			
+			Count(3)
+			{
+                Name("&SSA_14005_Hellraid_MainObj_Secret&");
+				Event("Evn_SecretFound")
+				{		
+				}	
+			}
+        }
+    }	
+}

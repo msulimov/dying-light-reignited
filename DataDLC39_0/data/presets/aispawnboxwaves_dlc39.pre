@@ -1,0 +1,9 @@
+import "AISpawnBox.pre_DLC39.def"
+
+sub main()
+{
+    PresetDef("AI Preset")
+    {
+        use declare_ai_presets();
+    }
+}

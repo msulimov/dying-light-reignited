@@ -1,0 +1,361 @@
+!include("night_spawn_presets.scr")
+!include("btz_spawn.scr")
+
+
+///////////////////////////////////////////////////////////////////////////////////////////////////////
+//NIGHT NOISE
+	IntensityCurve("night_noise_easy")
+	{    
+		Event(1)
+		MaxProgressCondition(3)
+		UseCondition("Night")
+		ConditionNightAggrLvl(0)
+		UseCondition("InfectedsSpawn;PlayerZombie_NotExist")
+        DisallowedMaps("old_town_outposts_radio;old_town_outposts;old_town_outposts_museum;Sewers_Stadium")
+		PoolType("night_noise")
+		IntensityKey(1, 205)
+		Wait(10)
+		IntensityKey(1, 200)
+		Wait(80)
+	}
+
+	IntensityCurve("night_noise_med")
+	{    
+		Event(1)
+		MinProgressCondition(3)
+		UseCondition("Night")
+		ConditionNightAggrLvl(0)
+		UseCondition("InfectedsSpawn;PlayerZombie_NotExist")
+        DisallowedMaps("old_town_outposts_radio;old_town_outposts;old_town_outposts_museum;Sewers_Stadium")
+		PoolType("night_noise")
+		IntensityKey(1, 400)
+		Wait(10)
+		IntensityKey(1, 200)
+		Wait(80)
+	}
+
+
+	IntensityCurve("night_noise_hard")
+	{    
+		Event(1)
+		MinProgressCondition(8)
+		UseCondition("Night")
+		ConditionNightAggrLvl(0)
+		UseCondition("InfectedsSpawn;PlayerZombie_NotExist")
+        DisallowedMaps("old_town_outposts_radio;old_town_outposts;old_town_outposts_museum;Sewers_Stadium")
+		PoolType("night_noise")
+		IntensityKey(1, 5005)
+		Wait(10)
+		IntensityKey(1, 2000)
+		Wait(80)
+	}
+
+
+    Pool("Night_Noise")
+    {
+        BalancedNumberOfZombies(0)
+        Type("night_noise")
+		Preset("Night_Walker, 80;Night_Walker_Init, 30;Night_Walker_Nav, 10;Night_Walker_Special_Tranformation, 80;")
+    }
+
+
+
+///////////////////////////////////////////////////////////////////////////////////////////////////////
+//BEGIN
+    Pool("Night_Aggresion_Level_0_Easy")
+    {
+        UseCondition("Night;PlayerZombie_NotExist")
+        DisallowedMaps("old_town_outposts_radio;old_town_outposts;old_town_outposts_museum;Sewers_Stadium")
+        MaxProgressCondition(4)
+        BalancedNumberOfZombies(0)
+        Type("night")
+
+        ConditionNightAggrLvl(0)
+		
+        Preset("Volatile_Patrol_Easy, 100; Volatile, 100;Volatile_Eating_Corpse, 30;")
+		Preset("Night_Walker, 30;Night_Walker_Init, 70;")
+		Preset("Defender_Fighter, 10;Melee_Fighter_Rais, 10;Melee_Survivor, 10;") 
+		
+		NoZombiesByPresets("Volatile_Patrol_Easy, 100; Volatile, 100;Volatile_Eating_Corpse, 30;", 2, 2)
+        NoZombiesByPresets("Night_Walker, 30;Night_Walker_Init, 70", 4, 4)							  											  
+		MaxNoZombiesInPursuit(60)
+    }
+
+
+    Pool("Night_Aggresion_Level_1_Easy")
+    {
+        UseCondition("Night;PlayerZombie_NotExist")
+        DisallowedMaps("Sewers;Old_Town")
+        MaxProgressCondition(4)
+        BalancedNumberOfZombies(0)
+        ConditionNightAggrLvl(1)
+        Type("night")
+		
+		NoZombiesByPresets("Volatile, 65;Volatile_Nav, 35;Volatile_Patrol_Easy, 1;", 4, 4)
+        NoZombiesByPresets("Night_Walker, 80;Night_Walker_Init, 20", 4, 4)
+		MaxNoZombiesInPursuit(666)
+    }
+
+    Pool("Night_Aggresion_Level_2_Easy")
+    {
+        UseCondition("Night;PlayerZombie_NotExist")
+        DisallowedMaps("Sewers;Old_Town")
+        MaxProgressCondition(4)
+        BalancedNumberOfZombies(0)
+        ConditionNightAggrLvl(2)
+        Type("night")
+		
+        NoZombiesByPresets("Volatile, 65;Volatile_Nav, 35;Volatile_Patrol_Easy, 1;", 5, 5)
+        NoZombiesByPresets("Night_Walker, 80;Night_Walker_Init, 20", 6, 6)
+		MaxNoZombiesInPursuit(888)
+    }
+
+    Pool("Night_Aggresion_Level_3_Easy")
+    {
+        UseCondition("Night;PlayerZombie_NotExist")
+        DisallowedMaps("Sewers;Old_Town")
+        MaxProgressCondition(4)
+        BalancedNumberOfZombies(0)
+        ConditionNightAggrLvl(3)
+        Type("night")
+
+		
+        NoZombiesByPresets("Volatile, 65;Volatile_Nav, 35;Volatile_Patrol_Easy, 1;", 6, 6)
+        NoZombiesByPresets("Night_Walker, 80;Night_Walker_Init, 20", 7, 7)
+        
+		MaxNoZombiesInPursuit(100)
+    }
+
+    Pool("Night_Aggresion_Level_4_Easy")
+    {
+        UseCondition("Night;PlayerZombie_NotExist")
+        DisallowedMaps("Sewers;Old_Town")
+        MaxProgressCondition(4)
+        BalancedNumberOfZombies(0)
+        ConditionNightAggrLvl(4)
+        Type("night")
+		
+        NoZombiesByPresets("Volatile, 65;Volatile_Nav, 35;Volatile_Patrol_Easy, 1;", 7, 7)
+        NoZombiesByPresets("Night_Walker, 80;Night_Walker_Init, 20", 5, 5)
+        NoZombiesByPresets("Night_Suicider_Bomber, 100", 1, 2)
+
+		MaxNoZombiesInPursuit(120)
+    }
+
+///////////////////////////////////////////////////////////////////////////////////////////////////////
+//SLUMS
+	Pool("Night_Aggresion_Level_0")
+    {
+        UseCondition("Night;PlayerZombie_NotExist")
+        DisallowedMaps("Sewers;Old_Town")
+        MinProgressCondition(4)
+        BalancedNumberOfZombies(0)
+        Type("night")
+        ConditionNightAggrLvl(0)
+
+        Preset("Volatile_Patrol_OT, 100;Volatile_Eating_Corpse, 20;Volatile_Nav, 20;Volatile_Hard, 20; Volatile, 20;")							  
+		Preset("Night_Walker_Patrol, 100; Night_Walker_Special_Tranformation, 50;") 
+		Preset("Melee_Fighter_With_Pipe, 1;Melee_Fighter_With_Pipe_Init, 1;Defender_Fighter, 1;Melee_Fighter_Rais, 2;Melee_Survivor, 4;") 
+		
+		NoZombiesByPresets("Night_Walker, 30;Night_Walker_Init, 70;", 3, 3)
+		
+		MaxNoZombiesInPursuit(3)		
+    }
+
+    Pool("Night_Aggresion_Level_1")
+    {
+        UseCondition("Night;PlayerZombie_NotExist")
+        DisallowedMaps("Sewers;Old_Town")
+        MinProgressCondition(4)
+        BalancedNumberOfZombies(0)
+        ConditionNightAggrLvl(1)
+        Type("night")
+		
+		Preset("Volatile_Patrol_OT, 100;Volatile_Eating_Corpse, 20;Volatile_Nav, 20;Volatile_Hard, 20; Volatile, 20;")							  
+		Preset("Night_Walker_Patrol, 100; Night_Walker_Special_Tranformation, 50;") 
+		Preset("Melee_Fighter_With_Pipe, 20;Melee_Fighter_With_Pipe_Init, 20;Defender_Fighter, 20;Melee_Fighter_Rais, 40;Melee_Survivor, 20;")
+		
+		NoZombiesByPresets("Melee_Fighter_With_Pipe, 10;Melee_Fighter_With_Pipe_Init, 10;Defender_Fighter, 10;Melee_Fighter_Rais, 20;Melee_Survivor, 10;", 3, 4)
+		NoZombiesByPresets("Volatile_Hard, 35;Volatile_Pit_Hard, 30;Volatile, 65;Volatile_Nav, 35;Volatile_Patrol, 1;Volatile_Patrol_Super, 1;", 2, 2)
+        NoZombiesByPresets("Night_Walker, 80;Night_Walker_Init, 20;", 2, 5)
+
+		MaxNoZombiesInPursuit(10)
+    }
+
+    Pool("Night_Aggresion_Level_2")
+    {
+        UseCondition("Night;PlayerZombie_NotExist")
+        DisallowedMaps("Sewers;Old_Town")
+        MinProgressCondition(4)
+        BalancedNumberOfZombies(0)
+        ConditionNightAggrLvl(2)
+        Type("night")
+		
+		Preset("Volatile_Patrol_OT, 100;Volatile_Eating_Corpse, 20;Volatile_Nav, 20;Volatile_Hard, 20; Volatile, 20;")							  
+		Preset("Night_Walker_Patrol, 100; Night_Walker_Special_Tranformation, 50;") 
+		Preset("Melee_Fighter_With_Pipe, 25;Melee_Fighter_With_Pipe_Init, 25;Defender_Fighter, 25;Melee_Fighter_Rais, 45;Melee_Survivor, 25;")
+		
+        NoZombiesByPresets("Melee_Fighter_With_Pipe, 10;Melee_Fighter_With_Pipe_Init, 10;Defender_Fighter, 10;Melee_Fighter_Rais, 20;Melee_Survivor, 10;", 3, 3)
+		NoZombiesByPresets("Volatile_Hard, 35;Volatile_Pit_Hard, 30;Volatile, 65;Volatile_Nav, 35;Volatile_Patrol, 1;Volatile_Patrol_Super, 1;", 3, 3)
+        NoZombiesByPresets("Night_Walker, 80;Night_Walker_Init, 20;", 6, 6)
+
+		MaxNoZombiesInPursuit(20)
+    }
+
+    Pool("Night_Aggresion_Level_3")
+    {
+        UseCondition("Night;PlayerZombie_NotExist")
+        DisallowedMaps("Sewers;Old_Town")
+        MinProgressCondition(4)
+        BalancedNumberOfZombies(0)
+        ConditionNightAggrLvl(3)
+        Type("night")
+
+		Preset("Volatile_Patrol_OT, 100;Volatile_Eating_Corpse, 20;Volatile_Nav, 20;Volatile_Hard, 20; Volatile, 20;")							  
+		Preset("Night_Walker_Patrol, 100; Night_Walker_Special_Tranformation, 50;") 
+		Preset("Melee_Fighter_With_Pipe, 30;Melee_Fighter_With_Pipe_Init, 30;Defender_Fighter, 40;Melee_Fighter_Rais, 60;Melee_Survivor, 30;")
+
+        NoZombiesByPresets("Melee_Fighter_With_Pipe, 10;Melee_Fighter_With_Pipe_Init, 10;Defender_Fighter, 10;Melee_Fighter_Rais, 20;Melee_Survivor, 10;", 3, 3)
+		NoZombiesByPresets("Volatile_Hard, 35;Volatile_Pit_Hard, 30;Volatile, 65;Volatile_Nav, 35;Volatile_Patrol, 1;Volatile_Patrol_Super, 1;", 5, 5)
+        NoZombiesByPresets("Night_Walker, 80;Night_Walker_Init, 20;", 8, 8)
+        
+		MaxNoZombiesInPursuit(30)
+    }
+
+    Pool("Night_Aggresion_Level_4")
+    {
+        UseCondition("Night;PlayerZombie_NotExist")
+        DisallowedMaps("Sewers;Old_Town")
+        MinProgressCondition(4)
+        BalancedNumberOfZombies(0)
+        ConditionNightAggrLvl(50)
+        Type("night")
+		
+		Preset("Volatile_Patrol_OT, 100;Volatile_Eating_Corpse, 20;Volatile_Nav, 20;Volatile_Hard, 20; Volatile, 20;")							  
+		Preset("Night_Walker_Patrol, 100; Night_Walker_Special_Tranformation, 50;") 
+		Preset("Melee_Fighter_With_Pipe, 30;Melee_Fighter_With_Pipe_Init, 30;Defender_Fighter, 50;Melee_Fighter_Rais, 60;Melee_Survivor, 30;")
+		Preset("Night_Suicider_Bomber, 100;")
+		
+        NoZombiesByPresets("Melee_Fighter_With_Pipe, 10;Melee_Fighter_With_Pipe_Init, 10;Defender_Fighter, 10;Melee_Fighter_Rais, 20;Melee_Survivor, 10;", 4, 4)
+		NoZombiesByPresets("Volatile_Hard, 35;Volatile_Pit_Hard, 30;Volatile, 65;Volatile_Nav, 35;Volatile_Patrol, 1;Volatile_Patrol_Super, 1;", 8, 8)
+        NoZombiesByPresets("Night_Walker, 80;Night_Walker_Init, 20;", 10, 10)
+		NoZombiesByPresets("Night_Suicider_Bomber, 1;", 1, 2)
+
+		MaxNoZombiesInPursuit(40)
+    }
+
+///////////////////////////////////////////////////////////////////////////////////////////////////////
+//OLD_TOWN
+    Pool("Night_Aggresion_Level_0")
+    {
+        UseCondition("Night;PlayerZombie_NotExist")
+        AllowedMaps("Old_Town")        
+        BalancedNumberOfZombies(0)
+        Type("night")
+
+        ConditionNightAggrLvl(0)
+		Preset("Screamer, 1;Volatile, 100;")
+		Preset("Night_Walker, 30;Night_Walker_Init, 70")
+        Preset("Volatile_Patrol_OT, 100;Volatile_Patrol_Super, 100;")
+        NoZombiesByPresets("Night_Walker, 30;Night_Walker_Init, 70", 4, 4)
+		Preset("Melee_Fighter_With_Pipe, 5;Melee_Fighter_With_Pipe_Init, 5;") 
+		Preset("Defender_Fighter, 10;") 
+		Preset("Melee_Fighter_Rais, 10;")
+		Preset("Melee_Survivor, 30;")
+
+		MaxNoZombiesInPursuit(0)
+    }
+
+    Pool("Night_Aggresion_Level_1")
+    {
+        UseCondition("Night;PlayerZombie_NotExist")
+        AllowedMaps("Old_Town")        
+        BalancedNumberOfZombies(1)
+        ConditionNightAggrLvl(1)
+        Type("night")
+
+		Preset("Melee_Fighter_With_Pipe, 5;Melee_Fighter_With_Pipe_Init, 5;") 
+		Preset("Defender_Fighter, 10;") 
+		Preset("Melee_Fighter_Rais, 10;")
+		Preset("Melee_Survivor, 10;")
+		
+		NoZombiesByPresets("Volatile_Hard, 25;Volatile_Pit_Hard, 70;Volatile_Pit, 20;Volatile_Nav, 5;Volatile_Patrol_OT, 1;", 2, 2)
+        NoZombiesByPresets("Night_Walker, 30;Night_Walker_Init, 70", 4, 4)
+
+		MaxNoZombiesInPursuit(30)
+    }
+
+    Pool("Night_Aggresion_Level_2")
+    {
+        UseCondition("Night;PlayerZombie_NotExist")
+        AllowedMaps("Old_Town")        
+        BalancedNumberOfZombies(1)
+        ConditionNightAggrLvl(2)
+        Type("night")
+
+		Preset("Melee_Fighter_With_Pipe, 5;Melee_Fighter_With_Pipe_Init, 5;") 
+		Preset("Defender_Fighter, 20;") 
+		Preset("Melee_Fighter_Rais, 10;")	
+		Preset("Melee_Survivor, 10;")
+		
+        NoZombiesByPresets("Volatile_Hard, 25;Volatile_Pit_Hard, 70;Volatile_Pit, 20;Volatile_Nav, 5;Volatile_Patrol_OT, 1;", 3, 3)
+        NoZombiesByPresets("Night_Walker, 30;Night_Walker_Init, 70", 5, 5)
+
+		MaxNoZombiesInPursuit(40)
+    }
+
+    Pool("Night_Aggresion_Level_3")
+    {
+        UseCondition("Night;PlayerZombie_NotExist")
+        AllowedMaps("Old_Town")        
+        BalancedNumberOfZombies(1)
+        ConditionNightAggrLvl(3)
+        Type("night")
+
+		Preset("Melee_Fighter_With_Pipe, 20;Melee_Fighter_With_Pipe_Init, 20;") 
+		Preset("Defender_Fighter, 30;") 
+		Preset("Melee_Fighter_Rais, 20;")
+		Preset("Melee_Survivor, 20;")	
+		
+        NoZombiesByPresets("Volatile_Hard, 25;Volatile_Pit_Hard, 70;Volatile_Pit, 20;Volatile_Nav, 5;Volatile_Patrol_OT, 1;", 4, 4)
+        NoZombiesByPresets("Night_Walker, 30;Night_Walker_Init, 70", 6, 6)
+
+		MaxNoZombiesInPursuit(55)
+    }
+
+    Pool("Night_Aggresion_Level_4")
+    {
+        UseCondition("Night;PlayerZombie_NotExist")
+        AllowedMaps("Old_Town")        
+        BalancedNumberOfZombies(1)
+        ConditionNightAggrLvl(4)
+        Type("night")
+
+		Preset("Melee_Fighter_With_Pipe, 20;Melee_Fighter_With_Pipe_Init, 20;") 
+		Preset("Defender_Fighter, 30;") 
+		Preset("Melee_Fighter_Rais, 20;")
+		Preset("Melee_Survivor, 30;")
+		
+        NoZombiesByPresets("Volatile_Hard, 25;Volatile_Pit_Hard, 70;Volatile_Pit, 20;Volatile_Nav, 5;Volatile_Patrol_OT, 1;", 5, 5)
+        NoZombiesByPresets("Night_Walker, 30;Night_Walker_Init, 70", 8, 8)
+        NoZombiesByPresets("Night_Suicider_Bomber, 100", 1, 2)
+
+		MaxNoZombiesInPursuit(70)
+    }
+
+
+
+
+
+/////////////////////////////////////////////////////////////////////////////////////////////////////////
+//// PRIME
+/////////////////////////////////////////////////////////////////////////////////////////////////////////////
+    Pool("Volatile_Prime_Gouards")
+    {
+        Type("night_prime_gouards")
+        BalancedNumberOfZombies(1)
+		NoZombiesByPresets("Volatile_PrimeGuard, 65", 5, 5)
+		DisallowedMaps("old_town_outposts_radio;old_town_outposts;old_town_outposts_museum;Sewers_Stadium")
+    }
+
+

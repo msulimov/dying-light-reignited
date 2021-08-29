@@ -1,0 +1,5 @@
+!include("human_data_custom_preset_shooter.scr")
+
+// Override health params with vest data
+!include("human_shooter_vest_params.scr")
+ParamFloat("damage_mul_vs_other_ai", 40.0)

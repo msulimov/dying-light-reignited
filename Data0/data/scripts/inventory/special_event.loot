@@ -1,0 +1,298 @@
+import "color_sets.loot"
+import "item_sets.loot"
+import "item_sets_Gaas.loot"
+import "containers_object_type.def"
+
+//////////////////////////////////
+// This file have only "sub default()" and it is loaded for every difficulty
+//////////////////////////////////
+
+sub default()
+{	
+
+	
+	//Local quest Low Gravity event - gold machete
+	LootedObject("Loot_Melee_Machete_Astronaut")
+    {
+    	ColorSet(ColorSet_PlatinumOnly);
+
+        Set(Weapon, 1.0, 1.0)
+        {
+            Item("Melee_Machete_Astronaut_Gold", 1);
+        }
+    }
+	
+		LootedObject("DeadBody_Astronaut")
+    {
+        ColorSet(ColorSet_Default);
+        use Astronaut_Loot(weight = 1.0);
+    }
+
+	//////////////////////////
+	// RUST CROSSOVER EVENT //
+	//////////////////////////
+	
+	
+	
+	LootedObject("Loot_Bundle_Rust_C4_Elemental")
+    {
+        ColorSet(ColorSet_OrangeOnly);
+		
+		Set(Other, 1.0, 1.0)
+        {
+            Item("Bundle_Rust_C4_Elemental", 1.0);
+        }
+	}
+	
+	LootedObject("DeadBody_RustScientist")
+    {
+        ColorSet(ColorSet_Default);
+        use RustCrossover_Scrap(weight = 3.0);
+    }
+	
+	// Golden variations of Free DLC items
+	
+	LootedObject("Loot_Craftplan_Rust_SalvagedCleaver_Gold")
+    {
+    	ColorSet(ColorSet_PlatinumOnly);
+
+		Set(Other, 1.0, 1.0)
+        {
+            Item("Craftplan_Rust_SalvagedCleaver_Gold", 1.0);
+        }
+    }
+	
+	LootedObject("Loot_Craftplan_Rust_AssaultRifle_Gold")
+    {
+    	ColorSet(ColorSet_PlatinumOnly);
+
+		Set(Other, 1.0, 1.0)
+        {
+            Item("Craftplan_Rust_AssaultRifle_Gold", 1.0);
+        }
+    }
+	
+	LootedObject("Loot_Craftplan_Rust_SubmachineGun_Gold")
+    {
+    	ColorSet(ColorSet_PlatinumOnly);
+
+		Set(Other, 1.0, 1.0)
+        {
+            Item("Craftplan_Rust_SubmachineGun_Gold", 1.0);
+        }
+    }
+	
+	//C4 Elemental Variations
+	
+	LootedObject("Loot_Craftplan_Throwable_ExplosiveBomb_Poison")
+    {
+    	ColorSet(ColorSet_BlueOnly);
+
+		Set(Other, 1.0, 1.0)
+        {
+            Item("Craftplan_Throwable_ExplosiveBomb_Poison", 1.0);
+        }
+    }
+	
+	LootedObject("Loot_Craftplan_Throwable_ExplosiveBomb_Freeze")
+    {
+    	ColorSet(ColorSet_BlueOnly);
+
+		Set(Other, 1.0, 1.0)
+        {
+            Item("Craftplan_Throwable_ExplosiveBomb_Freeze", 1.0);
+        }
+    }
+	
+	LootedObject("Loot_Craftplan_Throwable_ExplosiveBomb_Burning")
+    {
+    	ColorSet(ColorSet_BlueOnly);
+
+		Set(Other, 1.0, 1.0)
+        {
+            Item("Craftplan_Throwable_ExplosiveBomb_Burning", 1.0);
+        }
+    }
+	
+	LootedObject("Loot_Craftplan_Throwable_ExplosiveBomb_Bleeding")
+    {
+    	ColorSet(ColorSet_BlueOnly);
+
+		Set(Other, 1.0, 1.0)
+        {
+            Item("Craftplan_Throwable_ExplosiveBomb_Bleeding", 1.0);
+        }
+    }
+	
+	//ZOMBIE HUNT EVENT
+	
+	LootedObject("Loot_ZZZZ_Melee_BigHammer_Tactical_Gold")
+    {
+    	ColorSet(ColorSet_PlatinumOnly);
+
+        Set(Weapon, 1.0, 1.0)
+        {
+            Item("ZZZZ_Melee_BigHammer_Tactical_Gold", 1);
+        }
+    }
+	
+	LootedObject("Loot_Event_GREBoost")
+    {
+    	ColorSet(ColorSet_BlueOnly);
+
+		Set(Other, 1.0, 1.0)
+        {
+            Item("Craftplan_Event_GREBoost", 1.0);
+        }
+    }
+	
+	LootedObject("Ultra_Bundle_Goon_ZombieHunt")
+    {
+        ColorSet(ColorSet_Parts_Military_L3_5);
+		
+		Set(Other, 1.0, 1.0)
+        {
+            Item("Bundle_Ultra_Bundle_Goon_ZombieHunt", 1.0);
+        }
+		
+		Set(Weapon, 1.0, 1.0)
+        {
+            AvoidGeneratingDuplicates();
+
+			ImportFromShop("Melee_Level_1", 1, 1);
+			ImportFromShop("Melee_Level_2", 2, 2);
+			ImportFromShop("Melee_Level_3", 3, 3);
+			ImportFromShop("Melee_Level_4", 4, 4);
+			ImportFromShop("Melee_Level_5", 5, 5);
+			ImportFromShop("Melee_Level_6", 6, 6);
+			ImportFromShop("Melee_Level_7", 7, 7);
+			ImportFromShop("Melee_Level_8", 8, 8);
+			ImportFromShop("Melee_Level_9", 9, 9);
+			ImportFromShop("Melee_Level_10", 10, 10);
+			ImportFromShop("Melee_Level_11", 11, 11);
+			ImportFromShop("Melee_Level_12", 12, 12);
+			ImportFromShop("Melee_Level_13", 13, 13);
+			ImportFromShop("Melee_Level_14", 14, 14);
+			ImportFromShop("Melee_Level_15", 15, 15);
+			ImportFromShop("Melee_Level_16", 16, 16);
+			ImportFromShop("Melee_Level_17", 17, 17);
+			ImportFromShop("Melee_Level_18", 18, 18);
+			ImportFromShop("Melee_Level_19", 19, 19);
+			ImportFromShop("Melee_Level_20", 20, 20);
+			ImportFromShop("Melee_Level_21", 21, 21);
+			ImportFromShop("Melee_Level_22", 22, 22);
+			ImportFromShop("Melee_Level_23", 23, 23);		
+			ImportFromShop("Melee_Level_24", 24, 24);		
+			ImportFromShop("Melee_Level_25", 25, 25);
+			ImportFromShop("Melee_Legendary_Tier_1", 25, 35);
+			ImportFromShop("Melee_Legendary_Tier_2", 26, 35);
+			ImportFromShop("Melee_Legendary_Tier_3", 27, 35);
+			ImportFromShop("Melee_Legendary_Tier_4", 28, 35);
+			ImportFromShop("Melee_Legendary_Tier_5", 29, 35);
+			ImportFromShop("Melee_Legendary_Tier_6", 30, 35);
+			ImportFromShop("Melee_Legendary_Tier_7", 31, 35);
+			ImportFromShop("Melee_Legendary_Tier_8", 32, 35);
+			ImportFromShop("Melee_Legendary_Tier_9", 33, 35);
+			ImportFromShop("Melee_Legendary_Tier_10", 34, 35);
+        }
+    }
+	
+	LootedObject("Ultra_Bundle_Demolisher_ZombieHunt")
+    {
+        ColorSet(ColorSet_Parts_Military_L3_5);
+		
+		Set(Other, 1.0, 1.0)
+        {
+            Item("Bundle_Ultra_Bundle_Demolisher_ZombieHunt", 1.0);
+        }
+		
+		Set(Weapon, 1.0, 1.0)
+        {
+            AvoidGeneratingDuplicates();
+
+			ImportFromShop("Melee_Level_1", 1, 1);
+			ImportFromShop("Melee_Level_2", 2, 2);
+			ImportFromShop("Melee_Level_3", 3, 3);
+			ImportFromShop("Melee_Level_4", 4, 4);
+			ImportFromShop("Melee_Level_5", 5, 5);
+			ImportFromShop("Melee_Level_6", 6, 6);
+			ImportFromShop("Melee_Level_7", 7, 7);
+			ImportFromShop("Melee_Level_8", 8, 8);
+			ImportFromShop("Melee_Level_9", 9, 9);
+			ImportFromShop("Melee_Level_10", 10, 10);
+			ImportFromShop("Melee_Level_11", 11, 11);
+			ImportFromShop("Melee_Level_12", 12, 12);
+			ImportFromShop("Melee_Level_13", 13, 13);
+			ImportFromShop("Melee_Level_14", 14, 14);
+			ImportFromShop("Melee_Level_15", 15, 15);
+			ImportFromShop("Melee_Level_16", 16, 16);
+			ImportFromShop("Melee_Level_17", 17, 17);
+			ImportFromShop("Melee_Level_18", 18, 18);
+			ImportFromShop("Melee_Level_19", 19, 19);
+			ImportFromShop("Melee_Level_20", 20, 20);
+			ImportFromShop("Melee_Level_21", 21, 21);
+			ImportFromShop("Melee_Level_22", 22, 22);
+			ImportFromShop("Melee_Level_23", 23, 23);		
+			ImportFromShop("Melee_Level_24", 24, 24);		
+			ImportFromShop("Melee_Level_25", 25, 25);
+			ImportFromShop("Melee_Legendary_Tier_1", 25, 35);
+			ImportFromShop("Melee_Legendary_Tier_2", 26, 35);
+			ImportFromShop("Melee_Legendary_Tier_3", 27, 35);
+			ImportFromShop("Melee_Legendary_Tier_4", 28, 35);
+			ImportFromShop("Melee_Legendary_Tier_5", 29, 35);
+			ImportFromShop("Melee_Legendary_Tier_6", 30, 35);
+			ImportFromShop("Melee_Legendary_Tier_7", 31, 35);
+			ImportFromShop("Melee_Legendary_Tier_8", 32, 35);
+			ImportFromShop("Melee_Legendary_Tier_9", 33, 35);
+			ImportFromShop("Melee_Legendary_Tier_10", 34, 35);
+        }
+    }
+	
+	//END
+	
+	LootedObject("Loot_Pistol_Space_Commando_Weapon")
+    {
+    	ColorSet(ColorSet_BlueOnly);
+
+        Set(Weapon, 1.0, 1.0)
+        {
+            Item("Firearm_Pistol_Space_Commando", 1);
+        }
+    }
+	
+	LootedObject("Loot_Collectable_Liveops_CollectableOutfit_Halloween_Rat")
+    {
+        Set(Other, 1.0, 1.0)
+        {
+            Item("Collectable_Liveops_CollectableOutfit_Halloween_Rat", 1.0);
+        }
+    }
+	
+	//WINTER 2020, Week 1
+	LootedObject("Loot_Melee_Sword_Winter")
+    {
+		ColorSet(ColorSet_PlatinumOnly);
+	
+        Set(Weapon, 1.0, 1.0)
+        {
+            Item("ZZZZ_Melee_Sword_Winter", 1.0);
+        }
+    }
+	
+	//WINTER 2020, Week 2
+	LootedObject("Loot_Collectable_Liveops_CollectableOutfit_Winter_Frost")
+    {
+        Set(Other, 1.0, 1.0)
+        {
+            Item("Collectable_Liveops_CollectableOutfit_Winter_Frost", 1.0);
+        }
+    }
+
+	LootedObject("Loot_Collectable_Craftplan_L4D_Gnome")
+    {
+        Set(Other, 1.0, 1.0)
+        {
+            Item("Craftplan_L4D_Gnome", 1.0);
+        }
+    }
+}

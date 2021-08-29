@@ -1,0 +1,53 @@
+ sub hr_pot_ash()
+{
+Preset("hr_pot_ash")
+
+// 0 - Omni Close 1.5
+// 1 - Omni Ceiling 0.75
+
+    {
+		OnLevelStart()
+	    {
+        Enable(0, false);
+		Enable(1, false);
+   		}
+		
+		OnEnable()
+	    {
+		Enable(0, true);
+		Enable(1, true);
+   		}
+		
+		OnDisable()
+		{
+		Enable(0, false);
+		Enable(1, false);
+		}
+		
+		// Group, Time, Value
+        TimedEvent(0.0)
+        {
+		SetLightIntensity(0, 0.14, 1.5);
+		SetLightIntensity(1, 0.14, 0.75);
+     	}
+        TimedEvent(0.15)
+        {
+		SetLightIntensity(0, 0.14, 1.4);
+		SetLightIntensity(1, 0.14, 0.65);
+        }
+		TimedEvent(0.30)
+        {
+		SetLightIntensity(0, 0.14, 1.55);
+		SetLightIntensity(1, 0.14, 0.88);
+     	}
+        TimedEvent(0.45)
+        {
+		SetLightIntensity(0, 0.14, 1.5);
+		SetLightIntensity(1, 0.14, 0.75);
+     	}
+		
+		GoToBegin(0.60)
+		{
+		}
+    }
+}

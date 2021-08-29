@@ -1,0 +1,77 @@
+//RUST CROSSOVER
+
+import "inventorystuff.scr" 
+sub main() 
+{		
+	Item("Craftplan_Rust_SubmachineGun_DLC", CategoryType_Collectable)
+    {
+        Name("&Craftplan_Rust_SubmachineGun_DLC_N&");
+        Description("&Craftplan_Rust_SubmachineGun_DLC_D&");
+        ItemType(ItemType_CraftPlan);
+        Price(6400);
+        Mesh("blueprint.msh");
+        Skin("default");
+        RequiredItem("Craft_MetalScrap", 6);
+		RequiredItem("Craft_TinCan", 1);
+        RequiredItem("Craft_DuctTape", 3);
+        Color(Color_Blue);
+        CraftedItem("Rust_SubmachineGun", 1, 1);
+        CraftplanType("WeaponDLC");
+        UniqueSaveID(9935);
+        HudIcon("blueprint_b");
+        GameVersion(41);
+        OwnedAtStart();
+        InheritBaseStats();
+    }
+	
+	Item("Craftplan_Rust_AssaultRifle_DLC", CategoryType_Collectable)
+    {
+        Name("&Craftplan_Rust_AssaultRifle_DLC_N&");
+        Description("&Craftplan_Rust_AssaultRifle_DLC_D&");
+        ItemType(ItemType_CraftPlan);
+        Price(6400);
+        Mesh("blueprint.msh");
+        Skin("default");
+        BaseItem("Firearm_Rifle", "", "");
+        RequiredItem("Craft_MetalScrap", 6);
+		RequiredItem("Craft_TinCan", 1);
+        RequiredItem("Craft_DuctTape", 3);
+        Color(Color_Blue);
+        CraftedItem("Rust_AssaultRifle", 1, 1);
+        CraftplanType("WeaponDLC");
+        UniqueSaveID(9936);
+        HudIcon("blueprint_b");
+        GameVersion(41);
+        OwnedAtStart();
+        InheritBaseStats();
+    }
+	
+	Item("Craftplan_Rust_SalvagedCleaver_DLC", CategoryType_Collectable)
+    {
+        Name("&Craftplan_Rust_SalvagedCleaver_DLC_N&");
+        Description("&Craftplan_Rust_SalvagedCleaver_DLC_D&");
+        ItemType(ItemType_CraftPlan);
+        Price(6400);
+        Mesh("blueprint.msh");
+        Skin("default");
+        BaseItem("Melee_Pipe", "", "");
+        BaseItem("Melee_Crowbar", "", "");
+        BaseItem("Melee_Wrench", "", "");
+        BaseItem("Melee_Hammer", "", "");
+        BaseItem("Melee_MilitaryShovel", "", "");
+        BaseItem("Melee_ShortAxe", "", "");
+        BaseItem("Melee_Pick", "", "");
+        RequiredItem("Craft_MetalScrap", 5);
+		RequiredItem("Craft_DuctTape", 3);
+		RequiredItem("Craft_RazorBlade", 4);
+		RequiredItem("Craft_Nails", 10);
+        Color(Color_Blue);
+        CraftedItem("Rust_SalvagedCleaver", 1, 1);
+        CraftplanType("WeaponDLC");
+        UniqueSaveID(9937);
+        HudIcon("blueprint_b");
+        GameVersion(41);
+        InheritBaseStats();
+        OwnedAtStart();
+    }
+}

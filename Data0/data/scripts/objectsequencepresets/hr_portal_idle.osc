@@ -1,0 +1,28 @@
+ sub hr_portal_idle()
+{
+Preset("hr_portal_idle")
+
+// 4 - LO Main Glow 1.2
+// 5 - LO Symbol 1.2
+
+
+    {	
+		OnLevelStart()
+	    {
+			SetLightIntensity(4, 0.0, 0.0);
+			SetLightIntensity(5, 0.0, 0.0);
+ 		}
+		
+		OnEnable()
+	    {
+			SetLightIntensity(4, 0.25, 1.2);
+			SetLightIntensity(5, 0.25, 1.2);
+ 		}
+
+		OnDisable()
+		{
+			SetLightIntensity(4, 1.3, 0.0);
+			SetLightIntensity(5, 1.3, 0.0);
+		}
+    }
+}

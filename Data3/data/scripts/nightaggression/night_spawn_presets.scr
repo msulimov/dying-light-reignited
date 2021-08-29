@@ -1,0 +1,361 @@
+
+    PresetDef("Volatile_Outside")
+    {
+        Difficult(30)
+        AIPreset("Volatile")
+        SpawnCondition("nav_mesh, -1;__any__, 1;t_INIT, -1")
+        DisallowedMaps("Wasteland")
+        MinDistBtwZombies(20)
+        ForceTargetType(3)
+        DieProbality(5)
+		SarcophagusTime(2)
+		RelativePresets("Vessel_Init;Night_Walker_Init")										  
+    }
+
+    PresetDef("Volatile_OutsideIncrIntensity")
+    {
+        Difficult(666)
+        AIPreset("Volatile")
+        SpawnCondition("t_INC_VOLATILE, 1")
+        DisallowedMaps("Wasteland")
+        MinDistBtwZombies(20)
+        ForceTargetType(-1)
+        DieProbality(5)
+		SarcophagusTime(2)
+		RelativePresets("Vessel_Init;Night_Walker_Init")										  
+    }
+
+    PresetDef("Volatile")
+    {
+        Difficult(666)
+        AIPreset("Volatile")
+        SpawnCondition("nav_mesh, -1;__any__, 1;t_INIT, -1")
+        DisallowedMaps("Wasteland")
+        MinDistBtwZombies(20)
+        ForceTargetType(2)
+        TimeBtwSpawnZombies(1)
+        DieProbality(0)
+		SarcophagusTime(0)
+		MinSpawnDistance(10)
+		RelativePresets("Vessel_Init;Night_Walker_Init")									  
+    }
+
+    PresetDef("Volatile_Nav")
+    {
+        Difficult(40)
+        AIPreset("Volatile")
+        SpawnCondition("nav_mesh, 1")
+        MinDistBtwZombies(20)
+        ForceTargetType(3)
+        TimeBtwSpawnZombies(1)
+        DieProbality(5)
+		SarcophagusTime(2)
+		MinSpawnDistance(10)
+    }
+
+    PresetDef("Volatile_Pit")
+    {
+        Difficult(666)
+        AIPreset("Volatile")
+        SpawnCondition("t_INIT, 1;z_INFECTED, 1")
+        MinDistBtwZombies(20)
+		TimeBtwSpawnZombies(3)
+        ForceTargetType(2)
+        RelativePresets("Vessel_Init;Night_Walker_Init")
+        DieProbality(0)
+		MinSpawnDistance(10)
+		SarcophagusTime(2)
+    }
+
+
+    PresetDef("Volatile_Hard")
+    {
+        Difficult(40)
+		AIPreset("Volatile_Super")
+		MinStatusLevel(12)
+		
+        SpawnCondition("nav_mesh, -1;__any__, 1;t_INIT, -1")
+        DisallowedMaps("Wasteland")
+        MinDistBtwZombies(20)
+        ForceTargetType(3)
+        TimeBtwSpawnZombies(3)
+		MinSpawnDistance(15)
+        DieProbality(0)
+		SarcophagusTime(0)
+    }
+
+	PresetDef("Volatile_Eating_Corpse")
+    {
+        Difficult(40)
+        AIPreset("Volatile")
+        SpawnCondition("nav_mesh, -1;__any__, 1;t_INIT, -1")
+        DisallowedMaps("Stadium")
+		DisallowedMaps("old_town_outposts_museum")
+		DisallowedMaps("old_town_outposts_radio")
+		DisallowedMaps("old_town_outposts_office")
+		TimeBtwSpawnZombies(4)
+		MinSpawnDistance(10)
+		MinDistBtwZombies(20)
+        AttractorToSpawnWithAI("Volatile_eating_corpse_01")
+        MeshToSpawnWithAI("dead_body_c.msh", [0.03, 0, 1.20])
+        SpawnOnFlatTerrain(1)
+        ForceTargetType(-1)
+    }
+
+    PresetDef("Volatile_Pit_Hard")
+    {
+        Difficult(40)
+		AIPreset("Volatile_Super")
+		MinStatusLevel(12)
+
+        SpawnCondition("t_INIT, 0.7;z_INFECTED, 0.7")
+        MinDistBtwZombies(20)
+        ForceTargetType(3)
+        RelativePresets("Vessel_Init;Night_Walker_Init")
+        DieProbality(0)
+		SarcophagusTime(0)
+    }
+
+
+    PresetDef("Volatile_Scream")
+    {
+        Difficult(666)
+        AIPreset("Volatile")
+        SpawnCondition("nav_mesh, 1")
+        ForceTargetType(2)
+        TimeBtwSpawnZombies(0)
+		SarcophagusTime(2)
+		DieProbality(0)
+		RelativePresets("Vessel_Init;Night_Walker_Init")						  
+    }
+
+    PresetDef("Volatile_Patrol")
+    {
+        Difficult(666)
+        AIPreset("Volatile")
+        SpawnCondition("__any__, 1;nav_mesh, -1;t_INIT, -1;p_ROOF, -1;p_INTERIOR, -1")
+        MinDistBtwZombies(20)
+        ForceTargetType(2)
+        TimeBtwSpawnZombies(0)
+		SarcophagusTime(0)
+		MinSpawnDistance(15)
+		RelativePresets("Vessel_Init;Night_Walker_Init")
+    }
+
+    PresetDef("Volatile_Patrol_Super")
+    {
+        Difficult(666)
+        AIPreset("Volatile_Super")
+		MinStatusLevel(15)
+        SpawnCondition("__any__, 1;nav_mesh, -1;t_INIT, -1;p_ROOF, -1;p_INTERIOR, -1")
+        MinDistBtwZombies(25)
+        ForceTargetType(-1)
+        TimeBtwSpawnZombies(0)
+		SarcophagusTime(0)
+		MinSpawnDistance(15)
+		RelativePresets("Vessel_Init;Night_Walker_Init")
+    }
+
+	
+	PresetDef("Volatile_Patrol_OT")
+    {
+        Difficult(666)
+        AIPreset("Volatile")
+		AIPreset("Volatile_Super")
+        SpawnCondition("__any__, 1;nav_mesh, -1;t_INIT, -1;p_ROOF, -1;p_INTERIOR, -1")
+        MinDistBtwZombies(25)
+        ForceTargetType(2)
+        TimeBtwSpawnZombies(0)
+		SarcophagusTime(0)
+		MinSpawnDistance(15)
+		RelativePresets("Vessel_Init;Night_Walker_Init")					
+    }
+
+	PresetDef("Volatile_Patrol_Easy")
+    {
+        Difficult(666)
+        AIPreset("Volatile")
+        SpawnCondition("__any__, 1;nav_mesh, -1;t_INIT, -1;p_ROOF, -1;p_INTERIOR, -1")
+        MinDistBtwZombies(20)
+        ForceTargetType(0)
+        TimeBtwSpawnZombies(0)
+		SarcophagusTime(0)
+		MinSpawnDistance(10)
+		RelativePresets("Vessel_Init;Night_Walker_Init")
+    }
+
+    PresetDef("Volatile_PrimeGuard")
+    {
+        Difficult(40)
+        AIPreset("Volatile")
+		UseCondition("Night;PlayerZombie_NotExist")
+        SpawnCondition("z_VOLATILE, 1;t_INIT, -1;")
+        MinDistBtwZombies(20)
+        ForceTargetType(2)
+        DieProbality(0)
+		SarcophagusTime(0)
+    }
+
+	
+    PresetDef("Night_Walker")
+    {
+        Difficult(666)
+        AIPreset("Biter_Man;Biter_Woman")
+        DiffLvlTableName("Biter_Man;Biter_Woman")
+        ForceTargetType(2)
+		MinDistBtwZombies(25)	   
+        TimeBtwSpawnZombies(0)
+        CanSpawnIntoCrowd(1,"_NW")
+        DieProbality(0)
+        SarcophagusTime(0)
+		MinSpawnDistance(15)
+		RelativePresets("Vessel_Init;Night_Walker_Init")		
+    }
+
+    PresetDef("Night_Walker_Special_Tranformation")
+    {
+        Difficult(666)
+        AIPreset("Biter_Man;Biter_Woman")
+        DiffLvlTableName("Biter_Man;Biter_Woman")
+        TimeBtwSpawnZombies(0)
+		MinDistBtwZombies(25) 
+        CanSpawnIntoCrowd(1,"_NW")
+        DieProbality(0)
+        SarcophagusTime(0)
+    }
+
+    PresetDef("Night_Walker_Init")
+    {
+        Difficult(666)
+        AIPreset("NightWalker_Man;NightWalker_Woman")
+        SpawnCondition("__any__, 1;t_INIT, 1;z_INFECTED, 1;p_WIDE, 1;p_SQUARE, 1;p_ROOF, 1")
+        MinDistBtwZombies(25)
+        ForceTargetType(3)
+		MinSpawnDistance(15)
+        RelativePresets("Volatile_Pit;Night_Walker_Init")
+        DieProbality(0)
+        SarcophagusTime(0)
+    }
+
+    PresetDef("Night_Walker_Nav")
+    {
+        Difficult(666)
+        AIPreset("NightWalker_Man;NightWalker_Woman")
+        SpawnCondition("nav_mesh, 1")
+        MinDistBtwZombies(25)
+        ForceTargetType(3)
+		MinSpawnDistance(15)
+        TimeBtwSpawnZombies(0)
+        DieProbality(0)
+        SarcophagusTime(0)
+		RelativePresets("Vessel_Init;Night_Walker_Init")										  
+    }
+
+    PresetDef("Night_Walker_Patrol")
+    {
+        Difficult(666)
+        AIPreset("NightWalker_Man;NightWalker_Woman")
+        SpawnCondition("__any__, 1;nav_mesh, 1;p_WIDE, 1;p_SQUARE, 1;t_INIT, 1;p_ROOF, 1;p_INTERIOR, 1")
+        MinDistBtwZombies(25)
+        ForceTargetType(-1)
+		MinSpawnDistance(15)
+        TimeBtwSpawnZombies(0)
+		SarcophagusTime(0)
+		RelativePresets("Vessel_Init;Night_Walker_Init")										  
+    }
+
+	
+
+    PresetDef("Night_Suicider_Bomber")
+    {
+        Difficult(666)
+        AIPreset("RunningBomber")
+        SpawnCondition("__any__, 1;nav_mesh, 1;p_WIDE, 1;p_SQUARE, 1;t_INIT, 1;p_ROOF, 1;p_INTERIOR, 1")
+        DisallowedMaps("Wasteland")
+        MinDistBtwZombies(30)
+        ForceTargetType(3)
+        TimeBtwSpawnZombies(10)
+        OnSpawnSound("suicider_bobmer_spawn_near_ext_00.wav")
+		SarcophagusTime(2)
+    }
+
+	PresetDef("Screamer")
+    {
+        Difficult(20)
+        AIPreset("Screamer")
+        SpawnCondition("__any__, 1;t_INIT, 1;z_INFECTED, 1;p_WIDE, 1;p_SQUARE, 1;p_ROOF, 1")
+													 
+									   
+        MinDistBtwZombies(100)
+        RemoveDistanceIfNotContact(50)
+        TimeBtwSpawnZombies(0)
+											 
+														  
+    }
+
+    PresetDef("Melee_Fighter_With_Pipe_Init")
+    {
+        Difficult(20)
+        AIPreset("Enemy_Headhunter_Melee")
+        SpawnCondition("t_INIT, 0.7;z_MELEE_FIGHTER, 0.7")
+        //AllowedMaps("Old_Town")						   
+        MinDistBtwZombies(3)
+        RemoveDistanceIfNotContact(45)
+        ForceTargetType(2)
+        TimeBtwSpawnZombies(0)
+        UseCondition("Scavegers_Outpost_Far")
+        RelativePresets("Human_To_Infected_In_Attractor;")
+    }
+
+    PresetDef("Melee_Fighter_With_Pipe")
+    {
+        Difficult(20)
+        SpawnCondition("z_MELEE_FIGHTER, 1;p_WIDE, 1;p_SQUARE, 1;p_ROOF, -1")
+        AIPreset("Enemy_Headhunter_Melee")
+        //AllowedMaps("Old_Town")
+        MinDistBtwZombies(3)
+        TimeBtwSpawnZombies(0)
+        ForceTargetType(2)
+        UseCondition("Scavegers_Outpost_Far")
+        RelativePresets("Human_To_Infected_In_Attractor;")
+    }
+
+	PresetDef("Defender_Fighter")
+    {
+        Difficult(20)
+        SpawnCondition("z_MELEE_FIGHTER, 1;p_WIDE, 1;p_SQUARE, 1;p_ROOF, -1")
+        AIPreset("Enemy_S_Bandit_FirearmDefender001")
+        //AllowedMaps("Old_Town;slums")
+        MinDistBtwZombies(3)
+        TimeBtwSpawnZombies(0)
+        ForceTargetType(2)
+        UseCondition("Scavegers_Outpost_Far")
+        RelativePresets("Human_To_Infected_In_Attractor;")
+    }
+	
+	PresetDef("Melee_Fighter_Rais")
+    {
+        Difficult(20)
+        SpawnCondition("z_MELEE_FIGHTER, 1;p_WIDE, 1;p_SQUARE, 1;p_ROOF, -1")
+		AIPreset("enc_slums_maskedbandit_leader_lvl00;enc_slums_maskedbandit_leader_lvl01;enc_slums_maskedbandit_leader_lvl02;enc_slums_maskedbandit_leader_lvl03;enc_slums_maskedbandit_lvl00;enc_slums_maskedbandit_lvl01;enc_slums_maskedbandit_lvl02;Enemy_GR_Gang_Melee001;enc_survivor_clench_01;enc_maskedbandit_01_weapon_FLASHLIGHT_TEST")
+		
+        //AllowedMaps("Old_Town;slums")
+        MinDistBtwZombies(3)
+        TimeBtwSpawnZombies(0)
+        ForceTargetType(2)
+        UseCondition("Scavegers_Outpost_Far")
+        RelativePresets("Human_To_Infected_In_Attractor;")
+    }
+
+	PresetDef("Melee_Survivor")
+    {
+        Difficult(20)
+        SpawnCondition("z_MELEE_FIGHTER, 1;p_WIDE, 1;p_SQUARE, 1;p_ROOF, -1")
+		AIPreset("enc_survivor_clench_01;")
+        //AllowedMaps("Old_Town;slums")
+        MinDistBtwZombies(3)
+        TimeBtwSpawnZombies(0)
+        ForceTargetType(2)
+        UseCondition("Scavegers_Outpost_Far")
+        RelativePresets("Human_To_Infected_In_Attractor;")
+    }

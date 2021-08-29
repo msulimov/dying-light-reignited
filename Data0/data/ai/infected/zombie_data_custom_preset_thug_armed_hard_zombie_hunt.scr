@@ -1,0 +1,29 @@
+!include("zombie_data_custom_preset_thug_armed_medium.scr")
+
+// thug hard diff
+
+ParamFloat("turn_speed", 40.0)
+ParamFloat("attack_turn_speed", 360.0)
+ParamFloat("attack_anim_related_turn_speed_limit", 360.0)
+ParamFloat("melee_weapon_target_prediction_time", 0.5)
+ParamFloat("round_attack_prob", 0.8)
+ParamFloat("damage_mul", 5.0)							//amount of damage dealt to player - value taken from curve: zombie_melee_damage
+ParamFloat("damage_mul_vs_other_ai", 2.0)
+ParamFloat("min_time_btw_taunts", 20.0)
+ParamFloat("taunt_prob_on_target_change", 1.0)
+ParamFloat("taunt_prob_on_take_damage", 33.0)
+ParamFloat("health_mul", 70.0)
+ParamFloat("bullet_head_hit_damage_mult", 0.2)
+ParamFloat("experience_award", 7500.0)
+ParamFloat("coop_damage_mul_2", 1.50) // damage multiplayer for 2 players coop
+ParamFloat("coop_damage_mul_3", 1.75) // damage multiplayer for 3 players coop
+ParamFloat("coop_damage_mul_4", 2.00) // damage multiplayer for 4 players coop
+
+ParamFloat("heavy_severity_threshold", 1.0)
+
+ParamFloat("overall_speed_factor", 0.85) 			// overall animations speed multiplayer (used for global increasing / decreasing AI animation speed)
+ParamFloat("ragdoll_speed_simulation_mul", 0.85) 	// sets speed of ragdoll simulation (lowering it makes feel that character is heavier)
+ParamFloat("bulletproof_vest_dmg_mul", 0.33)
+ParamBool("is_freak", 1)
+
+ParamBool("can_give_camouflage", 0)

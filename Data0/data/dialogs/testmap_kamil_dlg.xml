@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="windows-1250"?>
+<speakers>
+	<speaker name="TK_DLG_TakeZombieQuestRobert">
+		<group name="TK_Robert_AI" auto_use="true">
+			<state type="use" range="25.000000" volume="1.000000" subtitles="true">
+				<dialog>
+					<line id="TK_Robert_TakeZombieQuestRobert_01DLG_01" speaker="TK_DLG_TakeZombieQuestRobert" anim_name="alberto_sitting_mimics_forced_gesture_01" anim_target_2="_PLAYER_" anim_target_3="TK_DLG_TakeZombieQuestRobert" pause="0.100000"/>
+					<line id="TK_Robert_TakeZombieQuestRobert_01DLG_02" speaker="TK_DLG_TakeZombieQuestRobert" anim_target_2="TK_DLG_TakeZombieQuestRobert" pause="0.100000"/>
+					<line id="TK_Robert_TakeZombieQuestRobert_01DLG_03" pause="0.100000"/>
+					<line id="TK_Robert_TakeZombieQuestRobert_01DLG_04" pause="0.100000"/>
+				</dialog>
+			</state>
+		</group>
+		<group name="TK_Robert_Reward">
+			<state type="use" range="25.000000" volume="1.000000" subtitles="true">
+				<dialog>
+					<line id="TK_Robert_TakeZombieQuestRobert_02DLG_01" pause="0.100000"/>
+				</dialog>
+			</state>
+		</group>
+	</speaker>
+	<speaker name="TK_Robert_AI">
+		<group name="Alexei_Antennas_06DLG01">
+			<state type="use" range="25.000000" volume="1.000000" subtitles="true">
+				<dialog attract_player="false">
+					<line id="Alexei_Antennas_06DLG01" pause="0.100000"/>
+					<line id="Player_Antennas_06DLG02" pause="0.100000"/>
+					<line id="Alexei_Antennas_06DLG03" pause="0.100000"/>
+					<line id="Kristov_Antennas_06DLG04" pause="0.100000"/>
+					<line id="Player_Antennas_06DLG05" pause="0.100000"/>
+					<line id="Alexei_Antennas_06DLG06" pause="0.100000"/>
+					<line id="Player_Antennas_06DLG07" pause="0.100000"/>
+					<line id="Alexei_Antennas_06DLG08" pause="0.100000"/>
+				</dialog>
+			</state>
+		</group>
+	</speaker>
+</speakers>
+

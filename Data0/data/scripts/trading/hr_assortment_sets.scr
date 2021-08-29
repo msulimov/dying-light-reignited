@@ -1,0 +1,269 @@
+/////////////////////////////////////////////////////
+/////////// HELLRAID QUARTERMASTER SETS /////////////
+/////////////////////////////////////////////////////
+
+sub Hellraid_Items() {
+
+    Set("Hr_Level_1", "whites_only", 2, 2)
+    {
+		MinHellraidLevel(0);
+        Limited();
+    }
+    Set("Hr_Level_2", "green_only", 2, 2)
+    {
+		MinHellraidLevel(1);
+        Limited();
+    }
+    Set("Hr_Level_3", "green_only", 2, 2)
+    {
+		MinHellraidLevel(2);
+        Limited();
+    }
+    Set("Hr_Level_4", "green_only", 2, 2)
+    {
+		MinHellraidLevel(3);
+        Limited();
+    }
+
+    Set("Hr_Level_5", "blue_only", 2, 2)
+    {
+		MinHellraidLevel(4);
+        Limited();
+    }
+    Set("Hr_Level_6", "blue_only", 2, 2)
+    {
+		MinHellraidLevel(5);
+        Limited();
+    }
+    Set("Hr_Level_7", "violet_only", 2, 2)
+    {
+		MinHellraidLevel(6);
+        Limited();
+    }
+    Set("Hr_Level_8", "violet_only", 2, 2)
+    {
+		MinHellraidLevel(7);
+        Limited();
+    }
+
+    Set("Hr_Level_9", "orange_only", 2, 2)
+    {
+		MinHellraidLevel(8);
+        Limited();
+    }
+	
+
+    Set("Hr_Level_10", "Platinum_only", 2, 2)
+    {
+		MinHellraidLevel(9);
+        Limited();
+    }
+	
+	Set("Hr_SwordsmanshipBounty", "Platinum_only", 2, 2)
+    {
+		MinHellraidLevel(9);
+		RequiredItem("Craftplan_HRSword_R11_SHOP");
+        Limited();
+    }
+	
+	Set("Hr_Level_11", "blue_only", 2, 2)
+    {
+		MinHellraidLevel(10);
+        Limited();
+    }
+	
+	Set("Hr_Level_12", "blue_only", 2, 2)
+    {
+		MinHellraidLevel(11);
+        Limited();
+    }	
+	
+	Set("Hr_BowTrials", "violet_only", 2, 2)
+    {
+		RequiredItem("Craftplan_HRBow_R13");
+		Limited();
+    }
+	
+	Set("Hr_Level_13", "violet_only", 2, 2)
+    {
+		MinHellraidLevel(12);
+		Limited();
+    }
+	
+	Set("Hr_BowTrials_Ammo", "whites_only", 2, 2)
+    {
+		RequiredItem("Craftplan_HRBow_R13");
+		Limited();
+    }		
+}
+
+/////////////////////////////////////////////////////
+//////////// HELLRAID SHOP WEAPONS SETS /////////////
+/////////////////////////////////////////////////////
+
+sub Hellraid_Items_Shop() 
+{
+    Set("Hr_Shop_Level_1", "green_only", 2, 2)
+    {
+		MinHellraidLevel(0);
+		MaxStatusLevel(24);
+    }
+	
+    Set("Hr_Shop_Level_2", "green_only", 2, 2)
+    {
+		MinHellraidLevel(1);
+		MaxStatusLevel(24);
+    }
+    Set("Hr_Shop_Level_3", "blue_only", 2, 2)
+    {
+		MinHellraidLevel(2);
+		MaxStatusLevel(24);
+    }
+    Set("Hr_Shop_Level_4", "blue_only", 2, 2)
+    {
+		MinHellraidLevel(3);
+		MaxStatusLevel(24);
+    }
+
+    Set("Hr_Shop_Level_5", "blue_only", 2, 2)
+    {
+		MinHellraidLevel(4);
+		MaxStatusLevel(24);
+    }
+	
+    Set("Hr_Shop_Level_6", "violet_only", 2, 2)
+    {
+		MinHellraidLevel(5);
+		MaxStatusLevel(24);
+    }
+	
+    Set("Hr_Shop_Level_7", "violet_only", 2, 2)
+    {
+		MinHellraidLevel(6);
+		MaxStatusLevel(24);
+    }
+	
+    Set("Hr_Shop_Level_8", "orange_only", 2, 2)
+    {
+		MinHellraidLevel(7);
+		MaxStatusLevel(24);
+    }
+
+    Set("Hr_Shop_Level_9", "orange_only", 2, 2)
+    {
+		MinHellraidLevel(8);
+		MaxStatusLevel(24);
+    }
+
+    Set("Hr_Shop_Level_10", "Platinum_only", 2, 2)
+    {
+		MinHellraidLevel(9);
+		MaxStatusLevel(24);
+    }
+	
+	Set("Hr_Shop_Level_11", "blue_only", 3, 3)
+    {
+		MinHellraidLevel(10);
+		MaxStatusLevel(24);
+    }
+	Set("Hr_Shop_Level_12", "blue_only", 3, 3)
+    {
+		MinHellraidLevel(11);
+		MaxStatusLevel(24);
+    }
+	Set("Hr_Shop_Level_13", "blue_only", 3, 3)
+    {
+		MinHellraidLevel(12);
+		MaxStatusLevel(24);
+    }
+	
+	/////////////////////////////////////////////////////
+	/////////////// LEGENDARY WEAPONS SETS //////////////
+	/////////////////////////////////////////////////////
+	
+	Set("Hr_Shop_Legendary_Level_1",           "Platinum_only",   2, 2)
+    {
+        MinStatusLevel(25);
+        MaxStatusLevel(35);
+		MinHellraidLevel(0);
+    }	
+	
+	Set("Hr_Shop_Legendary_Level_2",           "Platinum_only",   2, 2)
+    {
+        MinStatusLevel(25);
+        MaxStatusLevel(35);
+		MinHellraidLevel(1);
+    }
+	
+	Set("Hr_Shop_Legendary_Level_3",           "Platinum_only",   2, 2)
+    {
+        MinStatusLevel(25);
+        MaxStatusLevel(35);
+		MinHellraidLevel(2);
+    }
+	
+	Set("Hr_Shop_Legendary_Level_4",           "Platinum_only",   2, 2)
+    {
+        MinStatusLevel(25);
+        MaxStatusLevel(35);
+		MinHellraidLevel(3);
+    }
+	
+	Set("Hr_Shop_Legendary_Level_5",           "Platinum_only",   2, 2)
+    {
+        MinStatusLevel(25);
+        MaxStatusLevel(35);
+		MinHellraidLevel(4);
+    }
+	
+	Set("Hr_Shop_Legendary_Level_6",           "Platinum_only",   2, 2)
+    {
+        MinStatusLevel(25);
+        MaxStatusLevel(35);
+		MinHellraidLevel(5);
+    }
+	
+	Set("Hr_Shop_Legendary_Level_7",           "Platinum_only",   2, 2)
+    {
+        MinStatusLevel(25);
+        MaxStatusLevel(35);
+		MinHellraidLevel(6);
+    }
+	
+	Set("Hr_Shop_Legendary_Level_8",           "Platinum_only",   2, 2)
+    {
+        MinStatusLevel(25);
+        MaxStatusLevel(35);
+		MinHellraidLevel(7);
+    }
+	
+	Set("Hr_Shop_Legendary_Level_9",           "Platinum_only",   2, 2)
+    {
+        MinStatusLevel(25);
+        MaxStatusLevel(35);
+		MinHellraidLevel(8);
+    }
+	
+	Set("Hr_Shop_Legendary_Level_10",           "Platinum_only",   3, 3)
+    {
+        MinStatusLevel(25);
+        MaxStatusLevel(35);
+		MinHellraidLevel(9);
+    }
+	
+	// skip lvl 11, shield
+	
+	Set("Hr_Shop_Legendary_Level_12",           "Platinum_only",   3, 3)
+    {
+        MinStatusLevel(25);
+        MaxStatusLevel(35);
+		MinHellraidLevel(11);
+    }
+	
+	Set("Hr_Shop_Legendary_Level_13",           "Platinum_only",   3, 3)
+    {
+        MinStatusLevel(25);
+        MaxStatusLevel(35);
+		MinHellraidLevel(12);
+    }
+}

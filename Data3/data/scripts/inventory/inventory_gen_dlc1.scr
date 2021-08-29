@@ -1,0 +1,12 @@
+import "inventorystuff.scr" 
+import "dlcrecipes.scr"
+import "customcrafting.scr"
+import "customitems.scr"
+
+sub main(){
+
+	use customItems();
+	use customRecipes();
+	use extraDLCRecipes();
+	
+}

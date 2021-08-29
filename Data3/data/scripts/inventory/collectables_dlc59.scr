@@ -1,0 +1,97 @@
+//HARRAN TACTICAL BUNDLE
+
+import "inventorystuff.scr" 
+sub main() 
+{		
+	Item("Craftplan_Firearm_Rifle_Tactical", CategoryType_Collectable)
+    {
+        Name("&Craftplan_Firearm_Rifle_Tactical_N&");
+        Description("&Craftplan_Firearm_Rifle_Tactical_D&");
+        ItemType(ItemType_CraftPlan);
+        Price(68);
+        Mesh("blueprint.msh");
+        Skin("default");
+        BaseItem("Firearm_Rifle", "", "");
+        RequiredItem("Craft_MetalScrap", 12);
+        RequiredItem("Craft_DuctTape", 4);
+		RequiredItem("Craft_String", 4);
+		RequiredItem("Craft_Nails", 4);
+        RequiredItem("Craft_Bleach", 6);
+        RequiredItem("Craft_Electronics", 6);
+		RequiredItem("Craft_Batteries", 5);
+		RequiredItem("Craft_Power_Cable", 5);
+		RequiredItem("Craft_PlasticTube", 5);
+		RequiredItem("Craft_RazorBlade", 4);
+		RequiredItem("ZZZZ3_Component_NutsBolts", 2);
+        Color(Color_Blue);
+        CraftedItem("Firearm_Rifle_Tactical", 1, 1);
+        CraftplanType("Developer");
+        UniqueSaveID(9931);
+        HudIcon("blueprint_b");
+        GameVersion(39);
+        OwnedAtStart();
+        InheritBaseStats();
+    }
+	
+	Item("Craftplan_Firearm_Shotgun_Tactical", CategoryType_Collectable)
+    {
+        Name("&Craftplan_Firearm_Shotgun_Tactical_N&");
+        Description("&Craftplan_Firearm_Shotgun_Tactical_D&");
+        ItemType(ItemType_CraftPlan);
+        Price(68);
+        Mesh("blueprint.msh");
+        Skin("default");
+        BaseItem("Firearm_ShotgunA", "", "");
+        RequiredItem("Craft_MetalScrap", 12);
+        RequiredItem("Craft_DuctTape", 4);
+		RequiredItem("Craft_String", 4);
+		RequiredItem("Craft_Nails", 4);
+        RequiredItem("Craft_Bleach", 6);
+        RequiredItem("Craft_Electronics", 6);
+		RequiredItem("Craft_Batteries", 5);
+		RequiredItem("Craft_Power_Cable", 5);
+		RequiredItem("Craft_PlasticTube", 5);
+		RequiredItem("Craft_RazorBlade", 4);
+		RequiredItem("ZZZZ3_Component_NutsBolts", 2);
+        Color(Color_Blue);
+        CraftedItem("Firearm_Shotgun_Tactical", 1, 1);
+        CraftplanType("Developer");
+        UniqueSaveID(9932);
+        HudIcon("blueprint_b");
+        GameVersion(39);
+        OwnedAtStart();
+        InheritBaseStats();
+    }
+	
+	Item("Craftplan_Melee_BigHammer_Tactical", CategoryType_Collectable)
+    {
+        Name("&Craftplan_Melee_BigHammer_Tactical_N&");
+        Description("&Craftplan_Melee_BigHammer_Tactical_D&");
+        ItemType(ItemType_CraftPlan);
+        Price(50);
+        Mesh("blueprint.msh");
+        Skin("default");
+        BaseItem("Melee_BigHammer", "", "");
+        BaseItem("Melee_AxeBig", "", "");
+        BaseItem("Melee_Pickaxe", "", "");
+        RequiredItem("Craft_MetalScrap", 12);
+        RequiredItem("Craft_DuctTape", 4);
+		RequiredItem("Craft_String", 4);
+		RequiredItem("Craft_Nails", 4);
+        RequiredItem("Craft_Bleach", 6);
+        RequiredItem("Craft_Electronics", 6);
+		RequiredItem("Craft_Batteries", 5);
+		RequiredItem("Craft_Power_Cable", 5);
+		RequiredItem("Craft_PlasticTube", 5);
+		RequiredItem("Craft_RazorBlade", 4);
+		RequiredItem("ZZZZ3_Component_NutsBolts", 2);
+        Color(Color_Blue);
+        CraftedItem("Melee_BigHammer_Tactical", 1, 1);
+        CraftplanType("Developer");
+        UniqueSaveID(9933);
+        HudIcon("blueprint_b");
+        GameVersion(39);
+        InheritBaseStats();
+        OwnedAtStart();
+    }
+}

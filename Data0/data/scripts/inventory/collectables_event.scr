@@ -1,0 +1,200 @@
+import "inventorystuff.scr"
+
+sub main()
+{
+	//////////////////////////////////////////////////////
+	////////////////// RUST CROSSOVER ////////////////////
+	////////////////// GOLD VERSIONS /////////////////////
+	//////////////////////////////////////////////////////
+	
+	Item("Craftplan_Rust_SubmachineGun_Gold", CategoryType_Collectable)
+    {
+        Name("&Craftplan_Rust_SubmachineGun_Gold_N&");
+        Description("&Craftplan_Rust_SubmachineGun_Gold_D&");
+        ItemType(ItemType_CraftPlan);
+        Price(6400);
+        Mesh("blueprint.msh");
+        Skin("default");
+		BaseItem("Rust_SubmachineGun", "", "");
+        RequiredItem("Craft_MetalScrap", 6);
+		RequiredItem("Craft_TinCan", 1);
+        RequiredItem("Craft_DuctTape", 3);
+        Color(Color_Platinum);
+        CraftedItem("Rust_SubmachineGun_Gold", 1, 1);
+        CraftplanType("Weapon");
+        UniqueSaveID(9938);
+        HudIcon("blueprint_b");
+        GameVersion(41);
+        InheritBaseStats();
+    }
+	
+	Item("Craftplan_Rust_AssaultRifle_Gold", CategoryType_Collectable)
+    {
+        Name("&Craftplan_Rust_AssaultRifle_Gold_N&");
+        Description("&Craftplan_Rust_AssaultRifle_Gold_D&");
+        ItemType(ItemType_CraftPlan);
+        Price(6400);
+        Mesh("blueprint.msh");
+        Skin("default");
+        BaseItem("Rust_AssaultRifle", "", "");
+        RequiredItem("Craft_MetalScrap", 6);
+		RequiredItem("Craft_TinCan", 1);
+        RequiredItem("Craft_DuctTape", 3);
+        Color(Color_Platinum);
+        CraftedItem("Rust_AssaultRifle_Gold", 1, 1);
+        CraftplanType("Weapon");
+        UniqueSaveID(9939);
+        HudIcon("blueprint_b");
+        GameVersion(41);
+        InheritBaseStats();
+    }
+	
+	Item("Craftplan_Rust_SalvagedCleaver_Gold", CategoryType_Collectable)
+    {
+        Name("&Craftplan_Rust_SalvagedCleaver_Gold_N&");
+        Description("&Craftplan_Rust_SalvagedCleaver_Gold_D&");
+        ItemType(ItemType_CraftPlan);
+        Price(6400);
+        Mesh("blueprint.msh");
+        Skin("default");
+        BaseItem("Rust_SalvagedCleaver", "", "");
+        RequiredItem("Craft_MetalScrap", 5);
+		RequiredItem("Craft_DuctTape", 3);
+		RequiredItem("Craft_RazorBlade", 4);
+		RequiredItem("Craft_Nails", 10);
+        Color(Color_Platinum);
+        CraftedItem("Rust_SalvagedCleaver_Gold", 1, 1);
+        CraftplanType("Weapon");
+        UniqueSaveID(9940);
+        HudIcon("blueprint_b");
+        GameVersion(41);
+        InheritBaseStats();
+    }
+	
+	//////////////////// EXTRA ITEMS /////////////////////
+	
+	Item("Craftplan_Throwable_ExplosiveBomb_Freeze", CategoryType_Collectable)
+    {
+        Name("&Craftplan_Throwable_ExplosiveBomb_Freeze_N&");
+        Description("&Craftplan_Throwable_ExplosiveBomb_Freeze_D&");
+        ItemType(ItemType_CraftPlan);
+        Price(1000);
+        Mesh("blueprint.msh");
+        Skin("default");
+		RequiredItem("Craft_Sugar", 2);
+		RequiredItem("Craft_DuctTape", 1);
+		RequiredItem("Craft_Batteries", 2);
+		RequiredItem("Craft_Electronics", 2);
+		RequiredItem("Craft_Bleach", 2);
+        Color(Color_Blue);
+        CraftedItem("Throwable_ExplosiveBomb_Freeze", 2, 3);
+        CraftplanType("Throwable");
+        UniqueSaveID(9580);
+        HudIcon("weapon_c4");
+		GameVersion(41);	
+    }
+	
+	Item("Craftplan_Throwable_ExplosiveBomb_Poison", CategoryType_Collectable)
+    {
+        Name("&Craftplan_Throwable_ExplosiveBomb_Poison_N&");
+        Description("&Craftplan_Throwable_ExplosiveBomb_Poison_D&");
+        ItemType(ItemType_CraftPlan);
+        Price(1000);
+        Mesh("blueprint.msh");
+        Skin("default");
+		RequiredItem("Craft_Sugar", 2);
+		RequiredItem("Craft_DuctTape", 1);
+		RequiredItem("Craft_Batteries", 2);
+		RequiredItem("Craft_Electronics", 2);
+		RequiredItem("Craft_ToxicPlant", 2);
+        Color(Color_Blue);
+        CraftedItem("Throwable_ExplosiveBomb_Poison", 2, 3);
+        CraftplanType("Throwable");
+        UniqueSaveID(9581);
+        HudIcon("weapon_c4");
+		GameVersion(41);	
+    }
+	
+	Item("Craftplan_Throwable_ExplosiveBomb_Burning", CategoryType_Collectable)
+    {
+        Name("&Craftplan_Throwable_ExplosiveBomb_Burning_N&");
+        Description("&Craftplan_Throwable_ExplosiveBomb_Burning_D&");
+        ItemType(ItemType_CraftPlan);
+        Price(1000);
+        Mesh("blueprint.msh");
+        Skin("default");
+		RequiredItem("Craft_Sugar", 2);
+		RequiredItem("Craft_Alcohol", 1);
+		RequiredItem("Craft_LighterGas", 1);
+		RequiredItem("Craft_DuctTape", 1);
+		RequiredItem("Craft_Batteries", 2);
+		RequiredItem("Craft_Electronics", 2);
+        Color(Color_Blue);
+        CraftedItem("Throwable_ExplosiveBomb_Burning", 2, 3);
+        CraftplanType("Throwable");
+        UniqueSaveID(9582);
+        HudIcon("weapon_c4");
+		GameVersion(41);	
+    }
+	
+	Item("Craftplan_Throwable_ExplosiveBomb_Bleeding", CategoryType_Collectable)
+    {
+        Name("&Craftplan_Throwable_ExplosiveBomb_Bleeding_N&");
+        Description("&Craftplan_Throwable_ExplosiveBomb_Bleeding_D&");
+        ItemType(ItemType_CraftPlan);
+        Price(1000);
+        Mesh("blueprint.msh");
+        Skin("default");
+		RequiredItem("Craft_Sugar", 2);
+		RequiredItem("Craft_DuctTape", 1);
+		RequiredItem("Craft_Batteries", 2);
+		RequiredItem("Craft_Electronics", 2);
+		RequiredItem("Craft_Nails", 4);
+        Color(Color_Blue);
+        CraftedItem("Throwable_ExplosiveBomb_Bleeding", 2, 3);
+        CraftplanType("Throwable");
+        UniqueSaveID(9583);
+        HudIcon("weapon_c4");
+		GameVersion(41);	
+    }
+	
+	//////////////////////////////////////////////////////
+	/////////// 6TH ANNIVERSARY - ZOMBIE HUNT ////////////
+	//////////////////////////////////////////////////////
+	
+	Item("Craftplan_Event_GREBoost", CategoryType_Collectable)
+    {
+        Name("&Craftplan_Event_GREBoost_N&");
+        Description("&Craftplan_Event_GREBoost_D&");
+        ItemType(ItemType_CraftPlan);
+        Price(1000);
+        Mesh("blueprint.msh");
+        Skin("default");
+		RequiredItem("Craft_Alcohol", 1);
+		RequiredItem("Craft_ToxicPlant", 2);
+	    RequiredItem("Craft_Lichen", 2);
+		RequiredItem("Craft_Shroom", 1);
+        Color(Color_Orange);
+        CraftedItem("Event_GREBoost", 1, 1);
+        CraftplanType("Utility");
+        UniqueSaveID(9569);
+        HudIcon("component_potion_stamina_hp_2");
+		GameVersion(39);	
+    }
+
+	//////////////////////////////////////////////////////
+	///////////////// 2020 WINTER EVENT //////////////////
+	//////////////////////////////////////////////////////
+	
+	Item("Collectable_Liveops_CollectableOutfit_Winter_Frost", CategoryType_Collectable)
+    {
+        Name("&Collectable_Liveops_CollectableOutfit_Winter_Frost_N&");
+        Description("&Collectable_Liveops_CollectableOutfit_Winter_Frost_D&");
+        ItemType(ItemType_PlayerAppearance);
+        Mesh("drugs.msh");
+        Skin("dont_use_dlc_collectible");
+        Color(Color_White);
+        UniqueSaveID(9567);
+        GameVersion(35);
+    }	
+}

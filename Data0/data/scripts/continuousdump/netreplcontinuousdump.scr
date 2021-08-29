@@ -1,0 +1,8 @@
+DumpTime(0.0, 2.0)
+
+
+AddVariable("Network", "Data and headers SENT [Kbps]:", 30.0, 0.0, 0.0, 0.0, 0.0, 0.0)
+AddVariable("Network", "Data and headers RECV [Kbps]:", 30.0, 0.0, 0.0, 0.0, 0.0, 0.0)
+AddVariable("Replication_Compression", "Compression [%]", 0.0, 0.0, 0.0, 0.0, 0.0, 0.0)
+AddVariable("Replication_Compression", "ObjectsCnt [-/s]", 10.0, 10.0, 0.1, 0.0, 0.0, 0.0)
+AddVariable("Network", "PeersNumber", 0.0, 0.0, 0.0, 0.0, 0.0, 0.0)

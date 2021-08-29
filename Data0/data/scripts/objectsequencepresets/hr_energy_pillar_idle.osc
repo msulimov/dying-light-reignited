@@ -1,0 +1,53 @@
+ sub hr_energy_pillar_idle()
+{
+Preset("hr_energy_pillar_idle")
+
+// 0 - Omni Close 1.4
+// 1 - Omni Far 0.5
+// 2 - FX
+// 3 - Omni Moving B [CUT]
+// 4 - Omni Moving [CUT]
+
+    {
+		OnLevelStart()
+	    {
+        SetLightIntensity(0, 0.0, 1.4);
+		SetLightIntensity(1, 0.0, 0.5);
+		EnableFX(2, true);
+   		}
+		
+		OnEnable()
+	    {
+        SetLightIntensity(0, 0.0, 1.4);
+		SetLightIntensity(1, 0.0, 0.5);
+		EnableFX(2, true);
+   		}
+		
+		OnDisable()
+		{
+        SetLightIntensity(0, 0.0, 0.0);
+		SetLightIntensity(1, 0.0, 0.0);
+		EnableFX(2, false);
+		}
+		
+		// Group, Time, Value
+		
+        TimedEvent(0.0)
+        {
+		SetLightIntensity(0, 2.5, 1.8);
+		SetLightIntensity(1, 2.5, 0.8);
+		EnableFX(2, true);
+     	}	
+		
+        TimedEvent(2.5)
+        {
+		SetLightIntensity(0, 2.5, 1.4);
+		SetLightIntensity(1, 2.5, 0.5);
+		EnableFX(2, true);
+     	}
+		
+		GoToBegin(5.0)
+		{
+		}
+    }
+}

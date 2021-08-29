@@ -1,0 +1,107 @@
+SeqTrack("HELLRAID_Stick_Melee_Attack_DLR", 			"M_TPP_Stick_Melee_Attack_DLR.anm2"		, 0, 22, 15, 1, 0.3) // 30
+{
+    Event(6, EVENT_REACT_ON_HIT_DISABLED, -1)
+    Event(11, EVENT_APPLY_DAMAGE_UP, -1)
+    Event(16, EVENT_REACT_ON_HIT_ENABLED, -1)
+}
+SeqTrack("HELLRAID_Stick_Melee_Attack_DRL", 			"M_TPP_Stick_Melee_Attack_DRL.anm2"		, 0, 23, 15, 1, 0.3) //28
+{
+    Event(6, EVENT_REACT_ON_HIT_DISABLED, -1)
+    Event(11, EVENT_APPLY_DAMAGE_LEFT, -1)
+    Event(16, EVENT_REACT_ON_HIT_ENABLED, -1)
+}
+SeqTrack("HELLRAID_Stick_Melee_Attack_LDR", 			"M_TPP_Stick_Melee_Attack_LDR.anm2"		, 0, 23, 15, 1, 0.3) //30
+{
+    Event(6, EVENT_REACT_ON_HIT_DISABLED, -1)
+    Event(11, EVENT_APPLY_DAMAGE_RIGHT, -1)
+    Event(16, EVENT_REACT_ON_HIT_ENABLED, -1)
+}
+SeqTrack("HELLRAID_Stick_Melee_Attack_LR", 			"M_TPP_Stick_Melee_Attack_LR.anm2"		, 0, 25, 15, 1, 0.3) //30
+{
+    Event(5, EVENT_REACT_ON_HIT_DISABLED, -1)
+    Event(10, EVENT_APPLY_DAMAGE_RIGHT, -1)
+    Event(15, EVENT_REACT_ON_HIT_ENABLED, -1)
+}
+SeqTrack("HELLRAID_Stick_Melee_Attack_RDL", 			"M_TPP_Stick_Melee_Attack_RDL.anm2"		, 0, 25, 15, 1, 0.3) //30
+{
+    Event(7, EVENT_REACT_ON_HIT_DISABLED, -1)
+    Event(12, EVENT_APPLY_DAMAGE_LEFT, -1)
+    Event(17, EVENT_REACT_ON_HIT_ENABLED, -1)
+}
+SeqTrack("HELLRAID_Stick_Melee_Attack_RL", 			"M_TPP_Stick_Melee_Attack_RL.anm2"		, 0, 24, 15, 1, 0.3) //30
+{
+    Event(8, EVENT_REACT_ON_HIT_DISABLED, -1)
+    Event(13, EVENT_APPLY_DAMAGE_LEFT, -1)
+    Event(19, EVENT_REACT_ON_HIT_ENABLED, -1)
+}
+
+//MAGIC SHOOTS
+
+SeqTrack("HELLRAID_step_frw_attack_right_hand",                 "MZI_Step_Frw_Attack_Right_Hand.anm2",                 14, 42, 35, 1, 0.4) //94
+{
+    Event(0, EVENT_DODGE_ENABLED, -1)
+    Event(0, EVENT_SET_TARGET_MAGIC_SHOOT_POSITION, -1)
+    Event(0, EVENT_COUNTER_GRAB_CLEAN, -1)
+    Event(0, VIS_EVENT_IK_ENABLE, -1)
+    Event(0, VIS_EVENT_LEFT_FOOT_LIFT, -1)
+    Event(0, VIS_EVENT_RIGHT_FOOT_LAND, -1)
+    Event(1, VIS_EVENT_RIGHT_FOOT_LIFT, -1)
+    Event(3, VIS_EVENT_LEFT_FOOT_LAND, -1)
+    Event(12, SOUND_EVENT_HAND_WOOSH, -1)
+    Event(12, VIS_EVENT_LEFT_FOOT_LIFT, -1)
+    Event(14, EVENT_APPLY_RANGED_DAMAGE_MAGIC, -1)
+    Event(19, EVENT_REACT_ON_HIT_ENABLED, -1)
+    Event(20, VIS_EVENT_LEFT_FOOT_LAND, -1)
+    Event(22, VIS_EVENT_LEFT_FOOT_LIFT, -1)
+    Event(22, VIS_EVENT_RIGHT_FOOT_LAND, -1)
+    Event(23, VIS_EVENT_STOPANIM, -1)
+}
+
+SeqTrack("HELLRAID_step_frw_attack_both_hand",                  "MZI_Step_Frw_Attack_Both_Hand.anm2",                  10, 60, 35, 1, 0.4)
+{
+    Event(0, EVENT_DODGE_ENABLED, -1)
+    Event(0, EVENT_SET_TARGET_MAGIC_SHOOT_POSITION, -1)
+    Event(0, EVENT_COUNTER_GRAB_CLEAN, -1)
+    Event(0, VIS_EVENT_IK_ENABLE, -1)
+    Event(0, VIS_EVENT_RIGHT_FOOT_LAND, -1)
+    Event(0, VIS_EVENT_LEFT_FOOT_LIFT, -1)
+    Event(3, VIS_EVENT_RIGHT_FOOT_LIFT, -1)
+    Event(6, VIS_EVENT_LEFT_FOOT_LAND, -1)
+    Event(10, VIS_EVENT_LEFT_FOOT_LIFT, -1)
+    Event(11, SOUND_EVENT_HAND_WOOSH, -1)
+    Event(14, EVENT_APPLY_RANGED_DAMAGE_MAGIC, -1)
+    Event(15, EVENT_SET_TARGET_MAGIC_SHOOT_POSITION, -1)
+    Event(18, VIS_EVENT_LEFT_FOOT_LAND, -1)
+    Event(19, EVENT_REACT_ON_HIT_ENABLED, -1)
+    Event(20, VIS_EVENT_LEFT_FOOT_LIFT, -1)
+    Event(21, VIS_EVENT_RIGHT_FOOT_LAND, -1)
+    Event(21, VIS_EVENT_RIGHT_FOOT_LIFT, -1)
+    Event(28, SOUND_EVENT_HAND_WOOSH, -1)
+    Event(32, EVENT_APPLY_RANGED_DAMAGE_MAGIC_LEFT_HAND, -1)
+    Event(36, EVENT_REACT_ON_HIT_ENABLED, -1)
+    Event(40, VIS_EVENT_STOPANIM, -1)
+    Event(40, VIS_EVENT_RIGHT_FOOT_LAND, -1)
+    Event(40, VIS_EVENT_RIGHT_FOOT_LIFT, -1)
+    Event(42, VIS_EVENT_LEFT_FOOT_LAND, -1)
+}
+
+SeqTrack("HELLRAID_step_frw_attack_left_hand",                  "MZI_Step_Frw_Attack_Left_Hand.anm2",                  18, 52, 35, 1, 0.4) //90
+{
+    Event(0, EVENT_DODGE_ENABLED, -1)
+    Event(0, EVENT_SET_TARGET_MAGIC_SHOOT_POSITION, -1)
+    Event(0, EVENT_COUNTER_GRAB_CLEAN, -1)
+    Event(0, VIS_EVENT_IK_ENABLE, -1)
+    Event(0, VIS_EVENT_LEFT_FOOT_LAND, -1)
+    Event(0, VIS_EVENT_RIGHT_FOOT_LIFT, -1)
+    Event(4, SOUND_EVENT_ATTACK, -1)
+    Event(6, SOUND_EVENT_HAND_WOOSH, -1)
+    Event(8, VIS_EVENT_LEFT_FOOT_LIFT, -1)
+    Event(11, VIS_EVENT_RIGHT_FOOT_LAND, -1)
+    Event(11, VIS_EVENT_RIGHT_FOOT_LIFT, -1)
+    Event(19, EVENT_APPLY_RANGED_DAMAGE_MAGIC_LEFT_HAND, -1)
+    Event(23, EVENT_REACT_ON_HIT_ENABLED, -1)
+    Event(24, VIS_EVENT_STOPANIM, -1)
+    Event(26, VIS_EVENT_LEFT_FOOT_LAND, -1)
+    Event(27, VIS_EVENT_RIGHT_FOOT_LAND, -1)
+    Event(29, VIS_EVENT_RIGHT_FOOT_LIFT, -1)
+}
