@@ -138,12 +138,13 @@ sub extraDLCRecipes(){
         Mesh("blueprint.msh");
         Skin("default");
 		BaseItem("Firearm_Pistol", "", "");
-		RequiredItem("Craft_MetalScrap", 1);
-        //RequiredItem("Craft_MetalScrap", 20);
-		//RequiredItem("Craft_Electronics", 12);
-		//RequiredItem("Craft_Batteries", 14);
-		//RequiredItem("Craft_PowerCable", 10);
-		//RequiredItem("Craft_Shroom", 40);
+
+        RequiredItem("Craft_MetalScrap", 20);
+		RequiredItem("Craft_Electronics", 12);
+		RequiredItem("Craft_Batteries", 14);
+		RequiredItem("Craft_PowerCable", 10);
+		RequiredItem("Craft_Shroom", 40);
+        
 		InheritBaseStats();
         Color(Color_Platinum);
         CraftedItem("Firearm_Pistol_Space_Commando1", 1, 1);
@@ -283,13 +284,12 @@ sub extraDLCRecipes(){
         Skin("default");
 		
         BaseItem("Firearm_Rifle", "", "");
-		RequiredItem("Craft_MetalScrap", 1);
 		
-		//RequiredItem("Craft_MetalScrap", 20);
-		//RequiredItem("Craft_Electronics", 16);
-		//RequiredItem("Craft_Batteries", 12);
-		//RequiredItem("Craft_PowerCable", 12);
-		//RequiredItem("Craft_Shroom", 40);
+		RequiredItem("Craft_MetalScrap", 20);
+		RequiredItem("Craft_Electronics", 16);
+		RequiredItem("Craft_Batteries", 12);
+		RequiredItem("Craft_PowerCable", 12);
+		RequiredItem("Craft_Shroom", 40);
 		
         Color(Color_Platinum);
 		InheritBaseStats();
