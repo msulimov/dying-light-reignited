@@ -727,6 +727,28 @@ sub main()
 		//OwnedAtStart();
     }
 
+    Item("Craftplan_Shuriken", CategoryType_Collectable)
+    {
+        Name("&Craftplan_Shuriken_N&");
+        Description('&Craftplan_Shuriken_D&');
+        ItemType(ItemType_CraftPlan);
+        Price(40);
+        Mesh("blueprint.msh");
+        Skin("default");
+        RequiredItem("Craft_MetalScrap", 2);
+        RequiredItem("Craft_String", 3);
+        RequiredItem("Craft_Nails", 2);
+        RequiredItem("Craft_RazorBlade", 1);
+        RequiredItem("Craft_DuctTape", 1);
+        
+        Elemental(Elemental_Poison, 3);
+        Color(Color_White);
+        CraftedItem("Throwable_ShurikenBGen", 6, 12);
+        CraftplanType("Weapon");
+        UniqueSaveID(4);
+        HudIcon("blueprint_b");
+    }
+
     Item("Craftplan_BurningShuriken", CategoryType_Collectable)
     {
         Name("&Craftplan_BurningShuriken_N&");
@@ -736,13 +758,15 @@ sub main()
         Mesh("blueprint.msh");
         Skin("default");
 		
-        RequiredItem("Throwable_ShurikenBGen", 12);
+        RequiredItem("Craft_MetalScrap", 2);
+        RequiredItem("Craft_String", 3);
+        RequiredItem("Craft_Nails", 2);
+        RequiredItem("Craft_RazorBlade", 1);
+        RequiredItem("Craft_DuctTape", 1);
 		
-        RequiredItem("Craft_Insecticide", 3);
+        RequiredItem("Craft_Insecticide", 4);
         RequiredItem("Craft_Bleach", 2);
-		RequiredItem("ZZZZ3_Component_Rubber", 2);
-		RequiredItem("Craft_DuctTape", 1);
-		RequiredItem("ZZZZ3_Component_NutsBolts", 3);
+		RequiredItem("Craft_Alcohol", 4);
 		
         Elemental(Elemental_Burning, 4);
         Color(Color_Green);
@@ -764,13 +788,15 @@ sub main()
         Skin("default");
         RequiredItem("Throwable_ShurikenBGen", 12);
 
-        RequiredItem("Craft_Insecticide", 4);
-        RequiredItem("Craft_Bleach", 2);
-		RequiredItem("Craft_Sugar", 3);
-		RequiredItem("Craft_TinCan", 3);
-		RequiredItem("Craft_DuctTape", 1);
-		RequiredItem("ZZZZ3_Component_Lubricant", 2);
+        RequiredItem("Craft_MetalScrap", 2);
+        RequiredItem("Craft_String", 3);
+        RequiredItem("Craft_Nails", 2);
+        RequiredItem("Craft_RazorBlade", 1);
+        RequiredItem("Craft_DuctTape", 1);
 		
+        RequiredItem("Craft_Insecticide", 3);
+        RequiredItem("Craft_Bleach", 3);
+        RequiredItem("Craft_Sugar", 3);
 		
         Elemental(Elemental_Explosive, 4);
         Color(Color_Green);
@@ -792,12 +818,15 @@ sub main()
         Skin("default");
         RequiredItem("Throwable_ShurikenBGen", 12);
 
-        RequiredItem("Craft_Alcohol", 3);
+        RequiredItem("Craft_MetalScrap", 2);
+        RequiredItem("Craft_String", 3);
+        RequiredItem("Craft_Nails", 2);
+        RequiredItem("Craft_RazorBlade", 1);
+        RequiredItem("Craft_DuctTape", 1);
+        
+        RequiredItem("Craft_Shroom", 2);
+        RequiredItem("ZZZZ3_Component_Wire", 3);
         RequiredItem("Craft_Bleach", 2);
-		RequiredItem("Craft_Sugar", 2);
-		RequiredItem("Craft_DuctTape", 1);
-		RequiredItem("Craft_Shroom", 2);
-		RequiredItem("Craft_PlasticTube", 2);
 		
         Elemental(Elemental_Freezing, 2);
         Color(Color_Green);
@@ -806,30 +835,6 @@ sub main()
         CraftedItem("Throwable_FreezingShuriken", 6, 12);
         CraftplanType("Weapon");
         UniqueSaveID(11);
-        HudIcon("blueprint_b");
-    }
-
-	Item("Craftplan_Shuriken", CategoryType_Collectable)
-    {
-        Name("&Craftplan_Shuriken_N&");
-        Description('&Craftplan_Shuriken_D&');
-        ItemType(ItemType_CraftPlan);
-        Price(40);
-        Mesh("blueprint.msh");
-        Skin("default");
-        RequiredItem("Craft_MetalScrap", 3);
-        RequiredItem("Craft_String", 3);
-        RequiredItem("Craft_Nails", 2);
-		RequiredItem("Craft_RazorBlade", 1);
-		RequiredItem("Craft_UnderwaterAlgae", 5);
-		RequiredItem("Craft_ToxicPlant", 5);
-		RequiredItem("Craft_DuctTape", 1);
-		
-        Elemental(Elemental_Poison, 3);
-        Color(Color_White);
-        CraftedItem("Throwable_ShurikenBGen", 6, 12);
-        CraftplanType("Weapon");
-        UniqueSaveID(4);
         HudIcon("blueprint_b");
     }
 
