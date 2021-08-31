@@ -886,18 +886,18 @@
 
 
 <!-- PLAYER EXPERIENCE RUNNER-->
-<level id="1" type="Runner"><prop n="ExpToNextLevelRunner" v="1025"/></level>
-<level id="2" type="Runner"><prop n="ExpToNextLevelRunner" v="2875"/></level>
-<level id="3" type="Runner"><prop n="ExpToNextLevelRunner" v="5000"/></level>
-<level id="4" type="Runner"><prop n="ExpToNextLevelRunner" v="8000"/></level>
-<level id="5" type="Runner"><prop n="ExpToNextLevelRunner" v="12025"/></level>
-<level id="6" type="Runner"><prop n="ExpToNextLevelRunner" v="16125"/></level>
-<level id="7" type="Runner"><prop n="ExpToNextLevelRunner" v="18025"/></level>
-<level id="8" type="Runner"><prop n="ExpToNextLevelRunner" v="25125"/></level>
-<level id="9" type="Runner"><prop n="ExpToNextLevelRunner" v="33625"/></level>
-<level id="10" type="Runner"><prop n="ExpToNextLevelRunner" v="38125"/></level>
-<level id="11" type="Runner"><prop n="ExpToNextLevelRunner" v="45625"/></level>
-<level id="12" type="Runner"><prop n="ExpToNextLevelRunner" v="51125"/></level>
+<level id="1" type="Runner"><prop n="ExpToNextLevelRunner" v="1500"/></level>
+<level id="2" type="Runner"><prop n="ExpToNextLevelRunner" v="3500"/></level>
+<level id="3" type="Runner"><prop n="ExpToNextLevelRunner" v="6500"/></level>
+<level id="4" type="Runner"><prop n="ExpToNextLevelRunner" v="9000"/></level>
+<level id="5" type="Runner"><prop n="ExpToNextLevelRunner" v="13000"/></level>
+<level id="6" type="Runner"><prop n="ExpToNextLevelRunner" v="18000"/></level>
+<level id="7" type="Runner"><prop n="ExpToNextLevelRunner" v="22000"/></level>
+<level id="8" type="Runner"><prop n="ExpToNextLevelRunner" v="27000"/></level>
+<level id="9" type="Runner"><prop n="ExpToNextLevelRunner" v="35000"/></level>
+<level id="10" type="Runner"><prop n="ExpToNextLevelRunner" v="41000"/></level>
+<level id="11" type="Runner"><prop n="ExpToNextLevelRunner" v="47000"/></level>
+<level id="12" type="Runner"><prop n="ExpToNextLevelRunner" v="53000"/></level>
 <level id="13" type="Runner"><prop n="ExpToNextLevelRunner" v="72000"/></level>
 <level id="14" type="Runner"><prop n="ExpToNextLevelRunner" v="89500"/></level>
 <level id="15" type="Runner"><prop n="ExpToNextLevelRunner" v="100375"/></level>
