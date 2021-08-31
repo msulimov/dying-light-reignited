@@ -548,8 +548,8 @@ sub Loot()
     {
         ColorSet(ColorSet_Default);
          
-        use CashMedium(weight = 3.0);
-        use Weapons_Humans(weight = 2.0);
+        use CashMedium(weight = 4.0);
+        use Crafting_Default(weight = 2.0);
     }
 
     LootedObject(DeadBody_Human_Raisman)
@@ -577,7 +577,6 @@ sub Loot()
         ColorSet(ColorSet_Default);
         use CashMedium(weight = 3.0);
 		use Medkits(weight = 1.0);
-        use Weapons_Humans(weight = 1.0);
         use Ammo_Rifle(weight = 1.0);
     }
 
