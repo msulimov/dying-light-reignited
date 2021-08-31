@@ -237,6 +237,7 @@ export int Other = 9;
 			
             Item("Craft_MetalScrap", 2.0);
 			Item("Craft_PlasticTube", 2.0);
+            Item("Craft_Sugar", 1.0);
 			
 			Item("Craft_DuctTape", 2.0);
 			Item("Craft_String", 2.0);
@@ -256,9 +257,9 @@ export int Other = 9;
 
             Item("Craft_Alcohol", 1.0);
 			Item("Craft_PlasticTube", 2.0);
+            Item("Craft_Sugar", 3.0);
 			
             Item("Craft_Gauze", 1.0);
-            Item("Craft_String", 1.0);
         }
     }
 

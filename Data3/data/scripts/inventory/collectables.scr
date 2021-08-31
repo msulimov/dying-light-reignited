@@ -15,7 +15,7 @@ sub main()
         Skin("default");
         RequiredItem("Craft_Alcohol", 3);
         RequiredItem("Craft_Gauze", 4);
-        RequiredItem("Craft_Sugar", 3);
+        RequiredItem("Craft_Sugar", 2);
         RequiredItem("Craft_String", 3);
         RequiredItem("Craft_PlasticTube", 2);
 		RequiredItem("Craft_Nails", 2);
