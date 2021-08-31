@@ -899,15 +899,15 @@
 <level id="11" type="Runner"><prop n="ExpToNextLevelRunner" v="47000"/></level>
 <level id="12" type="Runner"><prop n="ExpToNextLevelRunner" v="53000"/></level>
 <level id="13" type="Runner"><prop n="ExpToNextLevelRunner" v="72000"/></level>
-<level id="14" type="Runner"><prop n="ExpToNextLevelRunner" v="89500"/></level>
-<level id="15" type="Runner"><prop n="ExpToNextLevelRunner" v="100375"/></level>
-<level id="16" type="Runner"><prop n="ExpToNextLevelRunner" v="110875"/></level>
-<level id="17" type="Runner"><prop n="ExpToNextLevelRunner" v="120550"/></level>
-<level id="18" type="Runner"><prop n="ExpToNextLevelRunner" v="130625"/></level>
-<level id="19" type="Runner"><prop n="ExpToNextLevelRunner" v="150025"/></level>
+<level id="14" type="Runner"><prop n="ExpToNextLevelRunner" v="90000"/></level>
+<level id="15" type="Runner"><prop n="ExpToNextLevelRunner" v="100000"/></level>
+<level id="16" type="Runner"><prop n="ExpToNextLevelRunner" v="110000"/></level>
+<level id="17" type="Runner"><prop n="ExpToNextLevelRunner" v="120000"/></level>
+<level id="18" type="Runner"><prop n="ExpToNextLevelRunner" v="130000"/></level>
+<level id="19" type="Runner"><prop n="ExpToNextLevelRunner" v="150000"/></level>
 <level id="20" type="Runner"><prop n="ExpToNextLevelRunner" v="165000"/></level>
-<level id="21" type="Runner"><prop n="ExpToNextLevelRunner" v="178750"/></level>
-<level id="22" type="Runner"><prop n="ExpToNextLevelRunner" v="182500"/></level>
+<level id="21" type="Runner"><prop n="ExpToNextLevelRunner" v="178000"/></level>
+<level id="22" type="Runner"><prop n="ExpToNextLevelRunner" v="182000"/></level>
 <level id="23" type="Runner"><prop n="ExpToNextLevelRunner" v="200000"/></level>
 
 <!-- SKILL POINTS STATUS-->
