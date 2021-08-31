@@ -326,7 +326,7 @@ sub main()
     Reward("Firebug_reward") // zaid flare quest
     {
         Xp(15000);
-        Item("Craftplan_ZaidFlare2", Color_Violet, 1, 0); // ZaidFlare2 Craftplan
+        Item("Craftplan_ZaidFlare", Color_Violet, 1, 0); // ZaidFlare2 Craftplan
     }
 
     Reward("Algae_reward") // Dulce Lake

@@ -27,48 +27,6 @@ sub customRecipes(){
 		//OwnedAtStart();
     }
 	
-	
-	Item("Craftplan_SteelTubing", CategoryType_Collectable)
-    {
-        Name("&Craftplan_SteelTubing_N&");
-        Description('&Craftplan_SteelTubing_D&');
-        ItemType(ItemType_CraftPlan);
-        Price(40);
-		Mesh("blueprint.msh");
-        Skin("default_hl");
-		RequiredItem("Craft_MetalScrap", 2);
-		//RequiredItem("Craft_DuctTape", 2);
-		RequiredItem("ZZZZ3_Component_Lubricant", 2);
-		RequiredItem("ZZZZ3_Component_NutsBolts", 2);
-		
-        Color(Color_Green);
-        CraftedItem("ZZZZ3_Component_SteelTubing", 2, 3);
-        CraftplanType("Top");
-        UniqueSaveID(74979);
-        HudIcon("blueprint_b");
-		//OwnedAtStart();
-    }
-	
-	Item("Craftplan_ZaidFlare2", CategoryType_Collectable)
-    {
-        Name("&Craftplan_ZaidFlare2_N&");
-        Description('&Craftplan_ZaidFlare2_D&');
-        ItemType(ItemType_CraftPlan);
-        Price(40);
-		Mesh("blueprint.msh");
-        Skin("default_hl");
-		RequiredItem("Throwable_Btz_Flare", 2);
-		RequiredItem("Craft_DuctTape", 1);
-		RequiredItem("Craft_PlasticTube", 2);
-		RequiredItem("Craft_String", 1);
-        Color(Color_Violet);
-        CraftedItem("Throwable_ZaidFlare", 1, 2);
-        CraftplanType("Top");
-        UniqueSaveID(74978);
-        HudIcon("blueprint_b");
-		//OwnedAtStart();
-    }
-	
 	Item("Craftplan_Wire", CategoryType_Collectable)
     {
         Name("&Craftplan_Wire_N&");
@@ -103,8 +61,8 @@ sub customRecipes(){
         RequiredItem("ZZZZ3_Component_NutsBolts", 2);
 		RequiredItem("Craft_PlasticTube", 2);
 		RequiredItem("Craft_Nails", 4);
-		RequiredItem("Craft_TinCan", 1);
-		RequiredItem("Craft_String", 2);
+		RequiredItem("ZZZZ3_Component_SteelTubing", 3);
+		RequiredItem("Craft_String", 3);
 		RequiredItem("ZZZZ3_Component_Lubricant", 1);
         Color(Color_Green);
         CraftedItem("Craft_RazorBlade", 1, 2);
@@ -146,7 +104,7 @@ sub customRecipes(){
         RequiredItem("Craft_PlasticTube", 5);
 		RequiredItem("Craft_Nails", 4);
 		RequiredItem("Craft_MetalScrap", 3);
-		RequiredItem("Craft_DuctTape", 2);
+		RequiredItem("Craft_DuctTape", 4);
 		RequiredItem("Craft_String", 2);
         RequiredItem("ZZZZ3_Component_NutsBolts", 4);
 		RequiredItem("ZZZZ3_Component_Wire", 6);
@@ -201,7 +159,7 @@ sub customRecipes(){
         RequiredItem("Craft_PowerCable", 2);
         RequiredItem("Craft_Batteries", 2);
 		RequiredItem("Craft_Shroom", 6);
-		RequiredItem("Craft_DuctTape", 3);
+		RequiredItem("Craft_DuctTape", 4);
 		RequiredItem("ZZZZ3_Component_Wire", 5);
 		RequiredItem("ZZZZ3_Component_Synthetic", 3);
 		RequiredItem("ZZZZ3_Component_Lubricant", 4);

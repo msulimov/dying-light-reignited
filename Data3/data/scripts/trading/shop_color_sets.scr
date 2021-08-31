@@ -153,19 +153,19 @@ sub main()
 	ColorSet("shop_slums_exploration")
      {
         Color(Color_White, 	0);
-        Color(Color_Green, 	20);
-        Color(Color_Blue,  	63);
-        Color(Color_Violet, 15);
-        Color(Color_Orange, 2);
+        Color(Color_Green, 	40);
+        Color(Color_Blue,  	55);
+        Color(Color_Violet, 5);
+        Color(Color_Orange, 0);
     }
     
     ColorSet("shop_slums_exploration_early")
      {
-        Color(Color_White, 	0);
-        Color(Color_Green, 	10);
-        Color(Color_Blue,  	60);
-        Color(Color_Violet, 25);
-        Color(Color_Orange, 5);
+        Color(Color_White,  0);
+        Color(Color_Green,  40);
+        Color(Color_Blue,   55);
+        Color(Color_Violet, 5);
+        Color(Color_Orange, 0);
     }
 
 	ColorSet("shop_slums_throwing_weapons")
@@ -179,47 +179,47 @@ sub main()
 	
 	ColorSet("shop_slums_exploration_Hard")
      {
-        Color(Color_White, 	0);
-        Color(Color_Green, 	20);
-        Color(Color_Blue,  	63);
-        Color(Color_Violet, 15);
-        Color(Color_Orange, 2);
+        Color(Color_White,  0);
+        Color(Color_Green,  40);
+        Color(Color_Blue,   55);
+        Color(Color_Violet, 5);
+        Color(Color_Orange, 0);
     }
     
     ColorSet("shop_slums_exploration_early_Hard")
      {
-        Color(Color_White, 	0);
-        Color(Color_Green, 	10);
-        Color(Color_Blue,  	60);
-        Color(Color_Violet, 25);
-        Color(Color_Orange, 5);
+        Color(Color_White,  0);
+        Color(Color_Green,  40);
+        Color(Color_Blue,   55);
+        Color(Color_Violet, 5);
+        Color(Color_Orange, 0);
     }
 
 	ColorSet("shop_oldtown_exploration")
     {
-        Color(Color_White, 	0);
-        Color(Color_Green, 	10);
-        Color(Color_Blue,  	63);
-        Color(Color_Violet, 25);
-        Color(Color_Orange, 2);
+        Color(Color_White,  0);
+        Color(Color_Green,  40);
+        Color(Color_Blue,   55);
+        Color(Color_Violet, 5);
+        Color(Color_Orange, 0);
     }
 	
     ColorSet("cs_WanderingMerchant")
     {
-        Color(Color_White, 0);
-        Color(Color_Green, 10);
-        Color(Color_Blue,  55);
-        Color(Color_Violet, 30);
-        Color(Color_Orange, 5);
+        Color(Color_White,  0);
+        Color(Color_Green,  35);
+        Color(Color_Blue,   55);
+        Color(Color_Violet, 10);
+        Color(Color_Orange, 0);
     }
 	
 	ColorSet("cs_WanderingMerchant_Hard")
     {
-        Color(Color_White, 0);
-        Color(Color_Green, 10);
-        Color(Color_Blue,  55);
-        Color(Color_Violet, 30);
-        Color(Color_Orange, 5);
+        Color(Color_White,  0);
+        Color(Color_Green,  35);
+        Color(Color_Blue,   55);
+        Color(Color_Violet, 10);
+        Color(Color_Orange, 0);
     }
 
     ColorSet("cs_blueprints")
