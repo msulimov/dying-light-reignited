@@ -27,49 +27,24 @@ sub main()
         HudIcon("blueprint_b");
     }
 
-	Item("Craftplan_MedKit_Algae", CategoryType_Collectable)
+    Item("Craftplan_MedKit_Large_Natural", CategoryType_Collectable)
     {
-        Name("&Craftplan_MedKit_Algae_N&");
-        Description('&Craftplan_MedKit_Algae_D&');
+        Name("&Craftplan_MedKit_Large_Natural_N&");
+        Description('&Craftplan_MedKit_Large_Natural_D&');
         ItemType(ItemType_CraftPlan);
-        Price(40);
+        Price(42);
         Mesh("blueprint.msh");
         Skin("default");
-        RequiredItem("Craft_Lichen", 4);
-        RequiredItem("Craft_UnderwaterAlgae", 10);
+        RequiredItem("Craft_Lichen", 6);
+        RequiredItem("Craft_UnderwaterAlgae", 20);
         RequiredItem("Craft_ToxicPlant", 10);
-		RequiredItem("Craft_DuctTape", 3);
-        Color(Color_Green);
+        Color(Color_White);
         CraftedItem("Medkit_HealthPackLarge", 2, 2);
         CraftplanType("Top");
-        UniqueSaveID(103);
+        UniqueSaveID(1);
         HudIcon("blueprint_b");
     }
 
-    Item("Craftplan_ZaidFlare", CategoryType_Collectable)
-    {
-        Name("&Craftplan_ZaidFlare_N&");
-        Description('&Craftplan_ZaidFlare_D&');
-        ItemType(ItemType_CraftPlan);
-        Price(40);
-        Mesh("blueprint.msh");
-        Skin("default");
-		RequiredItem("Craft_String", 3);
-        RequiredItem("Craft_Alcohol", 2);
-        RequiredItem("Craft_Bleach", 3);
-		RequiredItem("Craft_TinCan", 2);
-		RequiredItem("Craft_Sugar", 2);
-        RequiredItem("ZZZZ3_Component_NutsBolts", 3);
-		RequiredItem("Craft_Insecticide", 3);
-		RequiredItem("Craft_PlasticTube", 3);
-        Color(Color_Violet);
-        CraftedItem("Throwable_ZaidFlare", 2, 3);
-        CraftplanType("Top");
-        UniqueSaveID(104);
-        HudIcon("blueprint_b");
-		//OwnedAtStart();
-    }
-	
 	Item("Craftplan_Flare", CategoryType_Collectable)
     {
         Name("&Craftplan_Flare_N&");
@@ -88,12 +63,32 @@ sub main()
 		RequiredItem("Craft_PlasticTube", 2);
         Color(Color_Violet);
         CraftedItem("Throwable_Btz_Flare", 2, 2);
-        CraftplanType("Throwable");
+        CraftplanType("Top");
         UniqueSaveID(6);
         HudIcon("blueprint_b");
 		
     }
 	
+    Item("Craftplan_ZaidFlare", CategoryType_Collectable)
+    {
+        Name("&Craftplan_ZaidFlare_N&");
+        Description('&Craftplan_ZaidFlare_D&');
+        ItemType(ItemType_CraftPlan);
+        Price(40);
+        Mesh("blueprint.msh");
+        Skin("default");
+        RequiredItem("Throwable_Btz_Flare", 2);
+        RequiredItem("Craft_DuctTape", 3);
+        RequiredItem("Craft_PlasticTube", 2);
+        RequiredItem("Craft_String", 2);
+        Color(Color_Violet);
+        CraftedItem("Throwable_ZaidFlare", 1, 2);
+        CraftplanType("Top");
+        UniqueSaveID(104);
+        HudIcon("blueprint_b");
+        //OwnedAtStart();
+    }
+
     Item("Craftplan_Lockpick", CategoryType_Collectable)
     {
         Name("&Craftplan_Lockpick_N&");
@@ -105,6 +100,7 @@ sub main()
         RequiredItem("Craft_MetalScrap", 7);
         RequiredItem("ZZZZ3_Component_Wire", 4);
 		RequiredItem("Craft_PlasticTube", 4);
+        RequiredItem("Craft_DuctTape", 3);
 		RequiredItem("Craft_String", 4);
         Color(Color_White);
         CraftedItem("LockpickItem", 3, 4);
@@ -220,7 +216,7 @@ sub main()
         Skin("default");
         
 		RequiredItem("Craft_MetalScrap", 10);
-        RequiredItem("Craft_DuctTape", 3);
+        RequiredItem("Craft_DuctTape", 5);
 		RequiredItem("Craft_String", 5);
         RequiredItem("Craft_PlasticTube", 5);
 		RequiredItem("ZZZZ3_Component_Rubber", 4);
@@ -868,6 +864,7 @@ sub main()
         Price(40);
         Mesh("blueprint.msh");
         Skin("default");
+        
         RequiredItem("Craft_MetalScrap", 10);
         RequiredItem("Craft_Nails", 6);
         RequiredItem("Craft_DuctTape", 8);
@@ -894,11 +891,14 @@ sub main()
         Price(196);
         Mesh("blueprint.msh");
         Skin("default");
+
         RequiredItem("Craft_MetalScrap", 3);
         RequiredItem("Craft_String", 2);
         RequiredItem("Craft_RazorBlade", 2);
         RequiredItem("ZZZZ3_Component_Rubber", 2);
+        RequiredItem("ZZZZ3_Component_SteelTubing", 3);
 		RequiredItem("ZZZZ3_Component_Lubricant", 1);
+
         Color(Color_White);
         CraftedItem("ZZZZ_Ammo_Arrow", 3, 6);
         CraftplanType("Weapon");
@@ -922,6 +922,7 @@ sub main()
 		RequiredItem("Craft_MetalScrap", 2);
         RequiredItem("Craft_PlasticTube", 1);
 		RequiredItem("ZZZZ3_Component_Rubber", 1);
+
         Color(Color_Orange);
         CraftedItem("ZZZZ_Ammo_Arrow_Burning", 3, 6);
         CraftplanType("Weapon");
@@ -942,6 +943,7 @@ sub main()
         RequiredItem("Craft_String", 2);
         RequiredItem("ZZZZ3_Component_Wire", 2);
         RequiredItem("ZZZZ3_Component_Lubricant", 1);
+
         Color(Color_Orange);
         CraftedItem("ZZZZ_Ammo_Arrow_Shock", 3, 6);
         CraftplanType("Weapon");
@@ -958,12 +960,14 @@ sub main()
         Price(57);
         Mesh("blueprint.msh");
         Skin("default");
+
         RequiredItem("Craft_MetalScrap", 2);
         RequiredItem("Craft_String", 2);
 		RequiredItem("Craft_Insecticide", 3);
 		RequiredItem("Craft_Bleach", 3);
         RequiredItem("Craft_TinCan", 2);
 		RequiredItem("ZZZZ3_Component_Synthetic", 1);
+
         Color(Color_Orange);
         CraftedItem("ZZZZ_Ammo_Arrow_Explode", 3, 6);
         CraftplanType("Weapon");
@@ -1055,15 +1059,15 @@ sub main()
         Price(40);
         Mesh("blueprint.msh");
         Skin("default");
-        RequiredItem("Craft_MetalScrap", 3);
-        RequiredItem("Craft_RazorBlade", 2);
-		RequiredItem("Craft_String", 3);
-		RequiredItem("ZZZZ3_Component_Rubber", 2);
-        RequiredItem("ZZZZ3_Component_SteelTubing", 3);
+
+        RequiredItem("Craft_RazorBlade", 1);
+
+        RequiredItem("ZZZZ3_Component_SteelTubing", 1);
 		RequiredItem("ZZZZ3_Component_NutsBolts", 2);
+
         RequiredItem("Craft_Lichen", 3);
-		RequiredItem("Craft_UnderwaterAlgae", 10);
-		RequiredItem("Craft_ToxicPlant", 10);
+		RequiredItem("Craft_ToxicPlant", 6);
+
         Color(Color_Platinum);
         CraftedItem("ZZZZ3_Ammo_Crossbow_Poison", 3, 6);
         CraftplanType("Weapon");
@@ -1081,16 +1085,15 @@ sub main()
         Price(40);
         Mesh("blueprint.msh");
         Skin("default");
-		RequiredItem("Craft_MetalScrap", 3);
-        RequiredItem("Craft_RazorBlade", 2);
-		RequiredItem("Craft_String", 3);
-		RequiredItem("ZZZZ3_Component_Rubber", 2);
-        RequiredItem("ZZZZ3_Component_SteelTubing", 3);
-		RequiredItem("ZZZZ3_Component_NutsBolts", 2);
-        RequiredItem("Craft_ToxicPlant", 7);
-		RequiredItem("Craft_Shroom", 4);
-		RequiredItem("Craft_Bleach", 3);
-        RequiredItem("Craft_Insecticide", 4);
+
+		RequiredItem("Craft_RazorBlade", 1);
+
+        RequiredItem("ZZZZ3_Component_SteelTubing", 1);
+        RequiredItem("ZZZZ3_Component_NutsBolts", 2);
+
+        RequiredItem("Craft_Sugar", 3);
+        RequiredItem("Craft_Bleach", 3);
+
         Color(Color_Platinum);
         CraftedItem("ZZZZ3_Ammo_Crossbow_Stunning", 3, 6);
         CraftplanType("Weapon");
@@ -1108,14 +1111,14 @@ sub main()
         Price(40);
         Mesh("blueprint.msh");
         Skin("default");
-        RequiredItem("Craft_MetalScrap", 3);
-        RequiredItem("Craft_RazorBlade", 2);
-		RequiredItem("Craft_String", 3);
-		RequiredItem("ZZZZ3_Component_Rubber", 2);
-        RequiredItem("ZZZZ3_Component_SteelTubing", 3);
-		RequiredItem("ZZZZ3_Component_NutsBolts", 2);
-		RequiredItem("Craft_Batteries", 1);
-		RequiredItem("ZZZZ3_Component_Wire", 2);
+        
+        RequiredItem("Craft_RazorBlade", 1);
+
+        RequiredItem("ZZZZ3_Component_SteelTubing", 1);
+        RequiredItem("ZZZZ3_Component_NutsBolts", 2);
+
+        RequiredItem("Craft_Batteries", 1);
+
         Color(Color_Platinum);
         CraftedItem("ZZZZ3_Ammo_Crossbow_Impact", 3, 6);
         CraftplanType("Weapon");
@@ -1124,6 +1127,27 @@ sub main()
         //GameVersion(8);
 		//OwnedAtStart();
     }
+
+
+    Item("Craftplan_MedKit_Algae", CategoryType_Collectable) // unused
+    {
+        Name("&Craftplan_MedKit_Algae_N&");
+        Description('&Craftplan_MedKit_Algae_D&');
+        ItemType(ItemType_CraftPlan);
+        Price(40);
+        Mesh("blueprint.msh");
+        Skin("default");
+        RequiredItem("Craft_Lichen", 4);
+        RequiredItem("Craft_UnderwaterAlgae", 10);
+        RequiredItem("Craft_ToxicPlant", 10);
+        RequiredItem("Craft_DuctTape", 3);
+        Color(Color_Green);
+        CraftedItem("Medkit_HealthPackLarge", 2, 2);
+        CraftplanType("Top");
+        UniqueSaveID(103);
+        HudIcon("blueprint_b");
+    }
+    
 
 	Item("Craftplan_ToxicReaper", CategoryType_Collectable)
     {
@@ -1416,25 +1440,6 @@ sub main()
         HudIcon("blueprint_b");
     }
 
-    
-	
-	Item("Craftplan_MedKit_Large_Natural", CategoryType_Collectable)
-    {
-        Name("&Craftplan_MedKit_Large_Natural_N&");
-        Description('&Craftplan_MedKit_Large_Natural_D&');
-        ItemType(ItemType_CraftPlan);
-        Price(42);
-        Mesh("blueprint.msh");
-        Skin("default");
-        RequiredItem("Craft_Lichen", 6);
-        RequiredItem("Craft_UnderwaterAlgae", 20);
-        RequiredItem("Craft_ToxicPlant", 10);
-        Color(Color_White);
-        CraftedItem("Medkit_HealthPackLarge", 2, 2);
-        CraftplanType("Top");
-        UniqueSaveID(1);
-        HudIcon("blueprint_b");
-    }
 	
 	Item("Craftplan_Cloak_Mushrooms", CategoryType_Collectable)
     {
