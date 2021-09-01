@@ -396,7 +396,7 @@ sub main()
         GameVersion(8);
         ItemType(ItemType_CraftComponent);
         Visibility(true);
-        Price(85);
+        Price(75);
         HudIcon("repair_part");
         Mesh("loot_ok_string.msh");
         Skin("buggy_craft_parts");
@@ -412,7 +412,7 @@ sub main()
         GameVersion(8);
         ItemType(ItemType_CraftComponent);
         Visibility(true);
-        Price(30);
+        Price(23);
         HudIcon("repair_part");
         Mesh("loot_ok_pipe_a.msh");
         Skin("buggy_car_parts_metal");
@@ -427,7 +427,7 @@ sub main()
         GameVersion(8);
         ItemType(ItemType_CraftComponent);
         Visibility(true);
-        Price(35);
+        Price(20);
         HudIcon("repair_part");
         Mesh("loot_ok_pipe_a.msh");
         Skin("buggy_car_parts_rubber");
@@ -442,7 +442,7 @@ sub main()
         GameVersion(8);
         ItemType(ItemType_CraftComponent);
         Visibility(true);
-        Price(95);
+        Price(55);
         HudIcon("repair_part");
         Mesh("loot_ok_cosmetics_a.msh");
         Skin("buggy_car_parts");
@@ -457,7 +457,7 @@ sub main()
         GameVersion(8);
         ItemType(ItemType_CraftComponent);
         Visibility(true);
-        Price(125);
+        Price(90);
         HudIcon("repair_part");
         Mesh("loot_ok_bleach_a.msh");
         Skin("buggy_car_parts");
