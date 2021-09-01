@@ -1130,7 +1130,6 @@ sub default()
         use SmashedHead(weight = 1.0);
         use Healing_Items(weight = 1.0);
         use Items_Ammo_Following(weight = 0.2);
-        use Items_Ammo_Subsonic(weight = 0.1);
         use Upgrades(weight = 0.1);
     }
     
@@ -1512,7 +1511,6 @@ sub default()
 			ImportFromShop("Jewels_Bundle", 10, 50);
         }
 		use Items_Ammo(weight = 0.3);
-		use Items_Ammo_Subsonic(weight = 0.15);
         use Upgrades(weight = 0.5);
 	}
 	LootedObject("Cont_VanPolice_Other_Wasteland")
@@ -1520,7 +1518,6 @@ sub default()
         ColorSet(ColorSet_WeaponChest_Hard);
 		
 		use Items_Ammo(weight = 0.3);
-		use Items_Ammo_Subsonic(weight = 0.15);
         use Upgrades(weight = 0.7);
 	}
 	LootedObject("DeadBody_Jim")
@@ -3042,7 +3039,6 @@ sub default_hard()
         use SmashedHead(weight = 1.0);
         use Healing_Items(weight = 1.0);
         use Items_Ammo_Following(weight = 0.2);
-        use Items_Ammo_Subsonic(weight = 0.1);
         use Upgrades(weight = 0.1);
     }
     
@@ -4045,7 +4041,6 @@ sub default_hard()
 			ImportFromShop("Jewels_Bundle", 10, 50);
         }
 		use Items_Ammo(weight = 0.3);
-		use Items_Ammo_Subsonic(weight = 0.15);
         use Upgrades(weight = 0.5);
 		use Healing_Items_Premium(weight = 0.2);
 	}
@@ -5576,7 +5571,6 @@ sub default_nightmare()
         use SmashedHead(weight = 1.0);
         use Healing_Items(weight = 1.0);
         use Items_Ammo_Following(weight = 0.2);
-        use Items_Ammo_Subsonic(weight = 0.1);
         use Upgrades(weight = 0.1);
     }
     
@@ -6557,9 +6551,9 @@ sub default_nightmare()
 
 			ImportFromShop("Jewels_Bundle", 10, 50);
         }
-		use Items_Ammo(weight = 0.3);
-		use Items_Ammo_Subsonic(weight = 0.15);
-        use Upgrades(weight = 0.5);
+		use Items_Ammo(weight = 1.0);
+		use Valuables_Electronics(weight = 0.5);
+        use Upgrades(weight = 0.25);
 	}
 	LootedObject("DeadBody_Jim")
     {
