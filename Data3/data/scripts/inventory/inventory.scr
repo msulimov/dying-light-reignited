@@ -500,7 +500,7 @@ sub main()
     {
         ItemType(ItemType_CraftComponent);
         Visibility(true);
-        Price(6);
+        Price(40);
         HudIcon("repair_part");
         Mesh("loot_ok_metal_scraps.msh");
         Skin("default");
@@ -514,7 +514,7 @@ sub main()
     {
         ItemType(ItemType_CraftComponent);
         Visibility(true);
-        Price(5);
+        Price(45);
         HudIcon("component_misc");
         Mesh("loot_ok_pipe_a.msh");
         Skin("default");
@@ -528,7 +528,7 @@ sub main()
     {
         ItemType(ItemType_CraftComponent);
         Visibility(true);
-        Price(20);
+        Price(75);
         HudIcon("component_chemical");
         Mesh("loot_ok_sugar_a.msh");
         Skin("default");
@@ -542,7 +542,7 @@ sub main()
     {
         ItemType(ItemType_CraftComponent);
         Visibility(true);
-        Price(15);
+        Price(50);
         HudIcon("component_misc");
         Mesh("loot_ok_nails_a.msh");
         Skin("default");
@@ -556,7 +556,7 @@ sub main()
     {
         ItemType(ItemType_CraftComponent);
         Visibility(true);
-        Price(12);
+        Price(35);
         HudIcon("component_misc");
         Mesh("loot_ok_string.msh");
         Skin("default");
@@ -570,7 +570,7 @@ sub main()
     {
         ItemType(ItemType_CraftComponent);
         Visibility(true);
-        Price(14);
+        Price(35);
         HudIcon("component_misc");
         Mesh("loot_ok_tape_a.msh");
         Skin("default");
@@ -584,7 +584,7 @@ sub main()
     {
         ItemType(ItemType_CraftComponent);
         Visibility(true);
-        Price(20);
+        Price(75);
         HudIcon("component_chemical");
         Mesh("loot_ok_bottle_d.msh");
         Skin("default");
@@ -598,7 +598,7 @@ sub main()
     {
         ItemType(ItemType_CraftComponent);
         Visibility(true);
-        Price(15);
+        Price(80);
         HudIcon("component_misc");
         Mesh("loot_ok_gauze_sponges.msh");
         Skin("default");
@@ -612,7 +612,7 @@ sub main()
     {
         ItemType(ItemType_CraftComponent);
         Visibility(true);
-        Price(400);
+        Price(1000);
         HudIcon("component_electronic");
         Mesh("loot_batteries_a.msh");
         Skin("default");
@@ -626,7 +626,7 @@ sub main()
     {
         ItemType(ItemType_CraftComponent);
         Visibility(true);
-        Price(24);
+        Price(80);
         HudIcon("component_chemical");
         Mesh("loot_ok_cosmetics_a.msh");
         Skin("Insect_spray");
@@ -640,7 +640,7 @@ sub main()
     {
         ItemType(ItemType_CraftComponent);
         Visibility(true);
-        Price(32);
+        Price(90);
         HudIcon("component_chemical");
         Mesh("loot_ok_bleach_a.msh");
         Skin("default");
@@ -654,7 +654,7 @@ sub main()
     {
         ItemType(ItemType_CraftComponent);
         Visibility(true);
-        Price(140);
+        Price(500);
         HudIcon("component_misc");
         Mesh("loot_ok_circular_saw_a.msh");
         Skin("default");
@@ -668,7 +668,7 @@ sub main()
     {
         ItemType(ItemType_CraftComponent);
         Visibility(true);
-        Price(4);
+        Price(25);
         HudIcon("component_misc");
         Mesh("loot_ok_can_a.msh");
         Skin("default");
@@ -696,7 +696,7 @@ sub main()
     {
         ItemType(ItemType_CraftComponent);
         Visibility(true);
-        Price(500);
+        Price(1200);
         HudIcon("component_electronic");
         Mesh("loot_ok_power_cable_a.msh");
         Skin("default");
@@ -710,7 +710,7 @@ sub main()
     {
         ItemType(ItemType_CraftComponent);
         Visibility(true);
-        Price(1000);
+        Price(2000);
         HudIcon("component_electronic");
         Mesh("loot_ok_phone_electronic_parts_a.msh");
         Skin("default");
@@ -724,7 +724,7 @@ sub main()
     {
         ItemType(ItemType_CraftComponent);
         Visibility(true);
-        Price(6);
+        Price(8);
         HudIcon("quest_herb_a");
         Mesh("loot_plant_grasslands_a.msh");
         Skin("default");
@@ -738,7 +738,7 @@ sub main()
     {
         ItemType(ItemType_CraftComponent);
         Visibility(true);
-        Price(6);
+        Price(8);
         HudIcon("quest_herb_a");
         Mesh("loot_plant_underwater_a.msh");
         Skin("default");
@@ -752,7 +752,7 @@ sub main()
     {
         ItemType(ItemType_CraftComponent);
         Visibility(true);
-        Price(15);
+        Price(40);
         HudIcon("quest_herb_a");
         Mesh("loot_plant_hidden_a.msh");
         Skin("default");
@@ -766,7 +766,7 @@ sub main()
     {
         ItemType(ItemType_CraftComponent);
         Visibility(true);
-        Price(65);
+        Price(90);
         HudIcon("quest_herb_a");
         Mesh("loot_plant_mushrooms_a.msh");
         Skin("default");
@@ -780,7 +780,7 @@ sub main()
     {
         ItemType(ItemType_CraftComponent);
         Visibility(true);
-        Price(8);
+        Price(15);
         HudIcon("quest_herb_a");
         Mesh("water_vegetation_c.msh");
         Skin("quest_red");
