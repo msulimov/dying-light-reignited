@@ -31,17 +31,17 @@ sub main()
 
     Reward("StorylineReward_HelpingMark_reward")
     {
-        Xp(2500);
+        Xp(500);
     }
 
     Reward("StorylineReward_NaturalMovementTutorial_reward")
     {
-        Xp(5000);
+        Xp(800);
     }
 
     Reward("StorylineReward_GoingOutside_reward")
     {
-        Xp(6000);
+        Xp(1000);
     }
 
     Reward("StorylineReward_Blackout_reward")
