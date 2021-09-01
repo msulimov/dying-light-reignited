@@ -242,7 +242,7 @@ export int Other = 9;
 			Item("Craft_DuctTape", 2.0);
 			Item("Craft_String", 2.0);
 			Item("Craft_Gauze", 1.0);
-			Item("Craft_Insecticide", 1.0);
+			Item("Craft_Insecticide", 3.0);
 			
 			Item("Craft_Nails", 1.0);
 			Item("Craft_Bleach", 1.0);
@@ -273,7 +273,7 @@ export int Other = 9;
 			Item("ZZZZ3_Component_NutsBolts", 1.0);
 			
 			Item("Craft_DuctTape", 2.0);
-			Item("Craft_Insecticide", 1.0);
+			Item("Craft_Insecticide", 3.0);
 			Item("ZZZZ3_Component_Rubber", 1.0);
 			
 			Item("Craft_Bleach", 1.0);
@@ -305,8 +305,6 @@ export int Other = 9;
 			Item("ZZZZ3_Component_NutsBolts", 1.0);
 		
             Item("Craft_Insecticide", 1.0);
-			Item("ZZZZ3_Component_Rubber", 1.0);
-  			Item("ZZZZ3_Component_SteelTubing", 1.0);
 			
 			Item("ZZZZ3_Component_Wire", 0.5);
 			Item("ZZZZ3_Component_Lubricant", 1.0);

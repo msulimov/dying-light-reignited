@@ -949,7 +949,7 @@
 <level id="8" type="Status"><prop n="ExpToNextLevelStatus" v="130000"/></level>
 <level id="9" type="Status"><prop n="ExpToNextLevelStatus" v="150000"/></level>
 <level id="10" type="Status"><prop n="ExpToNextLevelStatus" v="180000"/></level>
-<level id="11" type="Status"><prop n="ExpToNextLevelStatus" v="200000"/></level>
+<level id="11" type="Status"><prop n="ExpToNextLevelStatus" v="500000"/></level>
 <level id="12" type="Status"><prop n="ExpToNextLevelStatus" v="230000"/></level>
 <level id="13" type="Status"><prop n="ExpToNextLevelStatus" v="240000"/></level>
 <level id="14" type="Status"><prop n="ExpToNextLevelStatus" v="260000"/></level>
