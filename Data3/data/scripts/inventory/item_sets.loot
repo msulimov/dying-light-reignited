@@ -839,11 +839,11 @@ export int Other = 9;
     {
         Set(CraftPart, weight, prob)
         {
-            Item("Craft_MetalScrap", 4.0);
-			Item("Craft_PlasticTube", 1.0);
+            Item("Craft_MetalScrap", 2.0);
+			Item("Craft_PlasticTube", 4.0);
 			
-			Item("Craft_TinCan", 2.0);
-			Item("ZZZZ3_Component_Rubber", 3.0);
+			Item("Craft_TinCan", 1.0);
+			Item("ZZZZ3_Component_Rubber", 2.0);
         }
     }
 
