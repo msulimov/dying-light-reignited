@@ -274,7 +274,7 @@ export int Other = 9;
 			
 			Item("Craft_DuctTape", 2.0);
 			Item("Craft_Insecticide", 3.0);
-			Item("ZZZZ3_Component_Rubber", 1.0);
+			Item("Craft_String", 1.0);
 			
 			Item("Craft_Bleach", 1.0);
 			Item("ZZZZ3_Component_Wire", 0.5);
@@ -291,7 +291,9 @@ export int Other = 9;
 			Item("Craft_MetalScrap", 2.0);
 			Item("Craft_PlasticTube", 1.0);
 			
-			Item("Craft_String", 1.0);
+			Item("Craft_TinCan", 1.0);
+            Item("Craft_Insecticide", 1.0);
+            Item("ZZZZ3_Component_Rubber", 1.0);
 			Item("Craft_DuctTape", 1.0);
 			
             Item("Craft_Nails", 1.0);
@@ -302,16 +304,10 @@ export int Other = 9;
     {
         Set(Other, weight, prob)
         {
-			Item("ZZZZ3_Component_NutsBolts", 1.0);
-		
-            Item("Craft_Insecticide", 1.0);
-			
 			Item("ZZZZ3_Component_Wire", 0.5);
 			Item("ZZZZ3_Component_Lubricant", 1.0);
 			
 			Item("ZZZZ3_Component_Synthetic", 1.0);
-			
-			
         }
     }
 
@@ -350,7 +346,6 @@ export int Other = 9;
 			Item("Craft_String", 1.0);
             Item("Craft_DuctTape", 1.0);
 			Item("Craft_Insecticide", 1.0);
-			Item("ZZZZ3_Component_Rubber", 1.0);
 			
             Item("Craft_Nails", 1.0);
 			Item("Craft_Bleach", 1.0);
@@ -679,7 +674,6 @@ export int Other = 9;
 			Item("Craft_Insecticide", 1.0);
 			Item("Craft_Gauze", 1.0);
 			Item("Craft_DuctTape", 2.0);
-			Item("ZZZZ3_Component_Rubber", 2.0);
 			
 			Item("Craft_Nails", 0.5);
 			Item("ZZZZ3_Component_Lubricant", 2.0);
@@ -822,7 +816,6 @@ export int Other = 9;
 			
 			Item("Craft_Insecticide", 1.0);
             Item("Craft_DuctTape", 2.0);
-            Item("ZZZZ3_Component_Rubber", 3.0);
 			Item("ZZZZ3_Component_SteelTubing", 1.0);
 			
 			Item("Craft_Nails", 1.0);
@@ -871,8 +864,6 @@ export int Other = 9;
             Item("Craft_TinCan", 1.0);
 			Item("ZZZZ3_Component_Wire", 0.5);
 			Item("ZZZZ3_Component_NutsBolts", 0.7);
-			//Item("ZZZZ3_Component_SteelTubing", 0.4);
-			//Item("ZZZZ3_Component_Rubber", 0.1);
 			Item("ZZZZ3_Component_Lubricant", 1.0);
 			Item("ZZZZ3_Component_Synthetic", 1.0);
         }
@@ -1063,6 +1054,7 @@ export int Other = 9;
         Set(CraftPart, weight, prob)
         {
             Item("Craft_Alcohol", 1.0);
+            Item("Craft_String", 2.0);
 			Item("Craft_Gauze", 1.0);
 			Item("Craft_Sugar", 1.0);
         }
@@ -1198,7 +1190,7 @@ export int Other = 9;
 			
             Item("Craft_String", 2.0);
             Item("Craft_DuctTape", 2.0);
-			Item("ZZZZ3_Component_Rubber", 2.0);
+			Item("Craft_Insecticide", 2.0);
 			
 			Item("Craft_Bleach", 1.0);
 			Item("ZZZZ3_Component_Lubricant", 2.0);
