@@ -812,6 +812,7 @@ export int Other = 9;
         {
             
 			Item("Craft_MetalScrap", 1.0);
+            Item("Craft_Alcohol", 1.0);
 			Item("ZZZZ3_Component_NutsBolts", 1.0);
 			
 			Item("Craft_Insecticide", 1.0);
