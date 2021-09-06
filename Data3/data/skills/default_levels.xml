@@ -33,7 +33,7 @@
 	<prop n="NightExpRequiredTime" v="20.0"/>
 	<prop n="NightExpSurvivalConstantAward" v="0"/>
     
-    <prop n="DeathPenaltyOnFallMul" v="0.2"/>
+    <prop n="DeathPenaltyOnFallMul" v="1.0"/>
     <prop n="DeathPenaltyInChallengeMul" v="0"/>
 			
 	<prop n="NightExpActionsReward" v="300.0"/>
@@ -837,26 +837,26 @@
 <level id="1" type="Fighter"><prop n="ExpToNextLevelFighter" v="2000"/></level>
 <level id="2" type="Fighter"><prop n="ExpToNextLevelFighter" v="5000"/></level>
 <level id="3" type="Fighter"><prop n="ExpToNextLevelFighter" v="10000"/></level>
-<level id="4" type="Fighter"><prop n="ExpToNextLevelFighter" v="13700"/></level>
-<level id="5" type="Fighter"><prop n="ExpToNextLevelFighter" v="17375"/></level>
-<level id="6" type="Fighter"><prop n="ExpToNextLevelFighter" v="23500"/></level>
-<level id="7" type="Fighter"><prop n="ExpToNextLevelFighter" v="29375"/></level>
-<level id="8" type="Fighter"><prop n="ExpToNextLevelFighter" v="36500"/></level>
-<level id="9" type="Fighter"><prop n="ExpToNextLevelFighter" v="42250"/></level>
-<level id="10" type="Fighter"><prop n="ExpToNextLevelFighter" v="48825"/></level>
-<level id="11" type="Fighter"><prop n="ExpToNextLevelFighter" v="56000"/></level>
-<level id="12" type="Fighter"><prop n="ExpToNextLevelFighter" v="64250"/></level>
-<level id="13" type="Fighter"><prop n="ExpToNextLevelFighter" v="71000"/></level>
-<level id="14" type="Fighter"><prop n="ExpToNextLevelFighter" v="86000"/></level>
-<level id="15" type="Fighter"><prop n="ExpToNextLevelFighter" v="98750"/></level>
-<level id="16" type="Fighter"><prop n="ExpToNextLevelFighter" v="104500"/></level>
-<level id="17" type="Fighter"><prop n="ExpToNextLevelFighter" v="110250"/></level>
-<level id="18" type="Fighter"><prop n="ExpToNextLevelFighter" v="120375"/></level>
-<level id="19" type="Fighter"><prop n="ExpToNextLevelFighter" v="125375"/></level>
-<level id="20" type="Fighter"><prop n="ExpToNextLevelFighter" v="136250"/></level>
-<level id="21" type="Fighter"><prop n="ExpToNextLevelFighter" v="144500"/></level>
-<level id="22" type="Fighter"><prop n="ExpToNextLevelFighter" v="152375"/></level>
-<level id="23" type="Fighter"><prop n="ExpToNextLevelFighter" v="240000"/></level>
+<level id="4" type="Fighter"><prop n="ExpToNextLevelFighter" v="13000"/></level>
+<level id="5" type="Fighter"><prop n="ExpToNextLevelFighter" v="17000"/></level>
+<level id="6" type="Fighter"><prop n="ExpToNextLevelFighter" v="23000"/></level>
+<level id="7" type="Fighter"><prop n="ExpToNextLevelFighter" v="25000"/></level>
+<level id="8" type="Fighter"><prop n="ExpToNextLevelFighter" v="39000"/></level>
+<level id="9" type="Fighter"><prop n="ExpToNextLevelFighter" v="32000"/></level>
+<level id="10" type="Fighter"><prop n="ExpToNextLevelFighter" v="38000"/></level>
+<level id="11" type="Fighter"><prop n="ExpToNextLevelFighter" v="46000"/></level>
+<level id="12" type="Fighter"><prop n="ExpToNextLevelFighter" v="54000"/></level>
+<level id="13" type="Fighter"><prop n="ExpToNextLevelFighter" v="61000"/></level>
+<level id="14" type="Fighter"><prop n="ExpToNextLevelFighter" v="76000"/></level>
+<level id="15" type="Fighter"><prop n="ExpToNextLevelFighter" v="88000"/></level>
+<level id="16" type="Fighter"><prop n="ExpToNextLevelFighter" v="95000"/></level>
+<level id="17" type="Fighter"><prop n="ExpToNextLevelFighter" v="98000"/></level>
+<level id="18" type="Fighter"><prop n="ExpToNextLevelFighter" v="102000"/></level>
+<level id="19" type="Fighter"><prop n="ExpToNextLevelFighter" v="110000"/></level>
+<level id="20" type="Fighter"><prop n="ExpToNextLevelFighter" v="115000"/></level>
+<level id="21" type="Fighter"><prop n="ExpToNextLevelFighter" v="120000"/></level>
+<level id="22" type="Fighter"><prop n="ExpToNextLevelFighter" v="130000"/></level>
+<level id="23" type="Fighter"><prop n="ExpToNextLevelFighter" v="200000"/></level>
 
 <!-- SKILL POINTS RUNNER-->
 <level id="1" type="Runner"><prop n="SkillPointsRunner" v="0"/></level>
@@ -886,29 +886,29 @@
 
 
 <!-- PLAYER EXPERIENCE RUNNER-->
-<level id="1" type="Runner"><prop n="ExpToNextLevelRunner" v="1025"/></level>
-<level id="2" type="Runner"><prop n="ExpToNextLevelRunner" v="2875"/></level>
+<level id="1" type="Runner"><prop n="ExpToNextLevelRunner" v="1500"/></level>
+<level id="2" type="Runner"><prop n="ExpToNextLevelRunner" v="3000"/></level>
 <level id="3" type="Runner"><prop n="ExpToNextLevelRunner" v="5000"/></level>
 <level id="4" type="Runner"><prop n="ExpToNextLevelRunner" v="8000"/></level>
-<level id="5" type="Runner"><prop n="ExpToNextLevelRunner" v="12025"/></level>
-<level id="6" type="Runner"><prop n="ExpToNextLevelRunner" v="16125"/></level>
-<level id="7" type="Runner"><prop n="ExpToNextLevelRunner" v="18025"/></level>
-<level id="8" type="Runner"><prop n="ExpToNextLevelRunner" v="25125"/></level>
-<level id="9" type="Runner"><prop n="ExpToNextLevelRunner" v="33625"/></level>
-<level id="10" type="Runner"><prop n="ExpToNextLevelRunner" v="38125"/></level>
-<level id="11" type="Runner"><prop n="ExpToNextLevelRunner" v="45625"/></level>
-<level id="12" type="Runner"><prop n="ExpToNextLevelRunner" v="51125"/></level>
-<level id="13" type="Runner"><prop n="ExpToNextLevelRunner" v="72000"/></level>
-<level id="14" type="Runner"><prop n="ExpToNextLevelRunner" v="89500"/></level>
-<level id="15" type="Runner"><prop n="ExpToNextLevelRunner" v="100375"/></level>
-<level id="16" type="Runner"><prop n="ExpToNextLevelRunner" v="110875"/></level>
-<level id="17" type="Runner"><prop n="ExpToNextLevelRunner" v="120550"/></level>
-<level id="18" type="Runner"><prop n="ExpToNextLevelRunner" v="130625"/></level>
-<level id="19" type="Runner"><prop n="ExpToNextLevelRunner" v="150025"/></level>
-<level id="20" type="Runner"><prop n="ExpToNextLevelRunner" v="165000"/></level>
-<level id="21" type="Runner"><prop n="ExpToNextLevelRunner" v="178750"/></level>
-<level id="22" type="Runner"><prop n="ExpToNextLevelRunner" v="182500"/></level>
-<level id="23" type="Runner"><prop n="ExpToNextLevelRunner" v="200000"/></level>
+<level id="5" type="Runner"><prop n="ExpToNextLevelRunner" v="12000"/></level>
+<level id="6" type="Runner"><prop n="ExpToNextLevelRunner" v="16000"/></level>
+<level id="7" type="Runner"><prop n="ExpToNextLevelRunner" v="18000"/></level>
+<level id="8" type="Runner"><prop n="ExpToNextLevelRunner" v="25000"/></level>
+<level id="9" type="Runner"><prop n="ExpToNextLevelRunner" v="33000"/></level>
+<level id="10" type="Runner"><prop n="ExpToNextLevelRunner" v="38000"/></level>
+<level id="11" type="Runner"><prop n="ExpToNextLevelRunner" v="41000"/></level>
+<level id="12" type="Runner"><prop n="ExpToNextLevelRunner" v="48000"/></level>
+<level id="13" type="Runner"><prop n="ExpToNextLevelRunner" v="54000"/></level>
+<level id="14" type="Runner"><prop n="ExpToNextLevelRunner" v="60000"/></level>
+<level id="15" type="Runner"><prop n="ExpToNextLevelRunner" v="64000"/></level>
+<level id="16" type="Runner"><prop n="ExpToNextLevelRunner" v="69000"/></level>
+<level id="17" type="Runner"><prop n="ExpToNextLevelRunner" v="76000"/></level>
+<level id="18" type="Runner"><prop n="ExpToNextLevelRunner" v="80000"/></level>
+<level id="19" type="Runner"><prop n="ExpToNextLevelRunner" v="85000"/></level>
+<level id="20" type="Runner"><prop n="ExpToNextLevelRunner" v="90000"/></level>
+<level id="21" type="Runner"><prop n="ExpToNextLevelRunner" v="10000"/></level>
+<level id="22" type="Runner"><prop n="ExpToNextLevelRunner" v="115000"/></level>
+<level id="23" type="Runner"><prop n="ExpToNextLevelRunner" v="140000"/></level>
 
 <!-- SKILL POINTS STATUS-->
 <level id="1" type="Status"><prop n="SkillPointsStatus" v="0"/></level>
@@ -1537,21 +1537,21 @@
 <level id="7" type="Status"><prop n="SurvivalPenaltyOnDeath"  v="-6000.0"/></level>
 <level id="8" type="Status"><prop n="SurvivalPenaltyOnDeath"  v="-7000.0"/></level>
 <level id="9" type="Status"><prop n="SurvivalPenaltyOnDeath"  v="-8000.0"/></level>
-<level id="10" type="Status"><prop n="SurvivalPenaltyOnDeath" v="-1000.0"/></level>
-<level id="11" type="Status"><prop n="SurvivalPenaltyOnDeath" v="-1200.0"/></level>
-<level id="12" type="Status"><prop n="SurvivalPenaltyOnDeath" v="-1200.0"/></level>
-<level id="13" type="Status"><prop n="SurvivalPenaltyOnDeath" v="-1400.0"/></level>
-<level id="14" type="Status"><prop n="SurvivalPenaltyOnDeath" v="-1400.0"/></level>
-<level id="15" type="Status"><prop n="SurvivalPenaltyOnDeath" v="-1400.0"/></level>
-<level id="16" type="Status"><prop n="SurvivalPenaltyOnDeath" v="-3000.0"/></level>
-<level id="17" type="Status"><prop n="SurvivalPenaltyOnDeath" v="-4000.0"/></level>
-<level id="18" type="Status"><prop n="SurvivalPenaltyOnDeath" v="-6000.0"/></level>
-<level id="19" type="Status"><prop n="SurvivalPenaltyOnDeath" v="-7000.0"/></level>
-<level id="20" type="Status"><prop n="SurvivalPenaltyOnDeath" v="-8000.0"/></level>
-<level id="21" type="Status"><prop n="SurvivalPenaltyOnDeath" v="-10000.0"/></level>
-<level id="22" type="Status"><prop n="SurvivalPenaltyOnDeath" v="-20000.0"/></level>
-<level id="23" type="Status"><prop n="SurvivalPenaltyOnDeath" v="-30000.0"/></level>
-<level id="24" type="Status"><prop n="SurvivalPenaltyOnDeath" v="-40000.0"/></level>
+<level id="10" type="Status"><prop n="SurvivalPenaltyOnDeath" v="-10000.0"/></level>
+<level id="11" type="Status"><prop n="SurvivalPenaltyOnDeath" v="-12000.0"/></level>
+<level id="12" type="Status"><prop n="SurvivalPenaltyOnDeath" v="-12000.0"/></level>
+<level id="13" type="Status"><prop n="SurvivalPenaltyOnDeath" v="-13000.0"/></level>
+<level id="14" type="Status"><prop n="SurvivalPenaltyOnDeath" v="-14000.0"/></level>
+<level id="15" type="Status"><prop n="SurvivalPenaltyOnDeath" v="-14000.0"/></level>
+<level id="16" type="Status"><prop n="SurvivalPenaltyOnDeath" v="-17000.0"/></level>
+<level id="17" type="Status"><prop n="SurvivalPenaltyOnDeath" v="-18000.0"/></level>
+<level id="18" type="Status"><prop n="SurvivalPenaltyOnDeath" v="-20000.0"/></level>
+<level id="19" type="Status"><prop n="SurvivalPenaltyOnDeath" v="-24000.0"/></level>
+<level id="20" type="Status"><prop n="SurvivalPenaltyOnDeath" v="-27000.0"/></level>
+<level id="21" type="Status"><prop n="SurvivalPenaltyOnDeath" v="-29000.0"/></level>
+<level id="22" type="Status"><prop n="SurvivalPenaltyOnDeath" v="-32000.0"/></level>
+<level id="23" type="Status"><prop n="SurvivalPenaltyOnDeath" v="-35000.0"/></level>
+<level id="24" type="Status"><prop n="SurvivalPenaltyOnDeath" v="-50000.0"/></level>
 <!--
 <level id="1" type="Status"><prop n="SurvivalPenaltyOnDeathNight"  v="0.0"/></level>
 <level id="2" type="Status"><prop n="SurvivalPenaltyOnDeathNight"  v="0.0"/></level>
