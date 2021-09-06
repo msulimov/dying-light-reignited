@@ -243,11 +243,13 @@ export int Other = 9;
     {
         Set(CraftPart, weight, prob)
         {
-			Item("Craft_MetalScrap", 1.0);
+			Item("Craft_MetalScrap", 2.0);
 			
             Item("Craft_DuctTape", 2.0);
 			Item("Craft_String", 2.0);
             Item("Craft_Insecticide", 1.0);
+			Item("ZZZZ3_Component_Rubber", 1.0);
+			Item("ZZZZ3_Component_SteelTubing", 1.0);
 			
 			Item("Craft_Bleach", 2.0);
 			Item("ZZZZ3_Component_Wire", 1.0);

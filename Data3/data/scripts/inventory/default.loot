@@ -27,34 +27,24 @@ sub Loot()
 		use Firecrackers(weight = 1.0);
     }
 
-    LootedObject("Locker")
+    LootedObject("Locker") // locked locker
     {
         ColorSet(ColorSet_Cont_Lockpick);
 		
 		use Empty(weight = 0.0);
-
-        use Valuables_Default(weight = 2.0);
-        use Firecrackers(weight = 4.0);
-        use Consumable_Healing(weight = 0.5);
-
-        use Valuables_Electronics(weight = 1.0);        
-        use Upgrades(weight = 0.6);
-        use Upgrades_Premium(weight = 0.2);
-    }
-
-    LootedObject("Cont_Lockpick") // locked locker
-    {
-        ColorSet(ColorSet_Cont_Lockpick);
-
-        use Empty(weight = 0.0);
-
-        use Valuables_Default(weight = 2.0);
-        use Firecrackers(weight = 4.0);
-        use Consumable_Healing(weight = 0.5);
-
-        use Valuables_Electronics(weight = 1.0);        
-        use Upgrades(weight = 0.6);
-        use Upgrades_Premium(weight = 0.2);
+        use QuestItems_Locker(weight = 0.01);
+		
+        use Crafting_Steel_Locker(weight = 6.0);
+        use Consumable_Healing(weight = 2.0);
+		
+		use Firecrackers(weight = 2.0);
+		
+		use Valuables_Default(weight = 1.0);
+		
+        use Valuables_Electronics(weight = 0.4);        
+        use Upgrades(weight = 0.4);
+        use Upgrades_Premium(weight = 0.1);
+        
     }
 
     LootedObject("Cabinet")
@@ -71,15 +61,12 @@ sub Loot()
     {
         ColorSet(ColorSet_Default);
 		
-		use Empty(weight = 7.0);
-
+		use Empty(weight = 10.0);
         use QuestItems_Locker(weight = 0.01);
-        
-        use Crafting_Steel_Locker(weight = 3.0);
-        use Firecrackers(weight = 1.0);
-        use Consumable_Healing(weight = 1.0);
-        
-        use Valuables_Premium(weight = 2.0);
+		
+		use Firecrackers(weight = 1.5);
+        use Crafting_Steel_Locker(weight = 4.0);
+        use Consumable_Healing(weight = 2.0); 
     }
 
     LootedObject(Cont_Fridge)
@@ -240,6 +227,19 @@ sub Loot()
         ColorSet(ColorSet_cs_airrdrop_bundles);
         use Empty(weight = 0.0);
         use Items_Airdrop(weight = 1.0);
+    }
+
+    LootedObject("Cont_Lockpick")
+    {
+        ColorSet(ColorSet_Cont_Lockpick);
+        use CashBig(weight = 4.0);
+
+        use Valuables_Electronics(weight = 1.0);
+        use Upgrades(weight = 0.4);
+        use Upgrades_Premium(weight = 0.15);
+
+        use Valuables_Default(weight = 3.0);
+		use Medkits(weight = 2.0);
     }
 
     LootedObject(FuelContainer)
