@@ -33,7 +33,7 @@
         MinProgressCondition(2)
         Type("base")
         Preset("Stinger, 5;Vessel_Eating_Corpse, 5;Vessel_Lurker_Int, 5;Vessel_Stinger_Int, 5;Vessel_In_Attractor, 5;Vessel_Init, 25;Vessel_WithAToy, 5;Nurker, 10;DeadZone_Policeman, 15;Biter_Special, 15;Human_To_Infected_In_Attractor, 1;")
-		Preset("Goon, 8;Vessel_GasTank, 6;Biter_Burn, 6;")
+		Preset("Goon, 8;Vessel_GasTank, 6;Biter_Burn, 2;")
         
 		
 	}
@@ -132,7 +132,7 @@
 		Preset("Vessel_Lurker_Int, 5;Vessel_Stinger_Int, 5")
         Preset("Suicider, 20;")//10
         Preset("Vessel_GasTank, 15;Nurker, 10;")//25
-        Preset("Vessel_Init, 5;Vessel_WithAToy, 5;Biter_Burn, 5;")//15
+        Preset("Vessel_Init, 5;Vessel_WithAToy, 5;")//15
         Preset("Goon, 15")//15
         Preset("Toad_Hard, 20;")//20
     }
@@ -146,7 +146,7 @@
         Type("peak;special")
 		Preset("Vessel_Lurker_Int, 5;Vessel_Stinger_Int, 5")
         Preset("Suicider, 10;")//10
-		Preset("Melee_Fighter_With_Pipe, 2;Defender_Fighter, 2;Melee_Fighter_Rais, 5;Melee_Survivor, 5;")
+		Preset("Melee_Fighter_With_Pipe, 2;Defender_Fighter, 2;Melee_Fighter_Rais, 15;Melee_Survivor, 5;")
         Preset("Vessel_GasTank, 5;Nurker, 10;")//10
         Preset("Goon, 30")//30
 		
@@ -177,6 +177,7 @@
         Preset("Vessel_GasTank, 10;Nurker, 10;")//20
         Preset("Vessel_Init, 10;Vessel_WithAToy, 5;Biter_Special, 15;")//30
         Preset("Goon, 20")//20
+        Preset("Melee_Fighter_Rais, 15")
         Preset("Toad_Hard, 5;Toad_OldTown, 5")//10
 	
     }
@@ -187,8 +188,8 @@
         AllowedMaps("slums_cl_flats") // disabled since already being spawned
         BannedAreaAttribs("BLUE_DISTRICT")
         Type("head_hunters")
-        Preset("Melee_Fighter_With_Pipe, 4;Melee_Fighter_With_Pipe_Init, 2;")
-		Preset("Defender_Fighter, 3;")
+        Preset("Melee_Fighter_With_Pipe, 6;Melee_Fighter_With_Pipe_Init, 4;")
+		Preset("Defender_Fighter, 5;")
 		Preset("Melee_Fighter_Rais, 10;")
     }
 
@@ -223,7 +224,6 @@
         MaxChapterAndProgressCondition(15, 0)
         Type("peak;special;begin;noise;pause")
         Preset("Stinger, 10;Vessel_Eating_Corpse, 20;Vessel_In_Attractor, 30;Vessel_Init, 30")
-        //Preset("Human_To_Infected_In_Attractor, 3")
     }
 
     Pool("noise_chapter_0")

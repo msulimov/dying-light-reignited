@@ -291,8 +291,8 @@ sub Loot()
         use CashMedium(weight = 0);
         use CashPenny(weight = 0.7);
 		
-        use Crafting_Biter(weight = 2.5);
-		use Components_Biter(weight = 1.0);
+        use Crafting_Biter(weight = 3.5);
+		use Components_Biter(weight = 0.75);
 		use Biter_Healing_Craftparts(weight = 1.5);
 		
         use Valuables_Biter(weight = 1.0);
@@ -310,8 +310,8 @@ sub Loot()
         use CashMedium(weight = 0.0);
         use CashPenny(weight = 0.3);
 		
-        use Crafting_Biter(weight = 2.25);
-		use Components_Biter(weight = 1.25);
+        use Crafting_Biter(weight = 3.5);
+		use Components_Biter(weight = 1.5);
 		use Biter_Healing_Craftparts(weight = 2.0);
 		
         use Valuables_Biter(weight = 0.8);
@@ -330,7 +330,7 @@ sub Loot()
         use CashPenny(weight = 0.3);
 		
         use Crafting_Biter(weight = 5.5);
-		use Components_Biter(weight = 3.5);
+		use Components_Biter(weight = 2.5);
 		use Biter_Healing_Craftparts(weight = 2.5);
         
 		use Consumable_Healing(weight = 1.0);
@@ -353,8 +353,8 @@ sub Loot()
         use CashMedium(weight = 0.8);
         use CashPenny(weight = 0.1);
 		
-        use Crafting_Biter(weight = 4.0);
-		use Components_Biter(weight = 3.0);
+        use Crafting_Biter(weight = 5.0);
+		use Components_Biter(weight = 3.5);
 		use Biter_Healing_Craftparts(weight = 2.5);
         
 		use Consumable_Healing(weight = 1.5);
@@ -375,8 +375,8 @@ sub Loot()
 
         use CashMedium(weight = 1.0);
 		
-		use Crafting_Biter(weight = 4.5);
-		use Components_Biter(weight = 3.5);
+		use Crafting_Biter(weight = 6.5);
+		use Components_Biter(weight = 4.5);
 		use Biter_Healing_Craftparts(weight = 2.5);
 		
 		use Consumable_Healing(weight = 2.25);

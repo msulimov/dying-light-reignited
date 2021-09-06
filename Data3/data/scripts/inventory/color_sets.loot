@@ -1144,10 +1144,10 @@ sub DefineColorsNightmare()
 
     DefColorSet(ColorSet_cs_crafting)
     {
-        ColorWeight(Color_White, 53);
+        ColorWeight(Color_White, 40);
         ColorWeight(Color_Green, 35);
-        ColorWeight(Color_Blue, 10);
-        ColorWeight(Color_Violet, 2);
+        ColorWeight(Color_Blue, 20);
+        ColorWeight(Color_Violet, 5);
         ColorWeight(Color_Orange, 0);
     }
 
