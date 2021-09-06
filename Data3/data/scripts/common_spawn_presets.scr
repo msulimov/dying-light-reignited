@@ -132,7 +132,7 @@
         MinDistBtwZombies(10)
         TimeBtwSpawnZombies(1)
         ForceTargetType(3)
-        SarcophagusTime(2)
+        SarcophagusTime(20)
         //TimeBtwSpawnZombies(3)
     }
 
@@ -148,7 +148,7 @@
         ForceTargetType(3)
         TimeBtwSpawnZombies(2)
         RelativePresets("Vessel_Init;Volatile_Pit")
-        SarcophagusTime(2)
+        SarcophagusTime(20)
     }
     
     PresetDef("HotGround_Infected_Roof_Init")
@@ -161,7 +161,7 @@
         MinDistBtwZombies(10)
         ForceTargetType(3)
         TimeBtwSpawnZombies(2)
-        SarcophagusTime(5)
+        SarcophagusTime(20)
     }
 
     PresetDef("Infected_Human")

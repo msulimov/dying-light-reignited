@@ -25,11 +25,15 @@ export int Other = 9;
         {
             Item("Craft_MetalScrap", 1.0);
             Item("Craft_PlasticTube", 1.0);
+            Item("ZZZZ3_Component_NutsBolts", 1.0);
 			Item("Craft_Alcohol", 1.0);
+            Item("Craft_Sugar", 1.0);
             
             Item("Craft_DuctTape", 1.0);
             Item("Craft_Gauze", 1.0);
+            Item("Craft_Insecticide", 1.0);
 			Item("ZZZZ3_Component_Rubber", 1.0);
+            Item("Craft_String", 1.0);
             
             Item("Craft_Bleach", 1.0);
 			Item("Craft_Nails", 1.0);
@@ -37,6 +41,7 @@ export int Other = 9;
             
 			Item("misc_pouch", 1.0);
             Item("ZZZZ3_Component_Synthetic", 1.0);
+            Item("Craft_Shroom", 1.0);
 			
 			//Item("ZZZZ3_Component_NutsBolts", 1.0);
 			//Item("Craft_RazorBlade", 1.0);

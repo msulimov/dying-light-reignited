@@ -153,9 +153,9 @@
         Type("night")
         ConditionNightAggrLvl(0)
 
-        Preset("Volatile_Patrol_OT, 100;Volatile_Eating_Corpse, 20;Volatile_Nav, 20;Volatile_Hard, 20; Volatile, 20;")							  
+        Preset("Volatile_Patrol_OT, 100;Volatile_Eating_Corpse, 40;Volatile_Nav, 30;Volatile_Hard, 20; Volatile, 20;")							  
 		Preset("Night_Walker_Patrol, 100; Night_Walker_Special_Tranformation, 50;") 
-		Preset("Melee_Fighter_With_Pipe, 1;Melee_Fighter_With_Pipe_Init, 1;Defender_Fighter, 1;Melee_Fighter_Rais, 2;Melee_Survivor, 4;") 
+		Preset("Melee_Fighter_With_Pipe, 2;Melee_Fighter_With_Pipe_Init, 2;Defender_Fighter, 4;Melee_Fighter_Rais, 5;Melee_Survivor, 1;") 
 		
 		NoZombiesByPresets("Night_Walker, 30;Night_Walker_Init, 70;", 3, 3)
 		

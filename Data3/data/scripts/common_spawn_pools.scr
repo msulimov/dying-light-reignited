@@ -21,7 +21,7 @@
         DisallowedMaps("old_town_outposts_radio;Sewers_Stadium")
         MaxProgressCondition(2)
         Type("base")
-        Preset("Stinger, 5;Vessel_Eating_Corpse, 10;Vessel_In_Attractor, 10;Vessel_Init, 40;")
+        Preset("Stinger, 5;Vessel_Eating_Corpse, 20;Vessel_In_Attractor, 20;Vessel_Init, 80;")
         Preset("Human_To_Infected_In_Attractor, 1")
     }
 
@@ -33,7 +33,7 @@
         MinProgressCondition(2)
         Type("base")
         Preset("Stinger, 5;Vessel_Eating_Corpse, 5;Vessel_Lurker_Int, 5;Vessel_Stinger_Int, 5;Vessel_In_Attractor, 5;Vessel_Init, 25;Vessel_WithAToy, 5;Nurker, 10;DeadZone_Policeman, 15;Biter_Special, 15;Human_To_Infected_In_Attractor, 1;")
-		Preset("Goon, 8;Vessel_GasTank, 6;Biter_Burn, 6;")
+		Preset("Goon, 8;Vessel_GasTank, 6;Biter_Burn, 2;")
         
 		
 	}
@@ -45,7 +45,6 @@
         MaxProgressCondition(1)
         Type("peak;special")
         Preset("Vessel_Init, 20;Vessel_Lurker, 5;Vessel_DeadBody, 5;")//35
-        Preset("Human_To_Infected_In_Attractor, 3")//10
     }
 
     Pool("special_1_2") // BITER, LURKER, HUMAN MELEE
@@ -56,7 +55,6 @@
         MaxProgressCondition(2)
         Type("peak;special")
         Preset("Vessel_Init, 40;Vessel_Lurker, 15;Vessel_DeadBody, 15;Vessel_WithAToy, 10;")//70
-        Preset("Human_To_Infected_In_Attractor, 5")//30
 		
     }
 
@@ -68,7 +66,6 @@
         MaxProgressCondition(3)
         Type("peak;special")
         Preset("Vessel_Init, 35;Vessel_Lurker, 5;Vessel_DeadBody, 10;Vessel_WithAToy, 5;Biter_Special, 10;")//65
-        Preset("Human_To_Infected_In_Attractor, 5")//20
         Preset("Goon, 100;")//15
     }
 
@@ -94,8 +91,6 @@
         Type("peak;special")
         Preset("Vessel_GasTank, 30;")//15
         Preset("Vessel_Init, 30;Vessel_WithAToy, 15;")//45
-        Preset("Human_To_Infected_In_Attractor, 1")//30
-		Preset("Infected_HumanInit_Noise, 3")//10
         Preset("Goon, 10;")//10
     }
 
@@ -108,8 +103,6 @@
         Type("peak;special")
         Preset("Vessel_GasTank, 30;")//30
         Preset("Vessel_Init, 5;Vessel_WithAToy, 5;")//10
-        Preset("Human_To_Infected_In_Attractor, 1")//15
-		Preset("Infected_HumanInit_Noise, 3")//10
         Preset("Goon, 15;")//15
         Preset("Toad_Medium, 30;")//30
     }
@@ -121,14 +114,11 @@
         MinProgressCondition(6)
         MaxProgressCondition(7)
         Type("peak;special")
-        Preset("Suicider, 10;")//10
+        Preset("Suicider, 40;")//10
         Preset("Vessel_GasTank, 15;")//15
         Preset("Vessel_Init, 5;Vessel_WithAToy, 5;Biter_Burn, 10;")//15
-        Preset("Human_To_Infected_In_Attractor, 1")//10
-		Preset("Infected_HumanInit_Noise, 3")//10
         Preset("Goon, 15;")//15
         Preset("Toad_Medium, 15;")//15
-        Preset("Melee_Fighter_With_Pipe, 10;Melee_Fighter_With_Pipe_Init, 5;")//15
 		
     }
 
@@ -140,11 +130,9 @@
         MaxProgressCondition(8)
         Type("peak;special")
 		Preset("Vessel_Lurker_Int, 5;Vessel_Stinger_Int, 5")
-        Preset("Suicider, 10;")//10
+        Preset("Suicider, 20;")//10
         Preset("Vessel_GasTank, 15;Nurker, 10;")//25
-        Preset("Vessel_Init, 5;Vessel_WithAToy, 5;Biter_Burn, 5;")//15
-        Preset("Human_To_Infected_In_Attractor, 2")//15
-		Preset("Infected_HumanInit_Noise, 3")//10
+        Preset("Vessel_Init, 5;Vessel_WithAToy, 5;")//15
         Preset("Goon, 15")//15
         Preset("Toad_Hard, 20;")//20
     }
@@ -158,10 +146,8 @@
         Type("peak;special")
 		Preset("Vessel_Lurker_Int, 5;Vessel_Stinger_Int, 5")
         Preset("Suicider, 10;")//10
-		Preset("Melee_Fighter_With_Pipe, 2;Defender_Fighter, 2;Melee_Fighter_Rais, 5;Melee_Survivor, 5;")
+		Preset("Melee_Fighter_With_Pipe, 2;Defender_Fighter, 2;Melee_Fighter_Rais, 15;Melee_Survivor, 5;")
         Preset("Vessel_GasTank, 5;Nurker, 10;")//10
-        Preset("Human_To_Infected_In_Attractor, 4")//10
-		Preset("Infected_HumanInit_Noise, 3")//10
         Preset("Goon, 30")//30
 		
     }
@@ -175,11 +161,8 @@
         Type("peak;special")
         Preset("Suicider, 10;")//10
         Preset("Vessel_GasTank, 5;Nurker, 10;")//10
-        Preset("Human_To_Infected_In_Attractor, 4")//10
-		Preset("Infected_HumanInit_Noise, 3")//10
         Preset("Goon, 20")//20
         Preset("Toad_Hard, 15;Toad_OldTown, 15")//30
-        Preset("Melee_Fighter_With_Pipe, 5;Melee_Fighter_With_Pipe_Init, 5;")//10
     }
 
     Pool("special_10_up") // MAKE IT HARD!
@@ -193,9 +176,8 @@
         Preset("Suicider, 20;")//20
         Preset("Vessel_GasTank, 10;Nurker, 10;")//20
         Preset("Vessel_Init, 10;Vessel_WithAToy, 5;Biter_Special, 15;")//30
-        Preset("Human_To_Infected_In_Attractor, 4")//10
-		Preset("Infected_HumanInit_Noise, 4")//10
         Preset("Goon, 20")//20
+        Preset("Melee_Fighter_Rais, 15")
         Preset("Toad_Hard, 5;Toad_OldTown, 5")//10
 	
     }
@@ -206,8 +188,8 @@
         AllowedMaps("slums_cl_flats") // disabled since already being spawned
         BannedAreaAttribs("BLUE_DISTRICT")
         Type("head_hunters")
-        Preset("Melee_Fighter_With_Pipe, 4;Melee_Fighter_With_Pipe_Init, 2;")
-		Preset("Defender_Fighter, 3;")
+        Preset("Melee_Fighter_With_Pipe, 6;Melee_Fighter_With_Pipe_Init, 4;")
+		Preset("Defender_Fighter, 5;")
 		Preset("Melee_Fighter_Rais, 10;")
     }
 
@@ -242,7 +224,6 @@
         MaxChapterAndProgressCondition(15, 0)
         Type("peak;special;begin;noise;pause")
         Preset("Stinger, 10;Vessel_Eating_Corpse, 20;Vessel_In_Attractor, 30;Vessel_Init, 30")
-        //Preset("Human_To_Infected_In_Attractor, 3")
     }
 
     Pool("noise_chapter_0")
