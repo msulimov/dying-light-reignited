@@ -1221,10 +1221,10 @@ sub DefineColorsNightmare()
        
         ColorWeight(Color_White, 0);
         ColorWeight(Color_Green, 0);
-        ColorWeight(Color_Blue, 25);
-        ColorWeight(Color_Violet, 45);
-        ColorWeight(Color_Orange, 20);
-        ColorWeight(Color_Platinum, 10);
+        ColorWeight(Color_Blue, 10);
+        ColorWeight(Color_Violet, 40);
+        ColorWeight(Color_Orange, 35);
+        ColorWeight(Color_Platinum, 15);
 		
     }
 

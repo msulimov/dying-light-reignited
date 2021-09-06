@@ -304,21 +304,6 @@ export int Other = 9;
         }
     }
 
-    sub Valuables_Premium(float weight = 1.0, float prob = 1.0)
-    {
-        Set(Mods, weight, prob)
-        {
-            Item("ZZZZ3_misc_premium_cigarettes", 1.0);
-            Item("ZZZZ3_misc_premium_cosmetics", 1.0);
-            Item("ZZZZ3_misc_premium_pouch", 1.0);
-            Item("ZZZZ3_misc_premium_jewels", 1.0);
-            Item("Craft_Batteries", 1.0);
-            Item("Craft_PowerCable", 1.0);
-            Item("Craft_Electronics", 1.0);
-
-        }
-    }
-
     sub Valuables_Biter(float weight = 1.0, float prob = 1.0)
     {
         Set(Valuables, weight, prob)

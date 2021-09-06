@@ -6029,11 +6029,16 @@ sub default_nightmare()
 		// ColorSet(ColorSet_WhiteOnly);
 		ColorSet(ColorSet_WeaponChest_Medium);
         
-		
-        Set(Weapon, 0.9, 1.0)    // Weapon on player level + 1
+        Set(Weapon, 0.45, 1.0)    // Weapon on player level + 1
         {
             AvoidGeneratingDuplicates();
         	use melee();
+        }
+
+        Set(Weapon, 0.45, 1.0)    // Weapon on player level + 1
+        {
+            AvoidGeneratingDuplicates();
+        	use melee_2h();
         }
 
         Set(Weapon, 0.1, 1.0)    // Weapon on player level + 1
@@ -6051,10 +6056,16 @@ sub default_nightmare()
         
 		ColorSet(ColorSet_PlatinumOnly);
 		
-        Set(Weapon, 0.9, 1.0)    // Weapon on player level + 1
+        Set(Weapon, 0.45, 1.0)    // Weapon on player level + 1
         {
             AvoidGeneratingDuplicates();
         	use melee();
+        }
+
+        Set(Weapon, 0.45, 1.0)    // Weapon on player level + 1
+        {
+            AvoidGeneratingDuplicates();
+        	use melee_2h();
         }
 
         Set(Weapon, 0.1, 1.0)    // Weapon on player level + 1
@@ -6101,10 +6112,16 @@ sub default_nightmare()
         
 		ColorSet(ColorSet_WeaponChest_Medium);
 		
-		Set(Weapon, 1.0, 1.0)    // Weapon on player level + 1
+		Set(Weapon, 0.5, 1.0)    // Weapon on player level + 1
         {
             AvoidGeneratingDuplicates();
         	use melee();
+        }
+
+        Set(Weapon, 0.5, 1.0)    // Weapon on player level + 1
+        {
+            AvoidGeneratingDuplicates();
+        	use melee_2h();
         }
 
     }
@@ -6115,10 +6132,16 @@ sub default_nightmare()
         
 		ColorSet(ColorSet_WeaponChest_Medium);
 		
-		Set(Weapon, 1.0, 1.0)    // Weapon on player level + 1
+		Set(Weapon, 0.5, 1.0)    // Weapon on player level + 1
         {
             AvoidGeneratingDuplicates();
         	use melee();
+        }
+
+        Set(Weapon, 0.5, 1.0)    // Weapon on player level + 1
+        {
+            AvoidGeneratingDuplicates();
+        	use melee_2h();
         }
 
     }
@@ -6129,13 +6152,20 @@ sub default_nightmare()
 		IgnorePlatinumRestrictions();
         
         ColorSet(ColorSet_WeaponChest_Hard);
-		Set(Weapon, 0.8, 1.0)    // Weapon on player level + 1
+
+		Set(Weapon, 0.3, 1.0)    // Weapon on player level + 1
         {
             AvoidGeneratingDuplicates();
         	use melee();
         }
 
-        Set(Weapon, 0.2, 1.0)    // Weapon on player level + 1
+        Set(Weapon, 0.3, 1.0)    // Weapon on player level + 1
+        {
+            AvoidGeneratingDuplicates();
+        	use melee_2h();
+        }
+
+        Set(Weapon, 0.4, 1.0)    // Weapon on player level + 1
         {
         	AvoidGeneratingDuplicates();
         	use firearms();
@@ -6148,13 +6178,20 @@ sub default_nightmare()
 		IgnorePlatinumRestrictions();
         
         ColorSet(ColorSet_WeaponChest_Hard_Deadzone);
-		Set(Weapon, 0.7, 1.0)    // Weapon on player level + 1
+		
+		Set(Weapon, 0.3, 1.0)    // Weapon on player level + 1
         {
             AvoidGeneratingDuplicates();
         	use melee();
         }
 
         Set(Weapon, 0.3, 1.0)    // Weapon on player level + 1
+        {
+            AvoidGeneratingDuplicates();
+        	use melee_2h();
+        }
+
+        Set(Weapon, 0.4, 1.0)    // Weapon on player level + 1
         {
         	AvoidGeneratingDuplicates();
         	use firearms();
@@ -6167,7 +6204,8 @@ sub default_nightmare()
 		IgnorePlatinumRestrictions();
         
         ColorSet(ColorSet_WeaponChest_Hard);
-		Set(Weapon, 0.7, 1.0)    // Weapon on player level + 1
+
+		Set(Weapon, 0.3, 1.0)    // Weapon on player level + 1
         {
             AvoidGeneratingDuplicates();
         	use melee();
@@ -6175,11 +6213,16 @@ sub default_nightmare()
 
         Set(Weapon, 0.3, 1.0)    // Weapon on player level + 1
         {
+            AvoidGeneratingDuplicates();
+        	use melee_2h();
+        }
+
+        Set(Weapon, 0.4, 1.0)    // Weapon on player level + 1
+        {
         	AvoidGeneratingDuplicates();
         	use firearms();
         }
 			
-      
 	}
 
 	LootedObject(DeadBody_Armored)
@@ -6192,7 +6235,7 @@ sub default_nightmare()
 		Set(Weapon, 0.7, 1.0)    // Weapon on player level + 1
         {
             AvoidGeneratingDuplicates();
-        	use melee();
+        	use melee_2h();
         }
 
         Set(Weapon, 0.3, 1.0)    // Weapon on player level + 1
@@ -6214,7 +6257,7 @@ sub default_nightmare()
 		Set(Weapon, 0.7, 1.0)    // Weapon on player level + 1
         {
             AvoidGeneratingDuplicates();
-        	use melee();
+        	use melee_2h();
         }
 
         Set(Weapon, 0.3, 1.0)    // Weapon on player level + 1
@@ -6233,13 +6276,19 @@ sub default_nightmare()
         
         ColorSet(ColorSet_WeaponChest_Hard);
         
-		Set(Weapon, 0.8, 1.0)    // Weapon on player level + 1
+		Set(Weapon, 0.35, 1.0)    // Weapon on player level + 1
         {
             AvoidGeneratingDuplicates();
         	use melee();
         }
 
-        Set(Weapon, 0.2, 1.0)    // Weapon on player level + 1
+        Set(Weapon, 0.35, 1.0)    // Weapon on player level + 1
+        {
+            AvoidGeneratingDuplicates();
+        	use melee_2h();
+        }
+
+        Set(Weapon, 0.3, 1.0)    // Weapon on player level + 1
         {
         	AvoidGeneratingDuplicates();
         	use firearms();
@@ -6256,8 +6305,21 @@ sub default_nightmare()
 
 			ImportFromShop("Jewels_Bundle", 1, 50);
         }
-		use Items_Ammo(weight = 0.5);
-        use Upgrades(weight = 0.1);
+        Set(Weapon, 0.4, 1.0)    // Weapon on player level + 1
+        {
+            AvoidGeneratingDuplicates();
+        	use melee();
+        }
+
+        Set(Weapon, 0.4, 1.0)    // Weapon on player level + 1
+        {
+            AvoidGeneratingDuplicates();
+        	use melee_2h();
+        }
+
+		use Items_Ammo(weight = 1.0);
+        use Upgrades(weight = 0.5);
+        use Upgrades_Premium(weight = 0.2);
 	}
 	LootedObject("DeadBody_Jim")
     {
@@ -6286,10 +6348,11 @@ sub default_nightmare()
     {
 		ColorSet(ColorSet_Valuables_Chest);
 		
-        use Upgrades(weight = 2.0);
-        use Upgrades_Premium(weight = 0.5);
-		use Valuables_Electronics (weight = 4.0);
-		use Valuables_Chest (weight = 2.0);
+        use Upgrades(weight = 1.0);
+        use Upgrades_Premium(weight = 0.2);
+		use Valuables_Electronics (weight = 1.0);
+		use Valuables_Chest(weight = 1.0);
+		use Crafting_Chest_Big(weight = 2.0);
     }
 	
 //////////WASTELAND_NIGHTMARE
