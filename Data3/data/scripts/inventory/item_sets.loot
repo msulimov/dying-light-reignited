@@ -9,142 +9,6 @@ export int CraftPart = 6;
 export int Lockpick = 7;
 export int Mods = 8;
 export int Other = 9;
-	sub Weapons_L4D_Event(float weight = 1.0, float prob = 1.0)
-    {
-        Set(Weapon, weight, prob)
-        {
-			Item("Firearm_ShotgunAGen", 1.0);
-			Item("ZZZZZ_Firearm_ShotgunBGen", 1.0);
-			Item("ZZZZZ_Firearm_RevolverRangerRegular", 1.0);
-			Item("Firearm_ShotgunAGenRust", 1.0);
-			Item("ZZZZZ_Firearm_RevolverSixshooterRegular", 1.0);
-			Item("Firearm_PistolBGenSandPlastic", 1.0);
-			Item("ZZZZZ_Firearm_RevolverQuickshooterRegular", 1.0);
-			Item("Firearm_PistolBGenOlivePlastic", 1.0);
-			Item("ZZZZZ_Firearm_SubmachineAColor_A", 1.0);
-			Item("Firearm_PistolAGen", 1.0);
-			Item("ZZZZZ_Firearm_SubmachineAColor_C", 1.0);
-			Item("ZZZZZ_Firearm_SubmachineAColor_D", 1.0);
-			Item("ZZZZZ_Firearm_SubmachineAColor_B", 1.0);
-			Item("Firearm_HMR_Gaas", 1.0);
-			Item("ZZZZZ_Firearm_SubmachineB", 1.0);
-			Item("Firearm_PistolBGen", 1.0);
-			Item("ZZZZZ_Firearm_SubmachineA", 1.0);
-			Item("Firearm_RifleBGen", 1.0);
-			Item("Firearm_RifleBGenOlive", 1.0);
-			Item("Firearm_RifleBGenSand", 1.0);
-			Item("ZZZZZ_Firearm_ShotgunCGenOlive", 0.5);
-			Item("ZZZZZ_Firearm_ShotgunCGenColor_A", 0.5);
-			Item("ZZZZZ_Firearm_ShotgunCGenAircraft", 0.5);
-			Item("ZZZZZ_Firearm_ShotgunCGenSand", 0.5);
-			Item("Firearm_ShotgunAGenPlastic", 0.5);
-			Item("Gaas_Firearm_Halloween_Shotgun", 0.5);
-			Item("ZZZZZ_Firearm_RevolverRanger", 0.5);
-			Item("Firearm_Gaas_Revolver", 0.5);
-			Item("ZZZZZ_Firearm_RevolverSixshooter", 0.5);
-			Item("Firearm_PistolAGenSandPlastic", 0.5);
-			Item("Firearm_PistolAGenOlivePlastic", 0.5);
-			Item("ZZZZZ_Firearm_RevolverQuickshooter", 0.5);
-			Item("Firearm_RifleBGenOlivePlastic", 0.5);
-			Item("Firearm_RifleBGenSandPlastic", 0.5);
-			Item("Firearm_RifleAGen", 0.5);
-			Item("Firearm_RifleAGenOlive", 0.5);
-			Item("Firearm_RifleAGenSandPlastic", 0.5);
-			Item("Firearm_RifleAGenOlivePlastic", 0.5);
-			Item("Firearm_RifleAGenSand", 0.5);
-			Item("ZZZZZ_Firearm_ShotgunCGenSteampunk", 0.25);
-			Item("Firearm_ShotgunAGenSpecial", 0.25);
-			Item("ZZZZZ_Firearm_ShotgunBGenSpecial", 0.25);
-			Item("Firearm_PistolAGenSpecial", 0.25);
-			Item("ZZZZZ_Firearm_SubmachineBSpecial", 0.25);
-			Item("ZZZZZ_Firearm_SubmachineASteampunk", 0.25);
-			Item("Firearm_Rais_Gun", 0.25);
-			Item("Firearm_PistolBGenSpecial", 0.25);
-			Item("ZZZZZ_Firearm_SubmachineASpecial", 0.25);
-        }
-    }
-	
-    sub Liveops_Christmas_Biter_GroupA(float weight = 1.0, float prob = 1.0)
-    {
-        Set(Other, weight, prob)
-        {
-            Item("Liveops_Christmas_Candy_1", 1.0);
-            Item("Liveops_Christmas_Candy_2", 1.0);
-            Item("Liveops_Christmas_Candy_3", 1.0);
-            Item("Liveops_Christmas_Candy_5", 1.0);
-            Item("Liveops_Christmas_Candy_6", 1.0);
-            Item("Liveops_Christmas_Candy_8", 1.0);
-        }
-    }
-
-    sub Liveops_Christmas_Biter_GroupB(float weight = 1.0, float prob = 1.0)
-    {
-        Set(Other, weight, prob)
-        {
-            Item("Liveops_Christmas_Candy_1", 1.0);
-            Item("Liveops_Christmas_Candy_2", 1.0);
-            Item("Liveops_Christmas_Candy_4", 1.0);
-            Item("Liveops_Christmas_Candy_5", 1.0);
-            Item("Liveops_Christmas_Candy_7", 1.0);
-            Item("Liveops_Christmas_Candy_8", 1.0);
-        }
-    }
-
-	sub Liveops_Christmas_Viral(float weight = 1.0, float prob = 1.0)
-    {
-        Set(Other, weight, prob)
-        {
-            Item("Liveops_Christmas_Candy_1", 1.0);
-            Item("Liveops_Christmas_Candy_3", 1.0);
-            Item("Liveops_Christmas_Candy_5", 1.0);
-            Item("Liveops_Christmas_Candy_8", 1.0);
-        }
-    }
-    sub Liveops_Easter_Eggs(float weight = 1.0, float prob = 1.0)
-    {
-        Set(Other, weight, prob)
-        {
-            Item("Throwable_Easter_Egg_Freeze", 1.0);
-            Item("Throwable_Easter_Egg_Ram", 1.0);
-            Item("Throwable_Easter_Egg_Poison", 1.0);
-            Item("Throwable_Easter_Egg_Fire", 1.0);
-        }
-    }
-
-    sub Gaas_Soldier_Stuff(float weight = 1.0, float prob = 1.0)
-    {
-        Set(Other, weight, prob)
-        {
-            Item("Gaas_Soldier1_Leftover", 1.0);
-        }
-    }
-
-    sub QuestItems_Wardrobe(float weight = 1.0, float prob = 1.0)
-    {
-        Set(Other, weight, prob)
-        {
-            Item("Craft_LighterGas", 1.0);
-        }
-    }
-
-    sub QuestItems_Locker(float weight = 1.0, float prob = 1.0)
-    {
-        Set(Valuables, weight, prob)
-        {
-            Item("Craft_LighterGas", 1.0);
-            Item("misc_cosmetics", 1.0);
-        }
-    }
-
-    sub QuestItems_Cabinet(float weight = 1.0, float prob = 1.0)
-    {
-        Set(Valuables, weight, prob)
-        {
-            Item("Craft_LighterGas", 1.0);
-            Item("misc_coffee", 1.0);
-            Item("misc_cigarettes", 1.0);
-        }
-    }
 
     sub Consumables_Pharmacy(float weight = 1.0, float prob = 1.0)
     {
@@ -160,10 +24,6 @@ export int Other = 9;
     {
         Set(CraftPart, weight, prob)
         {
-			Item("Craft_MetalScrap", 1.0);
-            Item("Craft_PlasticTube", 3.0);
-			Item("Craft_Alcohol", 1.0);
-			Item("Craft_Sugar", 1.0);
 
 			Item("Craft_TinCan", 1.0);
             Item("Craft_DuctTape", 2.0);
@@ -174,37 +34,39 @@ export int Other = 9;
         }
     }
 
-	sub Valuables_Electronics(float weight = 1.0, float prob = 1.0)
-    {
-        Set(CraftPart, weight, prob)
-        {
-			Item("Craft_Batteries", 3.0);
-			Item("Craft_PowerCable", 2.0);
-            Item("Craft_Electronics", 1.0);
-
-        }
-    }
-
-    sub Healing_Items_Premium(float weight = 1.0, float prob = 1.0)
-    {
-        Set(CraftPart, weight, prob)
-        {
-			Item("Medkit_HealthPackLarge", 1.0);
-        }
-    }
-
     sub Crafting_Cabinet(float weight = 1.0, float prob = 1.0)
     {
         Set(CraftPart, weight, prob)
         {
             Item("Craft_Alcohol", 1.0);
             Item("Craft_Sugar", 3.0);
-			
-			Item("Craft_Insecticide", 1.0);
-			Item("Craft_DuctTape", 2.0);
-			
-			Item("Craft_Bleach", 1.0);
-			
+            
+            Item("Craft_Insecticide", 1.0);
+            Item("Craft_DuctTape", 2.0);
+            
+            Item("Craft_Bleach", 1.0);
+            
+        }
+    }
+
+    sub Crafting_Basket(float weight = 1.0, float prob = 1.0)
+    {
+        Set(CraftPart, weight, prob)
+        {
+            
+            
+            Item("Craft_MetalScrap", 2.0);
+            Item("Craft_PlasticTube", 2.0);
+            Item("Craft_Sugar", 1.0);
+            
+            Item("Craft_DuctTape", 2.0);
+            Item("Craft_String", 2.0);
+            Item("Craft_Gauze", 1.0);
+            Item("Craft_Insecticide", 3.0);
+            
+            Item("Craft_Nails", 1.0);
+            Item("Craft_Bleach", 1.0);
+    
         }
     }
 
@@ -213,9 +75,9 @@ export int Other = 9;
         Set(CraftPart, weight, prob)
         {
             Item("Craft_Alcohol", 1.0);
-			
-			Item("Craft_TinCan", 2.0);
-			Item("ZZZZ3_Component_SteelTubing", 2.0);
+            
+            Item("Craft_TinCan", 2.0);
+            Item("ZZZZ3_Component_SteelTubing", 2.0);
         }
     }
 
@@ -224,29 +86,8 @@ export int Other = 9;
         Set(CraftPart, weight, prob)
         {
             Item("Craft_Alcohol", 1.0);
-			
+            
             Item("Craft_Gauze", 3.0);
-        }
-    }
-
-    sub Crafting_Basket(float weight = 1.0, float prob = 1.0)
-    {
-        Set(CraftPart, weight, prob)
-        {
-			
-			
-            Item("Craft_MetalScrap", 2.0);
-			Item("Craft_PlasticTube", 2.0);
-            Item("Craft_Sugar", 1.0);
-			
-			Item("Craft_DuctTape", 2.0);
-			Item("Craft_String", 2.0);
-			Item("Craft_Gauze", 1.0);
-			Item("Craft_Insecticide", 1.0);
-			
-			Item("Craft_Nails", 1.0);
-			Item("Craft_Bleach", 1.0);
-	
         }
     }
 
@@ -256,10 +97,56 @@ export int Other = 9;
         {
 
             Item("Craft_Alcohol", 1.0);
-			Item("Craft_PlasticTube", 2.0);
-            Item("Craft_Sugar", 3.0);
-			
+            Item("Craft_PlasticTube", 2.0);
+            Item("Craft_Sugar", 2.0);
+            
             Item("Craft_Gauze", 1.0);
+        }
+    }
+
+    sub Crafting_Toolbox(float weight = 1.0, float prob = 1.0)
+    {
+        Set(CraftPart, weight, prob)
+        {
+            
+            Item("Craft_MetalScrap", 1.0);
+            Item("Craft_PlasticTube", 1.0);
+            Item("ZZZZ3_Component_NutsBolts", 1.0);
+            
+            Item("Craft_Insecticide", 1.0);
+            Item("Craft_DuctTape", 1.0);
+            Item("ZZZZ3_Component_SteelTubing", 1.0);
+            
+            Item("ZZZZ3_Component_Wire", 1.0);
+            Item("ZZZZ3_Component_Lubricant", 1.0);
+            Item("Craft_Bleach", 1.0);
+            
+            Item("ZZZZ3_Component_Synthetic", 1.0);
+        }
+    }
+
+    sub Crafting_Trash(float weight = 1.0, float prob = 1.0)
+    {
+        Set(CraftPart, weight, prob)
+        {
+            Item("Craft_MetalScrap", 2.0);
+            Item("Craft_PlasticTube", 3.0);
+            
+            Item("Craft_TinCan", 1.0);
+            Item("ZZZZ3_Component_Rubber", 2.0);
+        }
+    }
+
+    sub Healing_Items(float weight = 1.0, float prob = 1.0)
+    {
+        Set(Consumables, weight, prob)
+        {
+            Item("Craft_Alcohol", 1.0);
+            Item("Craft_Sugar", 1.0);
+            
+            Item("Craft_Gauze", 2.0);
+            Item("Craft_String", 2.0);
+
         }
     }
 
@@ -267,20 +154,20 @@ export int Other = 9;
     {
         Set(CraftPart, weight, prob)
         {
-			Item("Craft_MetalScrap", 2.0);
-            Item("Craft_PlasticTube", 1.0);
-			Item("Craft_Alcohol", 1.0);
-			Item("ZZZZ3_Component_NutsBolts", 1.0);
-			
-			Item("Craft_DuctTape", 2.0);
-			Item("Craft_Insecticide", 1.0);
-			Item("ZZZZ3_Component_Rubber", 1.0);
-			
-			Item("Craft_Bleach", 1.0);
-			Item("ZZZZ3_Component_Wire", 0.5);
-			Item("ZZZZ3_Component_Lubricant", 2.0);
-			
-			Item("ZZZZ3_Component_Synthetic", 1.0);
+            Item("Craft_MetalScrap", 2.0);
+            Item("Craft_PlasticTube", 2.0);
+            Item("Craft_Alcohol", 1.0);
+            Item("ZZZZ3_Component_NutsBolts", 1.0);
+            
+            Item("Craft_DuctTape", 2.0);
+            Item("Craft_Insecticide", 3.0);
+            Item("Craft_String", 1.0);
+            
+            Item("Craft_Bleach", 1.0);
+            Item("ZZZZ3_Component_Wire", 0.5);
+            Item("ZZZZ3_Component_Lubricant", 2.0);
+            
+            Item("ZZZZ3_Component_Synthetic", 1.0);
         }
     }
 
@@ -288,55 +175,27 @@ export int Other = 9;
     {
         Set(Other, weight, prob)
         {
-			Item("Craft_MetalScrap", 2.0);
-			Item("Craft_PlasticTube", 1.0);
-			
-			Item("Craft_String", 1.0);
-			Item("Craft_DuctTape", 1.0);
-			
-            Item("Craft_Nails", 1.0);
-        }
-    }
-	
-	sub Components_Biter(float weight = 1.0, float prob = 1.0)
-    {
-        Set(Other, weight, prob)
-        {
-			Item("ZZZZ3_Component_NutsBolts", 1.0);
-		
+            Item("Craft_MetalScrap", 1.0);
+            Item("Craft_PlasticTube", 2.0);
+            
+            Item("Craft_TinCan", 1.0);
             Item("Craft_Insecticide", 1.0);
-			Item("ZZZZ3_Component_Rubber", 1.0);
-  			Item("ZZZZ3_Component_SteelTubing", 1.0);
-			
-			Item("ZZZZ3_Component_Wire", 0.5);
-			Item("ZZZZ3_Component_Lubricant", 1.0);
-			
-			Item("ZZZZ3_Component_Synthetic", 1.0);
-			
-			
+            Item("ZZZZ3_Component_Rubber", 1.0);
+            Item("Craft_DuctTape", 1.0);
+            
+            Item("Craft_Nails", 1.0);
+            Item("Craft_Bleach", 1.0);
         }
     }
-
-    sub EMPTY_SET(float weight = 1.0, float prob = 1.0)
+    
+    sub Components_Biter(float weight = 1.0, float prob = 1.0)
     {
         Set(Other, weight, prob)
         {
-
-        }
-    }
-
-    sub Chest_Firearms(float weight = 1.0, float prob = 1.0)
-    {
-        Set(Weapon, weight, prob)
-        {
-            Item("Firearm_PistolAGen", 1.0);
-            Item("Firearm_PistolBGen", 1.0);
-            Item("Firearm_RifleAGen", 1.0);
-            Item("Firearm_RifleBGen", 1.0);
-            Item("Firearm_RifleAGenOlive", 1.0);
-            Item("Firearm_RifleAGenSand", 1.0);
-            Item("Firearm_RifleAGenOlivePlastic", 1.0);
-            Item("Firearm_RifleAGenSandPlastic", 1.0);
+            Item("ZZZZ3_Component_Wire", 0.5);
+            Item("ZZZZ3_Component_Lubricant", 1.0);
+            
+            Item("ZZZZ3_Component_Synthetic", 1.0);
         }
     }
 
@@ -352,7 +211,6 @@ export int Other = 9;
 			Item("Craft_String", 1.0);
             Item("Craft_DuctTape", 1.0);
 			Item("Craft_Insecticide", 1.0);
-			Item("ZZZZ3_Component_Rubber", 1.0);
 			
             Item("Craft_Nails", 1.0);
 			Item("Craft_Bleach", 1.0);
@@ -360,6 +218,26 @@ export int Other = 9;
 			Item("ZZZZ3_Component_Lubricant", 1.0);
 			
 			Item("ZZZZ3_Component_Synthetic", 1.0);
+        }
+    }
+
+    sub Crafting_Bag(float weight = 1.0, float prob = 1.0)
+    {
+        Set(CraftPart, weight, prob)
+        {
+            
+            Item("Craft_MetalScrap", 2.0);
+            Item("Craft_PlasticTube", 2.0);
+            Item("ZZZZ3_Component_NutsBolts", 1.0);
+            
+            Item("Craft_String", 2.0);
+            Item("Craft_DuctTape", 2.0);
+            Item("Craft_Insecticide", 2.0);
+            
+            Item("Craft_Bleach", 1.0);
+            Item("ZZZZ3_Component_Lubricant", 2.0);
+            
+            Item("ZZZZ3_Component_Synthetic", 1.0);
         }
     }
 
@@ -382,13 +260,123 @@ export int Other = 9;
 			Item("ZZZZ3_Component_Synthetic", 1.0);
         }
     }
-
-    sub Weapons_Firearms(float weight = 1.0, float prob = 1.0)
+    
+    sub Crafting_Sedan(float weight = 1.0, float prob = 1.0)
     {
-        Set(Weapon, weight, prob)
+        Set(CraftPart, weight, prob)
         {
-            Item("Firearm_PistolAGen", 1.0);
-            Item("Firearm_PistolBGen", 1.0);
+
+            Item("ZZZZ3_Component_NutsBolts", 1.0);
+            Item("Craft_MetalScrap", 1.0);
+
+            Item("Craft_Insecticide", 1.0);
+            Item("Craft_Gauze", 1.0);
+            Item("Craft_DuctTape", 2.0);
+            
+            Item("Craft_Nails", 0.5);
+            Item("ZZZZ3_Component_Lubricant", 2.0);
+            Item("Craft_Bleach", 1.0);
+            
+            Item("ZZZZ3_Component_Synthetic", 1.0);
+        }
+    }
+
+    //--------------------------------------------------
+    //------------------Valuables-----------------------
+    //--------------------------------------------------
+
+    sub Valuables_Chest(float weight = 1.0, float prob = 1.0)
+    {
+        Set(Valuables, weight, prob)
+        {
+            Item("misc_coffee", 2.0);
+            Item("misc_cigarettes", 2.0);
+            Item("misc_pouch", 2.0);
+            Item("ZZZZ3_Component_Synthetic", 1.0);
+        }
+    }
+
+    sub Valuables_ChestLockpick(float weight = 1.0, float prob = 1.0)
+    {
+        Set(Valuables, weight, prob)
+        {
+            Item("misc_pouch", 1.0);
+            Item("misc_jewels", 1.0);
+            Item("ZZZZ3_Component_Synthetic", 1.0);
+        }
+    }
+
+    sub Valuables_Premium(float weight = 1.0, float prob = 1.0)
+    {
+        Set(Mods, weight, prob)
+        {
+            Item("ZZZZ3_misc_premium_cigarettes", 1.0);
+            Item("ZZZZ3_misc_premium_cosmetics", 1.0);
+            Item("ZZZZ3_misc_premium_pouch", 1.0);
+            Item("ZZZZ3_misc_premium_jewels", 1.0);
+            Item("Craft_Batteries", 1.0);
+            Item("Craft_PowerCable", 1.0);
+            Item("Craft_Electronics", 1.0);
+
+        }
+    }
+
+    sub Valuables_Biter(float weight = 1.0, float prob = 1.0)
+    {
+        Set(Valuables, weight, prob)
+        {
+            Item("misc_coffee", 1.0);
+            Item("misc_cigarettes", 1.0);
+            Item("misc_pouch", 1.0);
+         
+        }
+    }
+
+    sub Valuables_Viral(float weight = 1.0, float prob = 1.0)
+    {
+        Set(Valuables, weight, prob)
+        {
+            Item("misc_coffee", 1.0);
+            Item("misc_cigarettes", 1.0);
+            Item("misc_pouch", 1.0);
+
+        }
+    }
+
+    sub Valuables_Cabinet(float weight = 1.0, float prob = 1.0)
+    {
+        Set(Valuables, weight, prob)
+        {
+            Item("misc_coffee", 1.0);
+            Item("misc_cigarettes", 1.0);
+            Item("misc_cosmetics", 1.0);
+            Item("misc_pouch", 1.0);
+        }
+    }
+
+    sub Valuables_Basket(float weight = 1.0, float prob = 1.0)
+    {
+        Set(Valuables, weight, prob)
+        {
+            Item("misc_coffee", 0.6);
+            Item("misc_cigarettes", 0.6);
+            Item("misc_cosmetics", 0.5);
+            Item("misc_pouch", 0.5);
+
+        }
+    }
+
+    sub Valuables_Default(float weight = 1.0, float prob = 1.0)
+    {
+        Set(Valuables, weight, prob)
+        {
+            
+            Item("misc_coffee", 1.0);
+            Item("misc_cigarettes", 1.0);
+            Item("misc_cosmetics", 1.0);
+            Item("misc_pouch", 1.0);
+            Item("misc_jewels", 1.0);
+
         }
     }
 
@@ -403,6 +391,39 @@ export int Other = 9;
         }
     }
 
+    sub Valuables_Electronics(float weight = 1.0, float prob = 1.0)
+    {
+        Set(CraftPart, weight, prob)
+        {
+            Item("Craft_Batteries", 3.0);
+            Item("Craft_PowerCable", 2.0);
+            Item("Craft_Electronics", 1.0);
+
+        }
+    }
+
+    //---------------------------------------------------------------
+    //--------------------Unmodified Item Sets-----------------------
+    //---------------------------------------------------------------
+
+    sub Consumable_Healing(float weight = 1.0, float prob = 1.0)
+    {
+        Set(Consumables, weight, prob)
+        {
+            Item("Cons_EnergyBar", 1.0);
+            Item("Cons_Halva", 1.0);
+            Item("Cons_Nuts", 1.0);
+            
+            Item("Cons_DriedFruits", 1.0);
+            Item("Cons_Baklava", 1.0);
+            Item("Cons_Sweets", 1.0);
+            
+            Item("Cons_Pita", 1.0);
+            Item("Cons_Cookies", 1.0);
+        }
+    }
+
+
     sub Items_Ammo(float weight = 1.0, float prob = 1.0)
     {
         Set(Weapon, weight, prob)
@@ -413,20 +434,35 @@ export int Other = 9;
         }
     }
 
-    sub Consumable_Healing(float weight = 1.0, float prob = 1.0)
+    sub Weapons_Firearms(float weight = 1.0, float prob = 1.0)
     {
-        Set(Consumables, weight, prob)
+        Set(Weapon, weight, prob)
         {
-            Item("Cons_EnergyBar", 1.0);
-            Item("Cons_Halva", 1.0);
-            Item("Cons_Nuts", 1.0);
-			
-            Item("Cons_DriedFruits", 1.0);
-            Item("Cons_Baklava", 1.0);
-            Item("Cons_Sweets", 1.0);
-			
-            Item("Cons_Pita", 1.0);
-            Item("Cons_Cookies", 1.0);
+            Item("Firearm_PistolAGen", 1.0);
+            Item("Firearm_PistolBGen", 1.0);
+        }
+    }
+
+    sub Chest_Firearms(float weight = 1.0, float prob = 1.0)
+    {
+        Set(Weapon, weight, prob)
+        {
+            Item("Firearm_PistolAGen", 1.0);
+            Item("Firearm_PistolBGen", 1.0);
+            Item("Firearm_RifleAGen", 1.0);
+            Item("Firearm_RifleBGen", 1.0);
+            Item("Firearm_RifleAGenOlive", 1.0);
+            Item("Firearm_RifleAGenSand", 1.0);
+            Item("Firearm_RifleAGenOlivePlastic", 1.0);
+            Item("Firearm_RifleAGenSandPlastic", 1.0);
+        }
+    }
+
+    sub Healing_Items_Premium(float weight = 1.0, float prob = 1.0)
+    {
+        Set(CraftPart, weight, prob)
+        {
+            Item("Medkit_HealthPackLarge", 1.0);
         }
     }
 
@@ -670,26 +706,6 @@ export int Other = 9;
         }
     }
 
-    sub Crafting_Sedan(float weight = 1.0, float prob = 1.0)
-    {
-        Set(CraftPart, weight, prob)
-        {
-
-			Item("ZZZZ3_Component_NutsBolts", 1.0);
-			Item("Craft_MetalScrap", 1.0);
-
-			Item("Craft_Insecticide", 1.0);
-			Item("Craft_Gauze", 1.0);
-			Item("Craft_DuctTape", 2.0);
-			Item("ZZZZ3_Component_Rubber", 2.0);
-			
-			Item("Craft_Nails", 0.5);
-			Item("ZZZZ3_Component_Lubricant", 2.0);
-			
-			Item("ZZZZ3_Component_Synthetic", 1.0);
-        }
-    }
-
     sub Encounter_chest(float weight = 1.0, float prob = 1.0)
     {
         Set(Other, weight, prob)
@@ -814,44 +830,11 @@ export int Other = 9;
         }
     }
 
-    sub Crafting_Toolbox(float weight = 1.0, float prob = 1.0)
-    {
-        Set(CraftPart, weight, prob)
-        {
-            
-			Item("Craft_MetalScrap", 1.0);
-			Item("ZZZZ3_Component_NutsBolts", 1.0);
-			
-			Item("Craft_Insecticide", 1.0);
-            Item("Craft_DuctTape", 2.0);
-            Item("ZZZZ3_Component_Rubber", 3.0);
-			Item("ZZZZ3_Component_SteelTubing", 1.0);
-			
-			Item("Craft_Nails", 1.0);
-			Item("ZZZZ3_Component_Wire", 0.5);
-			Item("ZZZZ3_Component_Lubricant", 2.0);
-			
-			Item("ZZZZ3_Component_Synthetic", 1.0);
-        }
-    }
-
     sub Lockpicks(float weight = 1.0, float prob = 1.0)
     {
         Set(Other, weight, prob)
         {
             Item("LockpickItem", 1.0);
-        }
-    }
-
-    sub Crafting_Trash(float weight = 1.0, float prob = 1.0)
-    {
-        Set(CraftPart, weight, prob)
-        {
-            Item("Craft_MetalScrap", 4.0);
-			Item("Craft_PlasticTube", 1.0);
-			
-			Item("Craft_TinCan", 2.0);
-			Item("ZZZZ3_Component_Rubber", 3.0);
         }
     }
 
@@ -873,45 +856,8 @@ export int Other = 9;
             Item("Craft_TinCan", 1.0);
 			Item("ZZZZ3_Component_Wire", 0.5);
 			Item("ZZZZ3_Component_NutsBolts", 0.7);
-			//Item("ZZZZ3_Component_SteelTubing", 0.4);
-			//Item("ZZZZ3_Component_Rubber", 0.1);
 			Item("ZZZZ3_Component_Lubricant", 1.0);
 			Item("ZZZZ3_Component_Synthetic", 1.0);
-        }
-    }
-
-    sub Healing_Items(float weight = 1.0, float prob = 1.0)
-    {
-        Set(Consumables, weight, prob)
-        {
-            Item("Craft_Alcohol", 1.0);
-			Item("Craft_Sugar", 1.0);
-			
-            Item("Craft_Gauze", 2.0);
-            Item("Craft_String", 2.0);
-
-        }
-    }
-
-    sub Valuables_Biter(float weight = 1.0, float prob = 1.0)
-    {
-        Set(Valuables, weight, prob)
-        {
-            Item("misc_coffee", 1.0);
-            Item("misc_cigarettes", 1.0);
-            Item("misc_pouch", 1.0);
-         
-        }
-    }
-
-    sub Valuables_Viral(float weight = 1.0, float prob = 1.0)
-    {
-        Set(Valuables, weight, prob)
-        {
-            Item("misc_coffee", 1.0);
-            Item("misc_cigarettes", 1.0);
-            Item("misc_pouch", 1.0);
-
         }
     }
 
@@ -1008,47 +954,11 @@ export int Other = 9;
         }
     }
 
-    sub Valuables_Premium(float weight = 1.0, float prob = 1.0)
-    {
-        Set(Mods, weight, prob)
-        {
-            Item("ZZZZ3_misc_premium_cigarettes", 1.0);
-            Item("ZZZZ3_misc_premium_cosmetics", 1.0);
-            Item("ZZZZ3_misc_premium_pouch", 1.0);
-            Item("ZZZZ3_misc_premium_jewels", 1.0);
-			Item("Craft_Batteries", 1.0);
-			Item("Craft_PowerCable", 1.0);
-			Item("Craft_Electronics", 1.0);
-
-        }
-    }
-
     sub Bozak_ViralWave_Arrows(float weight = 1.0, float prob = 1.0)
     {
         Set(Mods, weight, prob)
         {
             Item("zzz01_Bndl_Arrows", 1.0);
-        }
-    }
-
-    sub Valuables_Chest(float weight = 1.0, float prob = 1.0)
-    {
-        Set(Valuables, weight, prob)
-        {
-            Item("misc_coffee", 2.0);
-            Item("misc_cigarettes", 2.0);
-            Item("misc_pouch", 2.0);
-			Item("ZZZZ3_Component_Synthetic", 1.0);
-        }
-    }
-
-    sub Valuables_ChestLockpick(float weight = 1.0, float prob = 1.0)
-    {
-        Set(Valuables, weight, prob)
-        {
-            Item("misc_pouch", 1.0);
-            Item("misc_jewels", 1.0);
-			Item("ZZZZ3_Component_Synthetic", 1.0);
         }
     }
 
@@ -1064,9 +974,12 @@ export int Other = 9;
     {
         Set(CraftPart, weight, prob)
         {
-            Item("Craft_Alcohol", 1.0);
+            Item("Craft_Alcohol", 2.0);
+            Item("Craft_PlasticTube", 2.0);
+            Item("Craft_Sugar", 1.0);
+
+            Item("Craft_String", 2.0);
 			Item("Craft_Gauze", 1.0);
-			Item("Craft_Sugar", 1.0);
         }
     }
 	
@@ -1075,17 +988,6 @@ export int Other = 9;
         Set(CraftPart, weight, prob)
         {
             Item("Craft_Gauze", 1.0);
-        }
-    }
-
-    sub Valuables_Cabinet(float weight = 1.0, float prob = 1.0)
-    {
-        Set(Valuables, weight, prob)
-        {
-            Item("misc_coffee", 1.0);
-            Item("misc_cigarettes", 1.0);
-            Item("misc_cosmetics", 1.0);
-            Item("misc_pouch", 1.0);
         }
     }
 
@@ -1107,32 +1009,6 @@ export int Other = 9;
 			
             Item("Cons_Burger", 1.0);
 			Item("Cons_Pita", 1.0);
-        }
-    }
-
-    sub Valuables_Basket(float weight = 1.0, float prob = 1.0)
-    {
-        Set(Valuables, weight, prob)
-        {
-            Item("misc_coffee", 0.6);
-            Item("misc_cigarettes", 0.6);
-            Item("misc_cosmetics", 0.5);
-            Item("misc_pouch", 0.5);
-
-        }
-    }
-
-    sub Valuables_Default(float weight = 1.0, float prob = 1.0)
-    {
-        Set(Valuables, weight, prob)
-        {
-			
-            Item("misc_coffee", 1.0);
-            Item("misc_cigarettes", 1.0);
-            Item("misc_cosmetics", 1.0);
-            Item("misc_pouch", 1.0);
-            Item("misc_jewels", 1.0);
-
         }
     }
 
@@ -1186,26 +1062,6 @@ export int Other = 9;
         Set(Other, weight, prob)
         {
             Item("Craft_UnderwaterAlgae", 1.0);
-        }
-    }
-
-    sub Crafting_Bag(float weight = 1.0, float prob = 1.0)
-    {
-        Set(CraftPart, weight, prob)
-        {
-			
-			Item("Craft_MetalScrap", 2.0);
-			Item("Craft_PlasticTube", 1.0);
-			Item("ZZZZ3_Component_NutsBolts", 1.0);
-			
-            Item("Craft_String", 2.0);
-            Item("Craft_DuctTape", 2.0);
-			Item("ZZZZ3_Component_Rubber", 2.0);
-			
-			Item("Craft_Bleach", 1.0);
-			Item("ZZZZ3_Component_Lubricant", 2.0);
-			
-			Item("ZZZZ3_Component_Synthetic", 1.0);
         }
     }
 
@@ -1530,3 +1386,147 @@ export int Other = 9;
         }
     }
 		 
+    sub Weapons_L4D_Event(float weight = 1.0, float prob = 1.0)
+    {
+        Set(Weapon, weight, prob)
+        {
+            Item("Firearm_ShotgunAGen", 1.0);
+            Item("ZZZZZ_Firearm_ShotgunBGen", 1.0);
+            Item("ZZZZZ_Firearm_RevolverRangerRegular", 1.0);
+            Item("Firearm_ShotgunAGenRust", 1.0);
+            Item("ZZZZZ_Firearm_RevolverSixshooterRegular", 1.0);
+            Item("Firearm_PistolBGenSandPlastic", 1.0);
+            Item("ZZZZZ_Firearm_RevolverQuickshooterRegular", 1.0);
+            Item("Firearm_PistolBGenOlivePlastic", 1.0);
+            Item("ZZZZZ_Firearm_SubmachineAColor_A", 1.0);
+            Item("Firearm_PistolAGen", 1.0);
+            Item("ZZZZZ_Firearm_SubmachineAColor_C", 1.0);
+            Item("ZZZZZ_Firearm_SubmachineAColor_D", 1.0);
+            Item("ZZZZZ_Firearm_SubmachineAColor_B", 1.0);
+            Item("Firearm_HMR_Gaas", 1.0);
+            Item("ZZZZZ_Firearm_SubmachineB", 1.0);
+            Item("Firearm_PistolBGen", 1.0);
+            Item("ZZZZZ_Firearm_SubmachineA", 1.0);
+            Item("Firearm_RifleBGen", 1.0);
+            Item("Firearm_RifleBGenOlive", 1.0);
+            Item("Firearm_RifleBGenSand", 1.0);
+            Item("ZZZZZ_Firearm_ShotgunCGenOlive", 0.5);
+            Item("ZZZZZ_Firearm_ShotgunCGenColor_A", 0.5);
+            Item("ZZZZZ_Firearm_ShotgunCGenAircraft", 0.5);
+            Item("ZZZZZ_Firearm_ShotgunCGenSand", 0.5);
+            Item("Firearm_ShotgunAGenPlastic", 0.5);
+            Item("Gaas_Firearm_Halloween_Shotgun", 0.5);
+            Item("ZZZZZ_Firearm_RevolverRanger", 0.5);
+            Item("Firearm_Gaas_Revolver", 0.5);
+            Item("ZZZZZ_Firearm_RevolverSixshooter", 0.5);
+            Item("Firearm_PistolAGenSandPlastic", 0.5);
+            Item("Firearm_PistolAGenOlivePlastic", 0.5);
+            Item("ZZZZZ_Firearm_RevolverQuickshooter", 0.5);
+            Item("Firearm_RifleBGenOlivePlastic", 0.5);
+            Item("Firearm_RifleBGenSandPlastic", 0.5);
+            Item("Firearm_RifleAGen", 0.5);
+            Item("Firearm_RifleAGenOlive", 0.5);
+            Item("Firearm_RifleAGenSandPlastic", 0.5);
+            Item("Firearm_RifleAGenOlivePlastic", 0.5);
+            Item("Firearm_RifleAGenSand", 0.5);
+            Item("ZZZZZ_Firearm_ShotgunCGenSteampunk", 0.25);
+            Item("Firearm_ShotgunAGenSpecial", 0.25);
+            Item("ZZZZZ_Firearm_ShotgunBGenSpecial", 0.25);
+            Item("Firearm_PistolAGenSpecial", 0.25);
+            Item("ZZZZZ_Firearm_SubmachineBSpecial", 0.25);
+            Item("ZZZZZ_Firearm_SubmachineASteampunk", 0.25);
+            Item("Firearm_Rais_Gun", 0.25);
+            Item("Firearm_PistolBGenSpecial", 0.25);
+            Item("ZZZZZ_Firearm_SubmachineASpecial", 0.25);
+        }
+    }
+    
+    sub Liveops_Christmas_Biter_GroupA(float weight = 1.0, float prob = 1.0)
+    {
+        Set(Other, weight, prob)
+        {
+            Item("Liveops_Christmas_Candy_1", 1.0);
+            Item("Liveops_Christmas_Candy_2", 1.0);
+            Item("Liveops_Christmas_Candy_3", 1.0);
+            Item("Liveops_Christmas_Candy_5", 1.0);
+            Item("Liveops_Christmas_Candy_6", 1.0);
+            Item("Liveops_Christmas_Candy_8", 1.0);
+        }
+    }
+
+    sub Liveops_Christmas_Biter_GroupB(float weight = 1.0, float prob = 1.0)
+    {
+        Set(Other, weight, prob)
+        {
+            Item("Liveops_Christmas_Candy_1", 1.0);
+            Item("Liveops_Christmas_Candy_2", 1.0);
+            Item("Liveops_Christmas_Candy_4", 1.0);
+            Item("Liveops_Christmas_Candy_5", 1.0);
+            Item("Liveops_Christmas_Candy_7", 1.0);
+            Item("Liveops_Christmas_Candy_8", 1.0);
+        }
+    }
+
+    sub Liveops_Christmas_Viral(float weight = 1.0, float prob = 1.0)
+    {
+        Set(Other, weight, prob)
+        {
+            Item("Liveops_Christmas_Candy_1", 1.0);
+            Item("Liveops_Christmas_Candy_3", 1.0);
+            Item("Liveops_Christmas_Candy_5", 1.0);
+            Item("Liveops_Christmas_Candy_8", 1.0);
+        }
+    }
+    sub Liveops_Easter_Eggs(float weight = 1.0, float prob = 1.0)
+    {
+        Set(Other, weight, prob)
+        {
+            Item("Throwable_Easter_Egg_Freeze", 1.0);
+            Item("Throwable_Easter_Egg_Ram", 1.0);
+            Item("Throwable_Easter_Egg_Poison", 1.0);
+            Item("Throwable_Easter_Egg_Fire", 1.0);
+        }
+    }
+
+    sub Gaas_Soldier_Stuff(float weight = 1.0, float prob = 1.0)
+    {
+        Set(Other, weight, prob)
+        {
+            Item("Gaas_Soldier1_Leftover", 1.0);
+        }
+    }
+
+    sub QuestItems_Wardrobe(float weight = 1.0, float prob = 1.0)
+    {
+        Set(Other, weight, prob)
+        {
+            Item("Craft_LighterGas", 1.0);
+        }
+    }
+
+    sub QuestItems_Locker(float weight = 1.0, float prob = 1.0)
+    {
+        Set(Valuables, weight, prob)
+        {
+            Item("Craft_LighterGas", 1.0);
+            Item("misc_cosmetics", 1.0);
+        }
+    }
+
+    sub QuestItems_Cabinet(float weight = 1.0, float prob = 1.0)
+    {
+        Set(Valuables, weight, prob)
+        {
+            Item("Craft_LighterGas", 1.0);
+            Item("misc_coffee", 1.0);
+            Item("misc_cigarettes", 1.0);
+        }
+    }
+
+    sub EMPTY_SET(float weight = 1.0, float prob = 1.0)
+    {
+        Set(Other, weight, prob)
+        {
+
+        }
+    }
