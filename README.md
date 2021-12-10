@@ -67,7 +67,7 @@
 
 ### Get really, really, **really** far away!
 
-![DLR Kurts Bomb](./Images/DLR_Kurt_Bomb_active.jpg)
+![DLR Kurts Bomb](./Images/DLR_Kurt_Bomb_Active.jpg)
 
 ### Kaboom!
 
