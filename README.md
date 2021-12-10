@@ -7,11 +7,11 @@
 
 #### Before:
 
-![Vanilla Night Survival](./Vanilla_Night_Survival.jpg)
+![Vanilla Night Survival](./Images/Vanilla_Night_Survival.jpg)
 
 #### After:
 
-![Night Survival With DLR](./DLR_Night_Survival.jpg)
+![Night Survival With DLR](./Images/DLR_Night_Survival.jpg)
 
 - Night time enemies like Volatiles and Night Walkers can see you from much further away and spot you almost instantly
 - Much more night time enemies and they wander more freely on the lookout for you
@@ -22,15 +22,15 @@
 
 ### Organized Inventory
 
-![DLR Organized Inventory](./DLR_Organized_Inventory.jpg)
+![DLR Organized Inventory](./Images/DLR_Organized_Inventory.jpg)
 
 ### Weapon Upgrades
 
-![DLR Weapon Upgrades](./DLR_Weapon_Upgrades.jpg)
+![DLR Weapon Upgrades](./Images/DLR_Weapon_Upgrades.jpg)
 
 ### Upgrading a Weapon
 
-![DLR Upgrading A Weapon](./DLR_Weapon_Upgrading.jpg)
+![DLR Upgrading A Weapon](./Images/DLR_Weapon_Upgrading.jpg)
 
 - The inventory has finally been organized to have common craftables at the top and puts the useless weapon blueprints at the bottom
 - You can now craft weapon upgrades and elemental upgrades straight from your inventory, although they are expensive
@@ -43,7 +43,7 @@
 
 ### Feeling Trapped?
 
-![DLR Feeling Trapped Inside?](./DLR_Feeling_Trapped.jpg)
+![DLR Feeling Trapped Inside?](./Images/DLR_Feeling_Trapped.jpg)
 
 - The AI of day zombies has been tweaked to make them much more perceptive of you and summon their comrades to your position
 - Plants are overgrown from a lack of humans tending to them, making it harder to spot hidden zombies that might grab you
@@ -63,15 +63,15 @@
 
 ### Kurt's Cataclysmic Bombs 
 
-![DLR Kurts Bomb](./DLR_Kurt_Bomb.jpg)
+![DLR Kurts Bomb](./Images/DLR_Kurt_Bomb.jpg)
 
 ### Get really, really, **really** far away!
 
-![DLR Kurts Bomb](./DLR_Kurt_Bomb_active.jpg)
+![DLR Kurts Bomb](./Images/DLR_Kurt_Bomb_active.jpg)
 
 ### Kaboom!
 
-![DLR Kurts Bomb](./DLR_Kurt_Bomb_Explosion.jpg)
+![DLR Kurts Bomb](./Images/DLR_Kurt_Bomb_Explosion.jpg)
 
 - You will now get **Useful** rewards from quests such as craftplans for elemental weapon upgrades
 - Kurt may even be willing to share the blueprints for his original bomb, not the ripoff from earlier
