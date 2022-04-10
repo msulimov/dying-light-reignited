@@ -1123,7 +1123,7 @@ sub Crafting_Materials(){
     Set("Common_Craftparts",                    "shop_crafting_materials", 5, 8)
         {
             MinStatusLevel(1);
-            Limited();
+            Limited(3);
 			ExcludeInDifficultyMode("Hard");
         }
 }

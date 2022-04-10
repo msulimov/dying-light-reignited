@@ -27929,7 +27929,7 @@ sub main()
         FF_FadeOut(0.0);
         CriticalProb(0.0);
         CriticalDamage(1.0);
-        DamageHeadMult(6.0);
+        DamageHeadMult(2.5);
         DamageToPhysicsObjects(10.0);
         FirePointRange(0,400.0 *0.01);
         FirePointDamage(0,159.0);
@@ -28039,7 +28039,7 @@ sub main()
         FF_FadeOut(0.0);
         CriticalProb(0.0);
         CriticalDamage(1.0);
-        DamageHeadMult(6.0);
+        DamageHeadMult(2.5);
         DamageToPhysicsObjects(10.0);
         FirePointRange(0,400.0 *0.01);
         FirePointDamage(0,247.0);
@@ -28150,7 +28150,7 @@ sub main()
         FF_FadeOut(0.0);
         CriticalProb(0.0);
         CriticalDamage(1.0);
-        DamageHeadMult(6.0);
+        DamageHeadMult(2.5);
         DamageToPhysicsObjects(10.0);
         FirePointRange(0,400.0 *0.01);
         FirePointDamage(0,247.0);
@@ -28260,7 +28260,7 @@ sub main()
         FF_FadeOut(0.0);
         CriticalProb(0.0);
         CriticalDamage(1.0);
-        DamageHeadMult(6.0);
+        DamageHeadMult(2.5);
         DamageToPhysicsObjects(10.0);
         FirePointRange(0,400.0 *0.01);
         FirePointDamage(0,331.0);
@@ -28367,7 +28367,7 @@ sub main()
         FF_FadeOut(0.0);
         CriticalProb(0.0);
         CriticalDamage(1.0);
-        DamageHeadMult(6.0);
+        DamageHeadMult(2.5);
         DamageToPhysicsObjects(14.0);
         FirePointRange(0,500.0 *0.01);
         FirePointDamage(0,118.0);
@@ -28477,7 +28477,7 @@ sub main()
         FF_FadeOut(0.0);
         CriticalProb(0.0);
         CriticalDamage(1.0);
-        DamageHeadMult(6.0);
+        DamageHeadMult(2.5);
         DamageToPhysicsObjects(14.0);
         FirePointRange(0,500.0 *0.01);
         FirePointDamage(0,184.0);
@@ -28587,7 +28587,7 @@ sub main()
         FF_FadeOut(0.0);
         CriticalProb(0.0);
         CriticalDamage(1.0);
-        DamageHeadMult(6.0);
+        DamageHeadMult(2.5);
         DamageToPhysicsObjects(14.0);
         FirePointRange(0,500.0 *0.01);
         FirePointDamage(0,184.0);
@@ -28698,7 +28698,7 @@ sub main()
         FF_FadeOut(0.0);
         CriticalProb(0.0);
         CriticalDamage(1.0);
-        DamageHeadMult(6.0);
+        DamageHeadMult(2.5);
         DamageToPhysicsObjects(14.0);
         FirePointRange(0,500.0 *0.01);
         FirePointDamage(0,247.0);
@@ -28808,7 +28808,7 @@ sub main()
         FF_FadeOut(0.0);
         CriticalProb(0.0);
         CriticalDamage(1.0);
-        DamageHeadMult(10.0);
+        DamageHeadMult(4.0);
         DamageToPhysicsObjects(10.0);
         FirePointRange(0,500.0 *0.01);
         FirePointDamage(0,512.0);
@@ -28916,7 +28916,7 @@ sub main()
         FF_FadeOut(0.0);
         CriticalProb(0.0);
         CriticalDamage(1.0);
-        DamageHeadMult(10.0);
+        DamageHeadMult(4.0);
         DamageToPhysicsObjects(10.0);
         FirePointRange(0,500.0 *0.01);
         FirePointDamage(0,443.0);
@@ -29025,7 +29025,7 @@ sub main()
         FF_FadeOut(0.0);
         CriticalProb(0.0);
         CriticalDamage(1.0);
-        DamageHeadMult(10.0);
+        DamageHeadMult(4.0);
         DamageToPhysicsObjects(10.0);
         FirePointRange(0,400.0 *0.01);
         FirePointDamage(0,286.0);
@@ -29133,7 +29133,7 @@ sub main()
         FF_FadeOut(0.0);
         CriticalProb(0.0);
         CriticalDamage(1.0);
-        DamageHeadMult(10.0);
+        DamageHeadMult(4.0);
         DamageToPhysicsObjects(10.0);
         FirePointRange(0,400.0 *0.01);
         FirePointDamage(0,247.0);
@@ -29242,7 +29242,7 @@ sub main()
         FF_FadeOut(0.0);
         CriticalProb(0.0);
         CriticalDamage(1.0);
-        DamageHeadMult(10.0);
+        DamageHeadMult(4.0);
         DamageToPhysicsObjects(10.0);
         FirePointRange(0,400.0 *0.01);
         FirePointDamage(0,213.0);
@@ -29350,7 +29350,7 @@ sub main()
         FF_FadeOut(0.0);
         CriticalProb(0.0);
         CriticalDamage(1.0);
-        DamageHeadMult(10.0);
+        DamageHeadMult(4.0);
         DamageToPhysicsObjects(10.0);
         FirePointRange(0,400.0 *0.01);
         FirePointDamage(0,184.0);
@@ -30409,7 +30409,7 @@ sub main()
         FF_FadeOut(0.0);
         CriticalProb(0.0);
         CriticalDamage(1.0);
-        DamageHeadMult(8.0);
+        DamageHeadMult(3.0);
         DamageToPhysicsObjects(17.5);
         FirePointRange(0,500.0 *0.01);
         FirePointDamage(0,184.0);
@@ -30524,7 +30524,7 @@ sub main()
         FF_FadeOut(0.0);
         CriticalProb(0.0);
         CriticalDamage(1.0);
-        DamageHeadMult(8.0);
+        DamageHeadMult(3.0);
         DamageToPhysicsObjects(17.5);
         FirePointRange(0,500.0 *0.01);
         FirePointDamage(0,184.0);
@@ -30639,7 +30639,7 @@ sub main()
         FF_FadeOut(0.0);
         CriticalProb(0.0);
         CriticalDamage(1.0);
-        DamageHeadMult(8.0);
+        DamageHeadMult(3.0);
         DamageToPhysicsObjects(17.5);
         FirePointRange(0,500.0 *0.01);
         FirePointDamage(0,184.0);
@@ -30756,7 +30756,7 @@ sub main()
         FF_FadeOut(0.0);
         CriticalProb(0.0);
         CriticalDamage(1.0);
-        DamageHeadMult(8.0);
+        DamageHeadMult(3.0);
         DamageToPhysicsObjects(17.5);
         FirePointRange(0,500.0 *0.01);
         FirePointDamage(0,368.0);
@@ -30874,7 +30874,7 @@ sub main()
         FF_FadeOut(0.0);
         CriticalProb(0.0);
         CriticalDamage(1.0);
-        DamageHeadMult(8.0);
+        DamageHeadMult(3.0);
         DamageToPhysicsObjects(17.5);
         FirePointRange(0,500.0 *0.01);
         FirePointDamage(0,368.0);
@@ -31562,7 +31562,7 @@ sub main()
         FF_FadeOut(0.0);
         CriticalProb(0.0);
         CriticalDamage(1.0);
-        DamageHeadMult(10.0);
+        DamageHeadMult(4.0);
         DamageToPhysicsObjects(125.0);
         FirePointRange(0,700.0 *0.01);
         FirePointDamage(0,911.0);
@@ -31678,7 +31678,7 @@ sub main()
         FF_FadeOut(0.0);
         CriticalProb(0.0);
         CriticalDamage(1.0);
-        DamageHeadMult(10.0);
+        DamageHeadMult(4.0);
         DamageToPhysicsObjects(125.0);
         FirePointRange(0,700.0 *0.01);
         FirePointDamage(0,1050.0);
@@ -31796,7 +31796,7 @@ sub main()
         FF_FadeOut(0.0);
         CriticalProb(0.0);
         CriticalDamage(1.0);
-        DamageHeadMult(10.0);
+        DamageHeadMult(4.0);
         DamageToPhysicsObjects(125.0);
         FirePointRange(0,700.0 *0.01);
         FirePointDamage(0,512.0);
@@ -31913,7 +31913,7 @@ sub main()
         FF_FadeOut(0.0);
         CriticalProb(0.0);
         CriticalDamage(1.0);
-        DamageHeadMult(10.0);
+        DamageHeadMult(4.0);
         DamageToPhysicsObjects(125.0);
         FirePointRange(0,700.0 *0.01);
         FirePointDamage(0,2550.0);
@@ -32025,7 +32025,7 @@ sub main()
         FF_FadeOut(0.0);
         CriticalProb(0.0);
         CriticalDamage(1.0);
-        DamageHeadMult(10.0);
+        DamageHeadMult(4.0);
         DamageToPhysicsObjects(125.0);
         FirePointRange(0,700.0 *0.01);
         FirePointDamage(0,911.0);
@@ -32138,7 +32138,7 @@ sub main()
         FF_FadeOut(0.0);
         CriticalProb(0.0);
         CriticalDamage(1.0);
-        DamageHeadMult(10.0);
+        DamageHeadMult(4.0);
         DamageToPhysicsObjects(125.0);
         FirePointRange(0,700.0 *0.01);
         FirePointDamage(0,2550.0);
@@ -32250,7 +32250,7 @@ sub main()
         FF_FadeOut(0.0);
         CriticalProb(0.0);
         CriticalDamage(1.0);
-        DamageHeadMult(10.0);
+        DamageHeadMult(4.0);
         DamageToPhysicsObjects(125.0);
         FirePointRange(0,700.0 *0.01);
         FirePointDamage(0,683.0);
@@ -32363,7 +32363,7 @@ sub main()
         FF_FadeOut(0.0);
         CriticalProb(0.0);
         CriticalDamage(1.0);
-        DamageHeadMult(10.0);
+        DamageHeadMult(4.0);
         DamageToPhysicsObjects(125.0);
         FirePointRange(0,700.0 *0.01);
         FirePointDamage(0,911.0);
@@ -32476,7 +32476,7 @@ sub main()
         FF_FadeOut(0.0);
         CriticalProb(0.0);
         CriticalDamage(1.0);
-        DamageHeadMult(10.0);
+        DamageHeadMult(4.0);
         DamageToPhysicsObjects(125.0);
         FirePointRange(0,700.0 *0.01);
         FirePointDamage(0,911.0);
@@ -32589,7 +32589,7 @@ sub main()
         FF_FadeOut(0.0);
         CriticalProb(0.0);
         CriticalDamage(1.0);
-        DamageHeadMult(10.0);
+        DamageHeadMult(4.0);
         DamageToPhysicsObjects(125.0);
         FirePointRange(0,700.0 *0.01);
         FirePointDamage(0,911.0);
@@ -32702,7 +32702,7 @@ sub main()
         FF_FadeOut(0.0);
         CriticalProb(0.0);
         CriticalDamage(1.0);
-        DamageHeadMult(10.0);
+        DamageHeadMult(4.0);
         DamageToPhysicsObjects(125.0);
         FirePointRange(0,700.0 *0.01);
         FirePointDamage(0,911.0);
@@ -32815,7 +32815,7 @@ sub main()
         FF_FadeOut(0.0);
         CriticalProb(0.0);
         CriticalDamage(1.0);
-        DamageHeadMult(10.0);
+        DamageHeadMult(4.0);
         DamageToPhysicsObjects(125.0);
         FirePointRange(0,700.0 *0.01);
         FirePointDamage(0,2550.0);
@@ -32922,7 +32922,7 @@ sub main()
         FF_FadeOut(0.0);
         CriticalProb(0.0);
         CriticalDamage(1.0);
-        DamageHeadMult(6.0);
+        DamageHeadMult(2.5);
         DamageToPhysicsObjects(10.0);
         FirePointRange(0,500.0 *0.01);
         FirePointDamage(0,20.0);
@@ -33034,7 +33034,7 @@ sub main()
         FF_FadeOut(0.0);
         CriticalProb(0.0);
         CriticalDamage(1.0);
-        DamageHeadMult(6.0);
+        DamageHeadMult(2.5);
         DamageToPhysicsObjects(17.5);
         FirePointRange(0,700.0 *0.01);
         FirePointDamage(0,20.0);
@@ -33146,7 +33146,7 @@ sub main()
         FF_FadeOut(0.0);
         CriticalProb(0.0);
         CriticalDamage(1.0);
-        DamageHeadMult(6.0);
+        DamageHeadMult(2.5);
         DamageToPhysicsObjects(10.0);
         FirePointRange(0,700.0 *0.01);
         FirePointDamage(0,20.0);
@@ -33259,7 +33259,7 @@ sub main()
         FF_FadeOut(0.0);
         CriticalProb(0.0);
         CriticalDamage(1.0);
-        DamageHeadMult(6.0);
+        DamageHeadMult(2.5);
         DamageToPhysicsObjects(125.0);
         FirePointRange(0,700.0 *0.01);
         FirePointDamage(0,20.0);
@@ -33369,7 +33369,7 @@ sub main()
         FF_FadeOut(0.0);
         CriticalProb(0.0);
         CriticalDamage(1.0);
-        DamageHeadMult(6.0);
+        DamageHeadMult(2.5);
         DamageToPhysicsObjects(10.0);
         FirePointRange(0,400.0 *0.01);
         FirePointDamage(0,247.0);

@@ -18,7 +18,7 @@ sub main()
         Condition(-1.0);
         CriticalProb(0.0);
         DuckInertiaFactor(0.1);
-        DamageHeadMult(5.0);
+        DamageHeadMult(2.0);
         DamageToPhysicsObjects(17.5);
         FirePointRange(0,5000.0 *0.01);
         FirePointDamage(0, 380.0);

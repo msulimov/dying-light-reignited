@@ -42,8 +42,8 @@ sub Loot()
 		use Valuables_Default(weight = 1.0);
 		
         use Valuables_Electronics(weight = 0.4);        
-        use Upgrades(weight = 0.4);
-        use Upgrades_Premium(weight = 0.1);
+        use Upgrades(weight = 0.6);
+        use Upgrades_Premium(weight = 0.15);
         
     }
 
@@ -285,14 +285,14 @@ sub Loot()
     {
         ColorSet(ColorSet_cs_crafting);
 		
-		use Empty(weight = 10.0);	
+		use Empty(weight = 15.0);	
 		
         use CashSmall(weight = 0.3);
         use CashMedium(weight = 0);
         use CashPenny(weight = 0.7);
 		
-        use Crafting_Biter(weight = 3.5);
-		use Components_Biter(weight = 0.75);
+        use Crafting_Biter(weight = 3.0);
+		use Components_Biter(weight = 0.25);
 		use Biter_Healing_Craftparts(weight = 1.5);
 		
         use Valuables_Biter(weight = 1.0);
@@ -304,14 +304,14 @@ sub Loot()
     {
         ColorSet(ColorSet_cs_crafting);
 		
-		use Empty(weight = 9.0);	
+		use Empty(weight = 13.0);	
 		
         use CashSmall(weight = 0.7);
         use CashMedium(weight = 0.0);
         use CashPenny(weight = 0.3);
 		
         use Crafting_Biter(weight = 3.5);
-		use Components_Biter(weight = 1.5);
+		use Components_Biter(weight = 0.5);
 		use Biter_Healing_Craftparts(weight = 2.0);
 		
         use Valuables_Biter(weight = 0.8);
@@ -323,14 +323,14 @@ sub Loot()
     {
         ColorSet(ColorSet_cs_crafting);
 		
-		use Empty(weight = 9.0);	
+		use Empty(weight = 10.0);	
 		
         use CashSmall(weight = 0.5);
         use CashMedium(weight = 0.2);
         use CashPenny(weight = 0.3);
 		
-        use Crafting_Biter(weight = 5.5);
-		use Components_Biter(weight = 2.5);
+        use Crafting_Biter(weight = 4.0);
+		use Components_Biter(weight = 1.0);
 		use Biter_Healing_Craftparts(weight = 2.5);
         
 		use Consumable_Healing(weight = 1.0);
@@ -347,7 +347,7 @@ sub Loot()
     {
         ColorSet(ColorSet_cs_crafting);
 		
-		use Empty(weight = 7.0);
+		use Empty(weight = 8.0);
 		
         use CashSmall(weight = 0.1);
         use CashMedium(weight = 0.8);
@@ -392,14 +392,14 @@ sub Loot()
     {
         ColorSet(ColorSet_cs_crafting);
         
-        use Empty(weight = 10.0);   
+        use Empty(weight = 15.0);   
         
         use CashSmall(weight = 0.3);
         use CashMedium(weight = 0);
         use CashPenny(weight = 0.7);
         
-        use Crafting_Biter(weight = 2.5);
-        use Components_Biter(weight = 0.0);
+        use Crafting_Biter(weight = 3.0);
+        use Components_Biter(weight = 0.25);
         use Biter_Healing_Craftparts(weight = 1.5);
         
         use Valuables_Biter(weight = 1.0);
@@ -410,14 +410,14 @@ sub Loot()
     {
         ColorSet(ColorSet_cs_crafting);
         
-        use Empty(weight = 11.0);    
+        use Empty(weight = 13.0);   
         
         use CashSmall(weight = 0.7);
         use CashMedium(weight = 0.0);
         use CashPenny(weight = 0.3);
         
-        use Crafting_Biter(weight = 2.25);
-        use Components_Biter(weight = 0.0);
+        use Crafting_Biter(weight = 3.5);
+        use Components_Biter(weight = 0.5);
         use Biter_Healing_Craftparts(weight = 2.0);
         
         use Valuables_Biter(weight = 0.8);
@@ -428,14 +428,14 @@ sub Loot()
     {
         ColorSet(ColorSet_cs_crafting);
         
-        use Empty(weight = 10.0);    
+        use Empty(weight = 10.0);   
         
         use CashSmall(weight = 0.5);
         use CashMedium(weight = 0.2);
         use CashPenny(weight = 0.3);
         
-        use Crafting_Biter(weight = 5.5);
-        use Components_Biter(weight = 0.5);
+        use Crafting_Biter(weight = 4.0);
+        use Components_Biter(weight = 1.0);
         use Biter_Healing_Craftparts(weight = 2.5);
         
         use Consumable_Healing(weight = 1.0);
@@ -457,8 +457,8 @@ sub Loot()
         use CashMedium(weight = 0.8);
         use CashPenny(weight = 0.1);
         
-        use Crafting_Biter(weight = 4.0);
-        use Components_Biter(weight = 0.75);
+        use Crafting_Biter(weight = 5.0);
+        use Components_Biter(weight = 3.5);
         use Biter_Healing_Craftparts(weight = 2.5);
         
         use Consumable_Healing(weight = 1.5);
@@ -474,12 +474,12 @@ sub Loot()
     {
         ColorSet(ColorSet_cs_crafting);
         
-        use Empty(weight = 7.0);
+        use Empty(weight = 6.0);
 
         use CashMedium(weight = 1.0);
         
-        use Crafting_Biter(weight = 4.5);
-        use Components_Biter(weight = 0.75);
+        use Crafting_Biter(weight = 6.5);
+        use Components_Biter(weight = 4.5);
         use Biter_Healing_Craftparts(weight = 2.5);
         
         use Consumable_Healing(weight = 2.25);
@@ -497,12 +497,12 @@ sub Loot()
         ColorSet(ColorSet_FatMan);
         use Empty(weight = 0.0);
 		use Medkits(weight = 0.5);
-        use CashBig(weight = 2.0);
+        use CashBig(weight = 1.0);
 		
 		use Consumable_Healing(weight = 0.5);
 
 		use Valuables_Electronics(weight = 1.0);
-        use Upgrades(weight = 1.0);
+        use Upgrades(weight = 0.5);
         use Upgrades_Premium(weight = 0.0);
 
 		use Harvesting_Goon(weight = 0.1);
@@ -512,10 +512,10 @@ sub Loot()
     {
         ColorSet(ColorSet_FatMan);
         use Empty(weight = 0.0);
-        use Medkits(weight = 0.75);
-        use CashBig(weight = 1.0);
+        use Medkits(weight = 0.5);
+        use CashBig(weight = 0.5);
         
-        use Consumable_Healing(weight = 1.0);
+        use Consumable_Healing(weight = 0.5);
 
         use Valuables_Electronics(weight = 1.0);
         use Upgrades(weight = 1.0);
@@ -528,14 +528,14 @@ sub Loot()
     {
         ColorSet(ColorSet_FatMan);
         use Empty(weight = 0.0);
-        use Medkits(weight = 1.0);
-        use CashBig(weight = 0.25);
+        use Medkits(weight = 0.5);
+        use CashBig(weight = 0.0);
         
-        use Consumable_Healing(weight = 1.0);
+        use Consumable_Healing(weight = 0.0);
 
         use Valuables_Electronics(weight = 1.0);
         use Upgrades(weight = 1.0);
-        use Upgrades_Premium(weight = 0.5);
+        use Upgrades_Premium(weight = 0.25);
 
         use Harvesting_Goon(weight = 0.1);
     }

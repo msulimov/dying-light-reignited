@@ -43,8 +43,8 @@ sub reward_times_hard()
 
 sub reward_times_nightmare()
 {
-	RewardTierTime(960); 	// 0 tier time (s) - the best one 
-	RewardTierTime(1400); 	// 1 tier time (s)
+	RewardTierTime(1300); 	// 0 tier time (s) - the best one 
+	RewardTierTime(1500); 	// 1 tier time (s)
 	RewardTierTime(1800); 	// 2 tier time (s)
 	RewardTierTime(2500); 	// 3 tier time (s)
 	RewardTierTime(5400); 	// 4 tier time (s)

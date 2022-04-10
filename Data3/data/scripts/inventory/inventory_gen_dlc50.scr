@@ -264,7 +264,7 @@ sub main()
         FF_FadeOut(0.0);
         CriticalProb(0.0);
         CriticalDamage(1.0);
-        DamageHeadMult(10.0);
+        DamageHeadMult(4.0);
         DamageToPhysicsObjects(150.0);
         FirePointRange(0,700.0 *0.01);
         FirePointDamage(0,1225.0);

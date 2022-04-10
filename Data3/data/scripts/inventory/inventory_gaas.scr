@@ -179,7 +179,7 @@ sub main()
         FF_FadeOut(0.0);
         CriticalProb(0.0);
         CriticalDamage(1.0);
-        DamageHeadMult(10.0);
+        DamageHeadMult(4.0);
         DamageToPhysicsObjects(10.0);
         FirePointRange(0,500.0 *0.01);
         FirePointDamage(0,400.0);
@@ -491,7 +491,7 @@ sub main()
         FF_FadeOut(0.0);
         CriticalProb(0.0);
         CriticalDamage(1.0);
-        DamageHeadMult(10.0);
+        DamageHeadMult(4.0);
         DamageToPhysicsObjects(125.0);
         FirePointRange(0,700.0 *0.01);
         FirePointDamage(0,683.0);
@@ -698,7 +698,7 @@ sub main()
         FF_FadeOut(0.0);
         CriticalProb(0.0);
         CriticalDamage(1.0);
-        DamageHeadMult(6.0);
+        DamageHeadMult(2.5);
         DamageToPhysicsObjects(10.0);
         FirePointRange(0,600.0 *0.01);
         FirePointDamage(0,150.0);
@@ -811,7 +811,7 @@ sub main()
         FF_FadeOut(0.0);
         CriticalProb(0.0);
         CriticalDamage(1.0);
-        DamageHeadMult(6.0);
+        DamageHeadMult(2.5);
         DamageToPhysicsObjects(10.0);
         FirePointRange(0,400.0 *0.01);
         FirePointDamage(0,1.0);             //All FirePoints Damage and Force are set to 1 to always inherit stats from base weapon.
@@ -920,7 +920,7 @@ sub main()
         FF_FadeOut(0.0);
         CriticalProb(0.0);
         CriticalDamage(1.0);
-        DamageHeadMult(6.0);
+        DamageHeadMult(2.5);
         DamageToPhysicsObjects(14.0);
         FirePointRange(0,500.0 *0.01);
         FirePointDamage(0,1.0);
@@ -1610,7 +1610,7 @@ sub main()
         FF_FadeOut(0.0);
         CriticalProb(0.0);
         CriticalDamage(1.0);
-        DamageHeadMult(10.0);
+        DamageHeadMult(4.0);
         DamageToPhysicsObjects(125.0);
         FirePointRange(0,700.0 *0.01);
         FirePointDamage(0,1.0);
@@ -1767,7 +1767,7 @@ sub main()
         CriticalProb(0.0);
         CriticalDamage(1.0);
         DuckInertiaFactor(0.1);
-        DamageHeadMult(10.0);
+        DamageHeadMult(4.0);
         DamageToPhysicsObjects(20.0);
         FirePointRange(0, 10.0);
         FirePointDamage(0, 480.0);

@@ -31,17 +31,17 @@ sub main()
 
     Reward("StorylineReward_HelpingMark_reward")
     {
-        Xp(500);
+        Xp(3500);
     }
 
     Reward("StorylineReward_NaturalMovementTutorial_reward")
     {
-        Xp(800);
+        Xp(2000);
     }
 
     Reward("StorylineReward_GoingOutside_reward")
     {
-        Xp(1000);
+        Xp(4000);
     }
 
     Reward("StorylineReward_Blackout_reward")
@@ -182,14 +182,14 @@ sub main()
     Reward("BringDawud_reward") // NO REWARD
     {
         Xp(15000);
-		Item("Craft_Shroom", Color_Violet, 30, 0); // Craft Shroom
+		Item("Craft_Upgrade_DamL2DurL2", Color_Orange, 1, 0); // Burn Upgrade
 		Cash(500);
     }
 
     Reward("GoodNightBahir_reward") // NO REWARD fake antizen lab
     {
         Xp(15000);
-		Item("Craft_Shroom", Color_Violet, 30, 0); // Craft Shroom
+		Item("Craft_Upgrade_DurL2BalL2", Color_White, 1, 0); // Freeze Upgrade
 		Cash(750);
     }
 
@@ -364,7 +364,7 @@ sub main()
     Reward("Twins04_reward") // NO REWARD power cables, duct tape, sonar
     {
 	   Xp(15000);
-	   Item("Craft_Shroom", Color_Violet, 30, 0); // Craft Shroom
+	   Item("Craft_Upgrade_DamL2BalL2", Color_Blue, 1, 0); // Shock Upgrade 
     }
 
     Reward("TalesFromTheCrypt_reward") // REWARDED Stranded Survivors Apartment Electrocuted

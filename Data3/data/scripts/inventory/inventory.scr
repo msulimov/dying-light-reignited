@@ -5936,7 +5936,7 @@ sub main()
         Color(Color_Blue);
         EquipmentSlot(0);
         GenType(GenType_None);
-        DamageHeadMult(5.0);
+        DamageHeadMult(2.0);
     }
 
     Item("zzzzz_Throwable_ThrowingKnifeAGenGreen", CategoryType_Throwable)
@@ -5991,7 +5991,7 @@ sub main()
         Color(Color_Green);
         EquipmentSlot(0);
         GenType(GenType_None);
-        DamageHeadMult(5.0);
+        DamageHeadMult(2.0);
     }
 
     Item("zzzzz_Throwable_ThrowingKnifeAGenViolet", CategoryType_Throwable)
@@ -6046,7 +6046,7 @@ sub main()
         Color(Color_Violet);
         EquipmentSlot(0);
         GenType(GenType_None);
-        DamageHeadMult(5.0);
+        DamageHeadMult(2.0);
     }
 
     Item("zzzzz_Throwable_ThrowingKnifeAGenOrange", CategoryType_Throwable)
@@ -6101,7 +6101,7 @@ sub main()
         Color(Color_Orange);
         EquipmentSlot(0);
         GenType(GenType_None);
-        DamageHeadMult(5.0);
+        DamageHeadMult(2.0);
     }
 
     Item("zzzzz_Throwable_ThrowingKnifeAGenPlatinum", CategoryType_Throwable)
@@ -6156,7 +6156,7 @@ sub main()
         Color(Color_Platinum);
         EquipmentSlot(0);
         GenType(GenType_None);
-        DamageHeadMult(5.0);
+        DamageHeadMult(2.0);
     }
 
     Item("Throwable_ThrowingKnifeBGen", CategoryType_Throwable)
@@ -6208,7 +6208,7 @@ sub main()
         Color(Color_Blue);
         EquipmentSlot(0);
         GenType(GenType_None);
-        DamageHeadMult(5.0);
+        DamageHeadMult(2.0);
     }
 
     Item("Throwable_ThrowingKnifeChallengeAGen", CategoryType_Throwable)
@@ -6312,7 +6312,7 @@ sub main()
         Color(Color_Violet);
         EquipmentSlot(0);
         GenType(GenType_None);
-        DamageHeadMult(5.0);
+        DamageHeadMult(2.0);
     }
 
     Item("zzzzz_Throwable_ThrowingAxeAGenGreen", CategoryType_Throwable)
@@ -6367,7 +6367,7 @@ sub main()
         Color(Color_Green);
         EquipmentSlot(0);
         GenType(GenType_None);
-        DamageHeadMult(5.0);
+        DamageHeadMult(2.0);
     }
 
     Item("zzzzz_Throwable_ThrowingAxeAGenBlue", CategoryType_Throwable)
@@ -6422,7 +6422,7 @@ sub main()
         Color(Color_Blue);
         EquipmentSlot(0);
         GenType(GenType_None);
-        DamageHeadMult(5.0);
+        DamageHeadMult(2.0);
     }
 
     Item("zzzzz_Throwable_ThrowingAxeAGenOrange", CategoryType_Throwable)
@@ -6477,7 +6477,7 @@ sub main()
         Color(Color_Orange);
         EquipmentSlot(0);
         GenType(GenType_None);
-        DamageHeadMult(5.0);
+        DamageHeadMult(2.0);
     }
 
     Item("zzzzz_Throwable_ThrowingAxeAGenPlatinum", CategoryType_Throwable)
@@ -6532,7 +6532,7 @@ sub main()
         Color(Color_Platinum);
         EquipmentSlot(0);
         GenType(GenType_None);
-        DamageHeadMult(5.0);
+        DamageHeadMult(2.0);
     }
 
     Item("Throwable_ThrowingAxeBGen", CategoryType_Throwable)
@@ -6584,7 +6584,7 @@ sub main()
         Color(Color_Violet);
         EquipmentSlot(0);
         GenType(GenType_None);
-        DamageHeadMult(5.0);
+        DamageHeadMult(2.0);
     }
 
     Item("zzzzz_Throwable_ThrowingAxeBGenGreen", CategoryType_Throwable)
@@ -6639,7 +6639,7 @@ sub main()
         Color(Color_Green);
         EquipmentSlot(0);
         GenType(GenType_None);
-        DamageHeadMult(5.0);
+        DamageHeadMult(2.0);
     }
 
     Item("zzzzz_Throwable_ThrowingAxeBGenBlue", CategoryType_Throwable)
@@ -6694,7 +6694,7 @@ sub main()
         Color(Color_Blue);
         EquipmentSlot(0);
         GenType(GenType_None);
-        DamageHeadMult(5.0);
+        DamageHeadMult(2.0);
     }
 
     Item("zzzzz_Throwable_ThrowingAxeBGenOrange", CategoryType_Throwable)
@@ -6749,7 +6749,7 @@ sub main()
         Color(Color_Orange);
         EquipmentSlot(0);
         GenType(GenType_None);
-        DamageHeadMult(5.0);
+        DamageHeadMult(2.0);
     }
 
     Item("zzzzz_Throwable_ThrowingAxeBGenPlatinum", CategoryType_Throwable)
@@ -6804,7 +6804,7 @@ sub main()
         Color(Color_Platinum);
         EquipmentSlot(0);
         GenType(GenType_None);
-        DamageHeadMult(5.0);
+        DamageHeadMult(2.0);
     }
 
     Item("Throwable_ThrowingAxeCGen", CategoryType_Throwable)
@@ -6856,7 +6856,7 @@ sub main()
         Color(Color_Violet);
         EquipmentSlot(0);
         GenType(GenType_None);
-        DamageHeadMult(5.0);
+        DamageHeadMult(2.0);
     }
 
     Item("zzzzz_Throwable_ThrowingAxeCGenWhite", CategoryType_Throwable)
@@ -6911,7 +6911,7 @@ sub main()
         Color(Color_White);
         EquipmentSlot(0);
         GenType(GenType_None);
-        DamageHeadMult(5.0);
+        DamageHeadMult(2.0);
     }
 
     Item("zzzzz_Throwable_ThrowingAxeCGenGreen", CategoryType_Throwable)
@@ -6966,7 +6966,7 @@ sub main()
         Color(Color_Green);
         EquipmentSlot(0);
         GenType(GenType_None);
-        DamageHeadMult(5.0);
+        DamageHeadMult(2.0);
     }
 
     Item("zzzzz_Throwable_ThrowingAxeCGenBlue", CategoryType_Throwable)
@@ -7021,7 +7021,7 @@ sub main()
         Color(Color_Blue);
         EquipmentSlot(0);
         GenType(GenType_None);
-        DamageHeadMult(5.0);
+        DamageHeadMult(2.0);
     }
 
     Item("zzzzz_Throwable_ThrowingAxeCGenOrange", CategoryType_Throwable)
@@ -7076,7 +7076,7 @@ sub main()
         Color(Color_Orange);
         EquipmentSlot(0);
         GenType(GenType_None);
-        DamageHeadMult(5.0);
+        DamageHeadMult(2.0);
     }
 
     Item("zzzzz_Throwable_ThrowingAxeCGenPlatinum", CategoryType_Throwable)
@@ -7131,7 +7131,7 @@ sub main()
         Color(Color_Platinum);
         EquipmentSlot(0);
         GenType(GenType_None);
-        DamageHeadMult(5.0);
+        DamageHeadMult(2.0);
     }
 
     Item("Throwable_ThrowingAxeChallengeBGen", CategoryType_Throwable)
@@ -7235,7 +7235,7 @@ sub main()
         Color(Color_Green);
         EquipmentSlot(0);
         GenType(GenType_None);
-        DamageHeadMult(5.0);
+        DamageHeadMult(2.0);
     }
 
     Item("zzzzz_Throwable_ShurikenAGenBlue", CategoryType_Throwable)
@@ -7290,7 +7290,7 @@ sub main()
         Color(Color_Blue);
         EquipmentSlot(0);
         GenType(GenType_None);
-        DamageHeadMult(5.0);
+        DamageHeadMult(2.0);
     }
 
     Item("zzzzz_Throwable_ShurikenAGenViolet", CategoryType_Throwable)
@@ -7345,7 +7345,7 @@ sub main()
         Color(Color_Violet);
         EquipmentSlot(0);
         GenType(GenType_None);
-        DamageHeadMult(5.0);
+        DamageHeadMult(2.0);
     }
 
     Item("zzzzz_Throwable_ShurikenAGenOrange", CategoryType_Throwable)
@@ -7400,7 +7400,7 @@ sub main()
         Color(Color_Orange);
         EquipmentSlot(0);
         GenType(GenType_None);
-        DamageHeadMult(5.0);
+        DamageHeadMult(2.0);
     }
 
     Item("zzzzz_Throwable_ShurikenAGenPlatinum", CategoryType_Throwable)
@@ -7455,7 +7455,7 @@ sub main()
         Color(Color_Platinum);
         EquipmentSlot(0);
         GenType(GenType_None);
-        DamageHeadMult(5.0);
+        DamageHeadMult(2.0);
     }
 
     Item("Throwable_ShurikenBGen", CategoryType_Throwable)
@@ -7507,7 +7507,7 @@ sub main()
         Color(Color_White);
         EquipmentSlot(0);
         GenType(GenType_None);
-        DamageHeadMult(5.0);
+        DamageHeadMult(2.0);
     }
 
     Item("Throwable_ShurikenChallengeAGen", CategoryType_Throwable)
@@ -9174,7 +9174,7 @@ sub main()
         ItemType(ItemType_ItemBundle);
         BundleItems()
         {
-            Item("Medkit_HealthPackLarge", 3);
+            Item("Medkit_HealthPackLarge", 4);
         }
         Mesh("supplies_first_aid_b.msh");
         HudIcon("bundle_medical");
@@ -9304,7 +9304,7 @@ sub main()
         ItemType(ItemType_ItemBundle);
         BundleItems()
         {
-            Item("Throwable_Btz_Flare", 4);
+            Item("Throwable_Btz_Flare", 5);
         }
         Mesh("flars_box_a.msh");
         HudIcon("equipment_flare");

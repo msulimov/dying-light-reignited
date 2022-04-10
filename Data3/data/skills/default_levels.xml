@@ -624,7 +624,7 @@
 	<prop n="RunnerXPSkillWrestleKick" v="20.0"/>
 	
 	<prop n="RunnerXPNightFactor" v="4.0"/>	
-	<prop n="FighterXPNightFactor" v="5.0"/>	
+	<prop n="FighterXPNightFactor" v="3.0"/>	
 	<prop n="SurvivorXPNightFactor" v="1.0"/>
 	<prop n="DriverXpNightFactor" v="2.0"/>
 	
@@ -1578,30 +1578,30 @@
 <level id="23" type="Status"><prop n="SurvivalPenaltyOnDeathNight" v="0.0"/></level>
 <level id="24" type="Status"><prop n="SurvivalPenaltyOnDeathNight" v="0.0"/></level>
 	-->
-<level id="1" type="Status"><prop n="NightExpTimeReward"  v="0.1"/></level>
-<level id="2" type="Status"><prop n="NightExpTimeReward"  v="0.1"/></level>
-<level id="3" typde="Status"><prop n="NightExpTimeReward"  v="0.1"/></level>
-<level id="4" type="Status"><prop n="NightExpTimeReward"  v="0.2"/></level>
-<level id="5" type="Status"><prop n="NightExpTimeReward"  v="0.3"/></level>
-<level id="6" type="Status"><prop n="NightExpTimeReward"  v="0.4"/></level>
-<level id="7" type="Status"><prop n="NightExpTimeReward"  v="0.4"/></level>
-<level id="8" type="Status"><prop n="NightExpTimeReward"  v="0.5"/></level>
-<level id="9" type="Status"><prop n="NightExpTimeReward"  v="0.5"/></level>
-<level id="10" type="Status"><prop n="NightExpTimeReward"  v="0.5"/></level>
-<level id="11" type="Status"><prop n="NightExpTimeReward"  v="0.5"/></level>
-<level id="12" type="Status"><prop n="NightExpTimeReward"  v="0.5"/></level>
-<level id="13" type="Status"><prop n="NightExpTimeReward"  v="0.5"/></level>
-<level id="14" type="Status"><prop n="NightExpTimeReward"  v="0.5"/></level>
-<level id="15" type="Status"><prop n="NightExpTimeReward"  v="0.5"/></level>
-<level id="16" type="Status"><prop n="NightExpTimeReward"  v="0.5"/></level>
-<level id="17" type="Status"><prop n="NightExpTimeReward"  v="0.5"/></level>
-<level id="18" type="Status"><prop n="NightExpTimeReward"  v="0.5"/></level>
-<level id="19" type="Status"><prop n="NightExpTimeReward"  v="0.5"/></level>
-<level id="20" type="Status"><prop n="NightExpTimeReward"  v="0.5"/></level>
-<level id="21" type="Status"><prop n="NightExpTimeReward"  v="0.5"/></level>
-<level id="22" type="Status"><prop n="NightExpTimeReward"  v="0.5"/></level>
-<level id="23" type="Status"><prop n="NightExpTimeReward"  v="0.5"/></level>
-<level id="24" type="Status"><prop n="NightExpTimeReward"  v="0.5"/></level>
+<level id="1" type="Status"><prop n="NightExpTimeReward"  v="0.03"/></level>
+<level id="2" type="Status"><prop n="NightExpTimeReward"  v="0.03"/></level>
+<level id="3" typde="Status"><prop n="NightExpTimeReward"  v="0.03"/></level>
+<level id="4" type="Status"><prop n="NightExpTimeReward"  v="0.06"/></level>
+<level id="5" type="Status"><prop n="NightExpTimeReward"  v="0.1"/></level>
+<level id="6" type="Status"><prop n="NightExpTimeReward"  v="0.13"/></level>
+<level id="7" type="Status"><prop n="NightExpTimeReward"  v="0.13"/></level>
+<level id="8" type="Status"><prop n="NightExpTimeReward"  v="0.16"/></level>
+<level id="9" type="Status"><prop n="NightExpTimeReward"  v="0.16"/></level>
+<level id="10" type="Status"><prop n="NightExpTimeReward"  v="0.16"/></level>
+<level id="11" type="Status"><prop n="NightExpTimeReward"  v="0.16"/></level>
+<level id="12" type="Status"><prop n="NightExpTimeReward"  v="0.2"/></level>
+<level id="13" type="Status"><prop n="NightExpTimeReward"  v="0.2"/></level>
+<level id="14" type="Status"><prop n="NightExpTimeReward"  v="0.2"/></level>
+<level id="15" type="Status"><prop n="NightExpTimeReward"  v="0.2"/></level>
+<level id="16" type="Status"><prop n="NightExpTimeReward"  v="0.2"/></level>
+<level id="17" type="Status"><prop n="NightExpTimeReward"  v="0.22"/></level>
+<level id="18" type="Status"><prop n="NightExpTimeReward"  v="0.22"/></level>
+<level id="19" type="Status"><prop n="NightExpTimeReward"  v="0.22"/></level>
+<level id="20" type="Status"><prop n="NightExpTimeReward"  v="0.25"/></level>
+<level id="21" type="Status"><prop n="NightExpTimeReward"  v="0.25"/></level>
+<level id="22" type="Status"><prop n="NightExpTimeReward"  v="0.25"/></level>
+<level id="23" type="Status"><prop n="NightExpTimeReward"  v="0.25"/></level>
+<level id="24" type="Status"><prop n="NightExpTimeReward"  v="0.25"/></level>
 
 <level id="1" type="Status"><prop n="NightExpPursuitReward"  v="4.16666667"/></level>
 <level id="2" type="Status"><prop n="NightExpPursuitReward"  v="13.54166667"/></level>

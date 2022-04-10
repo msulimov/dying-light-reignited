@@ -1097,7 +1097,7 @@ sub main()
         Color(Color_Blue);
         EquipmentSlot(0);
         GenType(GenType_None);
-        DamageHeadMult(5.0);
+        DamageHeadMult(2.0);
 		GameVersion(33);
     }
 	

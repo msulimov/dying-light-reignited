@@ -13,11 +13,11 @@ sub customRecipes(){
 		RequiredItem("Craft_MetalScrap", 4);
 		RequiredItem("Craft_PlasticTube", 4);
 		RequiredItem("Craft_Batteries", 2);
-		RequiredItem("Craft_Bleach", 7);
-		RequiredItem("Craft_DuctTape", 5);
-		RequiredItem("Craft_Insecticide", 7);
-		RequiredItem("ZZZZ3_Component_Lubricant", 5);
-		RequiredItem("ZZZZ3_Component_NutsBolts", 10);
+		RequiredItem("Craft_Bleach", 4);
+		RequiredItem("Craft_DuctTape", 4);
+		RequiredItem("Craft_Insecticide", 5);
+		RequiredItem("ZZZZ3_Component_Lubricant", 3);
+		RequiredItem("ZZZZ3_Component_NutsBolts", 4);
 		
         Color(Color_Orange);
         CraftedItem("Craft_TruckBattery", 1, 2);
@@ -35,14 +35,13 @@ sub customRecipes(){
         Price(40);
 		Mesh("blueprint.msh");
         Skin("default_hl");
-		RequiredItem("Craft_MetalScrap", 4);
+		RequiredItem("Craft_MetalScrap", 3);
 		RequiredItem("Craft_PlasticTube", 4);
 		RequiredItem("Craft_DuctTape", 2);
 		RequiredItem("ZZZZ3_Component_Rubber", 4);
-		RequiredItem("ZZZZ3_Component_Lubricant", 1);
         RequiredItem("ZZZZ3_Component_SteelTubing", 2);
         Color(Color_Green);
-        CraftedItem("ZZZZ3_Component_Wire", 3, 4);
+        CraftedItem("ZZZZ3_Component_Wire", 3, 5);
         CraftplanType("Top");
         UniqueSaveID(74979);
         HudIcon("blueprint_b");
@@ -62,8 +61,7 @@ sub customRecipes(){
 		RequiredItem("Craft_PlasticTube", 2);
 		RequiredItem("Craft_Nails", 4);
 		RequiredItem("ZZZZ3_Component_SteelTubing", 3);
-		RequiredItem("Craft_String", 3);
-		RequiredItem("ZZZZ3_Component_Lubricant", 1);
+		RequiredItem("Craft_String", 2);
         Color(Color_Green);
         CraftedItem("Craft_RazorBlade", 1, 2);
         CraftplanType("Top");
@@ -81,11 +79,10 @@ sub customRecipes(){
 		Mesh("blueprint.msh");
         Skin("default_hl");
 		RequiredItem("Craft_MetalScrap", 3);
-		RequiredItem("Craft_Nails", 1);
-		RequiredItem("Craft_DuctTape", 1);
-		RequiredItem("ZZZZ3_Component_Lubricant", 1);
+		RequiredItem("Craft_Nails", 2);
+		RequiredItem("Craft_DuctTape", 2);
         Color(Color_White);
-        CraftedItem("ZZZZ3_Component_NutsBolts", 2, 4);
+        CraftedItem("ZZZZ3_Component_NutsBolts", 3, 5);
         CraftplanType("Top");
         UniqueSaveID(74981);
         HudIcon("blueprint_b");
@@ -102,13 +99,13 @@ sub customRecipes(){
         Mesh("blueprint.msh");
         Skin("default_hl");
         RequiredItem("Craft_PlasticTube", 4);
-		RequiredItem("Craft_MetalScrap", 6);
+		RequiredItem("Craft_MetalScrap", 4);
 		RequiredItem("Craft_DuctTape", 4);
-        RequiredItem("ZZZZ3_Component_NutsBolts", 4);
-		RequiredItem("ZZZZ3_Component_Wire", 6);
+        RequiredItem("ZZZZ3_Component_NutsBolts", 3);
+		RequiredItem("ZZZZ3_Component_Wire", 5);
 		RequiredItem("ZZZZ3_Component_Rubber", 4);
-		RequiredItem("ZZZZ3_Component_SteelTubing", 4);
-		RequiredItem("ZZZZ3_Component_Lubricant", 3);
+		RequiredItem("ZZZZ3_Component_SteelTubing", 3);
+		RequiredItem("ZZZZ3_Component_Lubricant", 1);
         Color(Color_Green);
         CraftedItem("Craft_PowerCable", 2, 3);
         CraftplanType("Top");
@@ -128,11 +125,11 @@ sub customRecipes(){
         Skin("default_hl");
         RequiredItem("Craft_PlasticTube", 4);
 		RequiredItem("Craft_TinCan", 4);
-        RequiredItem("Craft_Bleach", 6);		
-        RequiredItem("Craft_Insecticide", 4);
-		RequiredItem("ZZZZ3_Component_Rubber", 2);
-		RequiredItem("ZZZZ3_Component_SteelTubing", 4);
-		RequiredItem("ZZZZ3_Component_NutsBolts", 3);
+        RequiredItem("Craft_Bleach", 3);		
+        RequiredItem("Craft_Insecticide", 3);
+		RequiredItem("ZZZZ3_Component_Rubber", 3);
+		RequiredItem("ZZZZ3_Component_SteelTubing", 3);
+		RequiredItem("ZZZZ3_Component_NutsBolts", 2);
         RequiredItem("Craft_MetalScrap", 5);
         Color(Color_Green);
         CraftedItem("Craft_Batteries", 2, 3);
@@ -150,16 +147,16 @@ sub customRecipes(){
         Price(41);
         Mesh("blueprint.msh");
         Skin("default_hl");
-		RequiredItem("Craft_MetalScrap", 8);
-        RequiredItem("ZZZZ3_Component_NutsBolts", 5);
+		RequiredItem("Craft_MetalScrap", 5);
+        RequiredItem("ZZZZ3_Component_NutsBolts", 4);
 		RequiredItem("ZZZZ3_Component_Rubber", 6);
         RequiredItem("Craft_PowerCable", 2);
         RequiredItem("Craft_Batteries", 2);
 		RequiredItem("Craft_Shroom", 6);
 		RequiredItem("Craft_DuctTape", 4);
-		RequiredItem("ZZZZ3_Component_Wire", 3);
-		RequiredItem("ZZZZ3_Component_Synthetic", 3);
-		RequiredItem("ZZZZ3_Component_Lubricant", 4);
+		RequiredItem("ZZZZ3_Component_Wire", 2);
+		RequiredItem("ZZZZ3_Component_Synthetic", 2);
+		RequiredItem("ZZZZ3_Component_Lubricant", 2);
         Color(Color_Violet);
         CraftedItem("Craft_Electronics", 2, 3);
         CraftplanType("Top");
@@ -178,7 +175,7 @@ sub customRecipes(){
         Skin("default_hl");
 		RequiredItem("Craft_TinCan", 2);
         Color(Color_Green);
-        CraftedItem("Craft_MetalScrap", 2, 3);
+        CraftedItem("Craft_MetalScrap", 1, 2);
         CraftplanType("Top");
         UniqueSaveID(74985);
         HudIcon("blueprint_b");
@@ -199,10 +196,10 @@ sub customRecipes(){
 		RequiredItem("Craft_PlasticTube", 3);
 		RequiredItem("Craft_Nails", 3);
         RequiredItem("Craft_Bleach", 6);
-		RequiredItem("Craft_Shroom", 10);
-        RequiredItem("Craft_Electronics", 2);
+		RequiredItem("Craft_Shroom", 5);
+        RequiredItem("Craft_Electronics", 1);
         RequiredItem("Craft_Batteries", 2);
-		RequiredItem("Craft_PowerCable", 2);
+		RequiredItem("Craft_PowerCable", 1);
 		
         NamePrefix("&ModifiedItemName&");
         Elemental(Elemental_Freezing, 3);
@@ -248,13 +245,13 @@ sub customRecipes(){
         Skin("default");
       
 		RequiredItem("Craft_MetalScrap", 8);
-		RequiredItem("Craft_PrimeTissue", 2);
+		RequiredItem("Craft_PrimeTissue", 1);
         RequiredItem("Craft_Gauze", 5);
 		RequiredItem("Craft_Lichen", 10);
-        RequiredItem("Craft_Electronics", 3);
+        RequiredItem("Craft_Electronics", 2);
         RequiredItem("Craft_Batteries", 2);
 		RequiredItem("Craft_PowerCable", 2);
-		RequiredItem("Craft_ToxicPlant", 25);
+		RequiredItem("Craft_ToxicPlant", 15);
 	  
         Color(Color_Green);
         CraftedItem("Craft_Upgrade_DurL2", 1);
@@ -276,9 +273,9 @@ sub customRecipes(){
 	    RequiredItem("Craft_MetalScrap", 8);
 		RequiredItem("Craft_DuctTape", 8);
 		RequiredItem("ZZZZ3_Component_Rubber", 6);
-        RequiredItem("Craft_Electronics", 5);
+        RequiredItem("Craft_Electronics", 4);
         RequiredItem("Craft_Batteries", 4);
-		RequiredItem("Craft_PowerCable", 4);
+		RequiredItem("Craft_PowerCable", 3);
 		RequiredItem("ZZZZ3_Component_Wire", 8);
 	   
         Color(Color_Blue);
@@ -300,8 +297,8 @@ sub customRecipes(){
         
 		RequiredItem("Craft_MetalScrap", 8);
 		RequiredItem("Craft_TinCan", 7);
-        RequiredItem("Craft_Insecticide", 6);
-		RequiredItem("Craft_Bleach", 6);
+        RequiredItem("Craft_Insecticide", 5);
+		RequiredItem("Craft_Bleach", 5);
         RequiredItem("Craft_Electronics", 4);
         RequiredItem("Craft_Batteries", 4);
 		RequiredItem("Craft_PowerCable", 3);
@@ -324,13 +321,13 @@ sub customRecipes(){
         Skin("default");
         
 		RequiredItem("Craft_MetalScrap", 4);
-		RequiredItem("Craft_PlasticTube", 3);
-		RequiredItem("Craft_Nails", 3);
+        RequiredItem("Craft_PlasticTube", 3);
+        RequiredItem("Craft_Nails", 3);
         RequiredItem("Craft_Bleach", 6);
-		RequiredItem("Craft_Shroom", 10);
-        RequiredItem("Craft_Electronics", 2);
+        RequiredItem("Craft_Shroom", 5);
+        RequiredItem("Craft_Electronics", 1);
         RequiredItem("Craft_Batteries", 2);
-		RequiredItem("Craft_PowerCable", 2);
+        RequiredItem("Craft_PowerCable", 1);
 		
         Color(Color_White);
         CraftedItem("Craft_Upgrade_DurL2BalL2", 1);
@@ -372,11 +369,16 @@ sub customRecipes(){
         Price(317);
         Mesh("blueprint.msh");
         Skin("default");
-        RequiredItem("Craft_ToxicPlant", 5);
-        RequiredItem("ZZZZ3_Component_NutsBolts", 2);
+
         RequiredItem("Craft_DuctTape", 2);
-		RequiredItem("ZZZZ3_Component_Wire", 2);
-		RequiredItem("ZZZZ3_Component_Lubricant", 2);
+        RequiredItem("Craft_PlasticTube", 2);
+        RequiredItem("Craft_String", 2);
+
+        RequiredItem("ZZZZ3_Component_Wire", 2);
+        RequiredItem("ZZZZ3_Component_NutsBolts", 2);
+        RequiredItem("ZZZZ3_Component_SteelTubing", 2);
+		
+
         Color(Color_White);
         CraftedItem("Craft_Upgrade_Dur", 1);
         CraftplanType("Utility");
@@ -393,11 +395,15 @@ sub customRecipes(){
         Price(317);
         Mesh("blueprint.msh");
         Skin("default");
-        RequiredItem("Craft_TinCan", 2);
-        RequiredItem("ZZZZ3_Component_NutsBolts", 2);
-        RequiredItem("Craft_UnderwaterAlgae", 6);
-		RequiredItem("Craft_Insecticide", 2);
-		RequiredItem("ZZZZ3_Component_Lubricant", 2);
+
+        RequiredItem("Craft_DuctTape", 2);
+        RequiredItem("Craft_PlasticTube", 2);
+        RequiredItem("Craft_Nails", 2);
+
+        RequiredItem("ZZZZ3_Component_Rubber", 2);
+        RequiredItem("Craft_MetalScrap", 2);
+        RequiredItem("Craft_Alcohol", 3);
+        
         Color(Color_White);
         CraftedItem("Craft_Upgrade_Bal", 1);
         CraftplanType("Utility");
@@ -414,11 +420,15 @@ sub customRecipes(){
         Price(317);
         Mesh("blueprint.msh");
         Skin("default");
+
+        RequiredItem("Craft_DuctTape", 2);
+        RequiredItem("Craft_PlasticTube", 2);
+        RequiredItem("Craft_Nails", 2);
+
+        RequiredItem("Craft_Bleach", 2);
         RequiredItem("Craft_Insecticide", 2);
-        RequiredItem("ZZZZ3_Component_NutsBolts", 2);
-        RequiredItem("Craft_Bleach", 3);
-		RequiredItem("ZZZZ3_Component_SteelTubing", 1);
-		RequiredItem("ZZZZ3_Component_Lubricant", 2);
+        RequiredItem("Craft_Sugar", 1);
+        
         Color(Color_White);
         CraftedItem("Craft_Upgrade_Dam", 1);
         CraftplanType("Utility");
@@ -439,11 +449,11 @@ sub customRecipes(){
         Skin("default_hl");
         RequiredItem("Craft_Upgrade_Bal", 1);
         RequiredItem("Craft_Upgrade_Dur", 1);
-        RequiredItem("Craft_PlasticTube", 6);
+        RequiredItem("Craft_Alcohol", 5);
         RequiredItem("ZZZZ3_Component_Wire", 4);
-        RequiredItem("ZZZZ3_Component_Rubber", 3);
-		RequiredItem("ZZZZ3_Component_SteelTubing", 2);
-		RequiredItem("Craft_DuctTape", 2);
+        RequiredItem("ZZZZ3_Component_Rubber", 4);
+		RequiredItem("ZZZZ3_Component_SteelTubing", 3);
+		RequiredItem("Craft_DuctTape", 3);
         Color(Color_Blue);
         CraftedItem("Craft_Upgrade_DurBal", 1);
         CraftplanType("Utility");
@@ -464,9 +474,9 @@ sub customRecipes(){
         RequiredItem("Craft_Upgrade_Bal", 1);
         RequiredItem("Craft_Insecticide", 3);
         RequiredItem("ZZZZ3_Component_Wire", 4);
-        RequiredItem("ZZZZ3_Component_Rubber", 3);
-		RequiredItem("ZZZZ3_Component_SteelTubing", 2);
-		RequiredItem("Craft_DuctTape", 2);
+        RequiredItem("ZZZZ3_Component_Rubber", 4);
+		RequiredItem("ZZZZ3_Component_SteelTubing", 3);
+		RequiredItem("Craft_DuctTape", 3);
         Color(Color_Blue);
         CraftedItem("Craft_Upgrade_DamBal", 1);
         CraftplanType("Utility");
@@ -488,8 +498,8 @@ sub customRecipes(){
         RequiredItem("Craft_Bleach", 4);
         RequiredItem("ZZZZ3_Component_Wire", 3);
         RequiredItem("ZZZZ3_Component_Rubber", 2);
-		RequiredItem("ZZZZ3_Component_SteelTubing", 2);
-		RequiredItem("Craft_DuctTape", 2);
+		RequiredItem("ZZZZ3_Component_SteelTubing", 3);
+		RequiredItem("Craft_DuctTape", 3);
         Color(Color_Blue);
         CraftedItem("Craft_Upgrade_DamDur", 1);
         CraftplanType("Utility");
@@ -509,7 +519,7 @@ sub customRecipes(){
         RequiredItem("Craft_Upgrade_DamDur", 1);
         RequiredItem("Craft_Upgrade_Dam", 2);
         RequiredItem("Craft_Batteries", 2);
-        RequiredItem("ZZZZ3_Component_SteelTubing", 4);
+        RequiredItem("ZZZZ3_Component_SteelTubing", 3);
         RequiredItem("ZZZZ3_Component_NutsBolts", 3);
         RequiredItem("ZZZZ3_Component_Synthetic", 2);
         Color(Color_Violet);
@@ -531,8 +541,8 @@ sub customRecipes(){
         RequiredItem("Craft_Upgrade_DamBal", 1);
         RequiredItem("Craft_Upgrade_Dam", 2);
         RequiredItem("Craft_RazorBlade", 2);
-        RequiredItem("ZZZZ3_Component_SteelTubing", 4);
-        RequiredItem("ZZZZ3_Component_NutsBolts", 4);
+        RequiredItem("ZZZZ3_Component_SteelTubing", 3);
+        RequiredItem("ZZZZ3_Component_NutsBolts", 3);
         RequiredItem("ZZZZ3_Component_Synthetic", 2);
         Color(Color_Violet);
         CraftedItem("Craft_Upgrade_DamL2Bal", 1);
@@ -554,8 +564,8 @@ sub customRecipes(){
         RequiredItem("Craft_Upgrade_DamBal", 1);
 		RequiredItem("Craft_Upgrade_Bal", 2);
         RequiredItem("Craft_PowerCable", 2);
-        RequiredItem("ZZZZ3_Component_SteelTubing", 4);
-        RequiredItem("ZZZZ3_Component_NutsBolts", 4);
+        RequiredItem("ZZZZ3_Component_SteelTubing", 3);
+        RequiredItem("ZZZZ3_Component_NutsBolts", 3);
         RequiredItem("ZZZZ3_Component_Synthetic", 2);
         Color(Color_Violet);
         CraftedItem("Craft_Upgrade_BalL2Dam", 1);
@@ -575,8 +585,8 @@ sub customRecipes(){
         Skin("default_hl");
         RequiredItem("Craft_Upgrade_DamDur", 1);
         RequiredItem("Craft_Upgrade_Dur", 2);
-        RequiredItem("Craft_Shroom", 4);
-        RequiredItem("ZZZZ3_Component_SteelTubing", 4);
+        RequiredItem("Craft_Shroom", 6);
+        RequiredItem("ZZZZ3_Component_SteelTubing", 3);
         RequiredItem("ZZZZ3_Component_NutsBolts", 3);
         RequiredItem("ZZZZ3_Component_Synthetic", 2);
         Color(Color_Violet);
@@ -598,7 +608,7 @@ sub customRecipes(){
         RequiredItem("Craft_Upgrade_DurBal", 1);
         RequiredItem("Craft_Upgrade_Dur", 2);
         RequiredItem("Craft_Lichen", 6);
-        RequiredItem("ZZZZ3_Component_SteelTubing", 4);
+        RequiredItem("ZZZZ3_Component_SteelTubing", 3);
         RequiredItem("ZZZZ3_Component_NutsBolts", 3);
         RequiredItem("ZZZZ3_Component_Synthetic", 2);
         Color(Color_Violet);
@@ -620,7 +630,7 @@ sub customRecipes(){
         RequiredItem("Craft_Upgrade_DurBal", 1);
         RequiredItem("Craft_Upgrade_Bal", 2);
         RequiredItem("Craft_PrimeTissue", 1);
-        RequiredItem("ZZZZ3_Component_SteelTubing", 4);
+        RequiredItem("ZZZZ3_Component_SteelTubing", 3);
         RequiredItem("ZZZZ3_Component_NutsBolts", 3);
         RequiredItem("ZZZZ3_Component_Synthetic", 2);
         Color(Color_Violet);
@@ -663,10 +673,10 @@ sub customRecipes(){
         Price(838);
         Mesh("blueprint.msh");
         Skin("default");
-        RequiredItem("Craft_Upgrade_DamDurBal", 2);  //champion
-        RequiredItem("Craft_Upgrade_DamL2Dur", 2);  //brute
-        RequiredItem("Craft_Upgrade_BalL2Dam", 2);  //duelist
-		RequiredItem("Craft_Upgrade_DurL2Bal", 2);  //Knight
+        RequiredItem("Craft_Upgrade_DamDurBal", 1);  //champion
+        RequiredItem("Craft_Upgrade_DamL2Dur", 1);  //brute
+        RequiredItem("Craft_Upgrade_BalL2Dam", 1);  //duelist
+		RequiredItem("Craft_Upgrade_DurL2Bal", 1);  //Knight
 		RequiredItem("Craft_PowerCable", 3);
 		RequiredItem("Craft_Batteries", 3);
         RequiredItem("Craft_Electronics", 2);
@@ -688,10 +698,10 @@ sub customRecipes(){
         Price(838);
         Mesh("blueprint.msh");
         Skin("default");
-        RequiredItem("Craft_Upgrade_DamDurBal", 2);  // champion
-        RequiredItem("Craft_Upgrade_DamL2Bal", 2);   // bruiser
-        RequiredItem("Craft_Upgrade_DurL2Dam", 2);   // mercenary
-        RequiredItem("Craft_Upgrade_BalL2Dur", 2);  //Templar	
+        RequiredItem("Craft_Upgrade_DamDurBal", 1);  // champion
+        RequiredItem("Craft_Upgrade_DamL2Bal", 1);   // bruiser
+        RequiredItem("Craft_Upgrade_DurL2Dam", 1);   // mercenary
+        RequiredItem("Craft_Upgrade_BalL2Dur", 1);  //Templar	
         RequiredItem("Craft_PowerCable", 3);
 		RequiredItem("Craft_Batteries", 3);
         RequiredItem("Craft_Electronics", 2);

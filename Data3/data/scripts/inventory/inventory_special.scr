@@ -174,7 +174,7 @@ sub main()
         FF_FadeOut(0.0);
         CriticalProb(0.0);
         CriticalDamage(1.0);
-        DamageHeadMult(6.0);
+        DamageHeadMult(2.5);
         DamageToPhysicsObjects(10.0);
         FirePointRange(0,400.0 *0.01);
         FirePointDamage(0,25.0);
@@ -859,7 +859,7 @@ sub main()
         Condition(-1.0);
         CriticalProb(0.0);
 		DuckInertiaFactor(0.1);
-        DamageHeadMult(8.0);
+        DamageHeadMult(3.0);
         DamageToPhysicsObjects(17.5);
         FirePointRange(0,5000.0 *0.01);
         FirePointDamage(0,380.0);
@@ -7055,7 +7055,7 @@ sub main()
         CriticalProb(0.0);
         CriticalDamage(1.0);
 		DuckInertiaFactor(0.1);
-        DamageHeadMult(15.0);
+        DamageHeadMult(3.0);
         DamageToPhysicsObjects(17.5);
         FirePointRange(0, 10.0);
         FirePointDamage(0, 440.0);
@@ -7142,7 +7142,7 @@ sub main()
         CriticalProb(0.0);
         CriticalDamage(1.0);
 		DuckInertiaFactor(0.1);
-        DamageHeadMult(15.0);
+        DamageHeadMult(4.0);
         DamageToPhysicsObjects(20.0);
         FirePointRange(0, 10.0);
         FirePointDamage(0, 580.0);
@@ -8491,7 +8491,7 @@ sub main()
         Condition(-1.0);
         CriticalProb(0.0);
 		DuckInertiaFactor(0.1);
-        DamageHeadMult(5.0);
+        DamageHeadMult(2.0);
         DamageToPhysicsObjects(17.5);
         FirePointRange(0,5000.0 *0.01);
         FirePointDamage(0,380.0);
@@ -8556,7 +8556,7 @@ sub main()
         CriticalProb(0.0);
         CriticalDamage(1.0);
 		DuckInertiaFactor(0.1);
-        DamageHeadMult(10.0);
+        DamageHeadMult(4.0);
         DamageToPhysicsObjects(20.0);
         FirePointRange(0, 10.0);
         FirePointDamage(0, 420.0);
@@ -8640,7 +8640,7 @@ sub main()
         Condition(-1.0);
         CriticalProb(0.0);
 		DuckInertiaFactor(0.1);
-        DamageHeadMult(5.0);
+        DamageHeadMult(2.0);
         DamageToPhysicsObjects(17.5);
         FirePointRange(0,5000.0 *0.01);
         FirePointDamage(0,320.0);

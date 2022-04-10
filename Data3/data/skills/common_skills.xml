@@ -130,11 +130,14 @@
 	</skill> 
     
 	
-	<skill id="SilentKill" cat="fighter" tier="18" max_level="1" desc_params="backstab;M:SilentKill" skill_points="1" skill_points_type="Fighter">
+	<skill id="SilentKill" cat="fighter" tier="18" max_level="1" desc_params="conserve_weapons;P" skill_points="1" skill_points_type="Fighter">
 		<level_req type="Fighter" value="13"/>
 		<skill_req id="combatprof2"/>
-		<effect id="FinisherBackEnabled" change="1"/>
-		<effect id="FinisherBackHumanEnabled" change="1"/>
+
+		<effect id="MeleeWpnDurabilityMulReduce" change="0.25"/>
+
+		<!-- <effect id="FinisherBackEnabled" change="1"/> -->
+		<!-- <effect id="FinisherBackHumanEnabled" change="1"/> -->
 	</skill>
 
     <skill id="UltimateFighter" cat="fighter" tier="24" max_level="1" desc_params="ultimate_fighter;P" skill_points="1" skill_points_type="Fighter">
