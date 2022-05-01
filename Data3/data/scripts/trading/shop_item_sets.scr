@@ -1103,7 +1103,7 @@ sub main()
  	}
 	ItemSet("SMG_Ammo")
     {
-		Item("ZZZZZ_Ammo_SMG_Big");
+		Item("ZZZZZ_Ammo_SMG_Small");
  	}
 	
 	/////////////////////////////////////////////////////////////USED FOR COMPANION APP

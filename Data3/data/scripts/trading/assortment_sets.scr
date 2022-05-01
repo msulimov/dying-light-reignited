@@ -1241,7 +1241,7 @@ sub Ammo(){
     }
 	Set("SMG_Ammo",              "whites_only",   2, 3)
     {
-        MinStatusLevel(25);
+        MinStatusLevel(10);
 		Cycle("Hour", 12);
         Limited(3);
 		ExcludeInDifficultyMode("Hard");
