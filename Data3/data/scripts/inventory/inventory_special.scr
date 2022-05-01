@@ -1916,7 +1916,7 @@ sub main()
         LegsCutProb(0.0);
         ThrowImpulseLook(10.0);
         ThrowImpulseUp(2.0);
-        ExplodeDelay(10.0); // burn duration
+        ExplodeDelay(2.5); // burn duration, really short!
         ThrowBeginSound("");
         ThrowEndSound("");
         StatsType(StatsType_Explosive);
@@ -1955,7 +1955,7 @@ sub main()
         DamageDuration(15.0);
         PhysicsDamageMul(0);
         DamageType(DamageType_Blast);
-        DamageRange(10.0);
+        DamageRange(12.0);
         HeadCutProb(0.0);
         ArmsCutProb(0.0);
         LegsCutProb(0.0);

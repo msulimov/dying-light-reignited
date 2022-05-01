@@ -171,6 +171,7 @@ export int Other = 9;
         {
             Item("Craft_MetalScrap", 1.0);
             Item("Craft_PlasticTube", 1.0);
+            Item("Craft_Alcohol", 1.0);
             
             Item("Craft_TinCan", 1.0);
             Item("ZZZZ3_Component_Rubber", 0.2);
@@ -417,6 +418,7 @@ export int Other = 9;
             Item("Ammo_PistolSmall", 1.0);
             Item("Ammo_ShotgunSmall", 1.0);
             Item("Ammo_RifleSmall", 1.0);
+            Item("ZZZZZ_Ammo_SMG_Small", 1.0);
         }
     }
 
@@ -960,7 +962,7 @@ export int Other = 9;
     {
         Set(CraftPart, weight, prob)
         {
-            Item("Craft_Alcohol", 2.0);
+            Item("Craft_Alcohol", 1.0);
             Item("Craft_PlasticTube", 2.0);
             Item("Craft_Sugar", 1.0);
 

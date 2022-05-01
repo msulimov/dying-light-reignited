@@ -1,6 +1,6 @@
 sub main()
 {
-        Xp("HumanKill", 0);
+        Xp("HumanKill", 10);
         Xp("HumanKill_Assisted", 0);
         Xp("HumanKill_Nearby", 0);
 

@@ -266,7 +266,7 @@
     <prop n="HealthRegenerationMaxLevel" v="25"/>               <!-- Regenerates health up to this value. Post process depends on LowHealthEffectThreshold  -->
     <prop n="LowHealthEffectThreshold" v="1.0"/>                <!-- Defines the value of health when critical health post process is working, based on HealthCriticalLevel -->
     <prop n="HealthRegenerationDelay" v="4.0"/>                 <!-- Time after which player starts to regenerate, measured from last hit -->
-    <prop n="HealthRegenerationTimeToMax" v="8.0"/>             <!-- Time needed to regenerate health up to HealthRegenerationMaxLevel -->
+    <prop n="HealthRegenerationTimeToMax" v="20.0"/>             <!-- Time needed to regenerate health up to HealthRegenerationMaxLevel -->
     <prop n="HealthPerSecond" v="0"/>                           <!-- Amount of health being regenerated each second, to be used as auto heal skill -->
     
     <prop n="AfterDeathHealthRegenTime" v="0"/>               <!-- Time it takes to regenerate full health after respawn -->
@@ -358,7 +358,7 @@
     <prop n="ChargeWeaponDurabilityMul" v="2.0"/>   
     
     <!-- Stick -->
-    <prop n="ThrowHookRopeLength" v="15.0"/>
+    <prop n="ThrowHookRopeLength" v="13.0"/>
     <prop n="ChargeStaminaStickCostMul" v="2.0"/>
     <prop n="ChargeStickBaseDamageMul" v="1.75"/>
     <prop n="ChargeStickCritChanceMul" v="1.0"/>
@@ -668,7 +668,7 @@
 <prop n="PVPAssistHighTargetSpeedCorrectionPercentage" v="0.95"/>
 <prop n="PVPAssistHighTargetSpeedInputPercentageThreshold" v="0.4"/>
 
-<prop n="PlatinumWeaponFindMul" v="1.0"/>
+<prop n="PlatinumWeaponFindMul" v="2.0"/>
 
 	<prop n="DrivingInReverseXpMultiplier" v="1.1"/>
 </level>
@@ -834,28 +834,28 @@
 
 
 <!-- PLAYER EXPERIENCE FIGHTER-->
-<level id="1" type="Fighter"><prop n="ExpToNextLevelFighter" v="2000"/></level>
-<level id="2" type="Fighter"><prop n="ExpToNextLevelFighter" v="5000"/></level>
-<level id="3" type="Fighter"><prop n="ExpToNextLevelFighter" v="10000"/></level>
-<level id="4" type="Fighter"><prop n="ExpToNextLevelFighter" v="13000"/></level>
-<level id="5" type="Fighter"><prop n="ExpToNextLevelFighter" v="17000"/></level>
-<level id="6" type="Fighter"><prop n="ExpToNextLevelFighter" v="23000"/></level>
-<level id="7" type="Fighter"><prop n="ExpToNextLevelFighter" v="25000"/></level>
-<level id="8" type="Fighter"><prop n="ExpToNextLevelFighter" v="39000"/></level>
-<level id="9" type="Fighter"><prop n="ExpToNextLevelFighter" v="32000"/></level>
-<level id="10" type="Fighter"><prop n="ExpToNextLevelFighter" v="38000"/></level>
-<level id="11" type="Fighter"><prop n="ExpToNextLevelFighter" v="46000"/></level>
-<level id="12" type="Fighter"><prop n="ExpToNextLevelFighter" v="54000"/></level>
-<level id="13" type="Fighter"><prop n="ExpToNextLevelFighter" v="61000"/></level>
-<level id="14" type="Fighter"><prop n="ExpToNextLevelFighter" v="76000"/></level>
-<level id="15" type="Fighter"><prop n="ExpToNextLevelFighter" v="88000"/></level>
-<level id="16" type="Fighter"><prop n="ExpToNextLevelFighter" v="95000"/></level>
-<level id="17" type="Fighter"><prop n="ExpToNextLevelFighter" v="98000"/></level>
-<level id="18" type="Fighter"><prop n="ExpToNextLevelFighter" v="102000"/></level>
-<level id="19" type="Fighter"><prop n="ExpToNextLevelFighter" v="110000"/></level>
-<level id="20" type="Fighter"><prop n="ExpToNextLevelFighter" v="115000"/></level>
-<level id="21" type="Fighter"><prop n="ExpToNextLevelFighter" v="120000"/></level>
-<level id="22" type="Fighter"><prop n="ExpToNextLevelFighter" v="130000"/></level>
+<level id="1"  type="Fighter"><prop n="ExpToNextLevelFighter" v="5000"/></level>
+<level id="2"  type="Fighter"><prop n="ExpToNextLevelFighter" v="20000"/></level>
+<level id="3"  type="Fighter"><prop n="ExpToNextLevelFighter" v="60000"/></level>
+<level id="4"  type="Fighter"><prop n="ExpToNextLevelFighter" v="70000"/></level>
+<level id="5"  type="Fighter"><prop n="ExpToNextLevelFighter" v="72000"/></level>
+<level id="6"  type="Fighter"><prop n="ExpToNextLevelFighter" v="75000"/></level>
+<level id="7"  type="Fighter"><prop n="ExpToNextLevelFighter" v="78000"/></level>
+<level id="8"  type="Fighter"><prop n="ExpToNextLevelFighter" v="80000"/></level>
+<level id="9"  type="Fighter"><prop n="ExpToNextLevelFighter" v="85000"/></level>
+<level id="10" type="Fighter"><prop n="ExpToNextLevelFighter" v="90000"/></level>
+<level id="11" type="Fighter"><prop n="ExpToNextLevelFighter" v="95000"/></level>
+<level id="12" type="Fighter"><prop n="ExpToNextLevelFighter" v="100000"/></level>
+<level id="13" type="Fighter"><prop n="ExpToNextLevelFighter" v="105000"/></level>
+<level id="14" type="Fighter"><prop n="ExpToNextLevelFighter" v="110000"/></level>
+<level id="15" type="Fighter"><prop n="ExpToNextLevelFighter" v="115000"/></level>
+<level id="16" type="Fighter"><prop n="ExpToNextLevelFighter" v="120000"/></level>
+<level id="17" type="Fighter"><prop n="ExpToNextLevelFighter" v="125000"/></level>
+<level id="18" type="Fighter"><prop n="ExpToNextLevelFighter" v="130000"/></level>
+<level id="19" type="Fighter"><prop n="ExpToNextLevelFighter" v="135000"/></level>
+<level id="20" type="Fighter"><prop n="ExpToNextLevelFighter" v="140000"/></level>
+<level id="21" type="Fighter"><prop n="ExpToNextLevelFighter" v="145000"/></level>
+<level id="22" type="Fighter"><prop n="ExpToNextLevelFighter" v="150000"/></level>
 <level id="23" type="Fighter"><prop n="ExpToNextLevelFighter" v="200000"/></level>
 
 <!-- SKILL POINTS RUNNER-->
@@ -886,29 +886,29 @@
 
 
 <!-- PLAYER EXPERIENCE RUNNER-->
-<level id="1" type="Runner"><prop n="ExpToNextLevelRunner" v="1500"/></level>
-<level id="2" type="Runner"><prop n="ExpToNextLevelRunner" v="3000"/></level>
-<level id="3" type="Runner"><prop n="ExpToNextLevelRunner" v="5000"/></level>
-<level id="4" type="Runner"><prop n="ExpToNextLevelRunner" v="8000"/></level>
-<level id="5" type="Runner"><prop n="ExpToNextLevelRunner" v="12000"/></level>
-<level id="6" type="Runner"><prop n="ExpToNextLevelRunner" v="16000"/></level>
-<level id="7" type="Runner"><prop n="ExpToNextLevelRunner" v="18000"/></level>
-<level id="8" type="Runner"><prop n="ExpToNextLevelRunner" v="25000"/></level>
-<level id="9" type="Runner"><prop n="ExpToNextLevelRunner" v="33000"/></level>
-<level id="10" type="Runner"><prop n="ExpToNextLevelRunner" v="38000"/></level>
-<level id="11" type="Runner"><prop n="ExpToNextLevelRunner" v="41000"/></level>
-<level id="12" type="Runner"><prop n="ExpToNextLevelRunner" v="48000"/></level>
-<level id="13" type="Runner"><prop n="ExpToNextLevelRunner" v="54000"/></level>
-<level id="14" type="Runner"><prop n="ExpToNextLevelRunner" v="60000"/></level>
-<level id="15" type="Runner"><prop n="ExpToNextLevelRunner" v="64000"/></level>
-<level id="16" type="Runner"><prop n="ExpToNextLevelRunner" v="69000"/></level>
-<level id="17" type="Runner"><prop n="ExpToNextLevelRunner" v="76000"/></level>
-<level id="18" type="Runner"><prop n="ExpToNextLevelRunner" v="80000"/></level>
-<level id="19" type="Runner"><prop n="ExpToNextLevelRunner" v="85000"/></level>
-<level id="20" type="Runner"><prop n="ExpToNextLevelRunner" v="90000"/></level>
-<level id="21" type="Runner"><prop n="ExpToNextLevelRunner" v="10000"/></level>
-<level id="22" type="Runner"><prop n="ExpToNextLevelRunner" v="115000"/></level>
-<level id="23" type="Runner"><prop n="ExpToNextLevelRunner" v="140000"/></level>
+<level id="1" type="Runner"><prop n="ExpToNextLevelRunner"  v="6000"/></level>
+<level id="2" type="Runner"><prop n="ExpToNextLevelRunner"  v="20000"/></level>
+<level id="3" type="Runner"><prop n="ExpToNextLevelRunner"  v="40000"/></level>
+<level id="4" type="Runner"><prop n="ExpToNextLevelRunner"  v="45000"/></level>
+<level id="5" type="Runner"><prop n="ExpToNextLevelRunner"  v="50000"/></level>
+<level id="6" type="Runner"><prop n="ExpToNextLevelRunner"  v="55000"/></level>
+<level id="7" type="Runner"><prop n="ExpToNextLevelRunner"  v="60000"/></level>
+<level id="8" type="Runner"><prop n="ExpToNextLevelRunner"  v="65000"/></level>
+<level id="9" type="Runner"><prop n="ExpToNextLevelRunner"  v="75000"/></level>
+<level id="10" type="Runner"><prop n="ExpToNextLevelRunner" v="77500"/></level>
+<level id="11" type="Runner"><prop n="ExpToNextLevelRunner" v="80000"/></level>
+<level id="12" type="Runner"><prop n="ExpToNextLevelRunner" v="82500"/></level>
+<level id="13" type="Runner"><prop n="ExpToNextLevelRunner" v="85000"/></level>
+<level id="14" type="Runner"><prop n="ExpToNextLevelRunner" v="90000"/></level>
+<level id="15" type="Runner"><prop n="ExpToNextLevelRunner" v="95000"/></level>
+<level id="16" type="Runner"><prop n="ExpToNextLevelRunner" v="100000"/></level>
+<level id="17" type="Runner"><prop n="ExpToNextLevelRunner" v="105000"/></level>
+<level id="18" type="Runner"><prop n="ExpToNextLevelRunner" v="110000"/></level>
+<level id="19" type="Runner"><prop n="ExpToNextLevelRunner" v="120000"/></level>
+<level id="20" type="Runner"><prop n="ExpToNextLevelRunner" v="130000"/></level>
+<level id="21" type="Runner"><prop n="ExpToNextLevelRunner" v="140000"/></level>
+<level id="22" type="Runner"><prop n="ExpToNextLevelRunner" v="150000"/></level>
+<level id="23" type="Runner"><prop n="ExpToNextLevelRunner" v="170000"/></level>
 
 <!-- SKILL POINTS STATUS-->
 <level id="1" type="Status"><prop n="SkillPointsStatus" v="0"/></level>
@@ -939,30 +939,30 @@
 <!-- SKILL POINTS STATUS END-->
 
 <!-- PLAYER EXPERIENCE STATUS-->
-<level id="1" type="Status"><prop n="ExpToNextLevelStatus" v="15000"/></level>
-<level id="2" type="Status"><prop n="ExpToNextLevelStatus" v="35000"/></level>
-<level id="3" type="Status"><prop n="ExpToNextLevelStatus" v="50000"/></level>
-<level id="4" type="Status"><prop n="ExpToNextLevelStatus" v="70000"/></level>
-<level id="5" type="Status"><prop n="ExpToNextLevelStatus" v="90000"/></level>
-<level id="6" type="Status"><prop n="ExpToNextLevelStatus" v="110000"/></level>
-<level id="7" type="Status"><prop n="ExpToNextLevelStatus" v="120000"/></level>
-<level id="8" type="Status"><prop n="ExpToNextLevelStatus" v="130000"/></level>
-<level id="9" type="Status"><prop n="ExpToNextLevelStatus" v="150000"/></level>
-<level id="10" type="Status"><prop n="ExpToNextLevelStatus" v="180000"/></level>
-<level id="11" type="Status"><prop n="ExpToNextLevelStatus" v="500000"/></level>
-<level id="12" type="Status"><prop n="ExpToNextLevelStatus" v="200000"/></level>
-<level id="13" type="Status"><prop n="ExpToNextLevelStatus" v="240000"/></level>
-<level id="14" type="Status"><prop n="ExpToNextLevelStatus" v="260000"/></level>
-<level id="15" type="Status"><prop n="ExpToNextLevelStatus" v="285000"/></level>
-<level id="16" type="Status"><prop n="ExpToNextLevelStatus" v="300000"/></level>
-<level id="17" type="Status"><prop n="ExpToNextLevelStatus" v="330000"/></level>
-<level id="18" type="Status"><prop n="ExpToNextLevelStatus" v="380000"/></level>
-<level id="19" type="Status"><prop n="ExpToNextLevelStatus" v="420000"/></level>
-<level id="20" type="Status"><prop n="ExpToNextLevelStatus" v="460000"/></level>
-<level id="21" type="Status"><prop n="ExpToNextLevelStatus" v="500000"/></level>
-<level id="22" type="Status"><prop n="ExpToNextLevelStatus" v="550000"/></level>
-<level id="23" type="Status"><prop n="ExpToNextLevelStatus" v="600000"/></level>
-<level id="24" type="Status"><prop n="ExpToNextLevelStatus" v="1000000"/></level>
+<level id="1"  type="Status"><prop n="ExpToNextLevelStatus" v="50000"/></level>
+<level id="2"  type="Status"><prop n="ExpToNextLevelStatus" v="100000"/></level>
+<level id="3"  type="Status"><prop n="ExpToNextLevelStatus" v="150000"/></level>
+<level id="4"  type="Status"><prop n="ExpToNextLevelStatus" v="230000"/></level>
+<level id="5"  type="Status"><prop n="ExpToNextLevelStatus" v="270000"/></level>
+<level id="6"  type="Status"><prop n="ExpToNextLevelStatus" v="320000"/></level>
+<level id="7"  type="Status"><prop n="ExpToNextLevelStatus" v="350000"/></level>
+<level id="8"  type="Status"><prop n="ExpToNextLevelStatus" v="370000"/></level>
+<level id="9"  type="Status"><prop n="ExpToNextLevelStatus" v="450000"/></level>
+<level id="10" type="Status"><prop n="ExpToNextLevelStatus" v="500000"/></level>
+<level id="11" type="Status"><prop n="ExpToNextLevelStatus" v="525000"/></level> 
+<level id="12" type="Status"><prop n="ExpToNextLevelStatus" v="550000"/></level>
+<level id="13" type="Status"><prop n="ExpToNextLevelStatus" v="575000"/></level>
+<level id="14" type="Status"><prop n="ExpToNextLevelStatus" v="600000"/></level>
+<level id="15" type="Status"><prop n="ExpToNextLevelStatus" v="625000"/></level>
+<level id="16" type="Status"><prop n="ExpToNextLevelStatus" v="650000"/></level>
+<level id="17" type="Status"><prop n="ExpToNextLevelStatus" v="675000"/></level>
+<level id="18" type="Status"><prop n="ExpToNextLevelStatus" v="700000"/></level>
+<level id="19" type="Status"><prop n="ExpToNextLevelStatus" v="725000"/></level> 
+<level id="20" type="Status"><prop n="ExpToNextLevelStatus" v="750000"/></level> 
+<level id="21" type="Status"><prop n="ExpToNextLevelStatus" v="2000000"/></level> <!-- harder for grappling hook! -->
+<level id="22" type="Status"><prop n="ExpToNextLevelStatus" v="800000"/></level>
+<level id="23" type="Status"><prop n="ExpToNextLevelStatus" v="900000"/></level>
+<level id="24" type="Status"><prop n="ExpToNextLevelStatus" v="1500000"/></level>
 <!-- PLAYER EXPERIENCE STATUS END-->
 
 <!-- PLAYER EXPERIENCE REPUTATION-->
@@ -1578,55 +1578,55 @@
 <level id="23" type="Status"><prop n="SurvivalPenaltyOnDeathNight" v="0.0"/></level>
 <level id="24" type="Status"><prop n="SurvivalPenaltyOnDeathNight" v="0.0"/></level>
 	-->
-<level id="1" type="Status"><prop n="NightExpTimeReward"  v="0.03"/></level>
-<level id="2" type="Status"><prop n="NightExpTimeReward"  v="0.03"/></level>
-<level id="3" typde="Status"><prop n="NightExpTimeReward"  v="0.03"/></level>
-<level id="4" type="Status"><prop n="NightExpTimeReward"  v="0.06"/></level>
-<level id="5" type="Status"><prop n="NightExpTimeReward"  v="0.1"/></level>
-<level id="6" type="Status"><prop n="NightExpTimeReward"  v="0.13"/></level>
-<level id="7" type="Status"><prop n="NightExpTimeReward"  v="0.13"/></level>
-<level id="8" type="Status"><prop n="NightExpTimeReward"  v="0.16"/></level>
-<level id="9" type="Status"><prop n="NightExpTimeReward"  v="0.16"/></level>
-<level id="10" type="Status"><prop n="NightExpTimeReward"  v="0.16"/></level>
-<level id="11" type="Status"><prop n="NightExpTimeReward"  v="0.16"/></level>
-<level id="12" type="Status"><prop n="NightExpTimeReward"  v="0.2"/></level>
-<level id="13" type="Status"><prop n="NightExpTimeReward"  v="0.2"/></level>
-<level id="14" type="Status"><prop n="NightExpTimeReward"  v="0.2"/></level>
-<level id="15" type="Status"><prop n="NightExpTimeReward"  v="0.2"/></level>
-<level id="16" type="Status"><prop n="NightExpTimeReward"  v="0.2"/></level>
-<level id="17" type="Status"><prop n="NightExpTimeReward"  v="0.22"/></level>
-<level id="18" type="Status"><prop n="NightExpTimeReward"  v="0.22"/></level>
-<level id="19" type="Status"><prop n="NightExpTimeReward"  v="0.22"/></level>
-<level id="20" type="Status"><prop n="NightExpTimeReward"  v="0.25"/></level>
-<level id="21" type="Status"><prop n="NightExpTimeReward"  v="0.25"/></level>
-<level id="22" type="Status"><prop n="NightExpTimeReward"  v="0.25"/></level>
-<level id="23" type="Status"><prop n="NightExpTimeReward"  v="0.25"/></level>
-<level id="24" type="Status"><prop n="NightExpTimeReward"  v="0.25"/></level>
+<level id="1"  type="Status"><prop n="NightExpTimeReward"  v="0.015"/></level>
+<level id="2"  type="Status"><prop n="NightExpTimeReward"  v="0.015"/></level>
+<level id="3"  type="Status"><prop n="NightExpTimeReward"  v="0.015"/></level>
+<level id="4"  type="Status"><prop n="NightExpTimeReward"  v="0.015"/></level>
+<level id="5"  type="Status"><prop n="NightExpTimeReward"  v="0.015"/></level>
+<level id="6"  type="Status"><prop n="NightExpTimeReward"  v="0.015"/></level>
+<level id="7"  type="Status"><prop n="NightExpTimeReward"  v="0.015"/></level>
+<level id="8"  type="Status"><prop n="NightExpTimeReward"  v="0.015"/></level>
+<level id="9"  type="Status"><prop n="NightExpTimeReward"  v="0.015"/></level>
+<level id="10" type="Status"><prop n="NightExpTimeReward"  v="0.015"/></level>
+<level id="11" type="Status"><prop n="NightExpTimeReward"  v="0.015"/></level>
+<level id="12" type="Status"><prop n="NightExpTimeReward"  v="0.015"/></level>
+<level id="13" type="Status"><prop n="NightExpTimeReward"  v="0.015"/></level>
+<level id="14" type="Status"><prop n="NightExpTimeReward"  v="0.015"/></level>
+<level id="15" type="Status"><prop n="NightExpTimeReward"  v="0.015"/></level>
+<level id="16" type="Status"><prop n="NightExpTimeReward"  v="0.015"/></level>
+<level id="17" type="Status"><prop n="NightExpTimeReward"  v="0.015"/></level>
+<level id="18" type="Status"><prop n="NightExpTimeReward"  v="0.015"/></level>
+<level id="19" type="Status"><prop n="NightExpTimeReward"  v="0.015"/></level>
+<level id="20" type="Status"><prop n="NightExpTimeReward"  v="0.015"/></level>
+<level id="21" type="Status"><prop n="NightExpTimeReward"  v="0.015"/></level>
+<level id="22" type="Status"><prop n="NightExpTimeReward"  v="0.015"/></level>
+<level id="23" type="Status"><prop n="NightExpTimeReward"  v="0.015"/></level>
+<level id="24" type="Status"><prop n="NightExpTimeReward"  v="0.015"/></level>
 
-<level id="1" type="Status"><prop n="NightExpPursuitReward"  v="4.16666667"/></level>
-<level id="2" type="Status"><prop n="NightExpPursuitReward"  v="13.54166667"/></level>
-<level id="3" type="Status"><prop n="NightExpPursuitReward"  v="20.83333333"/></level>
-<level id="4" type="Status"><prop n="NightExpPursuitReward"  v="41.66666667"/></level>
-<level id="5" type="Status"><prop n="NightExpPursuitReward"  v="62.5"/></level>
-<level id="6" type="Status"><prop n="NightExpPursuitReward"  v="64.84375"/></level>
-<level id="7" type="Status"><prop n="NightExpPursuitReward"  v="78.125"/></level>
-<level id="8" type="Status"><prop n="NightExpPursuitReward"  v="93.75"/></level>
-<level id="9" type="Status"><prop n="NightExpPursuitReward"  v="100"/></level>
-<level id="10" type="Status"><prop n="NightExpPursuitReward"  v="110.25"/></level>
-<level id="11" type="Status"><prop n="NightExpPursuitReward"  v="220.875"/></level>
-<level id="12" type="Status"><prop n="NightExpPursuitReward"  v="240.5"/></level>
-<level id="13" type="Status"><prop n="NightExpPursuitReward"  v="280.125"/></level>
-<level id="14" type="Status"><prop n="NightExpPursuitReward"  v="300.75"/></level>
-<level id="15" type="Status"><prop n="NightExpPursuitReward"  v="320.0416667"/></level>
-<level id="16" type="Status"><prop n="NightExpPursuitReward"  v="340.4583333"/></level>
-<level id="17" type="Status"><prop n="NightExpPursuitReward"  v="360.6666667"/></level>
-<level id="18" type="Status"><prop n="NightExpPursuitReward"  v="400.9166667"/></level>
-<level id="19" type="Status"><prop n="NightExpPursuitReward"  v="420.3333333"/></level>
-<level id="20" type="Status"><prop n="NightExpPursuitReward"  v="440.4166667"/></level>
-<level id="21" type="Status"><prop n="NightExpPursuitReward"  v="460.25"/></level>
-<level id="22" type="Status"><prop n="NightExpPursuitReward"  v="500.625"/></level>
-<level id="23" type="Status"><prop n="NightExpPursuitReward"  v="600"/></level>
-<level id="24" type="Status"><prop n="NightExpPursuitReward"  v="825.3125"/></level>
+<level id="1" type="Status"><prop n="NightExpPursuitReward"   v="4"/></level>
+<level id="2" type="Status"><prop n="NightExpPursuitReward"   v="4"/></level>
+<level id="3" type="Status"><prop n="NightExpPursuitReward"   v="4"/></level>
+<level id="4" type="Status"><prop n="NightExpPursuitReward"   v="4"/></level>
+<level id="5" type="Status"><prop n="NightExpPursuitReward"   v="4"/></level>
+<level id="6" type="Status"><prop n="NightExpPursuitReward"   v="5"/></level>
+<level id="7" type="Status"><prop n="NightExpPursuitReward"   v="5"/></level>
+<level id="8" type="Status"><prop n="NightExpPursuitReward"   v="5"/></level>
+<level id="9" type="Status"><prop n="NightExpPursuitReward"   v="5"/></level>
+<level id="10" type="Status"><prop n="NightExpPursuitReward"  v="6"/></level>
+<level id="11" type="Status"><prop n="NightExpPursuitReward"  v="6"/></level>
+<level id="12" type="Status"><prop n="NightExpPursuitReward"  v="6"/></level>
+<level id="13" type="Status"><prop n="NightExpPursuitReward"  v="6"/></level>
+<level id="14" type="Status"><prop n="NightExpPursuitReward"  v="6"/></level>
+<level id="15" type="Status"><prop n="NightExpPursuitReward"  v="7"/></level>
+<level id="16" type="Status"><prop n="NightExpPursuitReward"  v="7"/></level>
+<level id="17" type="Status"><prop n="NightExpPursuitReward"  v="7"/></level>
+<level id="18" type="Status"><prop n="NightExpPursuitReward"  v="7"/></level>
+<level id="19" type="Status"><prop n="NightExpPursuitReward"  v="8"/></level>
+<level id="20" type="Status"><prop n="NightExpPursuitReward"  v="8"/></level>
+<level id="21" type="Status"><prop n="NightExpPursuitReward"  v="8"/></level>
+<level id="22" type="Status"><prop n="NightExpPursuitReward"  v="8"/></level>
+<level id="23" type="Status"><prop n="NightExpPursuitReward"  v="8"/></level>
+<level id="24" type="Status"><prop n="NightExpPursuitReward"  v="8"/></level>
 
 <level id="1" type="Status"><prop n="NightExpUnspotedReward"  v="0.416666667"/></level>
 <level id="2" type="Status"><prop n="NightExpUnspotedReward"  v="1.354166667"/></level>
@@ -1635,23 +1635,23 @@
 <level id="5" type="Status"><prop n="NightExpUnspotedReward"  v="6.25"/></level>
 <level id="6" type="Status"><prop n="NightExpUnspotedReward"  v="6.484375"/></level>
 <level id="7" type="Status"><prop n="NightExpUnspotedReward"  v="7.8125"/></level>
-<level id="8" type="Status"><prop n="NightExpUnspotedReward"  v="9.375"/></level>
-<level id="9" type="Status"><prop n="NightExpUnspotedReward"  v="12.5"/></level>
-<level id="10" type="Status"><prop n="NightExpUnspotedReward"  v="15.625"/></level>
-<level id="11" type="Status"><prop n="NightExpUnspotedReward"  v="17.1875"/></level>
-<level id="12" type="Status"><prop n="NightExpUnspotedReward"  v="18.75"/></level>
-<level id="13" type="Status"><prop n="NightExpUnspotedReward"  v="20.3125"/></level>
-<level id="14" type="Status"><prop n="NightExpUnspotedReward"  v="21.875"/></level>
-<level id="15" type="Status"><prop n="NightExpUnspotedReward"  v="15.10416667"/></level>
-<level id="16" type="Status"><prop n="NightExpUnspotedReward"  v="16.14583333"/></level>
-<level id="17" type="Status"><prop n="NightExpUnspotedReward"  v="16.66666667"/></level>
-<level id="18" type="Status"><prop n="NightExpUnspotedReward"  v="19.79166667"/></level>
-<level id="19" type="Status"><prop n="NightExpUnspotedReward"  v="20.83333333"/></level>
-<level id="20" type="Status"><prop n="NightExpUnspotedReward"  v="26.04166667"/></level>
-<level id="21" type="Status"><prop n="NightExpUnspotedReward"  v="20.625"/></level>
-<level id="22" type="Status"><prop n="NightExpUnspotedReward"  v="24.0625"/></level>
-<level id="23" type="Status"><prop n="NightExpUnspotedReward"  v="27.5"/></level>
-<level id="24" type="Status"><prop n="NightExpUnspotedReward"  v="65.3125"/></level>
+<level id="8" type="Status"><prop n="NightExpUnspotedReward"  v="8.375"/></level>
+<level id="9" type="Status"><prop n="NightExpUnspotedReward"  v="9.5"/></level>
+<level id="10" type="Status"><prop n="NightExpUnspotedReward"  v="10.625"/></level>
+<level id="11" type="Status"><prop n="NightExpUnspotedReward"  v="11.1875"/></level>
+<level id="12" type="Status"><prop n="NightExpUnspotedReward"  v="12.75"/></level>
+<level id="13" type="Status"><prop n="NightExpUnspotedReward"  v="12.3125"/></level>
+<level id="14" type="Status"><prop n="NightExpUnspotedReward"  v="12.875"/></level>
+<level id="15" type="Status"><prop n="NightExpUnspotedReward"  v="13.10416667"/></level>
+<level id="16" type="Status"><prop n="NightExpUnspotedReward"  v="13.14583333"/></level>
+<level id="17" type="Status"><prop n="NightExpUnspotedReward"  v="13.66666667"/></level>
+<level id="18" type="Status"><prop n="NightExpUnspotedReward"  v="14.79166667"/></level>
+<level id="19" type="Status"><prop n="NightExpUnspotedReward"  v="14.83333333"/></level>
+<level id="20" type="Status"><prop n="NightExpUnspotedReward"  v="14.04166667"/></level>
+<level id="21" type="Status"><prop n="NightExpUnspotedReward"  v="15.625"/></level>
+<level id="22" type="Status"><prop n="NightExpUnspotedReward"  v="15.0625"/></level>
+<level id="23" type="Status"><prop n="NightExpUnspotedReward"  v="15.5"/></level>
+<level id="24" type="Status"><prop n="NightExpUnspotedReward"  v="15.3125"/></level>
 
 <level id="1" type="Runner"><prop n="MaxFitness" v="1.5"/></level>
 <level id="1" type="Fighter"><prop n="MaxStamina" v="1.0"/></level>

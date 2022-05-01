@@ -1139,8 +1139,38 @@ sub main()
  	}
 	ItemSet("Craft_Electronics")
     {
+        Item("Craft_Batteries");
+        Item("Craft_PowerCable");
 		Item("Craft_Electronics");
  	}
+    ItemSet("Upgrades")
+    {
+        Item("Craft_Upgrade_Dam");
+        Item("Craft_Upgrade_Dur");
+        Item("Craft_Upgrade_Bal");
+        
+        Item("Craft_Upgrade_DamDur");
+        Item("Craft_Upgrade_DamBal");
+        Item("Craft_Upgrade_DurBal");
+        
+        Item("Craft_Upgrade_DamDurBal");
+        Item("Craft_Upgrade_DamL2Dur");
+        Item("Craft_Upgrade_DamL2Bal");
+        Item("Craft_Upgrade_DurL2Bal");
+        Item("Craft_Upgrade_DurL2Dam");
+        Item("Craft_Upgrade_BalL2Dam");
+        Item("Craft_Upgrade_BalL2Dur");
+    }
+    ItemSet("Upgrades_Premium")
+    {
+        Item("Craft_Upgrade_DurL2BalL2"); // Freeze White
+        Item("Craft_Upgrade_DurL2"); // Poison Green
+        Item("Craft_Upgrade_DamL2BalL2"); // Shock Blue
+        Item("Craft_Upgrade_BalL2"); // Bleed Violet
+        Item("Craft_Upgrade_DamL2DurL2"); // Burn Orange
+        Item("Craft_Upgrade_DamL2DurL2BalL2"); // King Orange 
+        Item("Craft_Upgrade_DamL2"); // Impact Platinum
+    }
 	ItemSet("Craft_Gauze")
     {
 		Item("Craft_Gauze");
@@ -1414,71 +1444,71 @@ sub main()
 	
 	ItemSet("Weapon_Upgrades_CA")				//ItemID, Weight. Default WEIGHT is 1.
     {
-        Item("Craft_Upgrade_Dam");
-        Item("Craft_Upgrade_Dur");
-        Item("Craft_Upgrade_Bal");
-        Item("Craft_Upgrade_DamDur");
-        Item("Craft_Upgrade_DamBal");
-        Item("Craft_Upgrade_DurBal");
-        Item("Craft_Upgrade_DamDurBal");
-        Item("Craft_Upgrade_DamL2");
-        Item("Craft_Upgrade_DurL2");
-        Item("Craft_Upgrade_BalL2");
-        Item("Craft_Upgrade_DamL2DurL2");
-        Item("Craft_Upgrade_DamL2BalL2");
-        Item("Craft_Upgrade_DurL2BalL2");
-        Item("Craft_Upgrade_DamL2DurL2BalL2");
-        Item("Craft_Upgrade_DamL2Dur");
-        Item("Craft_Upgrade_DamL2Bal");
-		Item("Craft_Upgrade_DurL2Bal");
-        Item("Craft_Upgrade_DurL2Dam");
-        Item("Craft_Upgrade_BalL2Dam");
-        Item("Craft_Upgrade_BalL2Dur");
+  //       Item("Craft_Upgrade_Dam");
+  //       Item("Craft_Upgrade_Dur");
+  //       Item("Craft_Upgrade_Bal");
+  //       Item("Craft_Upgrade_DamDur");
+  //       Item("Craft_Upgrade_DamBal");
+  //       Item("Craft_Upgrade_DurBal");
+  //       Item("Craft_Upgrade_DamDurBal");
+  //       Item("Craft_Upgrade_DamL2");
+  //       Item("Craft_Upgrade_DurL2");
+  //       Item("Craft_Upgrade_BalL2");
+  //       Item("Craft_Upgrade_DamL2DurL2");
+  //       Item("Craft_Upgrade_DamL2BalL2");
+  //       Item("Craft_Upgrade_DurL2BalL2");
+  //       Item("Craft_Upgrade_DamL2DurL2BalL2");
+  //       Item("Craft_Upgrade_DamL2Dur");
+  //       Item("Craft_Upgrade_DamL2Bal");
+		// Item("Craft_Upgrade_DurL2Bal");
+  //       Item("Craft_Upgrade_DurL2Dam");
+  //       Item("Craft_Upgrade_BalL2Dam");
+  //       Item("Craft_Upgrade_BalL2Dur");
     } 
 	
 	ItemSet("Weapon_Upgrades_Damage_CA")				//ItemID, Weight. Default WEIGHT is 1.
     {
-        Item("Craft_Upgrade_Dam");
-        Item("Craft_Upgrade_DamDur");
-        Item("Craft_Upgrade_DamBal");
-        Item("Craft_Upgrade_DamDurBal");
-        Item("Craft_Upgrade_DamL2");
-        Item("Craft_Upgrade_DamL2DurL2");
-        Item("Craft_Upgrade_DamL2BalL2");
-        Item("Craft_Upgrade_DamL2DurL2BalL2");
-        Item("Craft_Upgrade_DamL2Dur");
-        Item("Craft_Upgrade_DamL2Bal");
-		Item("Craft_Upgrade_DurL2Dam");
-        Item("Craft_Upgrade_BalL2Dam");
+  //       Item("Craft_Upgrade_Dam");
+  //       Item("Craft_Upgrade_DamDur");
+  //       Item("Craft_Upgrade_DamBal");
+  //       Item("Craft_Upgrade_DamDurBal");
+  //       Item("Craft_Upgrade_DamL2");
+  //       Item("Craft_Upgrade_DamL2DurL2");
+  //       Item("Craft_Upgrade_DamL2BalL2");
+  //       Item("Craft_Upgrade_DamL2DurL2BalL2");
+  //       Item("Craft_Upgrade_DamL2Dur");
+  //       Item("Craft_Upgrade_DamL2Bal");
+		// Item("Craft_Upgrade_DurL2Dam");
+  //       Item("Craft_Upgrade_BalL2Dam");
     } 
 	ItemSet("Weapon_Upgrades_Durability_CA")				//ItemID, Weight. Default WEIGHT is 1.
     {
-        Item("Craft_Upgrade_Dur");
-		Item("Craft_Upgrade_DamDur");
-        Item("Craft_Upgrade_DurBal");
-        Item("Craft_Upgrade_DamDurBal");
-        Item("Craft_Upgrade_DurL2");
-        Item("Craft_Upgrade_DamL2DurL2");
-        Item("Craft_Upgrade_DurL2BalL2");
-        Item("Craft_Upgrade_DamL2DurL2BalL2");
-        Item("Craft_Upgrade_DamL2Dur");
-        Item("Craft_Upgrade_DurL2Bal");
-        Item("Craft_Upgrade_DurL2Dam");
-        Item("Craft_Upgrade_BalL2Dur");
+  //       Item("Craft_Upgrade_Dur");
+		// Item("Craft_Upgrade_DamDur");
+  //       Item("Craft_Upgrade_DurBal");
+  //       Item("Craft_Upgrade_DamDurBal");
+  //       Item("Craft_Upgrade_DurL2");
+  //       Item("Craft_Upgrade_DamL2DurL2");
+  //       Item("Craft_Upgrade_DurL2BalL2");
+  //       Item("Craft_Upgrade_DamL2DurL2BalL2");
+  //       Item("Craft_Upgrade_DamL2Dur");
+  //       Item("Craft_Upgrade_DurL2Bal");
+  //       Item("Craft_Upgrade_DurL2Dam");
+  //       Item("Craft_Upgrade_BalL2Dur");
     }
 	ItemSet("Weapon_Upgrades_Balance_CA")				//ItemID, Weight. Default WEIGHT is 1.
     {
-        Item("Craft_Upgrade_Bal");
-        Item("Craft_Upgrade_DamBal");
-        Item("Craft_Upgrade_DurBal");
-        Item("Craft_Upgrade_DamDurBal");
-        Item("Craft_Upgrade_BalL2");
-        Item("Craft_Upgrade_DamL2BalL2");
-        Item("Craft_Upgrade_DurL2BalL2");
-        Item("Craft_Upgrade_DamL2DurL2BalL2");
-        Item("Craft_Upgrade_DurL2Bal");
-        Item("Craft_Upgrade_BalL2Dam");
-        Item("Craft_Upgrade_BalL2Dur");
+        // Item("Craft_Upgrade_Bal");
+        // Item("Craft_Upgrade_DamBal");
+        // Item("Craft_Upgrade_DurBal");
+        // Item("Craft_Upgrade_DamDurBal");
+        // Item("Craft_Upgrade_BalL2");
+        // Item("Craft_Upgrade_DamL2BalL2");
+        // Item("Craft_Upgrade_DurL2BalL2");
+        // Item("Craft_Upgrade_DamL2DurL2BalL2");
+        // Item("Craft_Upgrade_DurL2Bal");
+        // Item("Craft_Upgrade_BalL2Dam");
+        // Item("Craft_Upgrade_BalL2Dur");
     } 	
 	
 	ItemSet("Potions_CA")				//ItemID, Weight. Default WEIGHT is 1.

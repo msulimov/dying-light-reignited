@@ -38,8 +38,8 @@
 </skill>
 
 <skill id="AutoSkill_LegendLevel200" cat="legend_auto" >
-    <effect id="PlatinumWeaponFindMul" change="0.19"/>
-	    <effect id="InventorySize" change="2"/>
+    <!--<effect id="PlatinumWeaponFindMul" change="0.19"/>-->
+	<effect id="InventorySize" change="2"/>
 </skill>
 
 <skill id="AutoSkill_LegendLevel225" cat="legend_auto" >

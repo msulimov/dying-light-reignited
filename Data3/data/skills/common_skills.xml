@@ -343,7 +343,7 @@
 	<skill id="ShopDiscount1" cat="status" tier="4" max_level="1" desc_params="discount;P" skill_points="1" skill_points_type="Status">
 		<level_req type="Status" value="4"/>
 		<skill_req id="Survival101"/>
-		<effect id="ItemSellFactor" change="0.05"/>
+		<effect id="ItemSellFactor" change="0.025"/>
 	</skill>
 	
 	
@@ -367,7 +367,7 @@
 	<skill id="ShopDiscount2" cat="status" tier="9" max_level="1" desc_params="discount_2;P" skill_points="1" skill_points_type="Status">
 		<level_req type="Status" value="8"/>
 		<skill_req id="ShopDiscount1"/>
-		<effect id="ItemSellFactor" change="0.05"/>
+		<effect id="ItemSellFactor" change="0.025"/>
 	</skill>	
 	
 	<skill id="BlueprintsFirecrackers" cat="status" tier="12" max_level="1" desc_params="diy_explosives;M:BlueprintsFirecrackers" skill_points="1" skill_points_type="Status">
@@ -435,18 +435,18 @@
 	</skill>
 	
 	<skill id="StatusHook" cat="status" tier="5" max_level="1" desc_params="equipment_grappling_a_big;NODE;M:StatusHook" skill_points="1" skill_points_type="Status">
-		<level_req type="Status" value="12"/>
+		<level_req type="Status" value="22"/>
 		<effect id="CanUseHook" change="1"/>
 	</skill>
 	
 	<skill id="ElementalCrit" cat="status" tier="20" max_level="1" desc_params="crit;P" skill_points="1" skill_points_type="Status">
-		<level_req type="Status" value="13"/>
+		<level_req type="Status" value="23"/>
 		<skill_req id="StatusHook"/>
 		<effect id="ElementalCritChanceMul" change="0.25"/>
 	</skill>
 	
 	<skill id="CraftingMaster" cat="status" tier="22" max_level="1" desc_params="blueprints_power;P" skill_points="1" skill_points_type="Status">
-		<level_req type="Status" value="14"/>
+		<level_req type="Status" value="23"/>
 		<skill_req id="StatusHook"/>
         <effect id="ElementalCritDamageMul" change="0.25"/>
         <effect id="ElementalCritDamageDurationMul" change="0.25"/>
@@ -455,7 +455,7 @@
     <skill id="UltimateSurvivor" cat="status" tier="23" max_level="1" desc_params="ultimate_survivor;P" skill_points="1" skill_points_type="Status">
 		<level_req type="Status" value="25"/>
 		<skill_req id="StatusHook"/>
-		<effect id="RopeMaxEnergy" change="0.5"/>
+		<effect id="RopeMaxEnergy" change="0.2"/>
         <effect id="ShieldBacklashDamageFactor" change="1.0"/>
         <effect id="MaxHealth" change="25"/>
 	</skill>

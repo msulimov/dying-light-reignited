@@ -1,0 +1,27 @@
+!include("infected_data_custom_preset_armored.scr")
+
+ParamString("projectile_name", "Throwable_Rock_Heavy")
+
+ParamBool("react_on_hit_in_armor", 0)
+ParamInt("consecutive_berserkers_min", 1) // min consecutive berserkers (one player)
+ParamInt("consecutive_berserkers_max", 5) // max consecutive berserkers (4 players in coop)
+ParamFloat("ram_physics_damage", 1500.0)
+ParamFloat("ram_damage_mul", 2.0)
+ParamFloat("min_time_btw_hit_reactions", 10.0)
+ParamFloat("melee_range", 2.6)
+ParamFloat("experience_award", 7500.0)
+ParamFloat("health_mul", 4.0)
+ParamFloat("bullet_head_hit_damage_mult", 0.2)
+ParamFloat("turn_speed", 360.0)
+ParamFloat("move_time_before_berserker", 1.0)
+ParamFloat("coop_damage_mul_2", 1.50) // damage multiplayer for 2 players coop
+ParamFloat("coop_damage_mul_3", 1.75) // damage multiplayer for 3 players coop
+ParamFloat("coop_damage_mul_4", 2.00) // damage multiplayer for 4 players coop
+
+ParamFloat("overall_speed_factor", 0.85) 			// overall animations speed multiplayer (used for global increasing / decreasing AI animation speed)
+ParamFloat("ragdoll_speed_simulation_mul", 0.85) 	// sets speed of ragdoll simulation (lowering it makes feel that character is heavier)
+
+ParamFloat("bulletproof_vest_dmg_mul", 0.1)
+ParamBool("is_freak", 1)
+
+ParamBool("can_give_camouflage", 0)

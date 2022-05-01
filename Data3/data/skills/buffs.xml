@@ -150,10 +150,10 @@
     </OnGain>
 </buff>
 
-<buff id="MedKitStrongHard" duration="50">
-    <property name="HealthRegenerationDelay" value_add="-50.0"/>
+<buff id="MedKitStrongHard" duration="70">
+    <property name="HealthRegenerationDelay" value_add="-20.0"/>
 	<property name="HealthRegenerationMaxLevel" value_add="-1000.0"/>
-	<property name="HealthRegenerationTimeToMax" value_add="17.0"/>	
+	<property name="HealthRegenerationTimeToMax" value_add="11.6"/>	
     <hud_icon val="equipment_medkit_a_big"/>
 </buff>
 

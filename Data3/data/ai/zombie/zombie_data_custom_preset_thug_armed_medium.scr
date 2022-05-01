@@ -256,7 +256,7 @@ ParamFloat("attack_anim_related_turn_speed_limit", 120.0)
 ParamFloat("melee_weapon_target_prediction_time", 1.25)
 ParamFloat("max_default_movement_turn_speed", 30.0)
 //ParamFloat("damage_mul", 2.5)							//amount of damage dealt to player - value taken from curve: zombie_melee_damage
-ParamFloat("damage_mul_vs_other_ai", 2.0)
+ParamFloat("damage_mul_vs_other_ai", 20.0)
 
 ParamFloat("medium_severity_threshold", 101.0) //disabled medium hit severity
 ParamFloat("heavy_severity_threshold", 101.0) //disabled heavy hit severity
@@ -332,7 +332,7 @@ ParamFloat("sight_range", 15.0) //[m]
 
 ParamBool("play_reaction_on_elementals", 0)
 
-ParamFloat("health_mul", 5.5)
+ParamFloat("health_mul", 1.0)
 
 ParamBool("can_react_on_blast", 1)
 ParamFloat("xp_factor", 2.0)
@@ -342,7 +342,7 @@ ParamFloat("fall_on_wrestle_kick_prob", 0.0)
 ParamBool("get_extra_damage_after_wall_special_hit", 0)
 
 ParamBool("visual_electrocution_effect", 1)
-ParamFloat("bullet_head_hit_damage_mult", 0.2)
+ParamFloat("bullet_head_hit_damage_mult", 0.001) // discourage safe ranged combat
 
 ParamFloat("bulletproof_vest_dmg_mul", 0.33)
 
@@ -354,5 +354,5 @@ ParamFloat("navmesh_min_path_width", 1.0) // Only path width is guaranteed, not 
 
 ParamFloat("ragdoll_speed_simulation_mul", 0.9) 	// sets speed of ragdoll simulation (lowering it makes feel that character is heavier)
 
-ParamInt("min_body_hits_to_kill", -1)
+ParamInt("min_body_hits_to_kill", 4)
 ParamInt("min_head_hits_to_kill", 2)

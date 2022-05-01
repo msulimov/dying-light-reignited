@@ -226,8 +226,8 @@ ParamFloat("berserker_ram_dist", 13.0) //converted
 ParamFloat("berserker_ram_min_dist", 4.0) //converted
 ParamBool("can_fall", 0)									//When 0 AI does not receive damage to stamina
 ParamBool("can_react_on_hit", 1)
-ParamBool("can_attack_from_move", 1)
-ParamBool("fast_sprint_during_pursuit", 1)
+ParamBool("can_attack_from_move", 0)
+ParamBool("fast_sprint_during_pursuit", 0)
 ParamFloat("melee_range", 2.2)
 ParamFloat("melee_range_y", 1.7)
 ParamFloat("bite_range", 1.2)
@@ -262,8 +262,8 @@ ParamFloat("min_time_btw_hit_reactions", 3.0)
 ParamFloat("move_time_before_berserker", 1.5)
 ParamFloat("dist_to_chase_beyond_wander_dist", 15.0)
 ParamFloat("static_path_node_radius", 0.6) //converted
-ParamFloat("ram_turn_speed_limit_far", 200.0)
-ParamFloat("ram_turn_speed_limit_close", 120.0)
+ParamFloat("ram_turn_speed_limit_far", 100.0)
+ParamFloat("ram_turn_speed_limit_close", 20.0)
 ParamFloat("ram_close_dist", 3.5) //converted
 ParamBool("navigate_through_generic_nav_mesh_connections", 0)
 ParamBool("navigate_through_user_nav_mesh_connections", 0)
@@ -274,16 +274,16 @@ ParamBool("can_throw_projectile", 1)
 ParamString("projectile_name", "Throwable_Rock")
 ParamString("projectile_origin_elem", "R_HandHolder")
 ParamFloat("throw_projectile_min_range", 2.0)
-ParamFloat("throw_projectile_max_range", 50.0)
+ParamFloat("throw_projectile_max_range", 75.0)
 ParamFloat("throw_projectile_min_range_when_unreacheable", 2.0)
-ParamFloat("throw_projectile_speed", 20.0)
+ParamFloat("throw_projectile_speed", 15.0)
 ParamFloat("throw_projectile_prediction_accuracy", 0.0) // 0 - min accuracy (no prediction), 1 - max accuracy
-ParamFloat("min_time_btw_throws_projectile", 20.0)
+ParamFloat("min_time_btw_throws_projectile", 1.0)
 ParamFloat("throw_projectile_max_accuracy_range", 15.0)
 ParamFloat("throw_projectile_accuracy_degradation_dist", 5.0)
 
-ParamInt("consecutive_berserkers_min", 6) // min consecutive berserkers (one player)
-ParamInt("consecutive_berserkers_max", 10) // max consecutive berserkers (4 players in coop)
+ParamInt("consecutive_berserkers_min", 0) // min consecutive berserkers (one player)
+ParamInt("consecutive_berserkers_max", 0) // max consecutive berserkers (4 players in coop)
 
 //HEALTH & STAMINA & DAMAGE
 //ParamFloat("health_mul", 1.0)
@@ -306,7 +306,7 @@ ParamInt("consecutive_berserkers_max", 10) // max consecutive berserkers (4 play
 
 ParamFloat("death_anim_prob", 1.0)
 
-ParamFloat("round_attack_prob", 1.0)
+ParamFloat("round_attack_prob", 0.0)
 
 ParamFloat("humanity_hit_reaction_prob", 0.0)
 ParamBool("has_glowing_eyes", 0)
@@ -327,23 +327,13 @@ ParamBool("get_extra_damage_after_wall_special_hit", 0)
 
 ParamBool("visual_electrocution_effect", 1)
 
-ParamFloat("bullet_head_hit_damage_mult", 0.001)
+ParamFloat("bullet_head_hit_damage_mult", 0.2)
 
 ParamFloat("coop_damage_mul_2", 1.2) // damage multiplayer for 2 players coop
 ParamFloat("coop_damage_mul_3", 1.4) // damage multiplayer for 3 players coop
 ParamFloat("coop_damage_mul_4", 1.8) // damage multiplayer for 4 players coop
 
 ParamFloat("vehicle_physics_damage", 800.0)
-
 ParamBool("can_attack_objects_from_move", 0)
 
-ParamFloat("get_in_vehicle_give_damage_mult", 0.1)
-
-ParamFloat("push_car_physics_damage_light", 200.0)
-ParamFloat("push_car_physics_damage_medium", 600.0)
-ParamFloat("push_car_physics_damage_heavy", 800.0)
-ParamFloat("vehicle_physics_damage", 0.0)
-
-ParamFloat("navmesh_min_path_width", 1.4) // Only path width is guaranteed, not the actual passage
-
-ParamFloat("ragdoll_speed_simulation_mul", 0.85) 	// sets speed of ragdoll simulation (lowering it makes feel that character is heavier)
+ParamFloat("get_in_vehicle_give_damage_mult", 0.5)

@@ -27921,7 +27921,6 @@ sub main()
         DamageSize(1.0);
         AiHitSound("bullet");
         StatsType(StatsType_Pistol);
-        Price(97);
         FF_EffectName("Shot_StrongPistol");
         FF_Left(0.3);
         FF_Right(0.4);
@@ -27948,7 +27947,7 @@ sub main()
         ShotTailDelay(0.5);
         AchType(AchType_Pistol);
         NameGender(0);
-        Price(600);
+        Price(300);
     }
 
     Item("Firearm_PistolAGen", CategoryType_Firearm)
@@ -28031,7 +28030,6 @@ sub main()
         DamageSize(1.0);
         AiHitSound("bullet");
         StatsType(StatsType_Pistol);
-        Price(133);
         FF_EffectName("Shot_StrongPistol");
         FF_Left(0.3);
         FF_Right(0.4);
@@ -28058,7 +28056,7 @@ sub main()
         ShotTailDelay(0.5);
         AchType(AchType_Pistol);
         NameGender(0);
-        Price(600);
+        Price(350);
     }
 
     Item("Firearm_PistolAGenSandPlastic", CategoryType_Firearm)
@@ -28142,7 +28140,6 @@ sub main()
         DamageSize(1.0);
         AiHitSound("bullet");
         StatsType(StatsType_Pistol);
-        Price(133);
         FF_EffectName("Shot_StrongPistol");
         FF_Left(0.3);
         FF_Right(0.4);
@@ -28169,7 +28166,7 @@ sub main()
         ShotTailDelay(0.5);
         AchType(AchType_Pistol);
         NameGender(0);
-        Price(600);
+        Price(350);
     }
 
     Item("Firearm_PistolAGenOlivePlastic", CategoryType_Firearm)
@@ -28252,7 +28249,6 @@ sub main()
         DamageSize(1.0);
         AiHitSound("bullet");
         StatsType(StatsType_Pistol);
-        Price(162);
         FF_EffectName("Shot_StrongPistol");
         FF_Left(0.3);
         FF_Right(0.4);
@@ -28279,7 +28275,7 @@ sub main()
         ShotTailDelay(0.5);
         AchType(AchType_Pistol);
         NameGender(0);
-        Price(600);
+        Price(400);
     }
 
     Item("Firearm_PistolAGenSpecial", CategoryType_Firearm)
@@ -28359,7 +28355,6 @@ sub main()
         DamageSize(1.0);
         AiHitSound("bullet");
         StatsType(StatsType_Pistol);
-        Price(79);
         FF_EffectName("Shot_QuickPistol");
         FF_Left(0.3);
         FF_Right(0.4);
@@ -28386,7 +28381,7 @@ sub main()
         ShotTailDelay(0.5);
         AchType(AchType_Pistol);
         NameGender(0);
-        Price(600);
+        Price(400);
         ShootAnimFactor(0.1);
     }
 
@@ -28469,7 +28464,6 @@ sub main()
         DamageSize(1.0);
         AiHitSound("bullet");
         StatsType(StatsType_Pistol);
-        Price(108);
         FF_EffectName("Shot_QuickPistol");
         FF_Left(0.3);
         FF_Right(0.4);
@@ -28496,7 +28490,7 @@ sub main()
         ShotTailDelay(0.5);
         AchType(AchType_Pistol);
         NameGender(0);
-        Price(600);
+        Price(450);
         ShootAnimFactor(0.1);
     }
 
@@ -28579,7 +28573,6 @@ sub main()
         DamageSize(1.0);
         AiHitSound("bullet");
         StatsType(StatsType_Pistol);
-        Price(108);
         FF_EffectName("Shot_QuickPistol");
         FF_Left(0.3);
         FF_Right(0.4);
@@ -28606,7 +28599,7 @@ sub main()
         ShotTailDelay(0.5);
         AchType(AchType_Pistol);
         NameGender(0);
-        Price(600);
+        Price(450);
         ShootAnimFactor(0.1);
     }
 
@@ -28690,7 +28683,6 @@ sub main()
         DamageSize(1.0);
         AiHitSound("bullet");
         StatsType(StatsType_Pistol);
-        Price(132);
         FF_EffectName("Shot_QuickPistol");
         FF_Left(0.3);
         FF_Right(0.4);
@@ -28717,7 +28709,7 @@ sub main()
         ShotTailDelay(0.5);
         AchType(AchType_Pistol);
         NameGender(0);
-        Price(600);
+        Price(450);
         ShootAnimFactor(0.1);
     }
 
@@ -28800,7 +28792,6 @@ sub main()
         DamageSize(1.0);
         AiHitSound("bullet");
         StatsType(StatsType_Pistol);
-        Price(161);
         FF_EffectName("Shot_StrongRevolver");
         FF_Left(0.3);
         FF_Right(0.4);
@@ -28827,7 +28818,7 @@ sub main()
         ShotTailDelay(0.3);
         AchType(AchType_Pistol);
         NameGender(0);
-        Price(600);
+        Price(300);
     }
 
     Item("ZZZZZ_Firearm_RevolverRanger", CategoryType_Firearm)
@@ -28908,7 +28899,6 @@ sub main()
         DamageSize(1.0);
         AiHitSound("bullet");
         StatsType(StatsType_Pistol);
-        Price(148);
         FF_EffectName("Shot_StrongRevolver");
         FF_Left(0.3);
         FF_Right(0.4);
@@ -28935,7 +28925,7 @@ sub main()
         ShotTailDelay(0.3);
         AchType(AchType_Pistol);
         NameGender(0);
-        Price(600);
+        Price(300);
     }
 
     Item("ZZZZZ_Firearm_RevolverRangerRegular", CategoryType_Firearm)
@@ -29017,7 +29007,6 @@ sub main()
         DamageSize(1.0);
         AiHitSound("bullet");
         StatsType(StatsType_Pistol);
-        Price(113);
         FF_EffectName("Shot_StrongPistol");
         FF_Left(0.3);
         FF_Right(0.4);
@@ -29044,7 +29033,7 @@ sub main()
         ShotTailDelay(0.3);
         AchType(AchType_Pistol);
         NameGender(0);
-        Price(600);
+        Price(300);
     }
 
     Item("ZZZZZ_Firearm_RevolverSixshooter", CategoryType_Firearm)
@@ -29125,7 +29114,6 @@ sub main()
         DamageSize(1.0);
         AiHitSound("bullet");
         StatsType(StatsType_Pistol);
-        Price(104);
         FF_EffectName("Shot_StrongPistol");
         FF_Left(0.3);
         FF_Right(0.4);
@@ -29152,7 +29140,7 @@ sub main()
         ShotTailDelay(0.3);
         AchType(AchType_Pistol);
         NameGender(0);
-        Price(600);
+        Price(300);
     }
 
     Item("ZZZZZ_Firearm_RevolverSixshooterRegular", CategoryType_Firearm)
@@ -29234,7 +29222,6 @@ sub main()
         DamageSize(1.0);
         AiHitSound("bullet");
         StatsType(StatsType_Pistol);
-        Price(95);
         FF_EffectName("Shot_StrongPistol");
         FF_Left(0.3);
         FF_Right(0.4);
@@ -29261,7 +29248,7 @@ sub main()
         ShotTailDelay(0.3);
         AchType(AchType_Pistol);
         NameGender(0);
-        Price(600);
+        Price(300);
     }
 
     Item("ZZZZZ_Firearm_RevolverQuickshooter", CategoryType_Firearm)
@@ -29342,7 +29329,6 @@ sub main()
         DamageSize(1.0);
         AiHitSound("bullet");
         StatsType(StatsType_Pistol);
-        Price(87);
         FF_EffectName("Shot_StrongPistol");
         FF_Left(0.3);
         FF_Right(0.4);
@@ -29369,7 +29355,7 @@ sub main()
         ShotTailDelay(0.3);
         AchType(AchType_Pistol);
         NameGender(0);
-        Price(600);
+        Price(350);
     }
 
     Item("ZZZZZ_Firearm_RevolverQuickshooterRegular", CategoryType_Firearm)
@@ -29452,7 +29438,6 @@ sub main()
         DamageSize(5.0);
         AiHitSound("bullet");
         StatsType(StatsType_Pistol);
-        Price(79);
         FF_EffectName("Shot_SMG");
         CriticalProb(0.05);
         CriticalDamage(2.0);
@@ -29471,7 +29456,7 @@ sub main()
         ShotTailDelay(0.1);
         AchType(AchType_Pistol);
         NameGender(0);
-        Price(600);
+        Price(450);
         ShootAnimFactor(0.6);
         BulletSpeed(350.0);
         LootType(LootType_Firearm_Short);
@@ -29558,7 +29543,6 @@ sub main()
         DamageSize(5.0);
         AiHitSound("bullet");
         StatsType(StatsType_Pistol);
-        Price(97);
         FF_EffectName("Shot_SMG");
         CriticalProb(0.05);
         CriticalDamage(2.0);
@@ -29577,7 +29561,7 @@ sub main()
         ShotTailDelay(0.1);
         AchType(AchType_Pistol);
         NameGender(0);
-        Price(700);
+        Price(500);
         ShootAnimFactor(0.6);
         BulletSpeed(350.0);
         LootType(LootType_Firearm_Short);
@@ -29664,7 +29648,6 @@ sub main()
         DamageSize(5.0);
         AiHitSound("bullet");
         StatsType(StatsType_Pistol);
-        Price(97);
         FF_EffectName("Shot_SMG");
         CriticalProb(0.05);
         CriticalDamage(2.0);
@@ -29683,7 +29666,7 @@ sub main()
         ShotTailDelay(0.1);
         AchType(AchType_Pistol);
         NameGender(0);
-        Price(700);
+        Price(500);
         ShootAnimFactor(0.6);
         BulletSpeed(350.0);
         LootType(LootType_Firearm_Short);
@@ -29770,7 +29753,6 @@ sub main()
         DamageSize(5.0);
         AiHitSound("bullet");
         StatsType(StatsType_Pistol);
-        Price(97);
         FF_EffectName("Shot_SMG");
         CriticalProb(0.05);
         CriticalDamage(2.0);
@@ -29789,7 +29771,7 @@ sub main()
         ShotTailDelay(0.1);
         AchType(AchType_Pistol);
         NameGender(0);
-        Price(700);
+        Price(500);
         ShootAnimFactor(0.6);
         BulletSpeed(350.0);
         LootType(LootType_Firearm_Short);
@@ -29876,7 +29858,6 @@ sub main()
         DamageSize(5.0);
         AiHitSound("bullet");
         StatsType(StatsType_Pistol);
-        Price(97);
         FF_EffectName("Shot_SMG");
         CriticalProb(0.05);
         CriticalDamage(2.0);
@@ -29895,7 +29876,7 @@ sub main()
         ShotTailDelay(0.1);
         AchType(AchType_Pistol);
         NameGender(0);
-        Price(700);
+        Price(500);
         ShootAnimFactor(0.6);
         BulletSpeed(350.0);
         LootType(LootType_Firearm_Short);
@@ -29981,7 +29962,6 @@ sub main()
         DamageSize(5.0);
         AiHitSound("bullet");
         StatsType(StatsType_Pistol);
-        Price(119);
         FF_EffectName("Shot_SMG");
         CriticalProb(0.05);
         CriticalDamage(2.0);
@@ -30000,7 +29980,7 @@ sub main()
         ShotTailDelay(0.1);
         AchType(AchType_Pistol);
         NameGender(0);
-        Price(700);
+        Price(500);
         ShootAnimFactor(0.6);
         BulletSpeed(350.0);
         LootType(LootType_Firearm_Short);
@@ -30086,7 +30066,6 @@ sub main()
         DamageSize(5.0);
         AiHitSound("bullet");
         StatsType(StatsType_Pistol);
-        Price(146);
         FF_EffectName("Shot_SMG");
         CriticalProb(0.05);
         CriticalDamage(2.0);
@@ -30105,7 +30084,7 @@ sub main()
         ShotTailDelay(0.1);
         AchType(AchType_Pistol);
         NameGender(0);
-        Price(700);
+        Price(600);
         ShootAnimFactor(0.6);
         BulletSpeed(350.0);
         LootType(LootType_Firearm_Short);
@@ -30190,7 +30169,6 @@ sub main()
         DamageSize(5.0);
         AiHitSound("bullet");
         StatsType(StatsType_Pistol);
-        Price(88);
         FF_EffectName("Shot_SMG");
         CriticalProb(0.05);
         CriticalDamage(2.0);
@@ -30209,7 +30187,7 @@ sub main()
         ShotTailDelay(0.1);
         AchType(AchType_Pistol);
         NameGender(0);
-        Price(700);
+        Price(550);
         ShootAnimFactor(0.6);
         BulletSpeed(350.0);
         LootType(LootType_Firearm_Short);
@@ -30295,7 +30273,6 @@ sub main()
         DamageSize(5.0);
         AiHitSound("bullet");
         StatsType(StatsType_Pistol);
-        Price(161);
         FF_EffectName("Shot_SMG");
         CriticalProb(0.05);
         CriticalDamage(2.0);
@@ -30314,7 +30291,7 @@ sub main()
         ShotTailDelay(0.1);
         AchType(AchType_Pistol);
         NameGender(0);
-        Price(700);
+        Price(600);
         ShootAnimFactor(0.6);
         BulletSpeed(350.0);
         LootType(LootType_Firearm_Short);
@@ -30401,7 +30378,6 @@ sub main()
         DamageSize(1.0);
         AiHitSound("bullet");
         StatsType(StatsType_Pistol);
-        Price(114);
         FF_EffectName("Shot_StrongRiffle");
         FF_Left(0.3);
         FF_Right(0.4);
@@ -30428,7 +30404,7 @@ sub main()
         ShotTailDelay(0.5);
         AchType(AchType_Pistol);
         NameGender(0);
-        Price(700);
+        Price(600);
         ShootAnimFactor(1.0);
         HandInertiaFactor(0.0);
         HandInertiaRotFactor([0.0,0.0,2.0]);
@@ -30516,7 +30492,6 @@ sub main()
         DamageSize(1.0);
         AiHitSound("bullet");
         StatsType(StatsType_Pistol);
-        Price(114);
         FF_EffectName("Shot_StrongRiffle");
         FF_Left(0.3);
         FF_Right(0.4);
@@ -30543,7 +30518,7 @@ sub main()
         ShotTailDelay(0.5);
         AchType(AchType_Pistol);
         NameGender(0);
-        Price(800);
+        Price(650);
         ShootAnimFactor(1.0);
         HandInertiaFactor(0.0);
         HandInertiaRotFactor([0.0,0.0,2.0]);
@@ -30631,7 +30606,6 @@ sub main()
         DamageSize(1.0);
         AiHitSound("bullet");
         StatsType(StatsType_Pistol);
-        Price(114);
         FF_EffectName("Shot_StrongRiffle");
         FF_Left(0.3);
         FF_Right(0.4);
@@ -30658,7 +30632,7 @@ sub main()
         ShotTailDelay(0.5);
         AchType(AchType_Pistol);
         NameGender(0);
-        Price(800);
+        Price(650);
         ShootAnimFactor(1.0);
         HandInertiaFactor(0.0);
         HandInertiaRotFactor([0.0,0.0,2.0]);
@@ -30748,7 +30722,6 @@ sub main()
         DamageSize(1.0);
         AiHitSound("bullet");
         StatsType(StatsType_Pistol);
-        Price(207);
         FF_EffectName("Shot_StrongRiffle");
         FF_Left(0.3);
         FF_Right(0.4);
@@ -30775,7 +30748,7 @@ sub main()
         ShotTailDelay(0.5);
         AchType(AchType_Pistol);
         NameGender(0);
-        Price(40);
+        Price(750);
         ShootAnimFactor(1.0);
         HandInertiaFactor(0.0);
         HandInertiaRotFactor([0.0,0.0,2.0]);
@@ -30866,7 +30839,6 @@ sub main()
         DamageSize(1.0);
         AiHitSound("bullet");
         StatsType(StatsType_Pistol);
-        Price(207);
         FF_EffectName("Shot_StrongRiffle");
         FF_Left(0.3);
         FF_Right(0.4);
@@ -30893,7 +30865,7 @@ sub main()
         ShotTailDelay(0.5);
         AchType(AchType_Pistol);
         NameGender(0);
-        Price(40);
+        Price(750);
         ShootAnimFactor(1.0);
         HandInertiaFactor(0.0);
         HandInertiaRotFactor([0.0,0.0,2.0]);
@@ -30979,7 +30951,6 @@ sub main()
         DamageSize(1.0);
         AiHitSound("bullet");
         StatsType(StatsType_Pistol);
-        Price(92);
         FF_EffectName("Shot_QuickRiffle");
         FF_Left(0.3);
         FF_Right(0.4);
@@ -31006,7 +30977,7 @@ sub main()
         ShotTailDelay(0.5);
         AchType(AchType_Pistol);
         NameGender(0);
-        Price(40);
+        Price(700);
         ShootAnimFactor(1.0);
         HandInertiaFactor(0.0);
         HandInertiaRotFactor([0.0,0.0,2.0]);
@@ -31092,7 +31063,6 @@ sub main()
         DamageSize(1.0);
         AiHitSound("bullet");
         StatsType(StatsType_Pistol);
-        Price(92);
         FF_EffectName("Shot_QuickRiffle");
         FF_Left(0.3);
         FF_Right(0.4);
@@ -31119,7 +31089,7 @@ sub main()
         ShotTailDelay(0.5);
         AchType(AchType_Pistol);
         NameGender(0);
-        Price(40);
+        Price(750);
         ShootAnimFactor(1.0);
         HandInertiaFactor(0.0);
         HandInertiaRotFactor([0.0,0.0,2.0]);
@@ -31205,7 +31175,6 @@ sub main()
         DamageSize(1.0);
         AiHitSound("bullet");
         StatsType(StatsType_Pistol);
-        Price(92);
         FF_EffectName("Shot_QuickRiffle");
         FF_Left(0.3);
         FF_Right(0.4);
@@ -31232,7 +31201,7 @@ sub main()
         ShotTailDelay(0.5);
         AchType(AchType_Pistol);
         NameGender(0);
-        Price(40);
+        Price(750);
         ShootAnimFactor(1.0);
         HandInertiaFactor(0.0);
         HandInertiaRotFactor([0.0,0.0,2.0]);
@@ -31320,7 +31289,6 @@ sub main()
         DamageSize(1.0);
         AiHitSound("bullet");
         StatsType(StatsType_Pistol);
-        Price(157);
         FF_EffectName("Shot_QuickRiffle");
         FF_Left(0.3);
         FF_Right(0.4);
@@ -31347,7 +31315,7 @@ sub main()
         ShotTailDelay(0.5);
         AchType(AchType_Pistol);
         NameGender(0);
-        Price(40);
+        Price(800);
         ShootAnimFactor(1.0);
         HandInertiaFactor(0.0);
         HandInertiaRotFactor([0.0,0.0,2.0]);
@@ -31436,7 +31404,6 @@ sub main()
         DamageSize(1.0);
         AiHitSound("bullet");
         StatsType(StatsType_Pistol);
-        Price(157);
         FF_EffectName("Shot_QuickRiffle");
         FF_Left(0.3);
         FF_Right(0.4);
@@ -31463,7 +31430,7 @@ sub main()
         ShotTailDelay(0.5);
         AchType(AchType_Pistol);
         NameGender(0);
-        Price(40);
+        Price(800);
         ShootAnimFactor(1.0);
         HandInertiaFactor(0.0);
         HandInertiaRotFactor([0.0,0.0,2.0]);
@@ -31554,7 +31521,6 @@ sub main()
         DamageSize(5.0);
         AiHitSound("bullet");
         StatsType(StatsType_Pistol);
-        Price(224);
         FF_EffectName("Shot_DoubleBarrel");
         FF_Left(0.3);
         FF_Right(0.4);
@@ -31581,7 +31547,7 @@ sub main()
         ShotTailDelay(0.0);
         AchType(AchType_Pistol);
         NameGender(0);
-        Price(40);
+        Price(650);
         ShootAnimFactor(1.0);
         HandInertiaFactor(0.0);
         HandInertiaRotFactor([0.0,0.0,1.0]);
@@ -31670,7 +31636,6 @@ sub main()
         DamageSize(5.0);
         AiHitSound("bullet");
         StatsType(StatsType_Pistol);
-        Price(242);
         FF_EffectName("Shot_DoubleBarrel");
         FF_Left(0.3);
         FF_Right(0.4);
@@ -31697,7 +31662,7 @@ sub main()
         ShotTailDelay(0.0);
         AchType(AchType_Pistol);
         NameGender(0);
-        Price(40);
+        Price(700);
         ShootAnimFactor(1.0);
         HandInertiaFactor(0.0);
         HandInertiaRotFactor([0.0,0.0,1.0]);
@@ -31788,7 +31753,6 @@ sub main()
         DamageSize(5.0);
         AiHitSound("bullet");
         StatsType(StatsType_Pistol);
-        Price(162);
         FF_EffectName("Shot_DoubleBarrel");
         FF_Left(0.3);
         FF_Right(0.4);
@@ -31815,7 +31779,7 @@ sub main()
         ShotTailDelay(0.0);
         AchType(AchType_Pistol);
         NameGender(0);
-        Price(40);
+        Price(500);
         ShootAnimFactor(1.0);
         HandInertiaFactor(0.0);
         HandInertiaRotFactor([0.0,0.0,1.0]);
@@ -31905,7 +31869,6 @@ sub main()
         DamageSize(5.0);
         AiHitSound("bullet");
         StatsType(StatsType_Pistol);
-        Price(281);
         FF_EffectName("Shot_DoubleBarrel");
         FF_Left(0.3);
         FF_Right(0.4);
@@ -31932,7 +31895,7 @@ sub main()
         ShotTailDelay(0.0);
         AchType(AchType_Pistol);
         NameGender(0);
-        Price(40);
+        Price(700);
         ShootAnimFactor(1.0);
         HandInertiaFactor(0.0);
         HandInertiaRotFactor([0.0,0.0,1.0]);
@@ -32017,7 +31980,6 @@ sub main()
         DamageSize(5.0);
         AiHitSound("bullet");
         StatsType(StatsType_Pistol);
-        Price(224);
         FF_EffectName("Shot_DoubleBarrel");
         FF_Left(0.3);
         FF_Right(0.4);
@@ -32044,7 +32006,7 @@ sub main()
         ShotTailDelay(0.0);
         AchType(AchType_Pistol);
         NameGender(0);
-        Price(40);
+        Price(700);
         ShootAnimFactor(1.0);
         HandInertiaFactor(0.0);
         HandInertiaRotFactor([0.0,0.0,1.0]);
@@ -32130,7 +32092,6 @@ sub main()
         DamageSize(5.0);
         AiHitSound("bullet");
         StatsType(StatsType_Pistol);
-        Price(281);
         FF_EffectName("Shot_DoubleBarrel");
         FF_Left(0.3);
         FF_Right(0.4);
@@ -32157,7 +32118,7 @@ sub main()
         ShotTailDelay(0.0);
         AchType(AchType_Pistol);
         NameGender(0);
-        Price(40);
+        Price(800);
         ShootAnimFactor(1.0);
         HandInertiaFactor(0.0);
         HandInertiaRotFactor([0.0,0.0,1.0]);
@@ -32242,7 +32203,6 @@ sub main()
         DamageSize(5.0);
         AiHitSound("bullet");
         StatsType(StatsType_Pistol);
-        Price(192);
         FF_EffectName("Shot_DoubleBarrel");
         FF_Left(0.3);
         FF_Right(0.4);
@@ -32269,7 +32229,7 @@ sub main()
         ShotTailDelay(0.0);
         AchType(AchType_Pistol);
         NameGender(0);
-        Price(40);
+        Price(750);
         ShootAnimFactor(1.0);
         HandInertiaFactor(0.0);
         HandInertiaRotFactor([0.0,0.0,1.0]);
@@ -32355,7 +32315,6 @@ sub main()
         DamageSize(5.0);
         AiHitSound("bullet");
         StatsType(StatsType_Pistol);
-        Price(224);
         FF_EffectName("Shot_DoubleBarrel");
         FF_Left(0.3);
         FF_Right(0.4);
@@ -32382,7 +32341,7 @@ sub main()
         ShotTailDelay(0.0);
         AchType(AchType_Pistol);
         NameGender(0);
-        Price(40);
+        Price(750);
         ShootAnimFactor(1.0);
         HandInertiaFactor(0.0);
         HandInertiaRotFactor([0.0,0.0,1.0]);
@@ -32468,7 +32427,6 @@ sub main()
         DamageSize(5.0);
         AiHitSound("bullet");
         StatsType(StatsType_Pistol);
-        Price(224);
         FF_EffectName("Shot_DoubleBarrel");
         FF_Left(0.3);
         FF_Right(0.4);
@@ -32495,7 +32453,7 @@ sub main()
         ShotTailDelay(0.0);
         AchType(AchType_Pistol);
         NameGender(0);
-        Price(40);
+        Price(750);
         ShootAnimFactor(1.0);
         HandInertiaFactor(0.0);
         HandInertiaRotFactor([0.0,0.0,1.0]);
@@ -32581,7 +32539,6 @@ sub main()
         DamageSize(5.0);
         AiHitSound("bullet");
         StatsType(StatsType_Pistol);
-        Price(224);
         FF_EffectName("Shot_DoubleBarrel");
         FF_Left(0.3);
         FF_Right(0.4);
@@ -32608,7 +32565,7 @@ sub main()
         ShotTailDelay(0.0);
         AchType(AchType_Pistol);
         NameGender(0);
-        Price(40);
+        Price(750);
         ShootAnimFactor(1.0);
         HandInertiaFactor(0.0);
         HandInertiaRotFactor([0.0,0.0,1.0]);
@@ -32694,7 +32651,6 @@ sub main()
         DamageSize(5.0);
         AiHitSound("bullet");
         StatsType(StatsType_Pistol);
-        Price(224);
         FF_EffectName("Shot_DoubleBarrel");
         FF_Left(0.3);
         FF_Right(0.4);
@@ -32721,7 +32677,7 @@ sub main()
         ShotTailDelay(0.0);
         AchType(AchType_Pistol);
         NameGender(0);
-        Price(40);
+        Price(750);
         ShootAnimFactor(1.0);
         HandInertiaFactor(0.0);
         HandInertiaRotFactor([0.0,0.0,1.0]);
@@ -32807,7 +32763,6 @@ sub main()
         DamageSize(5.0);
         AiHitSound("bullet");
         StatsType(StatsType_Pistol);
-        Price(281);
         FF_EffectName("Shot_DoubleBarrel");
         FF_Left(0.3);
         FF_Right(0.4);
@@ -32834,7 +32789,7 @@ sub main()
         ShotTailDelay(0.0);
         AchType(AchType_Pistol);
         NameGender(0);
-        Price(40);
+        Price(850);
         ShootAnimFactor(1.0);
         HandInertiaFactor(0.0);
         HandInertiaRotFactor([0.0,0.0,1.0]);
@@ -33361,7 +33316,6 @@ sub main()
         DamageSize(1.0);
         AiHitSound("bullet");
         StatsType(StatsType_Pistol);
-        Price(104);
         FF_EffectName("Shot_StrongPistol");
         FF_Left(0.3);
         FF_Right(0.4);
@@ -33388,7 +33342,7 @@ sub main()
         ShotTailDelay(0.5);
         AchType(AchType_Pistol);
         NameGender(0);
-        Price(40);
+        Price(5000);
         ShootAnimFactor(0.05);
     }
 

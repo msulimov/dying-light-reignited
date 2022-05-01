@@ -464,7 +464,7 @@ sub main()
         {
             DamageMul(0.5);
             DamageCriticalMul(0.01);
-            ProcProb(0.3);
+            ProcProb(0.2);
             DamageDuration(8.0);
             NightCreatureDmgMul(1.0);
             DpsAccumulation(0.0);
@@ -537,7 +537,7 @@ sub main()
         {
             DamageMul(0.2);
             DamageCriticalMul(0.05);
-            ProcProb(1.0);
+            ProcProb(0.5);
             NightCreatureDmgMul(1.0);
             DpsAccumulation(0.0);
             StaminaReduction(0.0);
@@ -697,7 +697,7 @@ sub main()
         {
             DamageMul(0.25);
             DamageCriticalMul(0.06);
-            ProcProb(0.30);
+            ProcProb(0.20);
             DamageDuration(15.0);
             NightCreatureDmgMul(1.4);
             DpsAccumulation(0.0);

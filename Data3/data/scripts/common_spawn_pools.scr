@@ -33,7 +33,7 @@
         MinProgressCondition(2)
         Type("base")
         Preset("Stinger, 5;Vessel_Eating_Corpse, 5;Vessel_Lurker_Int, 5;Vessel_Stinger_Int, 5;Vessel_In_Attractor, 5;Vessel_Init, 25;Vessel_WithAToy, 5;Nurker, 10;DeadZone_Policeman, 15;Biter_Special, 15;Human_To_Infected_In_Attractor, 1;")
-		Preset("Goon, 8;Vessel_GasTank, 6;Biter_Burn, 2;")
+		Preset("Goon, 8;Vessel_GasTank, 6;")
         
 		
 	}
@@ -116,7 +116,7 @@
         Type("peak;special")
         Preset("Suicider, 40;")//10
         Preset("Vessel_GasTank, 15;")//15
-        Preset("Vessel_Init, 5;Vessel_WithAToy, 5;Biter_Burn, 10;")//15
+        Preset("Vessel_Init, 5;Vessel_WithAToy, 5;Biter_Burn, 2;")//15
         Preset("Goon, 15;")//15
         Preset("Toad_Medium, 15;")//15
 		

@@ -27,3 +27,5 @@
     ParamFloat("damage_mul", 2.0)
 	ParamFloat("experience_run_over_award", 200.0)
 
+    ParamFloat("bullet_head_hit_damage_mult", 0.01) // discourage safe ranged combat
+

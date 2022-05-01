@@ -44,7 +44,7 @@ sub extraDLCRecipes(){
         UpgradeLevel(0);
         Condition(45);
         CriticalCondition(12);
-        Damage(911.0);
+        Damage(250.0);
         Force(50.0);
         CriticalProb(0.0);
         CriticalDamage(2.0);
@@ -451,7 +451,7 @@ sub extraDLCRecipes(){
         RequiredItem("Craft_MetalScrap", 8);
         RequiredItem("Craft_DuctTape", 3);
         RequiredItem("Craft_Nails", 4);
-        RequiredItem("Craft_RazorBlade", 2);
+        RequiredItem("Craft_RazorBlade", 3);
         RequiredItem("Craft_Electronics", 6);
         RequiredItem("Craft_Batteries", 5);
 		RequiredItem("Craft_PowerCable", 4);
@@ -468,14 +468,16 @@ sub extraDLCRecipes(){
 	
 	Item("Melee_ShortSword_Dao_SHU1", CategoryType_Melee)
     {
-        //GameVersion(31);
+        GameVersion(31);
+        Name("&Craftplan_Melee_ShortSword_Dao_SHU_N&");
+        Description('&Craftplan_Melee_ShortSword_Dao_SHU_D&');
         Visibility(true);
         ItemType(ItemType_Stick);
         PhysicsScript("single_dropped_inventory.phx");
         UpgradeLevel(0);
         Condition(35);
         CriticalCondition(11);
-        Damage(911.0);
+        Damage(250.0);
         Force(50.0);
         CriticalProb(0.0);
         CriticalDamage(2.0);
@@ -1124,7 +1126,7 @@ sub extraDLCRecipes(){
         UpgradeLevel(0);
         Condition(35);
         CriticalCondition(11);
-        Damage(213.0);
+        Damage(250.0);
         Force(25.0);
         CriticalProb(0.0);
         CriticalDamage(2.0);

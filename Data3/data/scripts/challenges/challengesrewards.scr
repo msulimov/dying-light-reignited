@@ -804,37 +804,37 @@ sub main()
 
     Reward("auto_airdrop")
     {
-        Place1(500);
+        Place1(2000);
     }
 
     Reward("auto_battle_area_encounter")
     {
-        Place1(500);
+        Place1(2000);
     }
 
     Reward("auto_fighting_groups_encounter")
     {
-        Place1(500);
+        Place1(2000);
     }
 
     Reward("auto_prisoners_encounter")
     {
-        Place1(500);
+        Place1(2000);
     }
 
     Reward("auto_patrol_encounter")
     {
-        Place1(500);
+        Place1(2000);
     }
 
     Reward("auto_help_save_npc")
     {
-        Place1(500);
+        Place1(5000);
     }
 
     Reward("auto_help_save_grabbed_npc")
     {
-        Place1(500);
+        Place1(5000);
     }
 
     Reward("auto_kill")

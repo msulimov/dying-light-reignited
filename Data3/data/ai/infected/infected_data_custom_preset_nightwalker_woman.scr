@@ -14,6 +14,8 @@ ParamFloat("stamina_to_health_ratio", 15.0)
 ParamBool("use_2d_angle_cone_check", 1)
 ParamFloat("confusion_prob_mod", 1.0)
 
+ParamFloat("health_mul", 6.0)
+
 ParamBool("navigate_through_generic_nav_mesh_connections", 1)
 ParamBool("navigate_through_user_nav_mesh_connections", 1)
 ParamBool("can_move_through_low_obstacles", 1)

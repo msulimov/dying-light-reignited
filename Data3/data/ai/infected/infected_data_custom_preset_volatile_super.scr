@@ -7,13 +7,13 @@
 /////////////////////////////////////////// PARAMETERS ////////////////////////////////////////////
 ParamBool("can_see_camouflaged_player", 1) // always see camouflaged player
 
-ParamFloat("health_mul", 20.0) // vs 3.0
+ParamFloat("health_mul", 40.0) // vs 3.0
 ParamFloat("damage_mul", 2.0) // vs 1.0
 
 ParamFloat("melee_range", 2.25) // vs 2.0
 
 
-ParamFloat("experience_award", 750.0) // vs 500.0
+ParamFloat("experience_award", 0.0) // vs 500.0
 
 ParamBool("can_spit", 0)
 ParamFloat("spit_speed", 1.0) // vs 35.0

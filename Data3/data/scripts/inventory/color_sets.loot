@@ -91,10 +91,11 @@ sub DefineColors()
     DefColorSet(ColorSet_Lockpick3)
     {
         ColorWeight(Color_White, 0);
-        ColorWeight(Color_Green, 77);
-        ColorWeight(Color_Blue, 15);
-        ColorWeight(Color_Violet, 6);
-        ColorWeight(Color_Orange, 2);
+        ColorWeight(Color_Green, 0);
+        ColorWeight(Color_Blue, 0);
+        ColorWeight(Color_Violet, 40);
+        ColorWeight(Color_Orange, 20);
+        ColorWeight(Color_Platinum, 10);
     }
 
     DefColorSet(ColorSet_FatMan)
@@ -162,29 +163,29 @@ sub DefineColors()
 
     DefColorSet(ColorSet_cs_encounter)
     {
-        ColorWeight(Color_White, 16);
-        ColorWeight(Color_Green, 8);
-        ColorWeight(Color_Blue, 4);
-        ColorWeight(Color_Violet, 2);
-        ColorWeight(Color_Orange, 1);
+        ColorWeight(Color_White, 25);
+        ColorWeight(Color_Green, 25);
+        ColorWeight(Color_Blue, 35);
+        ColorWeight(Color_Violet, 10);
+        ColorWeight(Color_Orange, 5);
     }
 
     DefColorSet(ColorSet_cs_encounter_chest)
     {
-        ColorWeight(Color_White, 16);
-        ColorWeight(Color_Green, 8);
-        ColorWeight(Color_Blue, 4);
-        ColorWeight(Color_Violet, 2);
-        ColorWeight(Color_Orange, 1);
+        ColorWeight(Color_White, 25);
+        ColorWeight(Color_Green, 25);
+        ColorWeight(Color_Blue, 35);
+        ColorWeight(Color_Violet, 10);
+        ColorWeight(Color_Orange, 5);
     }
 
     DefColorSet(ColorSet_cs_encounter_body)
     {
-        ColorWeight(Color_White, 16);
-        ColorWeight(Color_Green, 8);
-        ColorWeight(Color_Blue, 4);
-        ColorWeight(Color_Violet, 2);
-        ColorWeight(Color_Orange, 1);
+        ColorWeight(Color_White, 25);
+        ColorWeight(Color_Green, 25);
+        ColorWeight(Color_Blue, 35);
+        ColorWeight(Color_Violet, 10);
+        ColorWeight(Color_Orange, 5);
     }
 
     DefColorSet(ColorSet_cs_drp)
@@ -283,9 +284,9 @@ sub DefineColors()
         
         ColorWeight(Color_White, 0);
         ColorWeight(Color_Green, 20);
-        ColorWeight(Color_Blue, 30);
-        ColorWeight(Color_Violet, 35);
-        ColorWeight(Color_Orange, 15);
+        ColorWeight(Color_Blue, 40);
+        ColorWeight(Color_Violet, 30);
+        ColorWeight(Color_Orange, 10);
         
     }
         
@@ -294,10 +295,10 @@ sub DefineColors()
        
         ColorWeight(Color_White, 0);
         ColorWeight(Color_Green, 0);
-        ColorWeight(Color_Blue, 15);
-        ColorWeight(Color_Violet, 40);
-        ColorWeight(Color_Orange, 25);
-        ColorWeight(Color_Platinum, 20);
+        ColorWeight(Color_Blue, 25);
+        ColorWeight(Color_Violet, 50);
+        ColorWeight(Color_Orange, 15);
+        ColorWeight(Color_Platinum, 10);
         
     }
 
@@ -521,6 +522,7 @@ DefColorSet(ColorSet_BTZ_Reward_Platinum)
         ColorWeight(Color_Violet, 15);
         ColorWeight(Color_Orange, 5);
     }
+    
 }
 
 //------------------------------------------------------------------------
@@ -562,10 +564,11 @@ sub DefineColorsHard()
     DefColorSet(ColorSet_Lockpick3)
     {
         ColorWeight(Color_White, 0);
-        ColorWeight(Color_Green, 77);
-        ColorWeight(Color_Blue, 15);
-        ColorWeight(Color_Violet, 6);
-        ColorWeight(Color_Orange, 2);
+        ColorWeight(Color_Green, 0);
+        ColorWeight(Color_Blue, 0);
+        ColorWeight(Color_Violet, 40);
+        ColorWeight(Color_Orange, 20);
+        ColorWeight(Color_Platinum, 10);
     }
 
     DefColorSet(ColorSet_FatMan)
@@ -633,29 +636,29 @@ sub DefineColorsHard()
 
     DefColorSet(ColorSet_cs_encounter)
     {
-        ColorWeight(Color_White, 16);
-        ColorWeight(Color_Green, 8);
-        ColorWeight(Color_Blue, 4);
-        ColorWeight(Color_Violet, 2);
-        ColorWeight(Color_Orange, 1);
+        ColorWeight(Color_White, 25);
+        ColorWeight(Color_Green, 25);
+        ColorWeight(Color_Blue, 35);
+        ColorWeight(Color_Violet, 10);
+        ColorWeight(Color_Orange, 5);
     }
 
     DefColorSet(ColorSet_cs_encounter_chest)
     {
-        ColorWeight(Color_White, 16);
-        ColorWeight(Color_Green, 8);
-        ColorWeight(Color_Blue, 4);
-        ColorWeight(Color_Violet, 2);
-        ColorWeight(Color_Orange, 1);
+        ColorWeight(Color_White, 25);
+        ColorWeight(Color_Green, 25);
+        ColorWeight(Color_Blue, 35);
+        ColorWeight(Color_Violet, 10);
+        ColorWeight(Color_Orange, 5);
     }
 
     DefColorSet(ColorSet_cs_encounter_body)
     {
-        ColorWeight(Color_White, 16);
-        ColorWeight(Color_Green, 8);
-        ColorWeight(Color_Blue, 4);
-        ColorWeight(Color_Violet, 2);
-        ColorWeight(Color_Orange, 1);
+        ColorWeight(Color_White, 25);
+        ColorWeight(Color_Green, 25);
+        ColorWeight(Color_Blue, 35);
+        ColorWeight(Color_Violet, 10);
+        ColorWeight(Color_Orange, 5);
     }
 
     DefColorSet(ColorSet_cs_drp)
@@ -754,9 +757,9 @@ sub DefineColorsHard()
         
         ColorWeight(Color_White, 0);
         ColorWeight(Color_Green, 20);
-        ColorWeight(Color_Blue, 30);
-        ColorWeight(Color_Violet, 35);
-        ColorWeight(Color_Orange, 15);
+        ColorWeight(Color_Blue, 40);
+        ColorWeight(Color_Violet, 30);
+        ColorWeight(Color_Orange, 10);
         
     }
         
@@ -765,10 +768,10 @@ sub DefineColorsHard()
        
         ColorWeight(Color_White, 0);
         ColorWeight(Color_Green, 0);
-        ColorWeight(Color_Blue, 15);
-        ColorWeight(Color_Violet, 40);
-        ColorWeight(Color_Orange, 25);
-        ColorWeight(Color_Platinum, 20);
+        ColorWeight(Color_Blue, 25);
+        ColorWeight(Color_Violet, 50);
+        ColorWeight(Color_Orange, 15);
+        ColorWeight(Color_Platinum, 10);
         
     }
 
@@ -992,6 +995,7 @@ DefColorSet(ColorSet_BTZ_Reward_Platinum)
         ColorWeight(Color_Violet, 15);
         ColorWeight(Color_Orange, 5);
     }
+    
 
 }
 
@@ -1035,10 +1039,11 @@ sub DefineColorsNightmare()
     DefColorSet(ColorSet_Lockpick3)
     {
         ColorWeight(Color_White, 0);
-        ColorWeight(Color_Green, 77);
-        ColorWeight(Color_Blue, 15);
-        ColorWeight(Color_Violet, 6);
-        ColorWeight(Color_Orange, 2);
+        ColorWeight(Color_Green, 0);
+        ColorWeight(Color_Blue, 0);
+        ColorWeight(Color_Violet, 40);
+        ColorWeight(Color_Orange, 20);
+        ColorWeight(Color_Platinum, 10);
     }
 
     DefColorSet(ColorSet_FatMan)
@@ -1106,29 +1111,29 @@ sub DefineColorsNightmare()
 
     DefColorSet(ColorSet_cs_encounter)
     {
-        ColorWeight(Color_White, 16);
-        ColorWeight(Color_Green, 8);
-        ColorWeight(Color_Blue, 4);
-        ColorWeight(Color_Violet, 2);
-        ColorWeight(Color_Orange, 1);
+        ColorWeight(Color_White, 25);
+        ColorWeight(Color_Green, 25);
+        ColorWeight(Color_Blue, 35);
+        ColorWeight(Color_Violet, 10);
+        ColorWeight(Color_Orange, 5);
     }
 
     DefColorSet(ColorSet_cs_encounter_chest)
     {
-        ColorWeight(Color_White, 16);
-        ColorWeight(Color_Green, 8);
-        ColorWeight(Color_Blue, 4);
-        ColorWeight(Color_Violet, 2);
-        ColorWeight(Color_Orange, 1);
+        ColorWeight(Color_White, 25);
+        ColorWeight(Color_Green, 25);
+        ColorWeight(Color_Blue, 35);
+        ColorWeight(Color_Violet, 10);
+        ColorWeight(Color_Orange, 5);
     }
 
     DefColorSet(ColorSet_cs_encounter_body)
     {
-        ColorWeight(Color_White, 16);
-        ColorWeight(Color_Green, 8);
-        ColorWeight(Color_Blue, 4);
-        ColorWeight(Color_Violet, 2);
-        ColorWeight(Color_Orange, 1);
+        ColorWeight(Color_White, 25);
+        ColorWeight(Color_Green, 25);
+        ColorWeight(Color_Blue, 35);
+        ColorWeight(Color_Violet, 10);
+        ColorWeight(Color_Orange, 5);
     }
 
     DefColorSet(ColorSet_cs_drp)
@@ -1227,9 +1232,9 @@ sub DefineColorsNightmare()
         
         ColorWeight(Color_White, 0);
         ColorWeight(Color_Green, 20);
-        ColorWeight(Color_Blue, 30);
-        ColorWeight(Color_Violet, 35);
-        ColorWeight(Color_Orange, 15);
+        ColorWeight(Color_Blue, 40);
+        ColorWeight(Color_Violet, 30);
+        ColorWeight(Color_Orange, 10);
 		
     }
         
@@ -1238,10 +1243,10 @@ sub DefineColorsNightmare()
        
         ColorWeight(Color_White, 0);
         ColorWeight(Color_Green, 0);
-        ColorWeight(Color_Blue, 15);
-        ColorWeight(Color_Violet, 40);
-        ColorWeight(Color_Orange, 25);
-        ColorWeight(Color_Platinum, 20);
+        ColorWeight(Color_Blue, 25);
+        ColorWeight(Color_Violet, 50);
+        ColorWeight(Color_Orange, 15);
+        ColorWeight(Color_Platinum, 10);
 		
     }
 

@@ -797,10 +797,16 @@
       <knot TypeOfSpline="LINE" X="60" Y="1300" />
     </knots>
   </curve>
-  <curve Name="thug_health" NumberOfSamples="60" MaxX="60" MinX="1" MaxY="1000" MinY="1">
-    <knots Count="2">
-      <knot TypeOfSpline="LINE" X="1" Y="1000" />
-      <knot TypeOfSpline="LINE" X="60" Y="1350" />
+  <curve Name="thug_health" NumberOfSamples="80" MaxX="60" MinX="1" MaxY="6000" MinY="400">
+    <knots Count="8">
+      <knot TypeOfSpline="HERMITE" X="1" Y="400" />
+      <knot TypeOfSpline="HERMITE" X="5" Y="500" />
+      <knot TypeOfSpline="HERMITE" X="10" Y="600" />
+      <knot TypeOfSpline="HERMITE" X="20" Y="1200" />
+      <knot TypeOfSpline="HERMITE" X="30" Y="2500" />
+      <knot TypeOfSpline="HERMITE" X="40" Y="4000" />
+      <knot TypeOfSpline="HERMITE" X="50" Y="5000" />
+      <knot TypeOfSpline="HERMITE" X="60" Y="6000" />
     </knots>
   </curve>
   <curve Name="zombie_ko_prob" NumberOfSamples="50" MaxX="80" MinX="0" MaxY="110" MinY="0">
@@ -1674,33 +1680,33 @@
       <knot TypeOfSpline="LINE" X="25" Y="6" />
     </knots>
   </curve>
-  <curve Name="enc_airdrop_status_points_multiplier_per_level" NumberOfSamples="14" MaxX="25" MinX="1" MaxY="12" MinY="1">
+  <curve Name="enc_airdrop_status_points_multiplier_per_level" NumberOfSamples="80" MaxX="25" MinX="1" MaxY="18.5" MinY="5">
     <knots Count="25">
-      <knot TypeOfSpline="LINE" X="1" Y="2" />
-      <knot TypeOfSpline="LINE" X="2" Y="3.3" />
-      <knot TypeOfSpline="LINE" X="3" Y="4" />
-      <knot TypeOfSpline="LINE" X="4" Y="4.5" />
-      <knot TypeOfSpline="LINE" X="5" Y="5" />
-      <knot TypeOfSpline="LINE" X="6" Y="6.5" />
-      <knot TypeOfSpline="LINE" X="7" Y="7" />
-      <knot TypeOfSpline="LINE" X="8" Y="9" />
-      <knot TypeOfSpline="LINE" X="9" Y="10" />
-      <knot TypeOfSpline="LINE" X="10" Y="10.5" />
-      <knot TypeOfSpline="LINE" X="11" Y="11" />
-      <knot TypeOfSpline="LINE" X="12" Y="11.5" />
-      <knot TypeOfSpline="LINE" X="13" Y="12" />
-      <knot TypeOfSpline="LINE" X="14" Y="12.5" />
-      <knot TypeOfSpline="LINE" X="15" Y="13" />
-      <knot TypeOfSpline="LINE" X="16" Y="15.5" />
-      <knot TypeOfSpline="LINE" X="17" Y="16" />
+      <knot TypeOfSpline="LINE" X="1" Y="5" />
+      <knot TypeOfSpline="LINE" X="2" Y="7" />
+      <knot TypeOfSpline="LINE" X="3" Y="9" />
+      <knot TypeOfSpline="LINE" X="4" Y="9.5" />
+      <knot TypeOfSpline="LINE" X="5" Y="11" />
+      <knot TypeOfSpline="LINE" X="6" Y="12" />
+      <knot TypeOfSpline="LINE" X="7" Y="13.5" />
+      <knot TypeOfSpline="LINE" X="8" Y="14" />
+      <knot TypeOfSpline="LINE" X="9" Y="14" />
+      <knot TypeOfSpline="LINE" X="10" Y="15" />
+      <knot TypeOfSpline="LINE" X="11" Y="15.5" />
+      <knot TypeOfSpline="LINE" X="12" Y="15.5" />
+      <knot TypeOfSpline="LINE" X="13" Y="16" />
+      <knot TypeOfSpline="LINE" X="14" Y="16.5" />
+      <knot TypeOfSpline="LINE" X="15" Y="16.5" />
+      <knot TypeOfSpline="LINE" X="16" Y="17" />
+      <knot TypeOfSpline="LINE" X="17" Y="17.5" />
       <knot TypeOfSpline="LINE" X="18" Y="17.5" />
-      <knot TypeOfSpline="LINE" X="19" Y="19" />
-      <knot TypeOfSpline="LINE" X="20" Y="21.5" />
-      <knot TypeOfSpline="LINE" X="21" Y="23" />
-      <knot TypeOfSpline="LINE" X="22" Y="24.5" />
-      <knot TypeOfSpline="LINE" X="23" Y="26" />
-      <knot TypeOfSpline="LINE" X="24" Y="30" />
-      <knot TypeOfSpline="LINE" X="25" Y="25" />
+      <knot TypeOfSpline="LINE" X="19" Y="18" />
+      <knot TypeOfSpline="LINE" X="20" Y="18" />
+      <knot TypeOfSpline="LINE" X="21" Y="18.5" />
+      <knot TypeOfSpline="LINE" X="22" Y="18.5" />
+      <knot TypeOfSpline="LINE" X="23" Y="19" />
+      <knot TypeOfSpline="LINE" X="24" Y="19" />
+      <knot TypeOfSpline="LINE" X="25" Y="15"/>
     </knots>
   </curve>
   <curve Name="crafting_slots_value_mul" NumberOfSamples="100" MaxX="4" MinX="0" MaxY="2.5" MinY="0">

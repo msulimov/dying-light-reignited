@@ -34,19 +34,33 @@ sub melee_2h(){
 	ImportFromShop("Melee_2H_Level_10", 9, 11);
 	ImportFromShop("Melee_2H_Level_11", 10, 12);
 	ImportFromShop("Melee_2H_Level_12", 11, 13);
-	ImportFromShop("Melee_2H_Level_13", 12, 14);
-	ImportFromShop("Melee_2H_Level_14", 13, 15);
-	ImportFromShop("Melee_2H_Level_15", 14, 16);
-	ImportFromShop("Melee_2H_Level_16", 15, 17);
-	ImportFromShop("Melee_2H_Level_17", 16, 18);
-	ImportFromShop("Melee_2H_Level_18", 17, 19);
-	ImportFromShop("Melee_2H_Level_19", 18, 20);
-	ImportFromShop("Melee_2H_Level_20", 19, 21);
-	ImportFromShop("Melee_2H_Level_21", 20, 22);
-	ImportFromShop("Melee_2H_Level_22", 21, 23);
-	ImportFromShop("Melee_2H_Level_23", 22, 24);
-    ImportFromShop("Melee_2H_Level_24", 23, 50);
-    ImportFromShop("Melee_2H_Level_25", 24, 50);
+	// ImportFromShop("Melee_2H_Level_13", 12, 14); // wasteland sets overlap these already
+	// ImportFromShop("Melee_2H_Level_14", 13, 15);
+	// ImportFromShop("Melee_2H_Level_15", 14, 16);
+	// ImportFromShop("Melee_2H_Level_16", 15, 17);
+	// ImportFromShop("Melee_2H_Level_17", 16, 18);
+	// ImportFromShop("Melee_2H_Level_18", 17, 19);
+	// ImportFromShop("Melee_2H_Level_19", 18, 20);
+	// ImportFromShop("Melee_2H_Level_20", 19, 21);
+	// ImportFromShop("Melee_2H_Level_21", 20, 22);
+	// ImportFromShop("Melee_2H_Level_22", 21, 23);
+	// ImportFromShop("Melee_2H_Level_23", 22, 24);
+    //  ImportFromShop("Melee_2H_Level_24", 23, 50);
+    //  ImportFromShop("Melee_2H_Level_25", 24, 50);
+
+	ImportFromShop("Melee_2H_Level_13_Wasteland", 12, 14);
+	ImportFromShop("Melee_2H_Level_14_Wasteland", 13, 15);
+	ImportFromShop("Melee_2H_Level_15_Wasteland", 14, 16);
+	ImportFromShop("Melee_2H_Level_16_Wasteland", 15, 17);
+	ImportFromShop("Melee_2H_Level_17_Wasteland", 16, 18);
+	ImportFromShop("Melee_2H_Level_18_Wasteland", 17, 19);
+	ImportFromShop("Melee_2H_Level_19_Wasteland", 18, 20);
+	ImportFromShop("Melee_2H_Level_20_Wasteland", 19, 21);
+	ImportFromShop("Melee_2H_Level_21_Wasteland", 20, 22);
+	ImportFromShop("Melee_2H_Level_22_Wasteland", 21, 23);
+	ImportFromShop("Melee_2H_Level_23_Wasteland", 22, 24);
+    ImportFromShop("Melee_2H_Level_24_Wasteland", 23, 50);
+    ImportFromShop("Melee_2H_Level_25_Wasteland", 24, 50);
 
 }
 
@@ -62,21 +76,21 @@ sub melee(){
 	ImportFromShop("Melee_Level_8", 8, 11);
 	ImportFromShop("Melee_Level_9", 9, 12);
 	ImportFromShop("Melee_Level_10", 10, 13);
-	ImportFromShop("Melee_Level_11", 11, 14);
-	ImportFromShop("Melee_Level_12", 12, 15);
-	ImportFromShop("Melee_Level_13", 13, 16);
-	ImportFromShop("Melee_Level_14", 14, 17);
-	ImportFromShop("Melee_Level_15", 15, 18);
-	ImportFromShop("Melee_Level_16", 16, 19);
-	ImportFromShop("Melee_Level_17", 17, 20);
-	ImportFromShop("Melee_Level_18", 18, 21);
-	ImportFromShop("Melee_Level_19", 19, 22);
-	ImportFromShop("Melee_Level_20", 20, 23);
-	ImportFromShop("Melee_Level_21", 21, 24);
-	ImportFromShop("Melee_Level_22", 22, 24);
-	ImportFromShop("Melee_Level_23", 23, 24);
-	ImportFromShop("Melee_Level_24", 24, 50);
-	ImportFromShop("Melee_Level_25", 25, 50);
+	// ImportFromShop("Melee_Level_11", 11, 14); // wasteland sets overlap these already
+	// ImportFromShop("Melee_Level_12", 12, 15);
+	// ImportFromShop("Melee_Level_13", 13, 16);
+	// ImportFromShop("Melee_Level_14", 14, 17);
+	// ImportFromShop("Melee_Level_15", 15, 18);
+	// ImportFromShop("Melee_Level_16", 16, 19);
+	// ImportFromShop("Melee_Level_17", 17, 20);
+	// ImportFromShop("Melee_Level_18", 18, 21);
+	// ImportFromShop("Melee_Level_19", 19, 22);
+	// ImportFromShop("Melee_Level_20", 20, 23);
+	// ImportFromShop("Melee_Level_21", 21, 24);
+	// ImportFromShop("Melee_Level_22", 22, 24);
+	// ImportFromShop("Melee_Level_23", 23, 24);
+	// ImportFromShop("Melee_Level_24", 24, 50);
+	// ImportFromShop("Melee_Level_25", 25, 50);
 	
 	ImportFromShop("Melee_Level_11_Wasteland", 11, 14);
 	ImportFromShop("Melee_Level_12_Wasteland", 12, 15);
@@ -100,31 +114,22 @@ sub melee(){
 	ImportFromShop("Melee_Legendary_Tier_9", 25, 50);
 	ImportFromShop("Melee_Legendary_Tier_10", 25, 50);
 
-	ImportFromShop("Melee_Level_12_Unique", 12, 14);
-	ImportFromShop("Melee_Level_13_Unique", 13, 15);
-	ImportFromShop("Melee_Level_14_Unique", 14, 16);
-	ImportFromShop("Melee_Level_15_Unique", 15, 17);
-	ImportFromShop("Melee_Level_16_Unique", 16, 18);
-	ImportFromShop("Melee_Level_17_Unique", 17, 19);
-	ImportFromShop("Melee_Level_18_Unique", 18, 20);
-	ImportFromShop("Melee_Level_19_Unique", 19, 21);
-	ImportFromShop("Melee_Level_20_Unique", 20, 22);
-	ImportFromShop("Melee_Level_21_Unique", 21, 23);
-	ImportFromShop("Melee_Level_22_Unique", 22, 24);
-	ImportFromShop("Melee_Level_23_Unique", 23, 24);
-	ImportFromShop("Melee_Level_24_Unique", 24, 50);
-	ImportFromShop("Melee_Level_25_Unique", 25, 50);
+	// ImportFromShop("Melee_Level_12_Unique", 12, 14);
+	// ImportFromShop("Melee_Level_13_Unique", 13, 15);
+	// ImportFromShop("Melee_Level_14_Unique", 14, 16);
+	// ImportFromShop("Melee_Level_15_Unique", 15, 17);
+	// ImportFromShop("Melee_Level_16_Unique", 16, 18);
+	// ImportFromShop("Melee_Level_17_Unique", 17, 19);
+	// ImportFromShop("Melee_Level_18_Unique", 18, 20);
+	// ImportFromShop("Melee_Level_19_Unique", 19, 21);
+	// ImportFromShop("Melee_Level_20_Unique", 20, 22);
+	// ImportFromShop("Melee_Level_21_Unique", 21, 23);
+	// ImportFromShop("Melee_Level_22_Unique", 22, 24);
+	// ImportFromShop("Melee_Level_23_Unique", 23, 24);
+	// ImportFromShop("Melee_Level_24_Unique", 24, 50);
+	// ImportFromShop("Melee_Level_25_Unique", 25, 50);
 
 }
-
-
-
-
-
-
-
-
-
 
 sub all()
 {
@@ -140,19 +145,33 @@ sub all()
 	ImportFromShop("Melee_2H_Level_10", 9, 11);
 	ImportFromShop("Melee_2H_Level_11", 10, 12);
 	ImportFromShop("Melee_2H_Level_12", 11, 13);
-	ImportFromShop("Melee_2H_Level_13", 12, 14);
-	ImportFromShop("Melee_2H_Level_14", 13, 15);
-	ImportFromShop("Melee_2H_Level_15", 14, 16);
-	ImportFromShop("Melee_2H_Level_16", 15, 17);
-	ImportFromShop("Melee_2H_Level_17", 16, 18);
-	ImportFromShop("Melee_2H_Level_18", 17, 19);
-	ImportFromShop("Melee_2H_Level_19", 18, 20);
-	ImportFromShop("Melee_2H_Level_20", 19, 21);
-	ImportFromShop("Melee_2H_Level_21", 20, 22);
-	ImportFromShop("Melee_2H_Level_22", 21, 23);
-	ImportFromShop("Melee_2H_Level_23", 22, 24);
-    ImportFromShop("Melee_2H_Level_24", 23, 50);
-    ImportFromShop("Melee_2H_Level_25", 24, 50);
+	// ImportFromShop("Melee_2H_Level_13", 12, 14);
+	// ImportFromShop("Melee_2H_Level_14", 13, 15);
+	// ImportFromShop("Melee_2H_Level_15", 14, 16);
+	// ImportFromShop("Melee_2H_Level_16", 15, 17);
+	// ImportFromShop("Melee_2H_Level_17", 16, 18);
+	// ImportFromShop("Melee_2H_Level_18", 17, 19);
+	// ImportFromShop("Melee_2H_Level_19", 18, 20);
+	// ImportFromShop("Melee_2H_Level_20", 19, 21);
+	// ImportFromShop("Melee_2H_Level_21", 20, 22);
+	// ImportFromShop("Melee_2H_Level_22", 21, 23);
+	// ImportFromShop("Melee_2H_Level_23", 22, 24);
+    // ImportFromShop("Melee_2H_Level_24", 23, 50);
+    // ImportFromShop("Melee_2H_Level_25", 24, 50);
+
+	ImportFromShop("Melee_2H_Level_13_Wasteland", 12, 14);
+	ImportFromShop("Melee_2H_Level_14_Wasteland", 13, 15);
+	ImportFromShop("Melee_2H_Level_15_Wasteland", 14, 16);
+	ImportFromShop("Melee_2H_Level_16_Wasteland", 15, 17);
+	ImportFromShop("Melee_2H_Level_17_Wasteland", 16, 18);
+	ImportFromShop("Melee_2H_Level_18_Wasteland", 17, 19);
+	ImportFromShop("Melee_2H_Level_19_Wasteland", 18, 20);
+	ImportFromShop("Melee_2H_Level_20_Wasteland", 19, 21);
+	ImportFromShop("Melee_2H_Level_21_Wasteland", 20, 22);
+	ImportFromShop("Melee_2H_Level_22_Wasteland", 21, 23);
+	ImportFromShop("Melee_2H_Level_23_Wasteland", 22, 24);
+    ImportFromShop("Melee_2H_Level_24_Wasteland", 23, 50);
+    ImportFromShop("Melee_2H_Level_25_Wasteland", 24, 50);
 	
 	ImportFromShop("Melee_Level_1", 1, 4);
 	ImportFromShop("Melee_Level_2", 2, 5);
@@ -164,21 +183,21 @@ sub all()
 	ImportFromShop("Melee_Level_8", 8, 11);
 	ImportFromShop("Melee_Level_9", 9, 12);
 	ImportFromShop("Melee_Level_10", 10, 13);
-	ImportFromShop("Melee_Level_11", 11, 14);
-	ImportFromShop("Melee_Level_12", 12, 15);
-	ImportFromShop("Melee_Level_13", 13, 16);
-	ImportFromShop("Melee_Level_14", 14, 17);
-	ImportFromShop("Melee_Level_15", 15, 18);
-	ImportFromShop("Melee_Level_16", 16, 19);
-	ImportFromShop("Melee_Level_17", 17, 20);
-	ImportFromShop("Melee_Level_18", 18, 21);
-	ImportFromShop("Melee_Level_19", 19, 22);
-	ImportFromShop("Melee_Level_20", 20, 23);
-	ImportFromShop("Melee_Level_21", 21, 24);
-	ImportFromShop("Melee_Level_22", 22, 24);
-	ImportFromShop("Melee_Level_23", 23, 24);
-	ImportFromShop("Melee_Level_24", 24, 50);
-	ImportFromShop("Melee_Level_25", 25, 50);
+	// ImportFromShop("Melee_Level_11", 11, 14); // wasteland sets overlap these already
+	// ImportFromShop("Melee_Level_12", 12, 15);
+	// ImportFromShop("Melee_Level_13", 13, 16);
+	// ImportFromShop("Melee_Level_14", 14, 17);
+	// ImportFromShop("Melee_Level_15", 15, 18);
+	// ImportFromShop("Melee_Level_16", 16, 19);
+	// ImportFromShop("Melee_Level_17", 17, 20);
+	// ImportFromShop("Melee_Level_18", 18, 21);
+	// ImportFromShop("Melee_Level_19", 19, 22);
+	// ImportFromShop("Melee_Level_20", 20, 23);
+	// ImportFromShop("Melee_Level_21", 21, 24);
+	// ImportFromShop("Melee_Level_22", 22, 24);
+	// ImportFromShop("Melee_Level_23", 23, 24);
+	// ImportFromShop("Melee_Level_24", 24, 50);
+	// ImportFromShop("Melee_Level_25", 25, 50);
 	
 	ImportFromShop("Melee_Level_11_Wasteland", 11, 14);
 	ImportFromShop("Melee_Level_12_Wasteland", 12, 15);
@@ -221,7 +240,7 @@ sub all()
 	ImportFromShop("Melee_Level_24_Unique", 24, 50);
 	ImportFromShop("Melee_Level_25_Unique", 25, 50);
 	
-	ImportFromShop("Firearms_Level_9", 5, 9);
+	/*ImportFromShop("Firearms_Level_9", 5, 9);
 	ImportFromShop("Firearms_Level_10", 10, 11);
 	ImportFromShop("Firearms_Level_12", 12, 18);
 	ImportFromShop("Firearms_Level_18", 18, 24);
@@ -231,7 +250,7 @@ sub all()
 	ImportFromShop("Firearms_Level_12_Following", 12, 18);
 	ImportFromShop("Firearms_Level_18_Following", 18, 24);
 	ImportFromShop("Firearms_Level_24_Following", 24, 50);
-	ImportFromShop("Firearms_Level_25_Following", 25, 50);
+	ImportFromShop("Firearms_Level_25_Following", 25, 50);*/
 	
 	ImportFromShop("Melee_Level_17_ornated", 20, 20);
 	ImportFromShop("Melee_Level_18_ornated", 21, 21);

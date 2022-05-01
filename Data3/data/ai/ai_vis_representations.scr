@@ -27,7 +27,6 @@ Pool("biter_heavy")
     Maps("Default;")
     {
         MeshAndSkins("zombie_man_a.msh;zombie_redneck;zombie_worker;zombie_lab;")
-        MeshAndSkins("zombie_man_b.msh;zombie_worker;zombie_redneck;")
     }
     Maps("Wasteland;")
     {

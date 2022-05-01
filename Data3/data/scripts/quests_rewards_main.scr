@@ -46,17 +46,17 @@ sub main()
 
     Reward("StorylineReward_Blackout_reward")
     {
-        Xp(15000);
+        Xp(55000);
     }
 
     Reward("StorylineReward_Airdrop_reward")
     {
-        Xp(15000);
+        Xp(40000);
     }
 
     Reward("StorylineReward_Airdrop_LittleGirl_reward")
     {
-        Xp(2500);
+        Xp(15000);
     }
 
     Reward("StorylineReward_PactWithRais_reward")
@@ -66,83 +66,83 @@ sub main()
 
     Reward("StorylineReward_Antennas_GREContacted_reward")
     {
-        Xp(15000);
+        Xp(30000);
     }
 
     Reward("StorylineReward_Antennas_CommunicationReinstated_reward")
     {
-        Xp(10000);
+        Xp(30000);
     }
 
     Reward("StorylineReward_Antennas_reward")
     {
-        Xp(7500);
+        Xp(30000);
     }
 
     Reward("StorylineReward_Courier_FishermansHutSecured_reward")
     {
-        Xp(15000);
+        Xp(20000);
     }
 
     Reward("StorylineReward_Courier_MissingPatrol_reward")
     {
-        Xp(15000);
+        Xp(20000);
     }
 
     Reward("StorylineReward_Courier_reward")
     {
-        Xp(15000);
+        Xp(20000);
     }
 
     Reward("StorylineReward_Explosives_reward")
     {
-        Xp(10000);
+        Xp(20000);
     }
 
     Reward("StorylineReward_PrimeHunting_reward")
     {
-        Xp(15000);
+        Xp(50000);
     }
 
     Reward("StorylineReward_Demoliton_reward")
     {
-        Xp(15000);
+        Xp(30000);
     }
 
     Reward("StorylineReward_Intruders_reward")
     {
-        Xp(15000);
+        Xp(25000);
 		
     }
 
     Reward("StorylineReward_Warehouse_reward")
     {
-        Xp(15000);
+        Xp(25000);
     }
 
     Reward("StorylineReward_Arena_reward")
     {
-        Xp(15000);
+        Xp(100000);
     }
 
     Reward("StorylineReward_Runaway_reward")
     {
-        Xp(10000);
+        Xp(20000);
     }
 
     Reward("StorylineReward_Saviors_reward")
     {
-        Xp(15000);
+        Xp(25000);
     }
 
     Reward("StorylineReward_FindTheEmbers_reward")
     {
-        Xp(10000);
+        Xp(20000);
     }
 
     Reward("StorylineReward_University_reward")
     {
-        Xp(15000);
+        Xp(20000);
     }
 
     Reward("StorylineReward_ProjectMayhem_reward")
@@ -152,12 +152,12 @@ sub main()
 
     Reward("StorylineReward_MeetingWithJade_reward")
     {
-        Xp(10000);
+        Xp(15000);
     }
 
     Reward("StorylineReward_Museum_reward")
     {
-        Xp(20000);
+        Xp(50000);
     }
 
     Reward("StorylineReward_Contact_reward")
@@ -167,7 +167,7 @@ sub main()
 
     Reward("StorylineReward_Clinic_reward")
     {
-        Xp(15000);
+        Xp(35000);
     }
 
     Reward("StorylineReward_ContactGRE_reward")
@@ -188,21 +188,21 @@ sub main()
 
     Reward("GoodNightBahir_reward") // NO REWARD fake antizen lab
     {
-        Xp(15000);
+        Xp(20000);
 		Item("Craft_Upgrade_DurL2BalL2", Color_White, 1, 0); // Freeze Upgrade
 		Cash(750);
     }
 
     Reward("MothersDay_reward") // REWARDED Gazi movie chocolates
     {
-        Xp(15000);
+        Xp(20000);
 		Item("zzz_Craftplan_ArrowBurn", Color_Orange, 1, 0); // Burning Arrow Craftplan
         Cash(750);
     }
 
     Reward("VoltageEXP_reward")
     {
-        Xp(7500);
+        Xp(30000);
     }
 
     Reward("VoltageCraftplan_reward") // REWARDED
@@ -212,29 +212,29 @@ sub main()
 
     Reward("Voltage_reward")
     {
-        Xp(7500);
+        Xp(30000);
 		Cash(1000);
     }
 
     Reward("LandMine_reward") // REWARDED kurt bomb
     {
-        Xp(7500);
+        Xp(45000);
         Item("Craftplan_KurtBomb", Color_Orange, 1, 0);
 		Cash(750);
 		
     }
 
-    Reward("Antibiotics_reward") // REWARDED  Tunnel Vision
+    Reward("Antibiotics_reward") // REWARDED  Tunnel Vision Phenyl Nitrate 
     {
-        Xp(15000);
-		Item("ZZZZ3_Craftplan_WaterDLC", Color_Blue, 1, 0);
+        Xp(20000);
+		Item("Craft_Upgrade_DamL2DurL2", Color_Orange, 1, 0); // Burn Upgrade
 		Cash(500);
 		
     }
 
     Reward("ElectricMachete_reward") // REWARDED Alexei Bites Motel
     {
-        Xp(15000);
+        Xp(30000);
 		Item("Craftplan_BlastMelee", Color_Orange, 1, 0); // Impact Melee Craftplan
 		Cash(750);
         
@@ -249,14 +249,14 @@ sub main()
 
     Reward("SpareGlasses_reward") // REWARDED
     {
-        Xp(3500);
-		Item("zzz_Craftplan_Arrow", Color_White, 1, 0); // Arrow Craftplan
+        Xp(5000);
+		Item("Craft_Upgrade_DamL2", Color_Orange, 1, 0); // Impact Upgrade
 		Cash(250);
     }
 
     Reward("MedicalHerbs_reward")  // REWARDED Lavender 
     {
-        Xp(15000);
+        Xp(5000);
         Item("Craft_Upgrade_DamL2DurL2", Color_Orange, 1, 0); // Burn Upgrade
 		Cash(350);
     }
@@ -265,7 +265,7 @@ sub main()
 
     Reward("BringGalib_reward") // REWARDED rais hidden weapon stashes
     {
-        Xp(15000);
+        Xp(5000);
         Item("Craft_Upgrade_DamL2BalL2", Color_Blue, 1, 0); // Shock Upgrade
 		Cash(250);
     }
@@ -273,7 +273,7 @@ sub main()
     Reward("WheresMyMother_reward") // REWARDED
     {
         Xp(15000);
-		Item("zzz_Craftplan_ArrowExploding", Color_Orange, 1, 0); // Exploding Arrow
+		Item("zzz_Craftplan_ArrowExploding", Color_Orange, 1, 0); // Craftplan Exploding Arrow
 		Cash(750);
     }
 
@@ -304,21 +304,21 @@ sub main()
 
     Reward("Searchlights_reward") // REWARDED
     {
-        Xp(10000);
+        Xp(20000);
 		Item("Craftplan_ElectricMelee", Color_Blue, 1, 0); // Shock Melee Craftplan
 		
     }
 
     Reward("Binoculars_reward") // REWARDED
     {
-        Xp(3500);
+        Xp(5000);
 		Item("Craft_Upgrade_DamL2", Color_Orange, 1, 0); // Impact Upgrade
 		Cash(500);   
     }
 
     Reward("MidnightBride_reward") // REWARDED
     {
-        Xp(3500);
+        Xp(5000);
 		Item("Craft_Upgrade_DamL2DurL2", Color_Orange, 1, 0); // Burn Upgrade
 		
     }
@@ -337,14 +337,14 @@ sub main()
 
     Reward("BabyIsBorn_reward") // REWARDED Alcohol fetching quest
     {
-        Xp(7500);
+        Xp(5000);
 		Item("Craftplan_ThrowableFuel", Color_Green, 1, 0); // Throwable Fuel Craftplan
 		Item("ZZZZ3_Craftplan_WaterDLC", Color_Blue, 1, 0); // Throwable Water Craftplan
     }
 
     Reward("Dynamites_reward") // REWARDED
     {
-        Xp(7500);
+        Xp(12500);
 		Item("ZZZZ3_Craftplan_SuperMolotov", Color_Orange, 1, 0); // Super Molotov 
     }
 
@@ -411,30 +411,30 @@ sub main()
     Reward("CrayonsForTheKids_reward") // REWARDED Get crayons from school
     {
         Xp(15000);
-		Item("Craft_Upgrade_DurL2BalL2", Color_White, 1, 0); // Freeze Upgrade
+		Item("Craft_Upgrade_DamL2DurL2BalL2", Color_Orange, 1, 0); // King
     }
 
     Reward("ElectronicParts_reward") // REWARDED turn in electronics to toygar
     {
-        Xp(3500);
+        Xp(5000);
 		Item("Craft_Upgrade_DamL2BalL2", Color_Blue, 1, 0); // Shock Upgrade 
     }
 
     Reward("Cofee_reward") // REWARDED turn in coffee to toygar
     {
-        Xp(3500);
+        Xp(5000);
 		Item("Craft_Upgrade_DamL2DurL2BalL2", Color_Orange, 1, 0); // King	
     }
 
     Reward("GasLighter_reward") // REWARDED turn in lighter gas to toygar
     {
-        Xp(3500);
+        Xp(5000);
 		Item("Craft_Upgrade_DamL2DurL2", Color_Orange, 1, 0); // Burn Upgrade
     }
 
     Reward("BandagesAndMeds_reward") // REWARDED turn in syringes to toygar
     {
-        Xp(3500);
+        Xp(5000);
 		Item("Craft_Upgrade_DamL2DurL2BalL2", Color_Orange, 1, 0); // King
     }
 
@@ -460,31 +460,31 @@ sub main()
 	
     Reward("Bunker_reward") // NO REWARD Bunker under town hall
     {
-        Xp(10000);
+        Xp(30000);
 		
     }
 
     Reward("Outposts_reward") // NO REWARD
     {
-        Xp(15000);
+        Xp(35000);
 		
     }
 
     Reward("Outposts_Office_reward") // NO REWARD
     {
-        Xp(10000);
+        Xp(20000);
 		
     }
 
     Reward("Outposts_Radio_reward") // NO REWARD
     {
-        Xp(10000);
+        Xp(20000);
 		
     }
 
     Reward("LostInSpace_reward") // NO REWARD Dawud zombie, rescue Sami apartment
     {
-        Xp(15000);
+        Xp(10000);
 		
 		
     }
@@ -498,21 +498,21 @@ sub main()
 
     Reward("FanZone_reward") // NO REWARD
     {
-        Xp(10000);
+        Xp(20000);
         
 		
     }
 
     Reward("TheProphet_reward") // REWARDED Bring night flowers to music house
     {
-        Xp(10000);
+        Xp(20000);
 		Item("Craftplan_Freeze_Upgrade", Color_White, 1, 0); // Freeze Upgrade Craftplan
 
     }
 
     Reward("FindRupert_reward") // REWARDED Super easy meeting rupert at kindergarden
     {
-        Xp(15000);
+        Xp(1000);
 		
 		
     }
@@ -526,30 +526,30 @@ sub main()
 
     Reward("BricksForTheBoy01_reward") // REWARDED 
     {
-        Xp(15000);
+        Xp(5000);
 		
     }
 
     Reward("BricksForTheBoy02_reward") // NO REWARD 
     {
-        Xp(15000);
+        Xp(5000);
     }
 
     Reward("Twins05_reward") // REWARDED Antenna Corner Cave Submarine
     {
-        Xp(15000);
+        Xp(20000);
 		
     }
 
     Reward("Dungeons_reward") // REWARDED super easy go to basement to kill biter
     {
-        Xp(15000);
+        Xp(5000);
 		
     }
 
     Reward("UglyMonster_reward") // REWARDED Kill demolisher
     {
-        Xp(10000);
+        Xp(20000);
 		Item("Craftplan_Burn_Upgrade", Color_Orange, 1, 0); // Burn Upgrade Craftplan
 		
     }
@@ -562,7 +562,7 @@ sub main()
 
     Reward("ChildrenOfMatrix_reward") // REWARDED Alien Rocks Quest
     {
-        Xp(15000);
+        Xp(20000);
         Item("Firearm_ToyGun", Color_White, 1, 0);
 		Item("Craftplan_Impact_Upgrade", Color_Orange, 1, 0); // Impact Upgrade Craftplan
 		
@@ -859,93 +859,93 @@ sub main()
 
     Reward("Gas_Station_Safezone_reward") // NO REWARD
     {
-        Xp(8000);
+        Xp(15000);
     }
 
     Reward("Gas_Station_SafeZone_02_reward") // NO REWARD
     {
-        Xp(8000);
+        Xp(15000);
     }
 
     Reward("Playefield_Safezone_reward") // NO REWARD
     {
-        Xp(8000);
+        Xp(15000);
 		Item("Craft_Electronics", Color_Violet, 2, 0);
     }
 
     Reward("Playefield_Safezone2_reward") // NO REWARD
     {
-        Xp(8000);
+        Xp(15000);
     }
 
     Reward("Construction_Site_Safezone_reward") // NO REWARD
     {
-        Xp(8000);
+        Xp(15000);
     }
 
     Reward("Interior_01_Site_Safezone_reward") // NO REWARD
     {
-        Xp(8000);
+        Xp(15000);
     }
 
     Reward("Interior_02_Site_Safezone_reward") // NO REWARD
     {
-        Xp(8000);
+        Xp(15000);
     }
 
     Reward("Antenna_01_Site_Safezone_reward") // NO REWARD
     {
-        Xp(8000);
+        Xp(15000);
     }
 
     Reward("Tunnel_01_Site_Safezone_reward") // NO REWARD
     {
-        Xp(8000);
+        Xp(20000);
     }
 
     Reward("Bar_Site_Safezone_reward") // NO REWARD
     {
-        Xp(8000);
+        Xp(20000);
     }
 
     Reward("Roof_Site_Safezone_reward") // NO REWARD
     {
-        Xp(8000);
+        Xp(20000);
     }
 
     Reward("Interior_03_Safezone_reward") // NO REWARD
     {
-        Xp(8000);
+        Xp(20000);
     }
 
     Reward("SafeZone_ElectricalSubstation_reward") // NO REWARD
     {
-        Xp(8000);
+        Xp(20000);
     }
 
     Reward("blue_tower_Safezone_reward") // NO REWARD
     {
-        Xp(14000);
+        Xp(20000);
     }
 
     Reward("house_interior01_Safezone_reward") // NO REWARD
     {
-        Xp(8000);
+        Xp(15000);
     }
 
     Reward("house_interior02_Safezone_reward") // NO REWARD
     {
-        Xp(8000);
+        Xp(15000);
     }
 
     Reward("house_interior04_Safezone_reward") // NO REWARD
     {
-        Xp(8000);
+        Xp(15000);
     }
 
     Reward("restaurant_Safezone_reward") // NO REWARD
     {
-        Xp(14000);
+        Xp(20000);
     }
 
 

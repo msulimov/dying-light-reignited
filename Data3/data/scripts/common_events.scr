@@ -40,19 +40,22 @@ Event("AirDrop")
 	Category("Time")
 //	DayTimeCondition(9.95)    // godzina wystepowania - uwaga po kropce nie sa minuty tylko ulamek godziny tzn 19:15 powinna byc zapisana jako 19.25
 //	DayTimeCondition(11.95) // wylaczone po skroceniu dnia do pol godziny
-	DayTimeCondition(15.95)
 //	DayTimeCondition(17.95) // wylaczone po skroceniu dnia do pol godziny
+
+	DayTimeCondition(6.50)
+	DayTimeCondition(15.95)
 
 	DayTimeCondition(21.50)
 	DayTimeCondition(22.75)
 	DayTimeCondition(00.00)
 	DayTimeCondition(1.25)
-	DayTimeCondition(3.78)
-	DayTimeCondition(4.90)
+	DayTimeCondition(2.75)
+	DayTimeCondition(3.5)
+	DayTimeCondition(4.75)
 
 // 	Category("Frequency")
 // 	TimeBtw(5000.)			    // time btw event radnomize [s]
-// 	Probability(60.)			// prawdopodobienstwo ze wylosuje sie event [%]
+// 	Probability(80.)			// prawdopodobienstwo ze wylosuje sie event [%]
 
 	CreatePlace("Air_Drop_Place")
 	{

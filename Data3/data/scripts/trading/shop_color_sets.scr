@@ -207,19 +207,21 @@ sub main()
     ColorSet("cs_WanderingMerchant")
     {
         Color(Color_White,  0);
-        Color(Color_Green,  35);
-        Color(Color_Blue,   55);
-        Color(Color_Violet, 10);
+        Color(Color_Green,  0);
+        Color(Color_Blue,   0);
+        Color(Color_Violet, 0);
         Color(Color_Orange, 0);
+        Color(Color_Platinum, 1);
     }
 	
 	ColorSet("cs_WanderingMerchant_Hard")
     {
         Color(Color_White,  0);
-        Color(Color_Green,  35);
-        Color(Color_Blue,   55);
-        Color(Color_Violet, 10);
-        Color(Color_Orange, 0);
+        Color(Color_Green,  0);
+        Color(Color_Blue,   0);
+        Color(Color_Violet, 0);
+        Color(Color_Orange, 3);
+        Color(Color_Platinum, 1);
     }
 
     ColorSet("cs_blueprints")
@@ -239,14 +241,14 @@ sub main()
         Color(Color_Violet, 0);
         Color(Color_Orange, 0);
     }
-
-    ColorSet("encounter_shop_crafting_materials")
+    ColorSet("encounter_shop_crafting_materials") // color set for upgrades and upgrades_premium
     {
-        Color(Color_White,  40);
-        Color(Color_Green,  30);
-        Color(Color_Blue,   20);
-        Color(Color_Violet, 10);
-        Color(Color_Orange, 00);
+        Color(Color_White,  1);
+        Color(Color_Green,  1);
+        Color(Color_Blue,   1);
+        Color(Color_Violet, 1);
+        Color(Color_Orange, 1);
+        Color(Color_Platinum, 1);
     }
 	ColorSet("promotion_crafting")
     {
