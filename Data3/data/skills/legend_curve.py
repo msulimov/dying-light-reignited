@@ -1,6 +1,6 @@
 from math import e
 
-c = 0
+c = 200000
 L = 510000
 x0 = 42.0
 k = -0.021

@@ -82,7 +82,7 @@ sub main()
     Stat("Aggression")
     {
         Name("AggresiveDamaging");    
-        Points(0.5);  
+        ScreamPoints(0.2);  
         
         Event("Evn_GiveDamage")
         {
@@ -96,7 +96,7 @@ sub main()
     Stat("Aggression")
     {
         Name("AggresiveKIll");    
-        ScreamPoints(1.0);
+        ScreamPoints(0.3);
         
         Event("Evn_Kill")
         {
@@ -266,7 +266,7 @@ sub main()
     Stat("Aggression")
     {
         Name("AggresiveKIll");    
-        Points(0.5); // 0.5                
+        Points(0.5);              
         WhileBtzNotActive();
         WhileVisible();
         //TriggerVisibility();
@@ -283,7 +283,7 @@ sub main()
 	Stat("Aggression")
     {
         Name("AggresiveKIll");    
-        Points(0.5); // 0.5             
+        Points(0.3);           
         WhileBtzNotActive();
         WhileVisible();
         //TriggerVisibility();
@@ -802,8 +802,8 @@ sub aggro_sounds()
 	
     //AggroLevel(level, points_to_get_level, min_time_before_level_drops(s) );    
     AggroLevel(0, 50, 0.0);
-    AggroLevel(1, 75, 15.0);
-    AggroLevel(2, 100, 20.0);
-    AggroLevel(3, 135, 22.0);
-    AggroLevel(4, 160, 25.0);
+    AggroLevel(1, 100, 15.0);
+    AggroLevel(2, 200, 20.0);
+    AggroLevel(3, 300, 22.0);
+    AggroLevel(4, 400, 25.0);
 }

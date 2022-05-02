@@ -13,8 +13,8 @@ sub main()
         Price(42);
         Mesh("blueprint.msh");
         Skin("default");
-        RequiredItem("Craft_Alcohol", 3);
-        RequiredItem("Craft_Gauze", 2);
+        RequiredItem("Craft_Alcohol", 2);
+        RequiredItem("Craft_Gauze", 3);
         RequiredItem("Craft_Sugar", 1);
         RequiredItem("Craft_String", 2);
         RequiredItem("Craft_PlasticTube", 2);
@@ -53,7 +53,7 @@ sub main()
         Mesh("blueprint.msh");
         Skin("default");
 		RequiredItem("Craft_DuctTape", 2);
-        RequiredItem("Craft_Bleach", 3);
+        RequiredItem("Craft_Bleach", 2);
 		RequiredItem("Craft_Alcohol", 2);
         RequiredItem("Craft_Sugar", 1);
 		RequiredItem("Craft_PlasticTube", 2);
@@ -113,10 +113,10 @@ sub main()
         Price(40);
         Mesh("blueprint.msh");
         Skin("default");
-        RequiredItem("Craft_Alcohol", 2);
+        RequiredItem("Craft_Alcohol", 1);
         RequiredItem("Craft_Bleach", 1);
         RequiredItem("Craft_Sugar", 1);
-		RequiredItem("Craft_DuctTape", 3);
+		RequiredItem("Craft_DuctTape", 2);
 		RequiredItem("Craft_TinCan", 2);
         Color(Color_Blue);
         CraftedItem("ZZZZ_Throwable_WaterDLC", 4, 6);
@@ -136,8 +136,8 @@ sub main()
         Mesh("blueprint.msh");
         Skin("default");
         RequiredItem("Craft_Alcohol", 3);
-		RequiredItem("Craft_Insecticide", 3);
-        RequiredItem("Craft_Bleach", 2);
+		RequiredItem("Craft_Insecticide", 2);
+        RequiredItem("Craft_Bleach", 1);
         RequiredItem("Craft_Sugar", 1);
 		RequiredItem("Craft_PlasticTube", 2);
 		RequiredItem("Craft_MetalScrap", 2);
@@ -161,9 +161,9 @@ sub main()
         Mesh("blueprint.msh");
         Skin("default");
         RequiredItem("Throwable_Molotov", 6);
-		RequiredItem("Craft_Alcohol", 3);
-		RequiredItem("Craft_Insecticide", 2);
-        RequiredItem("Craft_Bleach", 2);
+		RequiredItem("Craft_Alcohol", 2);
+		RequiredItem("Craft_Insecticide", 1);
+        RequiredItem("Craft_Bleach", 1);
 		RequiredItem("Craft_Bleach", 1);
 		RequiredItem("Craft_String", 2);
 		RequiredItem("Craft_PlasticTube", 1);

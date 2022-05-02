@@ -36,12 +36,12 @@ sub main()
 
     Reward("StorylineReward_NaturalMovementTutorial_reward")
     {
-        Xp(2000);
+        Xp(5000);
     }
 
     Reward("StorylineReward_GoingOutside_reward")
     {
-        Xp(4000);
+        Xp(10000);
     }
 
     Reward("StorylineReward_Blackout_reward")
@@ -51,12 +51,12 @@ sub main()
 
     Reward("StorylineReward_Airdrop_reward")
     {
-        Xp(40000);
+        Xp(50000);
     }
 
     Reward("StorylineReward_Airdrop_LittleGirl_reward")
     {
-        Xp(15000);
+        Xp(35000);
     }
 
     Reward("StorylineReward_PactWithRais_reward")

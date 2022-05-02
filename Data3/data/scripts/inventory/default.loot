@@ -22,10 +22,10 @@ sub Loot()
         ColorSet(ColorSet_Default);
         use Empty(weight = 15.0);
         use QuestItems_Wardrobe(weight = 0.01);
-        use Crafting_Wardrobe(weight = 1.5);
+        use Crafting_Wardrobe(weight = 2.5);
         use Consumable_Healing(weight = 2.0);
         use Valuables_Default(weight = 4.0);
-		use Firecrackers(weight = 0.15);
+		use Firecrackers(weight = 0.5);
     }
 
     LootedObject("Locker") // locked locker

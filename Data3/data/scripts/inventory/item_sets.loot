@@ -40,6 +40,7 @@ export int Other = 9;
         {
             Item("Craft_Alcohol", 1.0);
             Item("Craft_Sugar", 3.0);
+            Item("Craft_String", 2.0);
             
             Item("Craft_Insecticide", 1.0);
             Item("Craft_DuctTape", 2.0);
@@ -96,6 +97,7 @@ export int Other = 9;
             Item("Craft_Alcohol", 1.0);
             Item("Craft_PlasticTube", 2.0);
             Item("Craft_Sugar", 2.0);
+            Item("Craft_String", 1.0);
             
             Item("Craft_Gauze", 1.0);
         }
@@ -174,6 +176,7 @@ export int Other = 9;
             Item("Craft_Alcohol", 1.0);
             
             Item("Craft_TinCan", 1.0);
+            Item("Craft_String", 1.0);
             Item("ZZZZ3_Component_Rubber", 0.2);
             Item("Craft_DuctTape", 1.0);
             
@@ -273,6 +276,7 @@ export int Other = 9;
 
             Item("Craft_Insecticide", 1.0);
             Item("Craft_Gauze", 1.0);
+            Item("Craft_String", 1.0);
             Item("Craft_DuctTape", 2.0);
             
             Item("Craft_Nails", 0.5);
