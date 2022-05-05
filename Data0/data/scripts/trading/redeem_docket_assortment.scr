@@ -516,7 +516,9 @@ sub main()
 	
 	Docket("G55")
     {      
-	
+			Set("Liveops_Craftplan_Slot_Machine",          "premium_dockets",   1, 1)
+        {
+        }
     }
 	
 	Docket("G56")

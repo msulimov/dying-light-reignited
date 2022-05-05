@@ -9,11 +9,24 @@ sub main()
 	Image("splashscreen_square_spike_2");
 	Image("splashscreen_square_spike_3");
 	
+	Image("splashscreen_square_egghunt");
+	Image("splashscreen_square_double_xp");
+	Image("splashscreen_square_supercrane");
+	Image("splashscreen_square_carnage");
+	Image("splashscreen_square_halloween_2020");
+	Image("splashscreen_square_air_drops");
+	Image("splashscreen_square_viral_rush");
+	Image("splashscreen_square_rust");
+	Image("splashscreen_square_low_gravity");
+	Image("splashscreen_square_left4dead2");
+	Image("splashscreen_square_hypermode");
+	Image("splashscreen_square_tolgaandfatin");
+	
 	// Add all graphics for gathering
 
 	// Launch event
 	ContinueButtonEnabled(false); // Don't change this on repo, enable this via PLS!
 	EventSectionEnabled(false); // Don't change this on repo, enable this via PLS!
 	EventEndDate("08.11.2021");	// Example
-	EventImage("splashscreen_square_halloween_2021"); // Example
+	EventImage("splashscreen_square_tolgaandfatin"); // Example
 }

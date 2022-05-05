@@ -37,11 +37,11 @@ sub main()
         Price(6400);
         Mesh("blueprint.msh");
         Skin("default");
-        RequiredItem("Craft_Bleach", 3);
-        RequiredItem("Craft_Shroom", 5);
-        RequiredItem("Craft_TinCan", 3);
+        RequiredItem("Craft_Bleach", 1);
+        RequiredItem("Craft_Shroom", 2);
+        RequiredItem("Craft_TinCan", 1);
         Color(Color_Blue);
-        CraftedItem("Bullet_Grenade_Launcher_Freeze", 1, 6);
+        CraftedItem("Bullet_Grenade_Launcher_Freeze", 3, 6);
         CraftplanType("Collectables_DLC65");
         UniqueSaveID(10008);
 		OwnedAtStart();

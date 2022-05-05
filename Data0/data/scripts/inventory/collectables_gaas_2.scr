@@ -658,4 +658,44 @@ sub main()
         HudIcon("blueprint_b");
 		GameVersion(47);
     }
+	
+	Item("Craftplan_Moka_Weapon", CategoryType_Collectable)
+    {
+		Name("&Craftplan_Moka_Weapon_N&");
+        Description('&Craftplan_Moka_Weapon_D&');
+        ItemType(ItemType_CraftPlan);
+        Price(6400);
+        Mesh("blueprint.msh");
+		UniqueSaveID(100018);
+        Skin("default");
+		RequiredItem("Craft_MetalScrap", 3);
+		RequiredItem("Craft_RazorBlade", 3);
+        Color(Color_Platinum);
+        CraftedItem("Moka_Weapon", 1, 1);
+		CraftplanType("Developer");
+        HudIcon("blueprint_a"); 
+		GameVersion(49);
+    }
+	
+	Item("Craftplan_Slot_Machine", CategoryType_Collectable)
+    {
+        Name("&Craftplan_Slot_Machine_N&");
+        Description('&Craftplan_Slot_Machine_D&');
+        ItemType(ItemType_CraftPlan);
+        Price(6400);
+        Mesh("blueprint.msh");
+        Skin("default");
+		BaseItem("Firearm_Pistol", "", "");
+		RequiredItem("Craft_PowerCable", 4);
+		RequiredItem("Craft_Electronics", 4);
+        RequiredItem("Craft_Batteries", 4);
+		RequiredItem("Craft_MetalScrap", 8);
+		InheritBaseStats();
+        Color(Color_Platinum);
+        CraftedItem("Slot_Machine", 1, 1);
+        CraftplanType("Developer");
+        UniqueSaveID(100019);
+        HudIcon("blueprint_a");
+		GameVersion(49);
+    }
 }

@@ -702,3 +702,31 @@ SeqTrack("FPP_Shotgun_PA_DodgeBack",			"M_FPP_Shotgun_Dodge_Back.anm2", 		0, 30,
 	Event(5, JUMP_PUSH_OFF, -1)
 	Event(13, END_ANIMATION, 1)
 }
+
+SeqTrack("FPP_Chainsaw_DodgeLeft", "FPP_Chainsaw_DodgeLeft.anm2", 0, 30, 45, 1, 0.1)
+{
+    Event(0, 0, 1)
+    {
+        PlaySound23D(GameVolumeSource_SoundPlayer, "clothes_wall_jump_right.wav", 1, 3, "head", 1, [0, 0, 0], 0)
+    }
+    Event(5, JUMP_PUSH_OFF, -1)
+        Event(18, END_ANIMATION, 1)
+}
+SeqTrack("FPP_Chainsaw_DodgeRight", "FPP_Chainsaw_DodgeRight.anm2", 0, 30, 45, 1, 0.1)
+{
+    Event(0, 0, 1)
+    {
+        PlaySound23D(GameVolumeSource_SoundPlayer, "clothes_wall_jump_left.wav", 1, 3, "head", 1, [0, 0, 0], 0)
+    }
+    Event(5, JUMP_PUSH_OFF, -1)
+        Event(18, END_ANIMATION, 1)
+}
+SeqTrack("FPP_Chainsaw_DodgeBack", "FPP_Chainsaw_DodgeBack.anm2", 0, 30, 30, 1, 0.1)
+{
+    Event(0, 0, 1)
+    {
+        PlaySound23D(GameVolumeSource_SoundPlayer, "clothes_wall_jump_left.wav", 1, 3, "head", 1, [0, 0, 0], 0)
+    }
+    Event(5, JUMP_PUSH_OFF, -1)
+        Event(13, END_ANIMATION, 1)
+}

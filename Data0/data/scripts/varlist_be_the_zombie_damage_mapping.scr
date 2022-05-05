@@ -599,8 +599,8 @@ VarFloat("f_btz_Rocket_headshot_on_brood_max_hits", 2.9)
 VarFloat("f_btz_Rocket_headshot_on_brood_damage_for_min", 1)
 VarFloat("f_btz_Rocket_headshot_on_brood_damage_for_max", 0.1)
 
-VarFloat("f_btz_Arrow_on_brood_min_hits", 0.18) 
-VarFloat("f_btz_Arrow_on_brood_max_hits", 0.18) 
+VarFloat("f_btz_Arrow_on_brood_min_hits", 0.32) 
+VarFloat("f_btz_Arrow_on_brood_max_hits", 0.32) 
 VarFloat("f_btz_Arrow_on_brood_damage_for_min", 250.0)
 VarFloat("f_btz_Arrow_on_brood_damage_for_max", 20.0)
 
@@ -619,8 +619,8 @@ VarFloat("f_btz_SubMachine_headshot_on_brood_max_hits", 1.6)
 VarFloat("f_btz_SubMachine_headshot_on_brood_damage_for_min", 150.0)
 VarFloat("f_btz_SubMachine_headshot_on_brood_damage_for_max", 15.0)
 
-VarFloat("f_btz_bolt_on_brood_min_hits", 0.18) 
-VarFloat("f_btz_bolt_on_brood_max_hits", 0.18) 
+VarFloat("f_btz_bolt_on_brood_min_hits", 0.32) 
+VarFloat("f_btz_bolt_on_brood_max_hits", 0.32) 
 VarFloat("f_btz_bolt_on_brood_damage_for_min", 250.0)
 VarFloat("f_btz_bolt_on_brood_damage_for_max", 20.0)
 
@@ -638,8 +638,8 @@ VarFloat("f_btz_bolt_headshot_on_brood_damage_for_max", 20)
 ////////////////////////////////
 
 //brood tackle/////
-VarFloat("f_btz_tackle_on_brood_min_hits", 13.0) 
-VarFloat("f_btz_tackle_on_brood_max_hits", 13.0) 
+VarFloat("f_btz_tackle_on_brood_min_hits", 18.0) 
+VarFloat("f_btz_tackle_on_brood_max_hits", 18.0) 
 VarFloat("f_btz_tackle_on_brood_damage_for_min", 40.0)
 VarFloat("f_btz_tackle_on_brood_damage_for_max", 3.0)
 
@@ -656,20 +656,20 @@ VarFloat("f_btz_blast_lethal_on_brood_damage_for_min", 100.0)
 VarFloat("f_btz_blast_lethal_on_brood_damage_for_max", 2.0) 
 
 //brood mine/////
-VarFloat("f_btz_mine_on_brood_min_hits", 5.5) 
-VarFloat("f_btz_mine_on_brood_max_hits", 5.5)  
+VarFloat("f_btz_mine_on_brood_min_hits", 200.0) 
+VarFloat("f_btz_mine_on_brood_max_hits", 200.0)  
 VarFloat("f_btz_mine_on_brood_damage_for_min", 100.0)
 VarFloat("f_btz_mine_on_brood_damage_for_max", 2.0) 
 
 //brood kick/////
-VarFloat("f_btz_kick_on_brood_min_hits", 20.0)
-VarFloat("f_btz_kick_on_brood_max_hits", 20.0)
+VarFloat("f_btz_kick_on_brood_min_hits", 30.0)
+VarFloat("f_btz_kick_on_brood_max_hits", 30.0)
 VarFloat("f_btz_kick_on_brood_damage_for_min", 5.0)
 VarFloat("f_btz_kick_on_brood_damage_for_max", 5.0)
 
 //brood ram (dropkick)/////
-VarFloat("f_btz_ram_on_brood_min_hits", 7.0)
-VarFloat("f_btz_ram_on_brood_max_hits", 7.0)
+VarFloat("f_btz_ram_on_brood_min_hits", 14.0)
+VarFloat("f_btz_ram_on_brood_max_hits", 14.0)
 VarFloat("f_btz_ram_on_brood_damage_for_min", 5.0)
 VarFloat("f_btz_ram_on_brood_damage_for_max", 5.0)
 
@@ -680,8 +680,8 @@ VarFloat("f_btz_blunt_on_brood_damage_for_min", 500.0)
 VarFloat("f_btz_blunt_on_brood_damage_for_max", 1.0)
 
 //brood fist/////
-VarFloat("f_btz_fist_on_brood_min_hits", 20.0) 
-VarFloat("f_btz_fist_on_brood_max_hits", 20.0) 
+VarFloat("f_btz_fist_on_brood_min_hits", 33.0) 
+VarFloat("f_btz_fist_on_brood_max_hits", 33.0) 
 VarFloat("f_btz_fist_on_brood_damage_for_min", 20.0)
 VarFloat("f_btz_fist_on_brood_damage_for_max", 5.0)
 
@@ -692,8 +692,8 @@ VarFloat("f_btz_charge_fist_on_brood_damage_for_max", 20.0)
 
 
 //brood stick/////
-VarFloat("f_btz_stick_on_brood_min_hits", 18.0) 
-VarFloat("f_btz_stick_on_brood_max_hits", 18.0) 
+VarFloat("f_btz_stick_on_brood_min_hits", 24.0) 
+VarFloat("f_btz_stick_on_brood_max_hits", 24.0) 
 VarFloat("f_btz_stick_on_brood_damage_for_min", 600.0)
 VarFloat("f_btz_stick_on_brood_damage_for_max", 30.0)
 
@@ -714,8 +714,8 @@ VarFloat("f_btz_throw_stick_on_brood_damage_for_max", 30.0)
 
 
 //brood knife/////
-VarFloat("f_btz_knife_on_brood_min_hits", 30.0) 
-VarFloat("f_btz_knife_on_brood_max_hits", 30.0) 
+VarFloat("f_btz_knife_on_brood_min_hits", 25.0) 
+VarFloat("f_btz_knife_on_brood_max_hits", 25.0) 
 VarFloat("f_btz_knife_on_brood_damage_for_min", 90.0)
 VarFloat("f_btz_knife_on_brood_damage_for_max", 20.0)
 
@@ -748,13 +748,13 @@ VarFloat("f_btz_throw_stick2close_on_brood_damage_for_max", 100.0)
 
 
 //brood stick2heavy/////
-VarFloat("f_btz_stick2heavy_on_brood_min_hits", 10.0) 
-VarFloat("f_btz_stick2heavy_on_brood_max_hits", 10.0) 
+VarFloat("f_btz_stick2heavy_on_brood_min_hits", 13.0) 
+VarFloat("f_btz_stick2heavy_on_brood_max_hits", 13.0) 
 VarFloat("f_btz_stick2heavy_on_brood_damage_for_min", 500.0)
 VarFloat("f_btz_stick2heavy_on_brood_damage_for_max", 40.0)
 
-VarFloat("f_btz_charge_stick2heavy_on_brood_min_hits", 5.0) 
-VarFloat("f_btz_charge_stick2heavy_on_brood_max_hits", 5.0) 
+VarFloat("f_btz_charge_stick2heavy_on_brood_min_hits", 10.0) 
+VarFloat("f_btz_charge_stick2heavy_on_brood_max_hits", 10.0) 
 VarFloat("f_btz_charge_stick2heavy_on_brood_damage_for_min", 600.0)
 VarFloat("f_btz_charge_stick2heavy_on_brood_damage_for_max", 70.0)  
 
@@ -780,8 +780,8 @@ VarFloat("f_btz_throw_gnome_on_brood_damage_for_min", 150.0)
 VarFloat("f_btz_throw_gnome_on_brood_damage_for_max", 40.0)
 
 //brood thrower////
-VarFloat("f_btz_throw_thrower_on_brood_min_hits", 200.0) 
-VarFloat("f_btz_throw_thrower_on_brood_max_hits", 200.0) // explosive throwing start does low is throw damage but then also explodes. to make it not ridiculously over powered make the throw damage do very little
+VarFloat("f_btz_throw_thrower_on_brood_min_hits", 8.5) 
+VarFloat("f_btz_throw_thrower_on_brood_max_hits", 10.5) // explosive throwing start does low is throw damage but then also explodes. to make it not ridiculously over powered make the throw damage do very little
 VarFloat("f_btz_throw_thrower_on_brood_damage_for_min", 120.0)
 VarFloat("f_btz_throw_thrower_on_brood_damage_for_max", 80.0)
 
@@ -801,14 +801,14 @@ VarFloat("f_btz_impact_buggy_on_brood_damage_for_max", 5.0)
 // Brood impact /// 
 VarFloat("f_btz_impact_dps_on_brood_min_hits", 2000.0) 
 VarFloat("f_btz_impact_dps_on_brood_max_hits", 2000.0) 
-VarFloat("f_btz_impact_dps_on_brood_damage_for_min", 30.0)
-VarFloat("f_btz_impact_dps_on_brood_damage_for_max", 5.0)
+VarFloat("f_btz_impact_dps_on_brood_damage_for_min", 400.0)
+VarFloat("f_btz_impact_dps_on_brood_damage_for_max", 20.0)
 
 // Brood electric /// 
 VarFloat("f_btz_electric_dps_on_brood_min_hits", 2000.0) 
 VarFloat("f_btz_electric_dps_on_brood_max_hits", 2000.0) 
-VarFloat("f_btz_electric_dps_on_brood_damage_for_min", 30.0)
-VarFloat("f_btz_electric_dps_on_brood_damage_for_max", 5.0)
+VarFloat("f_btz_electric_dps_on_brood_damage_for_min", 400.0)
+VarFloat("f_btz_electric_dps_on_brood_damage_for_max", 20.0)
 
 // Brood electric_buggy /// 
 VarFloat("f_btz_electric_buggy_on_brood_min_hits", 80.0) 
@@ -817,16 +817,16 @@ VarFloat("f_btz_electric_buggy_on_brood_damage_for_min", 30.0)
 VarFloat("f_btz_electric_buggy_on_brood_damage_for_max", 5.0)
 
 // Brood bleeding /// 
-VarFloat("f_btz_bleeding_dps_on_brood_min_hits", 2000.0) 
-VarFloat("f_btz_bleeding_dps_on_brood_max_hits", 2000.0) 
-VarFloat("f_btz_bleeding_dps_on_brood_damage_for_min", 30.0)
-VarFloat("f_btz_bleeding_dps_on_brood_damage_for_max", 5.0)
+VarFloat("f_btz_bleeding_dps_on_brood_min_hits", 200.0) 
+VarFloat("f_btz_bleeding_dps_on_brood_max_hits", 200.0) 
+VarFloat("f_btz_bleeding_dps_on_brood_damage_for_min", 400.0)
+VarFloat("f_btz_bleeding_dps_on_brood_damage_for_max", 20.0)
 
 // Brood fire /// 
 VarFloat("f_btz_fire_dps_on_brood_min_hits", 2000.0) 
 VarFloat("f_btz_fire_dps_on_brood_max_hits", 2000.0) 
-VarFloat("f_btz_fire_dps_on_brood_damage_for_min", 40.0)
-VarFloat("f_btz_fire_dps_on_brood_damage_for_max", 5.0)
+VarFloat("f_btz_fire_dps_on_brood_damage_for_min", 400.0)
+VarFloat("f_btz_fire_dps_on_brood_damage_for_max", 20.0)
 
 // Brood fire_buggy /// 
 VarFloat("f_btz_fire_buggy_on_brood_min_hits", 35.0) 
@@ -837,20 +837,20 @@ VarFloat("f_btz_fire_buggy_on_brood_damage_for_max", 5.0)
 // Brood poison /// 
 VarFloat("f_btz_poison_dps_on_brood_min_hits", 300.0) 
 VarFloat("f_btz_poison_dps_on_brood_max_hits", 300.0) 
-VarFloat("f_btz_poison_dps_on_brood_damage_for_min", 30.0)
-VarFloat("f_btz_poison_dps_on_brood_damage_for_max", 5.0)
+VarFloat("f_btz_poison_dps_on_brood_damage_for_min", 400.0)
+VarFloat("f_btz_poison_dps_on_brood_damage_for_max", 20.0)
 
 // Brood toxic /// 
 VarFloat("f_btz_toxic_dps_on_brood_min_hits", 2000.0) 
 VarFloat("f_btz_toxic_dps_on_brood_max_hits", 2000.0) 
-VarFloat("f_btz_toxic_dps_on_brood_damage_for_min", 30.0)
-VarFloat("f_btz_toxic_dps_on_brood_damage_for_max", 5.0)
+VarFloat("f_btz_toxic_dps_on_brood_damage_for_min", 400.0)
+VarFloat("f_btz_toxic_dps_on_brood_damage_for_max", 20.0)
 
 // Brood cold /// 
 VarFloat("f_btz_cold_dps_on_brood_min_hits", 2000.0) 
 VarFloat("f_btz_cold_dps_on_brood_max_hits", 2000.0) 
-VarFloat("f_btz_cold_dps_on_brood_damage_for_min", 30.0)
-VarFloat("f_btz_cold_dps_on_brood_damage_for_max", 5.0)
+VarFloat("f_btz_cold_dps_on_brood_damage_for_min", 400.0)
+VarFloat("f_btz_cold_dps_on_brood_damage_for_max", 20.0)
 
 //brood mod dps//// 
 // keep these values at 1 so that it maps to the max hit dps. this allows for things like molotovs todo a little more damage with keeping modded weapon damage on par with non modded weapons
@@ -865,10 +865,10 @@ VarFloat("f_btz_unknown_mod_dps_on_brood", 1.0)
 
 
 //brood buggy////
-VarFloat("f_btz_buggy_on_brood_min_hits", 1.9) 
-VarFloat("f_btz_buggy_on_brood_max_hits", 3.9) 
-VarFloat("f_btz_buggy_on_brood_damage_for_min", 40.0)
-VarFloat("f_btz_buggy_on_brood_damage_for_max", 5.0)
+VarFloat("f_btz_buggy_on_brood_min_hits", 2.5) 
+VarFloat("f_btz_buggy_on_brood_max_hits", 2.5) 
+VarFloat("f_btz_buggy_on_brood_damage_for_min", 400.0)
+VarFloat("f_btz_buggy_on_brood_damage_for_max", 20.0)
 
 ////////////////////////////////
 ////////////Thug////////////////

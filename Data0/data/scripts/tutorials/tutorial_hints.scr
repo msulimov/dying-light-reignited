@@ -430,6 +430,42 @@ sub main()
 		DontShowInMenu();
 		IsTutorialLevel();
     }
+	
+	//First Shrine
+	
+	CustomHint("Tutorial_TimeFreeze_Hellraid_FirstShrine")
+    {
+        TextTitle("TutN_TimeFreeze_Hellraid_FirstShrine");
+        TextBody("Tut_TimeFreeze_Hellraid_FirstShrine");
+        
+		IsTutorialLevel();
+		TimeFreezing();
+		
+		DisableShownTimes(1);
+        ShowDelayTime(0);
+		
+        HintDisplayType(EHintDisplayType_TextureTop);
+        DontShowOnLoadingScreen();
+		ForceShowInMenu();
+    }
+	
+	//First Crystal
+	
+	CustomHint("Tutorial_TimeFreeze_Hellraid_FirstCrystal")
+    {
+        TextTitle("TutN_TimeFreeze_Hellraid_FirstCrystal");
+        TextBody("Tut_TimeFreeze_Hellraid_FirstCrystal");
+        
+		IsTutorialLevel();
+		TimeFreezing();
+		
+		DisableShownTimes(1);
+        ShowDelayTime(0);
+		
+        HintDisplayType(EHintDisplayType_TextureTop);
+        DontShowOnLoadingScreen();
+		ForceShowInMenu();
+    }
 
 	CustomHint("Tutorial_TimeFreeze_Hellraid_FinishScreen")
     {
@@ -498,6 +534,25 @@ sub main()
 		
         TextTitle("TutN_Hellraid_WandIntro");
         TextBody("Tut_Hellraid_WandIntro");
+		
+		IsTutorialLevel();
+		TimeFreezing();
+		
+		DisableShownTimes(1);
+        ShowDelayTime(0);
+		
+        HintDisplayType(EHintDisplayType_TextureTop);
+        DontShowOnLoadingScreen();
+		ForceShowInMenu();
+    }
+	
+	CustomHint("Tutorial_TimeFreeze_Hellraid_FirstWelcomeScreen")
+    {
+        use Params(category = ETutorialCategory_Gameplay);
+		
+        TextTitle("TutN_Hellraid_FirstWelcomeScreen");
+        TextBody("Tut_Hellraid_FirstWelcomeScreen"); //intro
+		TextBody("Tut_Hellraid_FirstWelcomeScreen_2"); //Welcome to Hellraid
 		
 		IsTutorialLevel();
 		TimeFreezing();

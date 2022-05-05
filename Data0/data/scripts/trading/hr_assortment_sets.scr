@@ -176,7 +176,7 @@ sub Hellraid_Items_Shop()
 	Set("Hr_Shop_Level_11", "blue_only", 3, 3)
     {
 		MinHellraidLevel(10);
-		MaxStatusLevel(24);
+		//MaxStatusLevel(24); removed to keep blue variant when player reaches more than 24 lvl
     }
 	Set("Hr_Shop_Level_12", "blue_only", 3, 3)
     {
@@ -187,6 +187,97 @@ sub Hellraid_Items_Shop()
     {
 		MinHellraidLevel(12);
 		MaxStatusLevel(24);
+    }
+	
+	Set("Hr_Shop_WandTrials", "violet_only", 2, 2)
+    {
+		RequiredItem("Collectable_Wand_Unlocker");
+    }
+		
+	Set("Hr_Shop_WandTrials_DK", "violet_only", 2, 2)
+    {
+		RequiredItem("Collectable_Wand_Unlocker_DarkKnight");
+    }
+	
+	Set("Hr_Shop_Hellraid_Blueprint", "Platinum_only", 2, 2)
+    {
+		RequiredItem("Collectable_Shotgun_Unlocker");
+    }
+	
+	/////////////////////////////////////////////////////
+	/////////////// BLUEPRINT PIECES SALES //////////////
+	/////////////////////////////////////////////////////
+	
+	Set("Hr_Piece_Level_1", "orange_only", 2, 2)
+    {
+		MinHellraidLevel(0);
+		RequiredItem("Craftplan_HRSword_R1_SHOP");
+    }
+	
+	Set("Hr_Piece_Level_2", "orange_only", 2, 2)
+    {
+		MinHellraidLevel(1);
+		RequiredItem("Craftplan_HRKhopesh_R2_SHOP");
+    }
+	
+	Set("Hr_Piece_Level_3", "orange_only", 2, 2)
+    {
+		MinHellraidLevel(2);
+		RequiredItem("Craftplan_HRScepter_R3_SHOP");
+    }
+	
+	Set("Hr_Piece_Level_4", "orange_only", 2, 2)
+    {
+		MinHellraidLevel(3);
+		RequiredItem("Craftplan_HRShortAxe_R4_SHOP");
+    }
+	
+	Set("Hr_Piece_Level_5", "orange_only", 2, 2)
+    {
+		MinHellraidLevel(4);
+		RequiredItem("Craftplan_HRMace_R5_SHOP");
+    }
+	
+	Set("Hr_Piece_Level_6", "orange_only", 2, 2)
+    {
+		MinHellraidLevel(5);
+		RequiredItem("Craftplan_HRSword_R6_SHOP");
+    }
+	
+	Set("Hr_Piece_Level_7", "orange_only", 2, 2)
+    {
+		MinHellraidLevel(6);
+		RequiredItem("Craftplan_HRLongSword_R7_SHOP");
+    }
+	
+	Set("Hr_Piece_Level_8", "orange_only", 2, 2)
+    {
+		MinHellraidLevel(7);
+		RequiredItem("Craftplan_HRBigAxe_R8_SHOP");
+    }
+	
+	Set("Hr_Piece_Level_9", "orange_only", 2, 2)
+    {
+		MinHellraidLevel(8);
+		RequiredItem("Craftplan_HRHammer_R9_SHOP");
+    }
+	
+	Set("Hr_Piece_Level_10", "orange_only", 2, 2)
+    {
+		MinHellraidLevel(9);
+		RequiredItem("Craftplan_HRBigAxe_R10_SHOP");
+    }
+	
+	Set("Hr_Piece_Level_12", "orange_only", 2, 2)
+    {
+		MinHellraidLevel(11);
+		RequiredItem("Craftplan_HRMace_R12_SHOP");
+    }
+	
+	Set("Hr_Piece_Level_13", "orange_only", 2, 2)
+    {
+		MinHellraidLevel(12);
+		RequiredItem("Craftplan_HRBigHammer_R13_SHOP");
     }
 	
 	/////////////////////////////////////////////////////

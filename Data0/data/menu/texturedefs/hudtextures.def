@@ -668,8 +668,14 @@ Texture("hint_Tutorial_Hints_TimeFreeze_PrologueNM.dds", 1024, 256)
 
 // HELLRAID DLC
 
-//First Shrine
+//First Crystal
 
+Texture("hint_Tutorial_TimeFreeze_Hellraid_FirstCrystal.dds", 1024, 256)
+{
+    Whole("hint_tutorial_timefreeze_hellraid_firstcrystal") // 1024 x  256
+}
+
+//First Shrine
 
 Texture("hint_Tutorial_TimeFreeze_Hellraid_FirstShrine.dds", 1024, 256)
 {
@@ -3039,6 +3045,11 @@ Texture("hint_Tutorial_TimeFreeze_Outfit_30th_anniversary.dds", 512, 512)
     Whole("hint_Tutorial_TimeFreeze_Outfit_30th_anniversary") // 512 x  512
 }
 
+Texture("hint_Tutorial_TimeFreeze_Outfit_dieselpunk.dds", 512, 512)
+{
+    Whole("hint_Tutorial_TimeFreeze_Outfit_dieselpunk") // 512 x  512
+}
+
 Texture("dlc_white_death_bundle.dds", 512, 512)
 {
     Whole("dlc_white_death_bundle") //  512 x  512
@@ -3311,6 +3322,11 @@ Texture("dlc_new_section_snow_ops.dds", 1024, 1024)
     Whole("dlc_new_section_snow_ops") //  1024 x  1024
 }
 
+Texture("dlc_new_section_dieselpunk.dds", 1024, 1024)
+{
+    Whole("dlc_new_section_dieselpunk") //  1024 x  1024
+}
+
 // New dlc images black-white
 
 Texture("dlc_new_section_white_death_bundle_bw.dds", 1024, 1024)
@@ -3496,6 +3512,11 @@ Texture("dlc_new_section_van_crane_bw.dds", 1024, 1024)
 Texture("dlc_new_section_snow_ops_bw.dds", 1024, 1024)
 {
     Whole("dlc_new_section_snow_ops_bw") //  1024 x  1024
+}
+
+Texture("dlc_new_section_dieselpunk_bw.dds", 1024, 1024)
+{
+    Whole("dlc_new_section_dieselpunk_bw") //  1024 x  1024
 }
 
 //SplashScreenSTART
@@ -3799,6 +3820,46 @@ Texture("splash_DL2_2.dds", 1280, 480)
 	Whole("splash_DL2_2")
 }
 
+Texture("splashscreen_egghunt.dds", 1280, 480)
+{
+	Whole("splashscreen_egghunt")
+}
+
+Texture("splashscreen_supercrane.dds", 1280, 480)
+{
+	Whole("splashscreen_supercrane")
+}
+
+Texture("splashscreen_dl1_basic.dds", 1280, 480)
+{
+	Whole("splashscreen_dl1_basic")
+}
+
+Texture("splashscreen_air_drops.dds", 1280, 480)
+{
+	Whole("splashscreen_air_drops")
+}
+
+Texture("splashscreen_techland.dds", 1280, 480)
+{
+	Whole("splashscreen_techland")
+}
+
+Texture("splashscreen_thankyou_end.dds", 1280, 480)
+{
+	Whole("splashscreen_thankyou_end")
+}
+
+Texture("splashscreen_tolgaandfatin.dds", 1280, 480)
+{
+	Whole("splashscreen_tolgaandfatin")
+}
+
+Texture("splashscreen_dieselpunk.dds", 1280, 480)
+{
+	Whole("splashscreen_dieselpunk")
+}
+
 //SplashScreenEND
 
 //SquaredSplashScreenSTART
@@ -3831,6 +3892,66 @@ Texture("splashscreen_square_spike_2.dds", 1024, 1024)
 Texture("splashscreen_square_spike_3.dds", 1024, 1024)
 {
 	Whole("splashscreen_square_spike_3")
+}
+
+Texture("splashscreen_square_egghunt.dds", 1024, 1024)
+{
+	Whole("splashscreen_square_egghunt")
+}
+
+Texture("splashscreen_square_double_xp.dds", 1024, 1024)
+{
+	Whole("splashscreen_square_double_xp")
+}
+
+Texture("splashscreen_square_supercrane.dds", 1024, 1024)
+{
+	Whole("splashscreen_square_supercrane")
+}
+
+Texture("splashscreen_square_carnage.dds", 1024, 1024)
+{
+	Whole("splashscreen_square_carnage")
+}
+
+Texture("splashscreen_square_halloween_2020.dds", 1024, 1024)
+{
+	Whole("splashscreen_square_halloween_2020")
+}
+
+Texture("splashscreen_square_air_drops.dds", 1024, 1024)
+{
+	Whole("splashscreen_square_air_drops")
+}
+
+Texture("splashscreen_square_viral_rush.dds", 1024, 1024)
+{
+	Whole("splashscreen_square_viral_rush")
+}
+
+Texture("splashscreen_square_rust.dds", 1024, 1024)
+{
+	Whole("splashscreen_square_rust")
+}
+
+Texture("splashscreen_square_low_gravity.dds", 1024, 1024)
+{
+	Whole("splashscreen_square_low_gravity")
+}
+
+Texture("splashscreen_square_left4dead2.dds", 1024, 1024)
+{
+	Whole("splashscreen_square_left4dead2")
+}
+
+Texture("splashscreen_square_hypermode.dds", 1024, 1024)
+{
+	Whole("splashscreen_square_hypermode")
+}
+
+Texture("splashscreen_square_tolgaandfatin.dds", 1024, 1024)
+{
+	Whole("splashscreen_square_tolgaandfatin")
 }
 
 //SquaredSplashScreenEND

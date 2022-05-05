@@ -130,5 +130,8 @@ Description("f_game_postprocess_effect_7", "f:EDIT;e:EDIT|SLIDER;m:0.0;x:1.0;s:0
 Description("f_game_postprocess_effect_8", "f:EDIT;e:EDIT|SLIDER;m:0.0;x:1.0;s:0.01;c:Postprocess effect ;d:!!! DON'T ADD THIS TO LEVEL VARLIST !!!;")
 Description("f_game_postprocess_effect_9", "f:EDIT;e:EDIT|SLIDER;m:0.0;x:1.0;s:0.01;c:Postprocess effect ;d:!!! DON'T ADD THIS TO LEVEL VARLIST !!!;")
 
+Description("f_game_player_chainsaw_blade_speed", "f:EDIT;e:EDIT|SLIDER|DONT_SERIALIZE;m:0.0;x:1.0;s:1.0;c:Game Handlers (common);d:!!! DON'T ADD THIS TO LEVEL VARLIST !!!;")
+Description("f_game_player_chainsaw_blade_dt", "f:EDIT;e:EDIT|SLIDER|DONT_SERIALIZE;m:0.0;x:1.0;s:1.0;c:Game Handlers (common);d:!!! DON'T ADD THIS TO LEVEL VARLIST !!!;")
+Description("f_game_player_chainsaw_blade_max_speed", "f:EDIT;e:EDIT|SLIDER|DONT_SERIALIZE;m:0.0;x:1.0;s:1.0;c:Game Handlers (common);d:!!! DON'T ADD THIS TO LEVEL VARLIST !!!;")
 
 !include("varlist_descriptions_game.scd") //the last one

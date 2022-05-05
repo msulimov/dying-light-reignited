@@ -26,3 +26,8 @@ SeqTrack( "TPP_Bandage_SelfHealing",		"M_TPP_Unarmed_HealingSelf_Bandage.anm2", 
 		PlaySound23D(GameVolumeSource_SoundPlayer, "player_self_healing_bandage.wav", 1, 3, "head", 1, [0, 0, 0], 0)
 	}
 }
+
+
+//=====================================HELLRAID=====================================
+SeqTrack( "TPP_Crystal_SelfHealing",  		"TPP_HR_Crystal.anm2", 0, 18, 30, 1, 0.1 )
+

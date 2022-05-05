@@ -15,7 +15,7 @@ sub main()
     {
         AnimPattern("TPP_{Weapon}_Jump_Loop")
         {
-            Weapon("Unarmed",  "Stick2Heavy", "M16", "Crossbow", "Beretta", "Walker", "Schofield", "Sixshooter", "Submachinegun", "Submachinegun_Alt", "Gnome");
+            Weapon("Unarmed",  "Stick2Heavy", "M16", "Crossbow", "Beretta", "Walker", "Schofield", "Sixshooter", "Submachinegun", "Submachinegun_Alt", "Gnome", "Chainsaw");
         }
         
         Anim("TPP_Unarmed_Jump_Loop_InMove");
@@ -32,7 +32,7 @@ sub main()
     {
         AnimPattern("TPP_{Weapon}_Stand")
         {
-            Weapon("Unarmed", "Stick", "Stick2Close", "Stick2Heavy", "Knife", "Shotgun", "Shotgun_PA", "Shotgun_SA", "M16", "Crossbow", "Beretta", "Walker", "Schofield", "Sixshooter", "Submachinegun", "Submachinegun_Alt", "Gnome");
+            Weapon("Unarmed", "Stick", "Stick2Close", "Stick2Heavy", "Knife", "Shotgun", "Shotgun_PA", "Shotgun_SA", "M16", "Crossbow", "Beretta", "Walker", "Schofield", "Sixshooter", "Submachinegun", "Submachinegun_Alt", "Gnome", "Chainsaw");
         }
     }
     
@@ -40,7 +40,7 @@ sub main()
     {
         AnimPattern("TPP_{Weapon}_DodgeLeft")
         {
-            Weapon("Unarmed", "Stick2Heavy", "Gnome");
+            Weapon("Unarmed", "Stick2Heavy", "Gnome", "Chainsaw");
         }
     }
     
@@ -48,7 +48,7 @@ sub main()
     {
         AnimPattern("TPP_{Weapon}_DodgeRight")
         {
-            Weapon("Unarmed", "Stick2Heavy", "Gnome");
+            Weapon("Unarmed", "Stick2Heavy", "Gnome", "Chainsaw");
         }
     }
     
@@ -56,7 +56,7 @@ sub main()
     {
         AnimPattern("TPP_{Weapon}_DodgeBack")
         {
-            Weapon("Unarmed", "Stick2Heavy", "Gnome");
+            Weapon("Unarmed", "Stick2Heavy", "Gnome", "Chainsaw");
         }
     }
     
@@ -64,7 +64,7 @@ sub main()
     {
         AnimPattern("TPP_{Weapon}_{Speed}Forward")
         {
-            Weapon("Unarmed", "Stick", "Stick2Close", "Stick2Heavy", "Knife", "Shotgun", "Shotgun_PA", "Shotgun_SA", "M16", "Crossbow",  "Beretta", "Walker", "Schofield", "Sixshooter", "Submachinegun", "Submachinegun_Alt", "Gnome");
+            Weapon("Unarmed", "Stick", "Stick2Close", "Stick2Heavy", "Knife", "Shotgun", "Shotgun_PA", "Shotgun_SA", "M16", "Crossbow",  "Beretta", "Walker", "Schofield", "Sixshooter", "Submachinegun", "Submachinegun_Alt", "Gnome", "Chainsaw");
             Speed("Walk", "Run", "Sprint");
         }
     }
@@ -73,7 +73,7 @@ sub main()
     {
         AnimPattern("TPP_{Weapon}_{Speed}Backward")
         {
-            Weapon("Unarmed", "Stick", "Stick2Close", "Stick2Heavy", "Knife", "Shotgun", "Shotgun_PA", "Shotgun_SA", "M16", "Crossbow",  "Beretta", "Walker", "Schofield", "Sixshooter", "Submachinegun", "Submachinegun_Alt", "Gnome");
+            Weapon("Unarmed", "Stick", "Stick2Close", "Stick2Heavy", "Knife", "Shotgun", "Shotgun_PA", "Shotgun_SA", "M16", "Crossbow",  "Beretta", "Walker", "Schofield", "Sixshooter", "Submachinegun", "Submachinegun_Alt", "Gnome", "Chainsaw");
             Speed("Walk", "Run");
         }
     }
@@ -82,7 +82,7 @@ sub main()
     {
         AnimPattern("TPP_{Weapon}_{Speed}Left")
         {
-            Weapon("Unarmed", "Stick", "Stick2Close", "Stick2Heavy", "Knife", "Shotgun", "Shotgun_PA", "Shotgun_SA", "M16", "Crossbow",  "Beretta", "Walker", "Schofield", "Sixshooter", "Submachinegun", "Submachinegun_Alt", "Gnome");
+            Weapon("Unarmed", "Stick", "Stick2Close", "Stick2Heavy", "Knife", "Shotgun", "Shotgun_PA", "Shotgun_SA", "M16", "Crossbow",  "Beretta", "Walker", "Schofield", "Sixshooter", "Submachinegun", "Submachinegun_Alt", "Gnome", "Chainsaw");
             Speed("Walk", "Run");
         }
     }
@@ -91,7 +91,7 @@ sub main()
     {
         AnimPattern("TPP_{Weapon}_{Speed}Right")
         {
-            Weapon("Unarmed", "Stick", "Stick2Close", "Stick2Heavy", "Knife", "Shotgun", "Shotgun_PA", "Shotgun_SA", "M16", "Crossbow",  "Beretta", "Walker", "Schofield", "Sixshooter", "Submachinegun", "Submachinegun_Alt", "Gnome");
+            Weapon("Unarmed", "Stick", "Stick2Close", "Stick2Heavy", "Knife", "Shotgun", "Shotgun_PA", "Shotgun_SA", "M16", "Crossbow",  "Beretta", "Walker", "Schofield", "Sixshooter", "Submachinegun", "Submachinegun_Alt", "Gnome", "Chainsaw");
             Speed("Walk", "Run");
         }
     }
@@ -100,7 +100,7 @@ sub main()
     {
         AnimPattern("TPP_{Weapon}_Walk{Dir}")
         {
-            Weapon("Unarmed", "Stick", "Stick2Close", "Stick2Heavy", "Knife", "Shotgun", "Shotgun_PA", "Shotgun_SA", "M16", "Crossbow",  "Beretta", "Walker", "Schofield", "Sixshooter", "Submachinegun", "Submachinegun_Alt", "Gnome");
+            Weapon("Unarmed", "Stick", "Stick2Close", "Stick2Heavy", "Knife", "Shotgun", "Shotgun_PA", "Shotgun_SA", "M16", "Crossbow",  "Beretta", "Walker", "Schofield", "Sixshooter", "Submachinegun", "Submachinegun_Alt", "Gnome", "Chainsaw");
             Dir("Forward", "Backward", "Left", "Right");
         }
     }
@@ -109,7 +109,7 @@ sub main()
     {
         AnimPattern("FPP_{Weapon}_Jump_Loop")
         {
-            Weapon("Unarmed",  "Stick2Heavy", "M16", "Crossbow",  "Beretta", "Walker", "Schofield", "Sixshooter", "Stick", "Knife", "Submachinegun", "Submachinegun_Alt", "Gnome");
+            Weapon("Unarmed",  "Stick2Heavy", "M16", "Crossbow",  "Beretta", "Walker", "Schofield", "Sixshooter", "Stick", "Knife", "Submachinegun", "Submachinegun_Alt", "Gnome", "Chainsaw");
         }        
     }
 	

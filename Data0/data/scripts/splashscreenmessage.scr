@@ -112,7 +112,15 @@ sub main()
 			Image("splash_spike_2"); //Patch 1.47
 			Image("splash_spike_3"); //Patch 1.47
 			Image("splash_DL2_available_now"); //Patch 1.47 PC, 1.48 Consoles
-			Image("splash_DL2_2"); //Patch 1.47 PC, 1.48 Consoles
+			Image("splash_DL2_2"); //Patch 1.47 PC, 1.48 Consoles	
+			Image("splashscreen_egghunt"); //Patch 1.49
+			Image("splashscreen_supercrane"); //Patch 1.49
+			Image("splashscreen_dl1_basic"); //Patch 1.49
+			Image("splashscreen_air_drops"); //Patch 1.49
+			Image("splashscreen_techland"); //Patch 1.49
+			Image("splashscreen_thankyou_end"); //Patch 1.49
+			Image("splashscreen_dieselpunk"); //Patch 1.49
+			Image("splashscreen_tolgaandfatin"); //Patch 1.49
 		}
 
 	} //Empty news for gathering 

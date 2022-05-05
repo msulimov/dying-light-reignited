@@ -4,6 +4,45 @@ sub main()
 {	
 
 	/////////////////////////////////////////////////////
+	///////////////// HELLRAID EASTER EGG ///////////////
+	/////////////////////////////////////////////////////
+	
+	Item("Firearm_ShotgunHellraid")
+    {
+	    Trick("Hold")
+		{		
+			BulletDescReplace("Bullet_Shotgun_Incendiary_A");
+		}
+    }
+	
+	//////////////////////////////////////////////////////
+	////////// Dieselpunk bundle and Moka, Slot MAchine ////////////////
+	/////////////////////////////////////////////////////
+	Item("Moka_Weapon")
+    {
+	    Trick("Hold")
+		{		
+			Elemental(Elemental_Bleeding, 4);
+			ForcePostHitFx("cat_purring_sequence.fx");
+		}
+    }
+	
+	Item("Slot_Machine")
+    {
+		Trick("Reload")
+        {
+			BulletDescReplaceMulti("Bullet_SlotMachine_Stasis", "Bullet_SlotMachine_Dancing", "Bullet_SlotMachine_Flying", "Bullet_SlotMachine_Explosive", "Bullet_SlotMachine_Freeze", "Bullet_SlotMachine_Posion", "Bullet_SlotMachine_Electric");
+        }
+    }
+	
+	Item("Chainsaw")
+    {
+	    Trick("Hold")
+		{		
+			Elemental(Elemental_Bleeding, 2);
+		}
+    }
+	/////////////////////////////////////////////////////
 	///////////////// Spike Event ///////////////////////
 	/////////////////////////////////////////////////////
 

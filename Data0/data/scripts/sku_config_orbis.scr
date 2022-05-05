@@ -8,6 +8,10 @@ sub main()
         StoreCategory("DYINGLIGHTSTORE");
         SavegameTitle("&GameName&");
         ProfileTitle ("&GameName&");
+        SavegameImportSources()
+        {
+            TitleId("CUSA03991_00");
+        }
         DlcIncluded()
         {
             EntitlementLabel("BETHEZOMBIE00000");
@@ -25,6 +29,10 @@ sub main()
         StoreCategory("DYINGLIGHTSTORE");
         SavegameTitle("&GameName& EU");
         ProfileTitle ("&GameName& EU");
+        SavegameImportSources()
+        {
+            TitleId("CUSA03991_00");
+        }
         DlcIncluded()
         {
             EntitlementLabel("BETHEZOMBIE00000");
@@ -42,6 +50,10 @@ sub main()
         StoreCategory("DYINGLIGHTSTORE");
         SavegameTitle("&GameName&");
         ProfileTitle ("&GameName&");
+        SavegameImportSources()
+        {
+            TitleId("CUSA03946_00");
+        }
         DlcIncluded()
         {
             EntitlementLabel("BETHEZOMBIE00000");
@@ -59,6 +71,10 @@ sub main()
         StoreCategory("DYINGLIGHTSTORE");
         SavegameTitle("&GameName& BR");
         ProfileTitle ("&GameName& BR");
+        SavegameImportSources()
+        {
+            TitleId("CUSA03977_00");
+        }
         DlcIncluded()
         {
             EntitlementLabel("BETHEZOMBIE00000");
@@ -76,6 +92,10 @@ sub main()
         StoreCategory("DYINGLIGHTSTORE");
         SavegameTitle("&GameName&");
         ProfileTitle ("&GameName&");
+        SavegameImportSources()
+        {
+            TitleId("CUSA04298_00");
+        }
         DlcIncluded()
         {
             EntitlementLabel("BETHEZOMBIE00000");

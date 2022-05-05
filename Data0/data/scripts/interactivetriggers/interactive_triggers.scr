@@ -2148,4 +2148,16 @@ sub main()
         use SingleStageActionMB(action = TurnOn, player_start = "Hr_Big_Lever_Switch", item_start = "Hr_Big_Lever_Switch", player_start_moveto = "");
         //use SingleStageActionMB(action = TurnOff, player_start = "Hr_Lever_Switch", item_start = "Hr_Lever_Switch", player_start_moveto = "");
     }
+	
+		
+	Object("HR_chest_a_opening")
+    {
+        UsePoint("bone_root", 0, 0, 0);
+
+        //AllowOffsetHelperAnimation();
+        use ClampDeviationHSym(horz = 50.0, min_vert = -10.0, max_vert = 50.0);
+
+		use SingleStageActionMB(action = TurnOn, player_start = "HR_chest_a_opening", item_start = "HR_chest_a_opening", player_start_moveto = "HR_chest_a_opening_MoveTo");
+		use SingleStageActionMB(action = Open, player_start = "HR_chest_a_opening", item_start = "HR_chest_a_opening", player_start_moveto = "HR_chest_a_opening_MoveTo");
+    }
 }

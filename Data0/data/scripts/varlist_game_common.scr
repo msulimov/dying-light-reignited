@@ -130,6 +130,9 @@ VarFloat("f_game_postprocess_effect_7", 0.0)
 VarFloat("f_game_postprocess_effect_8", 0.0)
 VarFloat("f_game_postprocess_effect_9", 0.0)
 
+VarFloat("f_game_player_chainsaw_blade_speed", 0.0)
+VarFloat("f_game_player_chainsaw_blade_dt", 10.0)
+VarFloat("f_game_player_chainsaw_blade_max_speed", 10.0)
 
 !include("varlist_game.scd") //the last one
 

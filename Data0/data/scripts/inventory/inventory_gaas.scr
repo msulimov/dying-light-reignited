@@ -1025,7 +1025,7 @@ sub main()
 		CanBePickedByOtherPlayer(true);
         UseTime(1.0);
         Buff("Christmas1_Resistance");
-        BuffOverideForBTZ("DamageResistatenMeleeAndBulletBtz");
+        BuffOverideForBTZ("Event_Christmas_Candy1");
         EquipmentSlot(0);
         use PickupSounds_Default();
 		GameVersion(22);
@@ -1050,7 +1050,7 @@ sub main()
             Hard("DamageResistatenMeleeAndBulletHard");
             Nightmare("DamageResistatenMeleeAndBulletHard");
         }
-        BuffOverideForBTZ("DamageResistatenMeleeAndBulletBtz");
+        BuffOverideForBTZ("Event_Christmas_Candy2");
         EquipmentSlot(0);
         use PickupSounds_Default();
 		GameVersion(22);
@@ -1071,6 +1071,7 @@ sub main()
 		CanBePickedByOtherPlayer(true);
         UseTime(1.0);
         Buff("Christmas3_NightVision");
+		BuffOverideForBTZ("Event_Christmas_Candy3");
         EquipmentSlot(0);
         use PickupSounds_Default();
 		GameVersion(22);
@@ -1094,6 +1095,7 @@ sub main()
             Hard("NightVisionAndNightDamageBoostHard");
             Nightmare("NightVisionAndNightDamageBoostHard");
         }
+		BuffOverideForBTZ("Event_Christmas_Candy4");
         EquipmentSlot(0);
         use PickupSounds_Default();
 		GameVersion(22);
@@ -1114,6 +1116,7 @@ sub main()
 		CanBePickedByOtherPlayer(true);
         UseTime(1.0);
         Buff("Christmas5_Stamina");
+		BuffOverideForBTZ("Event_Christmas_Candy5");
         EquipmentSlot(0);
         use PickupSounds_Default();
 		GameVersion(22);
@@ -1138,6 +1141,7 @@ sub main()
             Hard("InfiniteStaminaHard");
             Nightmare("InfiniteStaminaHard");
         }
+		BuffOverideForBTZ("Event_Christmas_Candy6");
         EquipmentSlot(0);
         use PickupSounds_Default();
 		GameVersion(22);
@@ -1162,6 +1166,7 @@ sub main()
             Hard("InfiniteStaminaHard");
             Nightmare("InfiniteStaminaHard");
         }
+		BuffOverideForBTZ("Event_Christmas_Candy7");
         EquipmentSlot(0);
         use PickupSounds_Default();
 		GameVersion(22);
@@ -1182,7 +1187,7 @@ sub main()
 		CanBePickedByOtherPlayer(true);
         UseTime(1.0);
         Buff("Christmas8_Speed");
-        BuffOverideForBTZ("InfiniteFitnesAndSpeedIncreaseBtz");
+        BuffOverideForBTZ("Event_Christmas_Candy8");
         EquipmentSlot(0);
         use PickupSounds_Default();
 		GameVersion(22);

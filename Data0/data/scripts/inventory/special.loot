@@ -15,6 +15,16 @@ sub default()
 	
 	//HELLRAID BOUNTIES REWARDS	
 	
+	LootedObject("Loot_Collectable_Shotgun_Unlocker")
+    {
+		ColorSet(ColorSet_PlatinumOnly);
+
+        Set(Weapon, 1.0, 1.0)
+        {
+            Item("Bundle_Shotgun_Unlocker", 1.0);
+        }
+    }
+	
 	LootedObject("Loot_Craftplan_HRSword_R11_SHOP")
     {
 		ColorSet(ColorSet_PlatinumOnly);
@@ -24,7 +34,126 @@ sub default()
             Item("Craftplan_HRSword_R11_SHOP", 1.0);
         }
     }
+	
+	LootedObject("Loot_Craftplan_HRSword_R1_SHOP")
+    {
+		ColorSet(ColorSet_PlatinumOnly);
 
+        Set(Other, 1.0, 1.0)
+        {
+            Item("Craftplan_HRSword_R1_SHOP", 1.0);
+        }
+    }
+	
+	LootedObject("Loot_Craftplan_HRKhopesh_R2_SHOP")
+    {
+		ColorSet(ColorSet_PlatinumOnly);
+
+        Set(Other, 1.0, 1.0)
+        {
+            Item("Craftplan_HRKhopesh_R2_SHOP", 1.0);
+        }
+    }
+	
+	LootedObject("Loot_Craftplan_HRScepter_R3_SHOP")
+    {
+		ColorSet(ColorSet_PlatinumOnly);
+
+        Set(Other, 1.0, 1.0)
+        {
+            Item("Craftplan_HRScepter_R3_SHOP", 1.0);
+        }
+    }
+	
+	LootedObject("Loot_Craftplan_HRShortAxe_R4_SHOP")
+    {
+		ColorSet(ColorSet_PlatinumOnly);
+
+        Set(Other, 1.0, 1.0)
+        {
+            Item("Craftplan_HRShortAxe_R4_SHOP", 1.0);
+        }
+    }
+
+	LootedObject("Loot_Craftplan_HRMace_R5_SHOP")
+    {
+		ColorSet(ColorSet_PlatinumOnly);
+
+        Set(Other, 1.0, 1.0)
+        {
+            Item("Craftplan_HRMace_R5_SHOP", 1.0);
+        }
+    }
+
+	LootedObject("Loot_Craftplan_HRSword_R6_SHOP")
+    {
+		ColorSet(ColorSet_PlatinumOnly);
+
+        Set(Other, 1.0, 1.0)
+        {
+            Item("Craftplan_HRSword_R6_SHOP", 1.0);
+        }
+    }
+	
+	LootedObject("Loot_Craftplan_HRLongSword_R7_SHOP")
+    {
+		ColorSet(ColorSet_PlatinumOnly);
+
+        Set(Other, 1.0, 1.0)
+        {
+            Item("Craftplan_HRLongSword_R7_SHOP", 1.0);
+        }
+    }
+	
+	LootedObject("Loot_Craftplan_HRBigAxe_R8_SHOP")
+    {
+		ColorSet(ColorSet_PlatinumOnly);
+
+        Set(Other, 1.0, 1.0)
+        {
+            Item("Craftplan_HRBigAxe_R8_SHOP", 1.0);
+        }
+    }
+	
+	LootedObject("Loot_Craftplan_HRHammer_R9_SHOP")
+    {
+		ColorSet(ColorSet_PlatinumOnly);
+
+        Set(Other, 1.0, 1.0)
+        {
+            Item("Craftplan_HRHammer_R9_SHOP", 1.0);
+        }
+    }
+	
+	LootedObject("Loot_Craftplan_HRBigAxe_R10_SHOP")
+    {
+		ColorSet(ColorSet_PlatinumOnly);
+
+        Set(Other, 1.0, 1.0)
+        {
+            Item("Craftplan_HRBigAxe_R10_SHOP", 1.0);
+        }
+    }
+	
+	LootedObject("Loot_Craftplan_HRMace_R12_SHOP")
+    {
+		ColorSet(ColorSet_PlatinumOnly);
+
+        Set(Other, 1.0, 1.0)
+        {
+            Item("Craftplan_HRMace_R12_SHOP", 1.0);
+        }
+    }
+	
+	LootedObject("Loot_Craftplan_HRBigHammer_R13_SHOP")
+    {
+		ColorSet(ColorSet_PlatinumOnly);
+
+        Set(Other, 1.0, 1.0)
+        {
+            Item("Craftplan_HRBigHammer_R13_SHOP", 1.0);
+        }
+    }
 	//Local quest Anniversary event - chicken stick family ITEM
 	LootedObject("Loot_Craftplan_DevCraft_ChickenStick_Anniversary5_Item")
     {
@@ -355,6 +484,16 @@ sub default()
         Set(Weapon, 1.0, 1.0)
         {
             Item("Craftplan_Melee_ShortAxe_AddOn_LastHope", 1.0);
+        }
+    }
+	
+	LootedObject("Loot_Craftplan_Spike_Weapon_StageII")
+    {
+		ColorSet(ColorSet_PlatinumOnly);
+		
+        Set(Weapon, 1.0, 1.0)
+        {
+            Item("Craftplan_Spike_Weapon_StageII", 1.0);
         }
     }
 
@@ -2564,7 +2703,125 @@ sub default_hard()
             Item("Craftplan_HRSword_R11_SHOP", 1.0);
         }
     }
+	LootedObject("Loot_Craftplan_HRSword_R1_SHOP")
+    {
+		ColorSet(ColorSet_PlatinumOnly);
+
+        Set(Other, 1.0, 1.0)
+        {
+            Item("Craftplan_HRSword_R1_SHOP", 1.0);
+        }
+    }
 	
+	LootedObject("Loot_Craftplan_HRKhopesh_R2_SHOP")
+    {
+		ColorSet(ColorSet_PlatinumOnly);
+
+        Set(Other, 1.0, 1.0)
+        {
+            Item("Craftplan_HRKhopesh_R2_SHOP", 1.0);
+        }
+    }
+	
+	LootedObject("Loot_Craftplan_HRScepter_R3_SHOP")
+    {
+		ColorSet(ColorSet_PlatinumOnly);
+
+        Set(Other, 1.0, 1.0)
+        {
+            Item("Craftplan_HRScepter_R3_SHOP", 1.0);
+        }
+    }
+	
+	LootedObject("Loot_Craftplan_HRShortAxe_R4_SHOP")
+    {
+		ColorSet(ColorSet_PlatinumOnly);
+
+        Set(Other, 1.0, 1.0)
+        {
+            Item("Craftplan_HRShortAxe_R4_SHOP", 1.0);
+        }
+    }
+
+	LootedObject("Loot_Craftplan_HRMace_R5_SHOP")
+    {
+		ColorSet(ColorSet_PlatinumOnly);
+
+        Set(Other, 1.0, 1.0)
+        {
+            Item("Craftplan_HRMace_R5_SHOP", 1.0);
+        }
+    }
+
+	LootedObject("Loot_Craftplan_HRSword_R6_SHOP")
+    {
+		ColorSet(ColorSet_PlatinumOnly);
+
+        Set(Other, 1.0, 1.0)
+        {
+            Item("Craftplan_HRSword_R6_SHOP", 1.0);
+        }
+    }
+	
+	LootedObject("Loot_Craftplan_HRLongSword_R7_SHOP")
+    {
+		ColorSet(ColorSet_PlatinumOnly);
+
+        Set(Other, 1.0, 1.0)
+        {
+            Item("Craftplan_HRLongSword_R7_SHOP", 1.0);
+        }
+    }
+	
+	LootedObject("Loot_Craftplan_HRBigAxe_R8_SHOP")
+    {
+		ColorSet(ColorSet_PlatinumOnly);
+
+        Set(Other, 1.0, 1.0)
+        {
+            Item("Craftplan_HRBigAxe_R8_SHOP", 1.0);
+        }
+    }
+	
+	LootedObject("Loot_Craftplan_HRHammer_R9_SHOP")
+    {
+		ColorSet(ColorSet_PlatinumOnly);
+
+        Set(Other, 1.0, 1.0)
+        {
+            Item("Craftplan_HRHammer_R9_SHOP", 1.0);
+        }
+    }
+	
+	LootedObject("Loot_Craftplan_HRBigAxe_R10_SHOP")
+    {
+		ColorSet(ColorSet_PlatinumOnly);
+
+        Set(Other, 1.0, 1.0)
+        {
+            Item("Craftplan_HRBigAxe_R10_SHOP", 1.0);
+        }
+    }
+	
+	LootedObject("Loot_Craftplan_HRMace_R12_SHOP")
+    {
+		ColorSet(ColorSet_PlatinumOnly);
+
+        Set(Other, 1.0, 1.0)
+        {
+            Item("Craftplan_HRMace_R12_SHOP", 1.0);
+        }
+    }
+	
+	LootedObject("Loot_Craftplan_HRBigHammer_R13_SHOP")
+    {
+		ColorSet(ColorSet_PlatinumOnly);
+
+        Set(Other, 1.0, 1.0)
+        {
+            Item("Craftplan_HRBigHammer_R13_SHOP", 1.0);
+        }
+    }
 	//Local quest Anniversary event - chicken stick family ITEM
 	LootedObject("Loot_Craftplan_DevCraft_ChickenStick_Anniversary5_Item")
     {
@@ -2848,6 +3105,16 @@ sub default_hard()
         }
     }
 
+	LootedObject("Loot_Craftplan_Spike_Weapon_StageII")
+    {
+		ColorSet(ColorSet_PlatinumOnly);
+		
+        Set(Weapon, 1.0, 1.0)
+        {
+            Item("Craftplan_Spike_Weapon_StageII", 1.0);
+        }
+    }
+	
 	LootedObject("Loot_Weapon_Spectral_Baseball")
     {
 		ColorSet(ColorSet_PlatinumOnly);
@@ -5099,7 +5366,126 @@ sub default_nightmare()
             Item("Craftplan_HRSword_R11_SHOP", 1.0);
         }
     }
+	LootedObject("Loot_Craftplan_HRSword_R1_SHOP")
+    {
+		ColorSet(ColorSet_PlatinumOnly);
+
+        Set(Other, 1.0, 1.0)
+        {
+            Item("Craftplan_HRSword_R1_SHOP", 1.0);
+        }
+    }
 	
+	LootedObject("Loot_Craftplan_HRKhopesh_R2_SHOP")
+    {
+		ColorSet(ColorSet_PlatinumOnly);
+
+        Set(Other, 1.0, 1.0)
+        {
+            Item("Craftplan_HRKhopesh_R2_SHOP", 1.0);
+        }
+    }
+	
+	LootedObject("Loot_Craftplan_HRScepter_R3_SHOP")
+    {
+		ColorSet(ColorSet_PlatinumOnly);
+
+        Set(Other, 1.0, 1.0)
+        {
+            Item("Craftplan_HRScepter_R3_SHOP", 1.0);
+        }
+    }
+	
+	
+	LootedObject("Loot_Craftplan_HRShortAxe_R4_SHOP")
+    {
+		ColorSet(ColorSet_PlatinumOnly);
+
+        Set(Other, 1.0, 1.0)
+        {
+            Item("Craftplan_HRShortAxe_R4_SHOP", 1.0);
+        }
+    }
+
+	LootedObject("Loot_Craftplan_HRMace_R5_SHOP")
+    {
+		ColorSet(ColorSet_PlatinumOnly);
+
+        Set(Other, 1.0, 1.0)
+        {
+            Item("Craftplan_HRMace_R5_SHOP", 1.0);
+        }
+    }
+
+	LootedObject("Loot_Craftplan_HRSword_R6_SHOP")
+    {
+		ColorSet(ColorSet_PlatinumOnly);
+
+        Set(Other, 1.0, 1.0)
+        {
+            Item("Craftplan_HRSword_R6_SHOP", 1.0);
+        }
+    }
+	
+	LootedObject("Loot_Craftplan_HRLongSword_R7_SHOP")
+    {
+		ColorSet(ColorSet_PlatinumOnly);
+
+        Set(Other, 1.0, 1.0)
+        {
+            Item("Craftplan_HRLongSword_R7_SHOP", 1.0);
+        }
+    }
+	
+	LootedObject("Loot_Craftplan_HRBigAxe_R8_SHOP")
+    {
+		ColorSet(ColorSet_PlatinumOnly);
+
+        Set(Other, 1.0, 1.0)
+        {
+            Item("Craftplan_HRBigAxe_R8_SHOP", 1.0);
+        }
+    }
+	
+	LootedObject("Loot_Craftplan_HRHammer_R9_SHOP")
+    {
+		ColorSet(ColorSet_PlatinumOnly);
+
+        Set(Other, 1.0, 1.0)
+        {
+            Item("Craftplan_HRHammer_R9_SHOP", 1.0);
+        }
+    }
+	
+	LootedObject("Loot_Craftplan_HRBigAxe_R10_SHOP")
+    {
+		ColorSet(ColorSet_PlatinumOnly);
+
+        Set(Other, 1.0, 1.0)
+        {
+            Item("Craftplan_HRBigAxe_R10_SHOP", 1.0);
+        }
+    }
+	
+	LootedObject("Loot_Craftplan_HRMace_R12_SHOP")
+    {
+		ColorSet(ColorSet_PlatinumOnly);
+
+        Set(Other, 1.0, 1.0)
+        {
+            Item("Craftplan_HRMace_R12_SHOP", 1.0);
+        }
+    }
+	
+	LootedObject("Loot_Craftplan_HRBigHammer_R13_SHOP")
+    {
+		ColorSet(ColorSet_PlatinumOnly);
+
+        Set(Other, 1.0, 1.0)
+        {
+            Item("Craftplan_HRBigHammer_R13_SHOP", 1.0);
+        }
+    }
 	//Local quest Anniversary event - chicken stick family ITEM
 	LootedObject("Loot_Craftplan_DevCraft_ChickenStick_Anniversary5_Item")
     {
@@ -5380,6 +5766,16 @@ sub default_nightmare()
         Set(Weapon, 1.0, 1.0)
         {
             Item("Craftplan_Melee_ShortAxe_AddOn_LastHope", 1.0);
+        }
+    }
+	
+	LootedObject("Loot_Craftplan_Spike_Weapon_StageII")
+    {
+		ColorSet(ColorSet_PlatinumOnly);
+		
+        Set(Weapon, 1.0, 1.0)
+        {
+            Item("Craftplan_Spike_Weapon_StageII", 1.0);
         }
     }
 

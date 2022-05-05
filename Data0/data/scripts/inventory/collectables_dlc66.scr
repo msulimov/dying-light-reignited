@@ -1,0 +1,110 @@
+//DIESELPUNK
+
+import "inventorystuff.scr" 
+sub main() 
+{	//chainsaw	
+	Item("Craftplan_Chainsaw", CategoryType_Collectable)
+    {
+        Name("&Craftplan_Chainsaw_N&");
+        Description('&Craftplan_Chainsaw_D&');
+        ItemType(ItemType_CraftPlan);
+        Price(6400);
+        Mesh("blueprint.msh");
+        Skin("default");
+		RequiredItem("Craft_MetalScrap", 10);
+		RequiredItem("Craft_PlasticTube", 7);
+		RequiredItem("Craft_RazorBlade", 5);
+        Color(Color_Blue);
+        CraftedItem("Chainsaw", 1, 1);
+        CraftplanType("Collectables_DLC66");
+        UniqueSaveID(100013);
+		OwnedAtStart();
+        HudIcon("blueprint_b");
+		GameVersion(49);	
+		InheritBaseStats();
+    }	
+	
+	//craftplan for chainsaw's ammo
+	Item("Craftplan_Chainsaw_Ammo", CategoryType_Collectable)
+    {
+        Name("&Craftplan_Chainsaw_Ammo_N&");
+        Description('&Craftplan_Chainsaw_Ammo_D&');
+        ItemType(ItemType_CraftPlan);
+        Price(6400);
+        Mesh("blueprint.msh");
+        Skin("default");
+		RequiredItem("Craft_Bleach", 3);
+        Color(Color_Blue);
+        CraftedItem("Chainsaw_Ammo", 100, 150);
+        CraftplanType("Collectables_DLC66");
+        UniqueSaveID(100014);
+		OwnedAtStart();
+        HudIcon("blueprint_b");
+		GameVersion(49);
+    }
+	
+	//sword
+	Item("Craftplan_Melee_Saw_Blade", CategoryType_Collectable)
+    {
+        Name("&Craftplan_Melee_Saw_Blade_N&");
+        Description('&Craftplan_Melee_Saw_Blade_D&');
+        ItemType(ItemType_CraftPlan);
+        Price(6400);
+        Mesh("blueprint.msh");
+        Skin("default");
+		BaseItem("Melee_ShortSword", "", "");
+		BaseItem("Melee_LongSword", "", "");
+        BaseItem("Melee_Handsaw", "", "");
+        RequiredItem("Craft_MetalScrap", 5);
+		RequiredItem("Craft_RazorBlade", 3);
+        Color(Color_Blue);
+        CraftedItem("Melee_Saw_Blade", 1, 1);
+		InheritBaseStats();
+        CraftplanType("Collectables_DLC66");
+		OwnedAtStart();
+        UniqueSaveID(100015);
+        HudIcon("blueprint_b");
+		GameVersion(49);
+    }
+	
+	//smg 
+	Item("Craftplan_Dieselpunk_Submachine", CategoryType_Collectable)
+    {
+        Name("&Craftplan_Dieselpunk_Submachine_N&");
+        Description('&Craftplan_Dieselpunk_Submachine_D&');
+        ItemType(ItemType_CraftPlan);
+        Price(6400);
+        Mesh("blueprint.msh");
+        Skin("default");
+		RequiredItem("Craft_MetalScrap", 7);
+		RequiredItem("Craft_PlasticTube", 5);
+        Color(Color_Blue);
+        CraftedItem("Dieselpunk_Submachine", 1, 1);
+        CraftplanType("Collectables_DLC66");
+        UniqueSaveID(100016);
+		OwnedAtStart();
+        HudIcon("blueprint_b");
+		GameVersion(49);	
+		InheritBaseStats();
+    }	
+	
+	//craftplan for smg's ammo
+	Item("Craftplan_Dieselpunk_Submachine_Ammo", CategoryType_Collectable)
+    {
+        Name("&Craftplan_Dieselpunk_Submachine_Ammo_N&");
+        Description('&Craftplan_Dieselpunk_Submachine_Ammo_D&');
+        ItemType(ItemType_CraftPlan);
+        Price(6400);
+        Mesh("blueprint.msh");
+        Skin("default");
+		RequiredItem("Craft_RazorBlade", 1);
+		RequiredItem("Craft_Nails", 1);
+        Color(Color_Blue);
+        CraftedItem("Dieselpunk_Submachine_Ammo", 30, 60);
+        CraftplanType("Collectables_DLC66");
+        UniqueSaveID(100017);
+		OwnedAtStart();
+        HudIcon("blueprint_b");
+		GameVersion(49);
+    }
+}

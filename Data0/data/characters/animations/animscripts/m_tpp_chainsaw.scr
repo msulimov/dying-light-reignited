@@ -1,0 +1,150 @@
+!include("ai_timing.def")
+
+//<--------------------- M_TPP_M16.scr --------------------------------->
+
+SeqTrack("TPP_Chainsaw_Shot", 			"TPP_Chainsaw_Shot.anm2", 				0,   40,   60,   1,   0.0)
+SeqTrackAlias("TPP_Chainsaw_ShotEmpty", "TPP_Chainsaw_Shot")
+
+//alias
+SeqTrackAlias("TPP_Chainsaw_Aim_Shot", "TPP_Chainsaw_shot")
+SeqTrackAlias("TPP_Chainsaw_Aim_ShotEmpty", "TPP_Chainsaw_ShotEmpty")
+
+
+SeqTrack("TPP_Chainsaw_Stand", 			"TPP_Chainsaw_Stand.anm2", 				0,   192,   60,   1,   0.3)
+
+
+//alias
+SeqTrackAlias("TPP_Chainsaw_StandEmpty", "TPP_Chainsaw_Stand")
+SeqTrackAlias("TPP_Chainsaw_Wall", "TPP_Chainsaw_Stand")
+SeqTrackAlias("TPP_Chainsaw_Cover_StandPos", "TPP_Chainsaw_Stand")
+SeqTrackAlias("TPP_Chainsaw_Aim_Stand", "TPP_Chainsaw_Stand")
+SeqTrackAlias("TPP_Chainsaw_Aim_StandEmpty", "TPP_Chainsaw_Stand")
+
+
+
+///RELOAD NEW
+SeqTrack("TPP_Chainsaw_ReloadBegin", 			"TPP_Chainsaw_Reload.anm2", 				0,   50,   60,   1,   0.3)
+{	
+	Event(0, 0, 1)
+    {
+		PlaySound3D(GameVolumeSource_SoundPlayer, "Chainsaw_reload.wav", 1, 3, "head", 1, [0,0,0], 1)
+    }
+}
+SeqTrack("TPP_Chainsaw_ReloadManage", 			"TPP_Chainsaw_Reload.anm2"			, 50, 50, 60, 1, 0.0)
+SeqTrack("TPP_Chainsaw_ReloadLoop", 				"TPP_Chainsaw_Reload.anm2"			, 50, 240, 60, 1, 0.0)
+
+SeqTrack("TPP_Chainsaw_ReloadFinish", 			"TPP_Chainsaw_Reload.anm2",		240, 300, 60, 1, 0.0)
+
+
+
+//<--------------------------MOVEMENT--------------------->
+SeqTrack("TPP_Chainsaw_Jump_Pose", 			"TPP_Chainsaw_Stand.anm2", 				16,   49,   30,   1,   0.1)
+//SeqTrackAlias("TPP_Chainsaw_Jump_Pose", "TPP_M16_Jump_Pose")
+SeqTrack("TPP_Chainsaw_WalkForward", 			"TPP_Chainsaw_WalkForward.anm2", 				0,   53,  60,   1,   0.5)
+//SeqTrackAlias("TPP_Chainsaw_WalkForward", "TPP_M16_WalkForward")
+SeqTrack("TPP_Chainsaw_RunForward", 			"TPP_Chainsaw_RunForward.anm2", 				0,   44,  60,   1,   0.5)
+//SeqTrackAlias("TPP_Chainsaw_RunForward", "TPP_M16_RunForward")
+SeqTrack("TPP_Chainsaw_SprintForward", 			"TPP_Chainsaw_SprintForward.anm2", 				0,   34,  60,   1,   0.5)
+//SeqTrackAlias("TPP_Chainsaw_SprintForward", "TPP_M16_SprintForward")
+SeqTrack("TPP_Chainsaw_WalkBackward", 			"TPP_Chainsaw_WalkBackward.anm2", 				0,   82,  60,   1,   0.5)
+//SeqTrackAlias("TPP_Chainsaw_WalkBackward", "TPP_M16_WalkBackward")
+SeqTrack("TPP_Chainsaw_RunBackward", 			"TPP_Chainsaw_RunBackward.anm2", 				0,   44,  60,   1,   0.5)
+//SeqTrackAlias("TPP_Chainsaw_RunBackward", "TPP_M16_RunBackward")
+SeqTrack("TPP_Chainsaw_WalkRight", 			"TPP_Chainsaw_WalkRight.anm2", 				0,   72,  60,   1,   0.5)
+//SeqTrackAlias("TPP_Chainsaw_WalkRight", "TPP_M16_WalkRight")
+SeqTrack("TPP_Chainsaw_RunRight", 			"TPP_Chainsaw_RunRight.anm2", 				0,   47,  60,   1,   0.5)
+//SeqTrackAlias("TPP_Chainsaw_RunRight", "TPP_M16_RunRight")
+SeqTrack("TPP_Chainsaw_WalkLeft", 			"TPP_Chainsaw_WalkLeft.anm2", 				0,   65,  60,   1,   0.5)
+//SeqTrackAlias("TPP_Chainsaw_WalkLeft", "TPP_M16_WalkLeft")
+SeqTrack("TPP_Chainsaw_RunLeft", 			"TPP_Chainsaw_RunLeft.anm2", 				0,   46,  60,   1,   0.5)
+//SeqTrackAlias("TPP_Chainsaw_RunLeft", "TPP_M16_RunLeft")
+
+//<--------------------- M_TPP_HitReactions.scr --------------------------------->
+//SeqTrackAlias("TPP_Chainsaw_TakeDamageHitRight", "TPP_M16_TakeDamageHitRight")
+//SeqTrackAlias("TPP_Chainsaw_TakeDamageHitRight_Rest", "TPP_M16_TakeDamageHitRight_Rest")
+SeqTrack( "TPP_Chainsaw_TakeDamageHitRight",                 "TPP_Chainsaw_TakeDamage.anm2",                0, 40, 60, 1, 0.033)
+SeqTrack( "TPP_Chainsaw_TakeDamageHitRight_Rest",          "TPP_Chainsaw_TakeDamage.anm2",                40, 60, 60, 1, 0.2)
+
+
+//SeqTrackAlias("TPP_Chainsaw_TakeDamageHitLeft", "TPP_M16_TakeDamageHitLeft")
+//SeqTrackAlias("TPP_Chainsaw_TakeDamageHitLeft_Rest", "TPP_M16_TakeDamageHitLeft_Rest")
+SeqTrack( "TPP_Chainsaw_TakeDamageHitLeft",              "TPP_Chainsaw_TakeDamage.anm2",                0, 40, 60, 1, 0.033)
+SeqTrack( "TPP_Chainsaw_TakeDamageHitLeft_Rest",       "TPP_Chainsaw_TakeDamage.anm2",                40, 60, 60, 1, 0.2)
+
+//SeqTrackAlias("TPP_Chainsaw_TakeDamageHitRight1", "TPP_M16_TakeDamageHitRight1")
+//SeqTrackAlias("TPP_Chainsaw_TakeDamageHitRight1_Rest", "TPP_M16_TakeDamageHitRight1_Rest")
+SeqTrack( "TPP_Chainsaw_TakeDamageHitRight1",                  "TPP_Chainsaw_TakeDamage1.anm2",                0, 40, 60, 1, 0.033)
+SeqTrack( "TPP_Chainsaw_TakeDamageHitRight1_Rest",           "TPP_Chainsaw_TakeDamage1.anm2",                40, 60, 60, 1, 0.2)
+
+//SeqTrackAlias("TPP_Chainsaw_TakeDamageHitLeft1", "TPP_M16_TakeDamageHitLeft1")
+//SeqTrackAlias("TPP_Chainsaw_TakeDamageHitLeft1_Rest", "TPP_M16_TakeDamageHitLeft1_Rest")
+SeqTrack( "TPP_Chainsaw_TakeDamageHitLeft1",              "TPP_Chainsaw_TakeDamage1.anm2",                0, 40, 60, 1, 0.033)
+SeqTrack( "TPP_Chainsaw_TakeDamageHitLeft1_Rest",       "TPP_Chainsaw_TakeDamage1.anm2",                40, 60, 60, 1, 0.2)
+
+//SeqTrackAlias("TPP_Chainsaw_TakeDamagePvpHitRight", "TPP_M16_TakeDamagePvpHitRight")
+//SeqTrackAlias("TPP_Chainsaw_TakeDamagePvpHitRight_Rest", "TPP_M16_TakeDamagePvpHitRight_Rest")
+SeqTrack( "TPP_Chainsaw_TakeDamagePvpHitRight",            "TPP_Chainsaw_TakeDamage_push.anm2",            0, 60, 60, 1, 0.033)
+SeqTrack( "TPP_Chainsaw_TakeDamagePvpHitRight_Rest",    "TPP_Chainsaw_TakeDamage_push.anm2",            60, 80, 60, 1, 0.1)
+
+//SeqTrackAlias("TPP_Chainsaw_TakeDamagePvpHitLeft", "TPP_M16_TakeDamagePvpHitLeft")
+//SeqTrackAlias("TPP_Chainsaw_TakeDamagePvpHitLeft_Rest", "TPP_M16_TakeDamagePvpHitLeft_Rest")
+SeqTrack( "TPP_Chainsaw_TakeDamagePvpHitLeft",        "TPP_Chainsaw_TakeDamage1_push.anm2",            0, 60, 60, 1, 0.033)
+SeqTrack( "TPP_Chainsaw_TakeDamagePvpHitLeft_Rest",    "TPP_Chainsaw_TakeDamage1_push.anm2",            60, 80, 60, 1, 0.1)
+
+SeqTrackAlias("TPP_Chainsaw_TakeDamagePush", "TPP_Chainsaw_TakeDamagePvpHitRight")
+SeqTrackAlias("TPP_Chainsaw_TakeDamagePush_Rest", "TPP_Chainsaw_TakeDamagePvpHitRight_Rest")
+SeqTrackAlias("TPP_Chainsaw_TakeDamagePush1", "TPP_Chainsaw_TakeDamagePvpHitLeft")
+SeqTrackAlias("TPP_Chainsaw_TakeDamagePush1_Rest", "TPP_Chainsaw_TakeDamagePvpHitLeft_Rest")
+
+//alias
+SeqTrackAlias("TPP_Chainsaw_TakeDamagePvpHitRight1", "TPP_Chainsaw_TakeDamagePush1")
+SeqTrackAlias("TPP_Chainsaw_TakeDamagePvpHitRight1_Rest", "TPP_Chainsaw_TakeDamagePush1_Rest")
+SeqTrackAlias("TPP_Chainsaw_TakeDamagePvpHitLeft1", "TPP_Chainsaw_TakeDamagePush")
+SeqTrackAlias("TPP_Chainsaw_TakeDamagePvpHitLeft1_Rest", "TPP_Chainsaw_TakeDamagePush_Rest")
+
+//alias
+SeqTrackAlias("TPP_Chainsaw_TakeDamagePush2", "TPP_Chainsaw_TakeDamagePush")
+SeqTrackAlias("TPP_Chainsaw_TakeDamagePush2_Rest", "TPP_Chainsaw_TakeDamagePush_Rest")
+SeqTrackAlias("TPP_Chainsaw_TakeDamagePush3", "TPP_Chainsaw_TakeDamagePush1")
+SeqTrackAlias("TPP_Chainsaw_TakeDamagePush3_Rest", "TPP_Chainsaw_TakeDamagePush1_Rest")
+SeqTrackAlias("TPP_Chainsaw_TakeDamageCollision", "TPP_Chainsaw_TakeDamagePush")
+SeqTrackAlias("TPP_Chainsaw_TakeDamageCollision_Rest", "TPP_Chainsaw_TakeDamagePush_Rest")
+SeqTrackAlias("TPP_Chainsaw_TakeDamageCollision1", "TPP_Chainsaw_TakeDamagePush1")
+SeqTrackAlias("TPP_Chainsaw_TakeDamageCollision1_Rest", "TPP_Chainsaw_TakeDamagePush1_Rest")
+
+//alias
+SeqTrackAlias("TPP_Chainsaw_TakeDamageHitRight2", "TPP_Chainsaw_TakeDamageHitRight1")
+SeqTrackAlias("TPP_Chainsaw_TakeDamageHitRight2_Rest", "TPP_Chainsaw_TakeDamageHitRight1_Rest")
+SeqTrackAlias("TPP_Chainsaw_TakeDamageHitLeft2", "TPP_Chainsaw_TakeDamageHitLeft")
+SeqTrackAlias("TPP_Chainsaw_TakeDamageHitLeft2_Rest", "TPP_Chainsaw_TakeDamageHitLeft_Rest")
+SeqTrackAlias("TPP_Chainsaw_PokeRight", "TPP_Chainsaw_TakeDamagePush")
+SeqTrackAlias("TPP_Chainsaw_PokeLeft", "TPP_Chainsaw_TakeDamagePush")
+SeqTrackAlias("TPP_Chainsaw_CrowdBumpRight", "TPP_Chainsaw_TakeDamagePush")
+SeqTrackAlias("TPP_Chainsaw_CrowdBumpLeft", "TPP_Chainsaw_TakeDamagePush")
+
+//<--------------------- M_TPP_Mimic.scr --------------------------------->
+
+SeqTrackAlias("TPP_Chainsaw_Stand_Mimic", "Default_Idlle_Mimic")
+
+//<--------------------- M_TPP_NM.scr --------------------------------->
+
+SeqTrack("TPP_Chainsaw_Jump_Begin",            "TPP_Chainsaw_Jump.anm2"              , 0, 30, 60, 1, 0.1)
+SeqTrack("TPP_Chainsaw_Jump_Loop",            "TPP_Chainsaw_Jump.anm2"              , 30, 66, 60, 1, 0.3)
+
+// SeqTrackAlias("TPP_Chainsaw_Jump_Begin", "TPP_M16_Jump_Begin")
+// SeqTrackAlias("TPP_Chainsaw_Jump_Loop", "TPP_M16_Jump_Loop")
+
+//alias
+SeqTrackAlias("TPP_Chainsaw_Jump_Begin_1", "TPP_Chainsaw_Jump_Begin")
+SeqTrackAlias("TPP_Chainsaw_Jump_Loop_1", "TPP_Chainsaw_Jump_Loop")
+
+SeqTracksBlend("TPP_Chainsaw_Jump_Begin", "TPP_Chainsaw_Jump_Loop", 0.0)
+
+
+
+SeqTrack("TPP_Chainsaw_Ballance_Stand",          		"TPP_Chainsaw_Ballance_Stand.anm2"   , 3, 10, 27, 0, 0.3) 
+SeqTrack("TPP_Chainsaw_Ballance_StandNoise",          	"TPP_Chainsaw_Ballance_MoveNoise.anm2"   , 0, 120, 30, 0, 0.3) 
+SeqTrack("TPP_Chainsaw_Ballance_MoveNoise",          	"TPP_Chainsaw_Ballance_MoveNoise.anm2"   , 0, 120, 30, 0, 0.3) 
+SeqTrack("TPP_Chainsaw_Ballance_SprintNoise",          	"TPP_Chainsaw_Ballance_SprintNoise.anm2"   , 0, 31, 30, 0, 0.3) 
+SeqTrack("TPP_Chainsaw_Ballance_Right",         		"TPP_Chainsaw_Ballance_Left.anm2"   , 0, 120, 30, 0, 0.3) 
+SeqTrack("TPP_Chainsaw_Ballance_Left",         	 		"TPP_Chainsaw_Ballance_Right.anm2"   , 0, 120, 30, 0, 0.3) 

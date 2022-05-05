@@ -185,6 +185,21 @@ sub main()
             Modifier(InteractionProp_Probability, 10.0);// prob 50%
             Modifier(InteractionProp_DeathEffect, DeathEffect_Fire);
         }
+		
+		Interaction(Elemental_Explosive, Interaction_NeutralizeFirst, -1)
+		{
+			Modifier(InteractionProp_Duration, -1.0);
+			Modifier(InteractionProp_Damage, -1.0);
+			Modifier(InteractionProp_Probability, -1.0);
+		}
+	
+		Interaction(Elemental_Explosive, Interaction_NeutralizeSecond, -1)
+		{
+			Modifier(InteractionProp_Duration, -1.0);
+			Modifier(InteractionProp_Damage, -1.0);
+			Modifier(InteractionProp_Probability, -1.0);
+		}
+
     }
 
     Elemental(Elemental_Bleeding)
@@ -284,6 +299,21 @@ sub main()
         {
             Modifier(InteractionProp_Damage, 1.5);
         }
+		
+		Interaction(Elemental_Burning, Interaction_NeutralizeFirst, -1)
+		{
+			Modifier(InteractionProp_Duration, -1.0);
+			Modifier(InteractionProp_Damage, -1.0);
+			Modifier(InteractionProp_Probability, -1.0);
+		}
+	
+		Interaction(Elemental_Burning, Interaction_NeutralizeSecond, -1)
+		{
+			Modifier(InteractionProp_Duration, -1.0);
+			Modifier(InteractionProp_Damage, -1.0);
+			Modifier(InteractionProp_Probability, -1.0);
+		}
+	
     }
 
     Elemental(Elemental_Water)

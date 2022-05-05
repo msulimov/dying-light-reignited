@@ -54,7 +54,7 @@
     <prop n="LowStaminaAttackEnabled" v="0"/>
 
     <prop n="AllowEdgeHanging" v="0"/>
-    <prop n="JumpFromHangEnabled" v="1"/>
+    <prop n="JumpFromHangEnabled" v="0"/>
 
     <prop n="WeightCanCarry" v="0.0"/>
 
@@ -110,8 +110,8 @@
     <prop n="BulletDamageReduction" v="0.2"/>
     <prop n="BlastDamageReduction" v="0.2"/>
     
-    <prop n="ZombieDefensiveSmokeLightInvulnerabilityDuration" v="2.1"/>
-    <prop n="ZombieGroundPoundLightInvulnerabilityDuration" v="1.0"/>
+    <prop n="ZombieDefensiveSmokeLightInvulnerabilityDuration" v="2.5"/>
+    <prop n="ZombieGroundPoundLightInvulnerabilityDuration" v="0.8"/>
 
     <prop n="PVPGrabJumpReleaseHeight" v="5.0"/>
    
@@ -146,8 +146,8 @@
     <prop n="ZombieChargeAttackEnabled" v="0"/> 
     <prop n="ZombieChargeAttackDamage" v="0.34"/>
     <prop n="ZombieChargeAttackRange" v="5.0"/>   
-    <prop n="ZombieChargeAttackImpulseMagnitude" v="12.0"/>
-    <prop n="ZombieChargeAttackImpulseVerticle" v="6.0"/>       
+    <prop n="ZombieChargeAttackImpulseMagnitude" v="17"/>
+    <prop n="ZombieChargeAttackImpulseVerticle" v="6.5"/>       
     <prop n="ZombieChargeAttackAiDamage" v="10"/>
     <prop n="ZombieChargeAttackAiForce" v="400"/>
     <prop n="ZombieChargeAttackAiPhxDmg" v="40"/>
@@ -156,7 +156,7 @@
     <prop n="ZombieGroundPoundEnabled" v="1"/>
     <prop n="ZombieGroundPoundRange" v="5"/>
     <prop n="ZombieGroundPoundDamage" v="0.2"/>
-    <prop n="ZombieGroundPoundCooldown" v="1.5"/>
+    <prop n="ZombieGroundPoundCooldown" v="1.0"/>
     <prop n="ZombieGroundPoundFlareDisableEnabled" v="1"/>
     <prop n="ZombieGroundPoundAirEnabled" v="0"/>
     <prop n="ZombieGroundImpulseVertical" v="3"/>
@@ -165,7 +165,7 @@
     
     <prop n="ZombieSpitGroundPoundEnabled" v="0"/>
     
-    <prop n="ZombiePounceHighRageExplosionRange" v="5.0"/>
+    <prop n="ZombiePounceHighRageExplosionRange" v="4.5"/>
     <prop n="ZombieLeapfrogEnabled" v="0"/>
     <prop n="ZombiePounceSlamEnabled" v="0"/>
     
@@ -174,7 +174,7 @@
     <prop n="PVPKnockBackMelee" v="1"/>
     <prop n="ZombiePounceExplosionPhysicsDamage" v="1.5"/>
 
-    <prop n="ZombieMeleeKnockBackSpeed" v="5"/>
+    <prop n="ZombieMeleeKnockBackSpeed" v="9"/>
     <prop n="ZombieMeleeKnockBackDuration" v="0.1"/>
     <prop n="ZombieMeleeKnockup" v="0"/>
     

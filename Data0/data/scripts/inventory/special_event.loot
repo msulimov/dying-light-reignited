@@ -9,6 +9,16 @@ import "containers_object_type.def"
 
 sub default()
 {		
+
+	LootedObject("Loot_Craftplan_Slot_Machine")
+    {
+    	ColorSet(ColorSet_PlatinumOnly);
+
+        Set(Weapon, 1.0, 1.0)
+        {
+            Item("Craftplan_Slot_Machine", 1); 
+        }
+    }
 	
 	LootedObject("Loot_Spike_Weapon_StageI")
     {

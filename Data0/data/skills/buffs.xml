@@ -1117,3 +1117,116 @@
   </varlist_timeline>
   <hud_icon val="weapon_snowball_big"/>
 </buff>
+
+
+<!-- Hellraid Crystal Buff/Debuff Combinations -->
+
+<buff id="Hellraid_HalfDamage" duration="120">	
+	<property name="BaseDamageMul" value_add="-0.5"/>	
+</buff>
+
+<buff id="Hellraid_DoubleDamage" duration="120">	
+	<property name="BaseDamageMul" value_add="2.0"/>	
+</buff>
+
+<buff id="Hellraid_TripleDamage" duration="120">	
+	<property name="BaseDamageMul" value_add="3.0"/>	
+</buff>
+
+<!-- RED CRYSTAL -->
+<!-- Double damage but slower Stamina regen-->
+<buff id="Hellraid_B_Damage_DB_Stamina" duration="120" max_stacks="1">
+  <property name="StaminaTimeToRegenerate" value_add="5.0"/>
+  <property name="StaminaRegeneration" value_add="1.0"/>
+  <property name="StaminaRegenerationFactor" value_add="1.0"/>
+  <OnGain>
+    <ApplyBuff id="Hellraid_TripleDamage"/>
+  </OnGain>
+
+  <varlist_timeline var="f_game_saturation">
+    <key t="0" val="1.00"/>
+    <key t="0.5" val="2.0"/>
+    <key t="6.6" val="2.0"/>
+    <key t="120" val="1.0"/>
+  </varlist_timeline>
+  
+  <hud_icon val="crystal_timer_red"/> 
+</buff>
+
+<!-- BLUE CRYSTAL -->
+<!-- Faster movement but half the damage -->
+<buff id="Hellraid_B_Speed_DB_Damage" duration="120" max_stacks="1">
+  <property name="MoveBackwardMaxSpeed" value_add="2.5"/>
+  <property name="MoveForwardMaxSpeed" value_add="2.75"/>
+  <property name="MoveStrafeMaxSpeed" value_add="2.75"/>
+  <property name="MoveSprintSpeed" value_add="2.75"/>
+  <OnGain>
+    <ApplyBuff id="Hellraid_HalfDamage" />
+  </OnGain>
+
+  <varlist_timeline var="f_game_saturation">
+    <key t="0" val="1.00"/>
+    <key t="0.5" val="2.0"/>
+    <key t="6.6" val="2.0"/>
+    <key t="120" val="1.0"/>
+  </varlist_timeline>
+  
+  <hud_icon val="crystal_timer_blue"/>
+</buff>
+
+<!-- GREEN CRYSTAL -->
+<!-- Health regeneration buff, Stamina slower regen -->
+<buff id="Hellraid_B_HealthRegen_DB_Stamina" duration="120" max_stacks="1">
+  <property name="HealthRegenerationDelay" value_add="-20.0"/>
+  <property name="HealthRegenerationMaxLevel" value_add="-1000.0"/>
+  <property name="HealthRegenerationTimeToMax" value_add="3.0"/>	
+  <property name="StaminaTimeToRegenerate" value_add="15.0"/>
+  <property name="StaminaRegeneration" value_add="1.0"/>
+  <property name="StaminaRegenerationFactor" value_add="1.0"/>
+  
+  <hud_icon val="crystal_timer_green"/>
+  
+  <varlist_timeline var="f_game_saturation">
+    <key t="0" val="1.00"/>
+    <key t="0.5" val="2.0"/>
+    <key t="6.6" val="2.0"/>
+    <key t="120" val="1.0"/>
+  </varlist_timeline>
+  
+</buff>
+
+<!-- YELLOW CRYSTAL -->
+<!-- Critical Hit Increase, Slow Speed -->
+<buff id="Hellraid_B_CritStamina_DB_Speed" duration="120" max_stacks="1">
+  <property name="BuffCritChanceMul" value_add="1.0"/>
+  <property name="StaminaUsageReduction" value_add="0.33"/>
+  <property name="MoveSpeedFactor" value_add="-0.15"/>
+  
+  <varlist_timeline var="f_game_saturation">
+    <key t="0" val="1.00"/>
+    <key t="0.5" val="2.0"/>
+    <key t="6.6" val="2.0"/>
+    <key t="120" val="1.0"/>
+  </varlist_timeline>
+  
+  <hud_icon val="crystal_timer_yellow"/>
+</buff>
+
+<!-- WHITE CRYSTAL -->
+<!-- Double damage, Melee Damage Reduction and Stamina Usage reduction, No Health Regen -->
+<buff id="Hellraid_B_DDReduction_DB_NoHealthRegen" duration="120" max_stacks="1">
+  <property name="MeleeDamageReduction" value_add="0.75"/>
+  <property name="StaminaUsageReduction" value_add="0.10"/>
+  <property name="HealthRegenerationDelay" value_add="120.0"/>
+  <property name="HealthRegenerationTimeToMax" value_add="100.0"/>	
+
+  <varlist_timeline var="f_game_saturation">
+    <key t="0" val="1.00"/>
+    <key t="0.5" val="2.0"/>
+    <key t="6.6" val="2.0"/>
+    <key t="120" val="1.0"/>
+  </varlist_timeline>
+  
+  <hud_icon val="crystal_timer_white"/>
+</buff>
+

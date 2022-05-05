@@ -81,7 +81,7 @@ sub main()
         GameVersion(45);
         ItemType(ItemType_MagicWandThrowable);
         Mesh("wand_fire_freeze.msh");
-		Skin("fire");
+		Skin("Default");
         AnimPrefix("magicwand");
         HudIcon("wand_fire_freeze");
         AnotherItemToThrow("Throwable_FireWandBullet");
@@ -1456,7 +1456,7 @@ sub main()
         RestrictionFlags(0);
         RagdollBehaviorPrefix("StickSharp");
         HandInertiaFactor(1.8);
-        Price(540);
+        Price(270);
         GenType(GenType_MeleeWeapon);
     }
 
@@ -1551,7 +1551,7 @@ sub main()
         RestrictionFlags(0);
         RagdollBehaviorPrefix("StickSharp");
         HandInertiaFactor(1.8);
-        Price(670);
+        Price(335);
         GenType(GenType_MeleeWeapon);
     }
 
@@ -1645,7 +1645,7 @@ sub main()
         UniqueFxNameBase("baseballbat_b");
         RestrictionFlags(0);
         HandInertiaFactor(1.8);
-        Price(820);
+        Price(410);
         GenType(GenType_MeleeWeapon);
     }
 
@@ -1740,7 +1740,7 @@ sub main()
         HandInertiaFactor(1.8);
 		GenLevelMin(1);
         GenLevelMax(1);
-        Price(1023);
+        Price(512);
         GenType(GenType_MeleeWeapon);
 		GameVersion(33);
     }
@@ -1834,7 +1834,7 @@ sub main()
         UniqueFxNameBase("baseballbat_b");
         RestrictionFlags(0);
         HandInertiaFactor(1.8);
-        Price(1226);
+        Price(613);
         GenType(GenType_MeleeWeapon);
     }
 
@@ -1929,7 +1929,7 @@ sub main()
         RestrictionFlags(0);
         RagdollBehaviorPrefix("StickSharp");
         HandInertiaFactor(1.8);
-        Price(1497);
+        Price(749);
         GenType(GenType_MeleeWeapon);
     }
 
@@ -2024,7 +2024,7 @@ sub main()
         RestrictionFlags(0);
         RagdollBehaviorPrefix("Stick2Close");
         HandInertiaFactor(1.8);
-        Price(1777);
+        Price(889);
         GenType(GenType_MeleeWeapon);
     }
 
@@ -2118,7 +2118,7 @@ sub main()
         RagdollBehaviorPrefix("Stick2HeavySharp");
         HandInertiaFactor(1.8);
         HandInertiaRotFactor([0.5, 1.0, 4.0]);
-        Price(2061);
+        Price(1031);
         GenType(GenType_MeleeWeapon);
     }
 
@@ -2210,7 +2210,7 @@ sub main()
         RestrictionFlags(0);
         RagdollBehaviorPrefix("Stick2HeavyBlunt");
         HandInertiaFactor(1.8);
-        Price(2479);
+        Price(1240);
 		DismantleResultItem("Craft_MetalScrap");
         DismantleResultItemCnt(1);
         GenType(GenType_MeleeWeapon);
@@ -2305,7 +2305,7 @@ sub main()
         RagdollBehaviorPrefix("Stick2HeavySharp");
         HandInertiaFactor(1.8);
         HandInertiaRotFactor([0.5, 1.0, 4.0]);
-        Price(2887);
+        Price(1444);
 		DismantleResultItem("Craft_MetalScrap");
         DismantleResultItemCnt(1);
         GenType(GenType_MeleeWeapon);
@@ -2498,7 +2498,7 @@ sub main()
         UniqueFxNameBase("baseballbat_b");
         RestrictionFlags(0);
         HandInertiaFactor(1.8);
-        Price(1480);
+        Price(740);
         GenType(GenType_MeleeWeapon);
     }
 
@@ -2652,7 +2652,7 @@ sub main()
         RagdollBehaviorPrefix("Stick2HeavyBlunt");
         HandInertiaFactor(1.8);
         HandInertiaRotFactor([0.5, 1.0, 4.0]);
-        Price(2106);
+        Price(1053);
         GenType(GenType_MeleeWeapon);
 		GameVersion(43);
     }
@@ -2680,6 +2680,112 @@ sub main()
         RepairPart("Craft_MetalScrap", 1);
 		GameVersion(43);
     }
+	
+	/////////////// SHOP WANDS ////////////////
+	
+	Item("Throwable_DarkWand_SHOP", CategoryType_Throwable)
+    {
+        GameVersion(49);
+        ItemType(ItemType_MagicWandThrowable);
+        Mesh("wand_acid_area_a.msh");
+		Skin("darkknight");
+        AnimPrefix("magicwand");
+        HudIcon("weapon_wand_acid_area_a");
+        AnotherItemToThrow("Throwable_DarkWandBullet_SHOP");
+        ItemRequiredToUse("Collectable_Wand_Unlocker", "&MUIItemInfo_Wand_Requirement&");
+        AttachToLeftHand(true);
+        EquipmentSlot(0);
+        Color(Color_Violet);
+		Price(3295);
+    }
+
+    Item("Throwable_DarkWandBullet_SHOP", CategoryType_Throwable)
+    {
+        GameVersion(49);
+        ItemType(ItemType_Grenade);
+        Visibility(true);
+        AmmoCount(3);
+        MaxStackCount(99);
+        Price(100);
+        Mesh("spit_grenade_blob.msh");
+        AnimPrefix("fireball2");
+        PhysicsScript("single_dropped_inventory.phx");
+        Damage(600.0);
+        DamageToPhysicsObjects(150.0);
+        DamageRange(1.0);
+        PhysicsDamageMul(1.0);
+        HeadCutProb(0.0);
+        ArmsCutProb(0.0);
+        LegsCutProb(0.0);
+        DamageType(DamageType_Cold);
+        DamageDuration(10.0);
+        ThrowImpulseLook(15.0);
+        ThrowImpulseUp(0.0);
+        IgnoreGravity(true);
+        ExplosionFx("dark_explosion_sequence.fx");
+        ThrowFlyFx("hr_dark_trail_lh_sequence.fx");//Keep fxs in DW/Data
+		ExplosionSound("magic_darkwand_explosion.wav");
+        ExplodeOnCollision(true);
+        ExplodeDelay(5.0);
+        StatsType(StatsType_Explosive);
+        NoiseType("EXPLOSION");
+        Color(Color_Violet);
+        ElementalPower(1);
+        AchType(AchType_Grenade);
+    }
+
+    Item("Throwable_FireWand_SHOP", CategoryType_Throwable)
+    {
+        GameVersion(49);
+        ItemType(ItemType_MagicWandThrowable);
+        Mesh("wand_fire_freeze.msh");
+		Skin("Default");
+        AnimPrefix("magicwand");
+        HudIcon("wand_fire_freeze");
+        AnotherItemToThrow("Throwable_FireWandBullet_SHOP");
+        ItemRequiredToUse("Collectable_Wand_Unlocker", "&MUIItemInfo_Wand_Requirement&");
+        AttachToLeftHand(true);
+        EquipmentSlot(0);
+		Color(Color_Violet);
+		Price(3295);
+    }
+
+    Item("Throwable_FireWandBullet_SHOP", CategoryType_Throwable)
+    {
+        GameVersion(49);
+        ItemType(ItemType_Grenade);
+        Visibility(true);
+        AmmoCount(3);
+        MaxStackCount(99);
+        Price(100);
+        Mesh("spit_grenade_blob.msh");
+        Skin("fire");
+        AnimPrefix("fireball2");
+        PhysicsScript("single_dropped_inventory.phx");
+        Damage(750.0);
+        DamageToPhysicsObjects(150.0);
+        DamageRange(0.75);
+        PhysicsDamageMul(1.0);
+        HeadCutProb(0.0);
+        ArmsCutProb(0.0);
+        LegsCutProb(0.0);
+        DamageType(DamageType_Fire);
+        DamageDuration(10.0);
+        ThrowImpulseLook(15.0);
+        ThrowImpulseUp(0.0);
+        IgnoreGravity(true);
+        ExplosionFx("fire_arrow_explosion_sequence.fx");
+        ThrowFlyFx("hr_burning_trail_lh_sequence.fx");//Keep fxs in DW/Data
+		ExplosionSound("bow_explosion_fire.wav");
+        ExplodeOnCollision(true);
+        ExplodeDelay(5.0);
+        StatsType(StatsType_Explosive);
+        NoiseType("EXPLOSION");
+        Color(Color_Violet);
+		ElementalPower(1);
+        AchType(AchType_Grenade);
+    }
+	
 	
 	//////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 	///////////////////////////////////////////////////////////////// THROWABLE WEAPONS & MISC ///////////////////////////////////////////////////////////////////////////////////
@@ -2915,6 +3021,7 @@ sub main()
         BlockHitFxOffset([-0.13, -0.08, 0.0]);        
         CraftingSlots(0, 0);
 		UniqueFxNameBase("shield");
+		Price(1010);
     }
 	
 	Item("Medkit_HealthPotion_HR", CategoryType_Medkit)
@@ -3045,7 +3152,461 @@ sub main()
         use PickupSounds_Default();
         GameVersion(45);
     }
+	
 		
+	//////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+	///////////////////////////////////////////////////////////////////////////  CRYSTALS  ///////////////////////////////////////////////////////////////////////////////////////
+	//////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+	 
+	
+	Item("Cons_Crystal_Red", CategoryType_Powerup)
+    {
+        Visibility(true);
+        ItemType(ItemType_Injector);
+        PhysicsScript("single_dropped_inventory.phx");
+        Mesh("crystal_big_a.msh");
+		Skin("Red");
+        InventoryMesh("crystal_small_a.msh");
+		InventorySkin("Red");
+        ColorPreset("red");
+        AnimPrefix("Crystal");
+        HudIcon("component_crystal_red");
+        UseTime(1.0);
+        Buff("Hellraid_B_Damage_DB_Stamina")
+        {
+            Hard("Hellraid_B_Damage_DB_Stamina");
+            Nightmare("Hellraid_B_Damage_DB_Stamina");
+        }
+        Color(Color_Violet);
+		UseOnPickUp(true);
+        MaxStackCount(99);
+        use PickupSounds_Default();
+		UseSound("crystal_hit_XX.wav");
+        GameVersion(49);
+    }	
+	
+	Item("Cons_Crystal_Blue", CategoryType_Powerup)
+    {
+        Visibility(true);
+        ItemType(ItemType_Injector);
+        PhysicsScript("single_dropped_inventory.phx");
+        Mesh("crystal_big_a.msh");
+		Skin("Blue");
+        InventoryMesh("crystal_small_a.msh");
+		InventorySkin("Blue");
+        ColorPreset("blue");
+        AnimPrefix("Crystal");
+        HudIcon("component_crystal_blue");
+        UseTime(1.0);  
+		UseSound("crystal_hit_XX.wav");
+        Buff("Hellraid_B_Speed_DB_Damage")
+        {
+            Hard("Hellraid_B_Speed_DB_Damage");
+            Nightmare("Hellraid_B_Speed_DB_Damage");
+        }
+        Color(Color_Violet);
+		UseOnPickUp(true);
+        MaxStackCount(99);
+        use PickupSounds_Default();
+        GameVersion(49);
+    }	
+	
+	Item("Cons_Crystal_Green", CategoryType_Powerup)
+    {
+        Visibility(true);
+        ItemType(ItemType_Injector);
+        PhysicsScript("single_dropped_inventory.phx");
+        Mesh("crystal_big_a.msh");
+		Skin("Green");
+        InventoryMesh("crystal_small_a.msh"); 
+		InventorySkin("Green");
+        ColorPreset("green");
+        AnimPrefix("Crystal");
+        HudIcon("component_crystal_green");
+		UseSound("crystal_hit_XX.wav");
+        UseTime(1.0);
+        Buff("Hellraid_B_HealthRegen_DB_Stamina") 
+        {
+            Hard("Hellraid_B_HealthRegen_DB_Stamina");
+            Nightmare("Hellraid_B_HealthRegen_DB_Stamina");
+        }
+        Color(Color_Violet);
+		UseOnPickUp(true);
+        MaxStackCount(99);
+        use PickupSounds_Default();
+        GameVersion(49);
+    }	
+
+	Item("Cons_Crystal_Yellow", CategoryType_Powerup)
+    {
+        Visibility(true);
+        ItemType(ItemType_Injector);
+        PhysicsScript("single_dropped_inventory.phx");
+        Mesh("crystal_big_a.msh");
+		Skin("Yellow");
+        InventoryMesh("crystal_small_a.msh"); 
+		InventorySkin("Yellow");
+        ColorPreset("yellow");
+        AnimPrefix("Crystal");
+        HudIcon("component_crystal_yellow");
+		UseSound("crystal_hit_XX.wav");
+        UseTime(1.0);
+        Buff("Hellraid_B_CritStamina_DB_Speed") 
+        {
+            Hard("Hellraid_B_CritStamina_DB_Speed");
+            Nightmare("Hellraid_B_CritStamina_DB_Speed");
+        }
+        Color(Color_Violet);
+		UseOnPickUp(true);
+        MaxStackCount(99);
+        use PickupSounds_Default();
+        GameVersion(49);
+    }
+	
+	Item("Cons_Crystal_White", CategoryType_Powerup)
+    {
+        Visibility(true);
+        ItemType(ItemType_Injector);
+        PhysicsScript("single_dropped_inventory.phx");
+        Mesh("crystal_big_a.msh");
+		Skin("Default");
+        InventoryMesh("crystal_small_a.msh"); 
+		InventorySkin("Default");
+        ColorPreset("white");
+        AnimPrefix("Crystal");
+        HudIcon("component_crystal_white");
+        UseTime(1.0);
+        Buff("Hellraid_B_DDReduction_DB_NoHealthRegen") 
+        {
+            Hard("Hellraid_B_DDReduction_DB_NoHealthRegen");
+            Nightmare("Hellraid_B_DDReduction_DB_NoHealthRegen");
+        }
+        Color(Color_Violet);
+		UseOnPickUp(true);
+        MaxStackCount(99);
+		UseSound("crystal_hit_XX.wav");
+        use PickupSounds_Default();
+        GameVersion(49);
+    }
+	//////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+	/////////////////////////////////////////////////////////////////  BLUEPRINT CRAFT PIECES  ///////////////////////////////////////////////////////////////////////////////////
+	//////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+	
+	Item("Craft_R1_Piece", CategoryType_CraftComponent)
+    {
+        ItemType(ItemType_CraftComponent);
+        Visibility(true);
+        Price(20);
+        HudIcon("component_remnant");
+        Mesh("loot_jewellery.msh");
+        Skin("default");
+        MaxStackCount(999999);
+        PhysicsScript("single_dropped_inventory.phx");
+        Color(Color_Orange);
+        GenType(GenType_None);
+		GameVersion(49);
+    }
+	
+	Item("Craft_R2_Piece", CategoryType_CraftComponent)
+    {
+        ItemType(ItemType_CraftComponent);
+        Visibility(true);
+        Price(25);
+        HudIcon("component_remnant");
+        Mesh("loot_jewellery.msh");
+        Skin("default");
+        MaxStackCount(999999);
+        PhysicsScript("single_dropped_inventory.phx");
+        Color(Color_Orange);
+        GenType(GenType_None);
+		GameVersion(49);
+    }
+	
+	Item("Craft_R3_Piece", CategoryType_CraftComponent)
+    {
+        ItemType(ItemType_CraftComponent);
+        Visibility(true);
+        Price(30);
+        HudIcon("component_remnant");
+        Mesh("loot_jewellery.msh");
+        Skin("default");
+        MaxStackCount(999999);
+        PhysicsScript("single_dropped_inventory.phx");
+        Color(Color_Orange);
+        GenType(GenType_None);
+		GameVersion(49);
+    }
+	
+	Item("Craft_R4_Piece", CategoryType_CraftComponent)
+    {
+        ItemType(ItemType_CraftComponent);
+        Visibility(true);
+        Price(38);
+        HudIcon("component_remnant");
+        Mesh("loot_jewellery.msh");
+        Skin("default");
+        MaxStackCount(999999);
+        PhysicsScript("single_dropped_inventory.phx");
+        Color(Color_Orange);
+        GenType(GenType_None);
+		GameVersion(49);
+    }
+	
+	Item("Craft_R5_Piece", CategoryType_CraftComponent)
+    {
+        ItemType(ItemType_CraftComponent);
+        Visibility(true);
+        Price(45);
+        HudIcon("component_remnant");
+        Mesh("loot_jewellery.msh");
+        Skin("default");
+        MaxStackCount(999999);
+        PhysicsScript("single_dropped_inventory.phx");
+        Color(Color_Orange);
+        GenType(GenType_None);
+		GameVersion(49);
+    }
+	
+	Item("Craft_R6_Piece", CategoryType_CraftComponent)
+    {
+        ItemType(ItemType_CraftComponent);
+        Visibility(true);
+        Price(56);
+        HudIcon("component_remnant");
+        Mesh("loot_jewellery.msh");
+        Skin("default");
+        MaxStackCount(999999);
+        PhysicsScript("single_dropped_inventory.phx");
+        Color(Color_Orange);
+        GenType(GenType_None);
+		GameVersion(49);
+    }
+	
+	Item("Craft_R7_Piece", CategoryType_CraftComponent)
+    {
+        ItemType(ItemType_CraftComponent);
+        Visibility(true);
+        Price(66);
+        HudIcon("component_remnant");
+        Mesh("loot_jewellery.msh");
+        Skin("default");
+        MaxStackCount(999999);
+        PhysicsScript("single_dropped_inventory.phx");
+        Color(Color_Orange);
+        GenType(GenType_None);
+		GameVersion(49);
+    }
+	
+	Item("Craft_R8_Piece", CategoryType_CraftComponent)
+    {
+        ItemType(ItemType_CraftComponent);
+        Visibility(true);
+        Price(77);
+        HudIcon("component_remnant");
+        Mesh("loot_jewellery.msh");
+        Skin("default");
+        MaxStackCount(999999);
+        PhysicsScript("single_dropped_inventory.phx");
+        Color(Color_Orange);
+        GenType(GenType_None);
+		GameVersion(49);
+    }
+	
+	Item("Craft_R9_Piece", CategoryType_CraftComponent)
+    {
+        ItemType(ItemType_CraftComponent);
+        Visibility(true);
+        Price(92);
+        HudIcon("component_remnant");
+        Mesh("loot_jewellery.msh");
+        Skin("default");
+        MaxStackCount(999999);
+        PhysicsScript("single_dropped_inventory.phx");
+        Color(Color_Orange);
+        GenType(GenType_None);
+		GameVersion(49);
+    }
+	
+	Item("Craft_R10_Piece", CategoryType_CraftComponent)
+    {
+        ItemType(ItemType_CraftComponent);
+        Visibility(true);
+        Price(108);
+        HudIcon("component_remnant");
+        Mesh("loot_jewellery.msh");
+        Skin("default");
+        MaxStackCount(999999);
+        PhysicsScript("single_dropped_inventory.phx");
+        Color(Color_Orange);
+        GenType(GenType_None);
+		GameVersion(49);
+    }
+	
+	Item("Craft_R12_Piece", CategoryType_CraftComponent)
+    {
+        ItemType(ItemType_CraftComponent);
+        Visibility(true);
+        Price(55);
+        HudIcon("component_remnant");
+        Mesh("loot_jewellery.msh");
+        Skin("default");
+        MaxStackCount(999999);
+        PhysicsScript("single_dropped_inventory.phx");
+        Color(Color_Orange);
+        GenType(GenType_None);
+		GameVersion(49);
+    }
+	
+	Item("Craft_R13_Piece", CategoryType_CraftComponent)
+    {
+        ItemType(ItemType_CraftComponent);
+        Visibility(true);
+        Price(78);
+        HudIcon("component_remnant");
+        Mesh("loot_jewellery.msh");
+        Skin("default");
+        MaxStackCount(999999);
+        PhysicsScript("single_dropped_inventory.phx");
+        Color(Color_Orange);
+        GenType(GenType_None);
+		GameVersion(49);
+    }
+	
+	//////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+	///////////////////////////////////////////////////////////////////////  SHOTGUN  /////////////////////////////////////////////////////////////////////////////////////
+	//////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+	
+	Item("Firearm_ShotgunHellraid", CategoryType_Firearm)
+    {
+        CategoryType(CategoryType_Firearm);
+        Visibility(true);
+        ItemType(ItemType_Shotgun);
+        PhysicsScript("single_dropped_inventory.phx");
+        UpgradeLevel(0);
+        Condition(-1);
+        DamageRangeMelee(110.0 *0.01);
+        HeadSmashProb(0.9);
+        HeadCutProb(0.0);
+        ArmsCutProb(0.9);
+        LegsCutProb(0.9);
+        CutTypesGroup(CutTypesGroup_All);
+        DamageType(DamageType_Bullet);
+        Mesh("wn_shotgun_g.msh");
+        AnimPrefix("Shotgun");
+        HudIcon("weapon_shotgun_g");
+        ShotTime(0.005);
+        ShotSound("rmngtn_shot_XX.wav");
+        BaseSoundPrefix("rmngtn");
+        DefaultBulletId("Bullet_Shotgun");
+        AmmoCount(2);
+        ReloadTime(-1.0);
+        EmptySound("rmngtn_empty.wav");
+        RagdollBehaviorPrefix("Shotgun");
+        TwoHanded(true);
+        HolderElement("spine1");
+        HolderOffset([0.0,0.0,0.0] *[0.01, 0.01, 0.01]);
+        HolderAngle([0.0,90.0,-90.0]);
+        HandOffsetSprint([0.0,-0.02,0.0]);
+        HandOffset(HandModification_Normal, [0.0,-0.035,-0.01]);
+        HandRot(HandModification_Normal, [1.6,-0.96,-1.76]);
+        HandOffset(HandModification_Custom, [0.0,-0.035,-0.01]);
+        HandRot(HandModification_Custom, [1.6,-0.96,-1.76]);
+        use HitEffects_Firearm();
+        use PickupSounds_Default();
+        ClipReload(true);
+        FxNameShell("BerettaGunfireShell");
+        ShootFx("dw_shotgun_gunshot_sequence.fx");
+        AimBlurStart(0.05);
+        AimBlurEnd(0.1);
+        ShootStatAccuracy(25.0);
+        MoveAcurancyLoseFactor(0.2);
+        JumpInertiaFactor(0.2);
+        DuckInertiaFactor(0.3);
+        ShootMinAngle(0.18);
+        ShootMaxAngle(0.32);
+        ShootAngleVel(0.2);
+        ShootAngleCooldown(0.25);
+        ShootVertRecoil(0.18);
+        ShootVertRecoilSpread(0.09);
+        ShootVertRecoilSpreadMax(0.05);
+        ShootHorzRecoil(0.0);
+        ShootHorzRecoilSpread(0.01);
+        ShootRecoilTime(0.16);
+        ShootMode(ShotMode_Single);
+        BulletsPerShot(8);
+        AimFov(1.34);
+        MaxReboundCount(1);
+        DamageSize(5.0);
+        AiHitSound("bullet");
+        StatsType(StatsType_Pistol);
+        Price(16319);
+        FF_EffectName("Shot_DoubleBarrel");
+        FF_Left(0.3);
+        FF_Right(0.4);
+        FF_Duration(0.1);
+        FF_FadeOut(0.0);
+        CriticalProb(0.1);
+        CriticalDamage(1.0);
+        DamageHeadMult(10.0);
+        DamageToPhysicsObjects(125.0);
+        FirePointRange(0,700.0 *0.01);
+        FirePointDamage(0,1225.0);
+        FirePointForce(0,100.0);
+        FirePointRange(1,1100.0 *0.01);
+        FirePointDamage(1,1225.0);
+        FirePointForce(1,100.0);
+        FirePointRange(2,1600.0 *0.01);
+        FirePointDamage(2,410.0);
+        FirePointForce(2,50.0);
+        FirePointRange(3,3000.0 *0.01);
+        FirePointDamage(3,205.0);
+        FirePointForce(3,25.0);
+        Color(Color_Blue);
+        GenType(GenType_Firearm);
+        ShotTailDelay(0.0);
+        AchType(AchType_Pistol);
+        NameGender(0);
+        PriceMult(1.1);
+        ShootAnimFactor(1.0);
+        HandInertiaFactor(0.0);
+        HandInertiaRotFactor([0.0,0.0,1.0]);
+        BulletSpeed(350.0);
+        NoiseType("HEAVY_SHOT");
+        GameVersion(49);
+    }
+
+    Item("Firearm_ShotgunHellraid", CategoryType_Firearm)
+    {
+        CategoryType(CategoryType_Firearm);
+        UsageType(UsageType_Aim);
+        UpgradeLevel(0);
+        HandOffset(HandModification_Normal, [0.0005,-0.0112,0.0]);
+        HandRot(HandModification_Normal, [0.98,-0.0705,0.0]);
+        ShootVertRecoil(0.15);
+        ShootVertRecoilSpread(0.02);
+        ShootVertRecoilSpreadMax(0.1);
+        ShootHorzRecoil(0.0);
+        ShootHorzRecoilSpread(0.0);
+        ShootRecoilTime(0.16);
+        HandInertiaFactor(0.0);
+        GameVersion(49);
+    }
+	
+	Item("Bundle_Shotgun_Unlocker", CategoryType_ItemBundle)
+    {
+		GameVersion(49);
+		Name("&Firearm_ShotgunHellraid_N&");
+        ItemType(ItemType_ItemBundle);
+        BundleItems()
+        {
+            Item("Firearm_ShotgunHellraid", 1);
+            Item("Collectable_Shotgun_Unlocker", 1);
+            Item("Ammo_ShotgunSmall", 1);
+        }
+        Mesh("box_plastic_closed_ho.msh");
+        HudIcon("weapon_shotgun_g");
+        Color(Color_Platinum);
+	}
 	//////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 	///////////////////////////////////////////////////////////////////////  UNUSED WEAPONS  /////////////////////////////////////////////////////////////////////////////////////
 	//////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////

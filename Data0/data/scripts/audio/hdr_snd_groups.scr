@@ -21345,6 +21345,102 @@ SoundGroup("player_weapon_macheteastronaut_throw")
 	}
 }
 
+SoundGroup("Chainsaw_shot")
+{
+	Sound("chainsaw_shot_00")
+
+	GroupProperties()
+	{
+		Volume(1.60)
+		//HDRWndMapping(1.00, 0.80)
+		Bus(7)
+		MinDistance(3.00)
+		RollOff(0.5)
+		OcclusionFullImpact(0.6)
+		OcclusionPartialImpact(0)
+		AttenuationModel(5)
+		MaxDistance(100.00)
+	}
+}
+
+SoundGroup("Slot_machine_shot")
+{
+	Sound("Slot_machine_shot_00")
+	Sound("Slot_machine_shot_01")
+	Sound("Slot_machine_shot_02")
+	Sound("Slot_machine_shot_03")
+
+	GroupProperties()
+	{
+		Volume(1.80)
+		//HDRWndMapping(1.00, 0.6)
+		Bus(7)
+		MinDistance(3.00)
+		RollOff(0.5)
+		OcclusionFullImpact(0.6)
+		OcclusionPartialImpact(0)
+		AttenuationModel(5)
+		MaxDistance(100.00)
+	}
+}
+
+SoundGroup("Dieselpunk_smg_shot")
+{
+	Sound("Dieselpunk_smg_shot_00")
+	Sound("Dieselpunk_smg_shot_01")
+	Sound("Dieselpunk_smg_shot_02")
+	Sound("Dieselpunk_smg_shot_03")
+	Sound("Dieselpunk_smg_shot_04")
+	Sound("Dieselpunk_smg_shot_05")
+	Sound("Dieselpunk_smg_shot_06")
+	Sound("Dieselpunk_smg_shot_07")
+
+	GroupProperties()
+	{	
+		Volume(1.60)
+		//HDRWndMapping(1.00, 0.8)
+		Bus(7)
+		Pitch(0.85)
+		MinDistance(3.00)
+		RollOff(0.5)
+		OcclusionFullImpact(0.6)
+		OcclusionPartialImpact(0)
+		AttenuationModel(5)
+		MaxDistance(100.00)
+	}
+}
+
+SoundGroup("player_weapon_moka_weapon_hit")
+{
+	Sound("hit_moka_weapon_00")
+	Sound("hit_moka_weapon_01")
+	Sound("hit_moka_weapon_02")
+	Sound("hit_moka_weapon_03")
+	Sound("hit_moka_weapon_04")
+
+	GroupProperties()
+	{
+		Volume(1.50)
+		PitchRange(0.90, 1.00)
+		Bus(7)
+	}
+}
+
+SoundGroup("player_weapon_moka_weapon_empty")
+{
+	Sound("empty_moka_weapon_right_01")
+	Sound("empty_moka_weapon_right_00")
+	Sound("empty_moka_weapon_left_01")
+	Sound("empty_moka_weapon_left_00")
+
+	GroupProperties()
+	{
+		Volume(1.10)
+		PitchRange(0.90, 1.00)
+		Bus(7)
+	}
+}
+
 SoundGroup("torturer_steps")
 {
 	Sound("step_torturer_left_concrete_00")

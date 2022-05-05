@@ -14434,9 +14434,9 @@ sub main()
         UpgradeLevel(0);
         Condition(35);
         CriticalCondition(11);
-        Damage(88.0);
+        Damage(108.0);
         Force(20.0);
-        CriticalProb(0.0);
+        CriticalProb(0.5);
         CriticalDamage(2.0);
         DamageRange(155.0 *0.01);
         DamageToPhysicsObjects(50.0);

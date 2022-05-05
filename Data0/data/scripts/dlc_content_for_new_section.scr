@@ -15,7 +15,7 @@ sub main()
 	// XoneUrl("https://www.microsoft.com/pl-pl/p/dying-light/bxn9lb6r3zpg?activetab=pivot:overviewtab");    - address of website on Microsoft Store if we want to open a browser, not shop
 	// Ps4Url("https://store.playstation.com/pl-pl/product/EP1018-CUSA02010_00-DYINGLIGHTGAME00");           - address of website on PlayStatiion Store if we want to open a browser, not shop
 	// GogUrl("https://www.gog.com/game/dying_light_the_following_enhanced_edition");                        - address of website on GoG if we want to open a browser, not shop
-    // EpicUrl("https://dyinglightgame.com/dyinglight/");                                                    - address of website on Epic Games Store if we want to open a browser, not shop
+    // EpicUrl("https://www.epicgames.com/store/p/dying-light/");                                                    - address of website on Epic Games Store if we want to open a browser, not shop
 
 	//////////////////////////////////////////////////////////////////////////////////////////////////////
 	// PREORDERS
@@ -61,13 +61,21 @@ sub main()
 	//////////////////////////////////////////////////////////////////////////////////////////////////////
 	// FEATURED
 	//////////////////////////////////////////////////////////////////////////////////////////////////////
-
+	
+	//Dieselpunk
+	DLC(1935540, "DISELPUNK0000000", "37384e39-344b-3034-c042-355a424e0a00", "c5db31b8fab84e21b8a2062d987e8322", "Bundle", "Paid", true)
+    {
+        Image("dlc_new_section_dieselpunk");
+		Platforms(true, true, true, true, true);
+		EpicUrl("https://www.epicgames.com/store/p/dying-light/");
+    }
+	
 	//Snow Ops Bundle
 	DLC(1822810, "WINTERPACK000000", "54304e39-3054-3036-c058-533237310a00", "011b93254f494eabbec65bffbd49bb72", "Bundle", "Paid", true)
     {
         Image("dlc_new_section_snow_ops");
 		Platforms(true, true, true, true, true);
-		EpicUrl("https://dyinglightgame.com/dyinglight/");
+		EpicUrl("https://www.epicgames.com/store/p/dying-light/");
     }
 
 	//Van Crane
@@ -75,7 +83,7 @@ sub main()
     {
         Image("dlc_new_section_van_crane");
 		Platforms(true, true, true, true, true);
-		EpicUrl("https://dyinglightgame.com/dyinglight/");
+		EpicUrl("https://www.epicgames.com/store/p/dying-light/");
     }
 
 	//Astronaut
@@ -83,7 +91,7 @@ sub main()
     {
         Image("dlc_new_section_astronaut");
 		Platforms(true, true, true, true, true);
-		EpicUrl("https://dyinglightgame.com/dyinglight/");
+		EpicUrl("https://www.epicgames.com/store/p/dying-light/");
     }
 
 	// Savvy
@@ -91,7 +99,7 @@ sub main()
     {
         Image("dlc_new_section_savvy");
 		Platforms(true, true, true, true, true);
-		EpicUrl("https://dyinglightgame.com/dyinglight/");
+		EpicUrl("https://www.epicgames.com/store/p/dying-light/");
     }
 
 	// Ox
@@ -99,7 +107,7 @@ sub main()
     {
         Image("dlc_new_section_ox");
 		Platforms(true, true, true, true, true);
-		EpicUrl("https://dyinglightgame.com/dyinglight/");
+		EpicUrl("https://www.epicgames.com/store/p/dying-light/");
     }
 	
 	// Viking
@@ -107,7 +115,7 @@ sub main()
     {
         Image("dlc_new_section_viking");
 		Platforms(true, true, true, true, true);
-		EpicUrl("https://dyinglightgame.com/dyinglight/");
+		EpicUrl("https://www.epicgames.com/store/p/dying-light/");
     }
 
 	//5th anniversary
@@ -116,7 +124,7 @@ sub main()
         Title("&dlc_5th_anniversary_name&");
         Image("dlc_new_section_5th_anniversary_skin");
 		Platforms(true, true, true, true, true);
-		EpicUrl("https://dyinglightgame.com/dyinglight/");
+		EpicUrl("https://www.epicgames.com/store/p/dying-light/");
     }
 	
 	// Hellraid
@@ -125,7 +133,7 @@ sub main()
 		Title("&dlccontent_hellraid_h_1&");
 		Image("dlc_new_section_hellraid");
 		Platforms(true, true, true, true, true);
-		EpicUrl("https://dyinglightgame.com/dyinglight/");
+		EpicUrl("https://www.epicgames.com/store/p/dying-light/");
 	}
 
 	// Shu Warrior
@@ -134,7 +142,7 @@ sub main()
         Title("&dlc_Shu_Warrior_skin_name&");
         Image("dlc_new_section_Shu_Warrior_skin");
 		Platforms(true, true, true, true, true);
-		EpicUrl("https://dyinglightgame.com/dyinglight/");
+		EpicUrl("https://www.epicgames.com/store/p/dying-light/");
     }
 
 	//////////////////////////////////////////////////////////////////////////////////////////////////////
@@ -148,7 +156,7 @@ sub main()
 		Title("&DLC17_DlcContent_Name&");
 		Image("dlc_new_section_the_following");
 		Platforms(true, true, true, true, true);
-		EpicUrl("https://dyinglightgame.com/dyinglight/");
+		EpicUrl("https://www.epicgames.com/store/p/dying-light/");
 	}
 
 	// Hellraid
@@ -157,7 +165,7 @@ sub main()
 		Title("&dlccontent_hellraid_h_1&");
 		Image("dlc_new_section_hellraid");
 		Platforms(true, true, true, true, true);
-		EpicUrl("https://dyinglightgame.com/dyinglight/");
+		EpicUrl("https://www.epicgames.com/store/p/dying-light/");
 	}
 
 	// The Bozak Horde
@@ -166,7 +174,7 @@ sub main()
 		Title("&DLC16_DlcContent_Name&");
 		Image("dlc_new_section_bozak_horde");
 		Platforms(true, true, true, true, true);
-		EpicUrl("https://dyinglightgame.com/dyinglight/");
+		EpicUrl("https://www.epicgames.com/store/p/dying-light/");
 	}
 
 	// Cuisine & Cargo 
@@ -175,7 +183,7 @@ sub main()
         Title("&DLC_SeasonPass_Desc_Header_5&");
         Image("dlc_new_section_cuisine_cargo");
 		Platforms(true, true, true, true, true);
-		EpicUrl("https://dyinglightgame.com/dyinglight/");
+		EpicUrl("https://www.epicgames.com/store/p/dying-light/");
     }
 
 
@@ -183,12 +191,20 @@ sub main()
 	// BUNDLE
 	//////////////////////////////////////////////////////////////////////////////////////////////////////
 
+	//Dieselpunk
+	DLC(1935540, "DISELPUNK0000000", "37384e39-344b-3034-c042-355a424e0a00", "c5db31b8fab84e21b8a2062d987e8322", "Bundle", "Paid", false)
+    {
+        Image("dlc_new_section_dieselpunk");
+		Platforms(true, true, true, true, true);
+		EpicUrl("https://www.epicgames.com/store/p/dying-light/");
+    }
+
 	//Snow Ops Bundle
 	DLC(1822810, "WINTERPACK000000", "54304e39-3054-3036-c058-533237310a00", "011b93254f494eabbec65bffbd49bb72", "Bundle", "Paid", false)
     {
         Image("dlc_new_section_snow_ops");
 		Platforms(true, true, true, true, true);
-		EpicUrl("https://dyinglightgame.com/dyinglight/");
+		EpicUrl("https://www.epicgames.com/store/p/dying-light/");
     }
 
 	//Van Crane
@@ -196,7 +212,7 @@ sub main()
     {
         Image("dlc_new_section_van_crane");
 		Platforms(true, true, true, true, true);
-		EpicUrl("https://dyinglightgame.com/dyinglight/");
+		EpicUrl("https://www.epicgames.com/store/p/dying-light/");
     }
 	
 	//Astronaut
@@ -204,7 +220,7 @@ sub main()
     {
         Image("dlc_new_section_astronaut");
 		Platforms(true, true, true, true, true);
-		EpicUrl("https://dyinglightgame.com/dyinglight/");
+		EpicUrl("https://www.epicgames.com/store/p/dying-light/");
     }
 
 	// Savvy
@@ -212,15 +228,15 @@ sub main()
     {
         Image("dlc_new_section_savvy");
 		Platforms(true, true, true, true, true);
-		EpicUrl("https://dyinglightgame.com/dyinglight/");
+		EpicUrl("https://www.epicgames.com/store/p/dying-light/");
     }
 
 	// Rust
 	DLC(1599030, "RUSTCROSS0000000", "48504e39-5a48-3042-c056-363042343500", "8044af23f1cb4550944090fb48473b66", "Bundle", "Free", false)
     {
         Image("dlc_new_section_rust");
-		Platforms(true, true, true, true, false);
-		EpicUrl("https://dyinglightgame.com/dyinglight/");
+		Platforms(true, true, true, true, true);
+		EpicUrl("https://www.epicgames.com/store/p/dying-light/");
     }
 
 	// Harran Tactical
@@ -228,7 +244,7 @@ sub main()
     {
         Image("dlc_new_section_tactical_unit");
 		Platforms(true, true, true, true, true);
-		EpicUrl("https://dyinglightgame.com/dyinglight/");
+		EpicUrl("https://www.epicgames.com/store/p/dying-light/");
     }
 
 	// Ox
@@ -236,7 +252,7 @@ sub main()
     {
         Image("dlc_new_section_ox");
 		Platforms(true, true, true, true, true);
-		EpicUrl("https://dyinglightgame.com/dyinglight/");
+		EpicUrl("https://www.epicgames.com/store/p/dying-light/");
     }
 	
 	// Viking
@@ -244,7 +260,7 @@ sub main()
     {
         Image("dlc_new_section_viking");
 		Platforms(true, true, true, true, true);
-		EpicUrl("https://dyinglightgame.com/dyinglight/");
+		EpicUrl("https://www.epicgames.com/store/p/dying-light/");
     }
 
 	// Special agent
@@ -252,15 +268,15 @@ sub main()
     {
         Image("dlc_new_section_special_agent");
 		Platforms(true, true, true, true, true);
-		EpicUrl("https://dyinglightgame.com/dyinglight/");
+		EpicUrl("https://www.epicgames.com/store/p/dying-light/");
     }
 
 	// L4D2
-	DLC(1454750, "L4DCROSS20000000", "52574e39-5350-3030-c047-57484b477b00", "L4DCROSS20000000", "Bundle", "Free", false)
+	DLC(1454750, "L4DCROSS20000000", "52574e39-5350-3030-c047-57484b477b00", "562eec422ea04230a529bdc0f646fc23", "Bundle", "Free", false)
     {
         Image("dlc_new_section_left_4_dead_2");
-		Platforms(true, true, true, true, false);
-		EpicUrl("https://dyinglightgame.com/dyinglight/");
+		Platforms(true, true, true, true, true);
+		EpicUrl("https://www.epicgames.com/store/p/dying-light/");
     }
 
 	// Volkan
@@ -268,16 +284,16 @@ sub main()
     {
         Image("dlc_new_section_Volkan");
 		Platforms(true, true, true, true, true);
-		EpicUrl("https://dyinglightgame.com/dyinglight/");
+		EpicUrl("https://www.epicgames.com/store/p/dying-light/");
     }
 
 	// Left 4 Dead 2 Weapon Pack
-	DLC(1174581, "L4DCROSS00000000", "65e034bf-93b2-4444-8b15-f0da690e2c76", "L4DCROSS00000000", "Bundle", "Free", false)
+	DLC(1174581, "L4DCROSS00000000", "65e034bf-93b2-4444-8b15-f0da690e2c76", "2da26c664de342ae9abd725218969425", "Bundle", "Free", false)
     {
         Title("&&");
         Image("dlc_new_section_left_4_dead");
-		Platforms(true, true, true, true, false);
-		EpicUrl("https://dyinglightgame.com/dyinglight/");
+		Platforms(true, true, true, true, true);
+		EpicUrl("https://www.epicgames.com/store/p/dying-light/");
     }
 	
 	//5th anniversary
@@ -286,7 +302,7 @@ sub main()
         Title("&dlc_5th_anniversary_name&");
         Image("dlc_new_section_5th_anniversary_skin");
 		Platforms(true, true, true, true, true);
-		EpicUrl("https://dyinglightgame.com/dyinglight/");
+		EpicUrl("https://www.epicgames.com/store/p/dying-light/");
     }
 
 	// Shu Warrior
@@ -295,7 +311,7 @@ sub main()
         Title("&dlc_Shu_Warrior_skin_name&");
         Image("dlc_new_section_Shu_Warrior_skin");
 		Platforms(true, true, true, true, true);
-		EpicUrl("https://dyinglightgame.com/dyinglight/");
+		EpicUrl("https://www.epicgames.com/store/p/dying-light/");
     }
 
 	// RETROWAVE SKIN PACK
@@ -304,7 +320,7 @@ sub main()
         Title("&dlc_retrowave_skin_name&");
         Image("dlc_new_section_retrowave_skin");
 		Platforms(true, true, true, true, true);
-		EpicUrl("https://dyinglightgame.com/dyinglight/");
+		EpicUrl("https://www.epicgames.com/store/p/dying-light/");
     }
 	
 	// Rise Elite pack
@@ -313,7 +329,7 @@ sub main()
         Title("&dlc_rais_elite_Name&");
         Image("dlc_new_section_rais_elite");
 		Platforms(true, true, true, true, true);
-		EpicUrl("https://dyinglightgame.com/dyinglight/");
+		EpicUrl("https://www.epicgames.com/store/p/dying-light/");
     }
 
 	// GodFather DLC PACK
@@ -322,16 +338,16 @@ sub main()
         Title("&dlc_godfather_Name&");
         Image("dlc_new_section_godfather");
 		Platforms(true, true, true, true, true);
-		EpicUrl("https://dyinglightgame.com/dyinglight/");
+		EpicUrl("https://www.epicgames.com/store/p/dying-light/");
     }
 
 	// Unturned 
-	DLC(1272090, "UNTURNEDCROSS000", "4d504e39-484e-3054-c043-4d4e42578500", "UNTURNEDCROSS000", "Bundle", "Free", false)
+	DLC(1272090, "UNTURNEDCROSS000", "4d504e39-484e-3054-c043-4d4e42578500", "c64f5415d90a435a82eaf182b1f10d1c", "Bundle", "Free", false)
     {
         Title("&&");
         Image("dlc_new_section_unturned");
-		Platforms(true, true, true, true, false);
-		EpicUrl("https://dyinglightgame.com/dyinglight/");
+		Platforms(true, true, true, true, true);
+		EpicUrl("https://www.epicgames.com/store/p/dying-light/");
     }
 
 	// HARRAN INMATE PACK
@@ -340,7 +356,7 @@ sub main()
         Title("&dlc_harran_inmate_name&");
         Image("dlc_new_section_harran_inmate");
 		Platforms(true, true, true, true, true);
-		EpicUrl("https://dyinglightgame.com/dyinglight/");
+		EpicUrl("https://www.epicgames.com/store/p/dying-light/");
     }
 
 	// Harran Ranger Bundle
@@ -349,7 +365,7 @@ sub main()
 		Title("&DLC30_DlcContent_Name&");
 		Image("dlc_new_section_harran_ranger_bundle");
 		Platforms(true, true, true, true, true);
-		EpicUrl("https://dyinglightgame.com/dyinglight/");
+		EpicUrl("https://www.epicgames.com/store/p/dying-light/");
 	}
 
 	// Volatile Hunter Bundle
@@ -358,16 +374,16 @@ sub main()
 		Title("&DLC32_DlcContent_Name&");
 		Image("dlc_new_section_volatile_hunter_bundle");
 		Platforms(true, true, true, true, true);
-		EpicUrl("https://dyinglightgame.com/dyinglight/");
+		EpicUrl("https://www.epicgames.com/store/p/dying-light/");
 	}
 
 	// Chivalry
-	DLC(1184351, "CHIVALRYCROSS000", "53475039-3334-3030-c036-50344743fe00", "CHIVALRYCROSS000", "Bundle", "Free", false)
+	DLC(1184351, "CHIVALRYCROSS000", "53475039-3334-3030-c036-50344743fe00", "1a506d9f27f9448fa26cf6f9f058e4cf", "Bundle", "Free", false)
     {
         Title("&&");
         Image("dlc_new_section_chivalry");
-		Platforms(true, true, true, true, false);
-		EpicUrl("https://dyinglightgame.com/dyinglight/");
+		Platforms(true, true, true, true, true);
+		EpicUrl("https://www.epicgames.com/store/p/dying-light/");
     }
 
 	// White Death Bundle
@@ -376,7 +392,7 @@ sub main()
 		Title("&DLC37_DlcContent_Name&");
 		Image("dlc_new_section_white_death_bundle");
 		Platforms(true, true, true, true, true);
-		EpicUrl("https://dyinglightgame.com/dyinglight/");
+		EpicUrl("https://www.epicgames.com/store/p/dying-light/");
 	}
 
 	// Vintage Gunslinger Bundle
@@ -385,7 +401,7 @@ sub main()
 		Title("&DLC38_DlcContent_Name&");
 		Image("dlc_new_section_vintage_gunslinger_bundle");
 		Platforms(true, true, true, true, true);
-		EpicUrl("https://dyinglightgame.com/dyinglight/");
+		EpicUrl("https://www.epicgames.com/store/p/dying-light/");
 	}
 	
 	// Gun Psycho Bundle
@@ -394,7 +410,7 @@ sub main()
 		Title("&DLC31_DlcContent_Name&");
 		Image("dlc_new_section_gun_psycho_bundle");
 		Platforms(true, true, true, true, true);
-		EpicUrl("https://dyinglightgame.com/dyinglight/");
+		EpicUrl("https://www.epicgames.com/store/p/dying-light/");
 	}
 	
 	// Crash Test Skin Pack
@@ -403,7 +419,7 @@ sub main()
 		Title("&DLC29_DlcContent_Name&");
 		Image("dlc_new_section_crash_test_skin_pack");
 		Platforms(true, true, true, true, true);
-		EpicUrl("https://dyinglightgame.com/dyinglight/");
+		EpicUrl("https://www.epicgames.com/store/p/dying-light/");
 	}
 	
 	// Ultimate Survivor Bundle
@@ -412,6 +428,6 @@ sub main()
 		Title("&DLC23_DlcContent_Name&");
 		Image("dlc_new_section_ultimate_survivor_bundle");
 		Platforms(true, true, true, true, true);
-		EpicUrl("https://dyinglightgame.com/dyinglight/");
+		EpicUrl("https://www.epicgames.com/store/p/dying-light/");
 	}
 }

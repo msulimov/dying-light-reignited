@@ -1,4 +1,5 @@
 sub main()
 {
 	Script("buffs.xml");
+	Script("btz_buffs.xml"); //custom made file, Rebuild Mod (GAAS-2021)
 }

@@ -1,7 +1,538 @@
 import "inventorystuff.scr"
 sub main()
 {	
+	Item("Slot_Machine", CategoryType_Firearm)
+    {
+        Name("&Slot_Machine_N&");
+        GameVersion(49);
+        CategoryType(CategoryType_Firearm);
+        Visibility(true);
+        ItemType(ItemType_Pistol);
+        PhysicsScript("single_dropped_inventory.phx");
+        UpgradeLevel(0);
+        Condition(-1);
+        DamageRangeMelee(110.0 *0.01);
+        HeadSmashProb(0.3);
+        HeadCutProb(0.3);
+        ArmsCutProb(0.3);
+        LegsCutProb(0.3);
+        CutTypesGroup(CutTypesGroup_Holes);
+        DamageType(DamageType_Bullet);
+        Mesh("wn_pistol_e_hq.msh");
+        Skin("TolgaFatin");
+        SkinTag("Weapon_Craft0");
+        AnimPrefix("Singleshot");
+        HudIcon("weapon_pistol_e");
+        ShotTime(0.3);
+        ShotSound("Slot_machine_shot_XX.wav");
+        DefaultBulletId("Bullet_Pistol");
+        AmmoCount(1);
+		NotInheritBaseAmmoCount();
+        ReloadTime(1.5);
+        EmptySound("Slot_machine_empty_XX.wav");
+        TwoHanded(false);
+        HolderElement("r_thigh");
+        HolderOffset([0.0,10.0,0.0] *[0.01, 0.01, 0.01]);
+        HolderAngle([0.0,90.0,-90.0]);
+        HandOffset(HandModification_Normal, [-0.03,-0.03,0.0]);
+        HandOffset(HandModification_Custom, [-0.03,-0.03,0.0]);
+        use HitEffects_Firearm();
+        use PickupSounds_Default();
+        ClipReload(true);
+        FxNameShell("BerettaGunfireShell");
+        ShootFx("PistolGunfireSingle_sequence.fx");
+        AimBlurStart(0.25);
+        AimBlurEnd(0.35);
+        ShootStatAccuracy(95.0);
+        MoveAcurancyLoseFactor(0.2);
+        DuckInertiaFactor(0.3);
+        ShootMinAngle(0.18);
+        ShootMaxAngle(0.25);
+        ShootAngleVel(0.2);
+        ShootAngleCooldown(0.25);
+        ShootVertRecoil(0.04);
+        ShootVertRecoilSpread(0.012);
+        ShootHorzRecoil(0.0);
+        ShootHorzRecoilSpread(0.0);
+        ShootRecoilTime(0.09);
+        ShootMode(ShotMode_Single);
+        BulletsPerShot(2);
+        AimFov(1.6);
+        MaxReboundCount(1);
+        DamageSize(3.0);
+        AiHitSound("bullet");
+        StatsType(StatsType_Pistol);
+        Price(11666);
+        FF_EffectName("Shot_StrongPistol");
+        FF_Left(0.3);
+        FF_Right(0.4);
+        FF_Duration(0.1);
+        FF_FadeOut(0.0);
+        CriticalProb(1.0);
+        CriticalDamage(3.0);
+        DamageHeadMult(10.0);
+        DamageToPhysicsObjects(100.0);
+        FirePointRange(0,700.0 *0.01);
+        FirePointDamage(0,300.0); 
+        FirePointForce(0,100.0);
+        FirePointRange(1,1100.0 *0.01);
+        FirePointDamage(1,300.0);
+        FirePointForce(1,100.0);
+        FirePointRange(2,1600.0 *0.01);
+        FirePointDamage(2,150.0);
+        FirePointForce(2,50.0);
+        FirePointRange(3,3000.0 *0.01);
+        FirePointDamage(3,75.0);
+        FirePointForce(3,25.0);
+        Color(Color_Blue);
+        GenType(GenType_Firearm);
+        ShotTailDelay(0.5);
+        AchType(AchType_Pistol);
+        NameGender(0);
+		NoiseType("LIGHT_SHOT");
+		BulletSpeed(350.0);
+    }
 
+    Item("Slot_Machine", CategoryType_Firearm)
+    {
+        GameVersion(49);
+        CategoryType(CategoryType_Firearm);
+        UsageType(UsageType_Aim);
+        UpgradeLevel(0);
+        HandOffset(HandModification_Normal, [-0.0009,-0.0051,0.2]);
+        HandRot(HandModification_Normal, [0.7237,-0.1293,0.0]);
+        HandOffset(HandModification_Custom, [-0.0003,-0.0003,0.0]);
+        ShootAngleCooldown(0.189);
+        ShootVertRecoil(0.0);
+        ShootVertRecoilSpread(0.0);
+        ShootHorzRecoil(0.0);
+        ShootHorzRecoilSpread(0.0);
+        ShootRecoilTime(0.16);
+    }
+
+	Item("Bullet_SlotMachine_Stasis", CategoryType_Ammo)
+    {
+        GameVersion(49);
+        Mesh("loot_ok_ammo_short.msh");
+        HudIcon("ammo_pistol");
+        ItemType(ItemType_Bullet);
+        AmmoType(AmmoType_Pistol);
+        DamageType(DamageType_Blast);
+        SpawnThrowableOnHit("Throwable_Bullet_SlotMachine_Stasis");
+        MaxAmmoCount(90);
+    }
+
+    Item("Throwable_Bullet_SlotMachine_Stasis", CategoryType_Throwable)
+    {
+        GameVersion(49);
+        Name("&Throwable_DevCraft1_N&");
+        Description("&Throwable_DevCraft1_D&");
+        DeveloperEffect("StasisField");
+        ItemType(ItemType_DeveloperGrenade);
+        Visibility(true);
+        AmmoCount(3);
+        MaxStackCount(15);
+        Price(500);
+        Mesh("wn_grenade_b.msh");
+        Skin("default");
+        AnimPrefix("Grenade");
+        PhysicsScript("single_dropped_inventory.phx");
+        HudIcon("weapon_frag_grenade");
+        Damage(1.0);
+        DamageRange(6.0);
+        PhysicsDamageMul(1.0);
+        HeadCutProb(1.0);
+        ArmsCutProb(1.0);
+        LegsCutProb(1.0);
+        DamageType(DamageType_StasisBlast);
+        DamageDuration(5.0);
+        ThrowImpulseLook(13.0);
+        ThrowImpulseUp(2.0);
+        ExplosionBuildUpSound("astro_pistol_stasis.wav");
+        ExplodeDelay(0.0);
+        ThrowEndSound("throwing.wav");
+        StatsType(StatsType_Explosive);
+        NoiseType("EXPLOSION");
+        Color(Color_Orange);
+        EquipmentSlot(0);
+        AchType(AchType_Grenade);
+        SoundsCauseAggression(false);
+    }
+
+	Item("Bullet_SlotMachine_Dancing", CategoryType_Ammo)
+    {
+        GameVersion(49);
+        Mesh("loot_ok_ammo_short.msh");
+        HudIcon("ammo_pistol");
+        ItemType(ItemType_Bullet);
+        AmmoType(AmmoType_Pistol);
+        DamageType(DamageType_Blast);
+        SpawnThrowableOnHit("Throwable_Bullet_SlotMachine_Dancing");
+        MaxAmmoCount(90);
+    }
+
+    Item("Throwable_Bullet_SlotMachine_Dancing", CategoryType_Throwable)
+    {
+        GameVersion(49);
+        ItemType(ItemType_DeveloperGrenade);
+        Visibility(true);
+        AmmoCount(3);
+        MaxStackCount(99);
+        Price(100);
+        Mesh("smoke_granade_static.msh");
+        Skin("fire");
+        AnimPrefix("Grenade");
+        PhysicsScript("single_dropped_inventory.phx");
+        HudIcon("weapon_swan_lake");
+        Damage(1.0);
+        DamageRange(8.0);
+        PhysicsDamageMul(1.0);
+        DamageType(DamageType_Blast);
+        DamageDuration(0.0);
+        ThrowImpulseLook(13.0);
+        ThrowImpulseUp(2.0);
+        ExplosionFx("military_signal_flare_ignition_sequence.fx"); 
+        ExplosionSound("homemade_bomb_explosion.wav");
+        ExplodeDelay(0.1);
+        ThrowEndSound("throwing.wav");
+        RagdollBehaviorPrefix("KOREK_1");
+        StatsType(StatsType_Explosive);
+        NoiseType("EXPLOSION");
+        Color(Color_Blue);
+        EquipmentSlot(0);
+        AchType(AchType_Grenade);
+    }
+
+	Item("Bullet_SlotMachine_Flying", CategoryType_Ammo)
+    {
+        GameVersion(49);
+        Mesh("loot_ok_ammo_short.msh");
+        HudIcon("ammo_pistol");
+        ItemType(ItemType_Bullet);
+        AmmoType(AmmoType_Pistol);
+        DamageType(DamageType_Blast);
+        SpawnThrowableOnHit("Throwable_Bullet_SlotMachine_Flying");
+        MaxAmmoCount(90);
+    }
+
+    Item("Throwable_Bullet_SlotMachine_Flying", CategoryType_Throwable)
+    {
+        GameVersion(49);
+        ItemType(ItemType_DeveloperGrenade);
+        Visibility(true);
+        AmmoCount(3);
+        MaxStackCount(99);
+        Price(100);
+        Mesh("smoke_granade_static.msh");
+        Skin("fire");
+        AnimPrefix("Grenade");
+        PhysicsScript("single_dropped_inventory.phx");
+        HudIcon("weapon_super_grenade");
+        Damage(1.0);
+        DamageRange(8.0);
+        PhysicsDamageMul(1.0);
+        DamageType(DamageType_Blast);
+        DamageDuration(0.0);
+        ThrowImpulseLook(13.0);
+        ThrowImpulseUp(2.0);
+        ExplosionFx("military_signal_flare_ignition_sequence.fx"); 
+        ExplosionSound("homemade_bomb_explosion.wav");
+        ExplodeDelay(0.1);
+        ThrowEndSound("throwing.wav");
+        StatsType(StatsType_Explosive);
+        RagdollBehaviorPrefix("KOREK_2");
+        NoiseType("EXPLOSION");
+        Color(Color_Blue);
+        EquipmentSlot(0);
+        AchType(AchType_Grenade);
+    }
+
+	Item("Bullet_SlotMachine_Explosive", CategoryType_Ammo)
+    {
+        GameVersion(49);
+        Mesh("loot_ok_ammo_short.msh");
+        HudIcon("ammo_pistol");
+        ItemType(ItemType_Bullet);
+        AmmoType(AmmoType_Pistol);
+        DamageType(DamageType_Blast);
+        SpawnThrowableOnHit("Throwable_Bullet_SlotMachine_Explosive");
+        MaxAmmoCount(90);
+    }
+
+    Item("Throwable_Bullet_SlotMachine_Explosive", CategoryType_Throwable)
+    {
+        GameVersion(49);
+        ItemType(ItemType_Grenade);
+        Visibility(true);
+        AmmoCount(3);
+        MaxStackCount(99);
+        Price(1);
+        Mesh("item_burning_a_th.msh");
+		Skin("Default");
+        AnimPrefix("Grenade");
+        PhysicsScript("single_dropped_inventory.phx");
+        HudIcon("component_potion_explosive");
+        Damage(800.0);
+        DamageToPhysicsObjects(150.0);
+        DamageRange(5.5);
+        PhysicsDamageMul(1.0);
+        HeadCutProb(1.0);
+        ArmsCutProb(1.0);
+        LegsCutProb(1.0);
+        DamageType(DamageType_Blast);
+        DamageDuration(0.0);
+        ThrowImpulseLook(25.0);
+        ThrowImpulseUp(2.0);
+		ScheduleExplodeAfterContact(true);
+        ExplodeDelay(0.1);
+        ExplosionFx("diy_grenade_explosion_sequence.fx");
+        ExplosionSound("homemade_bomb_explosion.wav");
+        ThrowEndSound("canister_plastic_throw.wav");
+        StatsType(StatsType_Explosive);
+        NoiseType("EXPLOSION");
+        Color(Color_Blue);
+        EquipmentSlot(0);
+        AchType(AchType_Grenade);
+    }
+
+	Item("Bullet_SlotMachine_Freeze", CategoryType_Ammo)
+    {
+        GameVersion(49);
+        Mesh("loot_ok_ammo_short.msh");
+        HudIcon("ammo_pistol");
+        ItemType(ItemType_Bullet);
+        AmmoType(AmmoType_Pistol);
+        DamageType(DamageType_Blast);
+        SpawnThrowableOnHit("Throwable_Bullet_SlotMachine_Freeze");
+        MaxAmmoCount(90);
+    }
+
+    Item("Throwable_Bullet_SlotMachine_Freeze", CategoryType_Throwable)
+    {
+        GameVersion(49);
+        ItemType(ItemType_Grenade);
+        Visibility(true);
+        AmmoCount(3);
+        MaxStackCount(99);
+        Price(150);
+        Mesh("smoke_granade_static.msh");
+        Skin("frost");
+        AnimPrefix("Grenade");
+        PhysicsScript("single_dropped_inventory.phx");
+        HudIcon("weapon_frag_grenade");
+        Damage(50.0);
+        DamageToPhysicsObjects(25.0);
+        DamageRange(3.5);
+        PhysicsDamageMul(1.0);
+        HeadCutProb(0.0);
+        ArmsCutProb(0.0);
+        LegsCutProb(0.0);
+        DamageType(DamageType_Cold);
+        DamageDuration(5.0);
+        ThrowImpulseLook(13.0);
+        ThrowImpulseUp(2.0);
+        ExplosionFx("freezbomb_explo_sequence.fx");
+        ExplosionSound("freezing_bomb_explosion.wav");
+        ExplodeDelay(0.1);
+        ThrowEndSound("throwing.wav");
+        StatsType(StatsType_Explosive);
+        NoiseType("EXPLOSION");
+        Color(Color_Blue);
+        EquipmentSlot(0);
+        AchType(AchType_Grenade);
+        ElementalPower(1.0);
+    }
+
+	Item("Bullet_SlotMachine_Poison", CategoryType_Ammo)
+    {
+        GameVersion(49);
+        Mesh("loot_ok_ammo_short.msh");
+        HudIcon("ammo_pistol");
+        ItemType(ItemType_Bullet);
+        AmmoType(AmmoType_Pistol);
+        DamageType(DamageType_Blast);
+        SpawnThrowableOnHit("Throwable_Bullet_SlotMachine_Poison");
+        MaxAmmoCount(90);
+    }
+
+    Item("Throwable_Bullet_SlotMachine_Poison", CategoryType_Throwable)
+    {
+        GameVersion(49);
+        ItemType(ItemType_Grenade);
+        Visibility(true);
+        AmmoCount(3);
+        MaxStackCount(99);
+        Price(150);
+        Mesh("smoke_granade_static.msh");
+        Skin("toxic");
+        AnimPrefix("Grenade");
+        PhysicsScript("single_dropped_inventory.phx");
+        HudIcon("weapon_frag_grenade");
+        Damage(50.0);
+        DamageToPhysicsObjects(25.0);
+        DamageRange(6.0);
+        PhysicsDamageMul(0.5);
+        HeadCutProb(0.0);
+        ArmsCutProb(0.0);
+        LegsCutProb(0.0);
+        DamageType(DamageType_Poison);
+        DamageDuration(10.0);
+        ThrowImpulseLook(13.0);
+        ThrowImpulseUp(2.0);
+        ExplosionFx("poisonbomb_explo_sequence.fx");
+        ExplosionSound("poison_bomb_explode.wav");
+        ExplodeDelay(0.1);
+        ThrowEndSound("throwing.wav");
+        StatsType(StatsType_Explosive);
+        NoiseType("EXPLOSION");
+        Color(Color_Blue);
+        EquipmentSlot(0);
+        AchType(AchType_Grenade);
+    }
+
+	Item("Bullet_SlotMachine_Electric", CategoryType_Ammo)
+    {
+        GameVersion(49);
+        Mesh("loot_ok_ammo_short.msh");
+        HudIcon("ammo_pistol");
+        ItemType(ItemType_Bullet);
+        AmmoType(AmmoType_Pistol);
+        DamageType(DamageType_Blast);
+        SpawnThrowableOnHit("Throwable_Bullet_SlotMachine_Electric");
+        MaxAmmoCount(90);
+    }
+
+    Item("Throwable_Bullet_SlotMachine_Electric", CategoryType_Throwable)
+    {
+        GameVersion(49);
+        ItemType(ItemType_Grenade);
+        Visibility(true);
+        AmmoCount(3);
+        MaxStackCount(99);
+        Price(1);
+        Mesh("item_freeze_a_th.msh");
+		Skin("Default");
+        AnimPrefix("Grenade");
+        PhysicsScript("single_dropped_inventory.phx");
+        HudIcon("component_potion_shock");
+        Damage(125.0);
+        DamageToPhysicsObjects(25.0);
+        DamageRange(3.5);
+        PhysicsDamageMul(1.0);
+        HeadCutProb(0.0);
+        ArmsCutProb(0.0);
+        LegsCutProb(0.0);
+        DamageType(DamageType_Electric);
+        DamageDuration(5.0);
+        ThrowImpulseLook(25.0);
+        ThrowImpulseUp(2.0);
+        ExplosionFx("shock_grenade_explossion_sequence.fx");
+        ExplosionSound("electricity_arcing_end_00.wav");
+		ScheduleExplodeAfterContact(true);
+        ExplodeDelay(0.1);
+        ThrowEndSound("canister_plastic_throw.wav");
+		ThrowFlyFx("electric_developer_sequence.fx");
+        StatsType(StatsType_Explosive);
+        NoiseType("EXPLOSION");
+        Color(Color_Blue);
+        EquipmentSlot(0);
+        AchType(AchType_Grenade);
+        ElementalPower(1.0);
+    }
+
+	 Item("Moka_Weapon", CategoryType_Melee)
+    {
+        Visibility(true);
+        ItemType(ItemType_Knuckles);
+        PhysicsScript("single_dropped_inventory.phx");
+        UpgradeLevel(0);
+        Condition(33);
+        CriticalCondition(12);
+        Damage(300.0);
+        Force(20.0);
+        CriticalProb(0.5);
+        CriticalDamage(2.0);
+        DamageRange(180.0 *0.01);
+        DamageToPhysicsObjects(70.0);
+        PhysicsDamageMul(1.0);
+        StaminaUsage(0.0);
+		SwingSpeed(0.9);
+        ConfusionProb(0.0);
+        HeadSmashProb(0.0);
+        HeadCutProb(1.0);
+        ArmsCutProb(1.0);
+        LegsCutProb(1.0);
+        WeaponBuildType(WeaponBuildType_Universal);
+		DamageType(DamageType_Cut);
+		CutTypesGroup(CutTypesGroup_SharpHeavy);
+        Flags(1);
+        InventoryMeshHq("wn_mokapaw_a.msh");
+        InventoryMesh("wn_mokapaw_a.msh");
+        Mesh("wn_mokapaw_a.msh"); 
+		Skin("Default");
+        AnimPrefix("fist");
+        HudIcon("weapon_mokapaw_a");
+		MinDamageAngle(-60.0);
+        MaxDamageAngle(45.0);
+		MinHitSeverity(HitSeverity_Heavy);
+		MaxHitSeverity(HitSeverity_Heavy);
+        HorizontalAttackDamageMul(3.0);
+		RagdollBehaviorPrefix("Stick2HeavySharp");
+        TwoHanded(false);
+        DestroySound("damaged_sharp_weapon_XX.wav");
+        AiHitSound("Moka_weapon");
+        use HitEffects_Sharp();
+        use PickupSounds_Default();
+        DamageSize(5.0);
+        StatsType(StatsType_Cut);
+        FF_EffectName("Hit_Sharp");
+        FF_Left(0.6);
+        FF_Right(0.6);
+        FF_Duration(0.2);
+        FF_FadeOut(0.0);
+        Reparable(true);
+        RepairTags("Weapon_Craft4");
+        RepairPart("Craft_MetalScrap", 1);
+        AllowedRepairs(3);
+        SoundDamagedHit("damaged_sharp_weapon_XX.wav");
+        ThrowBeginSound("weapon_light_throw.wav");
+        Color(Color_Blue);
+        AchType(AchType_Machete);
+        DismantleResultItem("Craft_MetalScrap");
+        DismantleResultItemCnt(3);
+        CraftingSlots(0,0);
+        RestrictionFlags(0);
+        HandInertiaFactor(1.8);
+		GenLevelMin(1);
+        GenLevelMax(1);
+        Price(0);
+        GenType(GenType_MeleeWeapon);
+		GameVersion(49);
+		
+    }
+	
+	Item("Moka_Weapon", CategoryType_Melee)
+    {
+        UpgradeLevel(0);
+        Condition(20);
+        CriticalProb(0.0);
+        DamageType(DamageType_Cut);
+        InventoryMeshHq("wn_mokapaw_a.msh");
+        RepairPart("Craft_MetalScrap", 1);
+        GameVersion(49);
+    }
+	
+    Item("Moka_Weapon", CategoryType_Melee)
+    {
+        UpgradeLevel(0);
+        Condition(12);
+        CriticalProb(0.0);
+        DamageType(DamageType_Cut);
+        InventoryMeshHq("wn_mokapaw_a.msh");
+        RepairPart("Craft_MetalScrap", 1);
+        GameVersion(49);
+    }
+	
 	Item("Spike_Weapon_First", CategoryType_Melee)
     {			
 		Visibility(true);
@@ -1078,6 +1609,7 @@ sub main()
         HudIcon("icon_pumpkin_juice_hq");
         UseTime(1.0);
         Buff("Halloween1");
+		BuffOverideForBTZ("Event_Halloween_BtZ1");
         EquipmentSlot(0);
         Color(Color_Orange);
         MaxStackCount(99);
@@ -1100,6 +1632,7 @@ sub main()
         HudIcon("icon_pumpkin_juice_hq");
         UseTime(1.0);
         Buff("Halloween2");
+		BuffOverideForBTZ("Event_Halloween_BtZ2");
         EquipmentSlot(0);
         Color(Color_Orange);
         MaxStackCount(99);
@@ -1122,6 +1655,7 @@ sub main()
         HudIcon("icon_pumpkin_juice_hq");
         UseTime(1.0);
         Buff("Halloween3");
+		BuffOverideForBTZ("Event_Halloween_BtZ3");
         EquipmentSlot(0);
         Color(Color_Orange);
         MaxStackCount(99);
@@ -1144,6 +1678,7 @@ sub main()
         HudIcon("icon_pumpkin_juice_hq");
         UseTime(1.0);
         Buff("Halloween4");
+		BuffOverideForBTZ("Event_Halloween_BtZ4");
         EquipmentSlot(0);
         Color(Color_Orange);
         MaxStackCount(99);
@@ -1166,6 +1701,7 @@ sub main()
         HudIcon("icon_pumpkin_juice_hq");
         UseTime(1.0);
         Buff("Halloween5");
+		BuffOverideForBTZ("Event_Halloween_BtZ5");
         EquipmentSlot(0);
         Color(Color_Orange);
         MaxStackCount(99);
@@ -1188,6 +1724,7 @@ sub main()
         HudIcon("icon_pumpkin_juice_hq");
         UseTime(1.0);
         Buff("Halloween6");
+		BuffOverideForBTZ("Event_Halloween_BtZ6");
         EquipmentSlot(0);
         Color(Color_Orange);
         MaxStackCount(99);
@@ -1210,6 +1747,7 @@ sub main()
         HudIcon("icon_pumpkin_juice_hq");
         UseTime(1.0);
         Buff("Halloween7");
+		BuffOverideForBTZ("Event_Halloween_BtZ7");
         EquipmentSlot(0);
         Color(Color_Orange);
         MaxStackCount(99);
@@ -2212,6 +2750,7 @@ sub main()
         HudIcon("component_eggnog");
         UseTime(1.0);
         Buff("Eggnog");
+		BuffOverideForBTZ("Event_Christmas_Eggnog");
         EquipmentSlot(0);
         Color(Color_Green);
         MaxStackCount(99);
@@ -2513,7 +3052,7 @@ sub main()
         ThrowImpulseUp(2.0);
         ExplosionFx("c4_explosion_sequence.fx");
         ExplosionSound("homemade_bomb_explosion.wav");
-        ExplodeDelay(25.0);
+        ExplodeDelay(50.0);
         ExplodeOnTrigger();
 		StickToSurfaces(true);
 		StickIgnoreWaterAndPlayer(true);

@@ -27,7 +27,7 @@ sub main()
     //Preset(ALT, 4, "Demolisher_WastelandUltra_H", "Demolisher_WastelandUltra_H");
     //Preset(ALT, 4, "Demolisher_WastelandSpecial", "Demolisher Wasteland Special");
     //Preset(ALT, 5, "GasTank_WastelandSpecial", "GasTank Wasteland Special");
-    Preset(ALT, 6, "Volatile_Iced", "Ice Volatile");
+    Preset(ALT, 6, "Demolisher_Arena", "Demolisher Arena");
     Preset(ALT, 7, "astronaut_melee", "Astrounaut Event melee");
     Preset(ALT, 8, "Biter_Man;DiffLevel;Biter_m_lv5;", "Biter_ultras");
 	Preset(ALT, 9, "Viral_WL_Final", "Mother Viral");

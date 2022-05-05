@@ -369,7 +369,7 @@ String("Menu_DocketG54_N",  "&DocketG_PlsOffline_Name& - &Craftplan_Spike_Weapon
 String("Menu_DocketG54_D",  "&DocketG_PlsOffline_Description&")
 String("Menu_DocketG54_SD", "&Menu_DocketG54_D&")
 
-String("Menu_DocketG55_N",  "&DocketG_PlsOffline_Name& 55")
+String("Menu_DocketG55_N",  "&DocketG_PlsOffline_Name& - &Craftplan_Slot_Machine_N&")
 String("Menu_DocketG55_D",  "&DocketG_PlsOffline_Description&")
 String("Menu_DocketG55_SD", "&Menu_DocketG55_D&")
 

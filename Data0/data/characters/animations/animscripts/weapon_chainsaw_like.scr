@@ -1,0 +1,101 @@
+!include("events.def")
+!include("anim_actions.def")
+!include("human_vis_events.def")
+!include("vessel_vis_events.def")
+
+// stand 
+SeqTrack("FPP_Chainsaw_Stand", 					"FPP_Chainsaw_A_StandPose.anm2",		0, 10, 30, 1, 0.3)
+SeqTrack("FPP_Chainsaw_StandEmpty", 				"FPP_Chainsaw_A_StandPose.anm2",		0, 10, 30, 1, 0.3)
+SeqTrack("FPP_Chainsaw_StandNoise",		"FPP_Chainsaw_StandNoise.anm2", 		        0, 120, 30, 1, 0.3)
+SeqTrack("FPP_Chainsaw_MoveNoise",		"FPP_Chainsaw_MoveNoise.anm2",				0, 30, 30, 1, 0.3)
+SeqTrack("FPP_Chainsaw_SprintNoise", 			"FPP_Chainsaw_SprintNoise.anm2",		0, 20, 34, 1, 0.7) 
+
+// aim
+// stand
+SeqTrack("FPP_Chainsaw_Aim_Stand", 				"M_FPP_Chainsaw_A_StandPose.anm2",		0, 10, 30, 1, 0.3)
+
+// idle
+SeqTrack("FPP_Chainsaw_Idle",					"FPP_Chainsaw_StandNoise.anm2", 		        0, 120, 30, 1, 0.3)
+
+// podstawowe
+// podstawowe
+SeqTrack("FPP_Chainsaw_ReloadBegin", 			"M_FPP_Chainsaw_Reload.anm2"			, 0, 20, 60, 1, 0.3)
+SeqTrack("FPP_Chainsaw_ReloadManage", 			"M_FPP_Chainsaw_Reload.anm2"			, 20, 20, 60, 1, 0.0)
+SeqTrack("FPP_Chainsaw_ReloadLoop", 				"M_FPP_Chainsaw_Reload.anm2"			, 20, 240, 60, 1, 0.0)
+SeqTrack("FPP_Chainsaw_ReloadFinish", 		"M_FPP_Chainsaw_Reload.anm2",		240, 300, 60, 1, 0.0)
+
+// shoot
+SeqTrack("FPP_Chainsaw_Shot",		"FPP_Chainsaw_Shot.anm2", 		        0, 25, 30, 1, 0.3)
+SeqTrack("FPP_Chainsaw_ShotEmpty", 			"M_FPP_Chainsaw_A_StandPose.anm2",		0, 10, 30, 1, 0.3)
+SeqTrack("FPP_Chainsaw_ShotRecoil0", 		"FPP_Chainsaw_Shot.anm2", 		        0, 25, 30, 1, 0.3)
+SeqTrack("FPP_Chainsaw_ShotRecoil1",         "FPP_Chainsaw_Shot.anm2", 		        0, 25, 30, 1, 0.1) 
+SeqTrack("FPP_Chainsaw_ShotRecoil2",         "FPP_Chainsaw_Shot.anm2", 		        0, 25, 30, 1, 0.1)
+
+
+///SeqTrack("FPP_Chainsaw_StandNoise",		"FPP_Chainsaw_StandNoise.anm2", 		        0, 120, 30, 1, 0.3
+SeqTrackAlias("FPP_Chainsaw_Aim_Shot", 			"FPP_Chainsaw_Stand")
+SeqTrackAlias("FPP_Chainsaw_Aim_ShotEmpty", 		"FPP_Chainsaw_Stand")
+SeqTrack("FPP_Chainsaw_Aim_ShotRecoil0",		"FPP_Chainsaw_Shot.anm2", 		        0, 18, 30, 1, 0.3)
+SeqTrack("FPP_Chainsaw_Aim_ShotRecoil1",		"FPP_Chainsaw_Shot.anm2", 		        0, 18, 30, 1, 0.3)
+SeqTrack("FPP_Chainsaw_Aim_ShotRecoil2",		"FPP_Chainsaw_Shot.anm2", 		        0, 18, 30, 1, 0.3)
+
+SeqTrack("FPP_Chainsaw_Ballance_Stand",		"FPP_Chainsaw_Ballance.anm2", 		        0, 10, 27, 1, 0.5)
+SeqTrack("FPP_Chainsaw_Ballance_StandNoise",		"FPP_Chainsaw_Ballance.anm2", 		        10, 130, 30, 1, 0.5) 
+SeqTrack("FPP_Chainsaw_Ballance_MoveNoise",		"FPP_Chainsaw_Ballance.anm2", 		        380, 413, 30, 1, 0.5) 
+SeqTrack("FPP_Chainsaw_Ballance_SprintNoise",		"FPP_Chainsaw_Ballance.anm2", 		        418, 436, 30, 1, 0.5) 
+SeqTrack("FPP_Chainsaw_Ballance_Right",		"FPP_Chainsaw_Ballance.anm2", 		        257, 377, 30, 1, 0.5) 
+SeqTrack("FPP_Chainsaw_Ballance_Left",		"FPP_Chainsaw_Ballance.anm2", 		        133, 253, 30, 1, 0.5)
+
+
+SeqTrack("FPP_Chainsaw_TakeDamageHitRight", "FPP_Chainsaw_TakeDamageHit.anm2", 		        32, 47, 30, 1, 0.3)
+SeqTrack("FPP_Chainsaw_TakeDamageHitRight_Rest", "FPP_Chainsaw_TakeDamageHit.anm2", 		        47, 62, 30, 1, 0.5)
+//SeqTrack( "FPP_Chainsaw_TakeDamageHitRight",    					"M_FPP_Chainsaw_A_TakeDamage.anm2",				32, 50, 30, 1, 0.3 )
+//SeqTrack( "FPP_Chainsaw_TakeDamageHitRight_Rest",				"M_FPP_Chainsaw_A_TakeDamage.anm2",				50, 62, 30, 1, 0.5 )
+
+
+SeqTrack("FPP_Chainsaw_TakeDamageHitLeft", "FPP_Chainsaw_TakeDamageHit.anm2", 		        0, 15, 30, 1, 0.3)
+SeqTrack("FPP_Chainsaw_TakeDamageHitLeft_Rest", "FPP_Chainsaw_TakeDamageHit.anm2", 		        15, 30, 30, 1, 0.5)
+//SeqTrack( "FPP_Chainsaw_TakeDamageHitLeft",    					"M_FPP_Chainsaw_A_TakeDamage.anm2",				0, 18, 30, 1, 0.3 )
+//SeqTrack( "FPP_Chainsaw_TakeDamageHitLeft_Rest",					"M_FPP_Chainsaw_A_TakeDamage.anm2",				18, 30, 30, 1, 0.5 )
+
+SeqTrack("FPP_Chainsaw_TakeDamageHitRight1", "FPP_Chainsaw_TakeDamageHit.anm2", 		        96, 111, 30, 1, 0.3)
+SeqTrack("FPP_Chainsaw_TakeDamageHitRight1_Rest", "FPP_Chainsaw_TakeDamageHit.anm2", 		        111, 126, 30, 1, 0.5)
+//SeqTrack( "FPP_Chainsaw_TakeDamageHitRight1",    				"M_FPP_Chainsaw_A_TakeDamage.anm2",				96, 114, 30, 1, 0.3 )
+//SeqTrack( "FPP_Chainsaw_TakeDamageHitRight1_Rest",				"M_FPP_Chainsaw_A_TakeDamage.anm2",				114, 126, 30, 1, 0.5 )
+
+SeqTrack("FPP_Chainsaw_TakeDamageHitLeft1", "FPP_Chainsaw_TakeDamageHit.anm2", 		        64, 79, 30, 1, 0.3)
+SeqTrack("FPP_Chainsaw_TakeDamageHitLeft1_Rest", "FPP_Chainsaw_TakeDamageHit.anm2", 		        79, 94, 30, 1, 0.5)
+//SeqTrack( "FPP_Chainsaw_TakeDamageHitLeft1",    					"M_FPP_Chainsaw_A_TakeDamage.anm2",				64, 82, 30, 1, 0.3 )
+//SeqTrack( "FPP_Chainsaw_TakeDamageHitLeft1_Rest",				"M_FPP_Chainsaw_A_TakeDamage.anm2",				82, 94, 30, 1, 0.5 )
+
+SeqTrack("FPP_Chainsaw_TakeDamageHitRight2", "FPP_Chainsaw_TakeDamageHit.anm2", 		        160, 175, 30, 1, 0.3)
+SeqTrack("FPP_Chainsaw_TakeDamageHitRight2_Rest", "FPP_Chainsaw_TakeDamageHit.anm2", 		        175, 190, 30, 1, 0.5)
+//SeqTrack( "FPP_Chainsaw_TakeDamageHitRight2",    				"M_FPP_Chainsaw_A_TakeDamage.anm2",				160, 178, 30, 1, 0.3 )
+//SeqTrack( "FPP_Chainsaw_TakeDamageHitRight2_Rest",				"M_FPP_Chainsaw_A_TakeDamage.anm2",				178, 190, 30, 1, 0.5 )
+
+SeqTrack("FPP_Chainsaw_TakeDamageHitLeft2", "FPP_Chainsaw_TakeDamageHit.anm2", 		        128, 143, 30, 1, 0.3)
+SeqTrack("FPP_Chainsaw_TakeDamageHitLeft2_Rest", "FPP_Chainsaw_TakeDamageHit.anm2", 		        143, 158, 30, 1, 0.5)
+//SeqTrack( "FPP_Chainsaw_TakeDamageHitLeft2",    					"M_FPP_Chainsaw_A_TakeDamage.anm2",				128, 146, 30, 1, 0.3 )
+//SeqTrack( "FPP_Chainsaw_TakeDamageHitLeft2_Rest",				"M_FPP_Chainsaw_A_TakeDamage.anm2",				146, 158, 30, 1, 0.5 )
+
+//TPP
+SeqTrack( "TPP_Chainsaw_Shot", 					"TPP_Chainsaw_shot.anm2", 				0,   40,    60,   1,   0.0)
+SeqTrackAlias("TPP_Chainsaw_ShotLast", 			"TPP_Chainsaw_Shot")
+SeqTrackAlias("TPP_Chainsaw_ShotEmpty", 			"TPP_Chainsaw_Shot")
+
+SeqTrackAlias("TPP_Chainsaw_Aim_Shot", 			"TPP_Chainsaw_Shot")
+SeqTrackAlias("TPP_Chainsaw_Aim_ShotLast", 		"TPP_Chainsaw_Shot")
+SeqTrackAlias("TPP_Chainsaw_Aim_ShotEmpty", 		"TPP_Chainsaw_Shot")
+
+SeqTrack( "TPP_Chainsaw_Stand", 				"TPP_Chainsaw_stand.anm2", 				0,   192,   60,   1,   0.3)
+
+// m16 - podstawowe
+SeqTrack("TPP_Chainsaw_ReloadBegin", 			"TPP_Chainsaw_Reload.anm2", 				0,   50,   60,   1,   0.3)  
+SeqTrack("TPP_Chainsaw_ReloadManage", 			"TPP_Chainsaw_Reload.anm2"			, 50, 50, 30, 1, 0.0)
+SeqTrack("TPP_Chainsaw_ReloadLoop", 				"TPP_Chainsaw_Reload.anm2"			, 50, 240, 60, 1, 0.0)
+SeqTrack("TPP_Chainsaw_ReloadFinish", 			"TPP_Chainsaw_Reload.anm2",		240, 300, 60, 1, 0.0)
+
+SeqTrackAlias("TPP_Chainsaw_ReloadBeginEmpty", 	"TPP_Chainsaw_ReloadBegin")
+SeqTrackAlias("TPP_Chainsaw_ReloadManageEmpty", 	"TPP_Chainsaw_ReloadManage")
+SeqTrackAlias("TPP_Chainsaw_ReloadLoopEmpty",  	"TPP_Chainsaw_ReloadLoop")
+SeqTrackAlias("TPP_Chainsaw_ReloadFinishEmpty", 	"TPP_Chainsaw_ReloadFinish")

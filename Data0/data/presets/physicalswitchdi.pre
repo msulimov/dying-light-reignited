@@ -989,5 +989,12 @@ sub main()
             SetField("m_AnimRange", "1.5");
             SetField("m_InteractionName", "hr_big_lever_switch");
         }
+		
+        Preset("IT_HRChest")
+        {
+            SetField("MeshName", "chest_loot_a.msh");
+            SetField("m_AnimRange", "0.0");
+            SetField("m_InteractionName", "HR_chest_a_opening");
+        }
 	}
 }

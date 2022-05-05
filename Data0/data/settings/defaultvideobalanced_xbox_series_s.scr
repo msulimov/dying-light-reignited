@@ -15,7 +15,7 @@
 !VisRange(f,f)
 
 
-Resolution(1664,936)
+Resolution(1920,1080)
 TextureQuality("High")
 Shadows("High")
 ShadowMapSize(2048)
@@ -23,6 +23,6 @@ SpotShadowMapSize(2048)
 GammaFloat(1.00)
 MaxRefresh(60)
 GrassQuality(0)
-VSync(1)
+VSync(2)
 VSyncDisableBelowTarget(1)
-VisRange(1.00, 1.00)
+VisRange(1.25, 1.25)

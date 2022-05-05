@@ -989,6 +989,7 @@ Folder("Melee")
 	Folder("MaceHeavy")
 	Folder("AxeHell")
 	Folder("MacheteAstronaut")
+	Folder("Moka_weapon")
 }
 
 Folder("Axe")
@@ -1283,6 +1284,12 @@ Folder("MacheteAstronaut")
 	SoundGroup("player_weapon_macheteastronaut_hit")
 	SoundGroup("player_weapon_macheteastronaut_hit_head")
 	SoundGroup("player_weapon_macheteastronaut_throw")
+}
+
+Folder("Moka_weapon")
+{
+	SoundGroup("player_weapon_moka_weapon_hit")
+	SoundGroup("player_weapon_moka_weapon_empty")
 }
 
 //HELLRAID 

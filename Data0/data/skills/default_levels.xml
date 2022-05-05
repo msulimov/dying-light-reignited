@@ -209,6 +209,7 @@
     <prop n="KnockDownMinHorzAngle" v="-30"/>
     <prop n="KnockDownMaxHorzAngle" v="30"/>
 	<prop n="BozakKnockdownTimeToDeath" v="45"/>
+	<prop n="KnockdownAfterKnockdownMinTime" v="0.6"/>
     
     <prop n="NearbyEnemiesSearchRange" v="7.0"/>
 	<prop n="SwimLookTimetMul" v="0.4"/>    
@@ -350,7 +351,8 @@
         
     <!-- CHARGE ATTACK COMMON -->
     <prop n="ChargeSpreadProbability" v="0.0"/>     
-    <prop n="ChargeOverchargeDamage" v="0.0"/>  
+    <prop n="ChargeOverchargeDamage" v="0.0"/>
+	<prop n="ChargeAdditionalRange" v="0.15"/>
     
     <prop n="ChargeStaminaDecreaseFactor" v="0"/>
     <prop n="ChargeAutoReleaseTime" v="-1.0"/>  
@@ -463,7 +465,7 @@
     <prop n="ComboResetTime" v="5.0"/>
     <prop n="StompLevel" v="-1.0"/>                            <!-- enables stomper -->
     <prop n="DamageReductionAfterMovementDuration" v="5"/>
-    <prop n="MinimalPlayerBlastDamageOnExplosion" v="5.0"/>    <!-- it's minimal damage, that player receive when is knockdown after explosion -->
+    <prop n="MinimalPlayerBlastDamageOnExplosion" v="0.0"/>    <!-- it's minimal damage, that player receive when is knockdown after explosion -->
     <prop n="ThrownWeaponStickChance" v="1.0"/>
     <prop n="ThrownWeaponKOChance" v="0.0"/>
     <prop n="ThrowAdditionalPhysicsDamage" v="0.0"/>
@@ -496,6 +498,8 @@
 
     <!-- GROUND POUND -->
     <prop n="GroundPoundCooldown" v="-1.0"/>
+    <prop n="GroundPoundMinHeight" v="1.1"/>
+	
 
     <!-- JUMP ATTACK -->
     <prop n="JumpAttackStaminaUsage" v="0.5"/>

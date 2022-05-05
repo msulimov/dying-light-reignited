@@ -590,7 +590,7 @@ sub main()
                 SetField("m_InteractionName", "military_box_underwater_fast");
                 SetField("m_Underwater", "1");
         }
-
+		
         Preset("military_box_b_anm_Airdrop")
         {
                 SetField("MeshName", "military_box_b_anm.msh");
@@ -879,6 +879,41 @@ sub main()
                 SetField("MeshName", "tools_box_a_anm.msh");
                 SetField("SkinName", "Prison_toolbox");
                 SetField("m_InteractionName", "toolbox_opening");
+        }
+		
+		Preset("HR_chest_opening_old") 
+        {
+                SetField("MeshName", "chest_loot_a.msh"); //anm ma podpięte animacje skrzyni 
+                SetField("SkinName", "Old");
+                SetField("m_InteractionName", "HR_chest_a_opening");
+        }
+		
+		Preset("HR_chest_opening_throwables") 
+        {
+                SetField("MeshName", "chest_loot_a.msh"); //anm ma podpięte animacje skrzyni 
+                SetField("SkinName", "Throwables");
+                SetField("m_InteractionName", "HR_chest_a_opening");
+        }
+		
+		Preset("HR_chest_opening_default") 
+        {
+                SetField("MeshName", "chest_loot_a.msh"); //anm ma podpięte animacje skrzyni 
+                SetField("SkinName", "Default");
+                SetField("m_InteractionName", "HR_chest_a_opening");
+        }
+		
+		Preset("HR_chest_opening_rare") 
+        {
+                SetField("MeshName", "chest_loot_a.msh"); //anm ma podpięte animacje skrzyni 
+                SetField("SkinName", "Rare");
+                SetField("m_InteractionName", "HR_chest_a_opening");
+        }
+		
+		Preset("HR_chest_opening_coins") 
+        {
+                SetField("MeshName", "chest_loot_a.msh"); //anm ma podpięte animacje skrzyni 
+                SetField("SkinName", "Coins");
+                SetField("m_InteractionName", "HR_chest_a_opening");
         }
 		
     }
