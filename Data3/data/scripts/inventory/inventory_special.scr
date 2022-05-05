@@ -1916,7 +1916,7 @@ sub main()
         LegsCutProb(0.0);
         ThrowImpulseLook(10.0);
         ThrowImpulseUp(2.0);
-        ExplodeDelay(2.5); // burn duration, really short!
+        ExplodeDelay(5.0); // burn duration, really short!
         ThrowBeginSound("");
         ThrowEndSound("");
         StatsType(StatsType_Explosive);

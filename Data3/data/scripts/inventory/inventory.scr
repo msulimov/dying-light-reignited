@@ -8382,7 +8382,7 @@ sub main()
         Visibility(true);
         ItemType(ItemType_Medkit);
         PhysicsScript("single_dropped_inventory.phx");
-        Price(65);
+        Price(35);
         MaxStackCount(99);
         Mesh("loot_food_a.MSH");
         Skin("default");
@@ -8407,7 +8407,7 @@ sub main()
         Visibility(true);
         ItemType(ItemType_Medkit);
         PhysicsScript("single_dropped_inventory.phx");
-        Price(65);
+        Price(35);
         MaxStackCount(99);
         Mesh("loot_food_a.MSH");
         Skin("Skin_b");
@@ -8432,7 +8432,7 @@ sub main()
         Visibility(true);
         ItemType(ItemType_Medkit);
         PhysicsScript("single_dropped_inventory.phx");
-        Price(65);
+        Price(35);
         MaxStackCount(99);
         Mesh("loot_food_a.MSH");
         Skin("Skin_c");
@@ -8457,7 +8457,7 @@ sub main()
         Visibility(true);
         ItemType(ItemType_Medkit);
         PhysicsScript("single_dropped_inventory.phx");
-        Price(115);
+        Price(60);
         MaxStackCount(99);
         Mesh("loot_food_b.MSH");
         Skin("default");
@@ -8482,7 +8482,7 @@ sub main()
         Visibility(true);
         ItemType(ItemType_Medkit);
         PhysicsScript("single_dropped_inventory.phx");
-        Price(115);
+        Price(60);
         MaxStackCount(99);
         Mesh("loot_food_b.MSH");
         Skin("Skin_b");
@@ -8507,7 +8507,7 @@ sub main()
         Visibility(true);
         ItemType(ItemType_Medkit);
         PhysicsScript("single_dropped_inventory.phx");
-        Price(115);
+        Price(60);
         MaxStackCount(99);
         Mesh("loot_food_b.MSH");
         Skin("Skin_c");
@@ -8532,7 +8532,7 @@ sub main()
         Visibility(true);
         ItemType(ItemType_Medkit);
         PhysicsScript("single_dropped_inventory.phx");
-        Price(155);
+        Price(75);
         MaxStackCount(99);
         Mesh("loot_food_c.MSH");
         Skin("Skin_c");
@@ -8557,7 +8557,7 @@ sub main()
         Visibility(true);
         ItemType(ItemType_Medkit);
         PhysicsScript("single_dropped_inventory.phx");
-        Price(155);
+        Price(75);
         MaxStackCount(99);
         Mesh("loot_food_c.MSH");
         Skin("Skin_b");
@@ -8582,7 +8582,7 @@ sub main()
         Visibility(true);
         ItemType(ItemType_Medkit);
         PhysicsScript("single_dropped_inventory.phx");
-        Price(155);
+        Price(75);
         MaxStackCount(99);
         Mesh("loot_food_c.MSH");
         Skin("default");
