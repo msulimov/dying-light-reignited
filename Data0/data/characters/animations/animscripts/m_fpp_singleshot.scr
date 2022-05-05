@@ -1,0 +1,88 @@
+!include("ai_timing.def")
+
+//----- animacje z beretta
+
+// --- Noise kamery 
+SeqTrackAlias("FPP_Singleshot_StandNoise", "FPP_Beretta_StandNoise")
+SeqTrackAlias("FPP_Singleshot_MoveNoise", "FPP_Beretta_MoveNoise")
+SeqTrackAlias("FPP_Singleshot_AimMoveNoise", "FPP_Beretta_AimMoveNoise")
+SeqTrackAlias("FPP_Singleshot_SprintNoise", "FPP_Beretta_SprintNoise")
+
+SeqTrack( "FPP_Singleshot_ReloadBegin",         "M_FPP_Singleshot_Reload.anm2",              0, 46, 60, 1, 0.4 )
+{
+	Event(40, 0, 0) 
+	{
+    	PlaySound2DExternal(GameVolumeSource_SoundPlayer, "Van_Crane_Pistol_load_open.wav", 1, 0, 1)
+    }
+}
+SeqTrack( "FPP_Singleshot_ReloadLoop",          "M_FPP_Singleshot_Reload.anm2",              46, 172, 60, 1, 0.3 ) 
+
+{
+	Event(125, EVENT_RELOAD_ADD_BULLET, -1)
+	Event(58, 0, 0) 
+	{
+    	PlaySound2DExternal(GameVolumeSource_SoundPlayer, "Van_Crane_Pistol_load_place_bullet.wav",  1, 0, 1)
+    }
+	Event(68, 0, 0) 
+	{
+    	PlaySound2DExternal(GameVolumeSource_SoundPlayer, "Van_Crane_Pistol_load_push_bullet.wav",  1, 0, 1)
+    }
+	Event(100, 0, 0) 
+	{
+    	PlaySound2DExternal(GameVolumeSource_SoundPlayer, "Van_Crane_Pistol_load_close.wav", 1, 0, 1)
+    }
+}
+
+SeqTrack( "FPP_Singleshot_ReloadFinish",        "M_FPP_Singleshot_Reload.anm2",              172, 192, 60, 1, 0.3 )
+
+
+SeqTrackAlias("FPP_Singleshot_ReloadManage", "FPP_Singleshot_ReloadLoop")
+
+SeqTrackAlias("FPP_Singleshot_Stand", "FPP_Beretta_Stand")
+SeqTrackAlias("FPP_Singleshot_Wall", "FPP_Beretta_Wall")
+SeqTrackAlias("FPP_Singleshot_Cover_StandPos", "FPP_Beretta_Cover_StandPos")
+SeqTrackAlias("FPP_Singleshot_StandEmpty", "FPP_Beretta_StandEmpty")
+SeqTrack("FPP_Singleshot_ShotRecoil",    "m_FPP_Singleshot_Shotrecoil.anm2", 0, 49, 60, 1, 0.0)
+SeqTrack("FPP_Singleshot_Shot",          "m_FPP_Singleshot_Shot.anm2", 0, 49, 60, 1, 0.0)
+
+SeqTrack("FPP_Singleshot_ShotEmpty",    "m_FPP_Singleshot_Shot.anm2", 0, 49, 60, 1, 0.0)
+
+SeqTrackAlias("FPP_Singleshot_Aim_Stand", "FPP_Beretta_Aim_Stand")
+SeqTrackAlias("FPP_Singleshot_Aim_StandEmpty", "FPP_Singleshot_Aim_Shot")
+SeqTrackAlias("FPP_Singleshot_Aim_ShotRecoil0", "FPP_Singleshot_Aim_Shot")
+SeqTrackAlias("FPP_Singleshot_Aim_ShotRecoil1", "FPP_Singleshot_Aim_Shot")
+SeqTrackAlias("FPP_Singleshot_Aim_ShotRecoil2", "FPP_Singleshot_Aim_Shot")
+SeqTrack("FPP_Singleshot_Aim_Shot", "M_FPP_Singleshot_Aim_Shot.anm2", 0, 70, 60, 1, 0.0 )
+SeqTrackAlias("FPP_Singleshot_Aim_ShotLast", "FPP_Singleshot_Aim_Shot")
+SeqTrackAlias("FPP_Singleshot_Aim_ShotEmpty", "FPP_Beretta_Aim_ShotEmpty")
+
+SeqTrackAlias("FPP_Singleshot_TakeDamageHitRight", "FPP_Beretta_TakeDamageHitRight")
+SeqTrackAlias("FPP_Singleshot_TakeDamageHitRight_Rest", "FPP_Beretta_TakeDamageHitRight_Rest")
+SeqTrackAlias("FPP_Singleshot_TakeDamageLeft", "FPP_Beretta_TakeDamageLeft")
+SeqTrackAlias("FPP_Singleshot_TakeDamageLeft_Rest", "FPP_Beretta_TakeDamageLeft_Rest")
+SeqTrackAlias("FPP_Singleshot_TakeDamage1", "FPP_Beretta_TakeDamage1")
+SeqTrackAlias("FPP_Singleshot_TakeDamage1_Rest", "FPP_Beretta_TakeDamage1_Rest")
+SeqTrackAlias("FPP_Singleshot_TakeDamageLeft1", "FPP_Beretta_TakeDamageLeft1")
+SeqTrackAlias("FPP_Singleshot_TakeDamageLeft1_Rest", "FPP_Beretta_TakeDamageLeft1_Rest")
+SeqTrackAlias("FPP_Singleshot_TakeDamage2", "FPP_Beretta_TakeDamage2")
+SeqTrackAlias("FPP_Singleshot_TakeDamage2_Rest", "FPP_Beretta_TakeDamage2_Rest")
+SeqTrackAlias("FPP_Singleshot_TakeDamageLeft2", "FPP_Beretta_TakeDamageLeft2")
+SeqTrackAlias("FPP_Singleshot_TakeDamageLeft2_Rest", "FPP_Beretta_TakeDamageLeft2_Rest")
+
+
+SeqTrackAlias("FPP_Singleshot_Ballance_Stand", "FPP_Beretta_Ballance_Stand")
+SeqTrackAlias("FPP_Singleshot_Ballance_StandNoise", "FPP_Beretta_Ballance_StandNoise")
+SeqTrackAlias("FPP_Singleshot_Ballance_MoveNoise", "FPP_Beretta_Ballance_MoveNoise")
+SeqTrackAlias("FPP_Singleshot_Ballance_SprintNoise", "FPP_Beretta_Ballance_SprintNoise")
+SeqTrackAlias("FPP_Singleshot_Ballance_Right", "FPP_Beretta_Ballance_Right")
+SeqTrackAlias("FPP_Singleshot_Ballance_Left", "FPP_Beretta_Ballance_Left")
+
+SeqTrackAlias("FPP_Singleshot_Jump_Begin", "FPP_Beretta_Jump_Begin")
+SeqTrackAlias("FPP_Singleshot_Jump_Loop", "FPP_Beretta_Jump_Loop")
+SeqTrackAlias("FPP_Singleshot_Jump_Begin_1", "FPP_Beretta_Jump_Begin_1")
+SeqTrackAlias("FPP_Singleshot_Jump_Loop_1", "FPP_Beretta_Jump_Loop_1")
+
+SeqTrackAlias("FPP_Singleshot_PokeRight", "FPP_Beretta_PokeRight")
+SeqTrackAlias("FPP_Singleshot_PokeLeft", "FPP_Beretta_PokeLeft")
+SeqTrackAlias("FPP_Singleshot_CrowdBumpRight", "FPP_Beretta_CrowdBumpRight")
+SeqTrackAlias("FPP_Singleshot_CrowdBumpLeft", "FPP_Beretta_CrowdBumpLeft")

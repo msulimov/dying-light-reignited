@@ -1,0 +1,110 @@
+!include("ai_timing.def")
+
+//<--------------------- M_TPP_M16.scr --------------------------------->
+
+SeqTrack("TPP_GrenadeLauncher_Shot", 			"TPP_GrenadeLauncher_Shot.anm2", 				0,   56,   60,   1,   0.1) 
+SeqTrackAlias("TPP_GrenadeLauncher_ShotEmpty", "TPP_GrenadeLauncher_Shot")
+
+//alias
+SeqTrackAlias("TPP_GrenadeLauncher_Aim_Shot", "TPP_GrenadeLauncher_Shot")
+SeqTrackAlias("TPP_GrenadeLauncher_Aim_ShotEmpty", "TPP_GrenadeLauncher_ShotEmpty")
+
+SeqTrackAlias("TPP_GrenadeLauncher_Stand", "TPP_M16_Stand")
+
+
+//alias
+SeqTrackAlias("TPP_GrenadeLauncher_StandEmpty", "TPP_GrenadeLauncher_Stand")
+SeqTrackAlias("TPP_GrenadeLauncher_Wall", "TPP_GrenadeLauncher_Stand")
+SeqTrackAlias("TPP_GrenadeLauncher_Cover_StandPos", "TPP_GrenadeLauncher_Stand")
+SeqTrackAlias("TPP_GrenadeLauncher_Aim_Stand", "TPP_GrenadeLauncher_Stand")
+SeqTrackAlias("TPP_GrenadeLauncher_Aim_StandEmpty", "TPP_GrenadeLauncher_Stand")
+
+
+
+///RELOAD NEW
+SeqTrack("TPP_GrenadeLauncher_ReloadBegin", 			"TPP_GrenadeLauncher_Reload.anm2", 				0,   48,   60,   1,   0.3)
+{	
+	Event(0, 0, 1)
+    {
+		PlaySound3D(GameVolumeSource_SoundPlayer, "grenade_launcher_reload.wav", 1, 3, "head", 1, [0,0,0], 1)
+    }
+}
+SeqTrack("TPP_GrenadeLauncher_ReloadManage", 			"TPP_GrenadeLauncher_Reload.anm2"			, 48, 48, 60, 1, 0.0)
+SeqTrack("TPP_GrenadeLauncher_ReloadLoop", 				"TPP_GrenadeLauncher_Reload.anm2"			, 48, 110, 60, 1, 0.0)
+
+SeqTrack("TPP_GrenadeLauncher_ReloadFinish", 			"TPP_GrenadeLauncher_Reload.anm2",		110, 140, 60, 1, 0.0)
+
+
+SeqTrackAlias("TPP_GrenadeLauncher_Jump_Pose", "TPP_M16_Jump_Pose")
+SeqTrackAlias("TPP_GrenadeLauncher_WalkForward", "TPP_M16_WalkForward")
+SeqTrackAlias("TPP_GrenadeLauncher_RunForward", "TPP_M16_RunForward")
+SeqTrackAlias("TPP_GrenadeLauncher_SprintForward", "TPP_M16_SprintForward")
+SeqTrackAlias("TPP_GrenadeLauncher_WalkBackward", "TPP_M16_WalkBackward")
+SeqTrackAlias("TPP_GrenadeLauncher_RunBackward", "TPP_M16_RunBackward")
+SeqTrackAlias("TPP_GrenadeLauncher_WalkRight", "TPP_M16_WalkRight")
+SeqTrackAlias("TPP_GrenadeLauncher_RunRight", "TPP_M16_RunRight")
+SeqTrackAlias("TPP_GrenadeLauncher_WalkLeft", "TPP_M16_WalkLeft")
+SeqTrackAlias("TPP_GrenadeLauncher_RunLeft", "TPP_M16_RunLeft")
+
+//<--------------------- M_TPP_HitReactions.scr --------------------------------->
+
+SeqTrackAlias("TPP_GrenadeLauncher_TakeDamageHitRight", "TPP_M16_TakeDamageHitRight")
+SeqTrackAlias("TPP_GrenadeLauncher_TakeDamageHitRight_Rest", "TPP_M16_TakeDamageHitRight_Rest")
+SeqTrackAlias("TPP_GrenadeLauncher_TakeDamageHitLeft", "TPP_M16_TakeDamageHitLeft")
+SeqTrackAlias("TPP_GrenadeLauncher_TakeDamageHitLeft_Rest", "TPP_M16_TakeDamageHitLeft_Rest")
+SeqTrackAlias("TPP_GrenadeLauncher_TakeDamageHitRight1", "TPP_M16_TakeDamageHitRight1")
+SeqTrackAlias("TPP_GrenadeLauncher_TakeDamageHitRight1_Rest", "TPP_M16_TakeDamageHitRight1_Rest")
+SeqTrackAlias("TPP_GrenadeLauncher_TakeDamageHitLeft1", "TPP_M16_TakeDamageHitLeft1")
+SeqTrackAlias("TPP_GrenadeLauncher_TakeDamageHitLeft1_Rest", "TPP_M16_TakeDamageHitLeft1_Rest")
+
+SeqTrackAlias("TPP_GrenadeLauncher_TakeDamagePvpHitRight", "TPP_M16_TakeDamagePvpHitRight")
+SeqTrackAlias("TPP_GrenadeLauncher_TakeDamagePvpHitRight_Rest", "TPP_M16_TakeDamagePvpHitRight_Rest")
+SeqTrackAlias("TPP_GrenadeLauncher_TakeDamagePvpHitLeft", "TPP_M16_TakeDamagePvpHitLeft")
+SeqTrackAlias("TPP_GrenadeLauncher_TakeDamagePvpHitLeft_Rest", "TPP_M16_TakeDamagePvpHitLeft_Rest")
+
+SeqTrackAlias("TPP_GrenadeLauncher_TakeDamagePush", "TPP_M16_TakeDamagePush")
+SeqTrackAlias("TPP_GrenadeLauncher_TakeDamagePush_Rest", "TPP_M16_TakeDamagePush_Rest")
+SeqTrackAlias("TPP_GrenadeLauncher_TakeDamagePush1", "TPP_M16_TakeDamagePush1")
+SeqTrackAlias("TPP_GrenadeLauncher_TakeDamagePush1_Rest", "TPP_M16_TakeDamagePush1_Rest")
+
+//alias
+SeqTrackAlias("TPP_GrenadeLauncher_TakeDamagePvpHitRight1", "TPP_GrenadeLauncher_TakeDamagePush1")
+SeqTrackAlias("TPP_GrenadeLauncher_TakeDamagePvpHitRight1_Rest", "TPP_GrenadeLauncher_TakeDamagePush1_Rest")
+SeqTrackAlias("TPP_GrenadeLauncher_TakeDamagePvpHitLeft1", "TPP_GrenadeLauncher_TakeDamagePush")
+SeqTrackAlias("TPP_GrenadeLauncher_TakeDamagePvpHitLeft1_Rest", "TPP_GrenadeLauncher_TakeDamagePush_Rest")
+
+//alias
+SeqTrackAlias("TPP_GrenadeLauncher_TakeDamagePush2", "TPP_GrenadeLauncher_TakeDamagePush")
+SeqTrackAlias("TPP_GrenadeLauncher_TakeDamagePush2_Rest", "TPP_GrenadeLauncher_TakeDamagePush_Rest")
+SeqTrackAlias("TPP_GrenadeLauncher_TakeDamagePush3", "TPP_GrenadeLauncher_TakeDamagePush1")
+SeqTrackAlias("TPP_GrenadeLauncher_TakeDamagePush3_Rest", "TPP_GrenadeLauncher_TakeDamagePush1_Rest")
+SeqTrackAlias("TPP_GrenadeLauncher_TakeDamageCollision", "TPP_GrenadeLauncher_TakeDamagePush")
+SeqTrackAlias("TPP_GrenadeLauncher_TakeDamageCollision_Rest", "TPP_GrenadeLauncher_TakeDamagePush_Rest")
+SeqTrackAlias("TPP_GrenadeLauncher_TakeDamageCollision1", "TPP_GrenadeLauncher_TakeDamagePush1")
+SeqTrackAlias("TPP_GrenadeLauncher_TakeDamageCollision1_Rest", "TPP_GrenadeLauncher_TakeDamagePush1_Rest")
+
+//alias
+SeqTrackAlias("TPP_GrenadeLauncher_TakeDamageHitRight2", "TPP_GrenadeLauncher_TakeDamageHitRight1")
+SeqTrackAlias("TPP_GrenadeLauncher_TakeDamageHitRight2_Rest", "TPP_GrenadeLauncher_TakeDamageHitRight1_Rest")
+SeqTrackAlias("TPP_GrenadeLauncher_TakeDamageHitLeft2", "TPP_GrenadeLauncher_TakeDamageHitLeft")
+SeqTrackAlias("TPP_GrenadeLauncher_TakeDamageHitLeft2_Rest", "TPP_GrenadeLauncher_TakeDamageHitLeft_Rest")
+SeqTrackAlias("TPP_GrenadeLauncher_PokeRight", "TPP_GrenadeLauncher_TakeDamagePush")
+SeqTrackAlias("TPP_GrenadeLauncher_PokeLeft", "TPP_GrenadeLauncher_TakeDamagePush")
+SeqTrackAlias("TPP_GrenadeLauncher_CrowdBumpRight", "TPP_GrenadeLauncher_TakeDamagePush")
+SeqTrackAlias("TPP_GrenadeLauncher_CrowdBumpLeft", "TPP_GrenadeLauncher_TakeDamagePush")
+
+//<--------------------- M_TPP_Mimic.scr --------------------------------->
+
+SeqTrackAlias("TPP_GrenadeLauncher_Stand_Mimic", "Default_Idlle_Mimic")
+
+//<--------------------- M_TPP_NM.scr --------------------------------->
+
+SeqTrackAlias("TPP_GrenadeLauncher_Jump_Begin", "TPP_M16_Jump_Begin")
+SeqTrackAlias("TPP_GrenadeLauncher_Jump_Loop", "TPP_M16_Jump_Loop")
+
+//alias
+SeqTrackAlias("TPP_GrenadeLauncher_Jump_Begin_1", "TPP_GrenadeLauncher_Jump_Begin")
+SeqTrackAlias("TPP_GrenadeLauncher_Jump_Loop_1", "TPP_GrenadeLauncher_Jump_Loop")
+
+SeqTracksBlend("TPP_GrenadeLauncher_Jump_Begin", "TPP_GrenadeLauncher_Jump_Loop", 0.0)
+

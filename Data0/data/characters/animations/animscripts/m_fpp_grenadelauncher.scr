@@ -1,0 +1,112 @@
+!include("ai_timing.def")
+
+//<--------------------- M_FPP_M16.scr --------------------------------->
+//----- animacje z M16
+// nois
+SeqTrackAlias("FPP_GrenadeLauncher_StandNoise", "FPP_M16_StandNoise")
+SeqTrackAlias("FPP_GrenadeLauncher_MoveNoise", "FPP_M16_MoveNoise")
+SeqTrackAlias("FPP_GrenadeLauncher_SprintNoise", "FPP_M16_SprintNoise")
+
+// stand 
+SeqTrackAlias("FPP_GrenadeLauncher_Stand", "FPP_M16_Stand")
+SeqTrackAlias("FPP_GrenadeLauncher_Wall", "FPP_M16_Wall")// no anim for wall now added so we have no assetions
+SeqTrackAlias("FPP_GrenadeLauncher_Cover_StandPos", "FPP_M16_Cover_StandPos")// no anim for wall now added so we have no assetions
+SeqTrackAlias("FPP_GrenadeLauncher_StandEmpty", "FPP_M16_StandEmpty")
+
+// idle
+SeqTrackAlias("FPP_GrenadeLauncher_Idle", "FPP_M16_Idle")
+
+// podstawowe
+
+
+///RELOAD NEW
+SeqTrack("FPP_GrenadeLauncher_ReloadBegin", 			"M_FPP_GrenadeLauncher_Reload.anm2"			, 0, 48, 60, 1, 0.3)
+{
+	Event(5, EVENT_RELOAD_FORBID_BREAK, -1)
+	Event(0, 0, -1)
+    {
+       PlaySound2DExternal(GameVolumeSource_SoundPlayer, "grenade_launcher_reload.wav", 1, 0, 1)
+    }
+}
+SeqTrack("FPP_GrenadeLauncher_ReloadManage", 			"M_FPP_GrenadeLauncher_Reload.anm2"			, 48, 48, 60, 1, 0.0)
+SeqTrack("FPP_GrenadeLauncher_ReloadLoop", 				"M_FPP_GrenadeLauncher_Reload.anm2"			, 48, 110, 60, 1, 0.0)
+
+
+SeqTrack("FPP_GrenadeLauncher_ReloadFinish", 		"M_FPP_GrenadeLauncher_Reload.anm2",		110, 130, 60, 1, 0.0)
+{	
+	Event(10, EVENT_RELOAD_ADD_BULLET, -1)
+	Event(8, EVENT_RELOAD_ALLOW_BREAK, -1)
+	Event(19, END_ANIMATION, 1)
+}
+
+
+
+// shoot
+SeqTrack("FPP_GrenadeLauncher_Shot", "M_FPP_GrenadeLauncher_Shot.anm2",          0, 112, 120, 1, 0.0)
+SeqTrackAlias("FPP_GrenadeLauncher_ShotEmpty", "FPP_M16_ShotEmpty")
+SeqTrackAlias("FPP_GrenadeLauncher_ShotRecoil0", "FPP_GrenadeLauncher_Shot")
+SeqTrackAlias("FPP_GrenadeLauncher_ShotRecoil1", "FPP_GrenadeLauncher_Shot")
+SeqTrackAlias("FPP_GrenadeLauncher_ShotRecoil2", "FPP_GrenadeLauncher_Shot")
+
+// aim
+// stand
+SeqTrackAlias("FPP_GrenadeLauncher_Aim_Stand", "FPP_M16_Aim_Stand")
+SeqTrackAlias("FPP_GrenadeLauncher_Aim_Shot", "FPP_M16_Aim_Shot")
+SeqTrackAlias("FPP_GrenadeLauncher_Aim_ShotEmpty", "FPP_M16_Aim_ShotEmpty")
+SeqTrackAlias("FPP_GrenadeLauncher_Aim_ShotRecoil0", "FPP_M16_Aim_ShotRecoil0")
+SeqTrackAlias("FPP_GrenadeLauncher_Aim_ShotRecoil1", "FPP_M16_Aim_ShotRecoil1")
+SeqTrackAlias("FPP_GrenadeLauncher_Aim_ShotRecoil2", "FPP_M16_Aim_ShotRecoil2")
+
+SeqTrackAlias("FPP_GrenadeLauncher_TakeDamageHitRight", "FPP_M16_TakeDamageHitRight")
+SeqTrackAlias("FPP_GrenadeLauncher_TakeDamageHitRight_Rest", "FPP_M16_TakeDamageHitRight_Rest")
+
+SeqTrackAlias("FPP_GrenadeLauncher_TakeDamageHitLeft", "FPP_M16_TakeDamageHitLeft")
+SeqTrackAlias("FPP_GrenadeLauncher_TakeDamageHitLeft_Rest", "FPP_M16_TakeDamageHitLeft_Rest")
+
+SeqTrackAlias("FPP_GrenadeLauncher_TakeDamageHitRight1", "FPP_M16_TakeDamageHitRight1")
+SeqTrackAlias("FPP_GrenadeLauncher_TakeDamageHitRight1_Rest", "FPP_M16_TakeDamageHitRight1_Rest")
+
+SeqTrackAlias("FPP_GrenadeLauncher_TakeDamageHitLeft1", "FPP_M16_TakeDamageHitLeft1")
+SeqTrackAlias("FPP_GrenadeLauncher_TakeDamageHitLeft1_Rest", "FPP_M16_TakeDamageHitLeft1_Rest")
+
+SeqTrackAlias("FPP_GrenadeLauncher_TakeDamageHitRight2", "FPP_M16_TakeDamageHitRight2")
+SeqTrackAlias("FPP_GrenadeLauncher_TakeDamageHitRight2_Rest", "FPP_M16_TakeDamageHitRight2_Rest")
+
+SeqTrackAlias("FPP_GrenadeLauncher_TakeDamageHitLeft2", "FPP_M16_TakeDamageHitLeft2")
+SeqTrackAlias("FPP_GrenadeLauncher_TakeDamageHitLeft2_Rest", "FPP_M16_TakeDamageHitLeft2_Rest")
+
+//<--------------------- M_FPP_HitReactions.scr --------------------------------->
+
+SeqTrackAlias("FPP_GrenadeLauncher_PokeRight", "FPP_M16_PokeRight")
+SeqTrackAlias("FPP_GrenadeLauncher_PokeLeft", "FPP_M16_PokeLeft")
+
+SeqTrackAlias("FPP_GrenadeLauncher_CrowdBumpRight", "FPP_M16_CrowdBumpRight")
+SeqTrackAlias("FPP_GrenadeLauncher_CrowdBumpLeft", "FPP_M16_CrowdBumpLeft")
+
+//<--------------------- M_FPP_NM_Ballance.scr --------------------------------->
+
+SeqTrackAlias("FPP_GrenadeLauncher_Ballance_Stand", "FPP_M16_Ballance_Stand")
+SeqTrackAlias("FPP_GrenadeLauncher_Ballance_StandNoise", "FPP_M16_Ballance_StandNoise")
+SeqTrackAlias("FPP_GrenadeLauncher_Ballance_MoveNoise", "FPP_M16_Ballance_MoveNoise")
+SeqTrackAlias("FPP_GrenadeLauncher_Ballance_SprintNoise", "FPP_M16_Ballance_SprintNoise")
+SeqTrackAlias("FPP_GrenadeLauncher_Ballance_Right", "FPP_M16_Ballance_Right")
+SeqTrackAlias("FPP_GrenadeLauncher_Ballance_Left", "FPP_M16_Ballance_Left")
+
+SeqTrackAlias("FPP_GrenadeLauncher_Right_Obstacle", "FPP_M16_Right_Obstacle")
+SeqTrackAlias("FPP_GrenadeLauncher_Left_Obstacle", "FPP_M16_Left_Obstacle")
+
+//<--------------------- M_FPP_NM_Jump.scr --------------------------------->
+
+SeqTrackAlias("FPP_GrenadeLauncher_Jump_Begin", "FPP_M16_Jump_Begin")
+SeqTrackAlias("FPP_GrenadeLauncher_Jump_Loop", "FPP_M16_Jump_Loop")
+SeqTrackAlias("FPP_GrenadeLauncher_Jump_Begin_1", "FPP_M16_Jump_Begin_1")
+SeqTrackAlias("FPP_GrenadeLauncher_Jump_Loop_1", "FPP_M16_Jump_Loop_1")
+SeqTrackAlias("FPP_GrenadeLauncher_JumpOnLowStand", "FPP_M16_JumpOnLowStand")
+SeqTrackAlias("FPP_GrenadeLauncher_JumpOnLowStand_1", "FPP_M16_JumpOnLowStand_1")
+SeqTrackAlias("FPP_GrenadeLauncher_JumpOnLowStand_2", "FPP_M16_JumpOnLowStand_2")
+
+SeqTracksBlend("FPP_GrenadeLauncher_Jump_Begin", "FPP_GrenadeLauncher_Jump_Loop", 0.1)
+
+SeqTrackAlias("FPP_GrenadeLauncher_DodgeLeft", "FPP_M16_DodgeLeft")
+SeqTrackAlias("FPP_GrenadeLauncher_DodgeRight", "FPP_M16_DodgeRight")
+SeqTrackAlias("FPP_GrenadeLauncher_DodgeBack", "FPP_M16_DodgeBack")

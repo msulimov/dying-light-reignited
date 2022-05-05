@@ -1,0 +1,28 @@
+!Resolution(i,i)
+!WindowOffset(i,i)
+!Monitor(i)            // -1 primary monitor
+!DX11()                // game will use DirectX 11
+!TextureQuality(s)     // VeryLow, Low, High
+!GammaFloat(f)
+!MaxRefresh(i)
+!Shadows(s)            // Low, High
+!ShadowMapSize(i)
+!SpotShadowMapSize(i)
+!Fullscreen()
+!VSync(i)              // vertical sync; 0 - disable, 1 - every frame, 2 - every 2 frames, etc.
+!VSyncDisableBelowTarget(i)
+!GrassQuality(i)       // lower is better
+!VisRange(f,f)
+
+
+Resolution(1920,1080)
+TextureQuality("High")
+Shadows("High")
+ShadowMapSize(2048)
+SpotShadowMapSize(2048)
+GammaFloat(1.00)
+MaxRefresh(60)
+GrassQuality(0)
+VSync(1)
+VSyncDisableBelowTarget(1)
+VisRange(1.25, 1.25)

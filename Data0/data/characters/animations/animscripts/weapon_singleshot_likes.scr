@@ -1,0 +1,56 @@
+!include("weapon_pistol.scr")
+!include("events.def")
+!include("anim_actions.def")
+!include("human_vis_events.def")
+!include("vessel_vis_events.def")
+
+//----- animacje z beretta
+//Normal
+//SeqTrackAlias("FPP_Singleshot_Stand", "FPP_Beretta_Stand")
+SeqTrack("FPP_Singleshot_Stand",         "M_FPP_Singleshot_Reload.anm2", 189, 190, 60, 1, 0.3)
+SeqTrackAlias("FPP_Singleshot_StandEmpty", "FPP_Singleshot_Stand")
+
+// Aim
+//SeqTrackAlias("FPP_Singleshot_Aim_Stand", "FPP_Beretta_Aim_Stand")
+SeqTrack("FPP_Singleshot_Aim_Stand",         "M_FPP_Singleshot_Reload.anm2", 189, 190, 60, 1, 0.3)
+SeqTrackAlias("FPP_Singleshot_Aim_StandEmpty", "FPP_Singleshot_Aim_Stand")
+
+// reload
+SeqTrack( "FPP_Singleshot_ReloadBegin",         "M_FPP_Singleshot_Reload.anm2",              0, 46, 60, 1, 0.3 )
+SeqTrack( "FPP_Singleshot_ReloadLoop",          "M_FPP_Singleshot_Reload.anm2",              46, 172, 60, 1, 0.3 ) 
+SeqTrack( "FPP_Singleshot_ReloadFinish",        "M_FPP_Singleshot_Reload.anm2",              172, 192, 60, 1, 0.3 )
+SeqTrackAlias("FPP_Singleshot_ReloadManage", "FPP_Singleshot_ReloadLoop")
+
+SeqTrackAlias("FPP_Singleshot_ShotRecoil0", "FPP_Beretta_ShotRecoil0")
+SeqTrackAlias("FPP_Singleshot_ShotRecoil1", "FPP_Beretta_ShotRecoil1")
+SeqTrackAlias("FPP_Singleshot_ShotRecoil2", "FPP_Beretta_ShotRecoil2")
+
+SeqTrack("FPP_Singleshot_Shot",         "m_FPP_Singleshot_Shot.anm2", 0, 49, 60, 1, 0.0)
+SeqTrack("FPP_Singleshot_ShotEmpty",    "m_FPP_Singleshot_Shot.anm2", 0, 49, 60, 1, 0.0)
+
+
+SeqTrackAlias("FPP_Singleshot_Aim_ShotRecoil0", "FPP_Singleshot_Aim_Shot")
+SeqTrackAlias("FPP_Singleshot_Aim_ShotRecoil1", "FPP_Singleshot_Aim_Shot")
+SeqTrackAlias("FPP_Singleshot_Aim_ShotRecoil2", "FPP_Singleshot_Aim_Shot")
+
+SeqTrack("FPP_Singleshot_Aim_Shot", "M_FPP_Singleshot_Aim_Shot.anm2", 0, 70, 60, 1, 0.0 )
+SeqTrackAlias("FPP_Singleshot_Aim_ShotLast", "FPP_Singleshot_Aim_Shot")
+SeqTrackAlias("FPP_Singleshot_Aim_ShotEmpty", "FPP_Beretta_Aim_ShotEmpty")
+
+//----- animacje z beretta
+//Normal
+SeqTrack( "TPP_Singleshot_Shot", "M_TPP_Singleshot_Shot.anm2", 0, 20, 30, 1, 0.3 )
+SeqTrackAlias("TPP_Singleshot_ShotLast", "TPP_Singleshot_Shot")
+SeqTrackAlias("TPP_Singleshot_ShotEmpty", "TPP_Singleshot_Shot")
+
+SeqTrackAlias("TPP_Singleshot_Aim_Shot", "TPP_Singleshot_Shot")
+SeqTrackAlias("TPP_Singleshot_Aim_ShotLast", "TPP_Singleshot_Shot")
+SeqTrackAlias("TPP_Singleshot_Aim_ShotEmpty", "TPP_Singleshot_Shot")
+
+SeqTrackAlias("TPP_Singleshot_Stand", "TPP_Beretta_Stand")
+
+// reload
+SeqTrack( "TPP_Singleshot_ReloadBegin",         "M_TPP_Singleshot_Reload.anm2",              0, 23, 30, 1, 0.3 )
+SeqTrack( "TPP_Singleshot_ReloadLoop",          "M_TPP_Singleshot_Reload.anm2",              23, 86, 30, 1, 0.3 ) 
+SeqTrack( "TPP_Singleshot_ReloadFinish",        "M_TPP_Singleshot_Reload.anm2",              86, 97, 30, 1, 0.3 )
+SeqTrackAlias("TPP_Singleshot_ReloadManage", "TPP_Singleshot_ReloadLoop")

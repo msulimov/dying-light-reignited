@@ -1,0 +1,108 @@
+!include("ai_timing.def")
+
+//----- animacje z beretta
+SeqTrackAlias("TPP_Singleshot_Stand", "TPP_Beretta_Stand")
+SeqTrackAlias("TPP_Singleshot_StandEmpty", "TPP_Beretta_StandEmpty")
+SeqTrackAlias("TPP_Singleshot_Wall", "TPP_Beretta_Wall")
+SeqTrackAlias("TPP_Singleshot_Cover_StandPos", "TPP_Beretta_Cover_StandPos")
+
+SeqTrack( "TPP_Singleshot_Shot", "M_TPP_Singleshot_Shot.anm2", 0, 20, 30, 1, 0.3 )
+SeqTrackAlias("TPP_Singleshot_ShotLast", "TPP_Singleshot_Shot")
+SeqTrackAlias("TPP_Singleshot_ShotEmpty", "TPP_Singleshot_Shot")
+
+// Aim
+SeqTrackAlias("TPP_Singleshot_Aim_Stand", "TPP_Beretta_Aim_Stand")
+SeqTrackAlias("TPP_Singleshot_Aim_StandEmpty", "TPP_Beretta_Aim_StandEmpty")
+
+SeqTrackAlias("TPP_Singleshot_Aim_Shot", "TPP_Singleshot_Shot")
+SeqTrackAlias("TPP_Singleshot_Aim_ShotLast", "TPP_Singleshot_Shot")
+SeqTrackAlias("TPP_Singleshot_Aim_ShotEmpty", "TPP_Singleshot_Shot")
+
+// reload
+SeqTrack( "TPP_Singleshot_ReloadBegin",         "M_TPP_Singleshot_Reload.anm2",              0, 23, 30, 1, 0.3 )
+{
+    Event(1, 0, 1)
+	{
+    	PlaySound3D(GameVolumeSource_SpecialSound, "Van_Crane_Pistol_load_open.wav", 0.5, 3, "head", 1, [0, 0, 0], 0)
+    }
+	//Event(14, EVENT_SCHOFIELD_RELOAD_PREPARE)
+    //Event(32, EVENT_SCHOFIELD_RELOAD_OPEN)
+}
+
+SeqTrack( "TPP_Singleshot_ReloadLoop",          "M_TPP_Singleshot_Reload.anm2",              23, 86, 30, 1, 0.3 ) 
+{
+    Event(62, EVENT_RELOAD_ADD_BULLET, -1)
+	Event(29, 0, 1)
+	{
+    	PlaySound3D(GameVolumeSource_SpecialSound, "Van_Crane_Pistol_load_place_bullet.wav", 0.5, 3, "head", 1, [0, 0, 0], 0)
+    }
+	Event(34, 0, 1)
+	{
+    	PlaySound3D(GameVolumeSource_SpecialSound, "Van_Crane_Pistol_load_push_bullet.wav", 0.5, 3, "head", 1, [0, 0, 0], 0)
+    }
+	Event(50, 0, 1)
+	{
+    	PlaySound3D(GameVolumeSource_SpecialSound, "Van_Crane_Pistol_load_close.wav", 0.5, 3, "head", 1, [0, 0, 0], 0)
+    }
+    //Event(100, EVENT_SCHOFIELD_RELOAD_INSERT_BULLET)
+}
+
+SeqTrack( "TPP_Singleshot_ReloadFinish",        "M_TPP_Singleshot_Reload.anm2",              86, 97, 30, 1, 0.3 )
+
+
+SeqTrackAlias("TPP_Singleshot_ReloadManage", "TPP_Singleshot_ReloadLoop")
+
+SeqTrackAlias("TPP_Singleshot_Jump_Pose", "TPP_Beretta_Jump_Pose")
+SeqTrackAlias("TPP_Singleshot_WalkForward", "TPP_Beretta_WalkForward")
+SeqTrackAlias("TPP_Singleshot_RunForward", "TPP_Beretta_RunForward")
+SeqTrackAlias("TPP_Singleshot_SprintForward", "TPP_Beretta_SprintForward")
+SeqTrackAlias("TPP_Singleshot_WalkBackward", "TPP_Beretta_WalkBackward")
+SeqTrackAlias("TPP_Singleshot_RunBackward", "TPP_Beretta_RunBackward")
+SeqTrackAlias("TPP_Singleshot_WalkRight", "TPP_Beretta_WalkRight")
+SeqTrackAlias("TPP_Singleshot_RunRight", "TPP_Beretta_RunRight")
+SeqTrackAlias("TPP_Singleshot_WalkLeft", "TPP_Beretta_WalkLeft")
+SeqTrackAlias("TPP_Singleshot_RunLeft", "TPP_Beretta_RunLeft")
+
+SeqTrackAlias("TPP_Singleshot_TakeDamageHitRight", "TPP_Beretta_TakeDamageHitRight")
+SeqTrackAlias("TPP_Singleshot_TakeDamageHitRight_Rest", "TPP_Beretta_TakeDamageHitRight_Rest")
+SeqTrackAlias("TPP_Singleshot_TakeDamageHitLeft", "TPP_Beretta_TakeDamageHitLeft")
+SeqTrackAlias("TPP_Singleshot_TakeDamageHitLeft_Rest", "TPP_Beretta_TakeDamageHitLeft_Rest")
+SeqTrackAlias("TPP_Singleshot_TakeDamageHitRight1", "TPP_Beretta_TakeDamageHitRight1")
+SeqTrackAlias("TPP_Singleshot_TakeDamageHitRight1_Rest", "TPP_Beretta_TakeDamageHitRight1_Rest")
+SeqTrackAlias("TPP_Singleshot_TakeDamageHitLeft1", "TPP_Beretta_TakeDamageHitLeft1")
+SeqTrackAlias("TPP_Singleshot_TakeDamageHitLeft1_Rest", "TPP_Beretta_TakeDamageHitLeft1_Rest")
+SeqTrackAlias("TPP_Singleshot_TakeDamageHitRight2", "TPP_Beretta_TakeDamageHitRight2")
+SeqTrackAlias("TPP_Singleshot_TakeDamageHitRight2_Rest", "TPP_Beretta_TakeDamageHitRight2_Rest")
+SeqTrackAlias("TPP_Singleshot_TakeDamageHitLeft2", "TPP_Beretta_TakeDamageHitLeft2")
+SeqTrackAlias("TPP_Singleshot_TakeDamageHitLeft2_Rest", "TPP_Beretta_TakeDamageHitLeft2_Rest")
+SeqTrackAlias("TPP_Singleshot_TakeDamagePvpHitRight", "TPP_Beretta_TakeDamagePvpHitRight")
+SeqTrackAlias("TPP_Singleshot_TakeDamagePvpHitRight_Rest", "TPP_Beretta_TakeDamagePvpHitRight_Rest")
+SeqTrackAlias("TPP_Singleshot_TakeDamagePvpHitLeft", "TPP_Beretta_TakeDamagePvpHitLeft")
+SeqTrackAlias("TPP_Singleshot_TakeDamagePvpHitLeft_Rest", "TPP_Beretta_TakeDamagePvpHitLeft_Rest")
+SeqTrackAlias("TPP_Singleshot_TakeDamagePvpHitRight1", "TPP_Beretta_TakeDamagePvpHitRight1")
+SeqTrackAlias("TPP_Singleshot_TakeDamagePvpHitRight1_Rest", "TPP_Beretta_TakeDamagePvpHitRight1_Rest")
+SeqTrackAlias("TPP_Singleshot_TakeDamagePvpHitLeft1", "TPP_Beretta_TakeDamagePvpHitLeft1")
+SeqTrackAlias("TPP_Singleshot_TakeDamagePvpHitLeft1_Rest", "TPP_Beretta_TakeDamagePvpHitLeft1_Rest")
+SeqTrackAlias("TPP_Singleshot_TakeDamagePush", "TPP_Beretta_TakeDamagePush")
+SeqTrackAlias("TPP_Singleshot_TakeDamagePush_Rest", "TPP_Beretta_TakeDamagePush_Rest")
+SeqTrackAlias("TPP_Singleshot_TakeDamagePush1", "TPP_Beretta_TakeDamagePush1")
+SeqTrackAlias("TPP_Singleshot_TakeDamagePush1_Rest", "TPP_Beretta_TakeDamagePush1_Rest")
+SeqTrackAlias("TPP_Singleshot_TakeDamagePush2", "TPP_Beretta_TakeDamagePush2")
+SeqTrackAlias("TPP_Singleshot_TakeDamagePush2_Rest", "TPP_Beretta_TakeDamagePush2_Rest")
+SeqTrackAlias("TPP_Singleshot_TakeDamagePush3", "TPP_Beretta_TakeDamagePush3")
+SeqTrackAlias("TPP_Singleshot_TakeDamagePush3_Rest", "TPP_Beretta_TakeDamagePush3_Rest")
+
+SeqTrackAlias("TPP_Singleshot_TakeDamageCollision", "TPP_Beretta_TakeDamageCollision")
+SeqTrackAlias("TPP_Singleshot_TakeDamageCollision_Rest", "TPP_Beretta_TakeDamageCollision_Rest")
+SeqTrackAlias("TPP_Singleshot_TakeDamageCollision1", "TPP_Beretta_TakeDamageCollision1")
+SeqTrackAlias("TPP_Singleshot_TakeDamageCollision1_Rest", "TPP_Beretta_TakeDamageCollision1_Rest")
+
+SeqTrackAlias("TPP_Singleshot_Jump_Begin", "TPP_Beretta_Jump_Begin")
+SeqTrackAlias("TPP_Singleshot_Jump_Loop", "TPP_Beretta_Jump_Loop")
+SeqTrackAlias("TPP_Singleshot_Jump_Begin_1", "TPP_Beretta_Jump_Begin_1")
+SeqTrackAlias("TPP_Singleshot_Jump_Loop_1", "TPP_Beretta_Jump_Loop_1")
+
+SeqTrackAlias("TPP_Singleshot_PokeRight", "TPP_Beretta_PokeRight")
+SeqTrackAlias("TPP_Singleshot_PokeLeft", "TPP_Beretta_PokeLeft")
+SeqTrackAlias("TPP_Singleshot_CrowdBumpRight", "TPP_Beretta_CrowdBumpRight")
+SeqTrackAlias("TPP_Singleshot_CrowdBumpLeft", "TPP_Beretta_CrowdBumpLeft")
