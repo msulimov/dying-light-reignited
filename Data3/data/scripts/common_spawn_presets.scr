@@ -16,7 +16,57 @@
         RemoveDistanceIfNotContact(20)
         TimeBtwSpawnZombies(10)
     }
-	
+
+    PresetDef("Friendly_Fighter_Init")
+    {
+        Difficult(20)
+        AIPreset("Friendly_Survivor")
+        SpawnCondition("t_INIT, 0.7;z_MELEE_FIGHTER, 0.7")
+        //AllowedMaps("Old_Town")
+        MinDistBtwZombies(30)
+        RemoveDistanceIfNotContact(45)
+        ForceTargetType(2)
+        TimeBtwSpawnZombies(50)
+        //UseCondition("Scavegers_Outpost_Far")
+    }
+
+    PresetDef("Friendly_Fighter")
+    {
+        Difficult(20)
+        SpawnCondition("z_MELEE_FIGHTER, 1;p_WIDE, 1;p_SQUARE, 1;p_ROOF, -1")
+        AIPreset("Friendly_Survivor")
+        //AllowedMaps("Old_Town")
+        MinDistBtwZombies(30)
+        TimeBtwSpawnZombies(5)
+        ForceTargetType(2)
+        //UseCondition("Scavegers_Outpost_Far")
+    }
+    
+    PresetDef("Enemy_Fighter_Init")
+    {
+        Difficult(40)
+        AIPreset("Enemy_Survivor")
+        SpawnCondition("t_INIT, 0.7;z_MELEE_FIGHTER, 0.7")
+        //AllowedMaps("Old_Town")
+        MinDistBtwZombies(30)
+        RemoveDistanceIfNotContact(45)
+        ForceTargetType(2)
+        TimeBtwSpawnZombies(50)
+        //UseCondition("Scavegers_Outpost_Far")
+    }
+
+    PresetDef("Enemy_Fighter")
+    {
+        Difficult(40)
+        SpawnCondition("z_MELEE_FIGHTER, 1;p_WIDE, 1;p_SQUARE, 1;p_ROOF, -1")
+        AIPreset("Enemy_Survivor")
+        //AllowedMaps("Old_Town")
+        MinDistBtwZombies(30)
+        TimeBtwSpawnZombies(5)
+        ForceTargetType(2)
+        //UseCondition("Scavegers_Outpost_Far")
+    }
+
     PresetDef("Stinger")
     {
         Difficult(7)
@@ -95,9 +145,9 @@
 		DisallowedMaps("old_town_outposts_office")
         AIPreset("Biter_Man;Biter_Woman")
 		DiffLvlTableName("Biter_Man;Biter_Woman")
-        SpawnCondition("t_INIT, 0.7;z_VESSEL, 0.7")
+        SpawnCondition("t_INIT, 1;z_VESSEL, 1")
         ForceTargetType(-1)
-        TimeBtwSpawnZombies(1)
+        TimeBtwSpawnZombies(3)
         RelativePresets("Volatile_Pit;Infected_HumanInit")
     }
 
@@ -142,8 +192,8 @@
         AIPreset("ViralHumanity_Man_OldTown;ViralHumanity_Woman_OldTown")
 		DiffLvlTableName("Viral_Man;Viral_Woman")
 		BannedAreaAttribs("NOISE_SPAWN_BLOCKER")
-        SpawnCondition("t_INIT, 0.7;z_INFECTED, 0.7;p_ROOF, -1")
-        MinDistBtwZombies(10)
+        SpawnCondition("t_INIT, 1;z_INFECTED, 1;p_ROOF, 1")
+        MinDistBtwZombies(5)
         RemoveDistanceIfNotContact(20)
         ForceTargetType(3)
         TimeBtwSpawnZombies(2)
@@ -157,8 +207,8 @@
         AIPreset("ViralHumanity_Man_OldTown;ViralHumanity_Woman_OldTown")
 		DiffLvlTableName("Viral_Man;Viral_Woman")
 		BannedAreaAttribs("NOISE_SPAWN_BLOCKER")
-		SpawnCondition("t_INIT, 0.4;z_INFECTED, 0.4;p_ROOF, 0.4")
-        MinDistBtwZombies(10)
+		SpawnCondition("t_INIT, 1;z_INFECTED, 1;p_ROOF, 1")
+        MinDistBtwZombies(5)
         ForceTargetType(3)
         TimeBtwSpawnZombies(2)
         SarcophagusTime(20)
@@ -218,13 +268,13 @@
     
     PresetDef("Infected_HumanInit_Noise")
     {
-        Difficult(15)
-        AIPreset("ViralHumanity_Man;ViralHumanity_Woman")
-		BannedAreaAttribs("NOISE_SPAWN_BLOCKER")
-		DiffLvlTableName("Viral_Man;Viral_Woman")
-        SpawnCondition("t_INIT, 0.7;z_INFECTED, 0.7")
-        MinDistBtwZombies(15)
-        RemoveDistanceIfNotContact(20)
+        Difficult(15) 
+        AIPreset("ViralHumanity_Man;ViralHumanity_Woman") 
+        BannedAreaAttribs("NOISE_SPAWN_BLOCKER")
+        DiffLvlTableName("Viral_Man;Viral_Woman")
+        SpawnCondition("t_INIT, 1;z_INFECTED, 1;p_WIDE, 1;p_SQUARE, 1")
+        MinDistBtwZombies(3)
+        RemoveDistanceIfNotContact(50)
         ForceTargetType(3)
         TimeBtwSpawnZombies(3)
         RelativePresets("Vessel_Init;Volatile_Pit")
@@ -232,9 +282,9 @@
 
     PresetDef("Infected_HumanScream_Noise")
     {
-        Difficult(15)
+        Difficult(15) 
         AIPreset("ViralHumanity_Man;ViralHumanity_Woman")
-		DiffLvlTableName("Viral_Man;Viral_Woman")
+        DiffLvlTableName("Viral_Man;Viral_Woman")
         SpawnCondition("nav_mesh, -1;__any__, 1;t_INIT, -1;p_ROOF, -1")
         ForceTargetType(3)
         TimeBtwSpawnZombies(2)

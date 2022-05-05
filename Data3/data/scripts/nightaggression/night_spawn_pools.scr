@@ -218,6 +218,7 @@
         NoZombiesByPresets("Melee_Fighter_With_Pipe, 10;Melee_Fighter_With_Pipe_Init, 10;Defender_Fighter, 10;Melee_Fighter_Rais, 20;Melee_Survivor, 10;", 3, 3)
 		NoZombiesByPresets("Volatile_Hard, 35;Volatile_Pit_Hard, 30;Volatile, 65;Volatile_Nav, 35;Volatile_Patrol, 1;Volatile_Patrol_Super, 1;", 5, 5)
         NoZombiesByPresets("Night_Walker, 80;Night_Walker_Init, 20;", 8, 8)
+        NoZombiesByPresets("Night_Suicider_Bomber, 20;", 1, 2)
         
 		MaxNoZombiesInPursuit(30)
     }
@@ -239,7 +240,7 @@
         NoZombiesByPresets("Melee_Fighter_With_Pipe, 10;Melee_Fighter_With_Pipe_Init, 10;Defender_Fighter, 10;Melee_Fighter_Rais, 20;Melee_Survivor, 10;", 4, 4)
 		NoZombiesByPresets("Volatile_Hard, 35;Volatile_Pit_Hard, 30;Volatile, 65;Volatile_Nav, 35;Volatile_Patrol, 1;Volatile_Patrol_Super, 1;", 8, 8)
         NoZombiesByPresets("Night_Walker, 80;Night_Walker_Init, 20;", 10, 10)
-		NoZombiesByPresets("Night_Suicider_Bomber, 400;", 2, 3)
+		NoZombiesByPresets("Night_Suicider_Bomber, 20;", 2, 3)
 
 		MaxNoZombiesInPursuit(40)
     }
@@ -270,7 +271,7 @@
     {
         UseCondition("Night;PlayerZombie_NotExist")
         AllowedMaps("Old_Town")        
-        BalancedNumberOfZombies(1)
+        BalancedNumberOfZombies(0)
         ConditionNightAggrLvl(1)
         Type("night")
 
@@ -289,7 +290,7 @@
     {
         UseCondition("Night;PlayerZombie_NotExist")
         AllowedMaps("Old_Town")        
-        BalancedNumberOfZombies(1)
+        BalancedNumberOfZombies(0)
         ConditionNightAggrLvl(2)
         Type("night")
 
@@ -308,7 +309,7 @@
     {
         UseCondition("Night;PlayerZombie_NotExist")
         AllowedMaps("Old_Town")        
-        BalancedNumberOfZombies(1)
+        BalancedNumberOfZombies(0)
         ConditionNightAggrLvl(3)
         Type("night")
 
@@ -319,6 +320,7 @@
 		
         NoZombiesByPresets("Volatile_Hard, 25;Volatile_Pit_Hard, 70;Volatile_Pit, 20;Volatile_Nav, 5;Volatile_Patrol_OT, 1;", 4, 4)
         NoZombiesByPresets("Night_Walker, 30;Night_Walker_Init, 70", 6, 6)
+        NoZombiesByPresets("Night_Suicider_Bomber, 20;", 1, 2)
 
 		MaxNoZombiesInPursuit(55)
     }
@@ -327,7 +329,7 @@
     {
         UseCondition("Night;PlayerZombie_NotExist")
         AllowedMaps("Old_Town")        
-        BalancedNumberOfZombies(1)
+        BalancedNumberOfZombies(0)
         ConditionNightAggrLvl(4)
         Type("night")
 

@@ -6785,6 +6785,167 @@ sub main()
         HudIcon("docket_icon");
         DocketType("G50");
     }
+
+Item("Menu_DocketG51", CategoryType_Voucher)
+    {
+        GameVersion(46);
+        Name("&Menu_DocketG51_N&");
+        Description("&Menu_DocketG51_D&");
+        ItemType(ItemType_Docket);
+        Visibility(false);
+        Price(0);
+        Mesh("collectable_wallet.msh");
+        Skin("DOCKET");
+        PhysicsScript("single_dropped_inventory.phx");
+        Color(Color_White);
+        HudIcon("docket_icon");
+        DocketType("G51");
+    }
+        
+    Item("Menu_DocketG52", CategoryType_Voucher)
+    {
+        GameVersion(46);
+        Name("&Menu_DocketG52_N&");
+        Description("&Menu_DocketG52_D&");
+        ItemType(ItemType_Docket);
+        Visibility(false);
+        Price(0);
+        Mesh("collectable_wallet.msh");
+        Skin("DOCKET");
+        PhysicsScript("single_dropped_inventory.phx");
+        Color(Color_White);
+        HudIcon("docket_icon");
+        DocketType("G52");
+    }
+    
+    Item("Menu_DocketG53", CategoryType_Voucher)
+    {
+        GameVersion(46);
+        Name("&Menu_DocketG53_N&");
+        Description("&Menu_DocketG53_D&");
+        ItemType(ItemType_Docket);
+        Visibility(false);
+        Price(0);
+        Mesh("collectable_wallet.msh");
+        Skin("DOCKET");
+        PhysicsScript("single_dropped_inventory.phx");
+        Color(Color_White);
+        HudIcon("docket_icon");
+        DocketType("G53");
+    }
+    
+    Item("Menu_DocketG54", CategoryType_Voucher)
+    {
+        GameVersion(46);
+        Name("&Menu_DocketG54_N&");
+        Description("&Menu_DocketG54_D&");
+        ItemType(ItemType_Docket);
+        Visibility(false);
+        Price(0);
+        Mesh("collectable_wallet.msh");
+        Skin("DOCKET");
+        PhysicsScript("single_dropped_inventory.phx");
+        Color(Color_White);
+        HudIcon("docket_icon");
+        DocketType("G54");
+    }
+    
+    Item("Menu_DocketG55", CategoryType_Voucher)
+    {
+        GameVersion(46);
+        Name("&Menu_DocketG55_N&");
+        Description("&Menu_DocketG55_D&");
+        ItemType(ItemType_Docket);
+        Visibility(false);
+        Price(0);
+        Mesh("collectable_wallet.msh");
+        Skin("DOCKET");
+        PhysicsScript("single_dropped_inventory.phx");
+        Color(Color_White);
+        HudIcon("docket_icon");
+        DocketType("G55");
+    }
+    
+    Item("Menu_DocketG56", CategoryType_Voucher)
+    {
+        GameVersion(46);
+        Name("&Menu_DocketG56_N&");
+        Description("&Menu_DocketG56_D&");
+        ItemType(ItemType_Docket);
+        Visibility(false);
+        Price(0);
+        Mesh("collectable_wallet.msh");
+        Skin("DOCKET");
+        PhysicsScript("single_dropped_inventory.phx");
+        Color(Color_White);
+        HudIcon("docket_icon");
+        DocketType("G56");
+    }
+    
+    Item("Menu_DocketG57", CategoryType_Voucher)
+    {
+        GameVersion(46);
+        Name("&Menu_DocketG57_N&");
+        Description("&Menu_DocketG57_D&");
+        ItemType(ItemType_Docket);
+        Visibility(false);
+        Price(0);
+        Mesh("collectable_wallet.msh");
+        Skin("DOCKET");
+        PhysicsScript("single_dropped_inventory.phx");
+        Color(Color_White);
+        HudIcon("docket_icon");
+        DocketType("G57");
+    }
+    
+    Item("Menu_DocketG58", CategoryType_Voucher)
+    {
+        GameVersion(46);
+        Name("&Menu_DocketG58_N&");
+        Description("&Menu_DocketG58_D&");
+        ItemType(ItemType_Docket);
+        Visibility(false);
+        Price(0);
+        Mesh("collectable_wallet.msh");
+        Skin("DOCKET");
+        PhysicsScript("single_dropped_inventory.phx");
+        Color(Color_White);
+        HudIcon("docket_icon");
+        DocketType("G58");
+    }
+    
+    Item("Menu_DocketG59", CategoryType_Voucher)
+    {
+        GameVersion(46);
+        Name("&Menu_DocketG59_N&");
+        Description("&Menu_DocketG59_D&");
+        ItemType(ItemType_Docket);
+        Visibility(false);
+        Price(0);
+        Mesh("collectable_wallet.msh");
+        Skin("DOCKET");
+        PhysicsScript("single_dropped_inventory.phx");
+        Color(Color_White);
+        HudIcon("docket_icon");
+        DocketType("G59");
+    }
+    
+    Item("Menu_DocketG60", CategoryType_Voucher)
+    {
+        GameVersion(46);
+        Name("&Menu_DocketG60_N&");
+        Description("&Menu_DocketG60_D&");
+        ItemType(ItemType_Docket);
+        Visibility(false);
+        Price(0);
+        Mesh("collectable_wallet.msh");
+        Skin("DOCKET");
+        PhysicsScript("single_dropped_inventory.phx");
+        Color(Color_White);
+        HudIcon("docket_icon");
+        DocketType("G60");
+    }
+
     Item("Menu_DocketH01", CategoryType_Voucher)
     {
         GameVersion(11);
@@ -8975,6 +9136,7 @@ sub main()
         PhysicsScript("single_dropped_inventory.phx");
         Color(Color_White);
 		GameVersion(42);
+        AutoPickup(false);
     }
 	
 	Item("HR_Ammo_Arrow_Small", CategoryType_Ammo)
@@ -8992,6 +9154,7 @@ sub main()
         PhysicsScript("single_dropped_inventory.phx");
         Color(Color_White);
 		GameVersion(34);
+        AutoPickup(false);
     }
 	
 	Item("HR_Ammo_Arrow_Large", CategoryType_Ammo)
@@ -9009,6 +9172,7 @@ sub main()
         PhysicsScript("single_dropped_inventory.phx");
         Color(Color_White);
 		GameVersion(34);
+        AutoPickup(false);
     }
     DamageAndForceSpreadCurve(Color_White, "wpn_melee_damage_spread_white");
     DamageAndForceSpreadCurve(Color_Green, "wpn_melee_damage_spread_green");

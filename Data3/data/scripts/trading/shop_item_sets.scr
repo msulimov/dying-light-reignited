@@ -1,5 +1,33 @@
 sub main() 
 {
+    ItemSet("Upgrades")
+    {
+        Item("Craft_Upgrade_Dam");
+        Item("Craft_Upgrade_Dur");
+        Item("Craft_Upgrade_Bal");
+        
+        Item("Craft_Upgrade_DamDur");
+        Item("Craft_Upgrade_DamBal");
+        Item("Craft_Upgrade_DurBal");
+        
+        Item("Craft_Upgrade_DamDurBal");
+        Item("Craft_Upgrade_DamL2Dur");
+        Item("Craft_Upgrade_DamL2Bal");
+        Item("Craft_Upgrade_DurL2Bal");
+        Item("Craft_Upgrade_DurL2Dam");
+        Item("Craft_Upgrade_BalL2Dam");
+        Item("Craft_Upgrade_BalL2Dur");
+    }
+    ItemSet("Upgrades_Premium")
+    {
+        Item("Craft_Upgrade_DurL2BalL2"); // Freeze White
+        Item("Craft_Upgrade_DurL2"); // Poison Green
+        Item("Craft_Upgrade_DamL2BalL2"); // Shock Blue
+        Item("Craft_Upgrade_BalL2"); // Bleed Violet
+        Item("Craft_Upgrade_DamL2DurL2"); // Burn Orange
+        Item("Craft_Upgrade_DamL2DurL2BalL2"); // King Orange 
+        Item("Craft_Upgrade_DamL2"); // Impact Platinum
+    }
     ItemSet("Bow")                //ItemID, Weight. Default WEIGHT is 1.
     {
         Item("ZZZZ_Bow");
@@ -1143,34 +1171,6 @@ sub main()
         Item("Craft_PowerCable");
 		Item("Craft_Electronics");
  	}
-    ItemSet("Upgrades")
-    {
-        Item("Craft_Upgrade_Dam");
-        Item("Craft_Upgrade_Dur");
-        Item("Craft_Upgrade_Bal");
-        
-        Item("Craft_Upgrade_DamDur");
-        Item("Craft_Upgrade_DamBal");
-        Item("Craft_Upgrade_DurBal");
-        
-        Item("Craft_Upgrade_DamDurBal");
-        Item("Craft_Upgrade_DamL2Dur");
-        Item("Craft_Upgrade_DamL2Bal");
-        Item("Craft_Upgrade_DurL2Bal");
-        Item("Craft_Upgrade_DurL2Dam");
-        Item("Craft_Upgrade_BalL2Dam");
-        Item("Craft_Upgrade_BalL2Dur");
-    }
-    ItemSet("Upgrades_Premium")
-    {
-        Item("Craft_Upgrade_DurL2BalL2"); // Freeze White
-        Item("Craft_Upgrade_DurL2"); // Poison Green
-        Item("Craft_Upgrade_DamL2BalL2"); // Shock Blue
-        Item("Craft_Upgrade_BalL2"); // Bleed Violet
-        Item("Craft_Upgrade_DamL2DurL2"); // Burn Orange
-        Item("Craft_Upgrade_DamL2DurL2BalL2"); // King Orange 
-        Item("Craft_Upgrade_DamL2"); // Impact Platinum
-    }
 	ItemSet("Craft_Gauze")
     {
 		Item("Craft_Gauze");
@@ -1444,71 +1444,71 @@ sub main()
 	
 	ItemSet("Weapon_Upgrades_CA")				//ItemID, Weight. Default WEIGHT is 1.
     {
-  //       Item("Craft_Upgrade_Dam");
-  //       Item("Craft_Upgrade_Dur");
-  //       Item("Craft_Upgrade_Bal");
-  //       Item("Craft_Upgrade_DamDur");
-  //       Item("Craft_Upgrade_DamBal");
-  //       Item("Craft_Upgrade_DurBal");
-  //       Item("Craft_Upgrade_DamDurBal");
-  //       Item("Craft_Upgrade_DamL2");
-  //       Item("Craft_Upgrade_DurL2");
-  //       Item("Craft_Upgrade_BalL2");
-  //       Item("Craft_Upgrade_DamL2DurL2");
-  //       Item("Craft_Upgrade_DamL2BalL2");
-  //       Item("Craft_Upgrade_DurL2BalL2");
-  //       Item("Craft_Upgrade_DamL2DurL2BalL2");
-  //       Item("Craft_Upgrade_DamL2Dur");
-  //       Item("Craft_Upgrade_DamL2Bal");
-		// Item("Craft_Upgrade_DurL2Bal");
-  //       Item("Craft_Upgrade_DurL2Dam");
-  //       Item("Craft_Upgrade_BalL2Dam");
-  //       Item("Craft_Upgrade_BalL2Dur");
+        Item("Craft_Upgrade_Dam");
+        Item("Craft_Upgrade_Dur");
+        Item("Craft_Upgrade_Bal");
+        Item("Craft_Upgrade_DamDur");
+        Item("Craft_Upgrade_DamBal");
+        Item("Craft_Upgrade_DurBal");
+        Item("Craft_Upgrade_DamDurBal");
+        Item("Craft_Upgrade_DamL2");
+        Item("Craft_Upgrade_DurL2");
+        Item("Craft_Upgrade_BalL2");
+        Item("Craft_Upgrade_DamL2DurL2");
+        Item("Craft_Upgrade_DamL2BalL2");
+        Item("Craft_Upgrade_DurL2BalL2");
+        Item("Craft_Upgrade_DamL2DurL2BalL2");
+        Item("Craft_Upgrade_DamL2Dur");
+        Item("Craft_Upgrade_DamL2Bal");
+		Item("Craft_Upgrade_DurL2Bal");
+        Item("Craft_Upgrade_DurL2Dam");
+        Item("Craft_Upgrade_BalL2Dam");
+        Item("Craft_Upgrade_BalL2Dur");
     } 
 	
 	ItemSet("Weapon_Upgrades_Damage_CA")				//ItemID, Weight. Default WEIGHT is 1.
     {
-  //       Item("Craft_Upgrade_Dam");
-  //       Item("Craft_Upgrade_DamDur");
-  //       Item("Craft_Upgrade_DamBal");
-  //       Item("Craft_Upgrade_DamDurBal");
-  //       Item("Craft_Upgrade_DamL2");
-  //       Item("Craft_Upgrade_DamL2DurL2");
-  //       Item("Craft_Upgrade_DamL2BalL2");
-  //       Item("Craft_Upgrade_DamL2DurL2BalL2");
-  //       Item("Craft_Upgrade_DamL2Dur");
-  //       Item("Craft_Upgrade_DamL2Bal");
-		// Item("Craft_Upgrade_DurL2Dam");
-  //       Item("Craft_Upgrade_BalL2Dam");
+        Item("Craft_Upgrade_Dam");
+        Item("Craft_Upgrade_DamDur");
+        Item("Craft_Upgrade_DamBal");
+        Item("Craft_Upgrade_DamDurBal");
+        Item("Craft_Upgrade_DamL2");
+        Item("Craft_Upgrade_DamL2DurL2");
+        Item("Craft_Upgrade_DamL2BalL2");
+        Item("Craft_Upgrade_DamL2DurL2BalL2");
+        Item("Craft_Upgrade_DamL2Dur");
+        Item("Craft_Upgrade_DamL2Bal");
+		Item("Craft_Upgrade_DurL2Dam");
+        Item("Craft_Upgrade_BalL2Dam");
     } 
 	ItemSet("Weapon_Upgrades_Durability_CA")				//ItemID, Weight. Default WEIGHT is 1.
     {
-  //       Item("Craft_Upgrade_Dur");
-		// Item("Craft_Upgrade_DamDur");
-  //       Item("Craft_Upgrade_DurBal");
-  //       Item("Craft_Upgrade_DamDurBal");
-  //       Item("Craft_Upgrade_DurL2");
-  //       Item("Craft_Upgrade_DamL2DurL2");
-  //       Item("Craft_Upgrade_DurL2BalL2");
-  //       Item("Craft_Upgrade_DamL2DurL2BalL2");
-  //       Item("Craft_Upgrade_DamL2Dur");
-  //       Item("Craft_Upgrade_DurL2Bal");
-  //       Item("Craft_Upgrade_DurL2Dam");
-  //       Item("Craft_Upgrade_BalL2Dur");
+        Item("Craft_Upgrade_Dur");
+		Item("Craft_Upgrade_DamDur");
+        Item("Craft_Upgrade_DurBal");
+        Item("Craft_Upgrade_DamDurBal");
+        Item("Craft_Upgrade_DurL2");
+        Item("Craft_Upgrade_DamL2DurL2");
+        Item("Craft_Upgrade_DurL2BalL2");
+        Item("Craft_Upgrade_DamL2DurL2BalL2");
+        Item("Craft_Upgrade_DamL2Dur");
+        Item("Craft_Upgrade_DurL2Bal");
+        Item("Craft_Upgrade_DurL2Dam");
+        Item("Craft_Upgrade_BalL2Dur");
     }
 	ItemSet("Weapon_Upgrades_Balance_CA")				//ItemID, Weight. Default WEIGHT is 1.
     {
-        // Item("Craft_Upgrade_Bal");
-        // Item("Craft_Upgrade_DamBal");
-        // Item("Craft_Upgrade_DurBal");
-        // Item("Craft_Upgrade_DamDurBal");
-        // Item("Craft_Upgrade_BalL2");
-        // Item("Craft_Upgrade_DamL2BalL2");
-        // Item("Craft_Upgrade_DurL2BalL2");
-        // Item("Craft_Upgrade_DamL2DurL2BalL2");
-        // Item("Craft_Upgrade_DurL2Bal");
-        // Item("Craft_Upgrade_BalL2Dam");
-        // Item("Craft_Upgrade_BalL2Dur");
+        Item("Craft_Upgrade_Bal");
+        Item("Craft_Upgrade_DamBal");
+        Item("Craft_Upgrade_DurBal");
+        Item("Craft_Upgrade_DamDurBal");
+        Item("Craft_Upgrade_BalL2");
+        Item("Craft_Upgrade_DamL2BalL2");
+        Item("Craft_Upgrade_DurL2BalL2");
+        Item("Craft_Upgrade_DamL2DurL2BalL2");
+        Item("Craft_Upgrade_DurL2Bal");
+        Item("Craft_Upgrade_BalL2Dam");
+        Item("Craft_Upgrade_BalL2Dur");
     } 	
 	
 	ItemSet("Potions_CA")				//ItemID, Weight. Default WEIGHT is 1.
@@ -3472,10 +3472,20 @@ ItemSet("Melee_Level_12_Unique")
     {
         Item("HRBow_R13");
     }
+
+    ItemSet("Hr_WandTrials")
+    {
+        Item("Throwable_FireWand");
+    }
 	
 	ItemSet("Hr_BowTrials_Ammo") //placeholder
     {
         Item("HR_Ammo_Arrow_Small");
+    }
+
+    ItemSet("Hr_WandTrials_DK")
+    {
+        Item("Throwable_DarkWand");
     }
  
 /////////////////////////////////////////////////////
@@ -3700,5 +3710,60 @@ ItemSet("Melee_Level_12_Unique")
 	ItemSet("Liveops_Craftplan_Melee_Hammer_AddOn_Brilliant")
     {
         Item("Craftplan_Melee_Hammer_AddOn_Brilliant");
+    }
+
+    ItemSet("Liveops_Craftplan_Melee_Polearm_TSreward")
+    {
+        Item("Craftplan_Melee_Polearm_TSreward");
+    }
+    
+    ItemSet("Liveops_Craftplan_HRSword_R11_SHOP")
+    {
+        Item("Craftplan_HRSword_R11_SHOP");
+    }
+    
+    ItemSet("Liveops_Craftplan_AngelSword")
+    {
+        Item("Craftplan_AngelSword");
+    }
+    
+    ItemSet("Liveops_Craftplan_Melee_Machete_AddOn_Swrench")
+    {
+        Item("Craftplan_Melee_Machete_AddOn_Swrench");
+    }
+    
+    ItemSet("Liveops_Bundle_Survival_Switch")
+    {
+        Item("Bundle_Survival_Switch");
+    }
+    
+    ItemSet("Liveops_Melee_RaisMachete")
+    {
+        Item("Melee_RaisMachete");
+    }
+    
+    ItemSet("Liveops_Craftplan_Spike_Weapon_StageIII")
+    {
+        Item("Craftplan_Spike_Weapon_StageIII");
+    }
+    
+    ItemSet("Liveops_Craftplan_HRSword_R11_Without_HR")
+    {
+        Item("Craftplan_HRSword_R11_Without_HR");
+    }
+    
+    ItemSet("Liveops_Firearm_Rifle_Retro_Gold")
+    {
+        Item("Firearm_Rifle_Retro_Gold");
+    }
+    
+    ItemSet("Liveops_Spike_Weapon_First")
+    {
+        Item("Spike_Weapon_First");
+    }
+    
+    ItemSet("Liveops_Craftplan_Spike_Weapon_StageII")
+    {
+        Item("Craftplan_Spike_Weapon_StageII");
     }
 }

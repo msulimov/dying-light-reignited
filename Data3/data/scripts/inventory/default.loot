@@ -14,6 +14,8 @@ export int LootType_Firearm_Auto    = 6;
 export int LootType_Throwable       = 7;
 export int LootType_Powerup         = 8;
 
+// remember to call IgnorePlatinumRestrictions() to allow platinum items (ie: elemental upgrades)
+
 //----- CONTAINERS -----  use [A-Za-z_]+[(]weight = [0-9]+[.][0-9]+[)];
 sub Loot()
 {	
@@ -701,6 +703,22 @@ sub Loot()
 		// use Crafting_Default(weight = 2.0);
 		// use Valuables_Default(weight = 1.0);
 		// use Consumable_Healing(weight = 3.0);
+    }
+
+    LootedObject("Volatile_Super")
+    {
+        ColorSet(ColorSet_WeaponChest_Hard);
+         
+        use Empty(weight = 8.0); 
+        //use Consumable_Healing(weight = 1.0);
+        //use Valuables_Premium(weight = 2.0);
+    }
+
+    LootedObject("Volatile_Iced")
+    {
+         ColorSet(ColorSet_Upgrades_Volatile_Iced);
+         use Empty(weight = 3.0);
+         //use Upgrades_Volatile_Iced(weight = 1.0);
     }
 
     LootedObject("ToxicPlant")
@@ -2229,16 +2247,6 @@ sub Loot()
     {
         ColorSet(ColorSet_Parts_Military_L3_5);
         use Buggy_Parts(weight = 1.0);
-    }
-
-    LootedObject("Volatile_Super")
-    {
-        ColorSet(ColorSet_WeaponChest_Hard);
-		 
-		IgnorePlatinumRestrictions();
-        use Empty(weight = 8.0); 
-        //use Consumable_Healing(weight = 1.0);
-        //use Valuables_Premium(weight = 2.0);
     }
 
     LootedObject("DeadBodyGasTankGray")

@@ -56,6 +56,7 @@ export int ColorSet_Prison_Crafting_Tier_0 = 46;
 export int ColorSet_Prison_Crafting_Tier_12 = 47;
 export int ColorSet_Prison_Crafting_Tier_34 = 48;
 export int ColorSet_airdrop_event = 49;
+export int ColorSet_Upgrades_Volatile_Iced = 50;
 
 sub DefineColors()
 {
@@ -521,6 +522,13 @@ DefColorSet(ColorSet_BTZ_Reward_Platinum)
         ColorWeight(Color_Blue, 30);
         ColorWeight(Color_Violet, 15);
         ColorWeight(Color_Orange, 5);
+    }
+
+    DefColorSet(ColorSet_Upgrades_Volatile_Iced)
+    {
+        ColorWeight(Color_Blue,   3);
+        ColorWeight(Color_Violet, 3);
+        ColorWeight(Color_Orange, 4);
     }
     
 }
@@ -996,6 +1004,12 @@ DefColorSet(ColorSet_BTZ_Reward_Platinum)
         ColorWeight(Color_Orange, 5);
     }
     
+    DefColorSet(ColorSet_Upgrades_Volatile_Iced)
+    {
+        ColorWeight(Color_Blue,   3);
+        ColorWeight(Color_Violet, 3);
+        ColorWeight(Color_Orange, 4);
+    }
 
 }
 
@@ -1469,6 +1483,13 @@ DefColorSet(ColorSet_BTZ_Reward_Platinum)
         ColorWeight(Color_Blue, 30);
         ColorWeight(Color_Violet, 15);
         ColorWeight(Color_Orange, 5);
+    }
+
+    DefColorSet(ColorSet_Upgrades_Volatile_Iced)
+    {
+        ColorWeight(Color_Blue,   3);
+        ColorWeight(Color_Violet, 3);
+        ColorWeight(Color_Orange, 4);
     }
 	
 }
