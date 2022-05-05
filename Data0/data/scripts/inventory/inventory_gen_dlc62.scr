@@ -113,7 +113,7 @@ sub main()
         CategoryType(CategoryType_Firearm);
         UsageType(UsageType_Aim);
         UpgradeLevel(0);
-        HandOffset(HandModification_Normal, [0.0,-0.0035,0.0]);  
+        HandOffset(HandModification_Normal, [-0.001,-0.003,0.0]);
         HandRot(HandModification_Normal, [0.0,0.0,0.0]);
         HandOffset(HandModification_Custom, [0.0,0.0,0.0]);
         ShootMinAngle(0.0);

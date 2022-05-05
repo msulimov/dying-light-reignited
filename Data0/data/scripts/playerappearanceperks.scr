@@ -1,0 +1,26 @@
+sub main()
+{
+	SavvyAppearance()
+	{
+		Id(169);
+		Saturation(1.45);
+		Blur(1.00);
+	}
+	
+	VanCraneAppearance()
+	{
+		Id(171);
+		ThrowRopeLength(25.0);
+	}
+
+	WinterAppearance() 
+	{
+		Id(172);                         
+		XpMultiplier("Runner", 1.2);
+		XpMultiplier("Fighter", 1.2);
+		XpMultiplier("Status", 1.2);
+		XpMultiplier("Legend", 1.2);
+		XpMultiplier("Driver", 1.0);
+		XpMultiplier("Hellraid", 1.0);
+	}
+}

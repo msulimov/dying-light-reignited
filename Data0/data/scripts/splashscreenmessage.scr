@@ -11,7 +11,7 @@ sub main()
 	News()
 	{
 		//Enable();
-		//Enable(PC, XBOX, PS4, GOG);
+		//Enable(PC, XBOX, PS4, GOG, EPIC, SWITCH);
 
 		ShowScrollView(true);
 		//ScrollViewSize(645, 600);
@@ -101,6 +101,18 @@ sub main()
 			Image("splash_DL2_D2K_2b"); //Patch 1.43.2 only PC //1.44 Consoles
 			Image("splash_astronaut"); //Patch 1.44
 			Image("splash_lowgrav"); //Patch 1.44
+			Image("splash_halloween_2021"); //Patch 1.45
+			Image("splash_van_crane"); //Patch 1.45
+			Image("splash_winter_2021_day"); //Patch 1.46
+			Image("splash_winter_2021_night"); //Patch 1.46
+			Image("splash_snow_ops"); //Patch 1.46
+			Image("splash_30th_anniversary"); //Patch 1.46
+			Image("splash_hellraid4"); //Patch 1.46
+			Image("splash_spike_1"); //Patch 1.47
+			Image("splash_spike_2"); //Patch 1.47
+			Image("splash_spike_3"); //Patch 1.47
+			Image("splash_DL2_available_now"); //Patch 1.47 PC, 1.48 Consoles
+			Image("splash_DL2_2"); //Patch 1.47 PC, 1.48 Consoles
 		}
 
 	} //Empty news for gathering 

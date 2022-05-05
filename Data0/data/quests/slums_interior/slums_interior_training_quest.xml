@@ -317,50 +317,175 @@
              pxsl_line="50">
             <Path
                  pxsl_line="50">
+                <!-- navigation upgrade: 07.10.2021 -->
+                <Phase
+                     type="enable"
+                     name="_"
+                     pxsl_line="52">
+                    <Object
+                         pxsl_line="53">
+                        <QuestObject
+                             class="SensorGoTo"
+                             name="Sensor_Navigation_to_roof_01"
+                             pxsl_line="53" />
+                    </Object>
+                    <Object
+                         pxsl_line="54">
+                        <QuestObject
+                             class="SensorGoTo"
+                             name="Sensor_Navigation_to_roof_02"
+                             pxsl_line="54" />
+                    </Object>
+                    <Object
+                         pxsl_line="55">
+                        <QuestObject
+                             class="SensorGoTo"
+                             name="Sensor_Navigation_to_roof_02b"
+                             pxsl_line="55" />
+                    </Object>
+                    <Object
+                         pxsl_line="56">
+                        <QuestObject
+                             class="SensorGoTo"
+                             name="Sensor_Navigation_to_roof_03"
+                             pxsl_line="56" />
+                    </Object>
+                    <Object
+                         pxsl_line="57">
+                        <QuestObject
+                             class="SensorGoTo"
+                             name="Sensor_Navigation_to_roof_03b"
+                             pxsl_line="57" />
+                    </Object>
+                </Phase>
+                <Phase
+                     type="AND"
+                     name="_"
+                     pxsl_line="58">
+                    <Path
+                         pxsl_line="59">
+                        <Phase
+                             type="talk"
+                             name="_"
+                             speaker="voice2d"
+                             group="Player_BasementCleansing_03DLG01b"
+                             show_locations="false"
+                             auto_start="true"
+                             pxsl_line="60" />
+                    </Path>
+                    <Path
+                         pxsl_line="61">
+                        <Phase
+                             type="OR"
+                             name="_"
+                             pxsl_line="62">
+                            <Path
+                                 pxsl_line="63">
+                                <Phase
+                                     type="go to"
+                                     name="_"
+                                     distance="0"
+                                     pxsl_line="64">
+                                    <Destination
+                                         pxsl_line="64">
+                                        <QuestObject
+                                             class="SensorGoTo"
+                                             name="Sensor_Navigation_to_roof_01"
+                                             pxsl_line="64" />
+                                    </Destination>
+                                </Phase>
+                                <Phase
+                                     type="go to"
+                                     name="_"
+                                     distance="0"
+                                     pxsl_line="65">
+                                    <Destination
+                                         pxsl_line="65">
+                                        <QuestObject
+                                             class="SensorGoTo"
+                                             name="Sensor_Navigation_to_roof_02"
+                                             pxsl_line="65" />
+                                    </Destination>
+                                </Phase>
+                                <Phase
+                                     type="go to"
+                                     name="_"
+                                     distance="0"
+                                     pxsl_line="66">
+                                    <Destination
+                                         pxsl_line="66">
+                                        <QuestObject
+                                             class="SensorGoTo"
+                                             name="Sensor_Navigation_to_roof_03"
+                                             pxsl_line="66" />
+                                    </Destination>
+                                </Phase>
+                            </Path>
+                            <Path
+                                 pxsl_line="67">
+                                <Phase
+                                     type="go to"
+                                     name="_"
+                                     distance="0"
+                                     show_locations="false"
+                                     pxsl_line="68">
+                                    <Destination
+                                         pxsl_line="68">
+                                        <QuestObject
+                                             class="SensorGoTo"
+                                             name="Sensor_Navigation_to_roof_04"
+                                             pxsl_line="68" />
+                                    </Destination>
+                                </Phase>
+                            </Path>
+                        </Phase>
+                    </Path>
+                </Phase>
+                <!-- end of upgrade     -->
                 <Phase
                      type="go to"
                      name="SCHOOL OF LIFE - CIN - Crane"
                      distance="0"
-                     pxsl_line="51">
+                     pxsl_line="71">
                     <Destination
-                         pxsl_line="51">
+                         pxsl_line="71">
                         <QuestObject
                              class="SensorGoTo"
                              name="the_tower_roof_goto_01"
-                             pxsl_line="51" />
+                             pxsl_line="71" />
                     </Destination>
                     <DebugPlayerPosition
-                         pxsl_line="52">
+                         pxsl_line="72">
                         <QuestObject
                              class="SpawnPoint"
                              name="the_tower_roof_before_cin_sp"
-                             pxsl_line="52" />
+                             pxsl_line="72" />
                     </DebugPlayerPosition>
                 </Phase>
                 <Phase
                      type="checkpoint"
                      name="_"
-                     pxsl_line="53">
+                     pxsl_line="73">
                     <Destination
-                         pxsl_line="53">
+                         pxsl_line="73">
                         <QuestObject
                              class="SpawnPoint"
                              name="the_tower_roof_before_cin_sp"
-                             pxsl_line="53" />
+                             pxsl_line="73" />
                     </Destination>
                 </Phase>
                 <!-- DONT CARE MUSIC -->
                 <Phase
                      type="enable"
                      name="_"
-                     pxsl_line="54">
+                     pxsl_line="74">
                     <!-- ,o QuestEnableGroup gym_music_dontcare_01_qeg -->
                     <Object
-                         pxsl_line="56">
+                         pxsl_line="76">
                         <QuestObject
                              class="QuestEnableGroup"
                              name="cin_towerroof_trigger_qeg"
-                             pxsl_line="56" />
+                             pxsl_line="76" />
                     </Object>
                 </Phase>
                 <!-- -=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-     -->
@@ -370,110 +495,110 @@
                      type="use"
                      name="CIN - first time on roof"
                      desired_state="on"
-                     pxsl_line="60">
+                     pxsl_line="80">
                     <Trigger
-                         pxsl_line="60">
+                         pxsl_line="80">
                         <QuestObject
                              class="InteractiveMovieTrigger"
                              name="cin_towerroof_trigger"
-                             pxsl_line="60" />
+                             pxsl_line="80" />
                     </Trigger>
                 </Phase>
                 <Phase
                      type="enable"
                      name="_"
                      state="disabled"
-                     pxsl_line="61">
+                     pxsl_line="81">
                     <Object
-                         pxsl_line="62">
+                         pxsl_line="82">
                         <QuestObject
                              class="QuestEnableGroup"
                              name="alfie_school_of_life_qeg"
-                             pxsl_line="62" />
+                             pxsl_line="82" />
                     </Object>
                 </Phase>
                 <Phase
                      type="appear"
                      name="_"
                      mode="show"
-                     pxsl_line="63">
+                     pxsl_line="83">
                     <Object
-                         pxsl_line="64">
+                         pxsl_line="84">
                         <QuestObject
                              class="ModelObject"
                              name="cin_towerroof_Door_after"
-                             pxsl_line="64" />
+                             pxsl_line="84" />
                     </Object>
                     <Object
-                         pxsl_line="65">
+                         pxsl_line="85">
                         <QuestObject
                              class="AppearGroup"
                              name="cin_towerroof_after_ag"
-                             pxsl_line="65" />
+                             pxsl_line="85" />
                     </Object>
                 </Phase>
                 <Phase
                      type="appear"
                      name="_"
                      mode="hide"
-                     pxsl_line="66">
+                     pxsl_line="86">
                     <Object
-                         pxsl_line="67">
+                         pxsl_line="87">
                         <QuestObject
                              class="MovieActor"
                              name="cin_towerroof_Door"
-                             pxsl_line="67" />
+                             pxsl_line="87" />
                     </Object>
                     <Object
-                         pxsl_line="68">
+                         pxsl_line="88">
                         <QuestObject
                              class="AppearGroup"
                              name="alfie_school_of_life_ag"
-                             pxsl_line="68" />
+                             pxsl_line="88" />
                     </Object>
                     <Object
-                         pxsl_line="69">
+                         pxsl_line="89">
                         <QuestObject
                              class="HumanAI"
                              name="Alfie"
-                             pxsl_line="69" />
+                             pxsl_line="89" />
                     </Object>
                     <Object
-                         pxsl_line="70">
+                         pxsl_line="90">
                         <QuestObject
                              class="ModelObject"
                              name="cin_towerroof_Door_before"
-                             pxsl_line="70" />
+                             pxsl_line="90" />
                     </Object>
                 </Phase>
                 <Phase
                      type="set day night time"
                      name="_"
                      day_time="7.83"
-                     pxsl_line="71" />
+                     pxsl_line="91" />
                 <Phase
                      type="enable"
                      name="RESPAWN - Roof - ON"
-                     pxsl_line="72">
+                     pxsl_line="92">
                     <Object
-                         pxsl_line="72">
+                         pxsl_line="92">
                         <QuestObject
                              class="SpawnPoint"
                              name="the_tower_roof_sp"
-                             pxsl_line="72" />
+                             pxsl_line="92" />
                     </Object>
                 </Phase>
                 <Phase
                      type="enable"
                      name="RESPAWN - Map Start - OFF"
                      state="disabled"
-                     pxsl_line="73">
+                     pxsl_line="93">
                     <Object
-                         pxsl_line="73">
+                         pxsl_line="93">
                         <QuestObject
                              class="SpawnPoint"
                              name="MapStart"
-                             pxsl_line="73" />
+                             pxsl_line="93" />
                     </Object>
                 </Phase>
                 <!-- Rahim to CRANE Cin. -->
@@ -481,119 +606,119 @@
                      type="appear"
                      name="_"
                      mode="show"
-                     pxsl_line="74">
+                     pxsl_line="94">
                     <Object
-                         pxsl_line="74">
+                         pxsl_line="94">
                         <QuestObject
                              class="HumanAI"
                              name="cin_rakimjump_Rakim"
-                             pxsl_line="74" />
+                             pxsl_line="94" />
                     </Object>
                 </Phase>
                 <Phase
                      type="use life place"
                      name="_"
                      teleport="true"
-                     pxsl_line="75">
+                     pxsl_line="95">
                     <LifePlace
-                         pxsl_line="75">
+                         pxsl_line="95">
                         <QuestObject
                              class="NPCLifePlace"
                              name="thetower_gym_rahim_lp_02"
-                             pxsl_line="75" />
+                             pxsl_line="95" />
                     </LifePlace>
                     <AI
-                         pxsl_line="76">
+                         pxsl_line="96">
                         <QuestObject
                              class="HumanAI"
                              name="cin_rakimjump_Rakim"
-                             pxsl_line="76" />
+                             pxsl_line="96" />
                     </AI>
                 </Phase>
                 <!-- Maurice and Robin moved with wardrobe. -->
                 <Phase
                      type="AND"
                      name="_"
-                     pxsl_line="77">
+                     pxsl_line="97">
                     <Path
-                         pxsl_line="77">
+                         pxsl_line="97">
                         <Phase
                              type="appear"
                              name="_"
                              mode="hide"
-                             pxsl_line="78">
+                             pxsl_line="98">
                             <Object
-                                 pxsl_line="78">
+                                 pxsl_line="98">
                                 <QuestObject
                                      class="ModelObject"
                                      name="MauriceRobin_Wardrobe_20th_1"
-                                     pxsl_line="78" />
+                                     pxsl_line="98" />
                             </Object>
                         </Phase>
                         <Phase
                              type="appear"
                              name="_"
                              mode="show"
-                             pxsl_line="79">
+                             pxsl_line="99">
                             <Object
-                                 pxsl_line="80">
+                                 pxsl_line="100">
                                 <QuestObject
                                      class="ModelObject"
                                      name="MauriceRobin_Wardrobe_20th_2"
-                                     pxsl_line="80" />
+                                     pxsl_line="100" />
                             </Object>
                         </Phase>
                         <Phase
                              type="use life place"
                              name="_"
                              teleport="true"
-                             pxsl_line="81">
+                             pxsl_line="101">
                             <LifePlace
-                                 pxsl_line="81">
+                                 pxsl_line="101">
                                 <QuestObject
                                      class="NPCLifePlace"
                                      name="Robin_20th_LP_Wardrobe_2"
-                                     pxsl_line="81" />
+                                     pxsl_line="101" />
                             </LifePlace>
                             <AI
-                                 pxsl_line="82">
+                                 pxsl_line="102">
                                 <QuestObject
                                      class="HumanAI"
                                      name="Robin"
-                                     pxsl_line="82" />
+                                     pxsl_line="102" />
                             </AI>
                         </Phase>
                         <Phase
                              type="use life place"
                              name="_"
                              teleport="true"
-                             pxsl_line="83">
+                             pxsl_line="103">
                             <LifePlace
-                                 pxsl_line="83">
+                                 pxsl_line="103">
                                 <QuestObject
                                      class="NPCLifePlace"
                                      name="Maurice_20th_LP_Wardrobe_2"
-                                     pxsl_line="83" />
+                                     pxsl_line="103" />
                             </LifePlace>
                             <AI
-                                 pxsl_line="84">
+                                 pxsl_line="104">
                                 <QuestObject
                                      class="HumanAI"
                                      name="Maurice"
-                                     pxsl_line="84" />
+                                     pxsl_line="104" />
                             </AI>
                         </Phase>
                         <Phase
                              type="enable"
                              name="_"
                              state="disabled"
-                             pxsl_line="85">
+                             pxsl_line="105">
                             <Object
-                                 pxsl_line="85">
+                                 pxsl_line="105">
                                 <QuestObject
                                      class="ConversationNode"
                                      name="Robin_Maurice_Talks_Wardrobe_2"
-                                     pxsl_line="85" />
+                                     pxsl_line="105" />
                             </Object>
                         </Phase>
                     </Path>
@@ -602,40 +727,40 @@
                 <Phase
                      type="AND"
                      name="_"
-                     pxsl_line="86">
+                     pxsl_line="106">
                     <Path
-                         pxsl_line="86">
+                         pxsl_line="106">
                         <Phase
                              type="use life place"
                              name="_"
                              teleport="true"
-                             pxsl_line="87">
+                             pxsl_line="107">
                             <LifePlace
-                                 pxsl_line="87">
+                                 pxsl_line="107">
                                 <QuestObject
                                      class="NPCLifePlace"
                                      name="Lena_LP_01"
-                                     pxsl_line="87" />
+                                     pxsl_line="107" />
                             </LifePlace>
                             <AI
-                                 pxsl_line="88">
+                                 pxsl_line="108">
                                 <QuestObject
                                      class="HumanAI"
                                      name="Elena"
-                                     pxsl_line="88" />
+                                     pxsl_line="108" />
                             </AI>
                         </Phase>
                         <Phase
                              type="appear"
                              name="_"
                              mode="hide"
-                             pxsl_line="89">
+                             pxsl_line="109">
                             <Object
-                                 pxsl_line="89">
+                                 pxsl_line="109">
                                 <QuestObject
                                      class="HumanAI"
                                      name="TheTower_Mark"
-                                     pxsl_line="89" />
+                                     pxsl_line="109" />
                             </Object>
                         </Phase>
                     </Path>
@@ -643,94 +768,94 @@
                 <Phase
                      type="enable"
                      name="_"
-                     pxsl_line="90">
+                     pxsl_line="110">
                     <Object
-                         pxsl_line="91">
+                         pxsl_line="111">
                         <QuestObject
                              class="SensorTutorialHint"
                              name="Tutorial_PrologueNMTutorialJump_sensor00"
-                             pxsl_line="91" />
+                             pxsl_line="111" />
                     </Object>
                     <Object
-                         pxsl_line="92">
+                         pxsl_line="112">
                         <QuestObject
                              class="LocalPortalActivatorZone"
                              name="LocalPortal_Gym_Start_Activator"
-                             pxsl_line="92" />
+                             pxsl_line="112" />
                     </Object>
                     <Object
-                         pxsl_line="93">
+                         pxsl_line="113">
                         <QuestObject
                              class="LocalPortalActivatorZone"
                              name="LocalPortal_Gym_Start_Activator_B"
-                             pxsl_line="93" />
+                             pxsl_line="113" />
                     </Object>
                     <Object
-                         pxsl_line="94">
+                         pxsl_line="114">
                         <QuestObject
                              class="LocalPortalActivatorZone"
                              name="LocalPortal_Gym_Start_Activator_C"
-                             pxsl_line="94" />
+                             pxsl_line="114" />
                     </Object>
                     <Object
-                         pxsl_line="95">
+                         pxsl_line="115">
                         <QuestObject
                              class="LocalPortalActivatorZone"
                              name="LocalPortal_Gym_Start_Activator_D"
-                             pxsl_line="95" />
+                             pxsl_line="115" />
                     </Object>
                     <Object
-                         pxsl_line="96">
+                         pxsl_line="116">
                         <QuestObject
                              class="LocalPortalActivatorZone"
                              name="LocalPortal_Gym_Start_Activator_E"
-                             pxsl_line="96" />
+                             pxsl_line="116" />
                     </Object>
                     <Object
-                         pxsl_line="97">
+                         pxsl_line="117">
                         <QuestObject
                              class="LocalPortal"
                              name="LocalPortal_Gym_Start"
-                             pxsl_line="97" />
+                             pxsl_line="117" />
                     </Object>
                 </Phase>
                 <Phase
                      type="checkpoint"
                      name="_"
-                     pxsl_line="98">
+                     pxsl_line="118">
                     <Destination
-                         pxsl_line="98">
+                         pxsl_line="118">
                         <QuestObject
                              class="SpawnPoint"
                              name="the_tower_roof_sp"
-                             pxsl_line="98" />
+                             pxsl_line="118" />
                     </Destination>
                 </Phase>
                 <Phase
                      type="go to"
                      name="SCHOOL OF LIFE - After Crane"
                      distance="100000"
-                     pxsl_line="99">
+                     pxsl_line="119">
                     <Destination
-                         pxsl_line="99">
+                         pxsl_line="119">
                         <QuestObject
                              class="SpawnPoint"
                              name="the_tower_roof_sp"
-                             pxsl_line="99" />
+                             pxsl_line="119" />
                     </Destination>
                     <DebugPlayerPosition
-                         pxsl_line="100">
+                         pxsl_line="120">
                         <QuestObject
                              class="SpawnPoint"
                              name="the_tower_roof_sp"
-                             pxsl_line="100" />
+                             pxsl_line="120" />
                     </DebugPlayerPosition>
                 </Phase>
                 <Phase
                      type="wait guard"
                      name="_"
                      time="1"
-                     pxsl_line="101" />
+                     pxsl_line="121" />
                 <Phase
                      type="talk"
                      name="_"
@@ -738,7 +863,7 @@
                      group="Rakim_SchoolOfLife_04DLG01"
                      show_locations="false"
                      auto_start="true"
-                     pxsl_line="102" />
+                     pxsl_line="122" />
             </Path>
         </Phase>
         <!-- Climb the crane and get to Rahim. -->
@@ -747,75 +872,75 @@
              name="Gym Start"
              objective="&amp;SchoolOfLife_OBJ_GetToRakim&amp;"
              announce_objective="false"
-             pxsl_line="103">
+             pxsl_line="123">
             <Path
-                 pxsl_line="103">
+                 pxsl_line="123">
                 <!-- NM TUTORIAL -->
                 <Phase
                      type="OR"
                      name="_"
-                     pxsl_line="104">
+                     pxsl_line="124">
                     <Path
-                         pxsl_line="105">
+                         pxsl_line="125">
                         <Phase
                              type="go to"
                              name="_"
-                             pxsl_line="106">
+                             pxsl_line="126">
                             <Destination
-                                 pxsl_line="106">
+                                 pxsl_line="126">
                                 <QuestObject
                                      class="SensorGoTo"
                                      name="thetower_gym_thetower_goto_01"
-                                     pxsl_line="106" />
+                                     pxsl_line="126" />
                             </Destination>
                         </Phase>
                     </Path>
                     <Path
-                         pxsl_line="107">
+                         pxsl_line="127">
                         <Phase
                              type="go to"
                              name="_"
                              show_locations="false"
-                             pxsl_line="108">
+                             pxsl_line="128">
                             <Destination
-                                 pxsl_line="108">
+                                 pxsl_line="128">
                                 <QuestObject
                                      class="SensorGoTo"
                                      name="thetower_gym_thetower_goto_02"
-                                     pxsl_line="108" />
+                                     pxsl_line="128" />
                             </Destination>
                         </Phase>
                     </Path>
                     <Path
-                         pxsl_line="109">
+                         pxsl_line="129">
                         <Phase
                              type="go to"
                              name="_"
                              show_locations="false"
-                             pxsl_line="110">
+                             pxsl_line="130">
                             <Destination
-                                 pxsl_line="110">
+                                 pxsl_line="130">
                                 <QuestObject
                                      class="SensorGoTo"
                                      name="thetower_gym_thetower_goto_03"
-                                     pxsl_line="110" />
+                                     pxsl_line="130" />
                             </Destination>
                         </Phase>
                     </Path>
                     <Path
-                         pxsl_line="111">
+                         pxsl_line="131">
                         <Phase
                              type="go to"
                              name="_"
                              distance="15"
                              show_locations="false"
-                             pxsl_line="112">
+                             pxsl_line="132">
                             <Destination
-                                 pxsl_line="112">
+                                 pxsl_line="132">
                                 <QuestObject
                                      class="SpawnPoint"
                                      name="thetower_gym_01_sp"
-                                     pxsl_line="112" />
+                                     pxsl_line="132" />
                             </Destination>
                         </Phase>
                     </Path>
@@ -826,31 +951,31 @@
                      hint_name="Tutorial_Hints_TimeFreeze_PrologueNM"
                      show="true"
                      enable="true"
-                     pxsl_line="113" />
+                     pxsl_line="133" />
                 <Phase
                      type="AND"
                      name="Brecken room changes after The Tower start acions"
-                     pxsl_line="114">
+                     pxsl_line="134">
                     <Path
-                         pxsl_line="114">
+                         pxsl_line="134">
                         <Phase
                              type="appear"
                              name="_"
                              mode="hide"
-                             pxsl_line="115">
+                             pxsl_line="135">
                             <Object
-                                 pxsl_line="116">
+                                 pxsl_line="136">
                                 <QuestObject
                                      class="ModelObject"
                                      name="thetower_gym_02_lift_door_open"
-                                     pxsl_line="116" />
+                                     pxsl_line="136" />
                             </Object>
                             <Object
-                                 pxsl_line="117">
+                                 pxsl_line="137">
                                 <QuestObject
                                      class="AppearGroup"
                                      name="thetower_gym_03_lift_door_open"
-                                     pxsl_line="117" />
+                                     pxsl_line="137" />
                             </Object>
                         </Phase>
                     </Path>
@@ -858,20 +983,20 @@
                 <Phase
                      type="AND"
                      name="_"
-                     pxsl_line="118">
+                     pxsl_line="138">
                     <Path
-                         pxsl_line="119">
+                         pxsl_line="139">
                         <Phase
                              type="go to"
                              name="_"
                              distance="9"
-                             pxsl_line="120">
+                             pxsl_line="140">
                             <Destination
-                                 pxsl_line="120">
+                                 pxsl_line="140">
                                 <QuestObject
                                      class="Marker"
                                      name="thetower_gym_thetower_loc_04"
-                                     pxsl_line="120" />
+                                     pxsl_line="140" />
                             </Destination>
                         </Phase>
                         <Phase
@@ -880,85 +1005,85 @@
                              speaker="voice2d"
                              group="Rakim_SchoolOfLife_40DLG01"
                              auto_start="true"
-                             pxsl_line="121" />
+                             pxsl_line="141" />
                     </Path>
                 </Phase>
                 <Phase
                      type="AND"
                      name="_"
-                     pxsl_line="122">
+                     pxsl_line="142">
                     <Path
-                         pxsl_line="123">
+                         pxsl_line="143">
                         <Phase
                              type="go to"
                              name="_"
                              distance="15"
-                             pxsl_line="124">
+                             pxsl_line="144">
                             <Destination
-                                 pxsl_line="124">
+                                 pxsl_line="144">
                                 <QuestObject
                                      class="SpawnPoint"
                                      name="thetower_gym_01_sp"
-                                     pxsl_line="124" />
+                                     pxsl_line="144" />
                             </Destination>
                         </Phase>
                     </Path>
                     <Path
-                         pxsl_line="125">
+                         pxsl_line="145">
                         <Phase
                              type="go to"
                              name="_"
                              distance="5"
                              show_locations="false"
-                             pxsl_line="126">
+                             pxsl_line="146">
                             <Destination
-                                 pxsl_line="126">
+                                 pxsl_line="146">
                                 <QuestObject
                                      class="Marker"
                                      name="thetower_gym_thetower_loc_03"
-                                     pxsl_line="126" />
+                                     pxsl_line="146" />
                             </Destination>
                         </Phase>
                         <!-- ,radio-dialog _ voice2d Player_SchoolOfLife_05DLG01 -= Removed by Sikorek. -->
                     </Path>
                     <!-- PLAYER SKILLS LEVEL HINT -->
                     <Path
-                         pxsl_line="128">
+                         pxsl_line="148">
                         <Phase
                              type="OR"
                              name="_"
-                             pxsl_line="129">
+                             pxsl_line="149">
                             <Path
-                                 pxsl_line="130">
+                                 pxsl_line="150">
                                 <Phase
                                      type="go to"
                                      name="_"
                                      distance="0"
                                      show_locations="false"
-                                     pxsl_line="131">
+                                     pxsl_line="151">
                                     <Destination
-                                         pxsl_line="131">
+                                         pxsl_line="151">
                                         <QuestObject
                                              class="SensorGoTo"
                                              name="thetower_gym_thetower_goto_04"
-                                             pxsl_line="131" />
+                                             pxsl_line="151" />
                                     </Destination>
                                 </Phase>
                             </Path>
                             <Path
-                                 pxsl_line="132">
+                                 pxsl_line="152">
                                 <Phase
                                      type="go to"
                                      name="_"
                                      distance="10"
                                      show_locations="false"
-                                     pxsl_line="133">
+                                     pxsl_line="153">
                                     <Destination
-                                         pxsl_line="133">
+                                         pxsl_line="153">
                                         <QuestObject
                                              class="SpawnPoint"
                                              name="thetower_gym_06_sp"
-                                             pxsl_line="133" />
+                                             pxsl_line="153" />
                                     </Destination>
                                 </Phase>
                             </Path>
@@ -969,38 +1094,38 @@
                 <Phase
                      type="enable"
                      name="RESPAWN - Gym 01 - ON"
-                     pxsl_line="135">
+                     pxsl_line="155">
                     <Object
-                         pxsl_line="135">
+                         pxsl_line="155">
                         <QuestObject
                              class="SpawnPoint"
                              name="thetower_gym_01_sp"
-                             pxsl_line="135" />
+                             pxsl_line="155" />
                     </Object>
                 </Phase>
                 <Phase
                      type="enable"
                      name="RESPAWN - Roof - OFF"
                      state="disabled"
-                     pxsl_line="136">
+                     pxsl_line="156">
                     <Object
-                         pxsl_line="136">
+                         pxsl_line="156">
                         <QuestObject
                              class="SpawnPoint"
                              name="the_tower_roof_sp"
-                             pxsl_line="136" />
+                             pxsl_line="156" />
                     </Object>
                 </Phase>
                 <Phase
                      type="checkpoint"
                      name="_"
-                     pxsl_line="137">
+                     pxsl_line="157">
                     <Destination
-                         pxsl_line="137">
+                         pxsl_line="157">
                         <QuestObject
                              class="SpawnPoint"
                              name="thetower_gym_01_sp"
-                             pxsl_line="137" />
+                             pxsl_line="157" />
                     </Destination>
                 </Phase>
             </Path>
@@ -1014,51 +1139,51 @@
              name="_"
              objective="&amp;SchoolOfLife_OBJ_TalkBeforeRahim&amp;"
              announce_objective="false"
-             pxsl_line="141">
+             pxsl_line="161">
             <Path
-                 pxsl_line="141">
+                 pxsl_line="161">
                 <Phase
                      type="enable"
                      name="_"
-                     pxsl_line="142">
+                     pxsl_line="162">
                     <Object
-                         pxsl_line="142">
+                         pxsl_line="162">
                         <QuestObject
                              class="QuestEnableGroup"
                              name="cin_rakimjump_trigger_qeg"
-                             pxsl_line="142" />
+                             pxsl_line="162" />
                     </Object>
                 </Phase>
                 <Phase
                      type="use"
                      name="SCHOOL OF LIFE - CIN - Rahim jump"
                      desired_state="on"
-                     pxsl_line="143">
+                     pxsl_line="163">
                     <Trigger
-                         pxsl_line="143">
+                         pxsl_line="163">
                         <QuestObject
                              class="InteractiveMovieTrigger"
                              name="cin_rakimjump_trigger"
-                             pxsl_line="143" />
+                             pxsl_line="163" />
                     </Trigger>
                     <DebugPlayerPosition
-                         pxsl_line="144">
+                         pxsl_line="164">
                         <QuestObject
                              class="SpawnPoint"
                              name="thetower_gym_01_sp"
-                             pxsl_line="144" />
+                             pxsl_line="164" />
                     </DebugPlayerPosition>
                 </Phase>
                 <Phase
                      type="enable"
                      name="_"
-                     pxsl_line="145">
+                     pxsl_line="165">
                     <Object
-                         pxsl_line="145">
+                         pxsl_line="165">
                         <QuestObject
                              class="SensorAmbientMusicArea"
                              name="SAMA_Gym_Training_Stinger"
-                             pxsl_line="145" />
+                             pxsl_line="165" />
                     </Object>
                 </Phase>
                 <!-- auto respawn on The Tower off -->
@@ -1066,62 +1191,62 @@
                      type="enable"
                      name="_"
                      state="disabled"
-                     pxsl_line="147">
+                     pxsl_line="167">
                     <Object
-                         pxsl_line="148">
+                         pxsl_line="168">
                         <QuestObject
                              class="SensorTutorialHint"
                              name="Tutorial_PrologueNMTutorialJump_sensor00"
-                             pxsl_line="148" />
+                             pxsl_line="168" />
                     </Object>
                     <Object
-                         pxsl_line="149">
+                         pxsl_line="169">
                         <QuestObject
                              class="LocalPortalActivatorZone"
                              name="LocalPortal_Gym_Start_Activator"
-                             pxsl_line="149" />
+                             pxsl_line="169" />
                     </Object>
                     <Object
-                         pxsl_line="150">
+                         pxsl_line="170">
                         <QuestObject
                              class="LocalPortalActivatorZone"
                              name="LocalPortal_Gym_Start_Activator_B"
-                             pxsl_line="150" />
+                             pxsl_line="170" />
                     </Object>
                     <Object
-                         pxsl_line="151">
+                         pxsl_line="171">
                         <QuestObject
                              class="LocalPortalActivatorZone"
                              name="LocalPortal_Gym_Start_Activator_C"
-                             pxsl_line="151" />
+                             pxsl_line="171" />
                     </Object>
                     <Object
-                         pxsl_line="152">
+                         pxsl_line="172">
                         <QuestObject
                              class="LocalPortalActivatorZone"
                              name="LocalPortal_Gym_Start_Activator_D"
-                             pxsl_line="152" />
+                             pxsl_line="172" />
                     </Object>
                     <Object
-                         pxsl_line="153">
+                         pxsl_line="173">
                         <QuestObject
                              class="LocalPortalActivatorZone"
                              name="LocalPortal_Gym_Start_Activator_E"
-                             pxsl_line="153" />
+                             pxsl_line="173" />
                     </Object>
                     <Object
-                         pxsl_line="154">
+                         pxsl_line="174">
                         <QuestObject
                              class="LocalPortal"
                              name="LocalPortal_Gym_Start"
-                             pxsl_line="154" />
+                             pxsl_line="174" />
                     </Object>
                     <Object
-                         pxsl_line="155">
+                         pxsl_line="175">
                         <QuestObject
                              class="QuestEnableGroup"
                              name="cin_rakimjump_trigger_qeg"
-                             pxsl_line="155" />
+                             pxsl_line="175" />
                     </Object>
                 </Phase>
                 <!-- auto respawn on The Tower off -->
@@ -1129,26 +1254,26 @@
                      type="appear"
                      name="_"
                      mode="hide"
-                     pxsl_line="157">
+                     pxsl_line="177">
                     <Object
-                         pxsl_line="157">
+                         pxsl_line="177">
                         <QuestObject
                              class="HumanAI"
                              name="cin_rakimjump_Rakim"
-                             pxsl_line="157" />
+                             pxsl_line="177" />
                     </Object>
                 </Phase>
                 <Phase
                      type="appear"
                      name="_"
                      mode="show"
-                     pxsl_line="158">
+                     pxsl_line="178">
                     <Object
-                         pxsl_line="158">
+                         pxsl_line="178">
                         <QuestObject
                              class="HumanAI"
                              name="Rakim"
-                             pxsl_line="158" />
+                             pxsl_line="178" />
                     </Object>
                 </Phase>
                 <Phase
@@ -1156,33 +1281,33 @@
                      name="_"
                      teleport="true"
                      wait_for_move_end="false"
-                     pxsl_line="159">
+                     pxsl_line="179">
                     <LifePlace
-                         pxsl_line="159">
+                         pxsl_line="179">
                         <QuestObject
                              class="NPCLifePlace"
                              name="thetower_gym_rahim_lp_03"
-                             pxsl_line="159" />
+                             pxsl_line="179" />
                     </LifePlace>
                     <AI
-                         pxsl_line="160">
+                         pxsl_line="180">
                         <QuestObject
                              class="HumanAI"
                              name="Rakim"
-                             pxsl_line="160" />
+                             pxsl_line="180" />
                     </AI>
                 </Phase>
                 <!-- -->
                 <Phase
                      type="checkpoint"
                      name="_"
-                     pxsl_line="162">
+                     pxsl_line="182">
                     <Destination
-                         pxsl_line="162">
+                         pxsl_line="182">
                         <QuestObject
                              class="SpawnPoint"
                              name="thetower_gym_01_sp"
-                             pxsl_line="162" />
+                             pxsl_line="182" />
                     </Destination>
                 </Phase>
             </Path>
@@ -1195,125 +1320,125 @@
              name="SCHOOL OF LIFE - JUMP"
              objective="&amp;SchoolOfLife_OBJ_JumpDown&amp;"
              announce_objective="false"
-             pxsl_line="166">
+             pxsl_line="186">
             <Path
-                 pxsl_line="166">
+                 pxsl_line="186">
                 <Phase
                      type="go to"
                      name="_"
                      distance="0"
-                     pxsl_line="167">
+                     pxsl_line="187">
                     <Destination
-                         pxsl_line="167">
+                         pxsl_line="187">
                         <QuestObject
                              class="SensorGoTo"
                              name="thetower_gym_loc_01_jumpdown_goto"
-                             pxsl_line="167" />
+                             pxsl_line="187" />
                     </Destination>
                 </Phase>
                 <Phase
                      type="wait guard"
                      name="Achievement_FlightOfTheCrane "
                      time="0"
-                     pxsl_line="168" />
+                     pxsl_line="188" />
                 <Phase
                      type="appear"
                      name="_"
                      mode="hide"
-                     pxsl_line="169">
+                     pxsl_line="189">
                     <Object
-                         pxsl_line="170">
+                         pxsl_line="190">
                         <QuestObject
                              class="ModelObject"
                              name="thetower_gym_02_lift_door_close"
-                             pxsl_line="170" />
+                             pxsl_line="190" />
                     </Object>
                     <Object
-                         pxsl_line="171">
+                         pxsl_line="191">
                         <QuestObject
                              class="ModelObject"
                              name="thetower_gym_03_lift_door_close"
-                             pxsl_line="171" />
+                             pxsl_line="191" />
                     </Object>
                     <Object
-                         pxsl_line="172">
+                         pxsl_line="192">
                         <QuestObject
                              class="ModelObject"
                              name="thetower_gym_03_barricade"
-                             pxsl_line="172" />
+                             pxsl_line="192" />
                     </Object>
                     <Object
-                         pxsl_line="173">
+                         pxsl_line="193">
                         <QuestObject
                              class="DoorDI"
                              name="thetower_brecken_door_01"
-                             pxsl_line="173" />
+                             pxsl_line="193" />
                     </Object>
                     <Object
-                         pxsl_line="174">
+                         pxsl_line="194">
                         <QuestObject
                              class="DoorDI"
                              name="thetower_brecken_door_02"
-                             pxsl_line="174" />
+                             pxsl_line="194" />
                     </Object>
                 </Phase>
                 <Phase
                      type="appear"
                      name="_"
                      mode="show"
-                     pxsl_line="175">
+                     pxsl_line="195">
                     <Object
-                         pxsl_line="176">
+                         pxsl_line="196">
                         <QuestObject
                              class="ModelObject"
                              name="thetower_gym_02_lift_door_open"
-                             pxsl_line="176" />
+                             pxsl_line="196" />
                     </Object>
                     <Object
-                         pxsl_line="177">
+                         pxsl_line="197">
                         <QuestObject
                              class="AppearGroup"
                              name="thetower_gym_03_lift_door_open"
-                             pxsl_line="177" />
+                             pxsl_line="197" />
                     </Object>
                     <Object
-                         pxsl_line="178">
+                         pxsl_line="198">
                         <QuestObject
                              class="ModelObject"
                              name="cin_meetjade_Door_static_01"
-                             pxsl_line="178" />
+                             pxsl_line="198" />
                     </Object>
                     <Object
-                         pxsl_line="179">
+                         pxsl_line="199">
                         <QuestObject
                              class="ModelObject"
                              name="cin_meetjade_Door_static_02"
-                             pxsl_line="179" />
+                             pxsl_line="199" />
                     </Object>
                 </Phase>
                 <Phase
                      type="enable"
                      name="RESPAWN - Gym 02 - ON"
-                     pxsl_line="180">
+                     pxsl_line="200">
                     <Object
-                         pxsl_line="180">
+                         pxsl_line="200">
                         <QuestObject
                              class="SpawnPoint"
                              name="thetower_gym_02_sp"
-                             pxsl_line="180" />
+                             pxsl_line="200" />
                     </Object>
                 </Phase>
                 <Phase
                      type="enable"
                      name="RESPAWN - Gym 01 - OFF"
                      state="disabled"
-                     pxsl_line="181">
+                     pxsl_line="201">
                     <Object
-                         pxsl_line="181">
+                         pxsl_line="201">
                         <QuestObject
                              class="SpawnPoint"
                              name="thetower_gym_01_sp"
-                             pxsl_line="181" />
+                             pxsl_line="201" />
                     </Object>
                 </Phase>
             </Path>
@@ -1322,12 +1447,12 @@
              type="player control"
              name="_"
              block_move="true"
-             pxsl_line="182" />
+             pxsl_line="202" />
         <Phase
              type="wait guard"
              name="_"
              time="0.5"
-             pxsl_line="183" />
+             pxsl_line="203" />
         <Phase
              type="talk"
              name="_"
@@ -1335,24 +1460,24 @@
              group="Player_SchoolOfLife_08DLG01"
              show_locations="false"
              auto_start="true"
-             pxsl_line="184" />
+             pxsl_line="204" />
         <Phase
              type="checkpoint"
              name="_"
-             pxsl_line="185">
+             pxsl_line="205">
             <Destination
-                 pxsl_line="185">
+                 pxsl_line="205">
                 <QuestObject
                      class="SpawnPoint"
                      name="thetower_gym_02_sp"
-                     pxsl_line="185" />
+                     pxsl_line="205" />
             </Destination>
         </Phase>
         <Phase
              type="player control"
              name="_"
              block_move="false"
-             pxsl_line="186" />
+             pxsl_line="206" />
         <Phase
              type="talk"
              name="_"
@@ -1360,38 +1485,38 @@
              group="Rahim_SchoolOfLife_08DLG02"
              show_locations="false"
              auto_start="true"
-             pxsl_line="187" />
+             pxsl_line="207" />
         <Phase
              type="enable"
              name="_"
              state="disabled"
-             pxsl_line="188">
+             pxsl_line="208">
             <Object
-                 pxsl_line="188">
+                 pxsl_line="208">
                 <QuestObject
                      class="SensorAmbientMusicArea"
                      name="SAMA_Gym_Training_Stinger"
-                     pxsl_line="188" />
+                     pxsl_line="208" />
             </Object>
         </Phase>
         <Phase
              type="use life place"
              name="_"
              snap_lp_to_npc="true"
-             pxsl_line="189">
+             pxsl_line="209">
             <LifePlace
-                 pxsl_line="189">
+                 pxsl_line="209">
                 <QuestObject
                      class="NPCLifePlace"
                      name="thetower_gym_rahim_lp_wait"
-                     pxsl_line="189" />
+                     pxsl_line="209" />
             </LifePlace>
             <AI
-                 pxsl_line="190">
+                 pxsl_line="210">
                 <QuestObject
                      class="HumanAI"
                      name="Rakim"
-                     pxsl_line="190" />
+                     pxsl_line="210" />
             </AI>
         </Phase>
         <Phase
@@ -1399,20 +1524,20 @@
              name="_"
              teleport="true"
              wait_for_move_end="false"
-             pxsl_line="191">
+             pxsl_line="211">
             <LifePlace
-                 pxsl_line="191">
+                 pxsl_line="211">
                 <QuestObject
                      class="NPCLifePlace"
                      name="thetower_gym_rahim_lp_05"
-                     pxsl_line="191" />
+                     pxsl_line="211" />
             </LifePlace>
             <AI
-                 pxsl_line="192">
+                 pxsl_line="212">
                 <QuestObject
                      class="HumanAI"
                      name="Rakim"
-                     pxsl_line="192" />
+                     pxsl_line="212" />
             </AI>
         </Phase>
         <!-- Follow Rahim's tips. -->
@@ -1421,79 +1546,79 @@
              name="SCHOOL OF LIFE - training start"
              objective="&amp;SchoolOfLife_OBJ_FollowTips&amp;"
              announce_objective="false"
-             pxsl_line="193">
+             pxsl_line="213">
             <Path
-                 pxsl_line="193">
+                 pxsl_line="213">
                 <Phase
                      type="enable"
                      name="_"
-                     pxsl_line="194">
+                     pxsl_line="214">
                     <Object
-                         pxsl_line="195">
+                         pxsl_line="215">
                         <QuestObject
                              class="SensorAmbientMusicArea"
                              name="SAMA_Gym_Training"
-                             pxsl_line="195" />
+                             pxsl_line="215" />
                     </Object>
                     <Object
-                         pxsl_line="196">
+                         pxsl_line="216">
                         <QuestObject
                              class="SensorTutorialHint"
                              name="Tutorial_PrologueDuck_sensor01"
-                             pxsl_line="196" />
+                             pxsl_line="216" />
                     </Object>
                     <!-- ,o SensorTutorialHint Tutorial_PrologueJumpOver_sensor01 -= Removed by Sikorek. -->
                     <Object
-                         pxsl_line="198">
+                         pxsl_line="218">
                         <QuestObject
                              class="SensorTutorialHint"
                              name="Tutorial_PrologueJumpOver_sensor02"
-                             pxsl_line="198" />
+                             pxsl_line="218" />
                     </Object>
                     <Object
-                         pxsl_line="199">
+                         pxsl_line="219">
                         <QuestObject
                              class="SensorTutorialHint"
                              name="Tutorial_PrologueJumpOver_sensor03"
-                             pxsl_line="199" />
+                             pxsl_line="219" />
                     </Object>
                     <Object
-                         pxsl_line="200">
+                         pxsl_line="220">
                         <QuestObject
                              class="SensorTutorialHint"
                              name="Tutorial_PrologueJumpOver_sensor04"
-                             pxsl_line="200" />
+                             pxsl_line="220" />
                     </Object>
                     <!-- ,o SensorTutorialHint Tutorial_PrologueJumpOver_sensor05 -= Removed by Sikorek. -->
                     <!-- ,o SensorTutorialHint Tutorial_PrologueJumpOver_sensor06 -= Removed by Sikorek. -->
                     <Object
-                         pxsl_line="203">
+                         pxsl_line="223">
                         <QuestObject
                              class="SensorTutorialHint"
                              name="Tutorial_PrologueJumpOver_sensor07"
-                             pxsl_line="203" />
+                             pxsl_line="223" />
                     </Object>
                     <Object
-                         pxsl_line="204">
+                         pxsl_line="224">
                         <QuestObject
                              class="SensorTutorialHint"
                              name="Tutorial_PrologueNMTutorialJump_sensor01"
-                             pxsl_line="204" />
+                             pxsl_line="224" />
                     </Object>
                     <Object
-                         pxsl_line="205">
+                         pxsl_line="225">
                         <QuestObject
                              class="SensorTutorialHint"
                              name="Tutorial_PrologueShimi_sensor01"
-                             pxsl_line="205" />
+                             pxsl_line="225" />
                     </Object>
                     <!-- ,o SensorTutorialHint Tutorial_PrologueShimi_sensor02 -= Removed by Sikorek. -->
                     <Object
-                         pxsl_line="207">
+                         pxsl_line="227">
                         <QuestObject
                              class="SensorTutorialHint"
                              name="Tutorial_PrologueSideJump_sensor01"
-                             pxsl_line="207" />
+                             pxsl_line="227" />
                     </Object>
                     <!-- ,o SensorTutorialHint Tutorial_PrologueSideJump_sensor02 -= Removed by Sikorek. -->
                 </Phase>
@@ -1501,46 +1626,46 @@
                      type="go to"
                      name="_"
                      distance="0"
-                     pxsl_line="209">
+                     pxsl_line="229">
                     <Destination
-                         pxsl_line="209">
+                         pxsl_line="229">
                         <QuestObject
                              class="SensorGoTo"
                              name="thetower_gym_loc_01_5_goto"
-                             pxsl_line="209" />
+                             pxsl_line="229" />
                     </Destination>
                 </Phase>
                 <Phase
                      type="enable"
                      name="_"
                      state="disabled"
-                     pxsl_line="210">
+                     pxsl_line="230">
                     <Object
-                         pxsl_line="211">
+                         pxsl_line="231">
                         <QuestObject
                              class="AllLethalObject"
                              name="highrise_lethal_01"
-                             pxsl_line="211" />
+                             pxsl_line="231" />
                     </Object>
                     <Object
-                         pxsl_line="212">
+                         pxsl_line="232">
                         <QuestObject
                              class="AllLethalObject"
                              name="highrise_lethal_02"
-                             pxsl_line="212" />
+                             pxsl_line="232" />
                     </Object>
                 </Phase>
                 <Phase
                      type="go to"
                      name="_"
                      distance="0"
-                     pxsl_line="213">
+                     pxsl_line="233">
                     <Destination
-                         pxsl_line="213">
+                         pxsl_line="233">
                         <QuestObject
                              class="SensorGoTo"
                              name="thetower_gym_loc_02_duck"
-                             pxsl_line="213" />
+                             pxsl_line="233" />
                     </Destination>
                 </Phase>
                 <Phase
@@ -1549,19 +1674,19 @@
                      speaker="voice2d"
                      group="Rahim_SchoolOfLife_29DLG01"
                      auto_start="true"
-                     pxsl_line="214" />
+                     pxsl_line="234" />
                 <!-- ,show-hint _ Tutorial_PrologueDuck -->
                 <Phase
                      type="go to"
                      name="_"
                      distance="0"
-                     pxsl_line="216">
+                     pxsl_line="236">
                     <Destination
-                         pxsl_line="216">
+                         pxsl_line="236">
                         <QuestObject
                              class="SensorGoTo"
                              name="thetower_gym_loc_03_jump"
-                             pxsl_line="216" />
+                             pxsl_line="236" />
                     </Destination>
                 </Phase>
                 <!-- ,show-hint _ Tutorial_PrologueNMTutorialJump -->
@@ -1569,13 +1694,13 @@
                      type="go to"
                      name="_"
                      distance="0"
-                     pxsl_line="218">
+                     pxsl_line="238">
                     <Destination
-                         pxsl_line="218">
+                         pxsl_line="238">
                         <QuestObject
                              class="SensorGoTo"
                              name="thetower_gym_loc_03_jump_b"
-                             pxsl_line="218" />
+                             pxsl_line="238" />
                     </Destination>
                 </Phase>
                 <Phase
@@ -1583,96 +1708,96 @@
                      name="_"
                      teleport="true"
                      wait_for_move_end="false"
-                     pxsl_line="219">
+                     pxsl_line="239">
                     <LifePlace
-                         pxsl_line="219">
+                         pxsl_line="239">
                         <QuestObject
                              class="NPCLifePlace"
                              name="thetower_gym_rahim_lp_04"
-                             pxsl_line="219" />
+                             pxsl_line="239" />
                     </LifePlace>
                     <AI
-                         pxsl_line="220">
+                         pxsl_line="240">
                         <QuestObject
                              class="HumanAI"
                              name="Rakim"
-                             pxsl_line="220" />
+                             pxsl_line="240" />
                     </AI>
                 </Phase>
                 <Phase
                      type="go to"
                      name="_"
                      distance="0"
-                     pxsl_line="221">
+                     pxsl_line="241">
                     <Destination
-                         pxsl_line="221">
+                         pxsl_line="241">
                         <QuestObject
                              class="SensorGoTo"
                              name="thetower_gym_loc_03_jump_c"
-                             pxsl_line="221" />
+                             pxsl_line="241" />
                     </Destination>
                 </Phase>
                 <Phase
                      type="go to"
                      name="_"
                      distance="0"
-                     pxsl_line="222">
+                     pxsl_line="242">
                     <Destination
-                         pxsl_line="222">
+                         pxsl_line="242">
                         <QuestObject
                              class="SensorGoTo"
                              name="thetower_gym_loc_04_stairs"
-                             pxsl_line="222" />
+                             pxsl_line="242" />
                     </Destination>
                 </Phase>
                 <Phase
                      type="enable"
                      name="RESPAWN - Gym 03 - ON"
-                     pxsl_line="223">
+                     pxsl_line="243">
                     <Object
-                         pxsl_line="223">
+                         pxsl_line="243">
                         <QuestObject
                              class="SpawnPoint"
                              name="thetower_gym_03_sp"
-                             pxsl_line="223" />
+                             pxsl_line="243" />
                     </Object>
                 </Phase>
                 <Phase
                      type="enable"
                      name="RESPAWN - Gym 02 - OFF"
                      state="disabled"
-                     pxsl_line="224">
+                     pxsl_line="244">
                     <Object
-                         pxsl_line="224">
+                         pxsl_line="244">
                         <QuestObject
                              class="SpawnPoint"
                              name="thetower_gym_02_sp"
-                             pxsl_line="224" />
+                             pxsl_line="244" />
                     </Object>
                 </Phase>
                 <Phase
                      type="checkpoint"
                      name="_"
-                     pxsl_line="225">
+                     pxsl_line="245">
                     <Destination
-                         pxsl_line="225">
+                         pxsl_line="245">
                         <QuestObject
                              class="SpawnPoint"
                              name="thetower_gym_03_sp"
-                             pxsl_line="225" />
+                             pxsl_line="245" />
                     </Destination>
                 </Phase>
                 <Phase
                      type="go to"
                      name="_"
                      distance="0"
-                     pxsl_line="226">
+                     pxsl_line="246">
                     <Destination
-                         pxsl_line="226">
+                         pxsl_line="246">
                         <QuestObject
                              class="SensorGoTo"
                              name="thetower_gym_loc_04_stairs_dlg"
-                             pxsl_line="226" />
+                             pxsl_line="246" />
                     </Destination>
                 </Phase>
                 <Phase
@@ -1681,43 +1806,43 @@
                      speaker="voice2d"
                      group="Rahim_SchoolOfLife_27DLG01"
                      auto_start="true"
-                     pxsl_line="227" />
+                     pxsl_line="247" />
                 <Phase
                      type="go to"
                      name="_"
                      distance="0"
-                     pxsl_line="228">
+                     pxsl_line="248">
                     <Destination
-                         pxsl_line="228">
+                         pxsl_line="248">
                         <QuestObject
                              class="SensorGoTo"
                              name="thetower_gym_loc_05_long_jump_tut"
-                             pxsl_line="228" />
+                             pxsl_line="248" />
                     </Destination>
                 </Phase>
                 <Phase
                      type="checkpoint"
                      name="_"
-                     pxsl_line="229">
+                     pxsl_line="249">
                     <Destination
-                         pxsl_line="229">
+                         pxsl_line="249">
                         <QuestObject
                              class="SpawnPoint"
                              name="thetower_gym_jump_01_sp"
-                             pxsl_line="229" />
+                             pxsl_line="249" />
                     </Destination>
                 </Phase>
                 <!-- NEW HINT ABOUT JUMPING  -->
                 <Phase
                      type="enable"
                      name="_"
-                     pxsl_line="230">
+                     pxsl_line="250">
                     <Object
-                         pxsl_line="230">
+                         pxsl_line="250">
                         <QuestObject
                              class="SensorTutorialHint"
                              name="Tutorial_PrologueNMTutorialJumpButton_sensor01"
-                             pxsl_line="230" />
+                             pxsl_line="250" />
                     </Object>
                 </Phase>
                 <!-- ,show-hint _ Tutorial_PrologueJumpOver    -->
@@ -1725,13 +1850,13 @@
                      type="go to"
                      name="_"
                      distance="0"
-                     pxsl_line="232">
+                     pxsl_line="252">
                     <Destination
-                         pxsl_line="232">
+                         pxsl_line="252">
                         <QuestObject
                              class="SensorGoTo"
                              name="thetower_gym_loc_05_long_jump"
-                             pxsl_line="232" />
+                             pxsl_line="252" />
                     </Destination>
                 </Phase>
                 <!-- NEW HINT ABOUT JUMPING  -->
@@ -1739,13 +1864,13 @@
                      type="enable"
                      name="_"
                      state="disabled"
-                     pxsl_line="233">
+                     pxsl_line="253">
                     <Object
-                         pxsl_line="233">
+                         pxsl_line="253">
                         <QuestObject
                              class="SensorTutorialHint"
                              name="Tutorial_PrologueNMTutorialJumpButton_sensor01"
-                             pxsl_line="233" />
+                             pxsl_line="253" />
                     </Object>
                 </Phase>
                 <Phase
@@ -1754,95 +1879,95 @@
                      speaker="voice2d"
                      group="Rakim_SchoolOfLife_13DLG01"
                      auto_start="true"
-                     pxsl_line="234" />
+                     pxsl_line="254" />
                 <Phase
                      type="use life place"
                      name="_"
                      teleport="true"
                      wait_for_move_end="false"
-                     pxsl_line="235">
+                     pxsl_line="255">
                     <LifePlace
-                         pxsl_line="235">
+                         pxsl_line="255">
                         <QuestObject
                              class="NPCLifePlace"
                              name="thetower_gym_rahim_lp_06"
-                             pxsl_line="235" />
+                             pxsl_line="255" />
                     </LifePlace>
                     <AI
-                         pxsl_line="236">
+                         pxsl_line="256">
                         <QuestObject
                              class="HumanAI"
                              name="Rakim"
-                             pxsl_line="236" />
+                             pxsl_line="256" />
                     </AI>
                 </Phase>
                 <Phase
                      type="enable"
                      name="RESPAWN - Gym 04 - ON"
-                     pxsl_line="237">
+                     pxsl_line="257">
                     <Object
-                         pxsl_line="237">
+                         pxsl_line="257">
                         <QuestObject
                              class="SpawnPoint"
                              name="thetower_gym_04_sp"
-                             pxsl_line="237" />
+                             pxsl_line="257" />
                     </Object>
                 </Phase>
                 <Phase
                      type="enable"
                      name="RESPAWN - Gym 03 - OFF"
                      state="disabled"
-                     pxsl_line="238">
+                     pxsl_line="258">
                     <Object
-                         pxsl_line="238">
+                         pxsl_line="258">
                         <QuestObject
                              class="SpawnPoint"
                              name="thetower_gym_03_sp"
-                             pxsl_line="238" />
+                             pxsl_line="258" />
                     </Object>
                 </Phase>
                 <Phase
                      type="checkpoint"
                      name="_"
-                     pxsl_line="239">
+                     pxsl_line="259">
                     <Destination
-                         pxsl_line="239">
+                         pxsl_line="259">
                         <QuestObject
                              class="SpawnPoint"
                              name="thetower_gym_04_sp"
-                             pxsl_line="239" />
+                             pxsl_line="259" />
                     </Destination>
                 </Phase>
                 <Phase
                      type="OR"
                      name="_"
-                     pxsl_line="240">
+                     pxsl_line="260">
                     <Path
-                         pxsl_line="241">
+                         pxsl_line="261">
                         <Phase
                              type="go to"
                              name="_"
                              distance="0"
-                             pxsl_line="242">
+                             pxsl_line="262">
                             <Destination
-                                 pxsl_line="242">
+                                 pxsl_line="262">
                                 <QuestObject
                                      class="SensorGoTo"
                                      name="thetower_gym_loc_06_lift"
-                                     pxsl_line="242" />
+                                     pxsl_line="262" />
                             </Destination>
                         </Phase>
                         <Phase
                              type="go to"
                              name="_"
                              distance="0"
-                             pxsl_line="243">
+                             pxsl_line="263">
                             <Destination
-                                 pxsl_line="243">
+                                 pxsl_line="263">
                                 <QuestObject
                                      class="SensorGoTo"
                                      name="thetower_gym_loc_07_after_lift"
-                                     pxsl_line="243" />
+                                     pxsl_line="263" />
                             </Destination>
                         </Phase>
                         <Phase
@@ -1851,43 +1976,43 @@
                              speaker="voice2d"
                              group="Rakim_SchoolOfLife_14DLG01"
                              auto_start="true"
-                             pxsl_line="244" />
+                             pxsl_line="264" />
                         <Phase
                              type="use life place"
                              name="_"
                              teleport="true"
                              wait_for_move_end="false"
-                             pxsl_line="245">
+                             pxsl_line="265">
                             <LifePlace
-                                 pxsl_line="245">
+                                 pxsl_line="265">
                                 <QuestObject
                                      class="NPCLifePlace"
                                      name="thetower_gym_rahim_lp_07"
-                                     pxsl_line="245" />
+                                     pxsl_line="265" />
                             </LifePlace>
                             <AI
-                                 pxsl_line="246">
+                                 pxsl_line="266">
                                 <QuestObject
                                      class="HumanAI"
                                      name="Rakim"
-                                     pxsl_line="246" />
+                                     pxsl_line="266" />
                             </AI>
                         </Phase>
                     </Path>
                     <Path
-                         pxsl_line="247">
+                         pxsl_line="267">
                         <Phase
                              type="go to"
                              name="_"
                              distance="0"
                              show_locations="false"
-                             pxsl_line="248">
+                             pxsl_line="268">
                             <Destination
-                                 pxsl_line="248">
+                                 pxsl_line="268">
                                 <QuestObject
                                      class="SensorGoTo"
                                      name="thetower_gym_loc_08_shimi"
-                                     pxsl_line="248" />
+                                     pxsl_line="268" />
                             </Destination>
                         </Phase>
                     </Path>
@@ -1895,20 +2020,20 @@
                 <Phase
                      type="OR"
                      name="_"
-                     pxsl_line="249">
+                     pxsl_line="269">
                     <Path
-                         pxsl_line="250">
+                         pxsl_line="270">
                         <Phase
                              type="go to"
                              name="_"
                              distance="0"
-                             pxsl_line="251">
+                             pxsl_line="271">
                             <Destination
-                                 pxsl_line="251">
+                                 pxsl_line="271">
                                 <QuestObject
                                      class="SensorGoTo"
                                      name="thetower_gym_loc_08_shimi"
-                                     pxsl_line="251" />
+                                     pxsl_line="271" />
                             </Destination>
                         </Phase>
                         <Phase
@@ -1917,23 +2042,23 @@
                              speaker="voice2d"
                              group="Rahim_SchoolOfLife_32DLG01"
                              auto_start="true"
-                             pxsl_line="252" />
+                             pxsl_line="272" />
                         <!-- ,show-hint _ Tutorial_PrologueShimi -->
                     </Path>
                     <Path
-                         pxsl_line="254">
+                         pxsl_line="274">
                         <Phase
                              type="go to"
                              name="_"
                              distance="0"
                              show_locations="false"
-                             pxsl_line="255">
+                             pxsl_line="275">
                             <Destination
-                                 pxsl_line="255">
+                                 pxsl_line="275">
                                 <QuestObject
                                      class="SensorGoTo"
                                      name="thetower_gym_loc_08_crane_and_of_training"
-                                     pxsl_line="255" />
+                                     pxsl_line="275" />
                             </Destination>
                         </Phase>
                     </Path>
@@ -1941,41 +2066,41 @@
                 <Phase
                      type="OR"
                      name="_"
-                     pxsl_line="256">
+                     pxsl_line="276">
                     <!-- path -->
                         <!-- ,goto _ SensorGoTo thetower_gym_loc_08_side_jump -distance=0 -show=false -->
                         <!-- ,show-hint _ Tutorial_PrologueSideJump -->
                         <!-- ,radio-dialog _ voice2d Rakim_SchoolOfLife_15DLG01  -->
                     <Path
-                         pxsl_line="261">
+                         pxsl_line="281">
                         <Phase
                              type="go to"
                              name="_"
                              distance="0"
                              show_locations="false"
-                             pxsl_line="262">
+                             pxsl_line="282">
                             <Destination
-                                 pxsl_line="262">
+                                 pxsl_line="282">
                                 <QuestObject
                                      class="SensorGoTo"
                                      name="thetower_gym_loc_08_crane_and_of_training"
-                                     pxsl_line="262" />
+                                     pxsl_line="282" />
                             </Destination>
                         </Phase>
                     </Path>
                     <Path
-                         pxsl_line="263">
+                         pxsl_line="283">
                         <Phase
                              type="go to"
                              name="_"
                              distance="0"
-                             pxsl_line="264">
+                             pxsl_line="284">
                             <Destination
-                                 pxsl_line="264">
+                                 pxsl_line="284">
                                 <QuestObject
                                      class="SensorGoTo"
                                      name="thetower_gym_loc_08_fast_run"
-                                     pxsl_line="264" />
+                                     pxsl_line="284" />
                             </Destination>
                         </Phase>
                     </Path>
@@ -1986,7 +2111,7 @@
                      speaker="voice2d"
                      group="Rahim_SchoolOfLife_33DLG01"
                      auto_start="true"
-                     pxsl_line="265" />
+                     pxsl_line="285" />
             </Path>
         </Phase>
         <!-- BACK TO RAHIM -->
@@ -1996,43 +2121,43 @@
              type="AND"
              name="_"
              objective="&amp;SchoolOfLife_OBJ_PassTest&amp;"
-             pxsl_line="269">
+             pxsl_line="289">
             <Path
-                 pxsl_line="269">
+                 pxsl_line="289">
                 <Phase
                      type="OR"
                      name="_"
-                     pxsl_line="270">
+                     pxsl_line="290">
                     <Path
-                         pxsl_line="271">
+                         pxsl_line="291">
                         <Phase
                              type="go to"
                              name="_"
                              distance="0"
                              show_locations="false"
-                             pxsl_line="272">
+                             pxsl_line="292">
                             <Destination
-                                 pxsl_line="272">
+                                 pxsl_line="292">
                                 <QuestObject
                                      class="SensorGoTo"
                                      name="thetower_gym_loc_08_crane_and_of_training"
-                                     pxsl_line="272" />
+                                     pxsl_line="292" />
                             </Destination>
                         </Phase>
                     </Path>
                     <Path
-                         pxsl_line="273">
+                         pxsl_line="293">
                         <Phase
                              type="go to"
                              name="_"
                              distance="0"
-                             pxsl_line="274">
+                             pxsl_line="294">
                             <Destination
-                                 pxsl_line="274">
+                                 pxsl_line="294">
                                 <QuestObject
                                      class="SensorGoTo"
                                      name="thetower_gym_loc_08_fast_run_02"
-                                     pxsl_line="274" />
+                                     pxsl_line="294" />
                             </Destination>
                         </Phase>
                     </Path>
@@ -2041,38 +2166,38 @@
                 <Phase
                      type="enable"
                      name="_"
-                     pxsl_line="275">
+                     pxsl_line="295">
                     <Object
-                         pxsl_line="275">
+                         pxsl_line="295">
                         <QuestObject
                              class="SensorTutorialHint"
                              name="Tutorial_PrologueNMTutorialJumpButton_sensor02"
-                             pxsl_line="275" />
+                             pxsl_line="295" />
                     </Object>
                 </Phase>
                 <Phase
                      type="checkpoint"
                      name="_"
-                     pxsl_line="276">
+                     pxsl_line="296">
                     <Destination
-                         pxsl_line="276">
+                         pxsl_line="296">
                         <QuestObject
                              class="SpawnPoint"
                              name="thetower_gym_jump_02_sp"
-                             pxsl_line="276" />
+                             pxsl_line="296" />
                     </Destination>
                 </Phase>
                 <Phase
                      type="go to"
                      name="_"
                      distance="0"
-                     pxsl_line="277">
+                     pxsl_line="297">
                     <Destination
-                         pxsl_line="277">
+                         pxsl_line="297">
                         <QuestObject
                              class="SensorGoTo"
                              name="thetower_gym_loc_08_crane_and_of_training"
-                             pxsl_line="277" />
+                             pxsl_line="297" />
                     </Destination>
                 </Phase>
                 <!-- NEW HINT ABOUT JUMPING    -->
@@ -2080,50 +2205,50 @@
                      type="enable"
                      name="_"
                      state="disabled"
-                     pxsl_line="278">
+                     pxsl_line="298">
                     <Object
-                         pxsl_line="278">
+                         pxsl_line="298">
                         <QuestObject
                              class="SensorTutorialHint"
                              name="Tutorial_PrologueNMTutorialJumpButton_sensor02"
-                             pxsl_line="278" />
+                             pxsl_line="298" />
                     </Object>
                 </Phase>
                 <Phase
                      type="enable"
                      name="RESPAWN - Gym 05 - ON"
-                     pxsl_line="279">
+                     pxsl_line="299">
                     <Object
-                         pxsl_line="279">
+                         pxsl_line="299">
                         <QuestObject
                              class="SpawnPoint"
                              name="thetower_gym_05_sp"
-                             pxsl_line="279" />
+                             pxsl_line="299" />
                     </Object>
                 </Phase>
                 <Phase
                      type="enable"
                      name="RESPAWN - Gym 04 - OFF"
                      state="disabled"
-                     pxsl_line="280">
+                     pxsl_line="300">
                     <Object
-                         pxsl_line="280">
+                         pxsl_line="300">
                         <QuestObject
                              class="SpawnPoint"
                              name="thetower_gym_04_sp"
-                             pxsl_line="280" />
+                             pxsl_line="300" />
                     </Object>
                 </Phase>
                 <Phase
                      type="checkpoint"
                      name="_"
-                     pxsl_line="281">
+                     pxsl_line="301">
                     <Destination
-                         pxsl_line="281">
+                         pxsl_line="301">
                         <QuestObject
                              class="SpawnPoint"
                              name="thetower_gym_05_sp"
-                             pxsl_line="281" />
+                             pxsl_line="301" />
                     </Destination>
                 </Phase>
             </Path>
@@ -2135,79 +2260,79 @@
              group="Rakim_SchoolOfLife_16DLG01"
              show_locations="false"
              auto_start="true"
-             pxsl_line="282">
+             pxsl_line="302">
             <DebugPlayerPosition
-                 pxsl_line="283">
+                 pxsl_line="303">
                 <QuestObject
                      class="SpawnPoint"
                      name="thetower_gym_06_sp"
-                     pxsl_line="283" />
+                     pxsl_line="303" />
             </DebugPlayerPosition>
         </Phase>
         <Phase
              type="enable"
              name="_"
              state="disabled"
-             pxsl_line="284">
+             pxsl_line="304">
             <Object
-                 pxsl_line="285">
+                 pxsl_line="305">
                 <QuestObject
                      class="SensorTutorialHint"
                      name="Tutorial_PrologueDuck_sensor01"
-                     pxsl_line="285" />
+                     pxsl_line="305" />
             </Object>
             <!-- ,o SensorTutorialHint Tutorial_PrologueJumpOver_sensor01 -= Removed by Sikorek. -->
             <Object
-                 pxsl_line="287">
+                 pxsl_line="307">
                 <QuestObject
                      class="SensorTutorialHint"
                      name="Tutorial_PrologueJumpOver_sensor02"
-                     pxsl_line="287" />
+                     pxsl_line="307" />
             </Object>
             <Object
-                 pxsl_line="288">
+                 pxsl_line="308">
                 <QuestObject
                      class="SensorTutorialHint"
                      name="Tutorial_PrologueJumpOver_sensor03"
-                     pxsl_line="288" />
+                     pxsl_line="308" />
             </Object>
             <Object
-                 pxsl_line="289">
+                 pxsl_line="309">
                 <QuestObject
                      class="SensorTutorialHint"
                      name="Tutorial_PrologueJumpOver_sensor04"
-                     pxsl_line="289" />
+                     pxsl_line="309" />
             </Object>
             <!-- ,o SensorTutorialHint Tutorial_PrologueJumpOver_sensor05 -= Removed by Sikorek. -->
             <!-- ,o SensorTutorialHint Tutorial_PrologueJumpOver_sensor06 -= Removed by Sikorek. -->
             <Object
-                 pxsl_line="292">
+                 pxsl_line="312">
                 <QuestObject
                      class="SensorTutorialHint"
                      name="Tutorial_PrologueJumpOver_sensor07"
-                     pxsl_line="292" />
+                     pxsl_line="312" />
             </Object>
             <Object
-                 pxsl_line="293">
+                 pxsl_line="313">
                 <QuestObject
                      class="SensorTutorialHint"
                      name="Tutorial_PrologueNMTutorialJump_sensor01"
-                     pxsl_line="293" />
+                     pxsl_line="313" />
             </Object>
             <Object
-                 pxsl_line="294">
+                 pxsl_line="314">
                 <QuestObject
                      class="SensorTutorialHint"
                      name="Tutorial_PrologueShimi_sensor01"
-                     pxsl_line="294" />
+                     pxsl_line="314" />
             </Object>
             <!-- ,o SensorTutorialHint Tutorial_PrologueShimi_sensor02 -= Removed by Sikorek. -->
             <Object
-                 pxsl_line="296">
+                 pxsl_line="316">
                 <QuestObject
                      class="SensorTutorialHint"
                      name="Tutorial_PrologueSideJump_sensor01"
-                     pxsl_line="296" />
+                     pxsl_line="316" />
             </Object>
             <!-- ,o SensorTutorialHint Tutorial_PrologueSideJump_sensor02 -= Removed by Sikorek. -->
         </Phase>
@@ -2215,108 +2340,108 @@
              type="set reward"
              name="_"
              reward="StorylineReward_NaturalMovementTutorial_reward"
-             pxsl_line="298" />
+             pxsl_line="318" />
         <Phase
              type="checkpoint"
              name="_"
-             pxsl_line="299">
+             pxsl_line="319">
             <Destination
-                 pxsl_line="299">
+                 pxsl_line="319">
                 <QuestObject
                      class="SpawnPoint"
                      name="thetower_gym_05_sp"
-                     pxsl_line="299" />
+                     pxsl_line="319" />
             </Destination>
         </Phase>
         <Phase
              type="AND"
              name="BACK TO THE TOWER"
              objective="&amp;SchoolOfLife_OBJ_GetBack&amp;"
-             pxsl_line="300">
+             pxsl_line="320">
             <Path
-                 pxsl_line="300">
+                 pxsl_line="320">
                 <!-- TURN ON ALL AUTOMATIC HINTS IN GAME -->
                 <Phase
                      type="player control"
                      name="_"
                      no_hints="false"
-                     pxsl_line="301" />
+                     pxsl_line="321" />
                 <!-- turn on barrier behind Rahim -->
                 <Phase
                      type="enable"
                      name="_"
-                     pxsl_line="302">
+                     pxsl_line="322">
                     <Object
-                         pxsl_line="302">
+                         pxsl_line="322">
                         <QuestObject
                              class="BarrierObject"
                              name="thetower_gym_last_talk_with_rahim_barrier"
-                             pxsl_line="302" />
+                             pxsl_line="322" />
                     </Object>
                 </Phase>
                 <Phase
                      type="AND"
                      name="_"
-                     pxsl_line="303">
+                     pxsl_line="323">
                     <Path
-                         pxsl_line="304">
+                         pxsl_line="324">
                         <Phase
                              type="OR"
                              name="_"
-                             pxsl_line="305">
+                             pxsl_line="325">
                             <Path
-                                 pxsl_line="306">
+                                 pxsl_line="326">
                                 <Phase
                                      type="go to"
                                      name="_"
                                      distance="40"
-                                     pxsl_line="307">
+                                     pxsl_line="327">
                                     <Destination
-                                         pxsl_line="307">
+                                         pxsl_line="327">
                                         <QuestObject
                                              class="SpawnPoint"
                                              name="the_tower_roof_sp"
-                                             pxsl_line="307" />
+                                             pxsl_line="327" />
                                     </Destination>
                                 </Phase>
                             </Path>
                             <Path
-                                 pxsl_line="308">
+                                 pxsl_line="328">
                                 <Phase
                                      type="OR"
                                      name="_"
-                                     pxsl_line="309">
+                                     pxsl_line="329">
                                     <Path
-                                         pxsl_line="310">
+                                         pxsl_line="330">
                                         <Phase
                                              type="go to"
                                              name="_"
                                              distance="3"
                                              show_locations="false"
-                                             pxsl_line="311">
+                                             pxsl_line="331">
                                             <Destination
-                                                 pxsl_line="311">
+                                                 pxsl_line="331">
                                                 <QuestObject
                                                      class="Marker"
                                                      name="thetower_gym_thetower_loc_02"
-                                                     pxsl_line="311" />
+                                                     pxsl_line="331" />
                                             </Destination>
                                         </Phase>
                                     </Path>
                                     <Path
-                                         pxsl_line="312">
+                                         pxsl_line="332">
                                         <Phase
                                              type="go to"
                                              name="_"
                                              distance="28"
                                              show_locations="false"
-                                             pxsl_line="313">
+                                             pxsl_line="333">
                                             <Destination
-                                                 pxsl_line="313">
+                                                 pxsl_line="333">
                                                 <QuestObject
                                                      class="Marker"
                                                      name="thetower_gym_thetower_loc_03"
-                                                     pxsl_line="313" />
+                                                     pxsl_line="333" />
                                             </Destination>
                                         </Phase>
                                     </Path>
@@ -2326,55 +2451,55 @@
                                      name="_"
                                      distance="0"
                                      show_locations="false"
-                                     pxsl_line="314">
+                                     pxsl_line="334">
                                     <Destination
-                                         pxsl_line="314">
+                                         pxsl_line="334">
                                         <QuestObject
                                              class="SensorGoTo"
                                              name="thetower_gym_for_safety"
-                                             pxsl_line="314" />
+                                             pxsl_line="334" />
                                     </Destination>
                                 </Phase>
                             </Path>
                         </Phase>
                     </Path>
                     <Path
-                         pxsl_line="315">
+                         pxsl_line="335">
                         <Phase
                              type="OR"
                              name="_"
-                             pxsl_line="316">
+                             pxsl_line="336">
                             <Path
-                                 pxsl_line="317">
+                                 pxsl_line="337">
                                 <Phase
                                      type="go to"
                                      name="_"
                                      distance="3"
                                      show_locations="false"
-                                     pxsl_line="318">
+                                     pxsl_line="338">
                                     <Destination
-                                         pxsl_line="318">
+                                         pxsl_line="338">
                                         <QuestObject
                                              class="Marker"
                                              name="thetower_gym_thetower_loc_02"
-                                             pxsl_line="318" />
+                                             pxsl_line="338" />
                                     </Destination>
                                 </Phase>
                             </Path>
                             <Path
-                                 pxsl_line="319">
+                                 pxsl_line="339">
                                 <Phase
                                      type="go to"
                                      name="_"
                                      distance="28"
                                      show_locations="false"
-                                     pxsl_line="320">
+                                     pxsl_line="340">
                                     <Destination
-                                         pxsl_line="320">
+                                         pxsl_line="340">
                                         <QuestObject
                                              class="Marker"
                                              name="thetower_gym_thetower_loc_03"
-                                             pxsl_line="320" />
+                                             pxsl_line="340" />
                                     </Destination>
                                 </Phase>
                             </Path>
@@ -2384,54 +2509,54 @@
                              name="_"
                              mode="start"
                              level_name="first_time"
-                             pxsl_line="321">
+                             pxsl_line="341">
                             <Object
-                                 pxsl_line="321">
+                                 pxsl_line="341">
                                 <QuestObject
-                                     pxsl_line="321" />
+                                     pxsl_line="341" />
                             </Object>
                         </Phase>
                         <Phase
                              type="player control"
                              name="_"
                              can_sprint="false"
-                             pxsl_line="322" />
+                             pxsl_line="342" />
                         <Phase
                              type="enable"
                              name="_"
                              state="disabled"
-                             pxsl_line="323">
+                             pxsl_line="343">
                             <Object
-                                 pxsl_line="323">
+                                 pxsl_line="343">
                                 <QuestObject
                                      class="SensorAmbientMusicArea"
                                      name="SAMA_Gym_Training"
-                                     pxsl_line="323" />
+                                     pxsl_line="343" />
                             </Object>
                         </Phase>
                         <Phase
                              type="wait guard"
                              name="_"
                              time="2"
-                             pxsl_line="324" />
+                             pxsl_line="344" />
                         <!-- ,disable _ SoundEmitterSimple gym_music_dontcare_01 -->
                         <Phase
                              type="use life place"
                              name="_"
-                             pxsl_line="326">
+                             pxsl_line="346">
                             <LifePlace
-                                 pxsl_line="326">
+                                 pxsl_line="346">
                                 <QuestObject
                                      class="NPCLifePlace"
                                      name="thetower_gym_rahim_lp_07_run"
-                                     pxsl_line="326" />
+                                     pxsl_line="346" />
                             </LifePlace>
                             <AI
-                                 pxsl_line="327">
+                                 pxsl_line="347">
                                 <QuestObject
                                      class="HumanAI"
                                      name="Rakim"
-                                     pxsl_line="327" />
+                                     pxsl_line="347" />
                             </AI>
                         </Phase>
                         <Phase
@@ -2440,7 +2565,7 @@
                              speaker="voice2d"
                              group="Player_SchoolOfLife_17DLG01"
                              auto_start="true"
-                             pxsl_line="328" />
+                             pxsl_line="348" />
                     </Path>
                 </Phase>
             </Path>
@@ -2453,66 +2578,66 @@
              name="END OF GYM"
              objective="&amp;SchoolOfLife_OBJ_TalkAfterRahim&amp;"
              announce_objective="false"
-             pxsl_line="332">
+             pxsl_line="352">
             <Path
-                 pxsl_line="332">
+                 pxsl_line="352">
                 <Phase
                      type="AND"
                      name="_"
-                     pxsl_line="333">
+                     pxsl_line="353">
                     <Path
-                         pxsl_line="334">
+                         pxsl_line="354">
                         <Phase
                              type="go to"
                              name="_"
                              distance="0"
-                             pxsl_line="335">
+                             pxsl_line="355">
                             <Destination
-                                 pxsl_line="335">
+                                 pxsl_line="355">
                                 <QuestObject
                                      class="SensorGoTo"
                                      name="thetower_roof_entrance_goto"
-                                     pxsl_line="335" />
+                                     pxsl_line="355" />
                             </Destination>
                         </Phase>
                     </Path>
                     <Path
-                         pxsl_line="336">
+                         pxsl_line="356">
                         <Phase
                              type="OR"
                              name="_"
-                             pxsl_line="337">
+                             pxsl_line="357">
                             <Path
-                                 pxsl_line="338">
+                                 pxsl_line="358">
                                 <Phase
                                      type="go to"
                                      name="_"
                                      distance="25"
                                      show_locations="false"
-                                     pxsl_line="339">
+                                     pxsl_line="359">
                                     <Destination
-                                         pxsl_line="339">
+                                         pxsl_line="359">
                                         <QuestObject
                                              class="SpawnPoint"
                                              name="the_tower_roof_sp"
-                                             pxsl_line="339" />
+                                             pxsl_line="359" />
                                     </Destination>
                                 </Phase>
                             </Path>
                             <Path
-                                 pxsl_line="340">
+                                 pxsl_line="360">
                                 <Phase
                                      type="go to"
                                      name="_"
                                      distance="0"
                                      show_locations="false"
-                                     pxsl_line="341">
+                                     pxsl_line="361">
                                     <Destination
-                                         pxsl_line="341">
+                                         pxsl_line="361">
                                         <QuestObject
                                              class="SensorGoTo"
                                              name="thetower_gym_for_safety"
-                                             pxsl_line="341" />
+                                             pxsl_line="361" />
                                     </Destination>
                                 </Phase>
                             </Path>
@@ -2521,27 +2646,27 @@
                              type="player control"
                              name="_"
                              can_sprint="true"
-                             pxsl_line="342" />
+                             pxsl_line="362" />
                     </Path>
                 </Phase>
                 <Phase
                      type="use life place"
                      name="_"
                      snap_lp_to_npc="true"
-                     pxsl_line="343">
+                     pxsl_line="363">
                     <LifePlace
-                         pxsl_line="343">
+                         pxsl_line="363">
                         <QuestObject
                              class="NPCLifePlace"
                              name="thetower_gym_rahim_lp_07"
-                             pxsl_line="343" />
+                             pxsl_line="363" />
                     </LifePlace>
                     <AI
-                         pxsl_line="344">
+                         pxsl_line="364">
                         <QuestObject
                              class="HumanAI"
                              name="Rakim"
-                             pxsl_line="344" />
+                             pxsl_line="364" />
                     </AI>
                 </Phase>
                 <Phase
@@ -2550,13 +2675,13 @@
                      speaker="Rakim"
                      group="Player_SchoolOfLife_19DLG01"
                      following_group="Rakim_SchoolOfLife_19DLG05"
-                     pxsl_line="345">
+                     pxsl_line="365">
                     <DebugPlayerPosition
-                         pxsl_line="346">
+                         pxsl_line="366">
                         <QuestObject
                              class="SpawnPoint"
                              name="the_tower_roof_sp"
-                             pxsl_line="346" />
+                             pxsl_line="366" />
                     </DebugPlayerPosition>
                 </Phase>
                 <!-- turn off barrier behind Rahim     -->
@@ -2564,94 +2689,192 @@
                      type="enable"
                      name="_"
                      state="disabled"
-                     pxsl_line="347">
+                     pxsl_line="367">
                     <Object
-                         pxsl_line="347">
+                         pxsl_line="367">
                         <QuestObject
                              class="BarrierObject"
                              name="thetower_gym_last_talk_with_rahim_barrier"
-                             pxsl_line="347" />
+                             pxsl_line="367" />
                     </Object>
                 </Phase>
                 <Phase
                      type="use life place"
                      name="_"
                      snap_lp_to_npc="true"
-                     pxsl_line="348">
+                     pxsl_line="368">
                     <LifePlace
-                         pxsl_line="348">
+                         pxsl_line="368">
                         <QuestObject
                              class="NPCLifePlace"
                              name="thetower_gym_rahim_lp_07_after"
-                             pxsl_line="348" />
+                             pxsl_line="368" />
                     </LifePlace>
                     <AI
-                         pxsl_line="349">
+                         pxsl_line="369">
                         <QuestObject
                              class="HumanAI"
                              name="Rakim"
-                             pxsl_line="349" />
+                             pxsl_line="369" />
                     </AI>
                 </Phase>
                 <Phase
                      type="enable"
                      name="RESPAWN - Roof - ON"
-                     pxsl_line="350">
+                     pxsl_line="370">
                     <Object
-                         pxsl_line="350">
+                         pxsl_line="370">
                         <QuestObject
                              class="SpawnPoint"
                              name="the_tower_roof_sp"
-                             pxsl_line="350" />
+                             pxsl_line="370" />
                     </Object>
                 </Phase>
                 <Phase
                      type="enable"
                      name="RESPAWN - Gym 05 - OFF"
                      state="disabled"
-                     pxsl_line="351">
+                     pxsl_line="371">
                     <Object
-                         pxsl_line="351">
+                         pxsl_line="371">
                         <QuestObject
                              class="SpawnPoint"
                              name="thetower_gym_05_sp"
-                             pxsl_line="351" />
+                             pxsl_line="371" />
                     </Object>
                 </Phase>
                 <Phase
                      type="enable"
                      name="RESPAWN - Player Room - ON"
-                     pxsl_line="352">
+                     pxsl_line="372">
                     <Object
-                         pxsl_line="352">
+                         pxsl_line="372">
                         <QuestObject
                              class="SpawnPoint"
                              name="thetower_players_room_sp"
-                             pxsl_line="352" />
+                             pxsl_line="372" />
                     </Object>
                 </Phase>
                 <Phase
                      type="enable"
                      name="_"
-                     pxsl_line="353">
+                     pxsl_line="373">
                     <Object
-                         pxsl_line="354">
+                         pxsl_line="374">
                         <QuestObject
                              class="QuestEnableGroup"
                              name="qeg_HubTheTower_portal_01"
-                             pxsl_line="354" />
+                             pxsl_line="374" />
+                    </Object>
+                </Phase>
+                <!-- pduch 19.11.2021 - open double door in tower corridor -->
+                <!-- shorter path to elevator opened -->
+                <Phase
+                     type="appear"
+                     name="_"
+                     mode="hide"
+                     pxsl_line="377">
+                    <Object
+                         pxsl_line="378">
+                        <QuestObject
+                             class="ModelObject"
+                             name="gates_prologue_new::gate_19th_1_corridor_closed_a"
+                             pxsl_line="378" />
+                    </Object>
+                    <Object
+                         pxsl_line="379">
+                        <QuestObject
+                             class="ModelObject"
+                             name="gates_prologue_new::gate_19th_1_corridor_closed_b"
+                             pxsl_line="379" />
+                    </Object>
+                    <Object
+                         pxsl_line="380">
+                        <QuestObject
+                             class="ModelObject"
+                             name="gates_prologue_new::gate_19th_1_prologue_doors_lock_a"
+                             pxsl_line="380" />
+                    </Object>
+                    <Object
+                         pxsl_line="381">
+                        <QuestObject
+                             class="ModelObject"
+                             name="gates_prologue_new::gate_19th_1_prologue_doors_lock_b"
+                             pxsl_line="381" />
+                    </Object>
+                    <Object
+                         pxsl_line="382">
+                        <QuestObject
+                             class="ModelObject"
+                             name="gates_prologue_new::gate_19th_2_corridor_closed_a"
+                             pxsl_line="382" />
+                    </Object>
+                    <Object
+                         pxsl_line="383">
+                        <QuestObject
+                             class="ModelObject"
+                             name="gates_prologue_new::gate_19th_2_corridor_closed_b"
+                             pxsl_line="383" />
+                    </Object>
+                    <Object
+                         pxsl_line="384">
+                        <QuestObject
+                             class="ModelObject"
+                             name="gates_prologue_new::gate_19th_2_prologue_doors_lock_a"
+                             pxsl_line="384" />
+                    </Object>
+                    <Object
+                         pxsl_line="385">
+                        <QuestObject
+                             class="ModelObject"
+                             name="gates_prologue_new::gate_19th_2_prologue_doors_lock_b"
+                             pxsl_line="385" />
+                    </Object>
+                </Phase>
+                <Phase
+                     type="appear"
+                     name="_"
+                     mode="show"
+                     pxsl_line="386">
+                    <Object
+                         pxsl_line="387">
+                        <QuestObject
+                             class="ModelObject"
+                             name="gates_prologue_new::gate_19th_1_corridor_opened_a"
+                             pxsl_line="387" />
+                    </Object>
+                    <Object
+                         pxsl_line="388">
+                        <QuestObject
+                             class="ModelObject"
+                             name="gates_prologue_new::gate_19th_1_corridor_opened_b"
+                             pxsl_line="388" />
+                    </Object>
+                    <Object
+                         pxsl_line="389">
+                        <QuestObject
+                             class="ModelObject"
+                             name="gates_prologue_new::gate_19th_2_corridor_opened_a"
+                             pxsl_line="389" />
+                    </Object>
+                    <Object
+                         pxsl_line="390">
+                        <QuestObject
+                             class="ModelObject"
+                             name="gates_prologue_new::gate_19th_2_corridor_opened_b"
+                             pxsl_line="390" />
                     </Object>
                 </Phase>
                 <Phase
                      type="checkpoint"
                      name="_"
-                     pxsl_line="355">
+                     pxsl_line="393">
                     <Destination
-                         pxsl_line="355">
+                         pxsl_line="393">
                         <QuestObject
                              class="SpawnPoint"
                              name="MapStart"
-                             pxsl_line="355" />
+                             pxsl_line="393" />
                     </Destination>
                 </Phase>
             </Path>

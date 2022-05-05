@@ -7527,11 +7527,11 @@ sub main()
         DamageRange(25.0);
         PhysicsDamageMul(0.0);
         FF_EffectName("Throw_Knife");
-        DamageDuration(14.0);
+        DamageDuration(14.0); 
         DamagerTakesNoDamage(true);
         ThrowImpulseLook(13.0);
         ThrowImpulseUp(2.0);
-        ExplodeDelay(10.0);
+        ExplodeDelay(14.0); 
         StatsType(StatsType_None);
         NoiseType("NONE");
         Color(Color_White);
@@ -9110,7 +9110,47 @@ sub main()
         DimLightRangeLogic(5.0);
     }
 
-    Item("Bundle_Medkit", CategoryType_ItemBundle)
+    Item("zzz_Flashlight_NIGHTMARE", CategoryType_Flashlight)
+    {
+        Visibility(true);
+        ItemType(ItemType_Flashlight);
+        Price(0);
+        PhysicsScript("single_dropped_inventory.phx");
+        LightFullColor([255.0,255.0,255.0]);
+        LightDimColor([200.0,195.0,190.0]);
+        LightBeamColor([32.0,32.0,32.0]);
+        LightZombieVisionColor([47.0,47.0,47.0]);
+        LightBeamZombieVisionColor([192.0,72.0,0.0]);
+        LightFullIntensity(1.3);
+        LightDimIntensity(0.4);
+        LowBatteryLevel(0.25);
+        DepletionTime(120.0);
+        RegenerationTime(15.0);
+        EnergyConsumeOnStart(0.0);
+        FullLightAngle(30.0);
+        DimLightAngle(30.0);
+        FullLightRange(30.0);
+        DimLightRange(30.0);
+        FullLightDamage(0.0);
+        DimLightDamage(0.0);
+        Mesh("craft_box_a.msh");
+        HudIcon("equipment_flashlight");
+        Skin("default");
+        EquipmentSlot(1);
+        CanWorkWhenFullyDrained(true);
+        CanRegenerate(true);
+        RegenerationDelay(0.0);
+        RegenTimeFullyDrained(15.0);
+        RegenDelayFullyDrained(0.0);
+        MinChargeOnFullyDrained(0.2);
+        FullLightAngleLogic(20.0);
+        DimLightAngleLogic(10.0);
+        FullLightRangeLogic(16.0);
+        DimLightRangeLogic(5.0);
+		GameVersion(47); 
+    }
+	
+	Item("Bundle_Medkit", CategoryType_ItemBundle)
     {
         ItemType(ItemType_ItemBundle);
         BundleItems()

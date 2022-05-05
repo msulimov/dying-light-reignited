@@ -39,7 +39,10 @@
 
 !include("M_FPP_Selfie.scr")
 
+
 !include("M_FPP_InfectedFists.scr")
 
 !include("M_FPP_Gnome.scr")
 !include("M_FPP_Railgun.scr")
+!include("M_FPP_Singleshot.scr")
+!include("M_FPP_GrenadeLauncher.scr")

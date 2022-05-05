@@ -27,6 +27,7 @@
             <FileGroup Platform="Orbis"   Source="sce_sys\trophy\*" />
             <FileGroup Platform="Orbis"   Source="sce_sys\changeinfo\changeinfo_log_{REGION}_{PRODUCT}.bin" Destination="sce_sys\changeinfo\changeinfo.xml" Flags="PatchOnly"/>
             <FileGroup Platform="Orbis"   Source="sce_module\*" />
+			<FileGroup Platform="Orbis"   Source="prx\*" />
             <FileGroup Platform="Orbis"   Source="DW\Data\session_image_{PRODUCT}.jpg" Destination="DW\Data\session_image.jpg" Mandatory="true" />
         </Chunk>
         
@@ -227,7 +228,8 @@
             <FileGroup Platform="Orbis" Source="..\#meta\pkg\{CONFIGURATION}_{REGION}_{PRODUCT}\Data3.pak" Destination="DW\"/>
             <!-- files patching DLCs -->
             <FileGroup Source="DW_DLC16\*" Recursive="true" Flags="PatchOnly" ExcludeFiles=".*\.rpack"/>
-            <FileGroup Source="DW_DLC17\*" Recursive="true" Flags="PatchOnly" ExcludeFiles=".*\.rpack;DW_DLC17\\DataJp\\Data\\Maps\\common_texts_all_DLC17\.bin;DW_DLC17\\DataJp\\Data\\Maps\\wasteland_final_texts_all\.bin;DW_DLC17\\DataJp\\Data\\Maps\\wasteland_texts_all\.bin" />
+            <FileGroup Platform="Orbis" Source="DW_DLC17\*" Recursive="true" Flags="PatchOnly" ExcludeFiles=".*\.rpack;DW_DLC17\\DataJp\\Data\\Maps\\common_texts_all_DLC17\.bin;DW_DLC17\\DataJp\\Data\\Maps\\wasteland_final_texts_all\.bin;DW_DLC17\\DataJp\\Data\\Maps\\wasteland_texts_all\.bin" />
+            <FileGroup Platform="Durango" Source="DW_DLC17\*" Recursive="true" Flags="PatchOnly" ExcludeFiles="DW_DLC17\\DataJp\\Data\\Maps\\common_texts_all_DLC17\.bin;DW_DLC17\\DataJp\\Data\\Maps\\wasteland_final_texts_all\.bin;DW_DLC17\\DataJp\\Data\\Maps\\wasteland_texts_all\.bin" />
         </Chunk>
         
         <Chunk Name="data" Label="All data packs" Priority="1">
@@ -742,7 +744,7 @@
         <StorageType>bd25</StorageType>
         <AppType>full</AppType>
         <AppPath>\\techland.com.pl\Archiwum\builds\DyingLight\_Masters\Sony\NA_SA_EU\DW_PS4_20141203_001634_849624_RC2_FIXED_4_PKG_RWDI_EU\EP1018-CUSA00050_00-DYINGLIGHTGAME00.pkg</AppPath>
-        <LatestPatchPath>\\builds.bk\builds_techland\elevated\DL\LatestPatch\PS4\EP1018-CUSA00050_00-DYINGLIGHTGAME00-A0133-V0100.pkg</LatestPatchPath>
+        <LatestPatchPath>\\builds.bk\builds_techland\elevated\DL\LatestPatch\PS4\EP1018-CUSA00050_00-DYINGLIGHTGAME00-A0138-V0100.pkg</LatestPatchPath>
         <VolumeType>pkg_ps4_app</VolumeType>
         <VolumeTypePatch>pkg_ps4_patch</VolumeTypePatch>
         <StartChunkId>0</StartChunkId>
@@ -759,7 +761,7 @@
         <StorageType>bd25</StorageType>
         <AppType>full</AppType>
         <AppPath>\\techland.com.pl\Archiwum\builds\DyingLight\_Masters_DLEE\Sony\EU_NA_SA\DW_PS4_20151202_001604_1116875_DLEE_FIXED_5_PKG_RWDI_EU_DLEE\EP1018-CUSA03991_00-DLEEGAME00000000-A0100-V0100.pkg</AppPath>
-        <LatestPatchPath>\\builds.bk\builds_techland\elevated\DL\LatestPatch\PS4\EP1018-CUSA03991_00-DLEEGAME00000000-A0128-V0100.pkg</LatestPatchPath>
+        <LatestPatchPath>\\builds.bk\builds_techland\elevated\DL\LatestPatch\PS4\EP1018-CUSA03991_00-DLEEGAME00000000-A0132-V0100.pkg</LatestPatchPath>
         <VolumeType>pkg_ps4_app</VolumeType>
         <VolumeTypePatch>pkg_ps4_patch</VolumeTypePatch>
         <StartChunkId>0</StartChunkId>
@@ -777,7 +779,7 @@
         <StorageType>bd25</StorageType>
         <AppType>full</AppType>
         <AppPath>\\techland.com.pl\Archiwum\builds\DyingLight\_Masters\Sony\EU2\DW_PS4_20150115_001623_882249_D1_FIXED_4_PKG_RWDI_EU2\EP1018-CUSA02010_00-DYINGLIGHTGAME00.pkg</AppPath>
-        <LatestPatchPath>\\builds.bk\builds_techland\elevated\DL\LatestPatch\PS4\EP1018-CUSA02010_00-DYINGLIGHTGAME00-A0134-V0100.pkg</LatestPatchPath>
+        <LatestPatchPath>\\builds.bk\builds_techland\elevated\DL\LatestPatch\PS4\EP1018-CUSA02010_00-DYINGLIGHTGAME00-A0138-V0100.pkg</LatestPatchPath>
         <VolumeType>pkg_ps4_app</VolumeType>
         <VolumeTypePatch>pkg_ps4_patch</VolumeTypePatch>
         <StartChunkId>0</StartChunkId>
@@ -795,7 +797,7 @@
         <StorageType>bd25</StorageType>
         <AppType>full</AppType>
         <AppPath>\\techland.com.pl\Archiwum\builds\DyingLight\_Masters\Sony\NA_SA_EU\DW_PS4_20141203_001634_849624_RC2_FIXED_4_PKG_RWDI_NA\UP1018-CUSA00078_00-DYINGLIGHTGAME00.pkg</AppPath>
-        <LatestPatchPath>\\builds.bk\builds_techland\elevated\DL\LatestPatch\PS4\UP1018-CUSA00078_00-DYINGLIGHTGAME00-A0136-V0100.pkg</LatestPatchPath>
+        <LatestPatchPath>\\builds.bk\builds_techland\elevated\DL\LatestPatch\PS4\UP1018-CUSA00078_00-DYINGLIGHTGAME00-A0141-V0100.pkg</LatestPatchPath>
         <VolumeType>pkg_ps4_app</VolumeType>
         <VolumeTypePatch>pkg_ps4_patch</VolumeTypePatch>
         <StartChunkId>0</StartChunkId>        
@@ -811,7 +813,7 @@
         <StorageType>bd25</StorageType>
         <AppType>full</AppType>
         <AppPath>\\techland.com.pl\Archiwum\builds\DyingLight\_Masters_DLEE\Sony\EU_NA_SA\DW_PS4_20151202_001604_1116875_DLEE_FIXED_5_PKG_RWDI_NA_DLEE\UP1018-CUSA03946_00-DLEEGAME00000000-A0100-V0100.pkg</AppPath>
-        <LatestPatchPath>\\builds.bk\builds_techland\elevated\DL\LatestPatch\PS4\UP1018-CUSA03946_00-DLEEGAME00000000-A0130-V0100.pkg</LatestPatchPath>
+        <LatestPatchPath>\\builds.bk\builds_techland\elevated\DL\LatestPatch\PS4\UP1018-CUSA03946_00-DLEEGAME00000000-A0134-V0100.pkg</LatestPatchPath>
         <VolumeType>pkg_ps4_app</VolumeType>
         <VolumeTypePatch>pkg_ps4_patch</VolumeTypePatch>
         <StartChunkId>0</StartChunkId>        
@@ -828,7 +830,7 @@
         <StorageType>bd25</StorageType>
         <AppType>full</AppType>
         <AppPath>\\techland.com.pl\Archiwum\builds\DyingLight\_Masters\Sony\NA_SA_EU\DW_PS4_20141203_001634_849624_RC2_FIXED_4_PKG_RWDI_SA\UP1018-CUSA01473_00-DYINGLIGHTGAME00.pkg</AppPath>
-        <LatestPatchPath>\\builds.bk\builds_techland\elevated\DL\LatestPatch\PS4\UP1018-CUSA01473_00-DYINGLIGHTGAME00-A0135-V0100.pkg</LatestPatchPath>
+        <LatestPatchPath>\\builds.bk\builds_techland\elevated\DL\LatestPatch\PS4\UP1018-CUSA01473_00-DYINGLIGHTGAME00-A0139-V0100.pkg</LatestPatchPath>
         <VolumeType>pkg_ps4_app</VolumeType>
         <VolumeTypePatch>pkg_ps4_patch</VolumeTypePatch>
         <StartChunkId>0</StartChunkId>        
@@ -844,7 +846,7 @@
         <StorageType>bd25</StorageType>
         <AppType>full</AppType>
         <AppPath>\\techland.com.pl\Archiwum\builds\DyingLight\_Masters_DLEE\Sony\EU_NA_SA\DW_PS4_20151202_001604_1116875_DLEE_FIXED_5_PKG_RWDI_SA_DLEE\UP1018-CUSA03977_00-DLEEGAME00000000-A0100-V0100.pkg</AppPath>
-        <LatestPatchPath>\\builds.bk\builds_techland\elevated\DL\LatestPatch\PS4\UP1018-CUSA03977_00-DLEEGAME00000000-A0128-V0100.pkg</LatestPatchPath>
+        <LatestPatchPath>\\builds.bk\builds_techland\elevated\DL\LatestPatch\PS4\UP1018-CUSA03977_00-DLEEGAME00000000-A0132-V0100.pkg</LatestPatchPath>
         <VolumeType>pkg_ps4_app</VolumeType>
         <VolumeTypePatch>pkg_ps4_patch</VolumeTypePatch>        
         <StartChunkId>0</StartChunkId>        
@@ -861,7 +863,7 @@
         <StorageType>bd25</StorageType>
         <AppType>full</AppType>
         <AppPath>\\techland.com.pl\Archiwum\builds\DyingLight\_Masters\Sony\JP\DW_PS4_20150220_001645_905872_JP_SUB_V3_PKG_RWDI_JP\JP0012-CUSA01090_00-DYINGLIGHTGAME00.pkg</AppPath>
-        <LatestPatchPath>\\builds.bk\builds_techland\elevated\DL\LatestPatch\PS4\JP0012-CUSA01090_00-DYINGLIGHTGAME00-A0128-V0100.pkg</LatestPatchPath>
+        <LatestPatchPath>\\builds.bk\builds_techland\elevated\DL\LatestPatch\PS4\JP0012-CUSA01090_00-DYINGLIGHTGAME00-A0132-V0100.pkg</LatestPatchPath>
         <VolumeType>pkg_ps4_app</VolumeType>
         <VolumeTypePatch>pkg_ps4_patch</VolumeTypePatch>
         <StartChunkId>0</StartChunkId>        
@@ -877,7 +879,7 @@
         <StorageType>bd25</StorageType>
         <AppType>full</AppType>
         <AppPath>\\techland.com.pl\Archiwum\builds\DyingLight\_Masters_DLEE\Sony\JP\DW_PS4_20160122_054956_1151053_EE1_JP_FIXED_8_PKG_RWDI_JP_DLEE\JP0012-CUSA04298_00-DLEEGAME00000000-A0100-V0100.pkg</AppPath>
-        <LatestPatchPath>\\builds.bk\builds_techland\elevated\DL\LatestPatch\PS4\JP0012-CUSA04298_00-DLEEGAME00000000-A0123-V0100.pkg</LatestPatchPath>
+        <LatestPatchPath>\\builds.bk\builds_techland\elevated\DL\LatestPatch\PS4\JP0012-CUSA04298_00-DLEEGAME00000000-A0127-V0100.pkg</LatestPatchPath>
         <VolumeType>pkg_ps4_app</VolumeType>
         <VolumeTypePatch>pkg_ps4_patch</VolumeTypePatch>
         <StartChunkId>0</StartChunkId>        

@@ -25,7 +25,7 @@ sub main()
 		RequiredItem("Craft_PlasticTube", 1);
         Color(Color_Blue);
         CraftedItem("Melee_Wrench_Inmate", 1, 1);
-		CraftplanType("WeaponDLC");
+		CraftplanType("Collectables_DLC45");
         InheritBaseStats();
         UniqueSaveID(9556);
         HudIcon("blueprint_b");
@@ -47,7 +47,7 @@ sub main()
 		RequiredItem("Craft_DuctTape", 1);
         Color(Color_Blue);
         CraftedItem("Melee_ShortKnife_Inmate", 1, 1);
-		CraftplanType("WeaponDLC");
+		CraftplanType("Collectables_DLC45");
         InheritBaseStats();
         UniqueSaveID(9557);
         HudIcon("blueprint_b");
@@ -68,7 +68,7 @@ sub main()
         RequiredItem("Craft_DuctTape", 3);
         Color(Color_Blue);
         CraftedItem("Firearm_Rifle_Inmate", 1, 1);
-		CraftplanType("WeaponDLC");
+		CraftplanType("Collectables_DLC45");
         InheritBaseStats();
         UniqueSaveID(9558);
         HudIcon("blueprint_b");

@@ -21,7 +21,7 @@ sub main()
 		RequiredItem("Craft_Bleach", 2);
         Color(Color_Blue);
         CraftedItem("Melee_Cane_SpecialAgent", 1, 1);
-		CraftplanType("WeaponDLC");
+		CraftplanType("Collectables_DLC57");
         InheritBaseStats();
         UniqueSaveID(9921);
         HudIcon("blueprint_a");
@@ -41,7 +41,7 @@ sub main()
         RequiredItem("Craft_DuctTape", 3);
         BaseItem("Firearm_Submachine", "", "");
         CraftedItem("Firearm_SubmachineA_SpecialAgent", 1, 1);
-        CraftplanType("WeaponDLC");
+        CraftplanType("Collectables_DLC57");
 		Color(Color_Blue);
         UniqueSaveID(9922);
         HudIcon("blueprint_a");
@@ -64,7 +64,7 @@ sub main()
 		RequiredItem("Craft_Bleach", 1);
         Color(Color_Blue);
         CraftedItem("Firearm_PistolASilenced_SpecialAgent", 1, 1);
-        CraftplanType("WeaponDLC");
+        CraftplanType("Collectables_DLC57");
         UniqueSaveID(9923);
         HudIcon("blueprint_a");
         GameVersion(34);

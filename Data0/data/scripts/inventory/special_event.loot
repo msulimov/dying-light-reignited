@@ -8,7 +8,80 @@ import "containers_object_type.def"
 //////////////////////////////////
 
 sub default()
-{	
+{		
+	
+	LootedObject("Loot_Spike_Weapon_StageI")
+    {
+    	ColorSet(ColorSet_PlatinumOnly);
+
+        Set(Weapon, 1.0, 1.0)
+        {
+            Item("Spike_Weapon_First", 1); 
+        }
+    }
+
+	//Local quest Winters event 2021 - gold versions - duplicates
+	LootedObject("Loot_Melee_BigHammer_Tactical_Gold")
+    {
+    	ColorSet(ColorSet_PlatinumOnly);
+
+        Set(Weapon, 1.0, 1.0)
+        {
+            Item("ZZZZ_Melee_BigHammer_Tactical_Gold", 1); 
+        }
+    }
+
+	LootedObject("Loot_Firearm_Rifle_Retro_Gold")
+    {
+    	ColorSet(ColorSet_PlatinumOnly);
+
+        Set(Weapon, 1.0, 1.0)
+        {
+            Item("Firearm_Rifle_Retro_Gold", 1); 
+        }
+    }
+	
+	LootedObject("Loot_Melee_ShortAxe_Savvy_Gold")
+    {
+    	ColorSet(ColorSet_PlatinumOnly);
+
+        Set(Weapon, 1.0, 1.0)
+        {
+            Item("Melee_ShortAxe_Savvy_Gold", 1); 
+        }
+    }
+
+		
+	LootedObject("Loot_Firearm_Pistol_Astronaut_Gold")
+    {
+    	ColorSet(ColorSet_PlatinumOnly);
+
+        Set(Weapon, 1.0, 1.0)
+        {
+            Item("Firearm_Pistol_Astronaut_Gold", 1); 
+        }
+    }
+	
+	LootedObject("Loot_Melee_AxeBig_Viking_Gold")
+    {
+    	ColorSet(ColorSet_PlatinumOnly);
+
+        Set(Weapon, 1.0, 1.0)
+        {
+            Item("Melee_AxeBig_Viking_Gold", 1); 
+        }
+    }
+
+	//Local quest Halloween event 2021 - gold sword
+	LootedObject("Loot_Melee_Sword_VanCrane")
+    {
+    	ColorSet(ColorSet_PlatinumOnly);
+
+        Set(Weapon, 1.0, 1.0)
+        {
+            Item("Sword_VanCrane_Gold", 1); 
+        }
+    }
 
 	
 	//Local quest Low Gravity event - gold machete

@@ -102,7 +102,7 @@ sub main()
         ProgressType("number");
         Category("Bounty");
         BountyType("Special");
-		IsNotRecyclable();
+		//IsNotRecyclable(); //Allow rep-lay it because some ppl have problem with craftplan
         Tag("Hellraid");
 		MinHellraidRank(10);
 

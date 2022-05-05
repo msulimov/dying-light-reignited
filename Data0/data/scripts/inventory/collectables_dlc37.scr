@@ -16,7 +16,7 @@ sub main()
         RequiredItem("Craft_DuctTape", 3);
         Color(Color_Blue);
         CraftedItem("Firearm_Rifle_AddOn_Winter", 1, 1);
-        CraftplanType("WeaponDLC");
+        CraftplanType("Collectables_DLC37");
         UniqueSaveID(3087);
         HudIcon("blueprint_b");
         GameVersion(22);
@@ -39,7 +39,7 @@ sub main()
         RequiredItem("Craft_DuctTape", 3);
         Color(Color_Blue);
         CraftedItem("Melee_Machete_AddOn_Winter", 1, 1);
-        CraftplanType("WeaponDLC");
+        CraftplanType("Collectables_DLC37");
         UniqueSaveID(3088);
         HudIcon("blueprint_b");
         GameVersion(22);
@@ -60,7 +60,7 @@ sub main()
         RequiredItem("Craft_DuctTape", 3);
         Color(Color_Blue);
         CraftedItem("Melee_Knife_AddOn_Winter", 1, 1);
-        CraftplanType("WeaponDLC");
+        CraftplanType("Collectables_DLC37");
         UniqueSaveID(3089);
         HudIcon("blueprint_b");
         GameVersion(22);

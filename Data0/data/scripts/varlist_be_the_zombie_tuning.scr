@@ -158,7 +158,7 @@ VarFloat("f_btz_zombie_ropeloco_fitness_cost_while_active", 0.0)
 VarFloat("f_btz_zombie_ropeloco_fitness_connection_cost", 0.0)
 
 // Multiplier applied to Hunter's rope locomotion velocity when he is in water.
-VarFloat("f_btz_zombie_ropeloco_velocity_water_scale", 0.5)
+VarFloat("f_btz_zombie_ropeloco_velocity_water_scale", 0.75)
 
 // The amount of time (in seconds) Hunter will stay connected to and pull on the rope during rope locomotion
 // if the input is tapped instead of being held.
@@ -200,7 +200,7 @@ VarFloat("f_btz_zombie_move_motion_trail_strength_fully_drained", 0.5)
 VarFloat("f_btz_zombie_move_motion_trail_strength_uv_block", 0.05)
 
 // Targeting window for Hunter's pounce (how long a valid target remains valid)
-VarFloat("f_btz_zombie_grab_valid_target_grace_period", 0.25)
+VarFloat("f_btz_zombie_grab_valid_target_grace_period", 0.2)
 
 VarFloat("f_btz_pvp_grab_sim_pos_angle_max_increase", 25.0)
 
@@ -213,10 +213,10 @@ VarFloat("f_btz_zombie_grab_angle_max", 45.0)
 VarFloat("f_btz_wrestling_kick_range", 3.1)
 VarFloat("f_btz_wrestling_kick_range_velocity_factor", 0.0)
 VarFloat("f_btz_wrestling_kick_angle_max", 22.0)
-VarFloat("f_btz_human_wrestling_kick_damage", 30.0)
+VarFloat("f_btz_human_wrestling_kick_damage", 40.0)
 
 //Human jump attack grab params
-VarFloat("f_btz_jump_attack_min_fall_speed", 11.0)
+VarFloat("f_btz_jump_attack_min_fall_speed", 12.0)
 VarFloat("f_btz_jump_attack_source_position_forward_offset", 0.5)
 VarFloat("f_btz_jump_attack_range", 0.5)
 VarFloat("f_btz_jump_attack_range_velocity_factor", 0.05)
@@ -240,7 +240,7 @@ VarInt("i_btz_1on1_pounces_are_critical", 0)
 VarFloat("f_btz_zombie_grab_succeeded_stamina_penalty", 0.0)
 
 // Hunter is interrupted by other player's while mid-grab
-VarFloat("f_btz_zombie_grab_interrupted_stamina_penalty", 0.1)
+VarFloat("f_btz_zombie_grab_interrupted_stamina_penalty", 0.0)
 
 // How far from the victim is Hunter snapped to
 VarFloat("f_btz_zombie_grab_position_distance_to_victim", 1.0)
@@ -267,9 +267,9 @@ VarFloat("f_btz_zombie_grab_water_deceleration_y", 1.0)
 VarFloat("f_btz_invalid_brood_kill_time_out", 10.0)
 
 // human side grab minigame info
-VarFloat("f_btz_human_grab_difficulty_hard", 4.3)
-VarFloat("f_btz_human_grab_difficulty_easy", 4.3)
-VarFloat("f_btz_human_grab_time_to_easy", 4.0)
+VarFloat("f_btz_human_grab_difficulty_hard", 8.0)
+VarFloat("f_btz_human_grab_difficulty_easy", 8.0)
+VarFloat("f_btz_human_grab_time_to_easy", 1000.0)
 VarFloat("f_btz_human_grab_min_time_between_attacks", 0.6)
 
 //Debug only
@@ -283,15 +283,15 @@ VarFloat("f_btz_zombie_grab_queue_attack_start_time_max", 0.2)
 
 // For calculating how to affect Hunter's velocity based on how close he is to the victim
 VarFloat("f_btz_zombie_leapfrog_velclamp_distance_min", 1.0)
-VarFloat("f_btz_zombie_leapfrog_velclamp_distance_max", 8.0)
+VarFloat("f_btz_zombie_leapfrog_velclamp_distance_max", 10.0)
 VarFloat("f_btz_zombie_leapfrog_velclamp_velocity_min", 10.0)
-VarFloat("f_btz_zombie_leapfrog_velclamp_velocity_max", 12.0)
+VarFloat("f_btz_zombie_leapfrog_velclamp_velocity_max", 15.0)
 
 // The minimum speed at which Hunter will pounce on the victim
-VarFloat("f_btz_zombie_attacker_velocity_min", 12.0)
+VarFloat("f_btz_zombie_attacker_velocity_min", 12.2)
 
 // how much to dampen the incoming velocity when entering the tackle state on a PVP grab
-VarFloat("f_btz_high_rage_tackle_dampening", 0.5)
+VarFloat("f_btz_high_rage_tackle_dampening", 0.75)
 
 // How much you have to be pushing the stick
 VarFloat("f_btz_zombie_leapfrog_stick_deflection_min", 0.4)
@@ -303,7 +303,7 @@ VarFloat("f_btz_zombie_leapfrog_direction_angle_range_max", 360.0)
 VarInt("f_btz_use_fixed_velocity", 1)           // Determines whether spits use fixed velocities or does predictive velocity to hit target point
 VarFloat("f_btz_fixed_velocity_up", 2.0)        // When using fixed velocity it determines how much +y velocity is added 
 VarFloat("f_btz_fixed_velocity_forward", 15.0)  // When using fixed velocity this determines the forward velocity
-VarFloat("f_btz_spit_charge_additinal_vel", 20.0)  // When using fixed velocity this is how much extra velocity you get for fully charging the spit
+VarFloat("f_btz_spit_charge_additinal_vel", 35.0)  // When using fixed velocity this is how much extra velocity you get for fully charging the spit
 VarFloat("f_btz_spit_charge_start_time", 0.2)  //  How long you have to hold the button to be considered starting a charge spit. time buffer for tapping the spit so you always get a consistent velocity for taps
 
 VarFloat("f_btz_spit_player_velocity_factor", 0.4)  // When using fixed velocity this determines how much of the players velocity is added to the spit as it is thrown
@@ -320,15 +320,15 @@ VarInt("i_btz_invasion_enable_frequency", 3)
 // Is the BtZ quest disabled or enabled in the in-game quest menu.
 VarInt("i_btz_quest_disabled", 0)
 
-VarFloat("f_btz_pvp_grab_collision_delay_time", 0.5)
+VarFloat("f_btz_pvp_grab_collision_delay_time", 0.75)
 
 // Groundpound stuff
 VarFloat("f_btz_zombie_groundpound_knockdown_physics_damage", 200.0)
-VarFloat("f_btz_zombie_groundpound_damage_height", 2.0)
+VarFloat("f_btz_zombie_groundpound_damage_height", 1.95)
 VarInt("i_btz_zombie_groundpound_use_knockdown_version", 1)
 VarInt("i_btz_zombie_groundpound_as_melee", 1)
-VarFloat("f_btz_air_groundpound_acceleration", 35.0)
-VarFloat("f_btz_air_uv_heal_acceleration", 70.0)
+VarFloat("f_btz_air_groundpound_acceleration", 40.0)
+VarFloat("f_btz_air_uv_heal_acceleration", 80.0)
 
 VarFloat("f_btz_zombie_groundpound_no_stamina_range_scale", 1)
 VarFloat("f_btz_zombie_groundpound_no_stamina_damage_scale", 0.66)
@@ -516,7 +516,7 @@ VarFloat("f_btz_pvpgrab_zombie_player_interrupt_impulse_y", 6.0)
 
 // The number of meters we want to offset off the ground the raytraces performed to see if the
 // player has a clear path to the spikes (these raytraces are a poor man's volume sweep).
-VarFloat("f_btz_pvpgrab_spikes_raytrace_offset_y", 1.0)
+VarFloat("f_btz_pvpgrab_spikes_raytrace_offset_y", 0.08)
 
 // The number of raytrace arcs around the main raytrace arc that should be performed (so the total
 // number of raytrace arcs is this number plus one). All additional raytrace arcs are placed evenly
@@ -532,8 +532,8 @@ VarFloat("f_btz_pvpgrab_spikes_raytrace_time_slice", 0.05)
 
 // For how long (in terms of the player flying after being tackled) do we search for in-range
 // spikes (the longer we search for, the more expensive things get).
-VarFloat("f_btz_pvpgrab_spikes_search_time", 4.0)
-VarFloat("f_btz_pvpgrab_spikes_interrupt_search_distance_xz", 6.0)
+VarFloat("f_btz_pvpgrab_spikes_search_time", 350.0)
+VarFloat("f_btz_pvpgrab_spikes_interrupt_search_distance_xz", 3.3)
 
 // The minimum max distance from the player's path spike distances are compared against to check
 // whether they're close enough to the player's path to be considered.
@@ -543,8 +543,8 @@ VarFloat("f_btz_pvpgrab_spikes_distance_to_path_max_min", 1.0)
 // towards them.
 VarFloat("f_btz_pvpgrab_spikes_collision_reenable_distance", 0.1)
 
-VarFloat("f_btz_dying_mini_game_min_speed", 0.3)
-VarFloat("f_btz_dying_mini_game_max_speed", 3.0)
+VarFloat("f_btz_dying_mini_game_min_speed", 1.5)
+VarFloat("f_btz_dying_mini_game_max_speed", 1.5)
 VarFloat("f_btz_dying_mini_game_min_time", 15.0)
 VarFloat("f_btz_dying_mini_game_max_speed_time", 130.0)
 
@@ -603,7 +603,7 @@ VarFloat("cam_end_game_slow_mo_amount", 0.1)
 
 
 // PLAYER_HIT_CAMERA /////////////
-VarFloat("cam_player_hit_focus_duration", 0.4)
+VarFloat("cam_player_hit_focus_duration", 0.35)
 VarString("cam_player_hit_focus_bone", "SPINE3")
 VarInt("cam_player_hit_control_body", 0)
 
@@ -631,16 +631,16 @@ VarFloat("cam_player_hit_slow_mo_amount", 0.1)
 
 
 // THIRD_PARTY_INTERRUPT_CAMERA /////////////
-VarFloat("cam_third_party_interrupt_focus_duration", 1.6)
+VarFloat("cam_third_party_interrupt_focus_duration", 0.0)
 VarString("cam_third_party_interrupt_focus_bone", "SPINE3")
 VarInt("cam_third_party_interrupt_control_body", 0)
 
-VarInt("cam_third_party_interrupt_set_look_spring", 1)
+VarInt("cam_third_party_interrupt_set_look_spring", 0)
 VarFloat("cam_third_party_interrupt_look_spring_start", 1.0)
 VarFloat("cam_third_party_interrupt_look_spring_end", 0.1)
 VarFloat("cam_third_party_interrupt_time_to_look_spring_end", 0.3)
 
-VarInt("cam_third_party_interrupt_set_camera_zoom", 1)
+VarInt("cam_third_party_interrupt_set_camera_zoom", 0)
 VarFloat("cam_third_party_interrupt_zoom_max", 8.0)
 VarFloat("cam_third_party_interrupt_zoom_min", 1.0)
 VarFloat("cam_third_party_interrupt_dist_for_zoom_max", 50.0)
@@ -650,11 +650,11 @@ VarFloat("cam_third_party_interrupt_zoom_in_time", 0.4)
 VarFloat("cam_third_party_interrupt_zoom_out_time", 0.6)
 VarFloat("cam_third_party_interrupt_zoom_delay", 0.2)
 
-VarInt("cam_third_party_interrupt_set_slow_mo", 1)
-VarFloat("cam_third_party_interrupt_slow_mo_length", 1.0)
-VarFloat("cam_third_party_interrupt_slow_mo_in", 0.5)
-VarFloat("cam_third_party_interrupt_slow_mo_out", 0.5)
-VarFloat("cam_third_party_interrupt_slow_mo_amount", 0.1)
+VarInt("cam_third_party_interrupt_set_slow_mo", 0)
+VarFloat("cam_third_party_interrupt_slow_mo_length", 0.0)
+VarFloat("cam_third_party_interrupt_slow_mo_in", 0.0)
+VarFloat("cam_third_party_interrupt_slow_mo_out", 0.0)
+VarFloat("cam_third_party_interrupt_slow_mo_amount", 0.0)
 //End THIRD_PARTY_INTERRUPT_CAMERA //////////////
 
 
@@ -688,7 +688,7 @@ VarFloat("cam_death_slow_mo_amount", 0.1)
 
 
 // KILL_CAMERA /////////////
-VarFloat("cam_pvp_kill_focus_duration", 1.0)
+VarFloat("cam_pvp_kill_focus_duration", 0.75)
 VarString("cam_pvp_kill_focus_bone", "SPINE3")
 VarInt("cam_pvp_kill_control_body", 0)
 
@@ -716,7 +716,7 @@ VarFloat("cam_pvp_kill_slow_mo_amount", 0.1)
 
 
 // SPIKE_KILL_PREP_CAMERA /////////////
-VarFloat("cam_spike_kill_prep_focus_duration", 3.0)
+VarFloat("cam_spike_kill_prep_focus_duration", 0.0)
 VarString("cam_spike_kill_prep_focus_bone", "SPINE3")
 VarInt("cam_spike_kill_prep_control_body", 0)
 
@@ -852,30 +852,45 @@ VarFloat("f_molotov_throw_use_amount_btz_2_human", 0.99)
 VarFloat("f_molotov_throw_use_amount_btz_3_human", 1.0)
 VarFloat("f_molotov_throw_use_amount_btz_4_human", 1.0)
 VarFloat("f_molotov_throw_recharge_time", 30.0)
-VarFloat("f_molotov_throw_recharge_delay", 10.0)
+VarFloat("f_molotov_throw_recharge_delay", 1.0)
 VarFloat("f_molotov_throw_recharge_time_drained", 60.0)
-VarFloat("f_molotov_throw_recharge_delay_drained", 10.0)
+VarFloat("f_molotov_throw_recharge_delay_drained", 1.0)
 VarFloat("f_molotov_throw_min_charge_on_drained", 1.0)
 
 VarFloat("f_throwing_star_throw_use_amount", 0.0)
-VarFloat("f_throwing_star_throw_use_amount_btz_1_human", 0.0)
-VarFloat("f_throwing_star_throw_use_amount_btz_2_human", 0.0)
-VarFloat("f_throwing_star_throw_use_amount_btz_3_human", 0.0)
-VarFloat("f_throwing_star_throw_use_amount_btz_4_human", 0.0)
-VarFloat("f_throwing_star_throw_recharge_time", 10.0)
+VarFloat("f_throwing_star_throw_use_amount_btz_1_human", 0.33)
+VarFloat("f_throwing_star_throw_use_amount_btz_2_human", 0.5)
+VarFloat("f_throwing_star_throw_use_amount_btz_3_human", 0.7)
+VarFloat("f_throwing_star_throw_use_amount_btz_4_human", 0.99)
+VarFloat("f_throwing_star_throw_recharge_time", 20.0)
 VarFloat("f_throwing_star_throw_recharge_delay", 1.0)
-VarFloat("f_throwing_star_throw_recharge_time_drained", 15.0)
+VarFloat("f_throwing_star_throw_recharge_time_drained", 40.0)
 VarFloat("f_throwing_star_throw_recharge_delay_drained", 1.0)
 VarFloat("f_throwing_star_throw_min_charge_on_drained", 1.0)
+
+VarFloat("f_magic_wand_throw_use_amount", 0.4)
+VarFloat("f_magic_wand_throw_use_amount_btz_1_human", 0.4)
+VarFloat("f_magic_wand_throw_use_amount_btz_2_human", 0.4)
+VarFloat("f_magic_wand_throw_use_amount_btz_3_human", 0.4)
+VarFloat("f_magic_wand_throw_use_amount_btz_4_human", 0.4)
+VarFloat("f_magic_wand_throw_recharge_time", 10.0)
+VarFloat("f_magic_wand_throw_recharge_delay", 1.0)
+VarFloat("f_magic_wand_throw_recharge_time_drained", 10.0)
+VarFloat("f_magic_wand_throw_recharge_time_drained_btz_1_human", 10.0)
+VarFloat("f_magic_wand_throw_recharge_time_drained_btz_2_human", 10.0)
+VarFloat("f_magic_wand_throw_recharge_time_drained_btz_3_human", 10.0)
+VarFloat("f_magic_wand_throw_recharge_time_drained_btz_4_human", 10.0)
+VarFloat("f_magic_wand_throw_recharge_delay_drained", 1.0)
+VarFloat("f_magic_wand_throw_min_charge_on_drained", 1.0)
 
 VarFloat("f_injector_throw_use_amount", 0.0)
 VarFloat("f_injector_throw_use_amount_btz_1_human", 1.0)
 VarFloat("f_injector_throw_use_amount_btz_2_human", 1.0)
 VarFloat("f_injector_throw_use_amount_btz_3_human", 1.0)
 VarFloat("f_injector_throw_use_amount_btz_4_human", 1.0)
-VarFloat("f_injector_throw_recharge_time", 240.0)
+VarFloat("f_injector_throw_recharge_time", 195.0)
 VarFloat("f_injector_throw_recharge_delay", 1.0)
-VarFloat("f_injector_throw_recharge_time_drained", 240.0)
+VarFloat("f_injector_throw_recharge_time_drained", 195.0)
 VarFloat("f_injector_throw_recharge_delay_drained", 1.0)
 VarFloat("f_injector_throw_min_charge_on_drained", 1.0)
 
@@ -904,9 +919,9 @@ VarFloat("f_btz_hunter_resource_regen_time_rb_max_3_human", 40.0)
 VarFloat("f_btz_hunter_resource_regen_time_rb_min_4_human", 30.0)
 VarFloat("f_btz_hunter_resource_regen_time_rb_max_4_human", 30.0)
 
-VarFloat("f_btz_duration_hunter_gp_cth", 25.0)
-VarFloat("f_btz_duration_hunter_gp_ld", 25.0)
-VarFloat("f_btz_duration_hunter_gp_toxic", 1.0)
+VarFloat("f_btz_duration_hunter_gp_cth", 36.0)
+VarFloat("f_btz_duration_hunter_gp_ld", 36.0)
+VarFloat("f_btz_duration_hunter_gp_toxic", 1.5)
 VarFloat("f_btz_duration_hunter_gp_camo", 600.0)
 
 VarFloat("f_btz_toxic_spit_effect_time", 0.3)
@@ -920,7 +935,7 @@ VarFloat("f_btz_disabled_sonar_range", 2.0)
 VarFloat("f_btz_disabled_sonar_time", 1.01)
 VarFloat("f_btz_disabled_sonar_hold_end_time", 1.0)
 
-VarFloat("f_btz_uv_heal_time", 0.5)
+VarFloat("f_btz_uv_heal_time", 0.27)
 
 VarFloat("f_btz_buggy_damage_from_groundpound", 0.0)
 VarFloat("f_btz_buggy_physics_damage_from_groundpound", 40000.0)
@@ -947,8 +962,8 @@ VarFloat("f_btz_buggy_physics_damage_on_attach", 500000.0)
 VarFloat("f_btz_buggy_damage_per_hit", 0.0)
 VarFloat("f_btz_buggy_physics_damage_per_hit", 100000.0)
 
-VarFloat("f_btz_buggy_driver_damage_per_hit", 0.34)
-VarFloat("f_btz_buggy_passenger_damage_per_hit", 0.34)
+VarFloat("f_btz_buggy_driver_damage_per_hit", 0.47)
+VarFloat("f_btz_buggy_passenger_damage_per_hit", 0.47)
 
 VarFloat("f_btz_buggy_toxic_spit_effect_length", 25.0)
 
@@ -959,11 +974,11 @@ VarFloat("f_btz_buggy_hunter_ram_damage", 50.0)
 VarFloat("f_btz_buggy_knock_off_impulse_horiz", 20.0)
 VarFloat("f_btz_buggy_knock_off_impulse_vert", 3.0)
 
-VarFloat("f_btz_buggy_minigame_tap_value", 0.26)
-VarFloat("f_btz_buggy_minigame_tap_speed_factor", 0.5)
+VarFloat("f_btz_buggy_minigame_tap_value", 0.22)
+VarFloat("f_btz_buggy_minigame_tap_speed_factor", 0.7)
 VarFloat("f_btz_buggy_minigame_spring_strength", 2.0)
-VarFloat("f_btz_buggy_minigame_win_threshold", 0.5)
-VarFloat("f_btz_buggy_minigame_lose_cooldown", 1.0)
+VarFloat("f_btz_buggy_minigame_win_threshold", 1.0)
+VarFloat("f_btz_buggy_minigame_lose_cooldown", 2.5)
 
 VarFloat("f_btz_buggy_pelvis_velocity_spring_attack", 0.5)
 VarFloat("f_btz_buggy_pelvis_velocity_spring", 0.5)
@@ -974,7 +989,7 @@ VarFloat("f_btz_buggy_pelvis_offset_velocity_scale", 0.18)
 VarVec3("f_btz_buggy_pelvis_offset_min", [-0.25,-0.1,-0.1])
 VarVec3("f_btz_buggy_pelvis_offset_max", [0.25,0.2,0.2])
 
-VarFloat("f_btz_buggy_top_speed_mod", 0.8)
+VarFloat("f_btz_buggy_top_speed_mod", 0.6)
 
 VarFloat("s_btz_buggy_respawn_prompt_show_time", 10.0)
 VarFloat("s_btz_buggy_occupied_prompt_show_time", 6.0)
@@ -990,7 +1005,7 @@ VarInt("i_btz_hive_clean_up_enabled", 1)
 
 VarInt("i_btz_endgame_invasion_popup_enabled", 0)
 
-VarFloat("f_btz_groundpound_hit_target_facing_offset", 10.0)
+VarFloat("f_btz_groundpound_hit_target_facing_offset", 20.0)
 
 VarInt("i_btz_turn_detection_enabled", 0)
 VarFloat("f_btz_turn_detection_update_interval", 0.03)

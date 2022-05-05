@@ -1421,7 +1421,13 @@ sub declare_ai_presets()
 	{
 		//SetField ("m_AIType", "human");
 		//SetField ("m_AIPresets", "rust_scientist_melee;rust_scientist_range;rust_scientist_range");
-		SetField ("m_AIPresets", "Viral_Man");//It's replaced to not be gathered in the build, as we used it only for event
+		//SetField ("m_AIPresets", "Viral_Man");//It's replaced to not be gathered in the build, as we used it only for event
+		//SetField ("m_AIPresets", "Volatile_Iced"); //it's replaced to be gathereted in the build for Winter Event
+		SetField("m_AIPresets", "Volatile_Iced");
+        SetField("m_BeforeSpawnSoundStartRange", "30.0");
+        SetField("m_BeforeSpawnSoundStartRangeMin", "15.0");
+        SetField("m_MinAIsToMakeSound", "4");
+        SetField("m_SpawnerBeforeSpawnSounds", "infected_spawner_exterior_00.wav;infected_spawner_exterior_01.wav;infected_spawner_exterior_02.wav;infected_spawner_exterior_03.wav;infected_spawner_exterior_04.wav");
 	}
 
 	Preset ("Astronaut_Event")
@@ -1429,4 +1435,5 @@ sub declare_ai_presets()
 		SetField ("m_AIType", "human");
 		SetField ("m_AIPresets", "astronaut_melee;astronaut_range;astronaut_range");
 	}
+	
 }

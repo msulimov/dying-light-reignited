@@ -19,7 +19,7 @@ sub main()
 		RequiredItem("Craft_PowerCable", 2);
         Color(Color_Blue);
         CraftedItem("Firearm_Rifle_Astronaut", 1, 1);
-        CraftplanType("WeaponDLC");
+        CraftplanType("Collectables_DLC62");
 		InheritBaseStats();
         UniqueSaveID(10000);
 		OwnedAtStart();
@@ -42,7 +42,7 @@ sub main()
 		InheritBaseStats();
         Color(Color_Blue);
         CraftedItem("Firearm_Pistol_Astronaut", 1, 1);
-        CraftplanType("WeaponDLC");
+        CraftplanType("Collectables_DLC62");
         UniqueSaveID(10001);
 		OwnedAtStart();
         HudIcon("blueprint_b");
@@ -67,7 +67,7 @@ sub main()
         Color(Color_Blue);
         CraftedItem("Melee_Machete_Astronaut", 1, 1);
 		InheritBaseStats();
-        CraftplanType("WeaponDLC");
+        CraftplanType("Collectables_DLC62");
 		OwnedAtStart();
         UniqueSaveID(10002);
         HudIcon("blueprint_b");

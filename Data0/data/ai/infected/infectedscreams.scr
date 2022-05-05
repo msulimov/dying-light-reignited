@@ -120,6 +120,14 @@ CommonSounds()
 			sound("volatile00_pain_03")
 		}
 		
+		preset("Volatile_Iced", 8, -1.0)
+		{
+			sound("volatile00_pain_00")
+			sound("volatile00_pain_01")
+			sound("volatile00_pain_02")
+			sound("volatile00_pain_03")
+		}
+		
 		preset("Mother", 8, -1.0)
 		{
 			sound("mother_pain_00")
@@ -218,6 +226,14 @@ CommonSounds()
 		}
 		
 		preset("Volatile", 8.0, -1.0)
+		{
+			sound("volatile00_pain_00")
+			sound("volatile00_pain_01")
+			sound("volatile00_pain_02")
+			sound("volatile00_pain_03")
+		}  
+				
+		preset("Volatile_Iced", 8.0, -1.0)
 		{
 			sound("volatile00_pain_00")
 			sound("volatile00_pain_01")
@@ -323,6 +339,14 @@ CommonSounds()
 			sound("volatile00_pain_light_03")
 			
 		}
+		preset("Volatile_Iced", -1.0, -1.0)
+		{
+			sound("volatile_iced_pain_light_00")
+			sound("volatile_iced_pain_light_01")
+			sound("volatile_iced_pain_light_02")
+			sound("volatile_iced_pain_light_03")
+			
+		}
 		
 		preset("Mother", -1.0, -1.0)
 		{
@@ -375,7 +399,12 @@ CommonSounds()
 		{
 			sound("volatile_falling_00")
 			sound("volatile_falling_01")
-		}       
+		}      
+		preset("Volatile_Iced", -1.0, -1.0)
+		{
+			sound("volatile_falling_00")
+			sound("volatile_falling_01")
+		}    
     }
 	
 	death(5, 0, 0, 0)
@@ -426,6 +455,14 @@ CommonSounds()
 			sound("volatile00_death_02")
 			sound("volatile00_death_03")
 		}   
+		
+		preset("Volatile_Iced", -1.0, -1.0)
+		{
+			sound("volatile_iced_death_00")
+			sound("volatile_iced_death_01")
+			sound("volatile_iced_death_02")
+			sound("volatile_iced_death_03")
+		}  
 		
 		preset("Mother", -1.0, -1.0)
 		{
@@ -607,6 +644,14 @@ CommonSounds()
 			sound("volatile00_enemy_spotted_03")
 		} 
 		
+		preset("Volatile_Iced", -1.0, -1.0)
+		{
+			sound("volatile_iced_enemy_spotted_00")
+			sound("volatile_iced_enemy_spotted_01")
+			sound("volatile_iced_enemy_spotted_02")
+			sound("volatile_iced_enemy_spotted_03")
+		} 
+		
 		preset("Mother", -1.0, -1.0)
 		{
 			sound("mother_taunt_00")
@@ -678,6 +723,14 @@ CommonSounds()
 		}
 		
 		preset("Volatile", -1.0, -1.0)
+		{
+			sound("volatile00_move_upset_00")
+			sound("volatile00_move_upset_01")
+			sound("volatile00_move_upset_02")
+			sound("volatile00_move_upset_03")			
+		}
+		
+		preset("Volatile_Iced", -1.0, -1.0)
 		{
 			sound("volatile00_move_upset_00")
 			sound("volatile00_move_upset_01")
@@ -763,6 +816,16 @@ CommonSounds()
         }
 		
 		preset("Volatile", 5, -1.0)
+		{
+			sound("volatile00_attack_00")
+			sound("volatile00_attack_01")
+			sound("volatile00_attack_02")
+			sound("volatile00_attack_03")
+			sound("volatile00_attack_04")
+			sound("volatile00_attack_05")
+		}   
+		
+		preset("Volatile_Iced", 5, -1.0)
 		{
 			sound("volatile00_attack_00")
 			sound("volatile00_attack_01")
@@ -921,6 +984,12 @@ CommonSounds()
 			sound("volatile00_idle_calm_01")
 		}
 		
+		preset("Volatile_Iced", -1.0, -1.0)
+		{
+			sound("volatile00_idle_calm_00")
+			sound("volatile00_idle_calm_01")
+		}
+		
 		preset("Mother", -1.0, -1.0)
 		{
 			sound("mother_idle_alarmed_00")	
@@ -991,6 +1060,12 @@ CommonSounds()
 			sound("volatile00_move_calm_01")
 		}
 		
+		preset("Volatile_Iced", -1.0, -1.0)
+		{
+			sound("volatile00_move_calm_00")
+			sound("volatile00_move_calm_01")
+		}
+		
 		preset("Mother", -1.0, -1.0)
 		{
 			sound("mother_idle_alarmed_00")	
@@ -1044,6 +1119,14 @@ CommonSounds()
 		}
 		
 		preset("Volatile", -1.0, -1.0)
+		{
+			sound("volatile00_move_upset_00")
+			sound("volatile00_move_upset_01")
+			sound("volatile00_move_upset_02")
+			sound("volatile00_move_upset_03")			
+		}
+		
+		preset("Volatile_Iced", -1.0, -1.0)
 		{
 			sound("volatile00_move_upset_00")
 			sound("volatile00_move_upset_01")
@@ -1125,6 +1208,12 @@ CommonSounds()
 			sound("volatile00_idle_upset_01")			
 		}
 		
+		preset("Volatile_Iced", -1.0, -1.0)
+		{
+			sound("volatile00_idle_upset_00")
+			sound("volatile00_idle_upset_01")			
+		}
+		
 		preset("Mother", -1.0, -1.0)
 		{
 			sound("mother_idle_alarmed_00")			
@@ -1192,6 +1281,14 @@ CommonSounds()
 			sound("volatile00_move_upset_03")			
 		}	
 		
+		preset("Volatile_Iced", -1.0, -1.0)
+		{
+			sound("volatile00_move_upset_00")
+			sound("volatile00_move_upset_01")
+			sound("volatile00_move_upset_02")
+			sound("volatile00_move_upset_03")			
+		}	
+		
 		preset("Mother", -1.0, -1.0)
 		{
 			sound("mother_idle_alarmed_00")	
@@ -1251,6 +1348,12 @@ CommonSounds()
 				
 		} 
 		
+		preset("Volatile_Iced", -1.0, -1.0)
+		{
+			sound("volatile00_move_alarmed_00")
+				
+		} 
+		
 		preset("Mother", -1.0, -1.0)
 		{
 			sound("mother_move_alarmed_00")
@@ -1297,6 +1400,14 @@ CommonSounds()
     idle_rage(3, 3, 5, 0)
     {	
 		preset("Volatile", -1.0, -1.0)
+		{
+			sound("volatile00_move_upset_00")
+			sound("volatile00_move_upset_01")
+			sound("volatile00_move_upset_02")
+			sound("volatile00_move_upset_03")			
+		}	
+		
+		preset("Volatile_Iced", -1.0, -1.0)
 		{
 			sound("volatile00_move_upset_00")
 			sound("volatile00_move_upset_01")
@@ -1371,6 +1482,14 @@ CommonSounds()
 			sound("volatile_taunt_01")
 			sound("volatile_taunt_02")
 			sound("volatile_taunt_03")
+		}
+		
+		preset("Volatile_Iced", 8.0, -1.0)
+		{
+			sound("volatile_iced_taunt_00")
+			sound("volatile_iced_taunt_01")
+			sound("volatile_iced_taunt_02")
+			sound("volatile_iced_taunt_03")
 		}
 		
 		preset("Mother", 8.0, -1.0)
@@ -1538,6 +1657,16 @@ CommonSounds()
     special_attack(5, 0, 0, 0)
 	{	
 		preset("Volatile", -1.0, -1.0)
+        {
+            sound("volatile00_jump_attack_00")
+			sound("volatile00_jump_attack_01")
+			sound("volatile00_jump_attack_02")
+			sound("volatile00_jump_attack_03")
+			sound("volatile00_jump_attack_04")
+			sound("volatile00_jump_attack_05")
+        }
+		
+		preset("Volatile_Iced", -1.0, -1.0)
         {
             sound("volatile00_jump_attack_00")
 			sound("volatile00_jump_attack_01")
@@ -1743,6 +1872,11 @@ CommonSounds()
             sound("volatile_spit_00")
 		}
 		
+		preset("Volatile_Iced", -1.0, -1.0)
+        {
+            sound("volatile_spit_00")
+		}
+		
 		preset("Mother", -1.0, -1.0)
         {
             sound("volatile_spit_00")
@@ -1763,6 +1897,14 @@ CommonSounds()
 			sound("volatile_taunt_02")
 			sound("volatile_taunt_03")
 			
+		}
+		
+		preset("Volatile_Iced", -1.0, -1.0)
+        {
+            sound("volatile_iced_taunt_00")
+			sound("volatile_iced_taunt_01")
+			sound("volatile_iced_taunt_02")
+			sound("volatile_iced_taunt_03")
 		}
 		
 		preset("Mother", -1.0, -1.0)

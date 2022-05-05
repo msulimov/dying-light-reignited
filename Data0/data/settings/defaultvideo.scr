@@ -9,7 +9,7 @@
 !ShadowMapSize(i)
 !SpotShadowMapSize(i)
 !Fullscreen()
-!VSync()               // enable vertical sync
+!VSync(i)              // vertical sync; 0 - disable, 1 - every frame, 2 - every 2 frames, etc.
 !GrassQuality(i)       // lower is better
 
 Resolution(1024,768)

@@ -43,3 +43,5 @@
 
 !include("M_TPP_Gnome.scr")
 !include("M_TPP_Railgun.scr")
+!include("M_TPP_Singleshot.scr")
+!include("M_TPP_GrenadeLauncher.scr")

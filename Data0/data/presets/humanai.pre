@@ -24561,7 +24561,43 @@ sub main()
                 SetField("m_AttachableItem1Probability", "1.0");
         }
 
-        Preset("Volatile_Blister")
+		Preset("Volatile_Iced")
+        {
+                SetField("MeshName", "zombie_voleteile_blue.msh");
+                SetField("SkinName", "Winter");
+                SetField("m_BroadcastRange", "12.0");
+                SetField("m_CanBeBackstabbed", "0");
+                SetField("m_CanCutOffHead", "0");
+                SetField("m_CanEscape", "1");
+                SetField("m_CanUseAttractors", "0");
+                SetField("m_ConflictSide", CONFLICT_SIDE_COUNTER_ALL);
+                SetField("m_CrippleBonesEnable", "0");
+                SetField("m_CustomDataPreset", "volatile_iced");
+				SetField("m_CustomLootTypeString", "Volatile_Iced");
+                SetField("m_CutOffBonesEnable", "0");
+                SetField("m_DamageInfluencesNames", "electric:0.0;fire:0.5;poison:0.0;cold:0.0");
+                SetField("m_ForcedBodyScaleMax", "1.25");
+                SetField("m_ForcedBodyScaleMin", "1.25");
+                SetField("m_Gender", "0");
+                SetField("m_GrabEnabled", "1");
+                SetField("m_HarvestingLootType", "Harvesting_Volatile_Body");
+                SetField("m_IsHarvestable", "1");
+                SetField("m_IsNightCreature", "1");
+                SetField("m_KnowledgeBasePreset", "volatile");
+                SetField("m_MaxLevelDiff", "1");
+                SetField("m_MinLevelDiff", "-5");
+                SetField("m_ModulesPreset", "1");
+                SetField("m_NeverHolsterWeapon", "1");
+                SetField("m_PrimaryWeaponProbability", "0.0");
+                SetField("m_Seed", "0");
+                SetField("m_ShowFlies", "0");
+                SetField("m_SoundPreset", "Volatile_Iced");
+                SetField("m_StepPreset", "Volatile");
+				SetField("m_PlaySlomoOnDeath", "1");
+				SetField("m_Type", "3");
+        }
+       
+	   Preset("Volatile_Blister")
         {
                 SetField("MeshName", "zombie_voleteile.msh");
                 SetField("SkinName", "Default");
@@ -27746,7 +27782,6 @@ sub main()
                 SetField("m_Gender", "0");
                 SetField("m_GrabEnabled", "0"); 
                 SetField("m_IsHarvestable", "0");
-                SetField("m_KnowledgeBasePreset", "thug");
                 SetField("m_MaxLevelDiff", "5");
                 SetField("m_MinLevelDiff", "5");
                 SetField("m_ModulesPreset", "thug");
@@ -27961,6 +27996,70 @@ sub main()
             SetField("m_StepPreset", "Soldier");
             SetField("m_ThrowableWeaponName", "");
             SetField("m_DamageInfluencesNames", "electric:0.0;fire:0.0;poison:0.0");
+        }
+		
+		Preset("Friendly_Survivor")
+        {
+				SetField("MeshName", "zombie_man_a.msh");
+                SetField("SkinName", "DL2_Survivor");
+                SetField("m_ConflictSide", CONFLICT_SIDE_PRO_PLAYER);
+                SetField("m_ConsiderGroup", "1");
+                SetField("m_CrippleBonesEnable", "0");
+                SetField("m_CustomDataPreset", "melee_fighter_a");
+                SetField("m_DialogCharacterType", "1");
+                SetField("m_DialogSpeakerName", "survivor01");
+                SetField("m_FaceMimicPreset", "normal");
+                SetField("m_ForcedBodyScaleMax", "1.0");
+                SetField("m_ForcedBodyScaleMin", "1.0");
+                SetField("m_Gender", "0");
+                SetField("m_Immortal", "0");
+                SetField("m_IsVip", "0");
+                SetField("m_KnowledgeBasePreset", "melee_fighter");
+                SetField("m_MustHaveTags", "");
+                SetField("m_MustNotHaveTags", "");
+                SetField("m_NeverHolsterWeapon", "1");
+                SetField("m_PrimaryWeaponName", "Melee_Friendly_Survivor");
+                SetField("m_Seed", "0");
+                SetField("m_SoundPreset", "Male01");
+				SetField("m_HealthMul", "5.0");
+				SetField("m_HeldReleaseTime", "3");
+				SetField("m_DamageInfluencesNames", "electric:0.0;fire:0.0;poison:0.0");
+        }
+			
+		Preset("Enemy_Survivor") 
+        {
+				SetField("MeshName", "zombie_man_a.msh");
+                SetField("SkinName", "DL2_Enemy");
+                SetField("m_CanBeBackstabbed", "0");
+                SetField("m_CanBeInHumanity", "1");
+                SetField("m_CanCutOffHead", "0");
+                SetField("m_CanDestroyHead", "0");
+                SetField("m_CanUseAttractors", "1");
+                SetField("m_ConflictSide", CONFLICT_SIDE_COUNTER_ALL);
+                SetField("m_CrippleBonesEnable", "0");
+                SetField("m_CustomDataPreset", "infected_humanity_gastank");
+                SetField("m_CutOffBonesEnable", "0");
+                SetField("m_ForcedBodyScaleMax", "1.15");
+                SetField("m_ForcedBodyScaleMin", "1.05");
+                SetField("m_ForcedTargetType", "-1");
+                SetField("m_Gender", "0");
+                SetField("m_GrabEnabled", "1");
+                SetField("m_HarvestingLevelRequired", "1");
+                SetField("m_HarvestingLootType", "Harvesting_Viral_Body");
+                SetField("m_IsHarvestable", "1");
+                SetField("m_KnowledgeBasePreset", "infected_humanity");
+                SetField("m_MaxLevelDiff", "5");
+                SetField("m_MinLevelDiff", "3");
+                SetField("m_ModulesPreset", "infected_humanity");
+                SetField("m_NeverHolsterWeapon", "1");
+                SetField("m_PrimaryWeaponProbability", "0.5");
+                SetField("m_Seed", "0");
+                SetField("m_ShowFlies", "0");
+                SetField("m_SoundPreset", "Viral_Gastank");
+                SetField("m_StepPreset", "Default_Zombie");
+                SetField("m_Type", "3");
+				SetField("m_HealthMul", "2.0");
+				SetField("m_DamageInfluencesNames", "electric:0.2;fire:0.2;poison:0.0");
         }
     }
 }

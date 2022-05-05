@@ -15,7 +15,7 @@ sub main()
         RequiredItem("Craft_DuctTape", 2);
         Color(Color_Blue);
         CraftedItem("CHV_Shield_Pro_A", 1, 1);
-        CraftplanType("Utility");
+        CraftplanType("Collectables_DLC46");
         UniqueSaveID(9600);
 		OwnedAtStart();
         HudIcon("blueprint_b");
@@ -34,7 +34,7 @@ sub main()
         RequiredItem("Craft_DuctTape", 2);
         Color(Color_Blue);
         CraftedItem("CHV_Shield_Pro_M", 1, 1);
-        CraftplanType("Utility");
+        CraftplanType("Collectables_DLC46");
         UniqueSaveID(9601);
 		OwnedAtStart();
         HudIcon("blueprint_b");
@@ -56,7 +56,7 @@ sub main()
 		RequiredItem("Craft_Gauze", 1);
         Color(Color_Blue);
         CraftedItem("Melee_LongSword_ZweihanderCHV", 1, 1);
-        CraftplanType("WeaponDLC");
+        CraftplanType("Collectables_DLC46");
 		InheritBaseStats();
         UniqueSaveID(9602);
 		OwnedAtStart();

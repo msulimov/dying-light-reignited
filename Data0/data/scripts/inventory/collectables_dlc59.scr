@@ -17,7 +17,7 @@ sub main()
         RequiredItem("Craft_DuctTape", 3);
         Color(Color_Blue);
         CraftedItem("Firearm_Rifle_Tactical", 1, 1);
-        CraftplanType("WeaponDLC");
+        CraftplanType("Collectables_DLC59");
         UniqueSaveID(9931);
         HudIcon("blueprint_b");
         GameVersion(39);
@@ -39,7 +39,7 @@ sub main()
         RequiredItem("Craft_DuctTape", 3);
         Color(Color_Blue);
         CraftedItem("Firearm_Shotgun_Tactical", 1, 1);
-        CraftplanType("WeaponDLC");
+        CraftplanType("Collectables_DLC59");
         UniqueSaveID(9932);
         HudIcon("blueprint_b");
         GameVersion(39);
@@ -64,7 +64,7 @@ sub main()
 		RequiredItem("Craft_PowerCable", 1);
         Color(Color_Blue);
         CraftedItem("Melee_BigHammer_Tactical", 1, 1);
-        CraftplanType("WeaponDLC");
+        CraftplanType("Collectables_DLC59");
         UniqueSaveID(9933);
         HudIcon("blueprint_b");
         GameVersion(39);

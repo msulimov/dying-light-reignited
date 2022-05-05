@@ -20,6 +20,7 @@ sub main()
 		Skin("decal_plane_a.msh", "decal_lrp_mul_graffiti_mural_b_alternative");
 		Skin("decal_plane_a.msh", "decal_lrp_mul_graffiti_mural_c_alternative");
 		Skin("decal_plane_a.msh", "decal_lrp_mul_graffiti_mural_d_alternative");
+		Skin("decal_plane_a.msh", "decal_lrp_mul_graffiti_mural_f_alternative");
 	}
 	
 	Gather("old_town")
@@ -29,5 +30,6 @@ sub main()
 		Skin("decal_plane_a.msh", "decal_lrp_mul_graffiti_mural_b_alternative");
 		Skin("decal_plane_a.msh", "decal_lrp_mul_graffiti_mural_c_alternative");
 		Skin("decal_plane_a.msh", "decal_lrp_mul_graffiti_mural_d_alternative");
+		Skin("decal_plane_a.msh", "decal_lrp_mul_graffiti_mural_f_alternative");
 	}
 }

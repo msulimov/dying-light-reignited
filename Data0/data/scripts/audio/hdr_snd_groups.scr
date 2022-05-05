@@ -6017,6 +6017,28 @@ SoundGroup("volatile_taunt")
 	}
 }
 
+SoundGroup("Volatile_Iced_Taunt")
+{
+	Sound("volatile_iced_taunt_00")
+	Sound("volatile_iced_taunt_01")
+	Sound("volatile_iced_taunt_02")
+	Sound("volatile_iced_taunt_03")
+
+	GroupProperties()
+	{
+		MinDistance(5.00)
+		RollOff(0.60)
+		Bus(12)
+		OcclusionFullImpact(0.6)
+		OcclusionPartialImpact(0)
+		ReverbSendLevel(2.30)
+		ReverbMinLevel(2.30)
+		AttenuationModel(1)
+		MaxInstancesBehaviour(MI_STEAL_QUITEST)
+	}
+}
+
+
 SoundGroup("volatile_attack_fake")
 {
 	Sound("volatile_attack_fake_00")
@@ -6129,6 +6151,24 @@ SoundGroup("Volatile_Spotted")
 	}
 }
 
+SoundGroup("Volatile_Iced_Spotted")
+{
+	Sound("volatile_iced_enemy_spotted_00")
+	Sound("volatile_iced_enemy_spotted_01")
+	Sound("volatile_iced_enemy_spotted_02")
+	Sound("volatile_iced_enemy_spotted_03")
+
+	GroupProperties()
+	{
+		MinDistance(3.00)
+		Bus(12)
+		ReverbSendLevel(2.00)
+		ReverbMinLevel(2.00)
+		OcclusionFullImpact(0.7)
+		OcclusionPartialImpact(0)
+	}
+}
+
 SoundGroup("Volatile_Jump_Attack")
 {
 	Sound("volatile00_jump_attack_00")
@@ -6186,6 +6226,22 @@ SoundGroup("Volatile_Pain_Light")
 	Sound("volatile00_pain_light_01")
 	Sound("volatile00_pain_light_02")
 	Sound("volatile00_pain_light_03")
+
+	GroupProperties()
+	{
+		Volume(0.90)
+		MinDistance(2.00)
+		RollOff(0.50)
+		Bus(12)
+	}
+}
+
+SoundGroup("Volatile_Iced_Pain_Light")
+{
+	Sound("volatile_iced_pain_light_00")
+	Sound("volatile_iced_pain_light_01")
+	Sound("volatile_iced_pain_light_02")
+	Sound("volatile_iced_pain_light_03")
 
 	GroupProperties()
 	{
@@ -6261,6 +6317,22 @@ SoundGroup("Volatile_Death")
 	Sound("volatile00_death_01")
 	Sound("volatile00_death_02")
 	Sound("volatile00_death_03")
+
+	GroupProperties()
+	{
+		Volume(0.90)
+		MinDistance(2.00)
+		RollOff(0.80)
+		Bus(12)
+	}
+}
+
+SoundGroup("Volatile_Iced_Death")
+{
+	Sound("volatile_iced_death_00")
+	Sound("volatile_iced_death_01")
+	Sound("volatile_iced_death_02")
+	Sound("volatile_iced_death_03")
 
 	GroupProperties()
 	{
@@ -20156,6 +20228,20 @@ SoundGroup("player_weapon_rust_cleaver_empty")
 
 //##### DARK KNIGHT SOUND START #####//
 
+SoundGroup("HR_MON_Darkknight_initialization")
+{
+	Sound("DK_Initialization_FOL")
+    Sound("DK_Ghost_Spawn")
+    
+	GroupProperties()
+    {
+        Volume(1.30)
+		HDROn(0)
+		MinDistance(4.0)
+		Bus(11)
+    }
+}
+
 SoundGroup("HR_MON_Darkknight_attack")
 {
 	Sound("DK_VOC_AttackSwing_00")
@@ -20273,6 +20359,47 @@ SoundGroup("HR_MON_Darkknight_specia_ground_hit_voc")
     }
 }
 
+SoundGroup("HR_MON_Darkknight_360_attack_swirl")
+{
+	Sound("DK_SwordSwirl_00")
+	Sound("DK_SwordSwirl_01")
+	Sound("DK_SwordSwirl_02")
+    
+	GroupProperties()
+    {
+        Volume(1.1)
+		MinDistance(3.00)
+		RollOff(0.50)
+		PitchRange(1.0, 1.2)
+		Bus(11)
+    }
+}
+
+SoundGroup("HR_MON_Darkknight_magic_decay")
+{
+	Sound("DK_Decay_Buildup_1200ms_00")
+	Sound("DK_Decay_Buildup_1200ms_01")
+	Sound("DK_Decay_Buildup_1200ms_02")
+	
+	Sound("DK_Decay_Explosion_00")
+	Sound("DK_Decay_Explosion_01")
+	Sound("DK_Decay_Explosion_02")
+	
+	Sound("DK_Decay_Spawn_00")
+	Sound("DK_Decay_Spawn_01")
+	Sound("DK_Decay_Spawn_02")
+    
+	GroupProperties()
+    {
+        Volume(1.1)
+		MinDistance(3.00)
+		RollOff(0.50)
+		PitchRange(1.0, 1.2)
+		Bus(11)
+    }
+}
+
+
 SoundGroup("HR_MON_Darkknight_pain")
 {
 	Sound("DK_GetHit_VOC_00")
@@ -20325,10 +20452,9 @@ SoundGroup("HR_MON_Darkknight_walk")
     }
 }
 
-SoundGroup("HR_MON_Darkknight_death")
+SoundGroup("HR_MON_Darkknight_death_new")
 {
-	Sound("DK_Death_MergedBodyfall_00")
-	Sound("DK_Death_MergedBodyfall_01")
+	Sound("DK_Death_desintegration_full")
     
 	GroupProperties()
     {
@@ -21109,6 +21235,58 @@ SoundGroup("electricity_stasis")
 		OcclusionMode(1)
 	}
 }
+
+SoundGroup("vancrane_pistol_shot")
+{
+	Sound("Van_Crane_Pistol_shot_00")
+	Sound("Van_Crane_Pistol_shot_01")
+	Sound("Van_Crane_Pistol_shot_02")
+
+	GroupProperties()
+	{
+		Volume(1.60)
+		//HDRWndMapping(1.00, 0.80)
+		Bus(7)
+		MinDistance(3.00)
+		RollOff(0.5)
+		OcclusionFullImpact(0.6)
+		OcclusionPartialImpact(0)
+		AttenuationModel(5)
+		MaxDistance(100.00)
+	}
+}
+
+SoundGroup("grenade_launcher_shot")
+{
+	Sound("grenade_launcher_shot_00")
+	Sound("grenade_launcher_shot_01")
+	Sound("grenade_launcher_shot_02")
+	Sound("grenade_launcher_shot_03")
+
+	GroupProperties()
+	{
+		Volume(1.60)
+		//HDRWndMapping(1.00, 0.80)
+		Bus(7)
+		MinDistance(3.00)
+		RollOff(0.5)
+		OcclusionFullImpact(0.6)
+		OcclusionPartialImpact(0)
+		AttenuationModel(5)
+		MaxDistance(100.00)
+	}
+}
+
+SoundGroup("player_weapon_grenade_launcher_reload")
+{
+	Sound("grenade_launcher_reload")
+
+	GroupProperties()
+	{
+		Volume(4.0)
+	}
+}
+
 SoundGroup("player_weapon_macheteastronaut_hit")
 {
 	Sound("hit_macheteastronaut_00")
@@ -22650,7 +22828,79 @@ SoundGroup("Lucius")
 		Sound("Lucius_Navigation1_01_DLG01")
 		Sound("Lucius_Navigation2_01_DLG01")
 		Sound("Lucius_Navigation3_01_DLG01")
-		Sound("Lucius_Navigation4_01_DLG01")
+		Sound("Lucius_Navigation4_01_DLG01")		
+		Sound("Lucius_DisruptTheRitual_01_DLG01")
+		Sound("Lucius_DisruptTheRitual_01_DLG02")
+		Sound("Lucius_DisruptTheRitual_01_DLG03")
+		Sound("Lucius_DisruptTheRitual_01_DLG04")
+		Sound("Lucius_DisruptTheRitual_01_DLG05")
+		Sound("Lucius_DisruptTheRitual_01_DLG06")
+		Sound("Lucius_DisruptTheRitual_01_DLG07")
+		Sound("Lucius_DisruptTheRitual_02_DLG01")
+		Sound("Lucius_DisruptTheRitual_03_DLG01")
+		Sound("Lucius_DisruptTheRitual_04_DLG01")
+		Sound("Lucius_DisruptTheRitual_05_DLG01")
+		Sound("Lucius_DisruptTheRitual_06_DLG01")
+		Sound("Lucius_DisruptTheRitual_07_DLG01")
+		Sound("Lucius_DisruptTheRitual_08_DLG01")
+		Sound("Lucius_DisruptTheRitual_09_DLG01")
+		Sound("Lucius_DisruptTheRitual_10_DLG01")
+		Sound("Anat_DisruptTheRitual_11_DLG01")
+		Sound("Anat_DisruptTheRitual_11_DLG02")
+		Sound("Anat_DisruptTheRitual_11_DLG03")
+		Sound("Lucius_DisruptTheRitual_11_DLG04")
+		Sound("Lucius_DisruptTheRitual_12_DLG01")
+		Sound("Lucius_DisruptTheRitual_12_DLG02")
+		Sound("Lucius_DisruptTheRitual_12_DLG03")
+		Sound("Lucius_DisruptTheRitual_12_DLG04")
+		Sound("Lucius_DisruptTheRitual_12_DLG05")		
+		Sound("Lucius_Dark_Knight_01_DLG01")
+		Sound("Lucius_Dark_Knight_01_DLG02")
+		Sound("Lucius_Dark_Knight_01_DLG03")
+		Sound("Lucius_Dark_Knight_01_DLG04")
+		Sound("Lucius_Dark_Knight_01_DLG05")
+		Sound("Lucius_Dark_Knight_02_DLG01")
+		Sound("Anat_Dark_Knight_02_DLG02")
+		Sound("Lucius_Dark_Knight_02_DLG03")
+		Sound("Lucius_Dark_Knight_03_DLG01")
+		Sound("Lucius_Dark_Knight_04_DLG01")
+		Sound("Lucius_Dark_Knight_05_DLG01")
+		Sound("Anat_Dark_Knight_06_DLG01")
+		Sound("DarkKnight_Dark_Knight_06_DLG02")
+		Sound("Lucius_Dark_Knight_06_DLG03")
+		Sound("Lucius_Dark_Knight_07_DLG01")
+		Sound("Lucius_Dark_Knight_08_DLG01")
+		Sound("Lucius_Dark_Knight_09_DLG01")
+		Sound("Lucius_Dark_Knight_10_DLG01")
+		Sound("Lucius_Dark_Knight_11_DLG01")
+		Sound("DarkKnight_Dark_Knight_12_DLG01")
+		Sound("DarkKnight_Dark_Knight_13_1_DLG01")
+		Sound("DarkKnight_Dark_Knight_13_2_DLG01")
+		Sound("DarkKnight_Dark_Knight_13_3_DLG01")
+		Sound("DarkKnight_Dark_Knight_13_4_DLG01")
+		Sound("DarkKnight_Dark_Knight_13_5_DLG01")
+		Sound("DarkKnight_Dark_Knight_13_6_DLG01")
+		Sound("DarkKnight_Dark_Knight_13_7_DLG01")
+		Sound("DarkKnight_Dark_Knight_13_8_DLG01")
+		Sound("DarkKnight_Dark_Knight_13_9_DLG01")
+		Sound("DarkKnight_Dark_Knight_13_10_DLG01")
+		Sound("DarkKnight_Dark_Knight_13_11_DLG01")
+		Sound("DarkKnight_Dark_Knight_13_12_DLG01")
+		Sound("DarkKnight_Dark_Knight_13_13_DLG01")
+		Sound("DarkKnight_Dark_Knight_13_14_DLG01")
+		Sound("DarkKnight_Dark_Knight_13_15_DLG01")
+		Sound("Lucius_Dark_Knight_14_DLG01")
+		Sound("Anat_Dark_Knight_14_DLG02")
+		Sound("Lucius_Dark_Knight_14_DLG03")
+		Sound("Lucius_Dark_Knight_15_DLG01")
+		Sound("Lucius_Dark_Knight_16_DLG01")
+		Sound("Anat_Dark_Knight_16_DLG02")
+		Sound("Anat_Dark_Knight_16_DLG03")
+		Sound("Anat_Dark_Knight_16_DLG04")
+		Sound("Anat_Dark_Knight_16_DLG05")
+		Sound("Anat_Dark_Knight_16_DLG06")
+		Sound("Anat_Dark_Knight_16_DLG07")
+
     
 	GroupProperties()
     {

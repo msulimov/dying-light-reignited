@@ -7,7 +7,8 @@ sub main()
     SafePointSp(300);
 	SafePointRp(25);
 	
-    SurvivorPackSp(1000);	
+    SurvivorPackSp(1000);
+	SurvivorPackSpSpike(1000);	
 	SurvivorPackRp(100);
     
 	Info(DEFAULT)

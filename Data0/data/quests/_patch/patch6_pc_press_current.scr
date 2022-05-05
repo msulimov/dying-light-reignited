@@ -4,7 +4,7 @@ sub main()
     SrcVersion("patch6_pc_press", 7);
     DstVersion("current", 8);
 
-    QuestTree("3411682560", "1289559078", "main")
+    QuestTree("3411682560", "3411682560", "main")
     {
         Quest("0", "0", "2776738969", "2776738969", "game_root")
         {
@@ -341,9 +341,9 @@ sub main()
         {
             Phase("21009", "21009"); // OK  (checkpoint "_" line 29) -> (checkpoint "_" line 29)
         }
-        Quest("83", "83", "557005774", "228816766", "Q_Start01")
+        Quest("83", "83", "557005774", "557005774", "Q_Start01")
         {
-            Phase("21342", "21342"); // OK  (checkpoint "_" line 610) -> (checkpoint "_" line 612)
+            Phase("21342", "21342"); // OK  (checkpoint "_" line 610) -> (checkpoint "_" line 610)
         }
         Quest("84", "84", "617784062", "617784062", "__Arena_B_FightingGroup_01")
         {
@@ -398,12 +398,12 @@ sub main()
         Quest("98", "98", "341926855", "341926855", "Q_Start01_Inv");
         Quest("99", "99", "267626256", "267626256", "Q_Start02")
         {
-            Phase("25355", "25355"); // OK  (checkpoint "_" line 634) -> (checkpoint "_" line 636)
-            Phase("25363", "25363"); // OK  (checkpoint "_" line 647) -> (checkpoint "_" line 649)
-            Phase("25388", "25388"); // OK  (checkpoint "_" line 688) -> (checkpoint "_" line 690)
-            Phase("25392", "25392"); // OK  (checkpoint "_" line 692) -> (checkpoint "_" line 694)
-            Phase("25421", "25421"); // OK  (set reward "_" line 728) -> (set reward "_" line 730)
-            Phase("25422", "25422"); // OK  (checkpoint "_" line 729) -> (checkpoint "_" line 731)
+            Phase("25355", "25355"); // OK  (checkpoint "_" line 634) -> (checkpoint "_" line 634)
+            Phase("25363", "25363"); // OK  (checkpoint "_" line 647) -> (checkpoint "_" line 647)
+            Phase("25388", "25388"); // OK  (checkpoint "_" line 688) -> (checkpoint "_" line 688)
+            Phase("25392", "25392"); // OK  (checkpoint "_" line 692) -> (checkpoint "_" line 692)
+            Phase("25421", "25421"); // OK  (set reward "_" line 728) -> (set reward "_" line 728)
+            Phase("25422", "25422"); // OK  (checkpoint "_" line 729) -> (checkpoint "_" line 729)
         }
         Quest("100", "100", "1890317456", "1890317456", "Blackout")
         {
@@ -2768,7 +2768,7 @@ sub main()
         }
         Quest("638", "638", "3602257359", "3602257359", "__SLUMS_TO_OT_PORTAL")
         {
-            Phase("163332", "163332"); // OK  (checkpoint "_" line 742) -> (checkpoint "_" line 744)
+            Phase("163332", "163332"); // OK  (checkpoint "_" line 742) -> (checkpoint "_" line 742)
         }
         Quest("639", "639", "712392693", "712392693", "__TroysWarning")
         {

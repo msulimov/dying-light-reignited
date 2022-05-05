@@ -1,0 +1,31 @@
+sub main()
+{
+	// Enemy("Volatile", "Volatile_Iced")
+	// {
+		// SpawnFrequency(15);
+		// MaxNumberOfEnemies(10); // Not used now!
+		// MinDistBtwEnemies(40.0); // Not used now!
+		// Map("slums");
+		// Map("old_town");
+		// Difficulty("Easy");
+		// Difficulty("Normal");
+		// Difficulty("Hard");
+		// Difficulty("Nightmare");
+		// ForceSpawn(2); // Not used now!
+	// }
+	
+	// Enemy("Volatile_Super", "Volatile_Iced")
+	// {
+		// SpawnFrequency(25);
+		// MaxNumberOfEnemies(10); // Not used now!
+		// MinDistBtwEnemies(40.0); // Not used now!
+		// Map("slums");
+		// Map("old_town");
+		// Difficulty("Easy");
+		// Difficulty("Normal");
+		// Difficulty("Hard");
+		// Difficulty("Nightmare");
+		// ForceSpawn(2); // Not used now!
+	// }
+	
+}

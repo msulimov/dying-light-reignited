@@ -20,7 +20,7 @@ sub main()
 		RequiredItem("Craft_ToxicPlant", 2);
         Color(Color_Blue);
         CraftedItem("Firearm_Shotgun_Ox", 1, 1);
-        CraftplanType("WeaponDLC");
+        CraftplanType("Collectables_DLC58");
         UniqueSaveID(9930);
         HudIcon("blueprint_b");
         GameVersion(38);

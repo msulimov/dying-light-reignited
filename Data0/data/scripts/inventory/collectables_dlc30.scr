@@ -15,7 +15,7 @@ sub main()
         RequiredItem("Craft_String", 1);
         Color(Color_Orange);
         CraftedItem("Bow_UrbanTrapper", 1, 1);
-        CraftplanType("WeaponDLC");
+        CraftplanType("Collectables_DLC30");
         UniqueSaveID(3079);
         HudIcon("blueprint_b");
         GameVersion(11);
@@ -34,7 +34,7 @@ sub main()
         RequiredItem("Craft_Nails", 1);
         Color(Color_Green);
         CraftedItem("ZZZZ_Ammo_Arrow", 5, 8);
-        CraftplanType("WeaponDLC");
+        CraftplanType("Collectables_DLC30");
         UniqueSaveID(106);
         HudIcon("blueprint_b");
         OwnedAtStart();
@@ -53,7 +53,7 @@ sub main()
         RequiredItem("Craft_Insecticide", 1);
         Color(Color_Blue);
         CraftedItem("ZZZZ_Ammo_Arrow_Burning", 5, 8);
-        CraftplanType("WeaponDLC");
+        CraftplanType("Collectables_DLC30");
         UniqueSaveID(107);
         HudIcon("blueprint_b");
         OwnedAtStart();
@@ -72,7 +72,7 @@ sub main()
         RequiredItem("Craft_Batteries", 1);
         Color(Color_Blue);
         CraftedItem("ZZZZ_Ammo_Arrow_Shock", 5, 8);
-        CraftplanType("WeaponDLC");
+        CraftplanType("Collectables_DLC30");
         UniqueSaveID(108);
         HudIcon("blueprint_b");
         OwnedAtStart();
@@ -91,7 +91,7 @@ sub main()
         RequiredItem("Craft_Bleach", 1);
         Color(Color_Blue);
         CraftedItem("ZZZZ_Ammo_Arrow_Explode", 5, 8);
-        CraftplanType("WeaponDLC");
+        CraftplanType("Collectables_DLC30");
         UniqueSaveID(109);
         HudIcon("blueprint_b");
         OwnedAtStart();

@@ -1073,3 +1073,47 @@
   <sound t="60" file="zombieplayer_player_breath_scared_stop_01.wav"/>
   <hud_icon val="potion_timer_stamina_hp_2"/> 
 </buff>
+
+<!-- Hellraid Potions -->
+
+<buff id="Hellraid_Speed" duration="30" max_stacks="1">
+  <property name="MoveBackwardMaxSpeed" value_add="2.5"/>
+  <property name="MoveForwardMaxSpeed" value_add="2.5"/>
+  <property name="MoveStrafeMaxSpeed" value_add="2.5"/>
+  <property name="MoveSprintSpeed" value_add="2.5"/>
+  <OnGain>
+    <AddFitness value="4.0"/>
+  </OnGain>
+  <hud_icon val="potion_timer_speed"/>
+</buff>
+
+<buff id="Hellraid_Damage" duration="30" max_stacks="1">
+  <OnGain>
+    <ApplyBuff id="DoubleDamage" />
+  </OnGain>
+  <hud_icon val="potion_timer_damage"/>
+</buff>
+ 
+ <buff id="Hellraid_Armor" duration="30" max_stacks="1">
+  <OnGain>
+	<ApplyBuff id="DamageResistatenMeleeAndBullet" />
+  </OnGain>
+  <hud_icon val="potion_timer_resistance"/>
+</buff>
+
+<buff id="DarkknightDebuff" duration="7.2" max_stacks="1">
+  <property name="MoveSpeedFactor" value_add="-0.5"/>
+  <varlist_timeline var="f_movie_toxic">
+    <key t="0" val="0.00"/>
+    <key t="0.5" val="0.5"/>
+    <key t="6.6" val="0.5"/>
+    <key t="7.1" val="0.0"/>
+  </varlist_timeline>
+  <varlist_timeline var="f_game_saturation">
+    <key t="0" val="1.00"/>
+    <key t="0.5" val="0.50"/>
+    <key t="6.6" val="0.50"/>
+    <key t="7.1" val="1.0"/>
+  </varlist_timeline>
+  <hud_icon val="weapon_snowball_big"/>
+</buff>

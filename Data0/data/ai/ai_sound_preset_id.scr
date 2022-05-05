@@ -609,4 +609,5 @@ sub main()
 	SoundPresetID("Zombie_Recruit", 588);
 	SoundPresetID("Undead_Guard", 589);
     SoundPresetID("Darkknight", 590);
+	SoundPresetID("Volatile_Iced", 591);
 }

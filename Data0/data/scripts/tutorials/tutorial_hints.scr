@@ -400,13 +400,64 @@ sub main()
 		DontShowInMenu();
 		IsTutorialLevel();
     }
+	
+	CustomHint("Tutorial_Hellraid_Armory")
+    {
+        TextTitle("TutN_TimeFreeze_Hellraid_Armory");
+        TextBody("Tut_TimeFreeze_Hellraid_Armory");
+        
+		MinDisplayTime(3); 
+        HintDisplayType(EHintDisplayType_NoTexture);
+        
+		//DisableShownTimes(1);
+		
+		DontShowOnLoadingScreen();
+		DontShowInMenu();
+		IsTutorialLevel();
+    }
+	
+	CustomHint("Tutorial_Hellraid_BonusLocation")
+    {
+        TextTitle("TutN_TimeFreeze_Hellraid_BonusLocation");
+        TextBody("Tut_TimeFreeze_Hellraid_BonusLocation");
+        
+		MinDisplayTime(3); 
+        HintDisplayType(EHintDisplayType_NoTexture);
+        
+		//DisableShownTimes(1);
+		
+		DontShowOnLoadingScreen();
+		DontShowInMenu();
+		IsTutorialLevel();
+    }
 
 	CustomHint("Tutorial_TimeFreeze_Hellraid_FinishScreen")
     {
         use Params(category = ETutorialCategory_Gameplay);
 		
         TextTitle("TutN_Hellraid_FinishScreen");
-        TextBody("Tut_Hellraid_FinishScreen_D");
+        TextBody("Tut_Hellraid_FinishScreen_D"); //Hellraid Intro
+		TextBody("Tut_Hellraid_FinishScreen_Portal"); //Portals
+
+		IsTutorialLevel();
+		TimeFreezing();
+		
+		DisableShownTimes(1);
+        ShowDelayTime(0);
+		
+        HintDisplayType(EHintDisplayType_TextureTop);
+        DontShowOnLoadingScreen();
+		ForceShowInMenu();
+    }
+	
+	CustomHint("Tutorial_TimeFreeze_Hellraid_Epilogue")
+    {
+        use Params(category = ETutorialCategory_Gameplay);
+		
+        TextTitle("TutN_Hellraid_Epilogue");
+        TextBody("Tut_Hellraid_Epilogue_1");
+        TextBody("Tut_Hellraid_Epilogue_2");
+		TextBody("Tut_Hellraid_Epilogue_3");
 
 		IsTutorialLevel();
 		TimeFreezing();
@@ -424,10 +475,29 @@ sub main()
         use Params(category = ETutorialCategory_Gameplay);
 		
         TextTitle("TutN_Hellraid_WelcomeScreen");
-        TextBody("Tut_Hellraid_WelcomeScreen");
-		TextBody("Tut_Hellraid_WelcomeScreen_2");
-		TextBody("Tut_Hellraid_WelcomeScreen_3");
-		TextBody("Tut_Hellraid_WelcomeScreen_4");
+        TextBody("Tut_Hellraid_WelcomeScreen"); //intro
+		TextBody("Tut_Hellraid_WelcomeScreen_2"); //bounties
+		TextBody("Tut_Hellraid_WelcomeScreen_3"); //red portal
+		TextBody("Tut_Hellraid_WelcomeScreen_5"); //armory
+		TextBody("Tut_Hellraid_WelcomeScreen_4"); //back to game
+		
+		IsTutorialLevel();
+		TimeFreezing();
+		
+		DisableShownTimes(1);
+        ShowDelayTime(0);
+		
+        HintDisplayType(EHintDisplayType_TextureTop);
+        DontShowOnLoadingScreen();
+		ForceShowInMenu();
+    }
+	
+	CustomHint("Tutorial_TimeFreeze_Hellraid_WandIntro")
+    {
+        use Params(category = ETutorialCategory_Gameplay);
+		
+        TextTitle("TutN_Hellraid_WandIntro");
+        TextBody("Tut_Hellraid_WandIntro");
 		
 		IsTutorialLevel();
 		TimeFreezing();
@@ -486,7 +556,7 @@ sub main()
         TextBody("Tut_PrologueFlashlight");
         IsTutorialLevel();
         DontShowOnLoadingScreen();
-        DisableShownTimes(1);
+        DisableShownTimes(-1);
         HideEvent(ETutorialEvent_FlashlightSwitched);
     }
     CustomHint("Tutorial_PrologueSprint")                                            // Prologue Hints
@@ -3228,6 +3298,19 @@ CustomHint("Tutorial_Hints_TimeFreeze_Proficiencies")                           
         use Params(category = ETutorialCategory_Gameplay);
         TextTitle("TutN_Multiplayer_Enabled");
         TextBody("Tut_Multiplayer_Enabled");
+        TimeFreezing();
+        //AlwaysShow();
+        ShowDelayTime(2);
+        HintDisplayType(EHintDisplayType_TextureTop);
+	    DontShowInMenu();
+        DontShowOnLoadingScreen();		
+    }
+
+	CustomHint("Tutorial_TimeFreeze_DLC")
+    {
+        use Params(category = ETutorialCategory_Gameplay);
+        TextTitle("TutN_TimeFreeze_DLC");
+        TextBody("Tut_TimeFreeze_DLC");
         TimeFreezing();
         //AlwaysShow();
         ShowDelayTime(2);

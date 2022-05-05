@@ -15,7 +15,7 @@ sub main()
         RequiredItem("Craft_DuctTape", 3);
         BaseItem("Firearm_Rifle", "", "");
         CraftedItem("Firearm_RifleA_RaisElite", 1, 1);
-        CraftplanType("WeaponDLC");
+        CraftplanType("Collectables_DLC42");
 		Color(Color_Blue);
         UniqueSaveID(9540);
         HudIcon("blueprint_a");
@@ -37,7 +37,7 @@ sub main()
 		RequiredItem("Craft_RazorBlade", 1);
         BaseItem("Melee_ShortKnife", "", "");
         CraftedItem("Melee_ShortKnifeARaisElite", 1, 1);
-        CraftplanType("WeaponDLC");
+        CraftplanType("Collectables_DLC42");
 		Color(Color_Blue);
 		InheritBaseStats();
         UniqueSaveID(9541);
@@ -58,7 +58,7 @@ sub main()
         RequiredItem("Craft_DuctTape", 3);
         BaseItem("Firearm_Pistol", "", "");
         CraftedItem("Firearm_PistolARaisElite", 1, 1);
-        CraftplanType("WeaponDLC");
+        CraftplanType("Collectables_DLC42");
 		Color(Color_Blue);
         UniqueSaveID(9542);
         HudIcon("blueprint_a");
@@ -81,7 +81,7 @@ sub main()
         RequiredItem("Craft_MetalScrap", 4);
         RequiredItem("Craft_DuctTape", 2);
         CraftedItem("Melee_MacheteARaisElite_DLC", 1, 1);
-        CraftplanType("WeaponDLC");
+        CraftplanType("Collectables_DLC42");
 		Color(Color_Blue);
 		InheritBaseStats();
         UniqueSaveID(9545);

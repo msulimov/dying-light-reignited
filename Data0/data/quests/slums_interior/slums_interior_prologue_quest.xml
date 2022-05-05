@@ -1020,6 +1020,83 @@
                                      pxsl_line="164" />
                             </Object>
                         </Phase>
+                        <!-- pduch 19.11.2021: upate to prologue -->
+                        <Phase
+                             type="appear"
+                             name="_"
+                             mode="hide"
+                             pxsl_line="167">
+                            <Object
+                                 pxsl_line="168">
+                                <QuestObject
+                                     class="ModelObject"
+                                     name="gates_prologue_new::gate_19th_1_corridor_opened_a"
+                                     pxsl_line="168" />
+                            </Object>
+                            <Object
+                                 pxsl_line="169">
+                                <QuestObject
+                                     class="ModelObject"
+                                     name="gates_prologue_new::gate_19th_1_corridor_opened_b"
+                                     pxsl_line="169" />
+                            </Object>
+                            <Object
+                                 pxsl_line="170">
+                                <QuestObject
+                                     class="ModelObject"
+                                     name="gates_prologue_new::gate_19th_2_corridor_opened_a"
+                                     pxsl_line="170" />
+                            </Object>
+                            <Object
+                                 pxsl_line="171">
+                                <QuestObject
+                                     class="ModelObject"
+                                     name="gates_prologue_new::gate_19th_2_corridor_opened_b"
+                                     pxsl_line="171" />
+                            </Object>
+                            <Object
+                                 pxsl_line="172">
+                                <QuestObject
+                                     class="ModelObject"
+                                     name="door_tower_20th_bedroom_opened"
+                                     pxsl_line="172" />
+                            </Object>
+                            <Object
+                                 pxsl_line="173">
+                                <QuestObject
+                                     class="ModelObject"
+                                     name="gates_prologue_new::door_prison_20th_storage_opened"
+                                     pxsl_line="173" />
+                            </Object>
+                            <Object
+                                 pxsl_line="174">
+                                <QuestObject
+                                     class="ModelObject"
+                                     name="gates_prologue_new::gate_20th_3_corridor_opened_a"
+                                     pxsl_line="174" />
+                            </Object>
+                            <Object
+                                 pxsl_line="175">
+                                <QuestObject
+                                     class="ModelObject"
+                                     name="gates_prologue_new::gate_20th_3_corridor_opened_b"
+                                     pxsl_line="175" />
+                            </Object>
+                            <Object
+                                 pxsl_line="176">
+                                <QuestObject
+                                     class="ModelObject"
+                                     name="gates_prologue_new::gate_20th_4_corridor_opened_a"
+                                     pxsl_line="176" />
+                            </Object>
+                            <Object
+                                 pxsl_line="177">
+                                <QuestObject
+                                     class="ModelObject"
+                                     name="gates_prologue_new::gate_20th_4_corridor_opened_b"
+                                     pxsl_line="177" />
+                            </Object>
+                        </Phase>
                     </Path>
                 </Phase>
                 <!-- -=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=- -->
@@ -1030,32 +1107,32 @@
                      name="PROLOGUE - START"
                      distance="1000000"
                      show_locations="false"
-                     pxsl_line="169">
+                     pxsl_line="184">
                     <Destination
-                         pxsl_line="169">
+                         pxsl_line="184">
                         <QuestObject
                              class="SpawnPoint"
                              name="cin_the_tower_waking_up_spawn"
-                             pxsl_line="169" />
+                             pxsl_line="184" />
                     </Destination>
                     <DebugPlayerPosition
-                         pxsl_line="170">
+                         pxsl_line="185">
                         <QuestObject
                              class="SpawnPoint"
                              name="cin_the_tower_waking_up_spawn"
-                             pxsl_line="170" />
+                             pxsl_line="185" />
                     </DebugPlayerPosition>
                 </Phase>
                 <Phase
                      type="checkpoint"
                      name="_"
-                     pxsl_line="171">
+                     pxsl_line="186">
                     <Destination
-                         pxsl_line="171">
+                         pxsl_line="186">
                         <QuestObject
                              class="SpawnPoint"
                              name="cin_the_tower_waking_up_spawn"
-                             pxsl_line="171" />
+                             pxsl_line="186" />
                     </Destination>
                 </Phase>
                 <!-- -=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=- -->
@@ -1064,45 +1141,45 @@
                 <Phase
                      type="enable"
                      name="_"
-                     pxsl_line="175">
+                     pxsl_line="190">
                     <Object
-                         pxsl_line="175">
+                         pxsl_line="190">
                         <QuestObject
                              class="QuestEnableGroup"
                              name="cin_the_tower_waking_up_trigger_qeg"
-                             pxsl_line="175" />
+                             pxsl_line="190" />
                     </Object>
                 </Phase>
                 <Phase
                      type="wait guard"
                      name="_"
                      time="2"
-                     pxsl_line="176" />
+                     pxsl_line="191" />
                 <Phase
                      type="use"
                      name="_"
                      desired_state="on"
                      show_locations="false"
-                     pxsl_line="177">
+                     pxsl_line="192">
                     <Trigger
-                         pxsl_line="177">
+                         pxsl_line="192">
                         <QuestObject
                              class="InteractiveMovieTrigger"
                              name="cin_the_tower_waking_up_trigger"
-                             pxsl_line="177" />
+                             pxsl_line="192" />
                     </Trigger>
                 </Phase>
                 <Phase
                      type="enable"
                      name="_"
                      state="disabled"
-                     pxsl_line="178">
+                     pxsl_line="193">
                     <Object
-                         pxsl_line="178">
+                         pxsl_line="193">
                         <QuestObject
                              class="QuestEnableGroup"
                              name="cin_the_tower_waking_up_trigger_qeg"
-                             pxsl_line="178" />
+                             pxsl_line="193" />
                     </Object>
                 </Phase>
             </Path>
@@ -1110,29 +1187,29 @@
         <Phase
              type="AND"
              name="18th Floor"
-             pxsl_line="179">
+             pxsl_line="194">
             <Path
-                 pxsl_line="179">
+                 pxsl_line="194">
                 <!-- conect NPC Guards to start LP for rollbacks -->
                 <Phase
                      type="use life place"
                      name="_"
                      teleport="true"
                      wait_for_move_end="false"
-                     pxsl_line="181">
+                     pxsl_line="196">
                     <LifePlace
-                         pxsl_line="181">
+                         pxsl_line="196">
                         <QuestObject
                              class="NPCLifePlace"
                              name="slums_thetower_guard_18th_03_lp_01"
-                             pxsl_line="181" />
+                             pxsl_line="196" />
                     </LifePlace>
                     <AI
-                         pxsl_line="182">
+                         pxsl_line="197">
                         <QuestObject
                              class="HumanAI"
                              name="slums_thetower_guard_18th_03"
-                             pxsl_line="182" />
+                             pxsl_line="197" />
                     </AI>
                 </Phase>
                 <Phase
@@ -1140,20 +1217,20 @@
                      name="_"
                      teleport="true"
                      wait_for_move_end="false"
-                     pxsl_line="183">
+                     pxsl_line="198">
                     <LifePlace
-                         pxsl_line="183">
+                         pxsl_line="198">
                         <QuestObject
                              class="NPCLifePlace"
                              name="slums_thetower_guard_19th_02_lp_00"
-                             pxsl_line="183" />
+                             pxsl_line="198" />
                     </LifePlace>
                     <AI
-                         pxsl_line="184">
+                         pxsl_line="199">
                         <QuestObject
                              class="HumanAI"
                              name="slums_thetower_guard_19th_02"
-                             pxsl_line="184" />
+                             pxsl_line="199" />
                     </AI>
                 </Phase>
                 <Phase
@@ -1161,46 +1238,46 @@
                      name="_"
                      teleport="true"
                      wait_for_move_end="false"
-                     pxsl_line="185">
+                     pxsl_line="200">
                     <LifePlace
-                         pxsl_line="185">
+                         pxsl_line="200">
                         <QuestObject
                              class="NPCLifePlace"
                              name="Praising_man_LP_Sit"
-                             pxsl_line="185" />
+                             pxsl_line="200" />
                     </LifePlace>
                     <AI
-                         pxsl_line="186">
+                         pxsl_line="201">
                         <QuestObject
                              class="HumanAI"
                              name="slums_thetower_m_19th_02"
-                             pxsl_line="186" />
+                             pxsl_line="201" />
                     </AI>
                 </Phase>
                 <Phase
                      type="set lifeplace"
                      name="_"
                      interact_dist="1"
-                     pxsl_line="187">
+                     pxsl_line="202">
                     <LifePlace
-                         pxsl_line="187">
+                         pxsl_line="202">
                         <QuestObject
                              class="NPCLifePlace"
                              name="slums_thetower_guard_19th_02_lp_00"
-                             pxsl_line="187" />
+                             pxsl_line="202" />
                     </LifePlace>
                 </Phase>
                 <Phase
                      type="wait guard"
                      name="_"
                      time="1"
-                     pxsl_line="188" />
+                     pxsl_line="203" />
                 <!-- ,radio-dialog _ voice2d Player_Prologue_00DLG01 -= Removed by Sikorek. -->
                 <Phase
                      type="wait guard"
                      name="_"
                      time="1"
-                     pxsl_line="190" />
+                     pxsl_line="205" />
                 <!-- TUTORIAL Movement -->
                 <Phase
                      type="hint"
@@ -1208,18 +1285,18 @@
                      hint_name="Tutorial_PrologueMove"
                      show="true"
                      enable="true"
-                     pxsl_line="191" />
+                     pxsl_line="206" />
                 <Phase
                      type="go to"
                      name="Going to the exit doors"
                      distance="1.2"
-                     pxsl_line="192">
+                     pxsl_line="207">
                     <Destination
-                         pxsl_line="192">
+                         pxsl_line="207">
                         <QuestObject
                              class="Marker"
                              name="cin_after_wake_MovieCenter"
-                             pxsl_line="192" />
+                             pxsl_line="207" />
                     </Destination>
                 </Phase>
                 <!-- ,talk _ slums_thetower_guard_18th_01 18thFloorGuard01_Prologue_02CHT01 -auto=true -show=false -->
@@ -1228,20 +1305,20 @@
                      name="_"
                      move_style="walk"
                      wait_for_move_end="false"
-                     pxsl_line="194">
+                     pxsl_line="209">
                     <LifePlace
-                         pxsl_line="194">
+                         pxsl_line="209">
                         <QuestObject
                              class="NPCLifePlace"
                              name="LP_18th_W_3_sweeping"
-                             pxsl_line="194" />
+                             pxsl_line="209" />
                     </LifePlace>
                     <AI
-                         pxsl_line="195">
+                         pxsl_line="210">
                         <QuestObject
                              class="HumanAI"
                              name="slums_thetower_18th_W_2"
-                             pxsl_line="195" />
+                             pxsl_line="210" />
                     </AI>
                 </Phase>
                 <!-- -=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-     -->
@@ -1250,134 +1327,134 @@
                 <Phase
                      type="AND"
                      name="_"
-                     pxsl_line="199">
+                     pxsl_line="214">
                     <Path
-                         pxsl_line="200">
+                         pxsl_line="215">
                         <Phase
                              type="enable"
                              name="_"
-                             pxsl_line="201">
+                             pxsl_line="216">
                             <Object
-                                 pxsl_line="201">
+                                 pxsl_line="216">
                                 <QuestObject
                                      class="QuestEnableGroup"
                                      name="cin_after_wake_01_trigger_qeg"
-                                     pxsl_line="201" />
+                                     pxsl_line="216" />
                             </Object>
                         </Phase>
                         <Phase
                              type="use"
                              name="PROLOGUE - CIN - Talking to a guard"
                              desired_state="on"
-                             pxsl_line="202">
+                             pxsl_line="217">
                             <Trigger
-                                 pxsl_line="202">
+                                 pxsl_line="217">
                                 <QuestObject
                                      class="InteractiveMovieTrigger"
                                      name="cin_after_wake_01_trigger"
-                                     pxsl_line="202" />
+                                     pxsl_line="217" />
                             </Trigger>
                             <DebugPlayerPosition
-                                 pxsl_line="203">
+                                 pxsl_line="218">
                                 <QuestObject
                                      class="SpawnPoint"
                                      name="BringDawud_SP_Tower_SalmaAndSammy_001"
-                                     pxsl_line="203" />
+                                     pxsl_line="218" />
                             </DebugPlayerPosition>
                         </Phase>
                         <Phase
                              type="enable"
                              name="_"
                              state="disabled"
-                             pxsl_line="204">
+                             pxsl_line="219">
                             <Object
-                                 pxsl_line="204">
+                                 pxsl_line="219">
                                 <QuestObject
                                      class="QuestEnableGroup"
                                      name="cin_after_wake_01_trigger_qeg"
-                                     pxsl_line="204" />
+                                     pxsl_line="219" />
                             </Object>
                         </Phase>
                         <Phase
                              type="appear"
                              name="_"
                              mode="show"
-                             pxsl_line="205">
+                             pxsl_line="220">
                             <Object
-                                 pxsl_line="206">
+                                 pxsl_line="221">
                                 <QuestObject
                                      class="HumanAI"
                                      name="slums_thetower_guard_18th_01"
-                                     pxsl_line="206" />
+                                     pxsl_line="221" />
                             </Object>
                             <Object
-                                 pxsl_line="207">
+                                 pxsl_line="222">
                                 <QuestObject
                                      class="DoorDI"
                                      name="slums_thetower_start_door"
-                                     pxsl_line="207" />
+                                     pxsl_line="222" />
                             </Object>
                         </Phase>
                         <Phase
                              type="appear"
                              name="_"
                              mode="hide"
-                             pxsl_line="208">
+                             pxsl_line="223">
                             <Object
-                                 pxsl_line="208">
+                                 pxsl_line="223">
                                 <QuestObject
                                      class="MovieActor"
                                      name="cin_after_wake_Door"
-                                     pxsl_line="208" />
+                                     pxsl_line="223" />
                             </Object>
                         </Phase>
                         <Phase
                              type="use life place"
                              name="_"
                              teleport="true"
-                             pxsl_line="209">
+                             pxsl_line="224">
                             <LifePlace
-                                 pxsl_line="209">
+                                 pxsl_line="224">
                                 <QuestObject
                                      class="NPCLifePlace"
                                      name="slums_thetower_guard_18th_01_lp_01"
-                                     pxsl_line="209" />
+                                     pxsl_line="224" />
                             </LifePlace>
                             <AI
-                                 pxsl_line="210">
+                                 pxsl_line="225">
                                 <QuestObject
                                      class="HumanAI"
                                      name="slums_thetower_guard_18th_01"
-                                     pxsl_line="210" />
+                                     pxsl_line="225" />
                             </AI>
                         </Phase>
                     </Path>
                     <Path
-                         pxsl_line="211">
+                         pxsl_line="226">
                         <Phase
                              type="wait guard"
                              name="_"
                              time="7"
-                             pxsl_line="212" />
+                             pxsl_line="227" />
                         <Phase
                              type="use life place"
                              name="_"
                              move_style="walk"
                              wait_for_move_end="false"
-                             pxsl_line="213">
+                             pxsl_line="228">
                             <LifePlace
-                                 pxsl_line="213">
+                                 pxsl_line="228">
                                 <QuestObject
                                      class="NPCLifePlace"
                                      name="LP_18th_W_3_sweeping"
-                                     pxsl_line="213" />
+                                     pxsl_line="228" />
                             </LifePlace>
                             <AI
-                                 pxsl_line="214">
+                                 pxsl_line="229">
                                 <QuestObject
                                      class="HumanAI"
                                      name="slums_thetower_18th_W_2"
-                                     pxsl_line="214" />
+                                     pxsl_line="229" />
                             </AI>
                         </Phase>
                     </Path>
@@ -1385,13 +1462,13 @@
                 <Phase
                      type="checkpoint"
                      name="_"
-                     pxsl_line="215">
+                     pxsl_line="230">
                     <Destination
-                         pxsl_line="215">
+                         pxsl_line="230">
                         <QuestObject
                              class="SpawnPoint"
                              name="cin_after_wake_01_pos"
-                             pxsl_line="215" />
+                             pxsl_line="230" />
                     </Destination>
                 </Phase>
                 <!-- only for invoke -->
@@ -1399,52 +1476,52 @@
                      type="go to"
                      name="PROLOGUE - Go see The Boss"
                      distance="100000"
-                     pxsl_line="216">
+                     pxsl_line="231">
                     <Destination
-                         pxsl_line="216">
+                         pxsl_line="231">
                         <QuestObject
                              class="SpawnPoint"
                              name="cin_after_wake_01_pos"
-                             pxsl_line="216" />
+                             pxsl_line="231" />
                     </Destination>
                     <DebugPlayerPosition
-                         pxsl_line="217">
+                         pxsl_line="232">
                         <QuestObject
                              class="SpawnPoint"
                              name="cin_after_wake_01_pos"
-                             pxsl_line="217" />
+                             pxsl_line="232" />
                     </DebugPlayerPosition>
                 </Phase>
                 <Phase
                      type="AND"
                      name="_"
-                     pxsl_line="218">
+                     pxsl_line="233">
                     <Path
-                         pxsl_line="219">
+                         pxsl_line="234">
                         <Phase
                              type="wait guard"
                              name="_"
                              time="1"
-                             pxsl_line="220" />
+                             pxsl_line="235" />
                         <!-- SHOW MINI MAP AND OBJECTIVE -->
                         <Phase
                              type="hudgroup"
                              name="_"
                              group="HidePrologue"
                              mode="show"
-                             pxsl_line="221" />
+                             pxsl_line="236" />
                         <Phase
                              type="wait guard"
                              name="_"
                              time="2"
-                             pxsl_line="222" />
+                             pxsl_line="237" />
                         <Phase
                              type="hint"
                              name="_"
                              hint_name="Tutorial_PrologueRadar"
                              show="true"
                              enable="true"
-                             pxsl_line="223" />
+                             pxsl_line="238" />
                     </Path>
                 </Phase>
             </Path>
@@ -1458,71 +1535,71 @@
              name="Get to Brecken"
              objective="&amp;Prologue_OBJ_GetToBrecken&amp;"
              announce_objective="false"
-             pxsl_line="227">
+             pxsl_line="242">
             <Path
-                 pxsl_line="227">
+                 pxsl_line="242">
                 <Phase
                      type="AND"
                      name="_"
-                     pxsl_line="228">
+                     pxsl_line="243">
                     <!-- LOCATION        -->
                     <Path
-                         pxsl_line="229">
+                         pxsl_line="244">
                         <Phase
                              type="AND"
                              name="Meeting Rahim for a first time"
-                             pxsl_line="230">
+                             pxsl_line="245">
                             <Path
-                                 pxsl_line="230">
+                                 pxsl_line="245">
                                 <Phase
                                      type="use"
                                      name="_"
                                      desired_state="opened"
-                                     pxsl_line="231">
+                                     pxsl_line="246">
                                     <Trigger
-                                         pxsl_line="231">
+                                         pxsl_line="246">
                                         <QuestObject
                                              class="DoorDI"
                                              name="slums_thetower_Brecken_door"
-                                             pxsl_line="231" />
+                                             pxsl_line="246" />
                                     </Trigger>
                                 </Phase>
                                 <Phase
                                      type="enable"
                                      name="_"
                                      state="disabled"
-                                     pxsl_line="232">
+                                     pxsl_line="247">
                                     <Object
-                                         pxsl_line="233">
+                                         pxsl_line="248">
                                         <QuestObject
                                              class="SensorAmbientMusicArea"
                                              name="SAMA_SocialFloors"
-                                             pxsl_line="233" />
+                                             pxsl_line="248" />
                                     </Object>
                                 </Phase>
                                 <Phase
                                      type="enable"
                                      name="_"
-                                     pxsl_line="234">
+                                     pxsl_line="249">
                                     <Object
-                                         pxsl_line="234">
+                                         pxsl_line="249">
                                         <QuestObject
                                              class="DoorDI"
                                              name="slums_thetower_Brecken_door"
-                                             pxsl_line="234" />
+                                             pxsl_line="249" />
                                     </Object>
                                 </Phase>
                                 <Phase
                                      type="appear"
                                      name="_"
                                      mode="show"
-                                     pxsl_line="235">
+                                     pxsl_line="250">
                                     <Object
-                                         pxsl_line="235">
+                                         pxsl_line="250">
                                         <QuestObject
                                              class="HumanAI"
                                              name="Rakim_Meeting"
-                                             pxsl_line="235" />
+                                             pxsl_line="250" />
                                     </Object>
                                 </Phase>
                                 <Phase
@@ -1530,33 +1607,33 @@
                                      name="_"
                                      teleport="true"
                                      wait_for_move_end="false"
-                                     pxsl_line="236">
+                                     pxsl_line="251">
                                     <LifePlace
-                                         pxsl_line="236">
+                                         pxsl_line="251">
                                         <QuestObject
                                              class="NPCLifePlace"
                                              name="cin_meet_rakim_01_start_lp"
-                                             pxsl_line="236" />
+                                             pxsl_line="251" />
                                     </LifePlace>
                                     <AI
-                                         pxsl_line="237">
+                                         pxsl_line="252">
                                         <QuestObject
                                              class="HumanAI"
                                              name="Rakim_Meeting"
-                                             pxsl_line="237" />
+                                             pxsl_line="252" />
                                     </AI>
                                 </Phase>
                                 <Phase
                                      type="go to"
                                      name="_"
                                      distance="4"
-                                     pxsl_line="238">
+                                     pxsl_line="253">
                                     <Destination
-                                         pxsl_line="238">
+                                         pxsl_line="253">
                                         <QuestObject
                                              class="InteractiveMovieTrigger"
                                              name="cin_meet_rakim_01_trigger"
-                                             pxsl_line="238" />
+                                             pxsl_line="253" />
                                     </Destination>
                                 </Phase>
                             </Path>
@@ -1564,113 +1641,113 @@
                     </Path>
                     <!-- slums_thetower_guard_18th_02 -->
                     <Path
-                         pxsl_line="239">
+                         pxsl_line="254">
                         <Phase
                              type="go to"
                              name="_"
                              distance="6"
                              show_locations="false"
-                             pxsl_line="240">
+                             pxsl_line="255">
                             <Destination
-                                 pxsl_line="240">
+                                 pxsl_line="255">
                                 <QuestObject
                                      class="Marker"
                                      name="thetower_18_loc"
-                                     pxsl_line="240" />
+                                     pxsl_line="255" />
                             </Destination>
                         </Phase>
                         <Phase
                              type="enable"
                              name="_"
-                             pxsl_line="241">
+                             pxsl_line="256">
                             <Object
-                                 pxsl_line="242">
+                                 pxsl_line="257">
                                 <QuestObject
                                      class="NPCLifeGraph"
                                      name="slums_thetower_guard_18th_03_lp_graph"
-                                     pxsl_line="242" />
+                                     pxsl_line="257" />
                             </Object>
                             <Object
-                                 pxsl_line="243">
+                                 pxsl_line="258">
                                 <QuestObject
                                      class="NPCLifeGraph"
                                      name="LP_18th_W_2_graph"
-                                     pxsl_line="243" />
+                                     pxsl_line="258" />
                             </Object>
                             <Object
-                                 pxsl_line="244">
+                                 pxsl_line="259">
                                 <QuestObject
                                      class="NPCLifeGraph"
                                      name="LP_18th_M_1_graph"
-                                     pxsl_line="244" />
+                                     pxsl_line="259" />
                             </Object>
                             <Object
-                                 pxsl_line="245">
+                                 pxsl_line="260">
                                 <QuestObject
                                      class="NPCLifeGraph"
                                      name="LP_18th_M_3_graph"
-                                     pxsl_line="245" />
+                                     pxsl_line="260" />
                             </Object>
                             <Object
-                                 pxsl_line="246">
+                                 pxsl_line="261">
                                 <QuestObject
                                      class="NPCLifeGraph"
                                      name="LP_18th_W_1_graph"
-                                     pxsl_line="246" />
+                                     pxsl_line="261" />
                             </Object>
                         </Phase>
                     </Path>
                     <!-- TIME CHANGE -->
                     <Path
-                         pxsl_line="247">
+                         pxsl_line="262">
                         <Phase
                              type="go to"
                              name="_"
                              distance="0"
                              show_locations="false"
-                             pxsl_line="248">
+                             pxsl_line="263">
                             <Destination
-                                 pxsl_line="248">
+                                 pxsl_line="263">
                                 <QuestObject
                                      class="SensorGoTo"
                                      name="prologue_time_change_goto"
-                                     pxsl_line="248" />
+                                     pxsl_line="263" />
                             </Destination>
                         </Phase>
                         <Phase
                              type="enable"
                              name="en - 18 : 30"
-                             pxsl_line="249">
+                             pxsl_line="264">
                             <Object
-                                 pxsl_line="249">
+                                 pxsl_line="264">
                                 <QuestObject
                                      class="ForceDayTimeObject"
                                      name="ForceDayTimeObject_01_Prologue_18_30"
-                                     pxsl_line="249" />
+                                     pxsl_line="264" />
                             </Object>
                         </Phase>
                     </Path>
                     <!-- SALMA TALK ABOUT 31 -->
                     <Path
-                         pxsl_line="250">
+                         pxsl_line="265">
                         <Phase
                              type="OR"
                              name="_"
-                             pxsl_line="251">
+                             pxsl_line="266">
                             <Path
-                                 pxsl_line="252">
+                                 pxsl_line="267">
                                 <Phase
                                      type="go to"
                                      name="_"
                                      distance="6"
                                      show_locations="false"
-                                     pxsl_line="253">
+                                     pxsl_line="268">
                                     <Destination
-                                         pxsl_line="253">
+                                         pxsl_line="268">
                                         <QuestObject
                                              class="NPCLifePlace"
                                              name="LP_18th_W_4_wound"
-                                             pxsl_line="253" />
+                                             pxsl_line="268" />
                                     </Destination>
                                 </Phase>
                                 <Phase
@@ -1680,22 +1757,22 @@
                                      group="SurvivorWoman01_Prologue_09DLG01"
                                      show_locations="false"
                                      auto_start="true"
-                                     pxsl_line="254" />
+                                     pxsl_line="269" />
                             </Path>
                             <Path
-                                 pxsl_line="255">
+                                 pxsl_line="270">
                                 <Phase
                                      type="go to"
                                      name="_"
                                      distance="0"
                                      show_locations="false"
-                                     pxsl_line="256">
+                                     pxsl_line="271">
                                     <Destination
-                                         pxsl_line="256">
+                                         pxsl_line="271">
                                         <QuestObject
                                              class="SensorGoTo"
                                              name="cin_meet_rakim_01_goto"
-                                             pxsl_line="256" />
+                                             pxsl_line="271" />
                                     </Destination>
                                 </Phase>
                             </Path>
@@ -1703,62 +1780,62 @@
                         <Phase
                              type="OR"
                              name="_"
-                             pxsl_line="257">
+                             pxsl_line="272">
                             <Path
-                                 pxsl_line="258">
+                                 pxsl_line="273">
                                 <Phase
                                      type="go to"
                                      name="_"
                                      distance="0"
                                      show_locations="false"
-                                     pxsl_line="259">
+                                     pxsl_line="274">
                                     <Destination
-                                         pxsl_line="259">
+                                         pxsl_line="274">
                                         <QuestObject
                                              class="SensorGoTo"
                                              name="cin_meet_rakim_01_goto"
-                                             pxsl_line="259" />
+                                             pxsl_line="274" />
                                     </Destination>
                                 </Phase>
                             </Path>
                             <Path
-                                 pxsl_line="260">
+                                 pxsl_line="275">
                                 <Phase
                                      type="talk"
                                      name="_"
                                      speaker="Salma"
                                      group="SurvivorWoman01_Prologue_09DLG01_b"
                                      show_locations="false"
-                                     pxsl_line="261" />
+                                     pxsl_line="276" />
                                 <Phase
                                      type="set lifeplace"
                                      name="_"
                                      interact_dist="0"
-                                     pxsl_line="262">
+                                     pxsl_line="277">
                                     <LifePlace
-                                         pxsl_line="262">
+                                         pxsl_line="277">
                                         <QuestObject
                                              class="NPCLifePlace"
                                              name="LP_18th_W_4_sit"
-                                             pxsl_line="262" />
+                                             pxsl_line="277" />
                                     </LifePlace>
                                 </Phase>
                                 <Phase
                                      type="wait guard"
                                      name="_"
                                      time="1"
-                                     pxsl_line="263" />
+                                     pxsl_line="278" />
                                 <Phase
                                      type="set lifeplace"
                                      name="_"
                                      interact_level="blocked"
-                                     pxsl_line="264">
+                                     pxsl_line="279">
                                     <LifePlace
-                                         pxsl_line="264">
+                                         pxsl_line="279">
                                         <QuestObject
                                              class="NPCLifePlace"
                                              name="LP_18th_W_4_sit"
-                                             pxsl_line="264" />
+                                             pxsl_line="279" />
                                     </LifePlace>
                                 </Phase>
                             </Path>
@@ -1767,23 +1844,23 @@
                              type="set dialog"
                              name="_"
                              speaker="Salma"
-                             pxsl_line="265" />
+                             pxsl_line="280" />
                     </Path>
                     <!-- TWO GUYS -->
                     <Path
-                         pxsl_line="266">
+                         pxsl_line="281">
                         <Phase
                              type="go to"
                              name="_"
                              distance="5"
                              show_locations="false"
-                             pxsl_line="267">
+                             pxsl_line="282">
                             <Destination
-                                 pxsl_line="267">
+                                 pxsl_line="282">
                                 <QuestObject
                                      class="Marker"
                                      name="thetower_18_b_loc"
-                                     pxsl_line="267" />
+                                     pxsl_line="282" />
                             </Destination>
                         </Phase>
                         <Phase
@@ -1792,7 +1869,7 @@
                              speaker="Salma"
                              group="SurvivorWoman01_Prologue_09DLG01_c"
                              auto_start="true"
-                             pxsl_line="268" />
+                             pxsl_line="283" />
                         <Phase
                              type="talk"
                              name="_"
@@ -1800,29 +1877,29 @@
                              group="Jared_Prologue02_01"
                              show_locations="false"
                              auto_start="true"
-                             pxsl_line="269" />
+                             pxsl_line="284" />
                     </Path>
                     <Path
-                         pxsl_line="270">
+                         pxsl_line="285">
                         <Phase
                              type="go to"
                              name="_"
                              distance="11"
                              show_locations="false"
-                             pxsl_line="271">
+                             pxsl_line="286">
                             <Destination
-                                 pxsl_line="271">
+                                 pxsl_line="286">
                                 <QuestObject
                                      class="Marker"
                                      name="thetower_18_c_loc"
-                                     pxsl_line="271" />
+                                     pxsl_line="286" />
                             </Destination>
                         </Phase>
                         <Phase
                              type="set dialog"
                              name="_"
                              speaker="Jared"
-                             pxsl_line="272" />
+                             pxsl_line="287" />
                         <Phase
                              type="talk"
                              name="_"
@@ -1830,57 +1907,57 @@
                              group="Jared_Prologue02_02"
                              show_locations="false"
                              auto_start="true"
-                             pxsl_line="273" />
+                             pxsl_line="288" />
                         <Phase
                              type="set dialog"
                              name="_"
                              speaker="Jared"
-                             pxsl_line="274" />
+                             pxsl_line="289" />
                         <Phase
                              type="OR"
                              name="_"
-                             pxsl_line="275">
+                             pxsl_line="290">
                             <Path
-                                 pxsl_line="276">
+                                 pxsl_line="291">
                                 <Phase
                                      type="talk"
                                      name="_"
                                      speaker="npc06_hubthetower"
                                      group="NPC06_HubTheTower_Prologue02_03"
                                      show_locations="false"
-                                     pxsl_line="277" />
+                                     pxsl_line="292" />
                             </Path>
                             <Path
-                                 pxsl_line="278">
+                                 pxsl_line="293">
                                 <Phase
                                      type="go to"
                                      name="_"
                                      distance="4"
                                      show_locations="false"
-                                     pxsl_line="279">
+                                     pxsl_line="294">
                                     <Destination
-                                         pxsl_line="279">
+                                         pxsl_line="294">
                                         <QuestObject
                                              class="Marker"
                                              name="thetower_18_loc"
-                                             pxsl_line="279" />
+                                             pxsl_line="294" />
                                     </Destination>
                                 </Phase>
                             </Path>
                             <Path
-                                 pxsl_line="280">
+                                 pxsl_line="295">
                                 <Phase
                                      type="go to"
                                      name="_"
                                      distance="0"
                                      show_locations="false"
-                                     pxsl_line="281">
+                                     pxsl_line="296">
                                     <Destination
-                                         pxsl_line="281">
+                                         pxsl_line="296">
                                         <QuestObject
                                              class="SensorGoTo"
                                              name="cin_meet_rakim_01_goto"
-                                             pxsl_line="281" />
+                                             pxsl_line="296" />
                                     </Destination>
                                 </Phase>
                             </Path>
@@ -1888,21 +1965,21 @@
                         <Phase
                              type="OR"
                              name="_"
-                             pxsl_line="282">
+                             pxsl_line="297">
                             <Path
-                                 pxsl_line="283">
+                                 pxsl_line="298">
                                 <Phase
                                      type="go to"
                                      name="_"
                                      distance="4"
                                      show_locations="false"
-                                     pxsl_line="284">
+                                     pxsl_line="299">
                                     <Destination
-                                         pxsl_line="284">
+                                         pxsl_line="299">
                                         <QuestObject
                                              class="Marker"
                                              name="thetower_18_loc"
-                                             pxsl_line="284" />
+                                             pxsl_line="299" />
                                     </Destination>
                                 </Phase>
                                 <Phase
@@ -1912,22 +1989,22 @@
                                      group="Jared_Prologue02_04"
                                      show_locations="false"
                                      auto_start="true"
-                                     pxsl_line="285" />
+                                     pxsl_line="300" />
                             </Path>
                             <Path
-                                 pxsl_line="286">
+                                 pxsl_line="301">
                                 <Phase
                                      type="go to"
                                      name="_"
                                      distance="0"
                                      show_locations="false"
-                                     pxsl_line="287">
+                                     pxsl_line="302">
                                     <Destination
-                                         pxsl_line="287">
+                                         pxsl_line="302">
                                         <QuestObject
                                              class="SensorGoTo"
                                              name="cin_meet_rakim_01_goto"
-                                             pxsl_line="287" />
+                                             pxsl_line="302" />
                                     </Destination>
                                 </Phase>
                             </Path>
@@ -1936,44 +2013,44 @@
                              type="set dialog"
                              name="_"
                              speaker="Jared"
-                             pxsl_line="288" />
+                             pxsl_line="303" />
                         <Phase
                              type="set dialog"
                              name="_"
                              speaker="npc06_hubthetower"
-                             pxsl_line="289" />
+                             pxsl_line="304" />
                     </Path>
                     <!-- TALK TO GUARD ZAFER -->
                     <Path
-                         pxsl_line="290">
+                         pxsl_line="305">
                         <Phase
                              type="OR"
                              name="_"
-                             pxsl_line="291">
+                             pxsl_line="306">
                             <Path
-                                 pxsl_line="292">
+                                 pxsl_line="307">
                                 <Phase
                                      type="talk"
                                      name="_"
                                      speaker="slums_thetower_m_19th_02"
                                      group="Zafer_Prologue02_08DLG01"
                                      show_locations="false"
-                                     pxsl_line="293" />
+                                     pxsl_line="308" />
                             </Path>
                             <Path
-                                 pxsl_line="294">
+                                 pxsl_line="309">
                                 <Phase
                                      type="go to"
                                      name="_"
                                      distance="0"
                                      show_locations="false"
-                                     pxsl_line="295">
+                                     pxsl_line="310">
                                     <Destination
-                                         pxsl_line="295">
+                                         pxsl_line="310">
                                         <QuestObject
                                              class="SensorGoTo"
                                              name="cin_meet_rakim_01_goto"
-                                             pxsl_line="295" />
+                                             pxsl_line="310" />
                                     </Destination>
                                 </Phase>
                             </Path>
@@ -1982,25 +2059,25 @@
                              type="set dialog"
                              name="_"
                              speaker="slums_thetower_m_19th_02"
-                             pxsl_line="296" />
+                             pxsl_line="311" />
                     </Path>
                 </Phase>
                 <Phase
                      type="AND"
                      name="Meeting Rahim for a first time"
-                     pxsl_line="297">
+                     pxsl_line="312">
                     <Path
-                         pxsl_line="297">
+                         pxsl_line="312">
                         <Phase
                              type="enable"
                              name="_"
-                             pxsl_line="298">
+                             pxsl_line="313">
                             <Object
-                                 pxsl_line="298">
+                                 pxsl_line="313">
                                 <QuestObject
                                      class="QuestEnableGroup"
                                      name="cin_meet_rakim_01_trigger_qeg"
-                                     pxsl_line="298" />
+                                     pxsl_line="313" />
                             </Object>
                         </Phase>
                         <!-- -=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=- -->
@@ -2010,20 +2087,20 @@
                              type="use"
                              name="PROLOGUE - CIN - First talk with Rahim"
                              desired_state="on"
-                             pxsl_line="303">
+                             pxsl_line="318">
                             <Trigger
-                                 pxsl_line="303">
+                                 pxsl_line="318">
                                 <QuestObject
                                      class="InteractiveMovieTrigger"
                                      name="cin_meet_rakim_01_trigger"
-                                     pxsl_line="303" />
+                                     pxsl_line="318" />
                             </Trigger>
                             <DebugPlayerPosition
-                                 pxsl_line="304">
+                                 pxsl_line="319">
                                 <QuestObject
                                      class="SpawnPoint"
                                      name="the_tower_brecken_room"
-                                     pxsl_line="304" />
+                                     pxsl_line="319" />
                             </DebugPlayerPosition>
                         </Phase>
                         <!-- BLOCK PLAYER RUNNING (3.5) -->
@@ -2032,112 +2109,112 @@
                              name="_"
                              block_run="true"
                              max_walk_speed="3.5"
-                             pxsl_line="305" />
+                             pxsl_line="320" />
                         <Phase
                              type="enable"
                              name="_"
-                             pxsl_line="306">
+                             pxsl_line="321">
                             <Object
-                                 pxsl_line="307">
+                                 pxsl_line="322">
                                 <QuestObject
                                      class="NPCLifePlace"
                                      name="Praising_man_LP_Sit_b"
-                                     pxsl_line="307" />
+                                     pxsl_line="322" />
                             </Object>
                         </Phase>
                         <Phase
                              type="enable"
                              name="_"
                              state="disabled"
-                             pxsl_line="308">
+                             pxsl_line="323">
                             <Object
-                                 pxsl_line="309">
+                                 pxsl_line="324">
                                 <QuestObject
                                      class="QuestEnableGroup"
                                      name="cin_meet_rakim_01_trigger_qeg"
-                                     pxsl_line="309" />
+                                     pxsl_line="324" />
                             </Object>
                             <Object
-                                 pxsl_line="310">
+                                 pxsl_line="325">
                                 <QuestObject
                                      class="ForceDayTimeObject"
                                      name="ForceDayTimeObject_01_Prologue_18_30"
-                                     pxsl_line="310" />
+                                     pxsl_line="325" />
                             </Object>
                             <Object
-                                 pxsl_line="311">
+                                 pxsl_line="326">
                                 <QuestObject
                                      class="NPCLifePlace"
                                      name="Praising_man_LP_Sit"
-                                     pxsl_line="311" />
+                                     pxsl_line="326" />
                             </Object>
                         </Phase>
                         <Phase
                              type="appear"
                              name="_"
                              mode="hide"
-                             pxsl_line="312">
+                             pxsl_line="327">
                             <Object
-                                 pxsl_line="313">
+                                 pxsl_line="328">
                                 <QuestObject
                                      class="ModelObject"
                                      name="cin_meet_rakim_01_cb_radio"
-                                     pxsl_line="313" />
+                                     pxsl_line="328" />
                             </Object>
                             <Object
-                                 pxsl_line="314">
+                                 pxsl_line="329">
                                 <QuestObject
                                      class="MovieActor"
                                      name="Door"
-                                     pxsl_line="314" />
+                                     pxsl_line="329" />
                             </Object>
                             <Object
-                                 pxsl_line="315">
+                                 pxsl_line="330">
                                 <QuestObject
                                      class="MovieActor"
                                      name="cin_meet_rakim_01_WalkieTalkie"
-                                     pxsl_line="315" />
+                                     pxsl_line="330" />
                             </Object>
                             <Object
-                                 pxsl_line="316">
+                                 pxsl_line="331">
                                 <QuestObject
                                      class="HumanAI"
                                      name="Rakim_Meeting"
-                                     pxsl_line="316" />
+                                     pxsl_line="331" />
                             </Object>
                             <Object
-                                 pxsl_line="317">
+                                 pxsl_line="332">
                                 <QuestObject
                                      class="MovieActor"
                                      name="cin_meet_rakim_01_chair_beafore"
-                                     pxsl_line="317" />
+                                     pxsl_line="332" />
                             </Object>
                         </Phase>
                         <Phase
                              type="appear"
                              name="_"
                              mode="show"
-                             pxsl_line="318">
+                             pxsl_line="333">
                             <Object
-                                 pxsl_line="319">
+                                 pxsl_line="334">
                                 <QuestObject
                                      class="ModelObject"
                                      name="thetower_brecken_balcony_doors_02"
-                                     pxsl_line="319" />
+                                     pxsl_line="334" />
                             </Object>
                             <Object
-                                 pxsl_line="320">
+                                 pxsl_line="335">
                                 <QuestObject
                                      class="HumanAI"
                                      name="Rakim"
-                                     pxsl_line="320" />
+                                     pxsl_line="335" />
                             </Object>
                             <Object
-                                 pxsl_line="321">
+                                 pxsl_line="336">
                                 <QuestObject
                                      class="ModelObject"
                                      name="slums_thetower_m_19th_02_chair"
-                                     pxsl_line="321" />
+                                     pxsl_line="336" />
                             </Object>
                         </Phase>
                         <Phase
@@ -2145,20 +2222,20 @@
                              name="_"
                              teleport="true"
                              wait_for_move_end="false"
-                             pxsl_line="322">
+                             pxsl_line="337">
                             <LifePlace
-                                 pxsl_line="322">
+                                 pxsl_line="337">
                                 <QuestObject
                                      class="NPCLifePlace"
                                      name="rakim_lp_brecken_room_01"
-                                     pxsl_line="322" />
+                                     pxsl_line="337" />
                             </LifePlace>
                             <AI
-                                 pxsl_line="323">
+                                 pxsl_line="338">
                                 <QuestObject
                                      class="HumanAI"
                                      name="Rakim"
-                                     pxsl_line="323" />
+                                     pxsl_line="338" />
                             </AI>
                         </Phase>
                         <Phase
@@ -2166,195 +2243,195 @@
                              name="_"
                              teleport="true"
                              wait_for_move_end="false"
-                             pxsl_line="324">
+                             pxsl_line="339">
                             <LifePlace
-                                 pxsl_line="324">
+                                 pxsl_line="339">
                                 <QuestObject
                                      class="NPCLifePlace"
                                      name="Praising_man_LP_Sit_b"
-                                     pxsl_line="324" />
+                                     pxsl_line="339" />
                             </LifePlace>
                             <AI
-                                 pxsl_line="325">
+                                 pxsl_line="340">
                                 <QuestObject
                                      class="HumanAI"
                                      name="slums_thetower_m_19th_02"
-                                     pxsl_line="325" />
+                                     pxsl_line="340" />
                             </AI>
                         </Phase>
                         <Phase
                              type="set lifeplace"
                              name="_"
                              interact_level="only_head"
-                             pxsl_line="326">
+                             pxsl_line="341">
                             <LifePlace
-                                 pxsl_line="326">
+                                 pxsl_line="341">
                                 <QuestObject
                                      class="NPCLifePlace"
                                      name="rakim_lp_brecken_room_01"
-                                     pxsl_line="326" />
+                                     pxsl_line="341" />
                             </LifePlace>
                         </Phase>
                         <!-- enabling logic graph and doors on 18th and 19th floor -->
                         <Phase
                              type="AND"
                              name="_"
-                             pxsl_line="327">
+                             pxsl_line="342">
                             <Path
-                                 pxsl_line="327">
+                                 pxsl_line="342">
                                 <Phase
                                      type="use life place"
                                      name="_"
                                      move_style="walk"
                                      wait_for_move_end="false"
-                                     pxsl_line="328">
+                                     pxsl_line="343">
                                     <LifePlace
-                                         pxsl_line="328">
+                                         pxsl_line="343">
                                         <QuestObject
                                              class="NPCLifePlace"
                                              name="slums_thetower_guard_18th_01_lp_05"
-                                             pxsl_line="328" />
+                                             pxsl_line="343" />
                                     </LifePlace>
                                     <AI
-                                         pxsl_line="329">
+                                         pxsl_line="344">
                                         <QuestObject
                                              class="HumanAI"
                                              name="slums_thetower_guard_18th_01"
-                                             pxsl_line="329" />
+                                             pxsl_line="344" />
                                     </AI>
                                 </Phase>
                                 <Phase
                                      type="enable"
                                      name="_"
-                                     pxsl_line="330">
+                                     pxsl_line="345">
                                     <Object
-                                         pxsl_line="330">
+                                         pxsl_line="345">
                                         <QuestObject
                                              class="NPCLifeGraph"
                                              name="slums_thetower_guard_18th_01_lp_graph"
-                                             pxsl_line="330" />
+                                             pxsl_line="345" />
                                     </Object>
                                 </Phase>
                                 <Phase
                                      type="enable"
                                      name="_"
                                      state="disabled"
-                                     pxsl_line="331">
+                                     pxsl_line="346">
                                     <Object
-                                         pxsl_line="331">
+                                         pxsl_line="346">
                                         <QuestObject
                                              class="NPCLifePlace"
                                              name="slums_thetower_guard_18th_01_lp_01"
-                                             pxsl_line="331" />
+                                             pxsl_line="346" />
                                     </Object>
                                 </Phase>
                                 <Phase
                                      type="appear"
                                      name="_"
                                      mode="show"
-                                     pxsl_line="332">
+                                     pxsl_line="347">
                                     <Object
-                                         pxsl_line="332">
+                                         pxsl_line="347">
                                         <QuestObject
                                              class="HumanAI"
                                              name="Elena"
-                                             pxsl_line="332" />
+                                             pxsl_line="347" />
                                     </Object>
                                 </Phase>
                                 <Phase
                                      type="appear"
                                      name="_"
                                      mode="hide"
-                                     pxsl_line="333">
+                                     pxsl_line="348">
                                     <Object
-                                         pxsl_line="334">
+                                         pxsl_line="349">
                                         <QuestObject
                                              class="ModelObject"
                                              name="slums_thetower_18th_quarantine_doors_01_a"
-                                             pxsl_line="334" />
+                                             pxsl_line="349" />
                                     </Object>
                                     <Object
-                                         pxsl_line="335">
+                                         pxsl_line="350">
                                         <QuestObject
                                              class="ModelObject"
                                              name="slums_thetower_18th_quarantine_doors_02_a"
-                                             pxsl_line="335" />
+                                             pxsl_line="350" />
                                     </Object>
                                     <Object
-                                         pxsl_line="336">
+                                         pxsl_line="351">
                                         <QuestObject
                                              class="ModelObject"
                                              name="slums_thetower_18th_quarantine_doors_lock_01"
-                                             pxsl_line="336" />
+                                             pxsl_line="351" />
                                     </Object>
                                     <Object
-                                         pxsl_line="337">
+                                         pxsl_line="352">
                                         <QuestObject
                                              class="ModelObject"
                                              name="slums_thetower_18th_quarantine_doors_lock_02"
-                                             pxsl_line="337" />
+                                             pxsl_line="352" />
                                     </Object>
                                 </Phase>
                                 <Phase
                                      type="appear"
                                      name="_"
                                      mode="show"
-                                     pxsl_line="338">
+                                     pxsl_line="353">
                                     <Object
-                                         pxsl_line="339">
+                                         pxsl_line="354">
                                         <QuestObject
                                              class="HumanAI"
                                              name="slums_thetower_18th_W_1"
-                                             pxsl_line="339" />
+                                             pxsl_line="354" />
                                     </Object>
                                     <Object
-                                         pxsl_line="340">
+                                         pxsl_line="355">
                                         <QuestObject
                                              class="HumanAI"
                                              name="slums_thetower_18th_M_1"
-                                             pxsl_line="340" />
+                                             pxsl_line="355" />
                                     </Object>
                                     <Object
-                                         pxsl_line="341">
+                                         pxsl_line="356">
                                         <QuestObject
                                              class="HumanAI"
                                              name="slums_thetower_18th_K_1"
-                                             pxsl_line="341" />
+                                             pxsl_line="356" />
                                     </Object>
                                     <Object
-                                         pxsl_line="342">
+                                         pxsl_line="357">
                                         <QuestObject
                                              class="HumanAI"
                                              name="slums_thetower_18th_M_6_ambulatory"
-                                             pxsl_line="342" />
+                                             pxsl_line="357" />
                                     </Object>
                                     <Object
-                                         pxsl_line="343">
+                                         pxsl_line="358">
                                         <QuestObject
                                              class="HumanAI"
                                              name="slums_thetower_18th_M_5_ambulatory"
-                                             pxsl_line="343" />
+                                             pxsl_line="358" />
                                     </Object>
                                     <Object
-                                         pxsl_line="344">
+                                         pxsl_line="359">
                                         <QuestObject
                                              class="ModelObject"
                                              name="slums_thetower_18th_quarantine_doors_01_b"
-                                             pxsl_line="344" />
+                                             pxsl_line="359" />
                                     </Object>
                                     <Object
-                                         pxsl_line="345">
+                                         pxsl_line="360">
                                         <QuestObject
                                              class="ModelObject"
                                              name="slums_thetower_18th_quarantine_doors_02_b"
-                                             pxsl_line="345" />
+                                             pxsl_line="360" />
                                     </Object>
                                     <Object
-                                         pxsl_line="346">
+                                         pxsl_line="361">
                                         <QuestObject
                                              class="DoorDI"
                                              name="Ambulatory_Door_18th_Floor"
-                                             pxsl_line="346" />
+                                             pxsl_line="361" />
                                     </Object>
                                 </Phase>
                                 <!-- ,dialog _ slums_thetower_boy_18th_01 -->
@@ -2362,120 +2439,120 @@
                                      type="use life place"
                                      name="_"
                                      teleport="true"
-                                     pxsl_line="348">
+                                     pxsl_line="363">
                                     <LifePlace
-                                         pxsl_line="348">
+                                         pxsl_line="363">
                                         <QuestObject
                                              class="NPCLifePlace"
                                              name="Lena_LP_01"
-                                             pxsl_line="348" />
+                                             pxsl_line="363" />
                                     </LifePlace>
                                     <AI
-                                         pxsl_line="349">
+                                         pxsl_line="364">
                                         <QuestObject
                                              class="HumanAI"
                                              name="Elena"
-                                             pxsl_line="349" />
+                                             pxsl_line="364" />
                                     </AI>
                                 </Phase>
                                 <Phase
                                      type="use life place"
                                      name="_"
                                      teleport="true"
-                                     pxsl_line="350">
+                                     pxsl_line="365">
                                     <LifePlace
-                                         pxsl_line="350">
+                                         pxsl_line="365">
                                         <QuestObject
                                              class="NPCLifePlace"
                                              name="Aman_LP_Ambulatory"
-                                             pxsl_line="350" />
+                                             pxsl_line="365" />
                                     </LifePlace>
                                     <AI
-                                         pxsl_line="351">
+                                         pxsl_line="366">
                                         <QuestObject
                                              class="HumanAI"
                                              name="Aman"
-                                             pxsl_line="351" />
+                                             pxsl_line="366" />
                                     </AI>
                                 </Phase>
                                 <Phase
                                      type="enable"
                                      name="_"
-                                     pxsl_line="352">
+                                     pxsl_line="367">
                                     <Object
-                                         pxsl_line="353">
+                                         pxsl_line="368">
                                         <QuestObject
                                              class="NPCLifeGraph"
                                              name="LP_18th_K_1_graph"
-                                             pxsl_line="353" />
+                                             pxsl_line="368" />
                                     </Object>
                                     <Object
-                                         pxsl_line="354">
+                                         pxsl_line="369">
                                         <QuestObject
                                              class="NPCLifeGraph"
                                              name="LP_18th_2Kids_Graph"
-                                             pxsl_line="354" />
+                                             pxsl_line="369" />
                                     </Object>
                                     <Object
-                                         pxsl_line="355">
+                                         pxsl_line="370">
                                         <QuestObject
                                              class="NPCLifeGraph"
                                              name="Praising_man_Graph"
-                                             pxsl_line="355" />
+                                             pxsl_line="370" />
                                     </Object>
                                     <Object
-                                         pxsl_line="356">
+                                         pxsl_line="371">
                                         <QuestObject
                                              class="NPCLifeGraph"
                                              name="Jared_LifeGraph"
-                                             pxsl_line="356" />
+                                             pxsl_line="371" />
                                     </Object>
                                     <Object
-                                         pxsl_line="357">
+                                         pxsl_line="372">
                                         <QuestObject
                                              class="NPCLifeGraph"
                                              name="Khaliq_LP_Graph"
-                                             pxsl_line="357" />
+                                             pxsl_line="372" />
                                     </Object>
                                     <Object
-                                         pxsl_line="358">
+                                         pxsl_line="373">
                                         <QuestObject
                                              class="NPCLifeGraph"
                                              name="Shopkeeper_Guard_19th_Graph"
-                                             pxsl_line="358" />
+                                             pxsl_line="373" />
                                     </Object>
                                     <Object
-                                         pxsl_line="359">
+                                         pxsl_line="374">
                                         <QuestObject
                                              class="NPCLifeGraph"
                                              name="slums_thetower_m_19th_Graph_2"
-                                             pxsl_line="359" />
+                                             pxsl_line="374" />
                                     </Object>
                                 </Phase>
                                 <Phase
                                      type="enable"
                                      name="_"
                                      state="disabled"
-                                     pxsl_line="360">
+                                     pxsl_line="375">
                                     <Object
-                                         pxsl_line="360">
+                                         pxsl_line="375">
                                         <QuestObject
                                              class="NPCLifePlace"
                                              name="Aman_LP_Ambulatory_Start"
-                                             pxsl_line="360" />
+                                             pxsl_line="375" />
                                     </Object>
                                 </Phase>
                                 <Phase
                                      type="appear"
                                      name="_"
                                      mode="hide"
-                                     pxsl_line="361">
+                                     pxsl_line="376">
                                     <Object
-                                         pxsl_line="362">
+                                         pxsl_line="377">
                                         <QuestObject
                                              class="HumanAI"
                                              name="Alfie"
-                                             pxsl_line="362" />
+                                             pxsl_line="377" />
                                     </Object>
                                 </Phase>
                                 <!-- 19th floor two guys talking -->
@@ -2483,20 +2560,20 @@
                                      type="use life place"
                                      name="_"
                                      teleport="true"
-                                     pxsl_line="364">
+                                     pxsl_line="379">
                                     <LifePlace
-                                         pxsl_line="364">
+                                         pxsl_line="379">
                                         <QuestObject
                                              class="NPCLifePlace"
                                              name="Jared_LP_02"
-                                             pxsl_line="364" />
+                                             pxsl_line="379" />
                                     </LifePlace>
                                     <AI
-                                         pxsl_line="365">
+                                         pxsl_line="380">
                                         <QuestObject
                                              class="HumanAI"
                                              name="Jared"
-                                             pxsl_line="365" />
+                                             pxsl_line="380" />
                                     </AI>
                                 </Phase>
                                 <!-- ,use-lp _ NPCLifePlace LP_NPC06_02 -teleport=true -->
@@ -2505,20 +2582,20 @@
                                      type="use life place"
                                      name="_"
                                      teleport="true"
-                                     pxsl_line="368">
+                                     pxsl_line="383">
                                     <LifePlace
-                                         pxsl_line="368">
+                                         pxsl_line="383">
                                         <QuestObject
                                              class="NPCLifePlace"
                                              name="Khaliq_Sit"
-                                             pxsl_line="368" />
+                                             pxsl_line="383" />
                                     </LifePlace>
                                     <AI
-                                         pxsl_line="369">
+                                         pxsl_line="384">
                                         <QuestObject
                                              class="HumanAI"
                                              name="Khaliq_Glasses"
-                                             pxsl_line="369" />
+                                             pxsl_line="384" />
                                     </AI>
                                 </Phase>
                             </Path>
@@ -2528,20 +2605,20 @@
                              name="_"
                              teleport="true"
                              wait_for_move_end="false"
-                             pxsl_line="370">
+                             pxsl_line="385">
                             <LifePlace
-                                 pxsl_line="370">
+                                 pxsl_line="385">
                                 <QuestObject
                                      class="NPCLifePlace"
                                      name="LP_18th_M_5_ambulatory_sit_by_kid"
-                                     pxsl_line="370" />
+                                     pxsl_line="385" />
                             </LifePlace>
                             <AI
-                                 pxsl_line="371">
+                                 pxsl_line="386">
                                 <QuestObject
                                      class="HumanAI"
                                      name="slums_thetower_18th_M_5_ambulatory"
-                                     pxsl_line="371" />
+                                     pxsl_line="386" />
                             </AI>
                         </Phase>
                         <Phase
@@ -2549,33 +2626,33 @@
                              name="_"
                              teleport="true"
                              wait_for_move_end="false"
-                             pxsl_line="372">
+                             pxsl_line="387">
                             <LifePlace
-                                 pxsl_line="372">
+                                 pxsl_line="387">
                                 <QuestObject
                                      class="NPCLifePlace"
                                      name="LP_18th_M_6_ambulatory_sit"
-                                     pxsl_line="372" />
+                                     pxsl_line="387" />
                             </LifePlace>
                             <AI
-                                 pxsl_line="373">
+                                 pxsl_line="388">
                                 <QuestObject
                                      class="HumanAI"
                                      name="slums_thetower_18th_M_6_ambulatory"
-                                     pxsl_line="373" />
+                                     pxsl_line="388" />
                             </AI>
                         </Phase>
                         <Phase
                              type="appear"
                              name="_"
                              mode="hide"
-                             pxsl_line="374">
+                             pxsl_line="389">
                             <Object
-                                 pxsl_line="374">
+                                 pxsl_line="389">
                                 <QuestObject
                                      class="HumanAI"
                                      name="slums_thetower_18th_M_7"
-                                     pxsl_line="374" />
+                                     pxsl_line="389" />
                             </Object>
                         </Phase>
                         <!-- Maurice  and Robin -->
@@ -2583,112 +2660,112 @@
                              type="appear"
                              name="_"
                              mode="show"
-                             pxsl_line="376">
+                             pxsl_line="391">
                             <Object
-                                 pxsl_line="377">
+                                 pxsl_line="392">
                                 <QuestObject
                                      class="HumanAI"
                                      name="Robin"
-                                     pxsl_line="377" />
+                                     pxsl_line="392" />
                             </Object>
                             <Object
-                                 pxsl_line="378">
+                                 pxsl_line="393">
                                 <QuestObject
                                      class="HumanAI"
                                      name="Maurice"
-                                     pxsl_line="378" />
+                                     pxsl_line="393" />
                             </Object>
                         </Phase>
                         <Phase
                              type="use life place"
                              name="_"
                              teleport="true"
-                             pxsl_line="379">
+                             pxsl_line="394">
                             <LifePlace
-                                 pxsl_line="379">
+                                 pxsl_line="394">
                                 <QuestObject
                                      class="NPCLifePlace"
                                      name="Robin_19th_LP_Wardrobe"
-                                     pxsl_line="379" />
+                                     pxsl_line="394" />
                             </LifePlace>
                             <AI
-                                 pxsl_line="380">
+                                 pxsl_line="395">
                                 <QuestObject
                                      class="HumanAI"
                                      name="Robin"
-                                     pxsl_line="380" />
+                                     pxsl_line="395" />
                             </AI>
                         </Phase>
                         <Phase
                              type="use life place"
                              name="_"
                              teleport="true"
-                             pxsl_line="381">
+                             pxsl_line="396">
                             <LifePlace
-                                 pxsl_line="381">
+                                 pxsl_line="396">
                                 <QuestObject
                                      class="NPCLifePlace"
                                      name="Maurice_19th_LP_Wardrobe"
-                                     pxsl_line="381" />
+                                     pxsl_line="396" />
                             </LifePlace>
                             <AI
-                                 pxsl_line="382">
+                                 pxsl_line="397">
                                 <QuestObject
                                      class="HumanAI"
                                      name="Maurice"
-                                     pxsl_line="382" />
+                                     pxsl_line="397" />
                             </AI>
                         </Phase>
                         <Phase
                              type="use life place"
                              name="_"
                              teleport="true"
-                             pxsl_line="383">
+                             pxsl_line="398">
                             <LifePlace
-                                 pxsl_line="383">
+                                 pxsl_line="398">
                                 <QuestObject
                                      class="NPCLifePlace"
                                      name="Salma_LP_Sit_001"
-                                     pxsl_line="383" />
+                                     pxsl_line="398" />
                             </LifePlace>
                             <AI
-                                 pxsl_line="384">
+                                 pxsl_line="399">
                                 <QuestObject
                                      class="HumanAI"
                                      name="Salma"
-                                     pxsl_line="384" />
+                                     pxsl_line="399" />
                             </AI>
                         </Phase>
                         <Phase
                              type="use life place"
                              name="_"
                              teleport="true"
-                             pxsl_line="385">
+                             pxsl_line="400">
                             <LifePlace
-                                 pxsl_line="385">
+                                 pxsl_line="400">
                                 <QuestObject
                                      class="NPCLifePlace"
                                      name="Sammy_LP_Walk_001"
-                                     pxsl_line="385" />
+                                     pxsl_line="400" />
                             </LifePlace>
                             <AI
-                                 pxsl_line="386">
+                                 pxsl_line="401">
                                 <QuestObject
                                      class="HumanAI"
                                      name="Sammy"
-                                     pxsl_line="386" />
+                                     pxsl_line="401" />
                             </AI>
                         </Phase>
                         <Phase
                              type="checkpoint"
                              name="_"
-                             pxsl_line="387">
+                             pxsl_line="402">
                             <Destination
-                                 pxsl_line="387">
+                                 pxsl_line="402">
                                 <QuestObject
                                      class="SpawnPoint"
                                      name="the_tower_brecken_room"
-                                     pxsl_line="387" />
+                                     pxsl_line="402" />
                             </Destination>
                         </Phase>
                     </Path>

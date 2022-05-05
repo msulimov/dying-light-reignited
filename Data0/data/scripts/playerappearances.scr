@@ -13,6 +13,7 @@ sub appearances()
                 AttachableSet() - starts section with set of attachables to use
                     Attachable(string attachable_id) - Adds attachable with specifies id to the player character. Works only when using tpp mesh.
                 AvailableOnStart() - this appearance can be selected as a starting look when creating character
+				AvailableOnPrologue(bool) - enable outfit in prologue in tower (by default is false)
                 Hint() - name of hint that will be displayed during changing apppearance
                 Image() - image that will be displayed in the storage ("wardrobe") menu
                 Category() - category diplayed in menu_
@@ -29,6 +30,7 @@ sub appearances()
             Default();
             Image("hint_Tutorial_TimeFreeze_Outfit1");
             Category(0);
+			AvailableOnPrologue(true);
             ID(0);
         }
 
@@ -40,6 +42,7 @@ sub appearances()
             Hint("Tutorial_TimeFreeze_TrainingOutfit");
             Image("hint_Tutorial_TimeFreeze_Outfit11");
             Category(0);
+			AvailableOnPrologue(true);
             ID(1);
         }
 
@@ -292,7 +295,6 @@ sub appearances()
             Image("hint_Tutorial_TimeFreeze_Outfit2_zombie");
             Skin("player_2_zombie");
             Category(0);
-            AvailableOnPrologue(false);
             ID(33);
         }
 
@@ -303,7 +305,6 @@ sub appearances()
             Image("hint_tutorial_timefreeze_outfit11_phosphor");
             Skin("phosphor_paint_a");
             Category(0);
-            AvailableOnPrologue(false);
             ID(34);
         }
 
@@ -314,7 +315,6 @@ sub appearances()
             Image("hint_tutorial_timefreeze_outfit11_coop_8");
             Skin("Coop_08");
             Category(0);
-            AvailableOnPrologue(false);
             ID(35);
         }
 
@@ -325,7 +325,6 @@ sub appearances()
             Image("hint_tutorial_timefreeze_outfit11_coop_10");
             Skin("Coop_10");
             Category(0);
-            AvailableOnPrologue(false);
             ID(36);
         }
 
@@ -405,7 +404,6 @@ sub appearances()
             Image("hint_Tutorial_TimeFreeze_Outfit11_fever");
             Category(1);
             ID(43);
-            AvailableOnPrologue(false);
         }
 
         Appearance("Antoine_Head", "Survivor_Greece", "Survivor_Greece")
@@ -506,7 +504,6 @@ sub appearances()
             Image("hint_Tutorial_TimeFreeze_Outfit11_parkour_instructor");
             Category(0);
             ID(52);
-            AvailableOnPrologue(false);
         }
 
         Appearance("Antoine_Head", "Survivor_GodDamn", "Survivor_GodDamn")
@@ -518,7 +515,6 @@ sub appearances()
             Image("hint_Tutorial_TimeFreeze_Outfit11_god_damn");
             Category(0);
             ID(53);
-            AvailableOnPrologue(false);
         }
 
         Appearance("Antoine_Head", "Survivor_real_hunter", "Survivor_real_hunter")
@@ -530,7 +526,6 @@ sub appearances()
             Image("hint_Tutorial_TimeFreeze_Outfit11_real_hunter");
             Category(1);
             ID(54);
-            AvailableOnPrologue(false);
         }
 
 
@@ -544,7 +539,6 @@ sub appearances()
             Image("hint_Tutorial_TimeFreeze_Outfit11_Reputation_01");
             Category(4);
             ID(57);
-            AvailableOnPrologue(false);
         }
 
         Appearance("Antoine_Head", "Reputation_02", "Reputation_02")
@@ -556,7 +550,6 @@ sub appearances()
             Image("hint_Tutorial_TimeFreeze_Outfit11_Reputation_02");
             Category(4);
             ID(58);
-            AvailableOnPrologue(false);
         }
 
         Appearance("Antoine_Head", "Reputation_03", "Reputation_03")
@@ -568,7 +561,6 @@ sub appearances()
             Image("hint_Tutorial_TimeFreeze_Outfit11_Reputation_03");
             Category(4);
             ID(59);
-            AvailableOnPrologue(false);
         }
 
         Appearance("ZLegend_Head", "Legend_01", "Legend_01")
@@ -580,7 +572,6 @@ sub appearances()
             Image("hint_tutorial_timefreeze_outfit_legend1");
             Category(0);
             ID(63);
-            AvailableOnPrologue(false);
         }
         Appearance("ZLegend_Head", "Legend_02", "Legend_02")
         {
@@ -591,7 +582,6 @@ sub appearances()
             Image("hint_tutorial_timefreeze_outfit_legend2");
             Category(0);
             ID(64);
-            AvailableOnPrologue(false);
         }
         Appearance("ZLegend_Head", "Legend_03", "Legend_03")
         {
@@ -602,7 +592,6 @@ sub appearances()
             Image("hint_tutorial_timefreeze_outfit_legend3");
             Category(0);
             ID(65);
-            AvailableOnPrologue(false);
         }
         Appearance("ZLegend_Head", "Legend_04", "Legend_04")
         {
@@ -613,7 +602,6 @@ sub appearances()
             Image("hint_tutorial_timefreeze_outfit_legend4");
             Category(0);
             ID(66);
-            AvailableOnPrologue(false);
         }
         Appearance("ZLegend_Head", "Legend_05", "Legend_05")
         {
@@ -624,7 +612,6 @@ sub appearances()
             Image("hint_tutorial_timefreeze_outfit_legend5");
             Category(0);
             ID(67);
-            AvailableOnPrologue(false);
         }
         Appearance("ZLegend_Head", "Legend_06", "Legend_06")
         {
@@ -635,7 +622,6 @@ sub appearances()
             Image("hint_tutorial_timefreeze_outfit_legend6");
             Category(0);
             ID(68);
-            AvailableOnPrologue(false);
         }
         Appearance("ZLegend_Head", "Legend_07", "Legend_07")
         {
@@ -646,7 +632,6 @@ sub appearances()
             Image("hint_tutorial_timefreeze_outfit_legend7");
             Category(0);
             ID(69);
-            AvailableOnPrologue(false);
         }
         Appearance("ZLegend_Head", "Legend_08", "Legend_08")
         {
@@ -657,7 +642,6 @@ sub appearances()
             Image("hint_tutorial_timefreeze_outfit_legend8");
             Category(0);
             ID(70);
-            AvailableOnPrologue(false);
         }
         Appearance("ZLegend_Head", "Legend_09", "Legend_09")
         {
@@ -668,7 +652,6 @@ sub appearances()
             Image("hint_tutorial_timefreeze_outfit_legend9");
             Category(0);
             ID(71);
-            AvailableOnPrologue(false);
         }
         Appearance("ZLegend_Head", "Legend_10", "Legend_10")
         {
@@ -679,7 +662,6 @@ sub appearances()
             Image("hint_tutorial_timefreeze_outfit_legend10");
             Category(0);
             ID(72);
-            AvailableOnPrologue(false);
         }
 
         Appearance("Antoine_Head", "Collectable_Outfit_01", "Collectable_Outfit_01")
@@ -691,7 +673,6 @@ sub appearances()
             Image("hint_Tutorial_TimeFreeze_Outfit11_coop_1");
             Category(5);
             ID(74);
-            AvailableOnPrologue(false);
         }
         Appearance("Antoine_Head", "Collectable_Outfit_02", "Collectable_Outfit_02")
         {
@@ -702,7 +683,6 @@ sub appearances()
             Image("hint_Tutorial_TimeFreeze_Outfit11_coop_2");
             Category(5);
             ID(75);
-            AvailableOnPrologue(false);
         }
         Appearance("Antoine_Head", "Collectable_Outfit_03", "Collectable_Outfit_03")
         {
@@ -713,7 +693,6 @@ sub appearances()
             Image("hint_Tutorial_TimeFreeze_Outfit11_coop_3");
             Category(5);
             ID(76);
-            AvailableOnPrologue(false);
         }
         Appearance("Antoine_Head", "Collectable_Outfit_04", "Collectable_Outfit_04")
         {
@@ -724,7 +703,6 @@ sub appearances()
             Image("hint_Tutorial_TimeFreeze_Outfit11_coop_4");
             Category(5);
             ID(77);
-            AvailableOnPrologue(false);
         }
         Appearance("Antoine_Head", "Collectable_Outfit_05", "Collectable_Outfit_05")
         {
@@ -735,7 +713,6 @@ sub appearances()
             Image("hint_Tutorial_TimeFreeze_Outfit11_coop_5");
             Category(5);
             ID(78);
-            AvailableOnPrologue(false);
         }
         Appearance("Antoine_Head", "Collectable_Outfit_06", "Collectable_Outfit_06")
         {
@@ -746,7 +723,6 @@ sub appearances()
             Image("hint_Tutorial_TimeFreeze_Outfit11_coop_6");
             Category(5);
             ID(79);
-            AvailableOnPrologue(false);
         }
         Appearance("Antoine_Head", "Collectable_Outfit_07", "Collectable_Outfit_07")
         {
@@ -757,7 +733,6 @@ sub appearances()
             Image("hint_Tutorial_TimeFreeze_Outfit11_coop_7");
             Category(5);
             ID(80);
-            AvailableOnPrologue(false);
         }
         Appearance("Antoine_Head", "Collectable_Outfit_08", "Collectable_Outfit_08")
         {
@@ -768,7 +743,6 @@ sub appearances()
             Image("hint_Tutorial_TimeFreeze_Outfit11_coop_9");
             Category(5);
             ID(81);
-            AvailableOnPrologue(false);
         }
         Appearance("Antoine_Head", "Collectable_Outfit_09", "Collectable_Outfit_09")
         {
@@ -779,7 +753,6 @@ sub appearances()
             Image("hint_Tutorial_TimeFreeze_Outfit6_alt");
             Category(5);
             ID(82);
-            AvailableOnPrologue(false);
         }
         Appearance("Antoine_Head", "Collectable_Outfit_10", "Collectable_Outfit_10")
         {
@@ -790,7 +763,6 @@ sub appearances()
             Image("hint_Tutorial_TimeFreeze_Outfit2");
             Category(5);
             ID(83);
-            AvailableOnPrologue(false);
         }
 
         Appearance("Antoine_Head", "Collectable_Outfit_11", "Collectable_Outfit_11")
@@ -1345,6 +1317,17 @@ sub appearances()
             Category(1);
             ID(164);
         }
+		
+		//30th Anniversary Techland		
+		Appearance("Antoine_Head", "Collectable_Liveops_Outfit_Anniversary_Techland", "Collectable_Liveops_Outfit_Anniversary_Techland")
+        {
+            MeshFpp("player_11_fpp.msh");
+            MeshTpp("player_11_tpp.msh");
+            Skin("TECHLAND_30ANN");
+            Image("hint_Tutorial_TimeFreeze_Outfit_30th_anniversary");
+            Category(2);
+            ID(173);
+        }
     }
 }
 
@@ -1468,6 +1451,7 @@ sub unlock()
 	Item("Collectable_Liveops_CollectableOutfit_Bestcrane", "PlayerMan1", "Collectable_Liveops_Outfit_Bestcrane");
 	Item("Collectable_Liveops_CollectableOutfit_Halloween_Rat", "PlayerMan1", "Collectable_Liveops_Outfit_Halloween_Rat");
 	Item("Collectable_Liveops_CollectableOutfit_Winter_Frost", "PlayerMan1", "Collectable_Liveops_Outfit_Winter_Frost");	
+	Item("Collectable_Liveops_CollectableOutfit_Anniversary_Techland", "PlayerMan1", "Collectable_Liveops_Outfit_Anniversary_Techland");	
 
     Item("ZZZZ_Collectable_Collectable_CultOutfit_01", "PlayerMan1", "Reputation_01");
     Item("ZZZZ_Collectable_Collectable_CultOutfit_02", "PlayerMan1", "Reputation_02");

@@ -55,6 +55,7 @@ InitAnimation("armored_car_throw_in_place")
 InitAnimation("armored_stationary_init")
 InitAnimation("prime_initiation_01")
 InitAnimation("wasteland_bossfight_looped_init")
+InitAnimation("Warrior_s1h_v2_Walkout_From_The_Wall")
 
 
 //InitAnimation("Infected_spawn_ventilation_shaft_03")

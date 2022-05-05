@@ -31,8 +31,8 @@ Data("movement:standing:sprint:forward::::", -2, "suicide_bomber_upset_run", -1,
 
 /////////////////////////////////////////// PARAMETERS ////////////////////////////////////////////
 
-ParamFloat("melee_range", 3.0) // at what range we explode
-ParamFloat("explode_range", 6.0) // size of explosion. damage fall of is dist^2.
+ParamFloat("melee_range", 2.0) // at what range we explode
+ParamFloat("explode_range", 5.5) // size of explosion. damage fall of is dist^2.
 Curve(CURVE_EXPLOSION_DAMAGE, "btz_suicider_explosion_damage")
 
 

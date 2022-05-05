@@ -12143,7 +12143,7 @@ sub main()
         ItemType(ItemType_Stick);
         PhysicsScript("single_dropped_inventory.phx");
         UpgradeLevel(0);
-        Condition(20);
+        Condition(60);
         CriticalCondition(6);
         Damage(20.0);
         Force(10.0);
@@ -12235,7 +12235,7 @@ sub main()
         ItemType(ItemType_Stick);
         PhysicsScript("single_dropped_inventory.phx");
         UpgradeLevel(0);
-        Condition(20);
+        Condition(60);
         CriticalCondition(6);
         Damage(20.0);
         Force(12.0);
@@ -12329,7 +12329,7 @@ sub main()
         UpgradeLevel(0);
         Condition(20);
         CriticalCondition(6);
-        Damage(20.0);
+        Damage(60.0);
         Force(12.0);
         CriticalProb(0.0);
         CriticalDamage(2.0);
@@ -12419,7 +12419,7 @@ sub main()
         ItemType(ItemType_Stick);
         PhysicsScript("single_dropped_inventory.phx");
         UpgradeLevel(0);
-        Condition(20);
+        Condition(60);
         CriticalCondition(6);
         Damage(20.0);
         Force(12.0);
@@ -12603,7 +12603,7 @@ sub main()
         ItemType(ItemType_Stick);
         PhysicsScript("single_dropped_inventory.phx");
         UpgradeLevel(0);
-        Condition(30);
+        Condition(60);
         CriticalCondition(9);
         Damage(25.0);
         Force(14.0);
@@ -12789,7 +12789,7 @@ sub main()
         ItemType(ItemType_Stick);
         PhysicsScript("single_dropped_inventory.phx");
         UpgradeLevel(0);
-        Condition(30);
+        Condition(60);
         CriticalCondition(9);
         Damage(25.0);
         Force(14.0);
@@ -12975,7 +12975,7 @@ sub main()
         ItemType(ItemType_Stick);
         PhysicsScript("single_dropped_inventory.phx");
         UpgradeLevel(0);
-        Condition(30);
+        Condition(60);
         CriticalCondition(9);
         Damage(25.0);
         Force(14.0);
@@ -13252,7 +13252,7 @@ sub main()
         ItemType(ItemType_Stick);
         PhysicsScript("single_dropped_inventory.phx");
         UpgradeLevel(0);
-        Condition(30);
+        Condition(60);
         CriticalCondition(9);
         Damage(25.0);
         Force(14.0);
@@ -13438,7 +13438,7 @@ sub main()
         ItemType(ItemType_Stick);
         PhysicsScript("single_dropped_inventory.phx");
         UpgradeLevel(0);
-        Condition(30);
+        Condition(60);
         CriticalCondition(9);
         Damage(25.0);
         Force(14.0);
@@ -13531,7 +13531,7 @@ sub main()
         ItemType(ItemType_Stick);
         PhysicsScript("single_dropped_inventory.phx");
         UpgradeLevel(0);
-        Condition(30);
+        Condition(60);
         CriticalCondition(9);
         Damage(25.0);
         Force(14.0);

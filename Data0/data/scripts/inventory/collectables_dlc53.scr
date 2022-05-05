@@ -22,7 +22,7 @@ sub main()
         RequiredItem("Craft_Electronics", 1);
         Color(Color_Blue);
         CraftedItem("Melee_Sword_Space_Commando", 1, 1);
-        CraftplanType("WeaponDLC");
+        CraftplanType("Collectables_DLC53");
         UniqueSaveID(9691);
         HudIcon("blueprint_b");
         GameVersion(33);
@@ -45,7 +45,7 @@ sub main()
 		InheritBaseStats();
         Color(Color_Blue);
         CraftedItem("Firearm_Pistol_Space_Commando", 1, 1);
-        CraftplanType("WeaponDLC");
+        CraftplanType("Collectables_DLC53");
         UniqueSaveID(9692);
 		OwnedAtStart();
         HudIcon("blueprint_b");
@@ -67,7 +67,7 @@ sub main()
 		RequiredItem("Craft_PowerCable", 2);
         Color(Color_Blue);
         CraftedItem("Firearm_Rifle_Space_Commando", 1, 1);
-        CraftplanType("WeaponDLC");
+        CraftplanType("Collectables_DLC53");
 		InheritBaseStats();
         UniqueSaveID(9693);
 		OwnedAtStart();

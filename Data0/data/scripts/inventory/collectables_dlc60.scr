@@ -16,7 +16,7 @@ sub main()
         RequiredItem("Craft_DuctTape", 3);
         Color(Color_Blue);
         CraftedItem("Rust_SubmachineGun", 1, 1);
-        CraftplanType("WeaponDLC");
+        CraftplanType("Collectables_DLC60");
         UniqueSaveID(9935);
         HudIcon("blueprint_b");
         GameVersion(41);
@@ -38,7 +38,7 @@ sub main()
         RequiredItem("Craft_DuctTape", 3);
         Color(Color_Blue);
         CraftedItem("Rust_AssaultRifle", 1, 1);
-        CraftplanType("WeaponDLC");
+        CraftplanType("Collectables_DLC60");
         UniqueSaveID(9936);
         HudIcon("blueprint_b");
         GameVersion(41);
@@ -67,7 +67,7 @@ sub main()
 		RequiredItem("Craft_Nails", 10);
         Color(Color_Blue);
         CraftedItem("Rust_SalvagedCleaver", 1, 1);
-        CraftplanType("WeaponDLC");
+        CraftplanType("Collectables_DLC60");
         UniqueSaveID(9937);
         HudIcon("blueprint_b");
         GameVersion(41);

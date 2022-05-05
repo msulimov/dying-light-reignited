@@ -19,7 +19,7 @@ sub main()
         Color(Color_Blue);
         CraftedItem("L4D_Golf_Club", 1, 1);
 		InheritBaseStats();
-        CraftplanType("WeaponDLC");
+        CraftplanType("Collectables_DLC44and56");
 		OwnedAtStart();
         UniqueSaveID(9553);
         HudIcon("blueprint_b");
@@ -41,7 +41,7 @@ sub main()
 		RequiredItem("Craft_TinCan", 1);
         Color(Color_Blue);
         CraftedItem("L4D_Frying_Pan", 1, 1);
-        CraftplanType("WeaponDLC");
+        CraftplanType("Collectables_DLC44and56");
 		OwnedAtStart();
 		InheritBaseStats();
         UniqueSaveID(9554);
@@ -64,7 +64,7 @@ sub main()
 		RequiredItem("Craft_PowerCable", 1);
         Color(Color_Blue);
         CraftedItem("L4D_Electric_Guitar", 1, 1);
-        CraftplanType("WeaponDLC");
+        CraftplanType("Collectables_DLC44and56");
 		InheritBaseStats();
 		OwnedAtStart();
         UniqueSaveID(9555);

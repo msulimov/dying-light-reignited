@@ -84,9 +84,9 @@ sub Hellraid_Items() {
 		Limited();
     }
 	
-	Set("Hr_Level_13", "violet_only", 2, 2)
+	Set("Hr_WandTrials", "violet_only", 2, 2)
     {
-		MinHellraidLevel(12);
+		RequiredItem("Collectable_Wand_Unlocker");
 		Limited();
     }
 	
@@ -94,7 +94,19 @@ sub Hellraid_Items() {
     {
 		RequiredItem("Craftplan_HRBow_R13");
 		Limited();
-    }		
+    }
+	
+	Set("Hr_Level_13", "violet_only", 2, 2)
+    {
+		MinHellraidLevel(12);
+		Limited();
+    }
+	
+	Set("Hr_WandTrials_DK", "violet_only", 2, 2)
+    {
+		RequiredItem("Collectable_Wand_Unlocker_DarkKnight");
+		Limited();
+    }
 }
 
 /////////////////////////////////////////////////////

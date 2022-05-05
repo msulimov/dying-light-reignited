@@ -33,3 +33,80 @@ Texture("dl_treshold_mask.dds", 1024, 256)
 {
     Whole("dl_treshold_mask") // 1024 x  256
 }
+
+// New dashboard DL1&DL2
+
+Texture("dashboard_button.dds", 600, 120)
+{
+    Whole("dashboard_button") // 600 x 120
+}
+
+Texture("dashboard_button_exit.dds", 216, 68)
+{
+    Whole("dashboard_button_exit") // 216 x 68
+}
+
+Texture("dashboard_keyarts_1.dds", 1920, 1080)
+{
+    Whole("dashboard_keyarts_1") // 1920 x 1080
+}
+
+Texture("dashboard_keyarts_2.dds", 1920, 1080)
+{
+    Whole("dashboard_keyarts_2") // 1920 x 1080
+}
+
+Texture("dashboard_keyarts_3.dds", 1920, 1080)
+{
+    Whole("dashboard_keyarts_3") // 1920 x 1080
+}
+
+Texture("dashboard_keyarts_4.dds", 1920, 1080)
+{
+    Whole("dashboard_keyarts_4") // 1920 x 1080
+}
+
+Texture("dashboard_keyarts_5.dds", 1920, 1080)
+{
+    Whole("dashboard_keyarts_5") // 1920 x 1080
+}
+
+Texture("dashboard_keyarts_6.dds", 1920, 1080)
+{
+    Whole("dashboard_keyarts_6") // 1920 x 1080
+}
+
+Texture("dashboard_logo_dl1.dds", 888, 416)
+{
+    Whole("dashboard_logo_dl1") // 888 x 416
+}
+
+Texture("dashboard_logo_dl2.dds", 888, 316)
+{
+    Whole("dashboard_logo_dl2") // 888 x 316
+}
+
+Texture("dashboard_logo_mask_overlay.dds", 800, 360)
+{
+    Whole("dashboard_logo_mask_overlay") // 800 x 360
+}
+
+Texture("dashboard_overlay_texture.dds", 1012, 1080)
+{
+    Whole("dashboard_overlay_texture") // 1012 x 1080
+}
+
+Texture("dashboard_popup_texture.dds", 1700, 668)
+{
+    Whole("dashboard_popup_texture") // 1700 x 668
+}
+
+Texture("dashboard_text_mask_texture.dds", 880, 880)
+{
+    Whole("dashboard_text_mask_texture") // 880 x 880
+}
+
+Texture("Cursor.dds", 32,32)
+{
+	Whole("Cursor")
+}

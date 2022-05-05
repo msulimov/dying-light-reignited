@@ -15,7 +15,7 @@ sub main()
         RequiredItem("Craft_DuctTape", 3);
         BaseItem("Firearm_Submachine", "", "");
         CraftedItem("Firearm_SubmachineBGodFather", 1, 1);
-        CraftplanType("WeaponDLC");
+        CraftplanType("Collectables_DLC43");
 		Color(Color_Blue);
         UniqueSaveID(9537);
         HudIcon("blueprint_a");
@@ -37,7 +37,7 @@ sub main()
 		RequiredItem("Craft_RazorBlade", 1);
         BaseItem("Melee_Knife", "", "");
         CraftedItem("Melee_KnifeBGodFather", 1, 1);
-        CraftplanType("WeaponDLC");
+        CraftplanType("Collectables_DLC43");
 		Color(Color_Blue);
 		InheritBaseStats();
         UniqueSaveID(9538);
@@ -58,7 +58,7 @@ sub main()
         RequiredItem("Craft_DuctTape", 3);
         BaseItem("Firearm_Pistol", "", "");
         CraftedItem("Firearm_PistolAGodFather", 1, 1);
-        CraftplanType("WeaponDLC");
+        CraftplanType("Collectables_DLC43");
 		Color(Color_Blue);
         UniqueSaveID(9539);
         HudIcon("blueprint_a");

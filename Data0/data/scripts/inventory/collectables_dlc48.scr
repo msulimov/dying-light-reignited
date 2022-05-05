@@ -26,7 +26,7 @@ sub main()
 		InheritBaseStats();
         Color(Color_Blue);
         CraftedItem("Melee_ShortSword_Dao_SHU", 1, 1);
-        CraftplanType("WeaponDLC");
+        CraftplanType("Collectables_DLC48");
         UniqueSaveID(9620);
 		OwnedAtStart();
         HudIcon("blueprint_b");
@@ -54,7 +54,7 @@ sub main()
 		OwnedAtStart();
         Color(Color_Blue);
         CraftedItem("Melee_Axe_Sky_Piercer_SHU", 1, 1);
-        CraftplanType("WeaponDLC");
+        CraftplanType("Collectables_DLC48");
         UniqueSaveID(9621);
         HudIcon("blueprint_b");
 		GameVersion(31);
@@ -74,7 +74,7 @@ sub main()
         RequiredItem("Craft_PlasticTube", 2);
         Color(Color_Blue);
         CraftedItem("Crossbow_SHU", 1, 1);
-        CraftplanType("WeaponDLC");
+        CraftplanType("Collectables_DLC48");
 		InheritBaseStats();
         UniqueSaveID(9622);
 		OwnedAtStart();
@@ -93,7 +93,7 @@ sub main()
         RequiredItem("Craft_Nails", 1);
         Color(Color_Green);
         CraftedItem("ZZZZ3_Ammo_Crossbow", 10, 15);
-        CraftplanType("WeaponDLC");
+        CraftplanType("Collectables_DLC48");
         UniqueSaveID(9623);
         HudIcon("blueprint_b");
         OwnedAtStart();
@@ -113,7 +113,7 @@ sub main()
         RequiredItem("Craft_ToxicPlant", 2);
         Color(Color_Blue);
         CraftedItem("ZZZZ3_Ammo_Crossbow_Poison", 10, 15);
-        CraftplanType("WeaponDLC");
+        CraftplanType("Collectables_DLC48");
         UniqueSaveID(9624);
         HudIcon("blueprint_b");
         OwnedAtStart();
@@ -133,7 +133,7 @@ sub main()
         RequiredItem("Craft_Insecticide", 1);
         Color(Color_Blue);
         CraftedItem("ZZZZ3_Ammo_Crossbow_Stunning", 10, 15);
-        CraftplanType("WeaponDLC");
+        CraftplanType("Collectables_DLC48");
         UniqueSaveID(9625);
         HudIcon("blueprint_b");
         OwnedAtStart();
@@ -153,7 +153,7 @@ sub main()
         RequiredItem("Craft_Bleach", 1);
         Color(Color_Blue);
         CraftedItem("ZZZZ3_Ammo_Crossbow_Impact", 10, 15);
-        CraftplanType("WeaponDLC");
+        CraftplanType("Collectables_DLC48");
         UniqueSaveID(9626);
         HudIcon("blueprint_b");
         OwnedAtStart();

@@ -1,0 +1,51 @@
+//ASTRONAUT BUNDLE
+
+import "inventorystuff.scr" 
+sub main() 
+{	//grenade launcher		
+	Item("Craftplan_Firearm_Grenade_Launcher_Freeze", CategoryType_Collectable)
+    {
+        Name("&Craftplan_Firearm_Grenade_Launcher_Freeze_N&");
+        Description('&Craftplan_Firearm_Grenade_Launcher_Freeze_D&');
+        ItemType(ItemType_CraftPlan);
+        Price(6400);
+        Mesh("blueprint.msh");
+        Skin("default");
+        BaseItem("Firearm_Rifle", "", "");
+		BaseItem("Firearm_Revolver", "", "");
+		BaseItem("Firearm_ShotgunA", "", "");
+		RequiredItem("Craft_MetalScrap", 7);
+		RequiredItem("Craft_PlasticTube", 5);
+		RequiredItem("Craft_Electronics", 5);
+		RequiredItem("Craft_Batteries", 4);
+        Color(Color_Blue);
+        CraftedItem("Firearm_Grenade_Launcher_Freeze", 1, 1);
+        CraftplanType("Collectables_DLC65");
+        UniqueSaveID(10007);
+		OwnedAtStart();
+        HudIcon("blueprint_b");
+		GameVersion(46);	
+		InheritBaseStats();
+    }	
+	
+	//craftplan for grenade launcher's bullet
+	Item("Craftplan_Bullet_Grenade_Launcher_Freeze", CategoryType_Collectable)
+    {
+        Name("&Craftplan_Bullet_Grenade_Launcher_Freeze_N&");
+        Description('&Craftplan_Bullet_Grenade_Launcher_Freeze_D&');
+        ItemType(ItemType_CraftPlan);
+        Price(6400);
+        Mesh("blueprint.msh");
+        Skin("default");
+        RequiredItem("Craft_Bleach", 3);
+        RequiredItem("Craft_Shroom", 5);
+        RequiredItem("Craft_TinCan", 3);
+        Color(Color_Blue);
+        CraftedItem("Bullet_Grenade_Launcher_Freeze", 1, 6);
+        CraftplanType("Collectables_DLC65");
+        UniqueSaveID(10008);
+		OwnedAtStart();
+        HudIcon("blueprint_b");
+		GameVersion(46);
+    }
+}

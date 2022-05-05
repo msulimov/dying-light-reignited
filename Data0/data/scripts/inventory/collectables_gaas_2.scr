@@ -9,7 +9,7 @@ sub main()
         Price(10);
         Mesh("blueprint.msh");
         Skin("default");
-        BaseItem("ZZZZ_Bow_Composite", "", "");
+        BaseItem("ZZZZ_Bow", "", "");
         RequiredItem("Craft_MetalScrap", 6);
 		RequiredItem("Craft_DuctTape", 4);
         RequiredItem("Craft_PlasticTube", 4);
@@ -20,6 +20,7 @@ sub main()
         UniqueSaveID(9535);
         HudIcon("blueprint_b");
 		GameVersion(26);
+		InheritBaseStats();
     }
 	
 	Item("Collectable_GaaS_CollectableOutfit_CHN", CategoryType_Collectable)
@@ -32,6 +33,58 @@ sub main()
         Color(Color_White);
         UniqueSaveID(9534);
         GameVersion(26);
+    }
+	
+	Item("Craftplan_Spike_Weapon_StageII", CategoryType_Collectable)
+    {
+        Name("&Craftplan_Spike_Weapon_StageII_N&");
+        Description('&Craftplan_Spike_Weapon_StageII_D&');
+        ItemType(ItemType_CraftPlan);
+        Price(6400);
+        Mesh("blueprint.msh");
+        Skin("default");
+		BaseItem("Spike_Weapon_First", "", "");
+		BaseItem("Melee_", "", "");
+        RequiredItem("Craft_MetalScrap", 7);
+		RequiredItem("Craft_DuctTape", 3);
+		RequiredItem("Craft_RazorBlade", 5);
+		RequiredItem("Craft_PowerCable", 1);
+        CraftedItem("Spike_Weapon_StageII", 1, 1);
+        CraftplanType("Weapon");
+		Color(Color_Platinum);
+		InheritBaseStats();
+        UniqueSaveID(10014);
+        HudIcon("blueprint_a");
+		GameVersion(47);
+    }
+	
+		Item("Craftplan_Spike_Weapon_StageIII", CategoryType_Collectable)
+    {
+        Name("&Craftplan_Spike_Weapon_StageIII_N&");
+        Description('&Craftplan_Spike_Weapon_StageIII_D&');
+        ItemType(ItemType_CraftPlan);
+        Price(6400);
+        Mesh("blueprint.msh");
+        Skin("default");
+		BaseItem("Spike_Weapon_StageII", "", "");
+		BaseItem("Melee_Pipe", "", "");
+        BaseItem("Melee_Crowbar", "", "");
+        BaseItem("Melee_Wrench", "", "");
+        BaseItem("Melee_Hammer", "", "");
+        BaseItem("Melee_ShortAxe", "", "");
+        BaseItem("Melee_Pick", "", "");
+        RequiredItem("Craft_MetalScrap", 10);
+		RequiredItem("Craft_DuctTape", 5);
+		RequiredItem("Craft_RazorBlade", 7);
+		RequiredItem("Craft_PowerCable", 3);
+        CraftedItem("Spike_Weapon_StageIII", 1, 1);
+        CraftplanType("Weapon");
+		Color(Color_Platinum);
+		InheritBaseStats();
+        UniqueSaveID(10015);
+        HudIcon("blueprint_a");
+		GameVersion(47);
+		Elemental(Elemental_ShockElectricity, 3);
     }
 	
 	///////////////////////
@@ -147,6 +200,36 @@ sub main()
         UniqueSaveID(9574);
         HudIcon("blueprint_a");
 		GameVersion(43);
+    }
+	
+	Item("Craftplan_Melee_Machete_AddOn_Swrench", CategoryType_Collectable)
+    {
+        Name("&Craftplan_Melee_Machete_AddOn_Swrench_N&");
+        Description('&Craftplan_Melee_Machete_AddOn_Swrench_D&');
+        ItemType(ItemType_CraftPlan);
+        Price(6400);
+        Mesh("blueprint.msh");
+        Skin("default");
+        BaseItem("Melee_Machete", "", "");
+        BaseItem("Melee_Pipe", "", "");
+        BaseItem("Melee_Crowbar", "", "");
+        BaseItem("Melee_Wrench", "", "");
+        BaseItem("Melee_Hammer", "", "");
+        BaseItem("Melee_MilitaryShovel", "", "");
+        BaseItem("Melee_ShortAxe", "", "");
+        BaseItem("Melee_Pick", "", "");
+		BaseItem("Melee_Khopesh", "", "");
+        RequiredItem("Craft_MetalScrap", 5);
+		RequiredItem("Craft_DuctTape", 4);
+		RequiredItem("Craft_RazorBlade", 5);
+		RequiredItem("Craft_Nails", 6);
+        CraftedItem("Melee_Machete_AddOn_Swrench", 1, 1);
+        CraftplanType("Weapon");
+		Color(Color_Platinum);
+		InheritBaseStats();
+        UniqueSaveID(9575);
+        HudIcon("blueprint_a");
+		GameVersion(45);
     }
 	
 	
@@ -516,6 +599,18 @@ sub main()
         GameVersion(33);
     }
 	
+	Item("Collectable_Liveops_CollectableOutfit_Anniversary_Techland", CategoryType_Collectable)
+    {
+        Name("&Collectable_Liveops_CollectableOutfit_Anniversary_Techland_N&");
+        Description("&Collectable_Liveops_CollectableOutfit_Anniversary_Techland_D&");
+        ItemType(ItemType_PlayerAppearance);
+        Mesh("drugs.msh");
+        Skin("dont_use_dlc_collectible");
+        Color(Color_White);
+        UniqueSaveID(10013);
+        GameVersion(46);
+    }
+	
 	Item("Craftplan_HRW_Melee_Scepter", CategoryType_Collectable)
     {
         Name("&Craftplan_HRW_Melee_Scepter_N&");
@@ -541,5 +636,26 @@ sub main()
         UniqueSaveID(9801);
         HudIcon("blueprint_a");
 		GameVersion(33);
+    }
+	
+	Item("Craftplan_HRSword_R11_Without_HR", CategoryType_Collectable)
+    {
+        ItemType(ItemType_CraftPlan);
+        Price(1000);
+        Mesh("blueprint.msh");
+        Skin("default");
+		BaseItem("Melee_Machete", "", "");
+		BaseItem("Melee_ShortSword", "", "");
+		BaseItem("Melee_Khopesh", "", "");
+		RequiredItem("Craft_MetalScrap", 4);
+		RequiredItem("Craft_PowerCable", 2);
+		RequiredItem("Craft_Electronics", 1);	
+		InheritBaseStats();
+        Color(Color_Platinum);
+        CraftedItem("HRSword_R11_Without_HR", 1, 1);
+        CraftplanType("Collectables_DLC49");
+        UniqueSaveID(10016);
+        HudIcon("blueprint_b");
+		GameVersion(47);
     }
 }

@@ -23,7 +23,112 @@ sub main()
 	/////////////////////////////////////////////////////
 	/////////////// HELLRAID MAP WEAPONS ////////////////
 	/////////////////////////////////////////////////////
+
+    /////////////// WANDS ////////////////
+
+    Item("Throwable_DarkWand", CategoryType_Throwable)
+    {
+        GameVersion(46);
+        ItemType(ItemType_MagicWandThrowable);
+        Mesh("wand_acid_area_a.msh");
+		Skin("darkknight");
+        AnimPrefix("magicwand");
+        HudIcon("weapon_wand_acid_area_a");
+        AnotherItemToThrow("Throwable_DarkWandBullet");
+        ItemRequiredToUse("Collectable_Wand_Unlocker", "&MUIItemInfo_Wand_Requirement&");
+        AttachToLeftHand(true);
+        EquipmentSlot(0);
+        Color(Color_Violet);
+    }
+
+    Item("Throwable_DarkWandBullet", CategoryType_Throwable)
+    {
+        GameVersion(46);
+        ItemType(ItemType_Grenade);
+        Visibility(true);
+        AmmoCount(3);
+        MaxStackCount(99);
+        Price(100);
+        Mesh("spit_grenade_blob.msh");
+        AnimPrefix("fireball2");
+        PhysicsScript("single_dropped_inventory.phx");
+        Damage(600.0);
+        DamageToPhysicsObjects(150.0);
+        DamageRange(1.0);
+        PhysicsDamageMul(1.0);
+        HeadCutProb(0.0);
+        ArmsCutProb(0.0);
+        LegsCutProb(0.0);
+        DamageType(DamageType_Cold);
+        DamageDuration(10.0);
+        ThrowImpulseLook(15.0);
+        ThrowImpulseUp(0.0);
+        IgnoreGravity(true);
+        ExplosionFx("dark_explosion_sequence.fx");
+        ThrowFlyFx("hr_dark_trail_lh_sequence.fx");//Keep fxs in DW/Data
+		ExplosionSound("magic_darkwand_explosion.wav");
+        ExplodeOnCollision(true);
+        ExplodeDelay(5.0);
+        StatsType(StatsType_Explosive);
+        NoiseType("EXPLOSION");
+        Color(Color_Violet);
+        ElementalPower(1);
+        AchType(AchType_Grenade);
+    }
+
+    Item("Throwable_FireWand", CategoryType_Throwable)
+    {
+        GameVersion(45);
+        ItemType(ItemType_MagicWandThrowable);
+        Mesh("wand_fire_freeze.msh");
+		Skin("fire");
+        AnimPrefix("magicwand");
+        HudIcon("wand_fire_freeze");
+        AnotherItemToThrow("Throwable_FireWandBullet");
+        ItemRequiredToUse("Collectable_Wand_Unlocker", "&MUIItemInfo_Wand_Requirement&");
+        AttachToLeftHand(true);
+        EquipmentSlot(0);
+		Color(Color_Violet);
+    }
+
+    Item("Throwable_FireWandBullet", CategoryType_Throwable)
+    {
+        GameVersion(45);
+        ItemType(ItemType_Grenade);
+        Visibility(true);
+        AmmoCount(3);
+        MaxStackCount(99);
+        Price(100);
+        Mesh("spit_grenade_blob.msh");
+        Skin("fire");
+        AnimPrefix("fireball2");
+        PhysicsScript("single_dropped_inventory.phx");
+        Damage(750.0);
+        DamageToPhysicsObjects(150.0);
+        DamageRange(0.75);
+        PhysicsDamageMul(1.0);
+        HeadCutProb(0.0);
+        ArmsCutProb(0.0);
+        LegsCutProb(0.0);
+        DamageType(DamageType_Fire);
+        DamageDuration(10.0);
+        ThrowImpulseLook(15.0);
+        ThrowImpulseUp(0.0);
+        IgnoreGravity(true);
+        ExplosionFx("fire_arrow_explosion_sequence.fx");
+        ThrowFlyFx("hr_burning_trail_lh_sequence.fx");//Keep fxs in DW/Data
+		ExplosionSound("bow_explosion_fire.wav");
+        ExplodeOnCollision(true);
+        ExplodeDelay(5.0);
+        StatsType(StatsType_Explosive);
+        NoiseType("EXPLOSION");
+        Color(Color_Violet);
+		ElementalPower(1);
+        AchType(AchType_Grenade);
+    }
 	
+    /////////////// MELEE ////////////////
+
 	Item("Melee_HRSword_R1", CategoryType_Melee)
     {
 		GameVersion(33);
@@ -2861,6 +2966,115 @@ sub main()
         MaxStackCount(99);
         use PickupSounds_Default();
         GameVersion(43);
+    }	
+
+	Item("Medkit_ArmorPotion_HR", CategoryType_Powerup)
+    {
+        Visibility(true);
+        ItemType(ItemType_Injector);
+        PhysicsScript("single_dropped_inventory.phx");
+        MaxStackCount(1);
+        Mesh("health_potion_th.msh");
+		Skin("Armor");
+        InventoryMesh("health_potion_th.msh");
+		InventorySkin("Armor"); 
+        ColorPreset("white");
+        AnimPrefix("Bottle");
+        HudIcon("component_potion_armor"); 
+        UseTime(1.0);
+        Buff("Hellraid_Armor")
+        {
+            Hard("Hellraid_Armor");
+            Nightmare("Hellraid_Armor");
+        }
+        EquipmentSlot(0);
+        Color(Color_Blue);
+        MaxStackCount(99);
+        use PickupSounds_Default();
+        GameVersion(45);
+    }
+	
+	Item("Medkit_SpeedPotion_HR", CategoryType_Powerup)
+    {
+        Visibility(true);
+        ItemType(ItemType_Injector);
+        PhysicsScript("single_dropped_inventory.phx");
+        MaxStackCount(1);
+        Mesh("health_potion_th.msh");
+		Skin("Speed"); 
+        InventoryMesh("health_potion_th.msh");
+		InventorySkin("Speed"); 
+        ColorPreset("yellow"); 
+        AnimPrefix("Bottle");
+        HudIcon("component_potion_speed"); 
+        UseTime(1.0);
+        Buff("Hellraid_Speed")
+        {
+            Hard("Hellraid_Speed");
+            Nightmare("Hellraid_Speed");
+        }
+        EquipmentSlot(0);
+        Color(Color_Blue);
+        MaxStackCount(99);
+        use PickupSounds_Default();
+        GameVersion(45);
+    }
+	
+	Item("Medkit_StrengthPotion_HR", CategoryType_Powerup)
+    {
+        Visibility(true);
+        ItemType(ItemType_Injector);
+        PhysicsScript("single_dropped_inventory.phx");
+        MaxStackCount(1);
+        Mesh("health_potion_th.msh");
+		Skin("Strength"); 
+        InventoryMesh("health_potion_th.msh");
+		InventorySkin("Strength"); 
+        ColorPreset("black"); 
+        AnimPrefix("Bottle");
+        HudIcon("component_potion_strenght"); 
+        UseTime(1.0);
+        Buff("Hellraid_Damage")
+        {
+            Hard("Hellraid_Damage");
+            Nightmare("Hellraid_Damage");
+        }
+        EquipmentSlot(0);
+        Color(Color_Blue);
+        MaxStackCount(99);
+        use PickupSounds_Default();
+        GameVersion(45);
+    }
+		
+	//////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+	///////////////////////////////////////////////////////////////////////  UNUSED WEAPONS  /////////////////////////////////////////////////////////////////////////////////////
+	//////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+	
+	//LOW PRIORITY - REDACTED
+	Item("Medkit_NightVisionPotion_HR", CategoryType_Powerup)
+    {
+        Visibility(true);
+        ItemType(ItemType_Injector);
+        PhysicsScript("single_dropped_inventory.phx");
+        MaxStackCount(1);
+        Mesh("health_potion_th.MSH");
+		Skin("Stamina"); //temp
+        InventoryMesh("health_potion_th.msh");
+		InventorySkin("Stamina"); //temp
+        ColorPreset("black"); //temp
+        AnimPrefix("Bottle");
+        HudIcon("component_potion_stamina"); //temp
+        UseTime(1.0);
+        Buff("NightVisionAndNightDamageBoost")
+        {
+            Hard("NightVisionAndNightDamageBoost");
+            Nightmare("NightVisionAndNightDamageBoost");
+        }
+        EquipmentSlot(0);
+        Color(Color_Green);
+        MaxStackCount(99);
+        use PickupSounds_Default();
+        GameVersion(45);
     }
 	
 	Item("Medkit_HealthBandage_HR", CategoryType_Medkit)
@@ -2887,10 +3101,6 @@ sub main()
         PickupSounds("pick_up_ashes_00.wav");
         GameVersion(33);
     }	
-		
-	//////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
-	///////////////////////////////////////////////////////////////////////  UNUSED WEAPONS  /////////////////////////////////////////////////////////////////////////////////////
-	//////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 	
 	Item("Melee_HRLongSword_R3", CategoryType_Melee)
     {

@@ -4,6 +4,100 @@ sub main()
 {	
 
 	/////////////////////////////////////////////////////
+	///////////////// Spike Event ///////////////////////
+	/////////////////////////////////////////////////////
+
+	Item("Spike_Weapon_StageII")
+    {
+	    Trick("ConsecutiveHits", 4, 10.0)
+		{	
+			DamageMultiplier(1.1);
+			IgnoreArmor(); 	
+			Elemental(Elemental_ShockElectricity, 1);
+		}
+    }  
+	
+	/////////////////////////////////////////////////////
+	//////////// Winter Needed Duplicates ///////////////
+	/////////////////////////////////////////////////////
+	
+	Item("Firearm_Rifle_Retro_Gold")
+    {
+		Trick("Hold")
+        {
+			BulletDescReplace("Bullet_Rifle_Shock_Gold");
+        }
+    }
+	
+	Item("Melee_ShortAxe_Savvy_Gold")
+	{
+	    Trick("ConsecutiveHits", 3, 10.0)
+		{
+			DamageMultiplier(1.1);
+			IgnoreArmor(); 			
+			ForcePostHitFx("electric_savvy_tricky_sequence.fx");
+			Elemental(Elemental_ShockElectricity, 3);
+			ResetParentOnDeactivate();
+		}
+	}
+	
+	Item("Firearm_Pistol_Astronaut_Gold")
+    {
+        Trick("LastBulletShot")
+        {
+            BulletDescReplace("Bullet_Astronaut_Pistol_Gold");
+        }
+    }
+	
+	/////////////////////////////////////////////////////
+	/////////////////// Halloween 2021 ////////////////////
+	/////////////////////////////////////////////////////
+
+		Item("Sword_VanCrane")
+    {
+		
+		Trick("TimeOfDay", 21.0, 6.0)
+        {	
+			DamageMultiplier(1.5); 
+            IgnoreArmor();
+			SetWeaponSkin("Default_night");
+			ForcePostHitFx("bat_van_crane_sequence.fx");
+        }
+    }
+	//Necessary duplicate for Halloween Event 2021
+		Item("Sword_VanCrane_Gold")
+    {
+		
+		Trick("TimeOfDay", 21.0, 6.0)
+        {	
+			DamageMultiplier(1.5); 
+            IgnoreArmor();
+			SetWeaponSkin("Default_night");
+			ForcePostHitFx("bat_van_crane_sequence.fx");
+        }
+    }
+	
+		Item("Crossbow_VanCrane")
+    {
+		
+		Trick("TimeOfDay", 21.0, 6.0)
+        {	
+			DamageMultiplier(1.5); 
+            IgnoreArmor();    
+			IgnoreBulletProofVest();
+			SetWeaponSkin("Night");
+			ForcePostHitFx("bat_van_crane_sequence.fx");
+        }
+    }
+
+		Item("Pistol_VanCrane")
+    {
+	    Trick("Hold")
+		{		
+			BulletDescReplace("Bullet_Pistol_VanCrane_Tricky");
+		}
+    }
+	/////////////////////////////////////////////////////
 	/////////////////// ASTRONAUT  ////////////////////
 	/////////////////////////////////////////////////////
 
@@ -397,6 +491,24 @@ sub main()
     }
 	
 	Item("HRSword_R11_SHOP")
+    {
+		Trick("ConsecutiveHits", 3, 6.0)
+		{
+			SetMeshAlpha(1.0, 0.0);
+			ForcePostHitFx("hrsword_sparks_sequence.fx");
+			IgnoreArmor(); 				
+			Elemental(Elemental_ShockElectricity, 1);			
+			Trick("ChargeAttack")
+            {
+                IgnoreMinHitsToKill();
+                IgnoreBulletProofVest();
+				Elemental(Elemental_ShockElectricity, 101);
+                ResetParentOnDeactivate();
+            }
+		}
+    }
+	
+	Item("HRSword_R11_Without_HR")
     {
 		Trick("ConsecutiveHits", 3, 6.0)
 		{

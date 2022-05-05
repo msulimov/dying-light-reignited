@@ -18,7 +18,7 @@ sub main()
 		RequiredItem("Craft_TinCan", 1);
         Color(Color_Blue);
         CraftedItem("L4D_Gnome", 1, 1);
-        CraftplanType("WeaponDLC");
+        CraftplanType("Collectables_DLC44and56");
 		OwnedAtStart();
 		InheritBaseStats();
         UniqueSaveID(9570);

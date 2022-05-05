@@ -10,6 +10,8 @@
 <Height>32.000000</Height>
 <ClassOverride>IUICursor</ClassOverride>
 <Visual>CursorV</Visual>
+<HoldAspectRatio>true</HoldAspectRatio>
+<HoldAspectRatioX>true</HoldAspectRatioX>
 </Properties>
 </XuiScene>
 </XuiCanvas>

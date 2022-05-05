@@ -616,4 +616,10 @@
 		<level_req type="Driver" value="12"/>
         <effect id="MaxCarUpgradeQuality" change="1.0"/>
     </skill>
-    
+
+  <skill id="RopeThrow" cat="fighter" tier="100" max_level="1" desc_params="grapplinghook;P" skill_points="0" skill_points_type="Fighter">
+    <level_req type="Fighter" value="12" />
+    <skill_req id="WeaponThrow" />
+    <skill_req id="StatusHook" />
+    <effect id="ThrowRopeLength" change="25"/>
+  </skill>

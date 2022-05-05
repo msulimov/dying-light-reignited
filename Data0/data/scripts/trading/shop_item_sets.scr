@@ -3037,6 +3037,19 @@ ItemSet("Melee_Level_12_Unique")
         Item("Firearm_ShotgunAGen");
     }
 	
+	ItemSet("Quatermaster_VolatileRush")
+    {
+		Item("Throwable_ZaidFlare");
+    }
+	
+    ItemSet("Quatermaster_Spike")
+    {
+        Item("Throwable_DecoyPoison");
+        Item("Throwable_ExplosiveDecoy");
+        Item("Throwable_BleedingDecoy");
+    }
+
+	
 	/////////////////////////////////////////////////////
 	////////// HELLRAID QUARTERMASTER WEAPONS ///////////
 	/////////////////////////////////////////////////////
@@ -3116,9 +3129,19 @@ ItemSet("Melee_Level_12_Unique")
         Item("HRBow_R13");
     }
 	
+	ItemSet("Hr_WandTrials")
+    {
+        Item("Throwable_FireWand");
+    }
+	
 	ItemSet("Hr_BowTrials_Ammo") //placeholder
     {
         Item("HR_Ammo_Arrow_Small");
+    }
+	
+		ItemSet("Hr_WandTrials_DK")
+    {
+        Item("Throwable_DarkWand");
     }
 	
 	/////////////////////////////////////////////////////
@@ -3279,6 +3302,11 @@ ItemSet("Melee_Level_12_Unique")
     {
         Item("Collectable_Liveops_CollectableOutfit_Winter_Frost");
     }
+	
+	ItemSet("Liveops_Collectable_Liveops_Outfit_Anniversary_Techland")
+    {
+        Item("Collectable_Liveops_CollectableOutfit_Anniversary_Techland");
+    }
 
 	ItemSet("Liveops_Collectable_Craftplan_L4D_Gnome")
     {
@@ -3348,5 +3376,55 @@ ItemSet("Melee_Level_12_Unique")
 	ItemSet("Liveops_Craftplan_Melee_Polearm_TSreward")
     {
         Item("Craftplan_Melee_Polearm_TSreward");
+    }
+	
+	ItemSet("Liveops_Craftplan_HRSword_R11_SHOP")
+    {
+        Item("Craftplan_HRSword_R11_SHOP");
+    }
+	
+	ItemSet("Liveops_Craftplan_AngelSword")
+    {
+        Item("Craftplan_AngelSword");
+    }
+	
+	ItemSet("Liveops_Craftplan_Melee_Machete_AddOn_Swrench")
+    {
+        Item("Craftplan_Melee_Machete_AddOn_Swrench");
+    }
+	
+	ItemSet("Liveops_Bundle_Survival_Switch")
+    {
+        Item("Bundle_Survival_Switch");
+    }
+	
+	ItemSet("Liveops_Melee_RaisMachete")
+    {
+        Item("Melee_RaisMachete");
+    }
+	
+	ItemSet("Liveops_Craftplan_Spike_Weapon_StageIII")
+    {
+        Item("Craftplan_Spike_Weapon_StageIII");
+    }
+	
+	ItemSet("Liveops_Craftplan_HRSword_R11_Without_HR")
+    {
+        Item("Craftplan_HRSword_R11_Without_HR");
+    }
+	
+	ItemSet("Liveops_Firearm_Rifle_Retro_Gold")
+    {
+        Item("Firearm_Rifle_Retro_Gold");
+    }
+	
+	ItemSet("Liveops_Spike_Weapon_First")
+    {
+        Item("Spike_Weapon_First");
+    }
+	
+	ItemSet("Liveops_Craftplan_Spike_Weapon_StageII")
+    {
+        Item("Craftplan_Spike_Weapon_StageII");
     }
 }

@@ -22,7 +22,7 @@ sub main()
 		InheritBaseStats();
         Color(Color_Blue);
         CraftedItem("Melee_Machete_Retro", 1, 1);
-        CraftplanType("WeaponDLC");
+        CraftplanType("Collectables_DLC47");
         UniqueSaveID(9610);
 		OwnedAtStart();
         HudIcon("blueprint_b");
@@ -46,7 +46,7 @@ sub main()
 		InheritBaseStats();
         Color(Color_Blue);
         CraftedItem("Firearm_Revolver_Retro", 1, 1);
-        CraftplanType("WeaponDLC");
+        CraftplanType("Collectables_DLC47");
         UniqueSaveID(9611);
 		OwnedAtStart();
         HudIcon("blueprint_b");
@@ -69,7 +69,7 @@ sub main()
 		RequiredItem("Craft_Electronics", 1);
         Color(Color_Blue);
         CraftedItem("Firearm_Rifle_Retro", 1, 1);
-        CraftplanType("WeaponDLC");
+        CraftplanType("Collectables_DLC47");
 		InheritBaseStats();
         UniqueSaveID(9612);
 		OwnedAtStart();

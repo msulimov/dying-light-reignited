@@ -3,6 +3,32 @@
 import "inventorystuff.scr" 
 sub main() 
 {	
+    //UNLOCKERS
+    Item("Collectable_Wand_Unlocker", CategoryType_Collectable)
+    {
+        Name("&Collectable_Wand_Unlocker_N&");
+        Description("&Collectable_Wand_Unlocker_D&");
+        ItemType(ItemType_ItemUnlocker);
+        Mesh("no_mesh.msh");
+        Skin("dont_use_dlc_collectible");
+        Color(Color_White);
+        UniqueSaveID(11000);
+        GameVersion(45);
+    }
+	
+	Item("Collectable_Wand_Unlocker_DarkKnight", CategoryType_Collectable)
+    {
+        Name("&Collectable_Wand_Unlocker_N&");
+        Description("&Collectable_Wand_Unlocker_D&");
+        ItemType(ItemType_ItemUnlocker);
+        Mesh("no_mesh.msh");
+        Skin("dont_use_dlc_collectible");
+        Color(Color_White);
+        UniqueSaveID(11000);
+        GameVersion(46);
+    }
+
+    //NOTES
 	Item("Collectable_Note_Hellraid_01", CategoryType_Collectable)
     {
         Name("&Collectable_Note_Hellraid_01_N&");
@@ -184,7 +210,7 @@ sub main()
 		InheritBaseStats();
         Color(Color_Platinum);
         CraftedItem("HRSword_R11_SHOP", 1, 1);
-        CraftplanType("WeaponDLC");
+        CraftplanType("Collectables_DLC49");
         UniqueSaveID(9700);
         HudIcon("blueprint_b");
 		GameVersion(33);
@@ -204,7 +230,7 @@ sub main()
 		RequiredItem("Craft_Electronics", 1);
         Color(Color_Platinum);
         CraftedItem("HRBow_R13_SHOP", 1, 1);
-        CraftplanType("WeaponDLC");
+        CraftplanType("Collectables_DLC49");
         UniqueSaveID(9701);
         HudIcon("blueprint_b");
         GameVersion(42);

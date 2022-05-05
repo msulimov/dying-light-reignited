@@ -27,7 +27,7 @@ sub main()
     //Preset(ALT, 4, "Demolisher_WastelandUltra_H", "Demolisher_WastelandUltra_H");
     //Preset(ALT, 4, "Demolisher_WastelandSpecial", "Demolisher Wasteland Special");
     //Preset(ALT, 5, "GasTank_WastelandSpecial", "GasTank Wasteland Special");
-    Preset(ALT, 6, "astronaut_range", "Astrounaut Event range");
+    Preset(ALT, 6, "Volatile_Iced", "Ice Volatile");
     Preset(ALT, 7, "astronaut_melee", "Astrounaut Event melee");
     Preset(ALT, 8, "Biter_Man;DiffLevel;Biter_m_lv5;", "Biter_ultras");
 	Preset(ALT, 9, "Viral_WL_Final", "Mother Viral");
@@ -43,12 +43,12 @@ sub main()
     
     Preset(CTRL, 6, "HR_Skeletor_Shield", "Skeleton with shield");
     Preset(CTRL, 7, "HR_Darkknight", "HR_Darkknight");
-    Preset(CTRL, 8, "HR_Blinded", "HR_Blinded");
+    Preset(CTRL, 8, "HR_Darkknight_no_specials", "HR_Blinded");
     Preset(CTRL, 9, "HR_Zombie;DiffLevel;HR_Zombie_Slave_lvl0;", "[CAT1] - Zombie Slave");
     Preset(CTRL, 0, "HR_Zombie;DiffLevel;HR_Zombie_Recruit_lvl0;", "[CAT1] - Zombie Recruit");
     Preset(CTRLANDSHIFT, 1, "HR_Zombie;DiffLevel;HR_Undead_Guard_lvl0;", "[CAT2] - Undead Guard");
     Preset(CTRLANDSHIFT, 2, "HR_Torturer;DiffLevel;HR_Torturer_lvl2", "[CAT2] - Undead Heavy Guard");
-    Preset(CTRLANDSHIFT, 3, "HR_Skeleton;DiffLevel;HR_Skeletor_l4;", "[CAT2] Brittle Skeleton");
+    Preset(CTRLANDSHIFT, 3, "HR_Skeleton;DiffLevel;HR_Skeletor_l0;", "[CAT2] Brittle Skeleton");
     Preset(CTRLANDSHIFT, 4, "HR_Skeleton;DiffLevel;HR_Skeletor_l3;", "[CAT2] Armored Skeleton");
     Preset(CTRLANDSHIFT, 5, "HR_Adept;DiffLevel;HR_Adept_Energy_lvl1;", "[CAT2] Energy Skeleton");
     Preset(CTRLANDSHIFT, 6, "HR_Adept;DiffLevel;HR_Adept_Poison_lvl1;", "[CAT2] Poison Skeleton");

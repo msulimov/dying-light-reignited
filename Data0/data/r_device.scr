@@ -4,16 +4,27 @@
 FrontBufferFormat("A8R8G8B8_GAMMA")
 
 !VideoMemPS4(i, i) // PS4 video memory allocated for (Garlic,Onion)
+!VideoMemPS4Pro(i, i) // PS4 PRO video memory allocated for (Garlic,Onion)
 !StreamMemLimitPS4(i) // PS4 texture streaming limit, memory is not pre allocated
+!StreamMemLimitPS4Pro(i) // PS4 PRO texture streaming limit, memory is not pre allocated
+
 VideoMemPS4(2622, 285)
+VideoMemPS4Pro(3262, 285)
 StreamMemLimitPS4(1350)
+StreamMemLimitPS4Pro(1450)
 
 !StreamMem(i)
-!StreamMemXBO(i)
+!StreamMemXboxOne(i)
+!StreamMemXboxOneX(i)
+!StreamMemXboxSeriesS(i)
+!StreamMemXboxSeriesX(i)
 !StreamMemPC(i) 
 
 StreamMem(60)
-StreamMemXBO(1450)
+StreamMemXboxOne(1450)
+StreamMemXboxOneX(2900)
+StreamMemXboxSeriesS(2900)
+StreamMemXboxSeriesX(2900)
 
 // the order: VideoSettings, r_device when !NDEBUG, cmd line.
 StreamMemPC(600)

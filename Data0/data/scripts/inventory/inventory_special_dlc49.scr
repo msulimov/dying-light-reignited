@@ -1,6 +1,99 @@
 import "inventorystuff.scr" 
 sub main() 
 {
+    Item("Melee_Darkknight_Ghost_Sword_AI", CategoryType_Melee)
+    {
+        GameVersion(46);
+        ItemType(ItemType_Stick);
+        WeaponBuildType(WeaponBuildType_Metal);
+        PhysicsScript("single_dropped_inventory.phx");
+        Condition(54);
+        Damage(1.0);
+        CriticalProb(0.0);
+        CriticalDamage(0.0);
+        DamageRange(235.0 *0.01);
+        Force(0.0);
+        PhysicsDamage(25.0);
+        StaminaUsage(0.0);
+        SwingSpeed(0.9);
+        HeadSmashProb(0.0);
+        HeadCutProb(1.0);
+        ArmsCutProb(1.0);
+        LegsCutProb(1.0);
+        DamageType(DamageType_Blunt);
+        RepairPrice(157);
+        UpgradePrice(1147);
+        Mesh("wn_short_sword_dark_knight.msh");
+        Skin("Ghost");
+        SkinTag("Weapon_Craft0");
+        AnimPrefix("Stick");
+        HudIcon("machete_a");
+        MinDamageAngle(30.0);
+        MaxDamageAngle(10.0);
+        MinDamageMult(1.0);
+        MaxHitSeverity(HitSeverity_Medium);
+        MinHitSeverity(HitSeverity_Light);
+        HorizontalAttackDamageMul(1.0);
+        TwoHanded(false);
+        HolderElement("r_thigh");
+        HolderOffset([0.0, 10.0, 10.0] * [0.01, 0.01, 0.01]);
+        HolderAngle([0.0, 0.0, -90.0]);
+        DestroySound("break_metal_weapon_00.wav");
+        AiHitSound("baseball_metal");
+        use HitEffects_Sharp();
+        BloodSplatFactor(0.25);
+        use PickupSounds_Default();
+        DamageSize(10.0);
+        StatsType(StatsType_Cut);
+        LootType(LootType_Sharp);
+        FF_EffectName("Hit_Blunt");
+        FF_Left(0.6);
+        FF_Right(0.6);
+        FF_Duration(0.2);
+        FF_FadeOut(0.0);
+        OwnerType(OwnerType_AI);
+        Reparable(true);
+        Color(Color_Green);
+        Visibility(false);//Disappear after death
+    }
+
+    Item("Throwable_DarkKnightSeal", CategoryType_Throwable)
+    {
+        GameVersion(46);
+        Name("&ZZZZ3_Mine_N&");
+        ItemType(ItemType_ExplosionSeal);
+        Visibility(true);
+        MaxStackCount(99);
+        Mesh("wn_petard_a.msh");
+        Skin("Transparent");
+        InventorySkin("unarmed");
+        AnimPrefix("Mine");
+        PhysicsScript("single_dropped_inventory.phx");
+        Damage(100.0);
+        PhysicsDamageMul(2.0);
+        DamageDuration(0.0);
+        DamageRange(2.5);
+        HeadCutProb(0.0);
+        ArmsCutProb(0.0);
+        LegsCutProb(0.0);
+        ExplosionSound("DK_Decay_Explosion_XX.wav");
+        ExplodeDelay(1.2);
+        ExplosionTriggeringRange(2.5);
+        ThrowEndSound("throwing.wav");
+        StatsType(StatsType_Explosive);
+        NoiseType("EXPLOSION");
+        Color(Color_White);
+        EquipmentSlot(0);
+        HudIcon("ammo_mine");
+        ThrowImpulseUp(-0.1);
+        DamagerTakesNoDamage(false);
+        Price(100);
+
+        ExplosionFx("dark_explosion_sequence.fx");
+        ThrowFlyFx("evil_symbol_dk_seal_sequence.fx");
+        DamageType(DamageType_Cold);
+    }
+
     Item("Melee_HRHammer_AI", CategoryType_Melee)
     {
         GameVersion(41);
@@ -657,5 +750,119 @@ sub main()
         Reparable(true);
         Color(Color_Violet);
         TransformInto("Melee_HRLongSword_R7");
+    }
+	
+	//The Order of Asmorod
+	
+	Item("Melee_HRBigAxe8_AI", CategoryType_Melee)
+    {
+        GameVersion(46);
+        Visibility(true);
+        ItemType(ItemType_Stick);
+        WeaponBuildType(WeaponBuildType_Metal);
+        PhysicsScript("single_dropped_inventory.phx");
+        Condition(54);
+        Damage(1.0);
+        CriticalProb(0.0);
+        CriticalDamage(0.0);
+        DamageRange(195.0 *0.01);
+        Force(0.0);
+        PhysicsDamage(25.0);
+        StaminaUsage(0.0);
+        SwingSpeed(0.9);
+        HeadSmashProb(0.0);
+        HeadCutProb(1.0);
+        ArmsCutProb(1.0);
+        LegsCutProb(1.0);
+        DamageType(DamageType_Blunt);
+        RepairPrice(157);
+        UpgradePrice(1147);
+        Mesh("wn_axe_b_twohanded_hr.msh");
+        SkinTag("Weapon_Craft0");
+        AnimPrefix("Stick");
+        HudIcon("weapon_hellraid_axe_b");
+        MinDamageAngle(30.0);
+        MaxDamageAngle(10.0);
+        MinDamageMult(1.0);
+        MaxHitSeverity(HitSeverity_Heavy);
+        MinHitSeverity(HitSeverity_Medium);
+        HorizontalAttackDamageMul(1.0);
+        TwoHanded(true);
+        HolderElement("r_thigh");
+        HolderOffset([0.0, 10.0, 10.0] * [0.01, 0.01, 0.01]);
+        HolderAngle([0.0, 0.0, -90.0]);
+        DestroySound("break_metal_weapon_00.wav");
+        AiHitSound("baseball_metal");
+        use HitEffects_Sharp();
+        BloodSplatFactor(0.25);
+        use PickupSounds_Default();
+        DamageSize(10.0);
+        StatsType(StatsType_Cut);
+        LootType(LootType_Sharp);
+        FF_EffectName("Hit_Blunt");
+        FF_Left(0.6);
+        FF_Right(0.6);
+        FF_Duration(0.2);
+        FF_FadeOut(0.0);
+        OwnerType(OwnerType_AI);
+        Reparable(true);
+        Color(Color_Violet);
+        TransformInto("Melee_HRBigAxe_R8");
+    }
+	
+	Item("Melee_HRHammer9_AI", CategoryType_Melee)
+    {
+        GameVersion(46);
+        Visibility(true);
+        ItemType(ItemType_Stick);
+        WeaponBuildType(WeaponBuildType_Metal);
+        PhysicsScript("single_dropped_inventory.phx");
+        Condition(54);
+        Damage(1.0);
+        CriticalProb(0.0);
+        CriticalDamage(0.0);
+        DamageRange(195.0 *0.01);
+        Force(0.0);
+        PhysicsDamage(25.0);
+        StaminaUsage(0.0);
+        SwingSpeed(0.9);
+        HeadSmashProb(0.0);
+        HeadCutProb(1.0);
+        ArmsCutProb(1.0);
+        LegsCutProb(1.0);
+        DamageType(DamageType_Blunt);
+        RepairPrice(157);
+        UpgradePrice(1147);
+        Mesh("wn_warhammer_b_onehanded.msh");
+        SkinTag("Weapon_Craft0");
+        AnimPrefix("Stick");
+        HudIcon("weapon_hellraid_hammer_b");
+        MinDamageAngle(30.0);
+        MaxDamageAngle(10.0);
+        MinDamageMult(1.0);
+        MaxHitSeverity(HitSeverity_Medium);
+        MinHitSeverity(HitSeverity_Medium);
+        HorizontalAttackDamageMul(1.0);
+        TwoHanded(false);
+        HolderElement("r_thigh");
+        HolderOffset([0.0, 10.0, 10.0] * [0.01, 0.01, 0.01]);
+        HolderAngle([0.0, 0.0, -90.0]);
+        DestroySound("break_metal_weapon_00.wav");
+        AiHitSound("baseball_metal");
+        use HitEffects_Sharp();
+        BloodSplatFactor(0.25);
+        use PickupSounds_Default();
+        DamageSize(10.0);
+        StatsType(StatsType_Cut);
+        LootType(LootType_Sharp);
+        FF_EffectName("Hit_Blunt");
+        FF_Left(0.6);
+        FF_Right(0.6);
+        FF_Duration(0.2);
+        FF_FadeOut(0.0);
+        OwnerType(OwnerType_AI);
+        Reparable(true);
+        Color(Color_Orange);
+        TransformInto("Melee_HRHammer_R9");
     }
 }

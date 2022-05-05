@@ -102,3 +102,36 @@ SeqTrackAlias("TPP_fireball_ThrowReady",       "TPP_Grenade_ThrowReady")
 SeqTrackAlias("TPP_fireball_ThrowAttack",      "TPP_Grenade_ThrowAttack")
 SeqTrackAlias("TPP_fireball_FastThrow",        "TPP_Grenade_FastThrow")
 SeqTrackAlias("TPP_fireball_BackThrowAttack",  "TPP_Molotov_BackThrowAttack")
+
+//===================================== MagicWand ============================================
+SeqTrack("M_TPP_magicwand_High_Stand", "M_TPP_NEW_Staff_FB_Attack.anm2", 23, 65, 30, 1, 0.3)
+SeqTrackAlias("TPP_magicwand_Stand", "M_TPP_magicwand_High_Stand")//"M_FPP_Molotov.anm2"				, 0, 60, 30, 1, 0.5)
+///SeqTrack("TPP_magicwand_ThrowBegin", "M_TPP_NEW_Staff_FB_Attack.anm2", 0, 47, 60, 1, 0.3)
+SeqTrackAlias("TPP_magicwand_ThrowBegin", "M_TPP_magicwand_High_Stand")
+SeqTrackAlias("TPP_magicwand_ThrowReady", "M_TPP_magicwand_High_Stand")
+
+SeqTrack("TPP_magicwand_ThrowAttack", "M_TPP_NEW_Staff_FB_Attack.anm2", 67, 100, 30, 1, 0.3)
+{
+    Event(17, EVENT_THROWABLE_THROW, 1)
+    {
+        PlaySound23D(GameVolumeSource_SoundPlayer, "clothes_throw.wav", 1, 3, "head", 1, [0, 0, 0], 0)
+    }
+    Event(33, END_ANIMATION, 1)
+}
+SeqTrack("TPP_magicwand_FastThrow", "M_TPP_NEW_Staff_FB_Attack.anm2", 0, 100, 30, 1, 0.3)
+{
+    Event(36, EVENT_GRANADE_THROW, 1)
+    {
+        PlaySound23D(GameVolumeSource_SoundPlayer, "clothes_throw.wav", 1, 3, "head", 1, [0, 0, 0], 0)
+    }
+    Event(37, EVENT_THROWABLE_THROW, 1)
+}
+SeqTrack("TPP_magicwand_BackThrowAttack", "M_TPP_Unarmed_LookBack.anm2", 0, 18, 30, 1, 0.1)
+{
+    Event(4, EVENT_GRANADE_THROW, 1)
+    {
+        PlaySound23D(GameVolumeSource_SoundPlayer, "clothes_throw.wav", 1, 3, "head", 1, [0, 0, 0], 0)
+    }
+    Event(8, END_ANIMATION, 1)
+}
+

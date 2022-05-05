@@ -9,10 +9,12 @@
 !ShadowMapSize(i)
 !SpotShadowMapSize(i)
 !Fullscreen()
-!VSync()               // enable vertical sync
+!VSync(i)              // vertical sync; 0 - disable, 1 - every frame, 2 - every 2 frames, etc.
+!VSyncDisableBelowTarget(i)
 !GrassQuality(i)       // lower is better
+!VisRange(f,f)
 
-Resolution(1024,768)
+Resolution(1920,1080)
 TextureQuality("High")
 Shadows("High")
 ShadowMapSize(2048)
@@ -20,4 +22,6 @@ SpotShadowMapSize(2048)
 GammaFloat(1.00)
 MaxRefresh(60)
 GrassQuality(0)
-VSync()
+VSync(2)
+VSyncDisableBelowTarget(1)
+VisRange(1.0, 1.0)

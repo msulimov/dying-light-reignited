@@ -16,7 +16,7 @@ sub main()
         RequiredItem("Craft_DuctTape", 3);
         Color(Color_Blue);
         CraftedItem("Firearm_ShotgunAGen_AddOn_WildWest", 1, 1);
-        CraftplanType("WeaponDLC");
+        CraftplanType("Collectables_DLC38");
         UniqueSaveID(3090);
         HudIcon("blueprint_b");
         GameVersion(22);
@@ -37,7 +37,7 @@ sub main()
         RequiredItem("Craft_DuctTape", 3);
         Color(Color_Blue);
         CraftedItem("Firearm_RevolverRanger_AddOn_WildWest", 1, 1);
-        CraftplanType("WeaponDLC");
+        CraftplanType("Collectables_DLC38");
         UniqueSaveID(3091);
         HudIcon("blueprint_b");
         GameVersion(22);
@@ -58,7 +58,7 @@ sub main()
         RequiredItem("Craft_DuctTape", 3);
         Color(Color_Blue);
         CraftedItem("Melee_KnifeDGen_AddOn_WildWest", 1, 1);
-        CraftplanType("WeaponDLC");
+        CraftplanType("Collectables_DLC38");
         UniqueSaveID(3092);
         HudIcon("blueprint_b");
         GameVersion(22);
@@ -80,7 +80,7 @@ sub main()
         RequiredItem("Craft_DuctTape", 3);
         Color(Color_Blue);
         CraftedItem("Firearm_ShotgunAGen_AddOn_WildWest_Gunslinger", 1, 1);
-        CraftplanType("WeaponDLC");
+        CraftplanType("Collectables_DLC38");
         UniqueSaveID(3093);
         HudIcon("blueprint_b");
         GameVersion(34);

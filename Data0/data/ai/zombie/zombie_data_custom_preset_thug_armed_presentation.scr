@@ -15,8 +15,12 @@ ParamFloat("min_time_btw_taunts", 20.0)
 ParamFloat("taunt_prob_on_target_change", 1.0)
 ParamFloat("taunt_prob_on_take_damage", 100.0)
 
-ParamFloat("health_mul", 0.5)
+ParamFloat("health_mul", 0.35)
 ParamFloat("head_health_mul", 1.0)
 ParamFloat("bullet_head_hit_damage_mult", 0.2)
 
 ParamFloat("experience_award", 300.0)
+
+//tweaking reaction times
+
+ParamFloat("min_time_btw_hit_reactions", 4.0)

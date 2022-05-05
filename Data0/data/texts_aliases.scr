@@ -147,7 +147,7 @@ String("Menu_DocketF06_N",  "&DocketOutfit_Name& - &Collectable_Liveops_Collecta
 String("Menu_DocketF06_D",  "&DocketG_PlsOffline_Description&")
 String("Menu_DocketF06_SD", "&Menu_DocketF06_D&")
 
-String("Menu_DocketF07_N",  "&DocketOutfit_Name& 07")
+String("Menu_DocketF07_N",  "&DocketOutfit_Name& - &Outfit_Collectable_Liveops_Outfit_Anniversary_Techland&")
 String("Menu_DocketF07_D",  "&DocketG_PlsOffline_Description&")
 String("Menu_DocketF07_SD", "&Menu_DocketF07_D&")
 
@@ -329,29 +329,69 @@ String("Menu_DocketG44_N",  "&DocketG_PlsOffline_Name& - &Melee_Polearm_TSreward
 String("Menu_DocketG44_D",  "&DocketG_PlsOffline_Description&")
 String("Menu_DocketG44_SD", "&Menu_DocketG44_D&")
 
-String("Menu_DocketG45_N",  "&DocketG_PlsOffline_Name& 45")
+String("Menu_DocketG45_N",  "&DocketG_PlsOffline_Name& - &Craftplan_HRSword_R11_SHOP_N&")
 String("Menu_DocketG45_D",  "&DocketG_PlsOffline_Description&")
 String("Menu_DocketG45_SD", "&Menu_DocketG45_D&")
 
-String("Menu_DocketG46_N",  "&DocketG_PlsOffline_Name& 46")
+String("Menu_DocketG46_N",  "&DocketG_PlsOffline_Name& - &Craftplan_AngelSword_N&")
 String("Menu_DocketG46_D",  "&DocketG_PlsOffline_Description&")
 String("Menu_DocketG46_SD", "&Menu_DocketG46_D&")
 
-String("Menu_DocketG47_N",  "&DocketG_PlsOffline_Name& 47")
+String("Menu_DocketG47_N",  "&DocketG_PlsOffline_Name& - &Craftplan_Melee_Machete_AddOn_Swrench_N&")
 String("Menu_DocketG47_D",  "&DocketG_PlsOffline_Description&")
 String("Menu_DocketG47_SD", "&Menu_DocketG47_D&")
 
-String("Menu_DocketG48_N",  "&DocketG_PlsOffline_Name& 48")
+String("Menu_DocketG48_N",  "&DocketG_PlsOffline_Name& - &Bundle_Survival_Switch_N&")
 String("Menu_DocketG48_D",  "&DocketG_PlsOffline_Description&")
 String("Menu_DocketG48_SD", "&Menu_DocketG48_D&")
 
-String("Menu_DocketG49_N",  "&DocketG_PlsOffline_Name& 49")
+String("Menu_DocketG49_N",  "&DocketG_PlsOffline_Name& - &Melee_RaisMachete_N&")
 String("Menu_DocketG49_D",  "&DocketG_PlsOffline_Description&")
 String("Menu_DocketG49_SD", "&Menu_DocketG49_D&")
 
-String("Menu_DocketG50_N",  "&DocketG_PlsOffline_Name& 50")
+String("Menu_DocketG50_N",  "&DocketG_PlsOffline_Name& - &Craftplan_Spike_Weapon_StageIII_N&")
 String("Menu_DocketG50_D",  "&DocketG_PlsOffline_Description&")
 String("Menu_DocketG50_SD", "&Menu_DocketG50_D&")
+
+String("Menu_DocketG51_N",  "&DocketG_PlsOffline_Name& - &Craftplan_HRSword_R11_SHOP_N&")
+String("Menu_DocketG51_D",  "&DocketG_PlsOffline_Description&")
+String("Menu_DocketG51_SD", "&Menu_DocketG51_D&")
+
+String("Menu_DocketG52_N",  "&DocketG_PlsOffline_Name& - &Firearm_Rifle_Retro_N&")
+String("Menu_DocketG52_D",  "&DocketG_PlsOffline_Description&")
+String("Menu_DocketG52_SD", "&Menu_DocketG52_D&")
+
+String("Menu_DocketG53_N",  "&DocketG_PlsOffline_Name& - &Spike_Weapon_First_N&")
+String("Menu_DocketG53_D",  "&DocketG_PlsOffline_Description&")
+String("Menu_DocketG53_SD", "&Menu_DocketG53_D&")
+
+String("Menu_DocketG54_N",  "&DocketG_PlsOffline_Name& - &Craftplan_Spike_Weapon_StageII_N&")
+String("Menu_DocketG54_D",  "&DocketG_PlsOffline_Description&")
+String("Menu_DocketG54_SD", "&Menu_DocketG54_D&")
+
+String("Menu_DocketG55_N",  "&DocketG_PlsOffline_Name& 55")
+String("Menu_DocketG55_D",  "&DocketG_PlsOffline_Description&")
+String("Menu_DocketG55_SD", "&Menu_DocketG55_D&")
+
+String("Menu_DocketG56_N",  "&DocketG_PlsOffline_Name& 56")
+String("Menu_DocketG56_D",  "&DocketG_PlsOffline_Description&")
+String("Menu_DocketG56_SD", "&Menu_DocketG56_D&")
+
+String("Menu_DocketG57_N",  "&DocketG_PlsOffline_Name& 57")
+String("Menu_DocketG57_D",  "&DocketG_PlsOffline_Description&")
+String("Menu_DocketG57_SD", "&Menu_DocketG57_D&")
+
+String("Menu_DocketG58_N",  "&DocketG_PlsOffline_Name& 58")
+String("Menu_DocketG58_D",  "&DocketG_PlsOffline_Description&")
+String("Menu_DocketG58_SD", "&Menu_DocketG58_D&")
+
+String("Menu_DocketG59_N",  "&DocketG_PlsOffline_Name& 59")
+String("Menu_DocketG59_D",  "&DocketG_PlsOffline_Description&")
+String("Menu_DocketG59_SD", "&Menu_DocketG59_D&")
+
+String("Menu_DocketG60_N",  "&DocketG_PlsOffline_Name& 60")
+String("Menu_DocketG60_D",  "&DocketG_PlsOffline_Description&")
+String("Menu_DocketG60_SD", "&Menu_DocketG60_D&")
 
 String("Menu_DocketH01_N",  "&DocketH_PlsOffline_Name& 01")
 String("Menu_DocketH01_D",  "&DocketH_PlsOffline_Description&")
@@ -535,3 +575,4 @@ String( "Menu_DocketF02_N", "&Outfit_Collectable_Gaas_Outfit_2&")
 String( "Menu_DocketF02_SD", "&DocketG_PlsOffline_Description&")
 
 String( "Collectable_Liveops_CollectableOutfit_Halloween_Rat_N", "&Outfit_Collectable_Liveops_Outfit_Halloween_Rat&")
+String( "Collectable_Liveops_CollectableOutfit_Anniversary_Techland_N", "&Outfit_Collectable_Liveops_Outfit_Anniversary_Techland&")

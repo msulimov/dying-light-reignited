@@ -1484,4 +1484,28 @@ sub main()
         PriorityModifier(950);
         VisibleRange(50);
     }
+	
+	LocationDef("HellraidWandLocation", "map_hellraid_wand")
+    {
+        ShowPointOnRadar();
+        //ShowOnMap("&MMap_delivery_bounty_object&");
+        PriorityModifier(950);
+        VisibleRange(50);
+    }
+	
+	LocationDef("HellraidBonusPortal", "map_hellraid_bonus_portal")
+    {
+        ShowPointOnRadar();
+        //ShowOnMap("&MMap_delivery_bounty_object&");
+        PriorityModifier(950);
+        VisibleRange(50);
+    }
+	
+	LocationDef("HellraidQuestionMark", "map_hellraid_question_mark")
+    {
+        ShowPointOnRadar();
+        //ShowOnMap("&MMap_delivery_bounty_object&");
+        PriorityModifier(950);
+        VisibleRange(50);
+    }
 }

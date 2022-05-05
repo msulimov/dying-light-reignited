@@ -1,0 +1,19 @@
+sub main()
+{
+	// Add all graphics for gathering
+	
+	Image("splashscreen_square_halloween_2021");
+	Image("splashscreen_square_winter_2021_day");
+	Image("splashscreen_square_winter_2021_night");
+	Image("splashscreen_square_spike_1");
+	Image("splashscreen_square_spike_2");
+	Image("splashscreen_square_spike_3");
+	
+	// Add all graphics for gathering
+
+	// Launch event
+	ContinueButtonEnabled(false); // Don't change this on repo, enable this via PLS!
+	EventSectionEnabled(false); // Don't change this on repo, enable this via PLS!
+	EventEndDate("08.11.2021");	// Example
+	EventImage("splashscreen_square_halloween_2021"); // Example
+}

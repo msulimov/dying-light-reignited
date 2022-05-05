@@ -1681,6 +1681,12 @@ sub Loot()
         ColorSet(ColorSet_OrangeOnly);
         use Liveops_Halloween_Potions(weight = 1.0);
     }
+	
+    LootedObject("Volatile_Iced")
+    {
+		 ColorSet(ColorSet_Upgrades_Volatile_Iced);
+         use Upgrades_Volatile_Iced(weight = 1.0);
+    }
 }
 
 sub default()

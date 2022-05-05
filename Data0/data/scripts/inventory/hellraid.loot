@@ -192,6 +192,16 @@ sub Loot()
 		use Empty(weight = 0.0);
         use CoinPremium(weight = 1.0);
     }
+	
+	LootedObject("DeadBody_DarkKnight")
+    {
+        ColorSet(Color_Violet);
+		
+		Set(Other, 1.0, 1.0)
+        {
+            Item("Throwable_DarkWand", 1.0);
+        }
+    }
 }
 
 sub default()

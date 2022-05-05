@@ -124,6 +124,9 @@ sub main()
     
     Docket("F07")  // Outfit docket
     {
+		Set("Liveops_Collectable_Liveops_Outfit_Anniversary_Techland",                       "whites_only",   1, 1)
+        {		
+        }
     }
     
     Docket("F08")  // Outfit docket
@@ -443,30 +446,100 @@ sub main()
 	
 	Docket("G45")
     {
-	
+		Set("Liveops_Craftplan_HRSword_R11_SHOP",          "premium_dockets",   1, 1)
+        {
+        }
     }
 	
 	Docket("G46")
     {
-	
+		Set("Liveops_Craftplan_AngelSword",          "orange_only",   1, 1)
+        {
+        }
     }
 	
-	Docket("G47")
+	Docket("G47") //Switch Weapon
     {
-	
+		Set("Liveops_Craftplan_Melee_Machete_AddOn_Swrench",          "premium_dockets",   1, 1)
+        {
+        }
     }
 	
-	Docket("G48")
+	Docket("G48") //Switch Survival Bundle
     {
-	
+		Set("Liveops_Bundle_Survival_Switch",          "blue_only",   1, 1)
+        {
+        }
     }
 	
-	Docket("G49")
+	Docket("G49") // Rais's Machete
     {
+		Set("Liveops_Melee_RaisMachete",          "premium_dockets",   1, 1)
+        {
+        }
+    }
+	
+	Docket("G50") //Spike Weapon Stage III
+    {      
+		Set("Liveops_Craftplan_Spike_Weapon_StageIII",          "premium_dockets",   1, 1)
+        {
+        }
+    }	
+	
+	Docket("G51")
+    {      
+		Set("Liveops_Craftplan_HRSword_R11_Without_HR",          "premium_dockets",   1, 1)
+        {
+        }
+    }
+	
+	Docket("G52")
+    {      
+		Set("Liveops_Firearm_Rifle_Retro_Gold",          "premium_dockets",   1, 1)
+        {
+        }
+    }	
+	
+	Docket("G53")
+    {      
+		Set("Liveops_Spike_Weapon_First",          "premium_dockets",   1, 1)
+        {
+        }
+    }	
+	
+	Docket("G54")
+    {      
+		Set("Liveops_Craftplan_Spike_Weapon_StageII",          "premium_dockets",   1, 1)
+        {
+        }
+    }	
+	
+	Docket("G55")
+    {      
 	
     }
 	
-	Docket("G50")
+	Docket("G56")
+    {      
+	
+    }	
+	
+	Docket("G57")
+    {      
+	
+    }
+	
+	Docket("G58")
+    {      
+	
+    }
+	
+	Docket("G59")
+    {      
+	
+    }
+	
+	Docket("G60")
     {      
 	
     }

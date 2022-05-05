@@ -1,0 +1,188 @@
+//HALLOWEEN 2021 BUNDLE
+
+import "inventorystuff.scr" 
+sub main() 
+{	//crossbow		
+	Item("Craftplan_Crossbow_VanCrane", CategoryType_Collectable)
+    {
+        Name("&Craftplan_Crossbow_VanCrane_N&");
+        Description('&Craftplan_Crossbow_VanCrane_D&');
+        ItemType(ItemType_CraftPlan);
+        Price(6400);
+        Mesh("blueprint.msh");
+        Skin("default");
+		RequiredItem("Craft_MetalScrap", 4);
+		RequiredItem("Craft_String", 4);
+        RequiredItem("Craft_PlasticTube", 2);
+		RequiredItem("Craft_Bleach", 1);
+		RequiredItem("Craft_ToxicPlant", 6);	
+		RequiredItem("Craft_Shroom", 6);		
+        Color(Color_Blue);
+        CraftedItem("Crossbow_VanCrane", 1, 1);
+        CraftplanType("Collectables_DLC64");
+		InheritBaseStats();
+        UniqueSaveID(10003);
+		OwnedAtStart();
+        HudIcon("blueprint_b");
+		GameVersion(45);	
+    }
+	//pistol
+	Item("Craftplan_Firearm_Pistol_VanCrane", CategoryType_Collectable)
+    {
+        Name("&Craftplan_Firearm_Pistol_VanCrane_N&");
+        Description('&Craftplan_Firearm_Pistol_VanCrane_D&');
+        ItemType(ItemType_CraftPlan);
+        Price(6400);
+        Mesh("blueprint.msh");
+        Skin("default");
+		BaseItem("Firearm_Pistol", "", "");
+        RequiredItem("Craft_MetalScrap", 6);
+		RequiredItem("Craft_Lichen", 6);
+		RequiredItem("Craft_ToxicPlant", 6);	
+		RequiredItem("Craft_Shroom", 6);	
+		InheritBaseStats();
+        Color(Color_Blue);
+        CraftedItem("Pistol_VanCrane", 1, 1);
+        CraftplanType("Collectables_DLC64");
+        UniqueSaveID(10004);
+		OwnedAtStart();
+        HudIcon("blueprint_b");
+		GameVersion(45);
+    }
+	
+	//sword
+	Item("Craftplan_Sword_VanCrane", CategoryType_Collectable)
+    {
+        Name("&Craftplan_Sword_VanCrane_N&");
+        Description('&Craftplan_Sword_VanCrane_D&');
+        ItemType(ItemType_CraftPlan);
+        Price(6400);
+        Mesh("blueprint.msh");
+        Skin("default");
+		BaseItem("Melee_ShortSword", "", "");
+		BaseItem("Melee_Knife", "", "");
+		BaseItem("Melee_Scythe", "", "");
+        BaseItem("Melee_Machete", "", "");
+		BaseItem("Melee_TahirsWeapon", "", "");
+        BaseItem("Melee_RaisMachete", "", "");
+        BaseItem("Melee_Sickle", "", "");
+		BaseItem("Melee_ReedKnife", "", "");
+		BaseItem("Melee_Cleaver", "", "");
+        RequiredItem("Craft_MetalScrap", 4);
+		RequiredItem("Craft_RazorBlade", 4);
+       	RequiredItem("Craft_Bleach", 1);
+		RequiredItem("Craft_ToxicPlant", 5);	
+		RequiredItem("Craft_Shroom", 5);	
+        Color(Color_Blue);
+        CraftedItem("Sword_VanCrane", 1, 1);
+		InheritBaseStats();
+        CraftplanType("Collectables_DLC64");
+		OwnedAtStart();
+        UniqueSaveID(10005);
+        HudIcon("blueprint_b");
+		GameVersion(45);
+    }
+	
+	//craftplan for pistol's bullet
+	Item("Craftplan_Bullet_Pistol_VanCrane", CategoryType_Collectable)
+    {
+        Name("&Craftplan_Bullet_Pistol_VanCrane_N&");
+        Description('&Craftplan_Bullet_Pistol_VanCrane_D&');
+        ItemType(ItemType_CraftPlan);
+        Price(6400);
+        Mesh("blueprint.msh");
+        Skin("default");
+        RequiredItem("Craft_RazorBlade", 1);
+		RequiredItem("Craft_Nails", 1);
+		RequiredItem("Craft_ToxicPlant", 1);	
+		RequiredItem("Craft_Shroom", 1);
+        Color(Color_Blue);
+        CraftedItem("Bullet_Pistol_VanCrane", 1, 5);
+        CraftplanType("Collectables_DLC64");
+        UniqueSaveID(10006);
+		OwnedAtStart();
+        HudIcon("blueprint_b");
+		GameVersion(45);
+    }
+	//craftplans for crossbow's bolts
+	Item("Craftplan_Crossbow_Bolt_VanCrane", CategoryType_Collectable)
+    {
+        Name("&Craftplan_Crossbow_Bolt_VanCrane_N&");
+        Description('&Craftplan_Crossbow_Bolt_VanCrane_D&');
+        ItemType(ItemType_CraftPlan);
+        Price(2000);
+        Mesh("blueprint.msh");
+        Skin("default");
+        RequiredItem("Craft_MetalScrap", 1);
+        RequiredItem("Craft_Nails", 1);
+        Color(Color_Green);
+        CraftedItem("ZZZZ3_Ammo_Crossbow", 10, 15);
+        CraftplanType("Collectables_DLC64");
+        UniqueSaveID(10009);
+        HudIcon("blueprint_b");
+        OwnedAtStart();
+        GameVersion(46);
+    }
+
+    Item("Craftplan_Crossbow_BoltPoison_VanCrane", CategoryType_Collectable)
+    {
+        Name("&Craftplan_Crossbow_BoltPoison_VanCrane_N&");
+        Description('&Craftplan_Crossbow_BoltPoison_VanCrane_D&');
+        ItemType(ItemType_CraftPlan);
+        Price(5000);
+        Mesh("blueprint.msh");
+        Skin("default");
+        RequiredItem("Craft_Nails", 1);
+        RequiredItem("Craft_PlasticTube", 1);
+        RequiredItem("Craft_ToxicPlant", 2);
+        Color(Color_Blue);
+        CraftedItem("ZZZZ3_Ammo_Crossbow_Poison", 10, 15);
+        CraftplanType("Collectables_DLC64");
+        UniqueSaveID(10010);
+        HudIcon("blueprint_b");
+        OwnedAtStart();
+        GameVersion(46);
+    }
+
+    Item("Craftplan_Crossbow_BoltStunning_VanCrane", CategoryType_Collectable)
+    {
+        Name("&Craftplan_Crossbow_BoltStunning_VanCrane_N&");
+        Description('&Craftplan_Crossbow_BoltStunning_VanCrane_D&');
+        ItemType(ItemType_CraftPlan);
+        Price(5000);
+        Mesh("blueprint.msh");
+        Skin("default");
+        RequiredItem("Craft_Nails", 1);
+        RequiredItem("Craft_PlasticTube", 1);
+        RequiredItem("Craft_Insecticide", 1);
+        Color(Color_Blue);
+        CraftedItem("ZZZZ3_Ammo_Crossbow_Stunning", 10, 15);
+        CraftplanType("Collectables_DLC64");
+        UniqueSaveID(10011);
+        HudIcon("blueprint_b");
+        OwnedAtStart();
+        GameVersion(46);
+    }
+
+    Item("Craftplan_Crossbow_BoltImpact_VanCrane", CategoryType_Collectable)
+    {
+        Name("&Craftplan_Crossbow_BoltImpact_VanCrane_N&");
+        Description('&Craftplan_Crossbow_BoltImpact_VanCrane_D&');
+        ItemType(ItemType_CraftPlan);
+        Price(5000);
+        Mesh("blueprint.msh");
+        Skin("default");
+        RequiredItem("Craft_Nails", 1);
+        RequiredItem("Craft_PlasticTube", 1);
+        RequiredItem("Craft_Bleach", 1);
+        Color(Color_Blue);
+        CraftedItem("ZZZZ3_Ammo_Crossbow_Impact", 10, 15);
+        CraftplanType("Collectables_DLC64");
+        UniqueSaveID(10012);
+        HudIcon("blueprint_b");
+        OwnedAtStart();
+        GameVersion(46);
+    }
+	
+	
+}

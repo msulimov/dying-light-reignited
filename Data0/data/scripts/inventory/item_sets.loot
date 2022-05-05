@@ -1439,3 +1439,20 @@ export int Other = 9;
         }
     }
 	
+	sub Upgrades_Volatile_Iced(float weight = 1.0, float prob = 1.0)
+    {
+        Set(Mods, weight, prob)
+        {
+            Item("Craft_Upgrade_DamL2DurL2", 1.0);
+            Item("Craft_Upgrade_DamL2BalL2", 1.0);
+            Item("Craft_Upgrade_DurL2BalL2", 1.0);
+            Item("Craft_Upgrade_DamL2DurL2BalL2", 1.0);
+            Item("Craft_Upgrade_DamL2Dur", 1.0);
+            Item("Craft_Upgrade_DamL2Bal", 1.0);
+            Item("Craft_Upgrade_DurL2Bal", 1.0);
+            Item("Craft_Upgrade_DurL2Dam", 1.0);
+            Item("Craft_Upgrade_BalL2Dam", 1.0);
+            Item("Craft_Upgrade_BalL2Dur", 1.0);
+        }
+    }
+	

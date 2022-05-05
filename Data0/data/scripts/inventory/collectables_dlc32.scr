@@ -22,7 +22,7 @@ sub main()
         Elemental(Elemental_Burning, 2);
         Color(Color_Orange);
         CraftedItem("Melee_ShortSwordCNighthunter", 1, 1);
-        CraftplanType("WeaponDLC");
+        CraftplanType("Collectables_DLC32");
         UniqueSaveID(3074);
         HudIcon("blueprint_b");
         GameVersion(11);
@@ -50,7 +50,7 @@ sub main()
         Elemental(Elemental_Burning, 2);
         Color(Color_Orange);
         CraftedItem("Melee_KnifeBNighthunter", 1, 1);
-        CraftplanType("WeaponDLC");
+        CraftplanType("Collectables_DLC32");
         UniqueSaveID(3076);
         HudIcon("blueprint_b");
         GameVersion(11);
@@ -81,7 +81,7 @@ sub main()
         Elemental(Elemental_Burning, 2);
         Color(Color_Orange);
         CraftedItem("Melee_BatonANighthunter", 1, 1);
-        CraftplanType("WeaponDLC");
+        CraftplanType("Collectables_DLC32");
         UniqueSaveID(3077);
         HudIcon("blueprint_b");
         GameVersion(11);
@@ -107,7 +107,7 @@ sub main()
         Elemental(Elemental_Burning, 2);
         Color(Color_Orange);
         CraftedItem("Melee_BigHammerANighthunter", 1, 1);
-        CraftplanType("WeaponDLC");
+        CraftplanType("Collectables_DLC32");
         UniqueSaveID(3078);
         HudIcon("blueprint_b");
         GameVersion(11);

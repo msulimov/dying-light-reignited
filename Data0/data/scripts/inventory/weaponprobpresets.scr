@@ -4,6 +4,82 @@
 
 sub main()
 {	
+	WeaponProbPreset("Melee_Friendly_Survivor")
+    {
+        Weapon("Melee_BranchAGen_AI", 1, 0, 100);
+        Weapon("Melee_LogAGen_AI", 1, 0, 100);
+        Weapon("Melee_LogCGen_AI", 1, 0, 100);
+        Weapon("Melee_WrenchARusty_AI", 1, 0, 100);
+        Weapon("Melee_WrenchBRusty_AI", 1, 0, 100);
+        Weapon("Melee_WrenchCRusty_AI", 1, 0, 100);
+        Weapon("Melee_PipeAGen_AI", 1, 0, 100);
+        Weapon("Melee_PipeBGen_AI", 1, 0, 100);
+        Weapon("Melee_PipeCGen_AI", 1, 0, 100);
+        Weapon("Melee_WrenchAGen_AI", 1, 0, 100);
+        Weapon("Melee_WrenchCGen_AI", 1, 0, 100);
+        Weapon("Melee_PipeANew_AI", 1, 0, 100);
+        Weapon("Melee_PipeBNew_AI", 1, 0, 100);
+        Weapon("Melee_PipeCNew_AI", 1, 0, 100);
+        Weapon("Melee_WrenchBGen_AI", 1, 0, 100);
+        Weapon("Melee_HammerDGen_AI", 1, 0, 100);
+        Weapon("Melee_HammerCGen_AI", 1, 0, 100);
+        Weapon("Melee_MilitaryShovelAGen_AI", 1, 0, 100);
+        Weapon("Melee_HammerAGen_AI", 1, 0, 100);
+        Weapon("Melee_PickDGen_AI", 1, 0, 100);
+        Weapon("Melee_ReedKnifeAGen_AI", 1, 0, 100);
+        Weapon("Melee_SickleEGen_AI", 1, 0, 100);
+        Weapon("Melee_HammerEGen_AI", 1, 0, 100);
+        Weapon("Melee_CleaverAGen_AI", 1, 0, 100);
+        Weapon("Melee_ShortAxeAGen_AI", 1, 0, 100);
+        Weapon("Melee_BatonAGen_AI", 1, 0, 100);
+        Weapon("Melee_CleaverBGen_AI", 1, 0, 100);
+        Weapon("Melee_ShortAxeBGen_AI", 1, 0, 100);
+        Weapon("Melee_CrowbarAGen_AI", 1, 0, 100);
+        Weapon("Melee_HammerBGen_AI", 1, 0, 100);
+        Weapon("Melee_CleaverCGen_AI", 1, 0, 100);
+        Weapon("Melee_SickleCGen_AI", 1, 0, 100);
+        Weapon("Melee_ReedKnifeBGen_AI", 1, 0, 100);
+        Weapon("Melee_PickAGen_AI", 1, 0, 100);
+        Weapon("Melee_SickleAGen_AI", 1, 10, 100);
+        Weapon("Melee_ReedKnifeCGen_AI", 1, 0, 100);
+        Weapon("Melee_ShortAxeCGen_AI", 1, 0, 100);
+        Weapon("Melee_MacheteBGen_AI", 1, 0, 100);
+        Weapon("Melee_CleaverDGen_AI", 1, 0, 100);
+        Weapon("Melee_SickleBGen_AI", 1, 0, 100);
+        Weapon("Melee_ShortSwordAGen_AI", 1, 0, 100);
+        Weapon("Melee_PickCGen_AI", 1, 0, 100);
+        Weapon("Melee_PickBGen_AI", 1, 0, 100);
+        Weapon("Melee_CleaverEGen_AI", 1, 0, 100);
+        Weapon("Melee_MacheteDGen_AI", 1, 0, 100);
+        Weapon("Melee_PickEGen_AI", 1, 0, 100);
+        Weapon("Melee_ShortAxeDGen_AI", 1, 0, 100);
+        Weapon("Melee_MacheteCGen_AI", 1, 0, 100);
+        Weapon("Melee_SickleDGen_AI", 1, 0, 100);
+        Weapon("Melee_ShortAxeEGen_AI", 1, 0, 100);
+        Weapon("Melee_MacheteAGen_AI", 1, 0, 100);
+        Weapon("Melee_CleaverC2_AI", 1, 0, 100);
+        Weapon("Melee_ShortAxeB2_AI", 1, 0, 100);
+        Weapon("Melee_MacheteEGen_AI", 1, 0, 100);
+        Weapon("Melee_ShortSwordBGen_AI", 1, 0, 100);
+        Weapon("Melee_ShortAxeE2_AI", 1, 0, 100);
+        Weapon("Melee_ShortSwordA2_AI", 1, 0, 100);
+        Weapon("Melee_MacheteB2_AI", 1, 0, 100);
+        Weapon("Melee_PickD2_AI", 1, 0, 100);
+        Weapon("Melee_KhopeshAGen_AI", 1, 0, 100);
+        Weapon("Melee_MacheteD2_AI", 1, 0, 100);
+        Weapon("Melee_PickE2_AI", 1, 0, 100);
+        Weapon("Melee_PickC2_AI", 1, 0, 100);
+        Weapon("Melee_MacheteC2_AI", 1, 0, 100);
+        Weapon("Melee_KhopeshA2_AI", 1, 0, 100);
+        Weapon("Melee_PickB2_AI", 1, 0, 100);
+        Weapon("Melee_KhopeshBGen_AI", 1, 0, 100);
+        Weapon("Melee_MacheteA2_AI", 1, 0, 100);
+        Weapon("Melee_MacheteE2_AI", 1, 0, 100);
+        Weapon("Melee_KhopeshB2_AI", 1, 0, 100);
+        Weapon("Melee_ShortSwordB2_AI", 1, 0, 100);
+    }	
+		
+		
 	WeaponProbPreset("Firearm_Rifle_AI_Seed")
 	{
 		Weapon("Firearm_Rifle_AI", 5, 0, 100);
@@ -244,4 +320,15 @@ sub main()
         Weapon("Melee_HRSword6_AI",     1, 6, 50);
         Weapon("Melee_HRSword7_AI",  1, 7, 50);
     }
+	
+	 WeaponProbPreset("hr_skeleton_order_weapons")
+    {
+        Weapon("Melee_HRMace5_AI",    1, 0, 50);
+        Weapon("Melee_HRSword6_AI",   1, 0, 50);
+        Weapon("Melee_HRSword7_AI",   1, 0, 50);
+        Weapon("Melee_HRBigAxe8_AI",  1, 0, 50);
+        Weapon("Melee_HRHammer9_AI",  1, 0, 50);
+    }
+	
+	
 }

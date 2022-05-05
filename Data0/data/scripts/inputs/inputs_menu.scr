@@ -29,5 +29,6 @@ sub main()
     MenuAction(_ACTION_MAP);
     //MenuAction(_ACTION_PLAYERS_MENU);
     MenuAction(_ACTION_TOGGLE_CHAT);
+	MenuAction(_ACTION_PUSH_TO_TALK);
     MenuAction(_ACTION_APPEAR_IN_WAITING_PLACE);
 }

@@ -15,7 +15,7 @@ sub main()
         RequiredItem("Craft_Electronics", 1);
         Color(Color_Orange);
         CraftedItem("Firearm_Sharpshooter", 1, 1);
-        CraftplanType("WeaponDLC");
+        CraftplanType("Collectables_DLC31");
         UniqueSaveID(3080);
         HudIcon("blueprint_b");
         GameVersion(11);

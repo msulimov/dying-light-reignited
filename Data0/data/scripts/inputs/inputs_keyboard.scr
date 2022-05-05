@@ -35,6 +35,7 @@ sub Keyboard()
             AddAction(_ACTION_JOIN_FAVORITE_GAME,               EInputTarget_Module, EInputDevice_Keyboard, false, EKey__J, false, false);
             AddAction(_ACTION_SHOW_CHALLENGE_MISSION_INVITE,    EInputTarget_Module, EInputDevice_Keyboard, false, EKey__J, false, false);
             AddAction(_ACTION_VOTE_FOR_KICK,                    EInputTarget_Module, EInputDevice_Keyboard, false, EKey__K, false, false);
+			AddAction(_ACTION_PUSH_TO_TALK,                     EInputTarget_Module, EInputDevice_Keyboard, false, EKey__8, false, false);
             AddAction(_ACTION_FORWARD ,                         EInputTarget_Player, EInputDevice_Keyboard, false, EKey__W, false, false);
             AddAction(_ACTION_BACKWARD,                         EInputTarget_Player, EInputDevice_Keyboard, false, EKey__S, false, false);
             AddAction(_ACTION_STRAFE_LEFT,                      EInputTarget_Player, EInputDevice_Keyboard, false, EKey__A, false, false);
@@ -490,6 +491,11 @@ sub Keyboard()
         Action(_ACTION_VOTE_FOR_KICK); // EInputTarget_Module, EInputDevice_Keyboard, EKey__K
     }
 
+	LayoutKeybinding("Keybinding_PushToTalk", _CATEGORY_BASE, _COLLIDE_BASE)
+    {
+        Action(_ACTION_PUSH_TO_TALK); // EInputTarget_Module, EInputDevice_Keyboard, EKey__8
+    }
+
     LayoutKeybinding("Keybinding_DropItem", _CATEGORY_HUMAN, _COLLIDE_HUMAN)
     {
         Action(_ACTION_DROP_ITEM); // EInputTarget_Player, EInputDevice_Keyboard, EKey__BACK
@@ -787,6 +793,7 @@ sub Keyboard()
     {    
         Layout("Keybinding_Chat", "&Keybinding_Chat&");
         Layout("Keybinding_VoteForKick", "&Keybinding_VoteForKick&");
+		Layout("Keybinding_PushToTalk", "&Keybinding_PushToTalk&");
         Layout("Keybinding_AppearInWaitingPlace", "&Keybinding_AppearInWaitingPlace&");
         Layout("Keybinding_CreateCoopChallenge", "&Keybinding_CreateCoopChallenge&");
         Layout("Keybinding_JoinFavoriteGame", "&Keybinding_JoinFavoriteGame&");

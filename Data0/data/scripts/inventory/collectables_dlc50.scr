@@ -17,7 +17,7 @@ sub main()
         RequiredItem("Craft_Gauze", 2);
         Color(Color_Blue);
         CraftedItem("Melee_BigHammer_Anniversary5", 1, 1);
-        CraftplanType("WeaponDLC");
+        CraftplanType("Collectables_DLC50");
         UniqueSaveID(9590);
         HudIcon("blueprint_b");
         GameVersion(32);
@@ -46,7 +46,7 @@ sub main()
 		RequiredItem("Craft_Shroom", 1);
         Color(Color_Blue);
         CraftedItem("Melee_Pipe_Anniversary5", 1, 1);
-		CraftplanType("WeaponDLC");
+		CraftplanType("Collectables_DLC50");
         InheritBaseStats();
         UniqueSaveID(9591);
         HudIcon("blueprint_b");
@@ -71,7 +71,7 @@ sub main()
         Color(Color_Blue);
         CraftedItem("Firearm_Shotgun_Anniversary5", 1, 1);
 		InheritBaseStats();
-        CraftplanType("WeaponDLC");
+        CraftplanType("Collectables_DLC50");
         UniqueSaveID(9592);
         OwnedAtStart();
         HudIcon("blueprint_b");

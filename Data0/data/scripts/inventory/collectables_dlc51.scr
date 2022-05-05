@@ -19,7 +19,7 @@ sub main()
         CraftedItem("Unturned_HockeyStick", 1, 1);
 		InheritBaseStats();
 		OwnedAtStart();
-        CraftplanType("WeaponDLC");
+        CraftplanType("Collectables_DLC51");
         UniqueSaveID(9710);
         HudIcon("blueprint_b");
 		GameVersion(33);
@@ -40,7 +40,7 @@ sub main()
         Color(Color_Blue);
         CraftedItem("Unturned_Rake", 1, 1);
 		InheritBaseStats();
-        CraftplanType("WeaponDLC");
+        CraftplanType("Collectables_DLC51");
 		OwnedAtStart();
         UniqueSaveID(9711);
         HudIcon("blueprint_b");
@@ -62,7 +62,7 @@ sub main()
         Color(Color_Blue);
         CraftedItem("Unturned_Machete", 1, 1);
 		InheritBaseStats();
-        CraftplanType("WeaponDLC");
+        CraftplanType("Collectables_DLC51");
 		OwnedAtStart();
         UniqueSaveID(9712);
         HudIcon("blueprint_b");

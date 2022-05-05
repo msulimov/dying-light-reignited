@@ -444,6 +444,11 @@ Texture("hint_Tutorial_TimeFreeze_Multiplayer_Enabled.dds", 1024, 256)
     Whole("hint_tutorial_timefreeze_multiplayer_enabled") // 1024 x  256
 }
 
+Texture("hint_Tutorial_TimeFreeze_DLC.dds", 1024, 256) 
+{
+    Whole("hint_tutorial_timefreeze_dlc") // 1024 x  256
+}
+
 Texture("hint_Tutorial_TimeFreeze_Outfit10.dds", 512, 512)
 {
     Whole("hint_Tutorial_TimeFreeze_Outfit10") //  512 x  512
@@ -663,11 +668,51 @@ Texture("hint_Tutorial_Hints_TimeFreeze_PrologueNM.dds", 1024, 256)
 
 // HELLRAID DLC
 
+//First Shrine
+
+
+Texture("hint_Tutorial_TimeFreeze_Hellraid_FirstShrine.dds", 1024, 256)
+{
+    Whole("hint_tutorial_timefreeze_hellraid_firstshrine") // 1024 x  256
+}
+
+//Epilogue
+
+Texture("hint_Tutorial_TimeFreeze_Hellraid_Epilogue.dds", 1024, 256)
+{
+    Whole("hint_tutorial_timefreeze_hellraid_epilogue") // 1024 x  256
+}
+
+Texture("hint_Tutorial_TimeFreeze_Hellraid_Epilogue1.dds", 1024, 256)
+{
+    Whole("hint_tutorial_timefreeze_hellraid_epilogue1") // 1024 x  256
+}
+
+Texture("hint_Tutorial_TimeFreeze_Hellraid_Epilogue2.dds", 1024, 256)
+{
+    Whole("hint_tutorial_timefreeze_hellraid_epilogue2") // 1024 x  256
+}
+
+Texture("hint_Tutorial_TimeFreeze_Hellraid_Epilogue3.dds", 1024, 256)
+{
+    Whole("hint_tutorial_timefreeze_hellraid_epilogue3") // 1024 x  256
+}
+
 //Finish Screen - post Beneath the Seals
 
 Texture("hint_Tutorial_TimeFreeze_Hellraid_FinishScreen.dds", 1024, 256)
 {
     Whole("hint_tutorial_timefreeze_hellraid_finishscreen") // 1024 x  256
+}
+
+Texture("hint_Tutorial_TimeFreeze_Hellraid_FinishScreen1.dds", 1024, 256)
+{
+    Whole("hint_tutorial_timefreeze_hellraid_finishscreen1") // 1024 x  256
+}
+
+Texture("hint_Tutorial_TimeFreeze_Hellraid_FinishScreen2.dds", 1024, 256)
+{
+    Whole("hint_tutorial_timefreeze_hellraid_finishscreen2") // 1024 x  256
 }
 
 //Welcome Screens - post Imprisonment
@@ -697,6 +742,34 @@ Texture("hint_Tutorial_TimeFreeze_Hellraid_WelcomeScreen4.dds", 1024, 256)
     Whole("hint_tutorial_timefreeze_hellraid_welcomescreen4") // 1024 x  256
 }
 
+Texture("hint_Tutorial_TimeFreeze_Hellraid_WelcomeScreen5.dds", 1024, 256)
+{
+    Whole("hint_tutorial_timefreeze_hellraid_welcomescreen5") // 1024 x  256
+}
+
+//First Welcome Screen - Beginning of Story Mode
+
+Texture("hint_Tutorial_TimeFreeze_Hellraid_FirstWelcomeScreen.dds", 1024, 256)
+{
+    Whole("hint_tutorial_timefreeze_hellraid_firstwelcomescreen") // 1024 x  256
+}
+
+Texture("hint_Tutorial_TimeFreeze_Hellraid_FirstWelcomeScreen1.dds", 1024, 256)
+{
+    Whole("hint_tutorial_timefreeze_hellraid_firstwelcomescreen1") // 1024 x  256
+}
+
+Texture("hint_Tutorial_TimeFreeze_Hellraid_FirstWelcomeScreen2.dds", 1024, 256)
+{
+    Whole("hint_tutorial_timefreeze_hellraid_firstwelcomescreen2") // 1024 x  256
+}
+
+//Wand Tutorial
+
+Texture("hint_Tutorial_TimeFreeze_Hellraid_WandIntro.dds", 1024, 256)
+{
+    Whole("hint_tutorial_timefreeze_hellraid_wandintro") // 1024 x  256
+}
 
 // HELLRAID DLC - death hints
 
@@ -2916,6 +2989,11 @@ Texture("hint_Tutorial_TimeFreeze_Outfit_tactical_unit.dds", 512, 512)
     Whole("hint_Tutorial_TimeFreeze_Outfit_tactical_unit") // 512 x  512
 }
 
+Texture("hint_Tutorial_TimeFreeze_Livery_dieselpunk.dds", 512, 512)
+{
+    Whole("hint_Tutorial_TimeFreeze_Livery_dieselpunk") //  512 x  512
+}
+
 Texture("hint_Tutorial_TimeFreeze_Livery_rust.dds", 512, 512)
 {
     Whole("hint_Tutorial_TimeFreeze_Livery_rust") //  512 x  512
@@ -2944,6 +3022,21 @@ Texture("hint_Tutorial_TimeFreeze_Livery_astronaut.dds", 512, 512)
 Texture("hint_Tutorial_TimeFreeze_Outfit_astronaut.dds", 512, 512)
 {
     Whole("hint_Tutorial_TimeFreeze_Outfit_astronaut") // 512 x  512
+}
+
+Texture("hint_Tutorial_TimeFreeze_Outfit_van_crane.dds", 512, 512)
+{
+    Whole("hint_Tutorial_TimeFreeze_Outfit_van_crane") // 512 x  512
+}
+
+Texture("hint_Tutorial_TimeFreeze_wintersoldier.dds", 512, 512)
+{
+    Whole("hint_Tutorial_TimeFreeze_wintersoldier") // 512 x  512
+}
+
+Texture("hint_Tutorial_TimeFreeze_Outfit_30th_anniversary.dds", 512, 512)
+{
+    Whole("hint_Tutorial_TimeFreeze_Outfit_30th_anniversary") // 512 x  512
 }
 
 Texture("dlc_white_death_bundle.dds", 512, 512)
@@ -3208,6 +3301,16 @@ Texture("dlc_new_section_lowgrav.dds", 1024, 1024)
     Whole("dlc_new_section_lowgrav") //  1024 x  1024
 }
 
+Texture("dlc_new_section_van_crane.dds", 1024, 1024)
+{
+    Whole("dlc_new_section_van_crane") //  1024 x  1024
+}
+
+Texture("dlc_new_section_snow_ops.dds", 1024, 1024)
+{
+    Whole("dlc_new_section_snow_ops") //  1024 x  1024
+}
+
 // New dlc images black-white
 
 Texture("dlc_new_section_white_death_bundle_bw.dds", 1024, 1024)
@@ -3383,6 +3486,16 @@ Texture("dlc_new_section_astronaut_bw.dds", 1024, 1024)
 Texture("dlc_new_section_lowgrav_bw.dds", 1024, 1024)
 {
     Whole("dlc_new_section_lowgrav_bw") //  1024 x  1024
+}
+
+Texture("dlc_new_section_van_crane_bw.dds", 1024, 1024)
+{
+    Whole("dlc_new_section_van_crane_bw") //  1024 x  1024
+}
+
+Texture("dlc_new_section_snow_ops_bw.dds", 1024, 1024)
+{
+    Whole("dlc_new_section_snow_ops_bw") //  1024 x  1024
 }
 
 //SplashScreenSTART
@@ -3626,4 +3739,99 @@ Texture("splash_lowgrav.dds", 1280, 480)
 	Whole("splash_lowgrav")
 }
 
+Texture("splash_van_crane.dds", 1280, 480)
+{
+	Whole("splash_van_crane")
+}
+
+Texture("splash_halloween_2021.dds", 1280, 480)
+{
+	Whole("splash_halloween_2021")
+}
+
+Texture("splash_winter_2021_day.dds", 1280, 480)
+{
+	Whole("splash_winter_2021_day")
+}
+
+Texture("splash_winter_2021_night.dds", 1280, 480)
+{
+	Whole("splash_winter_2021_night")
+}
+
+Texture("splash_snow_ops.dds", 1280, 480)
+{
+	Whole("splash_snow_ops")
+}
+
+Texture("splash_30th_anniversary.dds", 1280, 480)
+{
+	Whole("splash_30th_anniversary")
+}
+
+Texture("splash_hellraid4.dds", 1280, 480)
+{
+	Whole("splash_hellraid4")
+}
+
+Texture("splash_spike_1.dds", 1280, 480)
+{
+	Whole("splash_spike_1")
+}
+
+Texture("splash_spike_2.dds", 1280, 480)
+{
+	Whole("splash_spike_2")
+}
+
+Texture("splash_spike_3.dds", 1280, 480)
+{
+	Whole("splash_spike_3")
+}
+
+Texture("splash_DL2_available_now.dds", 1280, 480)
+{
+	Whole("splash_DL2_available_now")
+}
+
+Texture("splash_DL2_2.dds", 1280, 480)
+{
+	Whole("splash_DL2_2")
+}
+
 //SplashScreenEND
+
+//SquaredSplashScreenSTART
+
+Texture("splashscreen_square_halloween_2021.dds", 1024, 1024)
+{
+	Whole("splashscreen_square_halloween_2021")
+}
+
+Texture("splashscreen_square_winter_2021_day.dds", 1024, 1024)
+{
+	Whole("splashscreen_square_winter_2021_day")
+}
+
+Texture("splashscreen_square_winter_2021_night.dds", 1024, 1024)
+{
+	Whole("splashscreen_square_winter_2021_night")
+}
+
+Texture("splashscreen_square_spike_1.dds", 1024, 1024)
+{
+	Whole("splashscreen_square_spike_1")
+}
+
+Texture("splashscreen_square_spike_2.dds", 1024, 1024)
+{
+	Whole("splashscreen_square_spike_2")
+}
+
+Texture("splashscreen_square_spike_3.dds", 1024, 1024)
+{
+	Whole("splashscreen_square_spike_3")
+}
+
+//SquaredSplashScreenEND
+

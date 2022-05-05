@@ -22,6 +22,8 @@ AttractorScr("hr_hum_01_attractor.scr")
 AttractorScr("hr_hum_02_attractor.scr")
 // design_c_idle_stand
 AttractorScr("hr_hum_03_attractor.scr")
+//DK init
+AttractorScr("hr_darkknight_init_attractor.scr")
 
 // DL attractors
 AttractorScr("mz_by_wall_01_attractor.scr")

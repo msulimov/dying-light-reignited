@@ -607,6 +607,10 @@
           <IsNodeExpanded>false</IsNodeExpanded>
         </UIScreenInfo>
         <UIScreenInfo>
+          <FileName>Data/Menu/Scr/MenuContinue.xui</FileName>
+          <IsNodeExpanded>false</IsNodeExpanded>
+        </UIScreenInfo>
+        <UIScreenInfo>
           <FileName>Data/Menu/Scr/MenuCraftItem.xui</FileName>
           <IsNodeExpanded>false</IsNodeExpanded>
         </UIScreenInfo>
@@ -803,6 +807,10 @@
           <IsNodeExpanded>false</IsNodeExpanded>
         </UIScreenInfo>
         <UIScreenInfo>
+          <FileName>Data/Menu/Scr/MenuOptionsVideo_CONSOLE.xui</FileName>
+          <IsNodeExpanded>false</IsNodeExpanded>
+        </UIScreenInfo>
+        <UIScreenInfo>
           <FileName>Data/Menu/Scr/MenuPerks.xui</FileName>
           <IsNodeExpanded>false</IsNodeExpanded>
         </UIScreenInfo>
@@ -936,6 +944,10 @@
         </UIScreenInfo>
         <UIScreenInfo>
           <FileName>Data/Menu/Scr/MenuTilesDlcContent.xui</FileName>
+          <IsNodeExpanded>false</IsNodeExpanded>
+        </UIScreenInfo>
+        <UIScreenInfo>
+          <FileName>/Data/Menu/Scr/DashboardDL1DL2.xui</FileName>
           <IsNodeExpanded>false</IsNodeExpanded>
         </UIScreenInfo>
       </ScreensList>
