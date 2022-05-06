@@ -8623,7 +8623,7 @@ sub main()
             Hard("InfiniteFitnesAndSpeedIncreaseHard");
             Nightmare("InfiniteFitnesAndSpeedIncreaseHard");
         }
-        BuffOverideForBTZ("InfiniteFitnesAndSpeedIncreaseBtz");
+        BuffOverideForBTZ("SpeedIncreaseBtZ");
         EquipmentSlot(0);
         Color(Color_Green);
         use PickupSounds_Default();
@@ -8650,6 +8650,7 @@ sub main()
             Hard("NightVisionAndNightDamageBoostHard");
             Nightmare("NightVisionAndNightDamageBoostHard");
         }
+        BuffOverideForBTZ("NightVisionIncreaseBtZ");
         EquipmentSlot(0);
         Color(Color_Green);
         use PickupSounds_Default();
@@ -8676,7 +8677,7 @@ sub main()
             Hard("DamageResistatenMeleeAndBulletHard");
             Nightmare("DamageResistatenMeleeAndBulletHard");
         }
-        BuffOverideForBTZ("DamageResistatenMeleeAndBulletBtz");
+        BuffOverideForBTZ("ResistanceIncreaseBtZ");
         EquipmentSlot(0);
         Color(Color_Green);
         use PickupSounds_Default();
@@ -8703,6 +8704,7 @@ sub main()
             Hard("InfiniteStaminaHard");
             Nightmare("InfiniteStaminaHard");
         }
+        BuffOverideForBTZ("StaminaIncreaseBtZ");
         EquipmentSlot(0);
         Color(Color_Blue);
         use PickupSounds_Default();
@@ -8729,10 +8731,10 @@ sub main()
             Hard("GhulHard");
             Nightmare("GhulHard");
         }
-        BuffOverideForBTZ("DoubleDamage");
-        BuffOverideForBTZ("InfiniteStamina");
-        BuffOverideForBTZ("InfiniteFitnesAndSpeedIncreaseBtz");
-        BuffOverideForBTZ("DamageResistatenMeleeAndBulletBtz");
+        BuffOverideForBTZ("GhulStaminaIncreaseBtZ");
+        BuffOverideForBTZ("GhulSpeedIncreaseBtZ");
+        BuffOverideForBTZ("GhulDamageIncreaseBtZ");
+        BuffOverideForBTZ("GhulResistanceIncreaseBtZ");
         EquipmentSlot(0);
         Color(Color_Orange);
         use PickupSounds_Default();

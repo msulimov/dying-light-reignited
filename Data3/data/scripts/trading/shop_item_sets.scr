@@ -3557,6 +3557,87 @@ ItemSet("Melee_Level_12_Unique")
         Item("HRBigHammer_R13_SHOP");
     }
 	
+    ItemSet("Hr_Shop_WandTrials")
+    {
+        Item("Throwable_FireWand_SHOP");
+    }
+    
+    ItemSet("Hr_Shop_WandTrials_DK")
+    {
+        Item("Throwable_DarkWand_SHOP");
+    }
+    
+    ItemSet("Hr_Shop_Hellraid_Blueprint")
+    {
+        Item("Craftplan_Firearm_ShotgunHellraid");
+    }
+    
+    /////////////////////////////////////////////////////
+    ///////////// HELLRAID BLUEPRINT PIECES /////////////
+    /////////////////////////////////////////////////////
+    
+    //placeholder TODO
+    ItemSet("Hr_Piece_Level_1")
+    {
+        Item("Craft_R1_Piece");
+    }
+    
+    ItemSet("Hr_Piece_Level_2")
+    {
+        Item("Craft_R2_Piece");
+    }
+    
+    ItemSet("Hr_Piece_Level_3")
+    {
+        Item("Craft_R3_Piece");
+    }
+    
+    ItemSet("Hr_Piece_Level_4")
+    {
+        Item("Craft_R4_Piece");
+    }
+    
+    ItemSet("Hr_Piece_Level_5")
+    {
+        Item("Craft_R5_Piece");
+    }
+    
+    ItemSet("Hr_Piece_Level_6")
+    {
+        Item("Craft_R6_Piece");
+    }
+    
+    ItemSet("Hr_Piece_Level_7")
+    {
+        Item("Craft_R7_Piece");
+    }
+    
+    ItemSet("Hr_Piece_Level_8")
+    {
+        Item("Craft_R8_Piece");
+    }
+    
+    ItemSet("Hr_Piece_Level_9")
+    {
+        Item("Craft_R9_Piece");
+    }
+    
+    ItemSet("Hr_Piece_Level_10")
+    {
+        Item("Craft_R10_Piece");
+    }
+    
+    ItemSet("Hr_Piece_Level_12")
+    {
+        Item("Craft_R12_Piece");
+    }
+    
+    ItemSet("Hr_Piece_Level_13")
+    {
+        Item("Craft_R13_Piece");
+    }
+    
+
 	/////////////////////////////////////////////////////
 	///////// HELLRAID DL1 SHOP LEGENDARY ITEMS /////////
 	/////////////////////////////////////////////////////
@@ -3765,5 +3846,10 @@ ItemSet("Melee_Level_12_Unique")
     ItemSet("Liveops_Craftplan_Spike_Weapon_StageII")
     {
         Item("Craftplan_Spike_Weapon_StageII");
+    }
+
+    ItemSet("Liveops_Craftplan_Slot_Machine")
+    {
+        Item("Craftplan_Slot_Machine");
     }
 }

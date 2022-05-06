@@ -312,24 +312,24 @@ sub main()
         HudIcon("grenade");
         Damage(0.0);      
         DamagerTakesNoDamage(true);
-        DamageDuration(300);
+        DamageDuration(0.1);
         ThrowFlySound("freeze_loop.wav");
         TakeDamageThreshold(100.0);     
         ScheduleExplodeAfterContact(true);        
         PhysicsDamageMul(1.0);
-        DamageType(DamageType_CamoSpit);
-        ExplosionSound("zombieplayer_spit_explode.wav");
-        ExplosionBuildUpSound("zombieplayer_spit_sizzle.wav");
+        DamageType(DamageType_Blast);
+        ExplosionSound("blister_explosion.wav");
+        ExplosionBuildUpSound("blister_before_explosion.wav");
         ThrowFlySound("zombieplayer_spit_flight.wav");
         ExplosionSoundMin(16.0);
         ExplosionSoundVol(2.0);
-        DamageRange(6.0);
+        DamageRange(5.0);
         HeadCutProb(0.0);
         ArmsCutProb(0.0);
         LegsCutProb(0.0);
         ThrowImpulseLook(13.0);
         ThrowImpulseUp(2.0);
-        ExplodeDelay(1.0);        
+        ExplodeDelay(1.1);        
         ThrowFlyFx("camo_spit_trail_sequence.fx");  
         StatsType(StatsType_Explosive);
         LootLevel(4);
@@ -436,9 +436,9 @@ sub main()
         ThrowFlySound("zombieplayer_spit_flight.wav");
         ThrowFlyFx("toxic_spit_trail_sequence.fx");
         SplashRadiusMin(1.0);
-        SplashRadiusMax(6.0);
+        SplashRadiusMax(4.0);
         MotionTrailFx("hunter_spit_toxic_motion_trail.fx");
-        SplashNumPositions(10);
+        SplashNumPositions(24);
         SplashSpacingType("EvenAngles");
         SplashEmitterLifeTimeMin(45.0);
         SplashEmitterLifeTimeMax(45.0);
@@ -446,7 +446,7 @@ sub main()
         SplashEmitterFadeOutTime(1.0);
         SplashEmitterDamageType(DamageType_ToxicSpit);
         SplashEmitterDamageDuration(0.5);
-        SplashEmitterHealthPercentDamagePerSecond(0.3);
+        SplashEmitterHealthPercentDamagePerSecond(0.24);
         SplashEmitterIsFXSequence(true);
         SplashEmitterScale([2.0,1.0,2.0]);
         SplashEmitterWallFx("toxic_spit_floor");
@@ -496,9 +496,9 @@ sub main()
         MotionTrailFx("hunter_spit_toxic_motion_trail.fx");
         AttachmentExplosionSplatterFx("toxic_spit_splash_trace.fx");
         ExplosionSplatterFx("toxic_spit_trace.fx");
-        SplashRadiusMin(3.0);
-        SplashRadiusMax(3.0);
-        SplashNumPositions(10);
+        SplashRadiusMin(0.01);
+        SplashRadiusMax(4.0);
+        SplashNumPositions(24);
         SplashSpacingType("EvenAngles");
         SplashEmitterLifeTimeMin(45.0);
         SplashEmitterLifeTimeMax(45.0);
@@ -506,7 +506,7 @@ sub main()
         SplashEmitterFadeOutTime(1.0);
         SplashEmitterDamageType(DamageType_ToxicSpit);
         SplashEmitterDamageDuration(0.5);
-        SplashEmitterHealthPercentDamagePerSecond(0.27);
+        SplashEmitterHealthPercentDamagePerSecond(0.24);
         SplashEmitterIsFXSequence(true);
         SplashEmitterScale([2.0,1.0,2.0]);
         SplashEmitterWallFx("toxic_spit_floor");
@@ -566,7 +566,7 @@ sub main()
         SplashEmitterFadeOutTime(1.0);
         SplashEmitterDamageType(DamageType_ToxicSpit);
         SplashEmitterDamageDuration(0.5);
-        SplashEmitterHealthPercentDamagePerSecond(0.27);
+        SplashEmitterHealthPercentDamagePerSecond(0.24);
         SplashEmitterIsFXSequence(true);
         SplashEmitterScale([2.0,1.0,2.0]);
         SplashEmitterWallFx("toxic_spit_floor");
@@ -1169,7 +1169,7 @@ sub main()
         LegsCutProb(0.0);
         ThrowImpulseLook(13.0);
         ThrowImpulseUp(2.0);
-        ExplodeDelay(1.0);       
+        ExplodeDelay(1.1);       
         StatsType(StatsType_Explosive);
         LootLevel(4);
         LootType(LootType_Throwable);
@@ -1274,7 +1274,7 @@ sub main()
         LegsCutProb(0.0);
         ThrowImpulseLook(13.0);
         ThrowImpulseUp(2.0);
-        ExplodeDelay(1.0);       
+        ExplodeDelay(1.1);       
         StatsType(StatsType_Explosive);
         LootLevel(4);
         LootType(LootType_Throwable);
@@ -1326,7 +1326,7 @@ sub main()
         LegsCutProb(0.0);
         ThrowImpulseLook(13.0);
         ThrowImpulseUp(2.0);
-        ExplodeDelay(1.0);        
+        ExplodeDelay(1.1);        
         ThrowFlyFx("btz_spit_fly_green_sequence.fx");  
         StatsType(StatsType_Explosive);
         LootLevel(4);
@@ -1433,7 +1433,7 @@ sub main()
         LegsCutProb(0.0);
         ThrowImpulseLook(13.0);
         ThrowImpulseUp(2.0);
-        ExplodeDelay(1.0);        
+        ExplodeDelay(1.1);        
         ThrowFlyFx("btz_spit_fly_green_sequence.fx");  
         StatsType(StatsType_Explosive);
         LootLevel(4);
@@ -9119,6 +9119,7 @@ Item("Menu_DocketG51", CategoryType_Voucher)
         Mesh("weapon_arrow_a.msh");
         Skin("dark_magic");
 		GameVersion(34);
+        AutoPickup(false);
     }
 	
 	Item("HR_Ammo_Arrow_Single", CategoryType_Ammo)
