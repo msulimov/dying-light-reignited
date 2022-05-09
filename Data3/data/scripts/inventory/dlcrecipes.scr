@@ -1740,10 +1740,14 @@ sub extraDLCRecipes(){
         BaseItem("Melee_Machete", "", "");
         BaseItem("Melee_TahirsWeapon", "", "");
         BaseItem("Melee_RaisMachete", "", "");
-        RequiredItem("Craft_MetalScrap", 3);
-        RequiredItem("Craft_PlasticTube", 2);
-        RequiredItem("Craft_Batteries", 1);
-        RequiredItem("Craft_PowerCable", 2);
+
+        RequiredItem("Craft_RazorBlade", 5);
+        RequiredItem("Craft_Electronics", 5);
+        RequiredItem("Craft_Batteries", 6);
+        RequiredItem("Craft_PowerCable", 6);
+        RequiredItem("Craft_Shroom", 6);
+        RequiredItem("Craft_Insecticide", 6);
+
         Color(Color_Blue);
         CraftedItem("Melee_Machete_Astronaut1", 1, 1);
         InheritBaseStats();
@@ -1816,7 +1820,7 @@ sub extraDLCRecipes(){
         AchType(AchType_Machete);
         DismantleResultItem("Craft_MetalScrap");
         DismantleResultItemCnt(3);
-        CraftingSlots(1,0);
+        CraftingSlots(0,0); // remove one upgrade slot since has 3 elementals already
         UniqueFxNameBase("machete_g");
         RestrictionFlags(0);
         RagdollBehaviorPrefix("StickSharp");

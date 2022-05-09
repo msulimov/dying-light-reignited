@@ -1916,7 +1916,7 @@ sub main()
         LegsCutProb(0.0);
         ThrowImpulseLook(10.0);
         ThrowImpulseUp(2.0);
-        ExplodeDelay(5.0); // burn duration, really short!
+        ExplodeDelay(10.0); // burn duration
         ThrowBeginSound("");
         ThrowEndSound("");
         StatsType(StatsType_Explosive);
@@ -1955,7 +1955,7 @@ sub main()
         DamageDuration(15.0);
         PhysicsDamageMul(0);
         DamageType(DamageType_Blast);
-        DamageRange(12.0);
+        DamageRange(15.0);
         HeadCutProb(0.0);
         ArmsCutProb(0.0);
         LegsCutProb(0.0);
@@ -5392,7 +5392,11 @@ sub main()
         Mesh("blueprint.msh");
         Skin("default_hl");
         RequiredItem("Craft_Alcohol", 10);
-		RequiredItem("Craft_MetalScrap", 20);
+		RequiredItem("Craft_MetalScrap", 10);
+        RequiredItem("Craft_RazorBlade", 5);
+        RequiredItem("Craft_Electronics", 2);
+        RequiredItem("Craft_Batteries", 2);
+        RequiredItem("Craft_PowerCable", 2);
         Color(Color_Orange);
         CraftedItem("MacheteAKorek", 1);
 		CraftplanType("Throwable");
@@ -5408,8 +5412,11 @@ sub main()
         Mesh("blueprint.msh");
         Skin("default_hl");
         RequiredItem("Craft_Shroom", 10);
-		RequiredItem("Craft_ToxicPlant", 10);
-		RequiredItem("Craft_MetalScrap", 10);
+        RequiredItem("Craft_MetalScrap", 20);
+        RequiredItem("Craft_RazorBlade", 5);
+        RequiredItem("Craft_Electronics", 4);
+        RequiredItem("Craft_Batteries", 3);
+        RequiredItem("Craft_PowerCable", 3);
         Color(Color_Orange);
         CraftedItem("ZZZZZ_MacheteBKorek2", 1);
 		CraftplanType("Throwable");
@@ -7463,7 +7470,7 @@ Item("Menu_DocketG51", CategoryType_Voucher)
         ItemType(ItemType_Bullet);
         AmmoType(AmmoType_SubMachine);
         
-        MaxAmmoCount(720);
+        MaxAmmoCount(240);
         
         Mesh("loot_ok_ammo_short.msh");
         HudIcon("ammo_pistol");
@@ -7478,9 +7485,9 @@ Item("Menu_DocketG51", CategoryType_Voucher)
         ItemType(ItemType_Ammo);
         Visibility(true);
         BulletId("Bullet_SMG");
-        AmmoCount(15);
+        AmmoCount(10);
         MaxStackCount(99);
-        Price(84);
+        Price(75);
         Mesh("loot_ok_ammo_short.msh");
         HudIcon("ammo_pistol");
         Skin("Default");
@@ -7495,9 +7502,9 @@ Item("Menu_DocketG51", CategoryType_Voucher)
         ItemType(ItemType_Ammo);
         Visibility(true);
         BulletId("Bullet_SMG");
-        AmmoCount(45);
+        AmmoCount(25);
         MaxStackCount(99);
-        Price(217);
+        Price(200);
         Mesh("loot_ok_ammo_short.msh");
         HudIcon("ammo_pistol");
         Skin("Default");

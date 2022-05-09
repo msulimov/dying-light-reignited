@@ -199,7 +199,7 @@
 	
     PresetDef("Night_Walker")
     {
-        Difficult(666)
+        Difficult(15)
         AIPreset("Biter_Man;Biter_Woman")
         DiffLvlTableName("Biter_Man;Biter_Woman")
         ForceTargetType(2)
@@ -214,7 +214,7 @@
 
     PresetDef("Night_Walker_Special_Tranformation")
     {
-        Difficult(666)
+        Difficult(15)
         AIPreset("Biter_Man;Biter_Woman")
         DiffLvlTableName("Biter_Man;Biter_Woman")
         TimeBtwSpawnZombies(0)
@@ -226,7 +226,7 @@
 
     PresetDef("Night_Walker_Init")
     {
-        Difficult(666)
+        Difficult(15)
         AIPreset("NightWalker_Man;NightWalker_Woman")
         SpawnCondition("__any__, 1;t_INIT, 1;z_INFECTED, 1;p_WIDE, 1;p_SQUARE, 1;p_ROOF, 1")
         MinDistBtwZombies(25)
@@ -239,7 +239,7 @@
 
     PresetDef("Night_Walker_Nav")
     {
-        Difficult(666)
+        Difficult(15)
         AIPreset("NightWalker_Man;NightWalker_Woman")
         SpawnCondition("nav_mesh, 1")
         MinDistBtwZombies(25)
@@ -253,7 +253,7 @@
 
     PresetDef("Night_Walker_Patrol")
     {
-        Difficult(666)
+        Difficult(15)
         AIPreset("NightWalker_Man;NightWalker_Woman")
         SpawnCondition("__any__, 1;nav_mesh, 1;p_WIDE, 1;p_SQUARE, 1;t_INIT, 1;p_ROOF, 1;p_INTERIOR, 1")
         MinDistBtwZombies(25)
@@ -268,29 +268,15 @@
 
     PresetDef("Night_Suicider_Bomber")
     {
-        Difficult(666)
+        Difficult(25)
         AIPreset("RunningBomber")
-        SpawnCondition("__any__, 1;nav_mesh, 1;p_WIDE, 1;p_SQUARE, 1;t_INIT, 1;p_ROOF, 1;p_INTERIOR, 1")
+        SpawnCondition("nav_mesh, -1;__any__, 1;t_INIT, -1;p_ROOF, -1")
         DisallowedMaps("Wasteland")
-        MinDistBtwZombies(30)
+        MinDistBtwZombies(15)
         ForceTargetType(3)
-        TimeBtwSpawnZombies(10)
+        TimeBtwSpawnZombies(4)
         OnSpawnSound("suicider_bobmer_spawn_near_ext_00.wav")
 		SarcophagusTime(2)
-    }
-
-	PresetDef("Screamer")
-    {
-        Difficult(20)
-        AIPreset("Screamer")
-        SpawnCondition("__any__, 1;t_INIT, 1;z_INFECTED, 1;p_WIDE, 1;p_SQUARE, 1;p_ROOF, 1")
-													 
-									   
-        MinDistBtwZombies(100)
-        RemoveDistanceIfNotContact(50)
-        TimeBtwSpawnZombies(0)
-											 
-														  
     }
 
     PresetDef("Melee_Fighter_With_Pipe_Init")
@@ -310,7 +296,7 @@
     PresetDef("Melee_Fighter_With_Pipe")
     {
         Difficult(20)
-        SpawnCondition("z_MELEE_FIGHTER, 1;p_WIDE, 1;p_SQUARE, 1;p_ROOF, -1")
+        SpawnCondition("z_MELEE_FIGHTER, 1;p_WIDE, 1;p_SQUARE, 1;p_ROOF, 1")
         AIPreset("Enemy_Headhunter_Melee")
         //AllowedMaps("Old_Town")
         MinDistBtwZombies(3)
@@ -323,7 +309,7 @@
 	PresetDef("Defender_Fighter")
     {
         Difficult(20)
-        SpawnCondition("z_MELEE_FIGHTER, 1;p_WIDE, 1;p_SQUARE, 1;p_ROOF, -1")
+        SpawnCondition("z_MELEE_FIGHTER, 1;p_WIDE, 1;p_SQUARE, 1;p_ROOF, 1")
         AIPreset("Enemy_S_Bandit_FirearmDefender001")
         //AllowedMaps("Old_Town;slums")
         MinDistBtwZombies(3)
@@ -336,7 +322,7 @@
 	PresetDef("Melee_Fighter_Rais")
     {
         Difficult(20)
-        SpawnCondition("z_MELEE_FIGHTER, 1;p_WIDE, 1;p_SQUARE, 1;p_ROOF, -1")
+        SpawnCondition("z_MELEE_FIGHTER, 1;p_WIDE, 1;p_SQUARE, 1;p_ROOF, 1")
 		AIPreset("enc_slums_maskedbandit_leader_lvl00;enc_slums_maskedbandit_leader_lvl01;enc_slums_maskedbandit_leader_lvl02;enc_slums_maskedbandit_leader_lvl03;enc_slums_maskedbandit_lvl00;enc_slums_maskedbandit_lvl01;enc_slums_maskedbandit_lvl02;Enemy_GR_Gang_Melee001;enc_survivor_clench_01;enc_maskedbandit_01_weapon_FLASHLIGHT_TEST")
 		
         //AllowedMaps("Old_Town;slums")
@@ -350,7 +336,7 @@
 	PresetDef("Melee_Survivor")
     {
         Difficult(20)
-        SpawnCondition("z_MELEE_FIGHTER, 1;p_WIDE, 1;p_SQUARE, 1;p_ROOF, -1")
+        SpawnCondition("z_MELEE_FIGHTER, 1;p_WIDE, 1;p_SQUARE, 1;p_ROOF, 1")
 		AIPreset("enc_survivor_clench_01;")
         //AllowedMaps("Old_Town;slums")
         MinDistBtwZombies(3)

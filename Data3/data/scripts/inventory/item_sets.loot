@@ -416,10 +416,10 @@ export int Other = 9;
     {
         Set(Weapon, weight, prob)
         {
-            Item("Ammo_PistolSmall", 1.0);
-            Item("Ammo_ShotgunSmall", 1.0);
-            Item("Ammo_RifleSmall", 1.0);
-            Item("ZZZZZ_Ammo_SMG_Small", 1.0);
+            Item("Ammo_PistolBig", 1.0);
+            Item("Ammo_ShotgunBig", 1.0);
+            Item("Ammo_RifleBig", 1.0);
+            Item("ZZZZZ_Ammo_SMG_Big", 1.0);
         }
     }
 

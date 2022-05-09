@@ -805,5 +805,5 @@ sub aggro_sounds()
     AggroLevel(1, 100, 15.0);
     AggroLevel(2, 200, 20.0);
     AggroLevel(3, 300, 22.0);
-    AggroLevel(4, 400, 25.0);
+    AggroLevel(4, 350, 25.0);
 }

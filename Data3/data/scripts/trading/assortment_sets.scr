@@ -1,23 +1,42 @@
 sub SalesPromotion(){
-	Set("Common_Craftparts", "shop_crafting_materials", 1, 1) 
+	Set("Crafting_Sale", "shop_crafting_materials", 1, 1) 
 	{
 				PriceMod(4.0);
-				Probability(100.0);
+				Probability(4.0);
 	}
 	Set("SalesPromotion_Bolter", "promotion_bolter", 1, 1) 
 	{
 				MinChapter(5);
 				PriceMod(2.0);
-				Probability(1.0);
+				Probability(1.5);
 	}
 }
 sub SalesPromotionNight(){
-	Set("SalesPromotion_Bolter", "promotion_bolter", 1, 1) 
+	Set("Upgrades_Blue", "blue_only", 1, 1) 
 	{
-				MinChapter(5);
-				PriceMod(2.0);
+				PriceMod(4.0);
 				Probability(1.0);
 	}
+    Set("Upgrades_Violet", "violet_only", 1, 1) 
+    {
+                PriceMod(3.0);
+                Probability(3.0);
+    }
+}
+sub ItemOfTheDayNight(){
+    Set("Upgrades_Premium", "encounter_shop_crafting_materials", 1, 1) 
+    {
+                PriceMod(0.6);
+                ItemOfTheDay();
+                Limited();
+                Probability(1.0);
+    }
+    Set("Upgrades_Orange",                              "orange_only",              2, 4)            
+    {
+        PriceMod(0.8);
+        Limited();
+        MinStatusLevel(1);
+    }
 }
 
 sub SalesPromotion_Wasteland(){
@@ -294,96 +313,96 @@ sub Weapons(){
     Set("Melee_Level_25",                   "shop_slums_exploration",   2, 2)
     {
         MinStatusLevel(25);
-        MaxStatusLevel(35);
+        //MaxStatusLevel(35);
         Limited();
         Cycle("Hour", 12);
     }
-    Set("Melee_Legendary_Tier_1",           "shop_slums_exploration",   2, 2)
+    Set("Melee_Legendary",           "shop_slums_exploration",   2, 2)
     {
         MinStatusLevel(25);
-        MaxStatusLevel(35);
+        //MaxStatusLevel(50);
         Limited();
         Cycle("Hour", 12);
     }
-    Set("Melee_Legendary_Tier_2",           "shop_slums_exploration",   2, 2)
-    {
-        MinStatusLevel(26);
-        MaxStatusLevel(35);
-        Limited();
-        Cycle("Hour", 12);
-    }
-    Set("Melee_Legendary_Tier_3",           "shop_slums_exploration",   2, 2)
-    {
-        MinStatusLevel(27);
-        MaxStatusLevel(35);
-        Limited();
-        Cycle("Hour", 12);
-    }
-    Set("Melee_Legendary_Tier_4",           "shop_slums_exploration",   2, 2)
-    {
-        MinStatusLevel(28);
-        MaxStatusLevel(35);
-        Limited();
-        Cycle("Hour", 12);
-    }
-    Set("Melee_Legendary_Tier_5",           "shop_slums_exploration",   2, 2)
-    {
-        MinStatusLevel(29);
-        MaxStatusLevel(35);
-        Limited();
-        Cycle("Hour", 12);
-    }
-    Set("Melee_Legendary_Tier_6",           "shop_slums_exploration",   2, 2)
-    {
-        MinStatusLevel(30);
-        MaxStatusLevel(35);
-        Limited();
-        Cycle("Hour", 12);
-    }
-    Set("Melee_Legendary_Tier_7",           "shop_slums_exploration",   2, 2)
-    {
-        MinStatusLevel(31);
-        MaxStatusLevel(35);
-        Limited();
-        Cycle("Hour", 12);
-    }
-    Set("Melee_Legendary_Tier_8",           "shop_slums_exploration",   2, 2)
-    {
-        MinStatusLevel(32);
-        MaxStatusLevel(35);
-        Limited();
-        Cycle("Hour", 12);
-    }
-    Set("Melee_Legendary_Tier_9",           "shop_slums_exploration",   2, 2)
-    {
-        MinStatusLevel(33);
-        MaxStatusLevel(35);
-        Limited();
-        Cycle("Hour", 12);
-    }
-    Set("Melee_Legendary_Tier_10",           "shop_slums_exploration",   2, 2)
-    {
-        MinStatusLevel(34);
-        MaxStatusLevel(35);
-        Limited();
-        Cycle("Hour", 12);
-    }
+    // Set("Melee_Legendary_Tier_2",           "shop_slums_exploration",   2, 2)
+    // {
+    //     MinStatusLevel(26);
+    //     MaxStatusLevel(35);
+    //     Limited();
+    //     Cycle("Hour", 12);
+    // }
+    // Set("Melee_Legendary_Tier_3",           "shop_slums_exploration",   2, 2)
+    // {
+    //     MinStatusLevel(27);
+    //     MaxStatusLevel(35);
+    //     Limited();
+    //     Cycle("Hour", 12);
+    // }
+    // Set("Melee_Legendary_Tier_4",           "shop_slums_exploration",   2, 2)
+    // {
+    //     MinStatusLevel(28);
+    //     MaxStatusLevel(35);
+    //     Limited();
+    //     Cycle("Hour", 12);
+    // }
+    // Set("Melee_Legendary_Tier_5",           "shop_slums_exploration",   2, 2)
+    // {
+    //     MinStatusLevel(29);
+    //     MaxStatusLevel(35);
+    //     Limited();
+    //     Cycle("Hour", 12);
+    // }
+    // Set("Melee_Legendary_Tier_6",           "shop_slums_exploration",   2, 2)
+    // {
+    //     MinStatusLevel(30);
+    //     MaxStatusLevel(35);
+    //     Limited();
+    //     Cycle("Hour", 12);
+    // }
+    // Set("Melee_Legendary_Tier_7",           "shop_slums_exploration",   2, 2)
+    // {
+    //     MinStatusLevel(31);
+    //     MaxStatusLevel(35);
+    //     Limited();
+    //     Cycle("Hour", 12);
+    // }
+    // Set("Melee_Legendary_Tier_8",           "shop_slums_exploration",   2, 2)
+    // {
+    //     MinStatusLevel(32);
+    //     MaxStatusLevel(35);
+    //     Limited();
+    //     Cycle("Hour", 12);
+    // }
+    // Set("Melee_Legendary_Tier_9",           "shop_slums_exploration",   2, 2)
+    // {
+    //     MinStatusLevel(33);
+    //     MaxStatusLevel(35);
+    //     Limited();
+    //     Cycle("Hour", 12);
+    // }
+    // Set("Melee_Legendary_Tier_10",           "shop_slums_exploration",   2, 2)
+    // {
+    //     MinStatusLevel(34);
+    //     MaxStatusLevel(35);
+    //     Limited();
+    //     Cycle("Hour", 12);
+    // }
 }
 
 sub Weapons2H(){
-    Set("Melee_2H_Level_6",                    "shop_slums_exploration",   1, 1)
+    Set("Melee_2H_Level_6",                    "shop_slums_exploration",   2, 2)
     {
         MinStatusLevel(6);
         MaxStatusLevel(7);
         Limited();
     }
-    Set("Melee_2H_Level_7",                    "shop_slums_exploration",   1, 1)
+    Set("Melee_2H_Level_7",                    "shop_slums_exploration",   2, 2)
     {
         MinStatusLevel(7);
         MaxStatusLevel(8);
         Limited();
     }
-    Set("Melee_2H_Level_8",                    "shop_slums_exploration",   1, 1)
+    Set("Melee_2H_Level_8",                    "shop_slums_exploration",   2, 2)
     {
         MinStatusLevel(8);
         MaxStatusLevel(9);
@@ -392,7 +411,7 @@ sub Weapons2H(){
         Cycle("Hour", 12);
     }
     
-    Set("Melee_2H_Level_9",                    "shop_slums_exploration",   1, 1)
+    Set("Melee_2H_Level_9",                    "shop_slums_exploration",   2, 2)
     {
         MinStatusLevel(9);
         MaxStatusLevel(10);
@@ -401,7 +420,7 @@ sub Weapons2H(){
         Cycle("Hour", 12);
     }
     
-    Set("Melee_2H_Level_10",                   "shop_slums_exploration",   1, 1)
+    Set("Melee_2H_Level_10",                   "shop_slums_exploration",   2, 2)
     {
         MinStatusLevel(10);
         MaxStatusLevel(11);
@@ -409,7 +428,7 @@ sub Weapons2H(){
         Probability(0.5);
         Cycle("Hour", 12);
     }
-    Set("Melee_2H_Level_11",                   "shop_slums_exploration",   1, 1)
+    Set("Melee_2H_Level_11",                   "shop_slums_exploration",   2, 2)
     {
         MinStatusLevel(11);
         MaxStatusLevel(12);
@@ -417,7 +436,7 @@ sub Weapons2H(){
         Probability(0.5);
         Cycle("Hour", 12);
     }
-    Set("Melee_2H_Level_12",                   "shop_slums_exploration",   1, 1)
+    Set("Melee_2H_Level_12",                   "shop_slums_exploration",   2, 2)
     {
         MinStatusLevel(12);
         MaxStatusLevel(13);
@@ -425,7 +444,7 @@ sub Weapons2H(){
         Probability(0.5);
         Cycle("Hour", 12);
     }
-    Set("Melee_2H_Level_13",                   "shop_slums_exploration",   1, 1)
+    Set("Melee_2H_Level_13",                   "shop_slums_exploration",   2, 2)
     {
         MinStatusLevel(13);
         MaxStatusLevel(14);
@@ -433,7 +452,7 @@ sub Weapons2H(){
         Probability(0.5);
         Cycle("Hour", 12);
     }
-    Set("Melee_2H_Level_14",                   "shop_slums_exploration",   1, 1)
+    Set("Melee_2H_Level_14",                   "shop_slums_exploration",   2, 2)
     {
         MinStatusLevel(14);
         MaxStatusLevel(15);
@@ -441,7 +460,7 @@ sub Weapons2H(){
         Probability(0.5);
         Cycle("Hour", 12);
     }
-    Set("Melee_2H_Level_15",                   "shop_slums_exploration",   1, 1)
+    Set("Melee_2H_Level_15",                   "shop_slums_exploration",   2, 2)
     {
         MinStatusLevel(15);
         MaxStatusLevel(16);
@@ -449,7 +468,7 @@ sub Weapons2H(){
         Probability(0.5);
         Cycle("Hour", 12);
     }
-    Set("Melee_2H_Level_16",                   "shop_slums_exploration",   1, 1)
+    Set("Melee_2H_Level_16",                   "shop_slums_exploration",   2, 2)
     {
         MinStatusLevel(16);
         MaxStatusLevel(17);
@@ -457,7 +476,7 @@ sub Weapons2H(){
         Probability(0.5);
         Cycle("Hour", 12);
     }
-    Set("Melee_2H_Level_17",                   "shop_slums_exploration",   1, 1)
+    Set("Melee_2H_Level_17",                   "shop_slums_exploration",   2, 2)
     {
         MinStatusLevel(17);
         MaxStatusLevel(18);
@@ -465,7 +484,7 @@ sub Weapons2H(){
         Probability(0.5);
         Cycle("Hour", 12);
     }
-    Set("Melee_2H_Level_18",                   "shop_slums_exploration",   1, 1)
+    Set("Melee_2H_Level_18",                   "shop_slums_exploration",   2, 2)
     {
         MinStatusLevel(18);
         MaxStatusLevel(19);
@@ -473,7 +492,7 @@ sub Weapons2H(){
         Probability(0.5);
         Cycle("Hour", 12);
     }
-    Set("Melee_2H_Level_19",                   "shop_slums_exploration",   1, 1)
+    Set("Melee_2H_Level_19",                   "shop_slums_exploration",   2, 2)
     {
         MinStatusLevel(19);
         MaxStatusLevel(20);
@@ -481,7 +500,7 @@ sub Weapons2H(){
         Probability(0.5);
         Cycle("Hour", 12);
     }
-    Set("Melee_2H_Level_20",                   "shop_slums_exploration",   1, 1)
+    Set("Melee_2H_Level_20",                   "shop_slums_exploration",   2, 2)
     {
         MinStatusLevel(20);
         MaxStatusLevel(21);
@@ -489,7 +508,7 @@ sub Weapons2H(){
         Probability(0.5);
         Cycle("Hour", 12);
     }
-    Set("Melee_2H_Level_21",                   "shop_slums_exploration",   1, 1)
+    Set("Melee_2H_Level_21",                   "shop_slums_exploration",   2, 2)
     {
         MinStatusLevel(21);
         MaxStatusLevel(22);
@@ -497,7 +516,7 @@ sub Weapons2H(){
         Probability(0.5);
         Cycle("Hour", 12);
     }
-    Set("Melee_2H_Level_22",                   "shop_slums_exploration",   1, 1)
+    Set("Melee_2H_Level_22",                   "shop_slums_exploration",   2, 2)
     {
         MinStatusLevel(22);
         MaxStatusLevel(23);
@@ -505,7 +524,7 @@ sub Weapons2H(){
         Probability(0.5);
         Cycle("Hour", 12);
     }
-    Set("Melee_2H_Level_23",                   "shop_slums_exploration",   1, 1)
+    Set("Melee_2H_Level_23",                   "shop_slums_exploration",   2, 2)
     {
         MinStatusLevel(23);
         MaxStatusLevel(25);
@@ -513,9 +532,33 @@ sub Weapons2H(){
         Probability(0.5);
         Cycle("Hour", 12);
     }
+    Set("Melee_2H_Level_24",                   "shop_slums_exploration",   2, 2)
+    {
+        MinStatusLevel(24);
+        MaxStatusLevel(25);
+        Limited();
+        Probability(0.5);
+        Cycle("Hour", 12);
+    }
+    Set("Melee_2H_Level_25",                   "shop_slums_exploration",   2, 2)
+    {
+        MinStatusLevel(25);
+        // MaxStatusLevel(25);
+        Limited();
+        Probability(0.5);
+        Cycle("Hour", 12);
+    }
+    Set("Melee_Legendary_2H",                   "shop_slums_exploration",   2, 2)
+    {
+        MinStatusLevel(25);
+        // MaxStatusLevel(25);
+        Limited();
+        Probability(0.5);
+        Cycle("Hour", 12);
+    }
 }
 
-sub Encounter_Shop_Weapons(){
+sub Encounter_Shop_Weapons(){ // the wander merchant only sells the current survivor level's tier weapons that are platinum quality but very expensive
     Set("Melee_Level_1",                    "cs_WanderingMerchant",   1, 1)
     {
         MinStatusLevel(1);
@@ -589,194 +632,122 @@ sub Encounter_Shop_Weapons(){
         Limited();
         PriceMod(40.0);
     }
-    Set("Melee_Level_11_Wasteland",                   "cs_WanderingMerchant",   1, 1)
+    Set("Melee_Level_11",                   "cs_WanderingMerchant",   1, 1)
     {
         MinStatusLevel(11);
         MaxStatusLevel(11);
         Limited();
         PriceMod(35.0);
     }
-    Set("Melee_Level_12_Wasteland",                   "cs_WanderingMerchant",   1, 1)
+    Set("Melee_Level_12",                   "cs_WanderingMerchant",   1, 1)
     {
         MinStatusLevel(12);
         MaxStatusLevel(12);
         Limited();
         PriceMod(30.0);
     }
-    Set("Melee_Level_13_Wasteland",                   "cs_WanderingMerchant",   1, 1)
+    Set("Melee_Level_13",                   "cs_WanderingMerchant",   1, 1)
     {
         MinStatusLevel(13);
         MaxStatusLevel(13);
         Limited();
         PriceMod(26.0);
     }
-    Set("Melee_Level_14_Wasteland",                   "cs_WanderingMerchant",   1, 1)
+    Set("Melee_Level_14",                   "cs_WanderingMerchant",   1, 1)
     {
         MinStatusLevel(14);
         MaxStatusLevel(14);
         Limited();
         PriceMod(25.0);
     }
-    Set("Melee_Level_15_Wasteland",                   "cs_WanderingMerchant",   1, 1)
+    Set("Melee_Level_15",                   "cs_WanderingMerchant",   1, 1)
     {
         MinStatusLevel(15);
         MaxStatusLevel(15);
         Limited();
         PriceMod(25.0);
     }
-    Set("Melee_Level_16_Wasteland",                   "cs_WanderingMerchant",   1, 1)
+    Set("Melee_Level_16",                   "cs_WanderingMerchant",   1, 1)
     {
         MinStatusLevel(16);
         MaxStatusLevel(16);
         Limited();
         PriceMod(24.0);
     }
-    Set("Melee_Level_17_Wasteland",                   "cs_WanderingMerchant",   1, 1)
+    Set("Melee_Level_17",                   "cs_WanderingMerchant",   1, 1)
     {
         MinStatusLevel(17);
         MaxStatusLevel(17);
         Limited();
         PriceMod(24.0);
     }
-    Set("Melee_Level_18_Wasteland",                   "cs_WanderingMerchant",   1, 1)
+    Set("Melee_Level_18",                   "cs_WanderingMerchant",   1, 1)
     {
         MinStatusLevel(18);
         MaxStatusLevel(18);
         Limited();
         PriceMod(23.0);
     }
-    Set("Melee_Level_19_Wasteland",                   "cs_WanderingMerchant",   1, 1)
+    Set("Melee_Level_19",                   "cs_WanderingMerchant",   1, 1)
     {
         MinStatusLevel(19);
         MaxStatusLevel(19);
         Limited();
         PriceMod(22.0);
     }
-    Set("Melee_Level_20_Wasteland",                   "cs_WanderingMerchant",   1, 1)
+    Set("Melee_Level_20",                   "cs_WanderingMerchant",   1, 1)
     {
         MinStatusLevel(20);
         MaxStatusLevel(20);
         Limited();
         PriceMod(21.0);
     }
-    Set("Melee_Level_21_Wasteland",                   "cs_WanderingMerchant",   1, 1)
+    Set("Melee_Level_21",                   "cs_WanderingMerchant",   1, 1)
     {
         MinStatusLevel(21);
         MaxStatusLevel(21);
         Limited();
         PriceMod(19.0);
     }
-    Set("Melee_Level_22_Wasteland",                   "cs_WanderingMerchant",   1, 1)
+    Set("Melee_Level_22",                   "cs_WanderingMerchant",   1, 1)
     {
         MinStatusLevel(22);
         MaxStatusLevel(22);
         Limited();
         PriceMod(17.0);
     }
-    Set("Melee_Level_23_Wasteland",                   "cs_WanderingMerchant",   1, 1)
+    Set("Melee_Level_23",                   "cs_WanderingMerchant",   1, 1)
     {
         MinStatusLevel(23);
         MaxStatusLevel(23);
         Limited();
         PriceMod(16.0);
     }
-    Set("Melee_Level_24_Wasteland",                   "cs_WanderingMerchant",   1, 1)
+    Set("Melee_Level_24",                   "cs_WanderingMerchant",   1, 1)
     {
         MinStatusLevel(24);
         //MaxStatusLevel(24);
         Limited();
         PriceMod(15.0);
     }
-    Set("Melee_Level_25_Wasteland",                   "cs_WanderingMerchant",   1, 1)
+    Set("Melee_Level_25",                   "cs_WanderingMerchant",   1, 1)
     {
         MinStatusLevel(25);
         //MaxStatusLevel(25);
         Limited();
         PriceMod(14.0);
     }
-    Set("Melee_Legendary_Tier_1",           "cs_WanderingMerchant",   1, 1)
+    Set("Melee_Legendary",           "cs_WanderingMerchant",   1, 1)
     {
         MinStatusLevel(25);
-        MaxStatusLevel(35);
-        Limited();
-        Cycle("Hour", 12);
-        PriceMod(18.0);
-    }
-    Set("Melee_Legendary_Tier_2",           "cs_WanderingMerchant",   1, 1)
-    {
-        MinStatusLevel(26);
-        MaxStatusLevel(35);
-        Limited();
-        Cycle("Hour", 12);
-        PriceMod(17.0);
-    }
-    Set("Melee_Legendary_Tier_3",           "cs_WanderingMerchant",   1, 1)
-    {
-        MinStatusLevel(27);
-        MaxStatusLevel(35);
-        Limited();
-        Cycle("Hour", 12);
-        PriceMod(16.0);
-    }
-    Set("Melee_Legendary_Tier_4",           "cs_WanderingMerchant",   1, 1)
-    {
-        MinStatusLevel(28);
-        MaxStatusLevel(35);
+        //MaxStatusLevel(35);
         Limited();
         Cycle("Hour", 12);
         PriceMod(15.0);
     }
-    Set("Melee_Legendary_Tier_5",           "cs_WanderingMerchant",   1, 1)
-    {
-        MinStatusLevel(29);
-        MaxStatusLevel(35);
-        Limited();
-        Cycle("Hour", 12);
-        PriceMod(14.0);
-    }
-    Set("Melee_Legendary_Tier_6",           "cs_WanderingMerchant",   1, 1)
-    {
-        MinStatusLevel(30);
-        MaxStatusLevel(35);
-        Limited();
-        Cycle("Hour", 12);
-        PriceMod(14.0);
-    }
-    Set("Melee_Legendary_Tier_7",           "cs_WanderingMerchant",   1, 1)
-    {
-        MinStatusLevel(31);
-        MaxStatusLevel(35);
-        Limited();
-        Cycle("Hour", 12);
-        PriceMod(14.0);
-    }
-    Set("Melee_Legendary_Tier_8",           "cs_WanderingMerchant",   1, 1)
-    {
-        MinStatusLevel(32);
-        MaxStatusLevel(35);
-        Limited();
-        Cycle("Hour", 12);
-        PriceMod(14.0);
-    }
-    Set("Melee_Legendary_Tier_9",           "cs_WanderingMerchant",   1, 1)
-    {
-        MinStatusLevel(33);
-        MaxStatusLevel(35);
-        Limited();
-        Cycle("Hour", 12);
-        PriceMod(14.0);
-    }
-    Set("Melee_Legendary_Tier_10",           "cs_WanderingMerchant",   1, 1)
-    {
-        MinStatusLevel(34);
-        MaxStatusLevel(35);
-        Limited();
-        Cycle("Hour", 12);
-        PriceMod(14.0);
-    }
 }
 
-sub Encounter_Shop_Weapons_2H(){
+sub Encounter_Shop_Weapons_2H(){ // the wander merchant only sells the current survivor level's tier weapons that are platinum quality but very expensive
     
     Set("Melee_2H_Level_2",                    "cs_WanderingMerchant",   1, 1)
     {
@@ -858,100 +829,108 @@ sub Encounter_Shop_Weapons_2H(){
         Limited();
         PriceMod(32.0);
     }
-    Set("Melee_2H_Level_13_Wasteland",                   "cs_WanderingMerchant",   1, 1)
+    Set("Melee_2H_Level_13",                   "cs_WanderingMerchant",   1, 1)
     {
         MinStatusLevel(13);
         MaxStatusLevel(13);
         Limited();
         PriceMod(30.0);
     }
-    Set("Melee_2H_Level_14_Wasteland",                   "cs_WanderingMerchant",   1, 1)
+    Set("Melee_2H_Level_14",                   "cs_WanderingMerchant",   1, 1)
     {
         MinStatusLevel(14);
         MaxStatusLevel(14);
         Limited();
         PriceMod(27.0);
     }
-    Set("Melee_2H_Level_15_Wasteland",                   "cs_WanderingMerchant",   1, 1)
+    Set("Melee_2H_Level_15",                   "cs_WanderingMerchant",   1, 1)
     {
         MinStatusLevel(15);
         MaxStatusLevel(15);
         Limited();
         PriceMod(24.0);
     }
-    Set("Melee_2H_Level_16_Wasteland",                   "cs_WanderingMerchant",   1, 1)
+    Set("Melee_2H_Level_16",                   "cs_WanderingMerchant",   1, 1)
     {
         MinStatusLevel(16);
         MaxStatusLevel(16);
         Limited();
         PriceMod(24.0);
     }
-    Set("Melee_2H_Level_17_Wasteland",                   "cs_WanderingMerchant",   1, 1)
+    Set("Melee_2H_Level_17",                   "cs_WanderingMerchant",   1, 1)
     {
         MinStatusLevel(17);
         MaxStatusLevel(17);
         Limited();
         PriceMod(23.0);
     }
-    Set("Melee_2H_Level_18_Wasteland",                   "cs_WanderingMerchant",   1, 1)
+    Set("Melee_2H_Level_18",                   "cs_WanderingMerchant",   1, 1)
     {
         MinStatusLevel(18);
         MaxStatusLevel(18);
         Limited();
         PriceMod(22.0);
     }
-    Set("Melee_2H_Level_19_Wasteland",                   "cs_WanderingMerchant",   1, 1)
+    Set("Melee_2H_Level_19",                   "cs_WanderingMerchant",   1, 1)
     {
         MinStatusLevel(19);
         MaxStatusLevel(19);
         Limited();
         PriceMod(21.0);
     }
-    Set("Melee_2H_Level_20_Wasteland",                   "cs_WanderingMerchant",   1, 1)
+    Set("Melee_2H_Level_20",                   "cs_WanderingMerchant",   1, 1)
     {
         MinStatusLevel(20);
         MaxStatusLevel(20);
         Limited();
         PriceMod(20.0);
     }
-    Set("Melee_2H_Level_21_Wasteland",                   "cs_WanderingMerchant",   1, 1)
+    Set("Melee_2H_Level_21",                   "cs_WanderingMerchant",   1, 1)
     {
         MinStatusLevel(21);
         MaxStatusLevel(21);
         Limited();
         PriceMod(17.0);
     }
-    Set("Melee_2H_Level_22_Wasteland",                   "cs_WanderingMerchant",   1, 1)
+    Set("Melee_2H_Level_22",                   "cs_WanderingMerchant",   1, 1)
     {
         MinStatusLevel(22);
         MaxStatusLevel(22);
         Limited();
         PriceMod(16.0);
     }
-    Set("Melee_2H_Level_23_Wasteland",                   "cs_WanderingMerchant",   1, 1)
+    Set("Melee_2H_Level_23",                   "cs_WanderingMerchant",   1, 1)
     {
         MinStatusLevel(23);
         MaxStatusLevel(23);
         Limited();
         PriceMod(15.0);
     }
-    Set("Melee_2H_Level_24_Wasteland",                   "cs_WanderingMerchant",   1, 1)
+    Set("Melee_2H_Level_24",                   "cs_WanderingMerchant",   1, 1)
     {
         MinStatusLevel(24);
         MaxStatusLevel(24);
         Limited();
         PriceMod(14.0);
     }
-    Set("Melee_2H_Level_25_Wasteland",                   "cs_WanderingMerchant",   1, 1)
+    Set("Melee_2H_Level_25",                   "cs_WanderingMerchant",   1, 1)
     {
         MinStatusLevel(25);
-        MaxStatusLevel(25);
+        //MaxStatusLevel(25);
         Limited();
         PriceMod(14.0);
     }
+    Set("Melee_Legendary_2H",           "cs_WanderingMerchant",   1, 1)
+    {
+        MinStatusLevel(25);
+        //MaxStatusLevel(35);
+        Limited();
+        Cycle("Hour", 12);
+        PriceMod(15.0);
+    }
 }
 
-sub QuartermasterWeapons(){
+sub QuartermasterWeapons(){ // unused since quartermasters no longer give weapons
     Set("Melee_Level_1",                    "whites_only",   1, 1)
     {
         MinStatusLevel(1);
@@ -1618,17 +1597,47 @@ sub Craft_DuctTape(){
         }
 }
 sub Craft_Electronics(){
-    Set("Craft_Electronics",                              "rare",              3)            
+    Set("Craft_Electronics",                              "violet_only",              1, 1)            
+        {
+            PriceMod(1.2);
+            Limited(3);
+            MinStatusLevel(1);
+        }
+    Set("Craft_Batteries",                              "green_only",              1, 1)            
         {
             PriceMod(1.5);
-            Limited();
+            Limited(5);
+            MinStatusLevel(1);
+        }
+    Set("Craft_PowerCable",                              "blue_only",              1, 1)            
+        {
+            PriceMod(1.5);
+            Limited(5);
             MinStatusLevel(1);
         }
 }
 sub Upgrades(){
-    Set("Upgrades",                              "encounter_shop_crafting_materials",              5, 8)            
+    Set("Upgrades_White",                              "whites_only",              1, 1)            
+        {
+            PriceMod(4.0);
+            Limited();
+            MinStatusLevel(1);
+        }
+    Set("Upgrades_Blue",                              "blue_only",              2, 2)            
+        {
+            PriceMod(3.0);
+            Limited();
+            MinStatusLevel(1);
+        }
+    Set("Upgrades_Violet",                              "violet_only",              4, 4)            
         {
             PriceMod(2.0);
+            Limited();
+            MinStatusLevel(1);
+        }
+    Set("Upgrades_Orange",                              "orange_only",              1, 1)            
+        {
+            PriceMod(1.0);
             Limited();
             MinStatusLevel(1);
         }

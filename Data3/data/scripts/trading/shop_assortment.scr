@@ -801,6 +801,7 @@ sub main()
 			use Craft_Electronics();
 			use Upgrades();
 			use Upgrades_Premium();
+			use ItemOfTheDayNight();
 			// use Weapons2H();
 			// use Firearms();
 			// use Healing_Items();

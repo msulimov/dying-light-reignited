@@ -23,13 +23,13 @@ sub default_nightmare()
         
 		ColorSet(ColorSet_WeaponChest_Medium);
 		
-		Set(Weapon, 0.35, 1.0)    // Weapon on player level + 1
+		Set(Weapon, 0.5, 1.0)    // Weapon on player level + 1
         {
             AvoidGeneratingDuplicates();
         	use melee();
         }
 
-        Set(Weapon, 0.65, 1.0)    // Weapon on player level + 1
+        Set(Weapon, 0.5, 1.0)    // Weapon on player level + 1
         {
             AvoidGeneratingDuplicates();
         	use melee_2h();

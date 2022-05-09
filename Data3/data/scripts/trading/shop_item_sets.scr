@@ -1,15 +1,21 @@
 sub main() 
 {
-    ItemSet("Upgrades")
+    ItemSet("Upgrades_White")
     {
         Item("Craft_Upgrade_Dam");
         Item("Craft_Upgrade_Dur");
         Item("Craft_Upgrade_Bal");
-        
+    }
+
+    ItemSet("Upgrades_Blue")
+    {
         Item("Craft_Upgrade_DamDur");
         Item("Craft_Upgrade_DamBal");
         Item("Craft_Upgrade_DurBal");
-        
+    }
+
+    ItemSet("Upgrades_Violet")
+    {
         Item("Craft_Upgrade_DamDurBal");
         Item("Craft_Upgrade_DamL2Dur");
         Item("Craft_Upgrade_DamL2Bal");
@@ -18,6 +24,13 @@ sub main()
         Item("Craft_Upgrade_BalL2Dam");
         Item("Craft_Upgrade_BalL2Dur");
     }
+
+    ItemSet("Upgrades_Orange")
+    {
+       Item("Craft_Upgrade_DamL2DurL2BalL2_Clicker");
+       Item("Craft_Upgrade_DamL2DurL2BalL2");
+    }
+
     ItemSet("Upgrades_Premium")
     {
         Item("Craft_Upgrade_DurL2BalL2"); // Freeze White
@@ -25,8 +38,35 @@ sub main()
         Item("Craft_Upgrade_DamL2BalL2"); // Shock Blue
         Item("Craft_Upgrade_BalL2"); // Bleed Violet
         Item("Craft_Upgrade_DamL2DurL2"); // Burn Orange
-        Item("Craft_Upgrade_DamL2DurL2BalL2"); // King Orange 
         Item("Craft_Upgrade_DamL2"); // Impact Platinum
+    }
+    ItemSet("Crafting_Sale")
+    {
+        Item("Craft_MetalScrap");
+        Item("Craft_Alcohol");
+        Item("Craft_Sugar");
+        Item("Craft_PlasticTube");
+        Item("ZZZZ3_Component_NutsBolts");
+        Item("Medkit_HealthPackLarge");
+        Item("Craft_UnderwaterAlgae");
+        Item("Craft_ToxicPlant");
+
+        Item("Craft_Lichen");
+        Item("Craft_Gauze");
+        Item("Craft_TinCan");
+        Item("Craft_DuctTape");
+        Item("Craft_Insecticide");
+        Item("Craft_String");
+        Item("ZZZZ3_Component_SteelTubing");
+        Item("ZZZZ3_Component_Rubber");
+        Item("Craft_RazorBlade");
+        Item("Craft_Batteries");
+
+        Item("Craft_PowerCable");
+        Item("Craft_Nails");
+        Item("Craft_Bleach");
+        Item("ZZZZ3_Component_Wire");
+        Item("ZZZZ3_Component_Lubricant");
     }
     ItemSet("Bow")                //ItemID, Weight. Default WEIGHT is 1.
     {
@@ -261,6 +301,7 @@ sub main()
         Item("Melee_ShortAxeCGen");
         Item("Melee_MacheteBGen");
         Item("Melee_KnifeDGen");
+        Item("ZZZZ3_Melee_ScytheAGen");
     }
 
     
@@ -272,6 +313,9 @@ sub main()
         Item("Melee_ShortSwordAGen");
         Item("Melee_PickCGen");
         Item("Melee_PickBGen");
+        Item("ZZZ3_Melee_HandsawAGen");
+        Item("ZZZZ3_Melee_ScytheAL12Gen");
+        Item("ZZZZ3_Melee_ShortAxeEL12Gen");
     }
 
     
@@ -282,6 +326,8 @@ sub main()
         Item("Melee_PickEGen");
         Item("Melee_ShortAxeDGen");
         Item("Melee_MacheteCGen");
+        Item("ZZZ3_Melee_HandsawAL13Gen");
+        Item("ZZZZ3_Melee_ScytheAL13Gen");
     }
 
     
@@ -291,6 +337,10 @@ sub main()
         Item("Melee_ShortAxeEGen");
         Item("Melee_MacheteAGen");
         Item("Melee_CleaverC2");
+        Item("ZZZ3_Melee_HandsawAL14Gen");
+        Item("ZZZZ3_Melee_ScytheAL14Gen");
+        Item("ZZZZ3_Melee_MacheteAL14Gen");
+        Item("ZZZZ3_Melee_ShortAxeEL14Gen");
     }
 
     
@@ -304,6 +354,10 @@ sub main()
         Item("zzz_Melee_BatonAGenN");
         Item("zzz_Melee_PickEGenN");
         Item("zzz_Melee_ReedKnifeCGenN");
+        Item("ZZZ3_Melee_HandsawAL15Gen");
+        Item("ZZZZ3_Melee_ScytheAL15Gen");
+        Item("ZZZZ3_Melee_SickleAL15Gen");
+        Item("ZZZZ3_Melee_PickEL15Gen");
     }
 
     
@@ -317,6 +371,11 @@ sub main()
         Item("zzz_Melee_HammerBGenN");
         Item("zzz_Melee_KhopeshB2N");
         Item("zzz_Melee_MacheteB4N");
+        Item("ZZZ3_Melee_HandsawAL16Gen");
+        Item("ZZZZ3_Melee_ScytheAL16Gen");
+        Item("ZZZZ3_Melee_MacheteAL16Gen");
+        Item("ZZZZ3_Melee_KnifeBL16Gen");
+        Item("ZZZZ3_Melee_ShortAxeEL16Gen");
     }
 
     
@@ -328,12 +387,17 @@ sub main()
         Item("zzz_Melee_HammerBGenN");
         Item("zzz_Melee_ReedKnifeBGenN");
         Item("zzz_Melee_SickleAGenN");
+        Item("ZZZ3_Melee_HandsawAL17Gen");
+        Item("ZZZZ3_Melee_ScytheAL17Gen");
+        Item("ZZZZ3_Melee_SickleAL17Gen");
+        Item("ZZZZ3_Melee_PickEL17Gen");
     }
 	
 	ItemSet("Melee_Level_17_ornated")     // REQUIRED FOR THE ORNATED BOXES ON OLD TOWN WHERE LONG WEAPONS DON'T FIT
     {
         Item("Melee_MacheteB2");
         Item("Melee_PickD2");
+        Item("ZZZ3_Melee_HandsawAL17Gen");
     }
 
     
@@ -346,12 +410,20 @@ sub main()
         Item("zzz_Melee_KhopeshBGenN");
         Item("zzz_Melee_ShortSwordB2N");
         Item("zzz_Melee_ShortSwordC2N");
+        Item("ZZZ3_Melee_HandsawAL18Gen");
+        Item("ZZZZ3_Melee_ScytheAL18Gen");
+        Item("ZZZZ3_Melee_MacheteAL18Gen");
+        Item("ZZZZ3_Melee_KnifeBL18Gen");
+        Item("ZZZZ3_Melee_ShortAxeEL18Gen");
     }
 	
 	ItemSet("Melee_Level_18_ornated")     // REQUIRED FOR THE ORNATED BOXES ON OLD TOWN WHERE LONG WEAPONS DON'T FIT
     {
         Item("Melee_MacheteD2");
         Item("Melee_PickE2");
+        Item("ZZZ3_Melee_HandsawAL18Gen");
+        Item("ZZZZ3_Melee_MacheteAL18Gen");
+        Item("ZZZZ3_Melee_ShortAxeEL18Gen");
     }
 
     
@@ -364,12 +436,18 @@ sub main()
         Item("zzz_Melee_BaseballBatAGenLevelA");
         Item("zzz_Melee_ShortAxeBGenN");
         Item("zzz_Melee_SickleDGenN");
+        Item("ZZZZ3_Melee_ScytheAL19Gen");
+        Item("ZZZ3_Melee_HandsawAL19Gen");
+        Item("ZZZZ3_Melee_SickleAL19Gen");
+        Item("ZZZZ3_Melee_PickEL19Gen");
     }
 	
 	ItemSet("Melee_Level_19_ornated")     // REQUIRED FOR THE ORNATED BOXES ON OLD TOWN WHERE LONG WEAPONS DON'T FIT
     {
         Item("Melee_PickC2");
         Item("Melee_MacheteC2");
+        Item("ZZZ3_Melee_HandsawAL19Gen");
+        Item("ZZZZ3_Melee_PickEL19Gen");
     }
 
     
@@ -384,11 +462,19 @@ sub main()
         Item("zzz_Melee_ShortSwordAGenA2");
         Item("zzz_Melee_ShortSwordAGenN");
         Item("zzz_Melee_SickleBGenN");
+        Item("ZZZ3_Melee_HandsawAL20Gen");
+        Item("ZZZZ3_Melee_ScytheAL20Gen");
+        Item("ZZZZ3_Melee_MacheteAL20Gen");
+        Item("ZZZZ3_Melee_KnifeBL20Gen");
+        Item("ZZZZ3_Melee_ShortAxeEL20Gen");
     }
 
 	ItemSet("Melee_Level_20_ornated")     // REQUIRED FOR THE ORNATED BOXES ON OLD TOWN WHERE LONG WEAPONS DON'T FIT
     {
         Item("Melee_PickB2");
+        Item("ZZZ3_Melee_HandsawAL20Gen");
+        Item("ZZZZ3_Melee_MacheteAL20Gen");
+        Item("ZZZZ3_Melee_ShortAxeEL20Gen");
     }
     
     ItemSet("Melee_Level_21")
@@ -398,11 +484,17 @@ sub main()
         Item("Melee_MacheteA2");
         Item("zzz_Melee_ShortAxeEGenE2");
         Item("zzz_Melee_ShortSwordBGenN");
+        Item("ZZZZ3_Melee_ScytheAL21Gen");
+        Item("ZZZ3_Melee_HandsawAL21Gen");
+        Item("ZZZZ3_Melee_SickleAL21Gen");
+        Item("ZZZZ3_Melee_PickEL21Gen");
     }
 	
 	ItemSet("Melee_Level_21_ornated")     // REQUIRED FOR THE ORNATED BOXES ON OLD TOWN WHERE LONG WEAPONS DON'T FIT
     {
         Item("Melee_MacheteA2");
+        Item("ZZZ3_Melee_HandsawAL21Gen");
+        Item("ZZZZ3_Melee_PickEL21Gen");
     }
 
     
@@ -416,11 +508,18 @@ sub main()
         Item("zzz_Melee_LongSwordBGenN");
         Item("zzz_Melee_MacheteDGenHq3");
         Item("zzz_Melee_ShortSwordCGenN");
+        Item("ZZZ3_Melee_HandsawAL22Gen");
+        Item("ZZZZ3_Melee_ScytheAL22Gen");
+        Item("ZZZZ3_Melee_MacheteAL22Gen");
+        Item("ZZZZ3_Melee_KnifeBL22Gen");
+        Item("ZZZZ3_Melee_ShortAxeEL22Gen");
     }
 	
 	ItemSet("Melee_Level_22_ornated")     // REQUIRED FOR THE ORNATED BOXES ON OLD TOWN WHERE LONG WEAPONS DON'T FIT
     {
         Item("Melee_MacheteE2");
+        Item("ZZZ3_Melee_HandsawAL22Gen");
+        Item("ZZZZ3_Melee_ShortAxeEL22Gen");
     }
     
     ItemSet("Melee_Level_23")
@@ -433,6 +532,10 @@ sub main()
         Item("zzz_Melee_LongSwordAGenN");
         Item("zzz_Melee_MacheteAPpa");
         Item("zzz_Melee_MacheteEGenHq3");
+        Item("ZZZZ3_Melee_ScytheAL23Gen");
+        Item("ZZZ3_Melee_HandsawAL23Gen");
+        Item("ZZZZ3_Melee_SickleAL23Gen");
+        Item("ZZZZ3_Melee_PickEL23Gen");
     }
 
     
@@ -440,58 +543,67 @@ sub main()
     {
         Item("ZZ2Patch_Melee_MacheteAPhosphor"); // machete 1011
         Item("ZZ2Patch_Melee_SickleAPhosphor"); // sickle 1489
-        Item("Melee_ShortSwordB2"); // short sword 1100
+        Item("Melee_ShortSwordB2"); // short sacrificial sword 1100
         Item("zzz_Melee_BaseballBatCGenFight"); // baseball bat 1489
         Item("zzz_Melee_MacheteEGenHq4"); // machete 990
+        Item("ZZZ3_Melee_HandsawAL24Gen");
+        Item("ZZZZ3_Melee_ScytheAL24Gen");
+        Item("ZZZZ3_Melee_KnifeBL24Gen");
+        Item("ZZZZ3_Melee_ShortAxeEL24Gen");
     }
 
     
     ItemSet("Melee_Level_25") 
     {
-        Item("ZZ2Patch_Melee_MacheteB4");  
-        Item("Melee_ShortSwordC2"); // machete 1220
-        Item("zzz_Melee_BaseballBatAGenGlow"); // baseball bat 1750
-        Item("zzz_Melee_MacheteDHq3"); // big hammer 2858
-		Item("zzz_Melee_BigHammerBGenGlow"); // katana 1600
-		Item("ZZ2Patch_Melee_AxeBigBPhosphor");
-        Item("zzz_Melee_MacheteEGenN");  // saw 1800
-		Item("ZZZZ3_Melee_ScytheAL25Gen"); // scythe 1539
-		Item("Melee_KhopeshB2T");
-		Item("Melee_KhopeshA2T");
-		// baton 1900
+        Item("ZZZ3_Melee_HandsawAL25Gen"); // handsaw 1200
+        Item("ZZ2Patch_Melee_MacheteB4"); // rectangular skull machete 1220
+
+        Item("zzz_Melee_ShortSwordAGenT"); // custom siphaphi saber 1500
+        Item("Melee_KhopeshB2T"); // khopesh skin 1 1500
+        Item("Melee_KhopeshA2T"); // khopesh skin 2 1500
+
+        Item("Melee_ShortSwordC2"); // regular katana 1600
+        Item("ZZZZ3_Melee_ScytheAL25Gen"); // scythe 1539 TODO pick coolest default scythe skin
+
+        // Item("zzz_Melee_MacheteEGenN");   // boomerang blade
+        // Item("zzz_Melee_BaseballBatAGenGlow"); // baseball bat 1750
+        // Item("zzz_Melee_MacheteDHq3"); // safety blade curved machete 1221
+		
     }
 
-	///PLATINUM WEAPONS
+	///PLATINUM WEAPONS for harran prison guru reward
 	
     ItemSet("Melee_Level_25_Platinum_Chest")
     {
-        Item("zzz_Melee_ShortSwordCGenPearl");
-		Item("Melee_ShortSwordC2");
-        Item("zzz_Melee_BigHammerCGenPearl");
-		Item("zzz01_Melee_HrSwordF");
-        Item("zzz01_Melee_HrHlAxeD");
-		Item("zzz_Melee_BigHammerBGenGlow");
-		Item("Melee_KhopeshB2T");
-		Item("Melee_KhopeshA2T");
-        Item("zzz01_Melee_HrSkullmaceA");
-        Item("zzz01_Melee_HrWarhammerE");
-		Item("zzz_Melee_KnifeCGenPearl");
-        Item("zzz_Melee_BaseballBatAGenPearl");
+        Item("zzz_Melee_ShortSwordCGenPearl"); // gold katana
+		Item("Melee_ShortSwordC2"); // regular katana
+        Item("zzz_Melee_BigHammerCGenPearl"); // rune hammer
+		Item("zzz01_Melee_HrSwordF"); // blade of order
+        Item("zzz01_Melee_HrHlAxeD"); // battleaxe of titans
+        Item("Melee_KhopeshB2T"); // khophesh skin 1
+        Item("Melee_KhopeshA2T"); // khophesh skin 2
+
+		Item("zzz_Melee_BigHammerBGenGlow"); // emperor's glow
+        Item("zzz01_Melee_HrSkullmaceA"); // skullmace
+        Item("zzz01_Melee_HrWarhammerE"); // smackhammer
+		Item("zzz_Melee_KnifeCGenPearl"); // tribal knife
+        Item("zzz_Melee_BaseballBatAGenPearl"); // loco
     }
 	ItemSet("Melee_Level_25_Platinum")
     {
-        Item("zzz_Melee_ShortSwordCGenPearl");
-		Item("Melee_ShortSwordC2");
-        Item("zzz_Melee_BigHammerCGenPearl");
-		Item("zzz01_Melee_HrSwordF");
-        Item("zzz01_Melee_HrHlAxeD");
-		Item("zzz_Melee_BigHammerBGenGlow");
-		Item("Melee_KhopeshB2T");
-		Item("Melee_KhopeshA2T");
-        Item("zzz01_Melee_HrSkullmaceA");
-        Item("zzz01_Melee_HrWarhammerE");
-		Item("zzz_Melee_KnifeCGenPearl");
-        Item("zzz_Melee_BaseballBatAGenPearl");
+        Item("zzz_Melee_ShortSwordCGenPearl"); // gold katana
+        Item("Melee_ShortSwordC2"); // regular katana
+        Item("zzz_Melee_BigHammerCGenPearl"); // rune hammer
+        Item("zzz01_Melee_HrSwordF"); // blade of order
+        Item("zzz01_Melee_HrHlAxeD"); // battleaxe of titans
+        Item("Melee_KhopeshB2T"); // khophesh skin 1
+        Item("Melee_KhopeshA2T"); // khophesh skin 2
+
+        Item("zzz_Melee_BigHammerBGenGlow"); // emperor's glow
+        Item("zzz01_Melee_HrSkullmaceA"); // skullmace
+        Item("zzz01_Melee_HrWarhammerE"); // smackhammer
+        Item("zzz_Melee_KnifeCGenPearl"); // tribal knife
+        Item("zzz_Melee_BaseballBatAGenPearl"); // loco
     }
 
 	//2H MELEE WEAPONS  
@@ -568,12 +680,14 @@ sub main()
     ItemSet("Melee_2H_Level_13")
     {
         Item("Melee_BigHammerAGen");
+        Item("ZZZZ3_Melee_BigHammerCL13Gen");
     }
 
     
     ItemSet("Melee_2H_Level_14")
     {
         Item("Melee_BigHammerCGen");
+        Item("ZZZZ3_Melee_AxeBigCL14Gen");
     }
 
     
@@ -581,6 +695,7 @@ sub main()
     {
         Item("Melee_AxeBigA2");
         Item("zzz_Melee_AxeBigBGenN");
+        Item("ZZZZ3_Melee_BigHammerCL15Gen");
     }
 
     
@@ -588,6 +703,7 @@ sub main()
     {
         Item("Melee_BigHammerA2");
         Item("zzz_Melee_PickAxeAGenN");
+        Item("ZZZZ3_Melee_AxeBigCL16Gen");
     }
 
     
@@ -595,6 +711,7 @@ sub main()
     {
         Item("Melee_AxeBigBGen");
         Item("zzz_Melee_AxeBigEGenN");
+        Item("ZZZZ3_Melee_BigHammerCL17Gen");
     }
 
     
@@ -602,18 +719,21 @@ sub main()
     {
         Item("Melee_BigHammerC2");
         Item("zzz_Melee_AxeBigCGenN");
+        Item("ZZZZ3_Melee_AxeBigCL18Gen");
     }
 
     
     ItemSet("Melee_2H_Level_19")
     {
         Item("Melee_AxeBigC2");
+        Item("ZZZZ3_Melee_BigHammerCL19Gen");
     }
 
     
     ItemSet("Melee_2H_Level_20")
     {
         Item("Melee_BigHammerB2");
+        Item("ZZZZ3_Melee_AxeBigCL20Gen");
     }
 
     
@@ -621,6 +741,7 @@ sub main()
     {
         Item("Melee_AxeBigE2");
         Item("zzz_Melee_PickAxeBGenN");
+        Item("ZZZZ3_Melee_BigHammerCL21Gen");
     }
 
     
@@ -628,13 +749,14 @@ sub main()
     {
         Item("Melee_BigHammerD2");
         Item("zzz_Melee_AxeBigEGenPaintA");
+        Item("ZZZZ3_Melee_AxeBigCL22Gen");
     }
 
     
     ItemSet("Melee_2H_Level_23")
     {
         Item("Melee_AxeBigB2");
-		Item("zzz_Melee_AxeBigAGenHq2");
+        Item("zzz_Melee_AxeBigAGenHq2");
     }
 
     
@@ -646,74 +768,98 @@ sub main()
         Item("zzz_Melee_BigHammerDGenN");
     }
 
-    
     ItemSet("Melee_2H_Level_25")
     {
-        Item("ZZ2Patch_Melee_AxeBigBPhosphor");
-        Item("zzz_Melee_BigHammerCGenGlow");
+        Item("zzz_Melee_BigHammerCGenGlow"); // ferocious sledgehammer 2900
+        Item("ZZ2Patch_Melee_AxeBigBPhosphor"); // tribal blue glowing axe 2500
     }
     
 	
     ItemSet("Firearms_Level_9")				//ItemID, Weight. Default WEIGHT is 1.
     {
-        Item("Firearm_PistolAGen");
-		Item("Firearm_PistolBGen");
+        Item("Firearm_PistolAGen"); // american pistol
+		
+        Item("Firearm_ShotgunAGen"); // double barrel shotgun
+
+        Item("Firearm_RifleAGenOlive"); // camo military rifle
+        Item("Firearm_RifleAGenSand"); // desert military rifle
+
+        Item("ZZZZZ_Firearm_SubmachineB"); // gnat smg
 	}    
 	
 	ItemSet("Firearms_Level_10")				//ItemID, Weight. Default WEIGHT is 1.
     {
-		Item("Firearm_PistolAGen");
-		Item("Firearm_PistolBGen");
-        Item("Firearm_ShotgunAGen");
-		Item("Firearm_ShotgunAGenRust");
+        Item("Firearm_PistolAGen"); // american pistol
+
+        Item("Firearm_RifleAGenOlive"); // camo military rifle
+        Item("Firearm_RifleAGenSand"); // desert military rifle
+
+        Item("ZZZZZ_Firearm_ShotgunBGen"); // hunting shotgun
+
+        Item("ZZZZZ_Firearm_SubmachineB"); // gnat smg
 	}    
 	
 	ItemSet("Firearms_Level_12")				//ItemID, Weight. Default WEIGHT is 1.
     {
-		Item("Firearm_PistolAGen");
-		Item("Firearm_PistolBGen");
-		Item("Firearm_RifleAGen");
-		Item("Firearm_RifleAGenOlive");
-		Item("Firearm_RifleAGenSand");
-        Item("Firearm_RifleBGen");
-		Item("Firearm_RifleBGenOlive");
-		Item("Firearm_RifleBGenSand");
-        Item("Firearm_ShotgunAGen");
-		Item("Firearm_ShotgunAGenRust");
+        Item("Firearm_PistolBGen");
+        
+        Item("Firearm_RifleBGenOlive"); // camo police rifle
+        Item("Firearm_RifleBGenSand"); // desert police rifle
+
+        Item("ZZZZZ_Firearm_ShotgunCGen"); // semi-auto shotgun
+        
+        Item("ZZZZZ_Firearm_SubmachineA"); // barrel smg
 	}
 
 	ItemSet("Firearms_Level_18")				//ItemID, Weight. Default WEIGHT is 1.
     {
-		Item("Firearm_PistolAGenSandPlastic");
-		Item("Firearm_PistolAGenOlivePlastic");
-		Item("Firearm_PistolBGenSandPlastic");
-		Item("Firearm_PistolBGenOlivePlastic");
-		Item("Firearm_RifleAGenSandPlastic");
-        Item("Firearm_RifleAGenOlivePlastic");
-		Item("Firearm_RifleBGenOlivePlastic");
-		Item("Firearm_RifleBGenSandPlastic");
-        Item("Firearm_ShotgunAGenPlastic");
+		
+        Item("Firearm_PistolBGenOlivePlastic"); // composite camo american pistol
+        Item("Firearm_PistolBGenSandPlastic");  // composite desert american pistol
+
+        Item("Firearm_RifleBGenOlivePlastic", 2.0); // Advanced military rifle
+        Item("Firearm_RifleBGenSandPlastic", 2.0); // Advanced military rifle
+        
+        Item("Firearm_ShotgunAGenPlastic", 4.0); // composite shotgun
+
+        Item("ZZZZZ_Firearm_SubmachineAColor_A"); // spray paint barrel smg skin A
+        Item("ZZZZZ_Firearm_SubmachineAColor_B"); // spray paint barrel smg skin B
+        Item("ZZZZZ_Firearm_SubmachineAColor_C"); // spray paint barrel smg skin C
+        Item("ZZZZZ_Firearm_SubmachineAColor_D"); // spray paint barrel smg skin D
+        
 	}  
 
-	ItemSet("Firearms_Level_24")				//ItemID, Weight. Default WEIGHT is 1.
+	ItemSet("Firearms_Level_24")    // more common since rifle/pistol used most often for prison
     {
-		Item("Firearm_PistolAGenSpecial");
-		Item("Firearm_PistolBGenSpecial");
-		Item("Firearm_ShotgunAGenSpecial");
+
+        Item("Firearm_RifleAGenSandPlastic", 3.0); // Advanced desert police rifle
+        Item("Firearm_RifleAGenOlivePlastic", 3.0); // Advanced camo police rifle
+
+        Item("Firearm_PistolAGenSpecial"); // golden german pistol
+        Item("Firearm_PistolBGenSpecial"); // golden american pistol
+        Item("Firearm_PistolAGenSandPlastic"); // composite german pistol
+        Item("Firearm_PistolAGenOlivePlastic"); // composite german pistol
+
 	}
 	ItemSet("Firearms_Level_25")				//ItemID, Weight. Default WEIGHT is 1.
     {
-		Item("ZZZZZ_Firearm_SubmachineASteampunk");
-		Item("ZZZZZ_Firearm_ShotgunCGenSteampunk");
-		Item("Firearm_PistolAGenSandPlastic");
-		Item("Firearm_PistolAGenOlivePlastic");
-		Item("Firearm_PistolBGenSandPlastic");
-		Item("Firearm_PistolBGenOlivePlastic");
-		Item("Firearm_RifleAGenSandPlastic");
-        Item("Firearm_RifleAGenOlivePlastic");
-		Item("Firearm_RifleBGenOlivePlastic");
-		Item("Firearm_RifleBGenSandPlastic");
-        Item("Firearm_ShotgunAGenPlastic");	
+		
+        Item("Firearm_ShotgunAGenSpecial"); // golden double barrel shotgun
+        Item("ZZZZZ_Firearm_ShotgunCGenSteampunk"); // engraved shotgun
+        Item("ZZZZZ_Firearm_ShotgunBGenSpecial"); // golden hunting shotgun
+        Item("ZZZZZ_Firearm_ShotgunCGenColor_A"); // spraypaint automatic shotgun
+        Item("ZZZZZ_Firearm_ShotgunCGenOlive"); // camo automatic shotgun
+        Item("ZZZZZ_Firearm_ShotgunCGenSand"); // desert automatic shotgun
+        Item("ZZZZZ_Firearm_ShotgunCGenAircraft"); // navy automatic shotgun
+
+        Item("ZZZZZ_Firearm_SubmachineASteampunk"); // engraved barrel smg
+        Item("ZZZZZ_Firearm_SubmachineASpecial"); // golden barrel smg
+        Item("ZZZZZ_Firearm_SubmachineBSpecial"); // golden gnat smg
+        Item("ZZZZZ_Firearm_SubmachineAColor_A"); // spray paint smg skin A
+        Item("ZZZZZ_Firearm_SubmachineAColor_B"); // spray paint smg skin B
+        Item("ZZZZZ_Firearm_SubmachineAColor_C"); // spray paint smg skin C
+        Item("ZZZZZ_Firearm_SubmachineAColor_D"); // spray paint smg skin D
+        
 	}    	
 
 	ItemSet("Firearms_Level_10_Following")				//ItemID, Weight. Default WEIGHT is 1.
@@ -897,16 +1043,10 @@ sub main()
 	
 	ItemSet("SalesPromotion_Bolter")				//ItemID, Weight. Default WEIGHT is 1.
     {
-		
-		Item("Craft_UnderwaterAlgae");
-		
-		Item("Craft_Lichen");
-		Item("Craft_ToxicPlant");
-		
-		
-		
-		Item("Craft_Shroom");					
-					
+		Item("Craft_Electronics");
+        Item("ZZZZ3_Component_Synthetic");
+		Item("Craft_Shroom");
+        				
 		Item("Craft_PrimeTissue");
 	}
 	
@@ -1119,19 +1259,19 @@ sub main()
     }
 	ItemSet("Pistol_Ammo")
     {
-		Item("Ammo_PistolSmall");
+		Item("Ammo_PistolBig");
  	}
 	ItemSet("Rifle_Ammo")
     {
-		Item("Ammo_RifleSmall");
+		Item("Ammo_RifleBig");
  	}
 	ItemSet("Shotgun_Ammo")
     {
-		Item("Ammo_ShotgunSmall");
+		Item("Ammo_ShotgunBig");
  	}
 	ItemSet("SMG_Ammo")
     {
-		Item("ZZZZZ_Ammo_SMG_Small");
+		Item("ZZZZZ_Ammo_SMG_Big");
  	}
 	
 	/////////////////////////////////////////////////////////////USED FOR COMPANION APP
@@ -1167,8 +1307,6 @@ sub main()
  	}
 	ItemSet("Craft_Electronics")
     {
-        Item("Craft_Batteries");
-        Item("Craft_PowerCable");
 		Item("Craft_Electronics");
  	}
 	ItemSet("Craft_Gauze")
@@ -2498,6 +2636,44 @@ ItemSet("Melee_Level_12_Unique")
     //------------------------------------------
     //-----LEGENDARY WEAPONS
     //------------------------------------------
+
+    ItemSet("Melee_Legendary"){ // picked out coolest 1 handed legendary weapons to drop using dev tools
+
+        Item("Melee_ScytheALegendary1"); // todo pick out coolest scythe skins to keep
+        Item("Melee_ScytheALegendary2"); // todo pick out coolest scythe skins to keep
+        Item("Melee_ScytheALegendary3"); // todo pick out coolest scythe skins to keep
+        Item("Melee_ScytheALegendary4"); // todo pick out coolest scythe skins to keep
+        Item("Melee_ScytheALegendary5"); // todo pick out coolest scythe skins to keep
+
+        Item("Melee_HandsawALegendary3"); // white blue swirls handsaw VERIFY
+        Item("Melee_HandsawALegendary4");  // red blood handsaw VERIFY
+        Item("Melee_HandsawALegendary5"); // golden triangles handsaw
+
+        Item("Melee_MacheteALegendary3"); // todo pick out red tribal and gold machetes to keep
+        Item("Melee_MacheteALegendary4"); // todo pick out red tribal and gold machetes to keep
+        Item("Melee_MacheteALegendary5"); // todo pick out red tribal and gold machetes to keep
+        Item("Melee_MacheteALegendary6"); // todo pick out red tribal and gold machetes to keep
+        Item("ZZZZZ_MacheteKorek2"); // korek 2.0 machete with glowing neon design
+
+        Item("Melee_CrowbarALegendary1"); // silver crowbar with yellow caution stripes
+        Item("Melee_CrowbarALegendary3"); // gray crowbar with yellow tribal marks
+
+        
+    }
+    ItemSet("Melee_Legendary_2H"){ // picked out coolest 2 handed legendary weapons to drop using dev tools
+
+        Item("Melee_AxeBigALegendary5"); // fireman axe with red dragon
+        Item("Melee_AxeBigDLegendary2"); // todo pick out blue, light blue camo axe and red orange camo hewing axe
+        Item("Melee_AxeBigDLegendary3"); // todo pick out blue, light blue camo axe and red orange camo hewing axe
+        Item("Melee_AxeBigDLegendary4"); // todo pick out blue, light blue camo axe and red orange camo hewing axe
+        Item("Melee_AxeBigDLegendary5"); // todo pick out blue, light blue camo axe and red orange camo hewing axe
+        Item("Melee_AxeBigDLegendary6"); // hewing axe with green tribal pattern VERIFY
+        Item("Melee_AxeBigDLegendary7"); // hewing axe with fancy engravings VERIFY
+
+        Item("Melee_PickAxeALegendary3"); // pickaxe with orange yellow fire design VERIFY
+        Item("Melee_PickAxeALegendary4"); // pickaxe with golden fancy engravings VERIFY
+
+    }
 
     ItemSet("Melee_Legendary_Tier_1")
     {

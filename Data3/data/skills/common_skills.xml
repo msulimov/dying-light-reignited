@@ -289,7 +289,7 @@
 	</skill>
 	
 	<skill id="runningprof2" cat="runner" tier="13" max_level="1" desc_params="freerunning_mastery;NODE;P;M:runningprof2" skill_points="1" skill_points_type="Runner">
-		<level_req  type="Runner" value="12"/>
+		<level_req  type="Runner" value="16"/>
 		<effect id="MaxFitness" change="0.75"/>
 		<effect id="NaturalMovementDevelopmentLevel" change="1"/>
 		<effect id="RunnerXPClimbShimmyUp" change="5.0"/>

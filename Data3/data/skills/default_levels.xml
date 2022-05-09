@@ -836,28 +836,28 @@
 
 <!-- PLAYER EXPERIENCE FIGHTER-->
 <level id="1"  type="Fighter"><prop n="ExpToNextLevelFighter" v="25000"/></level>
-<level id="2"  type="Fighter"><prop n="ExpToNextLevelFighter" v="60000"/></level>
-<level id="3"  type="Fighter"><prop n="ExpToNextLevelFighter" v="100000"/></level>
-<level id="4"  type="Fighter"><prop n="ExpToNextLevelFighter" v="140000"/></level>
-<level id="5"  type="Fighter"><prop n="ExpToNextLevelFighter" v="180000"/></level>
-<level id="6"  type="Fighter"><prop n="ExpToNextLevelFighter" v="200000"/></level>
-<level id="7"  type="Fighter"><prop n="ExpToNextLevelFighter" v="240000"/></level>
-<level id="8"  type="Fighter"><prop n="ExpToNextLevelFighter" v="280000"/></level>
-<level id="9"  type="Fighter"><prop n="ExpToNextLevelFighter" v="300000"/></level>
-<level id="10" type="Fighter"><prop n="ExpToNextLevelFighter" v="350000"/></level>
-<level id="11" type="Fighter"><prop n="ExpToNextLevelFighter" v="400000"/></level>
-<level id="12" type="Fighter"><prop n="ExpToNextLevelFighter" v="420000"/></level>
-<level id="13" type="Fighter"><prop n="ExpToNextLevelFighter" v="440000"/></level>
-<level id="14" type="Fighter"><prop n="ExpToNextLevelFighter" v="460000"/></level>
-<level id="15" type="Fighter"><prop n="ExpToNextLevelFighter" v="480000"/></level>
-<level id="16" type="Fighter"><prop n="ExpToNextLevelFighter" v="500000"/></level>
-<level id="17" type="Fighter"><prop n="ExpToNextLevelFighter" v="520000"/></level>
-<level id="18" type="Fighter"><prop n="ExpToNextLevelFighter" v="540000"/></level>
-<level id="19" type="Fighter"><prop n="ExpToNextLevelFighter" v="560000"/></level>
-<level id="20" type="Fighter"><prop n="ExpToNextLevelFighter" v="580000"/></level>
-<level id="21" type="Fighter"><prop n="ExpToNextLevelFighter" v="600000"/></level>
-<level id="22" type="Fighter"><prop n="ExpToNextLevelFighter" v="650000"/></level>
-<level id="23" type="Fighter"><prop n="ExpToNextLevelFighter" v="700000"/></level>
+<level id="2"  type="Fighter"><prop n="ExpToNextLevelFighter" v="50000"/></level>
+<level id="3"  type="Fighter"><prop n="ExpToNextLevelFighter" v="60000"/></level>
+<level id="4"  type="Fighter"><prop n="ExpToNextLevelFighter" v="70000"/></level>
+<level id="5"  type="Fighter"><prop n="ExpToNextLevelFighter" v="75000"/></level>
+<level id="6"  type="Fighter"><prop n="ExpToNextLevelFighter" v="80000"/></level>
+<level id="7"  type="Fighter"><prop n="ExpToNextLevelFighter" v="95000"/></level>
+<level id="8"  type="Fighter"><prop n="ExpToNextLevelFighter" v="100000"/></level>
+<level id="9"  type="Fighter"><prop n="ExpToNextLevelFighter" v="105000"/></level>
+<level id="10" type="Fighter"><prop n="ExpToNextLevelFighter" v="110000"/></level>
+<level id="11" type="Fighter"><prop n="ExpToNextLevelFighter" v="115000"/></level>
+<level id="12" type="Fighter"><prop n="ExpToNextLevelFighter" v="120000"/></level>
+<level id="13" type="Fighter"><prop n="ExpToNextLevelFighter" v="125000"/></level>
+<level id="14" type="Fighter"><prop n="ExpToNextLevelFighter" v="130000"/></level>
+<level id="15" type="Fighter"><prop n="ExpToNextLevelFighter" v="135000"/></level>
+<level id="16" type="Fighter"><prop n="ExpToNextLevelFighter" v="140000"/></level>
+<level id="17" type="Fighter"><prop n="ExpToNextLevelFighter" v="150000"/></level>
+<level id="18" type="Fighter"><prop n="ExpToNextLevelFighter" v="160000"/></level>
+<level id="19" type="Fighter"><prop n="ExpToNextLevelFighter" v="200000"/></level>
+<level id="20" type="Fighter"><prop n="ExpToNextLevelFighter" v="210000"/></level>
+<level id="21" type="Fighter"><prop n="ExpToNextLevelFighter" v="230000"/></level>
+<level id="22" type="Fighter"><prop n="ExpToNextLevelFighter" v="260000"/></level>
+<level id="23" type="Fighter"><prop n="ExpToNextLevelFighter" v="300000"/></level>
 
 <!-- SKILL POINTS RUNNER-->
 <level id="1" type="Runner"><prop n="SkillPointsRunner" v="0"/></level>
@@ -898,13 +898,13 @@
 <level id="9" type="Runner"><prop n="ExpToNextLevelRunner"  v="120000"/></level>
 <level id="10" type="Runner"><prop n="ExpToNextLevelRunner" v="130000"/></level>
 <level id="11" type="Runner"><prop n="ExpToNextLevelRunner" v="140000"/></level>
-<level id="12" type="Runner"><prop n="ExpToNextLevelRunner" v="150000"/></level>
-<level id="13" type="Runner"><prop n="ExpToNextLevelRunner" v="400000"/></level>
-<level id="14" type="Runner"><prop n="ExpToNextLevelRunner" v="450000"/></level>
-<level id="15" type="Runner"><prop n="ExpToNextLevelRunner" v="500000"/></level>
-<level id="16" type="Runner"><prop n="ExpToNextLevelRunner" v="525000"/></level>
-<level id="17" type="Runner"><prop n="ExpToNextLevelRunner" v="550000"/></level>
-<level id="18" type="Runner"><prop n="ExpToNextLevelRunner" v="575000"/></level>
+<level id="12" type="Runner"><prop n="ExpToNextLevelRunner" v="145000"/></level>
+<level id="13" type="Runner"><prop n="ExpToNextLevelRunner" v="150000"/></level>
+<level id="14" type="Runner"><prop n="ExpToNextLevelRunner" v="160000"/></level>
+<level id="15" type="Runner"><prop n="ExpToNextLevelRunner" v="170000"/></level>
+<level id="16" type="Runner"><prop n="ExpToNextLevelRunner" v="450000"/></level> <!--Have runningprof2 which gives extra xp-->
+<level id="17" type="Runner"><prop n="ExpToNextLevelRunner" v="500000"/></level>
+<level id="18" type="Runner"><prop n="ExpToNextLevelRunner" v="550000"/></level>
 <level id="19" type="Runner"><prop n="ExpToNextLevelRunner" v="600000"/></level>
 <level id="20" type="Runner"><prop n="ExpToNextLevelRunner" v="620000"/></level>
 <level id="21" type="Runner"><prop n="ExpToNextLevelRunner" v="640000"/></level>
@@ -960,10 +960,10 @@
 <level id="18" type="Status"><prop n="ExpToNextLevelStatus" v="1400000"/></level>
 <level id="19" type="Status"><prop n="ExpToNextLevelStatus" v="1500000"/></level> 
 <level id="20" type="Status"><prop n="ExpToNextLevelStatus" v="1600000"/></level> 
-<level id="21" type="Status"><prop n="ExpToNextLevelStatus" v="1700000"/></level> <!-- harder for grappling hook! -->
+<level id="21" type="Status"><prop n="ExpToNextLevelStatus" v="2500000"/></level> <!-- harder for grappling hook! -->
 <level id="22" type="Status"><prop n="ExpToNextLevelStatus" v="1800000"/></level>
 <level id="23" type="Status"><prop n="ExpToNextLevelStatus" v="1900000"/></level>
-<level id="24" type="Status"><prop n="ExpToNextLevelStatus" v="2000000"/></level>
+<level id="24" type="Status"><prop n="ExpToNextLevelStatus" v="3000000"/></level>
 <!-- PLAYER EXPERIENCE STATUS END-->
 
 <!-- PLAYER EXPERIENCE REPUTATION-->

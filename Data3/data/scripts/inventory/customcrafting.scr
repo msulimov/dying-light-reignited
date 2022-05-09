@@ -223,9 +223,9 @@ sub customRecipes(){
 		RequiredItem("Craft_MetalScrap", 8);
         RequiredItem("Craft_String", 5);
         RequiredItem("Craft_Insecticide", 6);
-        RequiredItem("Craft_Electronics", 4);
-        RequiredItem("Craft_Batteries", 3);
-		RequiredItem("Craft_PowerCable", 3);
+        RequiredItem("Craft_Electronics", 6);
+        RequiredItem("Craft_Batteries", 5);
+		RequiredItem("Craft_PowerCable", 5);
 		RequiredItem("Craft_Alcohol", 15);
 		
         Color(Color_Orange);
@@ -274,9 +274,9 @@ sub customRecipes(){
 	    RequiredItem("Craft_MetalScrap", 8);
 		RequiredItem("Craft_DuctTape", 8);
 		RequiredItem("ZZZZ3_Component_Rubber", 6);
-        RequiredItem("Craft_Electronics", 4);
-        RequiredItem("Craft_Batteries", 4);
-		RequiredItem("Craft_PowerCable", 3);
+        RequiredItem("Craft_Electronics", 5);
+        RequiredItem("Craft_Batteries", 5);
+		RequiredItem("Craft_PowerCable", 4);
 		RequiredItem("ZZZZ3_Component_Wire", 8);
 	   
         Color(Color_Blue);

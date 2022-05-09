@@ -325,7 +325,7 @@ sub main()
             Effect(CraftingEffect_DecreasedStaminaUsage, 3);
         }
         Visibility(true);
-        Price(3000);
+        Price(5000);
         HudIcon("component_misc");
         Mesh("upgrade_mode_box_a.msh");
         Skin("SPECJAL");
@@ -487,7 +487,7 @@ sub main()
             Effect(CraftingEffect_DecreasedStaminaUsage, 3);
         }
         Visibility(true);
-        Price(3000);
+        Price(5000);
         HudIcon("component_misc");
         Mesh("upgrade_mode_box_a.msh");
         Skin("SPECJAL");
@@ -612,7 +612,7 @@ sub main()
     {
         ItemType(ItemType_CraftComponent);
         Visibility(true);
-        Price(750);
+        Price(300);
         HudIcon("component_electronic");
         Mesh("loot_batteries_a.msh");
         Skin("default");
@@ -696,7 +696,7 @@ sub main()
     {
         ItemType(ItemType_CraftComponent);
         Visibility(true);
-        Price(900);
+        Price(300);
         HudIcon("component_electronic");
         Mesh("loot_ok_power_cable_a.msh");
         Skin("default");
@@ -710,7 +710,7 @@ sub main()
     {
         ItemType(ItemType_CraftComponent);
         Visibility(true);
-        Price(1500);
+        Price(800);
         HudIcon("component_electronic");
         Mesh("loot_ok_phone_electronic_parts_a.msh");
         Skin("default");
@@ -8264,7 +8264,7 @@ sub main()
         BulletId("Bullet_Pistol");
         AmmoCount(5);
         MaxStackCount(99);
-        Price(250);
+        Price(125);
         Mesh("loot_ok_ammo_short.msh");
         HudIcon("ammo_pistol");
         Skin("Default");
@@ -8280,7 +8280,7 @@ sub main()
         BulletId("Bullet_Pistol");
         AmmoCount(10);
         MaxStackCount(99);
-        Price(500);
+        Price(250);
         Mesh("loot_ok_ammo_short.msh");
         HudIcon("ammo_pistol");
         Skin("Default");
@@ -8296,7 +8296,7 @@ sub main()
         BulletId("Bullet_Rifle");
         AmmoCount(10);
         MaxStackCount(99);
-        Price(400);
+        Price(200);
         Mesh("loot_ok_ammo_long.msh");
         HudIcon("ammo_rifle");
         Skin("Default");
@@ -8312,7 +8312,7 @@ sub main()
         BulletId("Bullet_Rifle");
         AmmoCount(20);
         MaxStackCount(99);
-        Price(800);
+        Price(400);
         Mesh("loot_ok_ammo_long.msh");
         HudIcon("ammo_rifle");
         Skin("Default");
@@ -8328,7 +8328,7 @@ sub main()
         BulletId("Bullet_Shotgun");
         AmmoCount(5);
         MaxStackCount(99);
-        Price(500);
+        Price(250);
         Mesh("ammo_gauge.msh");
         HudIcon("ammo_shotgun");
         Skin("Default");
@@ -8344,7 +8344,7 @@ sub main()
         BulletId("Bullet_Shotgun");
         AmmoCount(10);
         MaxStackCount(99);
-        Price(1000);
+        Price(500);
         Mesh("ammo_gauge.msh");
         HudIcon("ammo_shotgun");
         Skin("Default");
@@ -9182,10 +9182,10 @@ sub main()
         LightBeamColor([32.0,32.0,32.0]);
         LightZombieVisionColor([47.0,47.0,47.0]);
         LightBeamZombieVisionColor([192.0,72.0,0.0]);
-        LightFullIntensity(1.3);
-        LightDimIntensity(0.4);
-        LowBatteryLevel(0.25);
-        DepletionTime(120.0);
+        LightFullIntensity(1.5);
+        LightDimIntensity(0.3);
+        LowBatteryLevel(0.15);
+        DepletionTime(600.0);
         RegenerationTime(15.0);
         EnergyConsumeOnStart(0.0);
         FullLightAngle(30.0);
