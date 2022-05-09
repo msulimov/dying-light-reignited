@@ -40,6 +40,17 @@ sub main()
         Item("Craft_Upgrade_DamL2DurL2"); // Burn Orange
         Item("Craft_Upgrade_DamL2"); // Impact Platinum
     }
+    ItemSet("ItemOfTheDayNight")
+    {
+        Item("Craft_Upgrade_DurL2BalL2"); // Freeze White
+        Item("Craft_Upgrade_DurL2"); // Poison Green
+        Item("Craft_Upgrade_DamL2BalL2"); // Shock Blue
+        Item("Craft_Upgrade_BalL2"); // Bleed Violet
+        Item("Craft_Upgrade_DamL2DurL2"); // Burn Orange
+        Item("Craft_Upgrade_DamL2"); // Impact Platinum
+        Item("Craft_Upgrade_DamL2DurL2BalL2"); // king
+        Item("Craft_Upgrade_DamL2DurL2BalL2_Clicker"); // Clicker
+    }
     ItemSet("Crafting_Sale")
     {
         Item("Craft_MetalScrap");
@@ -1259,15 +1270,15 @@ sub main()
     }
 	ItemSet("Pistol_Ammo")
     {
-		Item("Ammo_PistolBig");
+		Item("Ammo_PistolSmall");
  	}
 	ItemSet("Rifle_Ammo")
     {
-		Item("Ammo_RifleBig");
+		Item("Ammo_RifleSmall");
  	}
 	ItemSet("Shotgun_Ammo")
     {
-		Item("Ammo_ShotgunBig");
+		Item("Ammo_ShotgunSmall");
  	}
 	ItemSet("SMG_Ammo")
     {

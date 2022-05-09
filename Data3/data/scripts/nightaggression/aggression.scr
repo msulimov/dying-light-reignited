@@ -714,7 +714,7 @@ sub aggro_sounds()
     SoundType("PLAYER_SPRINT")
     {
         MaxLifeTime(3.0);
-        Radius(10.0);
+        Radius(5.0);
         Power(10.0);
         MaxPower(50.0);
 		RadiusAdd(3.0);

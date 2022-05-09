@@ -1873,8 +1873,8 @@ sub Loot()
     {
         ColorSet(ColorSet_cs_crafting);
 		use Empty(weight = 2.0);
-        use Healing_Items(weight = 2.0);
-		use Medkits(weight = 1.0);
+        use Healing_Items(weight = 0.5);
+		use Medkits(weight = 2.0);
     }
 
     LootedObject("OldTownJewelsBox")

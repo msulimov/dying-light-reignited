@@ -1,7 +1,7 @@
 
     PresetDef("Volatile_Outside")
     {
-        Difficult(30)
+        Difficult(15)
         AIPreset("Volatile")
         SpawnCondition("nav_mesh, -1;__any__, 1;t_INIT, -1")
         DisallowedMaps("Wasteland")
@@ -14,7 +14,7 @@
 
     PresetDef("Volatile_OutsideIncrIntensity")
     {
-        Difficult(666)
+        Difficult(15)
         AIPreset("Volatile")
         SpawnCondition("t_INC_VOLATILE, 1")
         DisallowedMaps("Wasteland")
@@ -27,7 +27,7 @@
 
     PresetDef("Volatile")
     {
-        Difficult(666)
+        Difficult(15)
         AIPreset("Volatile")
         SpawnCondition("nav_mesh, -1;__any__, 1;t_INIT, -1")
         DisallowedMaps("Wasteland")
@@ -42,7 +42,7 @@
 
     PresetDef("Volatile_Nav")
     {
-        Difficult(40)
+        Difficult(15)
         AIPreset("Volatile")
         SpawnCondition("nav_mesh, 1")
         MinDistBtwZombies(20)
@@ -55,7 +55,7 @@
 
     PresetDef("Volatile_Pit")
     {
-        Difficult(666)
+        Difficult(15)
         AIPreset("Volatile")
         SpawnCondition("t_INIT, 1;z_INFECTED, 1")
         MinDistBtwZombies(20)
@@ -70,7 +70,7 @@
 
     PresetDef("Volatile_Hard")
     {
-        Difficult(40)
+        Difficult(15)
 		AIPreset("Volatile_Super")
 		MinStatusLevel(12)
 		
@@ -86,7 +86,7 @@
 
 	PresetDef("Volatile_Eating_Corpse")
     {
-        Difficult(40)
+        Difficult(15)
         AIPreset("Volatile")
         SpawnCondition("nav_mesh, -1;__any__, 1;t_INIT, -1")
         DisallowedMaps("Stadium")
@@ -119,7 +119,7 @@
 
     PresetDef("Volatile_Scream")
     {
-        Difficult(666)
+        Difficult(15)
         AIPreset("Volatile")
         SpawnCondition("nav_mesh, 1")
         ForceTargetType(2)
@@ -131,7 +131,7 @@
 
     PresetDef("Volatile_Patrol")
     {
-        Difficult(666)
+        Difficult(15)
         AIPreset("Volatile")
         SpawnCondition("__any__, 1;nav_mesh, -1;t_INIT, -1;p_ROOF, -1;p_INTERIOR, -1")
         MinDistBtwZombies(20)
@@ -144,7 +144,7 @@
 
     PresetDef("Volatile_Patrol_Super")
     {
-        Difficult(666)
+        Difficult(15)
         AIPreset("Volatile_Super")
 		MinStatusLevel(15)
         SpawnCondition("__any__, 1;nav_mesh, -1;t_INIT, -1;p_ROOF, -1;p_INTERIOR, -1")
@@ -159,7 +159,7 @@
 	
 	PresetDef("Volatile_Patrol_OT")
     {
-        Difficult(666)
+        Difficult(15)
         AIPreset("Volatile")
 		AIPreset("Volatile_Super")
         SpawnCondition("__any__, 1;nav_mesh, -1;t_INIT, -1;p_ROOF, -1;p_INTERIOR, -1")
@@ -173,7 +173,7 @@
 
 	PresetDef("Volatile_Patrol_Easy")
     {
-        Difficult(666)
+        Difficult(15)
         AIPreset("Volatile")
         SpawnCondition("__any__, 1;nav_mesh, -1;t_INIT, -1;p_ROOF, -1;p_INTERIOR, -1")
         MinDistBtwZombies(20)
@@ -186,7 +186,7 @@
 
     PresetDef("Volatile_PrimeGuard")
     {
-        Difficult(40)
+        Difficult(15)
         AIPreset("Volatile")
 		UseCondition("Night;PlayerZombie_NotExist")
         SpawnCondition("z_VOLATILE, 1;t_INIT, -1;")
@@ -268,7 +268,7 @@
 
     PresetDef("Night_Suicider_Bomber")
     {
-        Difficult(25)
+        Difficult(15)
         AIPreset("RunningBomber")
         SpawnCondition("nav_mesh, -1;__any__, 1;t_INIT, -1;p_ROOF, -1")
         DisallowedMaps("Wasteland")

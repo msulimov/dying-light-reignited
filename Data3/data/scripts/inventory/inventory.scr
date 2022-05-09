@@ -8262,7 +8262,7 @@ sub main()
         ItemType(ItemType_Ammo);
         Visibility(true);
         BulletId("Bullet_Pistol");
-        AmmoCount(5);
+        AmmoCount(15);
         MaxStackCount(99);
         Price(125);
         Mesh("loot_ok_ammo_short.msh");
@@ -8278,7 +8278,7 @@ sub main()
         ItemType(ItemType_Ammo);
         Visibility(true);
         BulletId("Bullet_Pistol");
-        AmmoCount(10);
+        AmmoCount(15);
         MaxStackCount(99);
         Price(250);
         Mesh("loot_ok_ammo_short.msh");
@@ -8294,7 +8294,7 @@ sub main()
         ItemType(ItemType_Ammo);
         Visibility(true);
         BulletId("Bullet_Rifle");
-        AmmoCount(10);
+        AmmoCount(20);
         MaxStackCount(99);
         Price(200);
         Mesh("loot_ok_ammo_long.msh");
@@ -8326,7 +8326,7 @@ sub main()
         ItemType(ItemType_Ammo);
         Visibility(true);
         BulletId("Bullet_Shotgun");
-        AmmoCount(5);
+        AmmoCount(10);
         MaxStackCount(99);
         Price(250);
         Mesh("ammo_gauge.msh");

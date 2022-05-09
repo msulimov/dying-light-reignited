@@ -204,7 +204,7 @@ sub main()
         Color(Color_Orange, 0);
     }
 	
-    ColorSet("cs_WanderingMerchant")
+    ColorSet("cs_WanderingMerchant") // night wandering merchant's weapons
     {
         Color(Color_White,  0);
         Color(Color_Green,  0);
@@ -214,12 +214,12 @@ sub main()
         Color(Color_Platinum, 1);
     }
 	
-	ColorSet("cs_WanderingMerchant_Hard")
+	ColorSet("cs_WanderingMerchant_Hard") // item of the day weapon elemental upgrades and king
     {
-        Color(Color_White,  0);
-        Color(Color_Green,  0);
-        Color(Color_Blue,   0);
-        Color(Color_Violet, 0);
+        Color(Color_White,  1);
+        Color(Color_Green,  1);
+        Color(Color_Blue,   1);
+        Color(Color_Violet, 1);
         Color(Color_Orange, 3);
         Color(Color_Platinum, 1);
     }

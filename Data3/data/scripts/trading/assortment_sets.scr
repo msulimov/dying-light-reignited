@@ -24,18 +24,12 @@ sub SalesPromotionNight(){
     }
 }
 sub ItemOfTheDayNight(){
-    Set("Upgrades_Premium", "encounter_shop_crafting_materials", 1, 1) 
+    Set("ItemOfTheDayNight", "cs_WanderingMerchant_Hard", 1, 1) 
     {
                 PriceMod(0.6);
                 ItemOfTheDay();
                 Limited();
                 Probability(1.0);
-    }
-    Set("Upgrades_Orange",                              "orange_only",              2, 4)            
-    {
-        PriceMod(0.8);
-        Limited();
-        MinStatusLevel(1);
     }
 }
 
@@ -1200,30 +1194,30 @@ sub Ammo(){
         MinStatusLevel(9);
         Cycle("Hour", 12);
 		Limited(3);
-		ExcludeInDifficultyMode("Hard");
+		//ExcludeInDifficultyMode("Hard");
     }
 
     Set("Rifle_Ammo",              "whites_only",   2, 3)
     {
-        MinStatusLevel(10);
+        MinStatusLevel(9);
 		Cycle("Hour", 12);
         Limited(3);
-		ExcludeInDifficultyMode("Hard");
+		//ExcludeInDifficultyMode("Hard");
     }
 	
 	Set("Shotgun_Ammo",              "whites_only",   2, 3)
     {
-        MinStatusLevel(10);
+        MinStatusLevel(9);
 		Cycle("Hour", 12);
         Limited(3);
-		ExcludeInDifficultyMode("Hard");
+		//ExcludeInDifficultyMode("Hard");
     }
 	Set("SMG_Ammo",              "whites_only",   2, 3)
     {
-        MinStatusLevel(10);
+        MinStatusLevel(9);
 		Cycle("Hour", 12);
         Limited(3);
-		ExcludeInDifficultyMode("Hard");
+		//ExcludeInDifficultyMode("Hard");
     }
 }
 sub AmmoFollowing(){

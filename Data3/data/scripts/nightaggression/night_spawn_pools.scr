@@ -55,7 +55,7 @@
     {
         BalancedNumberOfZombies(0)
         Type("night_noise")
-		Preset("Night_Walker, 80;Night_Walker_Init, 30;Night_Walker_Nav, 10;Night_Walker_Special_Tranformation, 40;")
+		Preset("Night_Walker, 80;Night_Walker_Init, 30;Night_Walker_Nav, 10;")
     }
 
 
