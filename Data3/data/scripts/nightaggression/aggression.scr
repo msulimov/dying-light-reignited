@@ -217,27 +217,27 @@ sub main()
         Event("Evn_AISpotting") //This way with point muls, full value is achieved only on < 10m
         {
             ZombiePlayerSpot();
+            BelowDistance(10);
+            PointMul(0.5);
+            MaxSpotCount(3);
+            LocalPlayerSpotted();
+        }
+        
+        Event("Evn_AISpotting")
+        {
+            ZombiePlayerSpot();
+            BelowDistance(15);
+            PointMul(0.5);
+            MaxSpotCount(3);
+            LocalPlayerSpotted();
+        }
+        
+        Event("Evn_AISpotting")
+        {
+            ZombiePlayerSpot();
             BelowDistance(20);
             PointMul(0.5);
-            MaxSpotCount(5);
-            LocalPlayerSpotted();
-        }
-        
-        Event("Evn_AISpotting")
-        {
-            ZombiePlayerSpot();
-            BelowDistance(30);
-            PointMul(0.5);
-            MaxSpotCount(4);
-            LocalPlayerSpotted();
-        }
-        
-        Event("Evn_AISpotting")
-        {
-            ZombiePlayerSpot();
-            BelowDistance(100);
-            PointMul(0.2);
-            MaxSpotCount(4);
+            MaxSpotCount(3);
             LocalPlayerSpotted();
         }
     }
@@ -344,7 +344,7 @@ sub main()
     Stat("Aggression")
     {
         Name("PlayerDamaged");            
-        Points(0.1);        
+        Points(0.05);        
         MinAggroLevel(1);
         WhileBtzNotActive();
                 
@@ -360,7 +360,7 @@ sub main()
         Name("AiDamaging");    
         Points(0.3);
         MinAggroLevel(1);
-		MaxAggroLevel(2);
+		MaxAggroLevel(1);
         WhileBtzNotActive();
 		
         Event("Evn_GiveDamage")
@@ -376,7 +376,7 @@ sub main()
     Stat("Aggression")
     {
         Name("PlayerBitten");            
-        Points(0.5);        
+        Points(0.05);        
         WhileBtzNotActive();
         MinAggroLevel(1);
                 
@@ -410,9 +410,9 @@ sub main()
     {
         Name("RageMeterIncrease");    
         UseStatDT();
-        PointsPerSecond(0.3);
+        PointsPerSecond(0.1);
         MinAggroLevel(1);
-        MaxAggroLevel(4);
+        MaxAggroLevel(2);
         MinAggroTime(25);
         WhileBtzNotActive();
         
@@ -561,7 +561,7 @@ sub aggro_sounds()
         MaxPower(1000.0);
         ShownOnRadar();
 		TransformRadius(30.0);
-        MaxTransformedZombies(12);
+        MaxTransformedZombies(6);
         ForceInvestigating();
     }
 
@@ -574,7 +574,7 @@ sub aggro_sounds()
         MaxPower(400.0);
         ShownOnRadar();
 		TransformRadius(22.0);
-        MaxTransformedZombies(7);
+        MaxTransformedZombies(3);
         ForceInvestigating();
     }
 	
@@ -588,7 +588,7 @@ sub aggro_sounds()
         MaxPower(400.0);
         ShownOnRadar();
 		TransformRadius(22.0);
-        MaxTransformedZombies(7);
+        MaxTransformedZombies(2);
         ForceInvestigating();
     }
 	
@@ -602,7 +602,7 @@ sub aggro_sounds()
         MaxPower(400.0);
         ShownOnRadar();
 		TransformRadius(15.0);
-        MaxTransformedZombies(9);
+        MaxTransformedZombies(4);
         ForceInvestigating();
     }
 
@@ -625,7 +625,7 @@ sub aggro_sounds()
         MaxPower(900.0);
         ShownOnRadar();
         TransformRadius(20.0);
-        MaxTransformedZombies(8);
+        MaxTransformedZombies(4);
     }
     
     SoundType("ENCOUNTER")
@@ -636,7 +636,7 @@ sub aggro_sounds()
         MaxPower(1000.0);
         ShownOnRadar();
 		TransformRadius(13.0);
-        MaxTransformedZombies(6);
+        MaxTransformedZombies(3);
 		ForceInvestigating();			   
     }
     
@@ -657,7 +657,7 @@ sub aggro_sounds()
         MaxPower(80.0);
         ShownOnRadar();
 		TransformRadius(14.0);
-        MaxTransformedZombies(4);			 
+        MaxTransformedZombies(2);			 
 		ForceInvestigating();
     }
     
@@ -669,7 +669,7 @@ sub aggro_sounds()
         MaxPower(220.0);
         ShownOnRadar();
 		TransformRadius(30.0);
-        MaxTransformedZombies(6);	
+        MaxTransformedZombies(3);	
         ForceInvestigating();
     }
     
@@ -682,7 +682,7 @@ sub aggro_sounds()
         MaxPower(200.0);
         ShownOnRadar();
         TransformRadius(15.0);
-        MaxTransformedZombies(7);
+        MaxTransformedZombies(3);
 		ForceInvestigating();
     }
     
@@ -693,7 +693,7 @@ sub aggro_sounds()
         Power(80.0);
         MaxPower(90.0);
 		TransformRadius(7.0);
-        MaxTransformedZombies(2);
+        //MaxTransformedZombies(2);
 		ForceInvestigating();
     }
     
@@ -756,7 +756,7 @@ sub aggro_sounds()
         Power(20.0);
         MaxPower(20.0);
 		TransformRadius(50.0);
-        MaxTransformedZombies(18);
+        MaxTransformedZombies(5);
 		ForceInvestigating();
         ShownOnRadar();
     }
@@ -797,7 +797,7 @@ sub aggro_sounds()
         MaxAdd(60.0);
         MaxPower(80.0);
 		TransformRadius(25.0);
-        MaxTransformedZombies(13);
+        MaxTransformedZombies(5);
     }
 	
     //AggroLevel(level, points_to_get_level, min_time_before_level_drops(s) );    

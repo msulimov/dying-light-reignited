@@ -447,7 +447,7 @@ sub extraDLCRecipes(){
 //-----------------------------------------------------------------------
 //-----------------------------------------------------------------------
 
-	Item("Craftplan_Melee_ShortSword_Dao_SHU", CategoryType_Collectable)
+	Item("Craftplan_Melee_ShortSword_Dao_SHU1", CategoryType_Collectable)
     {
         Name("&Craftplan_Melee_ShortSword_Dao_SHU_N&");
         Description('&Craftplan_Melee_ShortSword_Dao_SHU_D&');
@@ -2007,6 +2007,8 @@ sub extraDLCRecipes(){
         RequiredItem("Craft_Batteries", 2);
         RequiredItem("Craft_PowerCable", 3);
 
+        Elemental(Elemental_Bleeding, 3);
+
         Color(Color_Blue);
         CraftedItem("Sword_VanCrane1", 1, 1);
         InheritBaseStats();
@@ -2354,9 +2356,11 @@ sub extraDLCRecipes(){
         Price(6400);
         Mesh("blueprint.msh");
         Skin("default");
-        RequiredItem("Craft_MetalScrap", 10);
-        RequiredItem("Craft_PlasticTube", 7);
-        RequiredItem("Craft_RazorBlade", 5);
+        RequiredItem("Craft_MetalScrap", 8);
+        RequiredItem("Craft_RazorBlade", 6);
+        RequiredItem("Craft_Electronics", 6);
+        RequiredItem("Craft_Batteries", 5);
+        RequiredItem("Craft_PowerCable", 4);
         Color(Color_Blue);
         CraftedItem("Chainsaw1", 1, 1);
         CraftplanType("CarUpgrade");

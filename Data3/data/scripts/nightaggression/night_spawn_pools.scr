@@ -76,8 +76,8 @@
 		Preset("Night_Walker, 30;Night_Walker_Init, 70;")
 		Preset("Defender_Fighter, 10;Melee_Fighter_Rais, 10;Melee_Survivor, 10;") 
 		
-		NoZombiesByPresets("Volatile_Patrol_Easy, 100; Volatile, 100;Volatile_Eating_Corpse, 30;", 2, 2)
-        NoZombiesByPresets("Night_Walker, 30;Night_Walker_Init, 70", 4, 4)							  											  
+		// NoZombiesByPresets("Volatile_Patrol_Easy, 100; Volatile, 100;Volatile_Eating_Corpse, 30;", 2, 2)
+  //       NoZombiesByPresets("Night_Walker, 30;Night_Walker_Init, 70", 1, 1)							  											  
 		MaxNoZombiesInPursuit(60)
     }
 
@@ -153,11 +153,11 @@
         Type("night")
         ConditionNightAggrLvl(0)
 
-        Preset("Volatile_Patrol_OT, 100;Volatile_Eating_Corpse, 40;Volatile_Nav, 30;Volatile_Hard, 20; Volatile, 20;")							  
-		Preset("Night_Walker_Patrol, 100; Night_Walker_Special_Tranformation, 50;") 
-		Preset("Melee_Fighter_With_Pipe, 2;Melee_Fighter_With_Pipe_Init, 2;Defender_Fighter, 4;Melee_Fighter_Rais, 5;Melee_Survivor, 1;") 
+        Preset("Volatile_Patrol_OT, 130;Volatile_Eating_Corpse, 50;Volatile_Nav, 30;Volatile_Hard, 20; Volatile, 20;")							  
+		Preset("Night_Walker_Patrol, 130; Night_Walker_Special_Tranformation, 40;") 
+		Preset("Melee_Fighter_With_Pipe, 2;Melee_Fighter_With_Pipe_Init, 2;Defender_Fighter, 2;Melee_Fighter_Rais, 3;Melee_Survivor, 1;") 
 		
-		NoZombiesByPresets("Night_Walker, 30;Night_Walker_Init, 70;", 3, 3)
+		// NoZombiesByPresets("Night_Walker, 30;", 3, 3)
 		
 		MaxNoZombiesInPursuit(3)		
     }
@@ -258,7 +258,7 @@
 		Preset("Volatile, 100;")
 		Preset("Night_Walker, 30;Night_Walker_Init, 70")
         Preset("Volatile_Patrol_OT, 100;Volatile_Patrol_Super, 100;")
-        NoZombiesByPresets("Night_Walker, 30;Night_Walker_Init, 70", 4, 4)
+        // NoZombiesByPresets("Night_Walker, 30;", 3, 3)
 		Preset("Melee_Fighter_With_Pipe, 5;Melee_Fighter_With_Pipe_Init, 5;") 
 		Preset("Defender_Fighter, 10;") 
 		Preset("Melee_Fighter_Rais, 10;")

@@ -44,9 +44,9 @@ sub Loot()
 		
 		use Valuables_Default(weight = 1.0);
 		
-        use Valuables_Electronics(weight = 0.4);        
-        use Upgrades(weight = 0.6);
-        use Upgrades_Premium(weight = 0.15);
+        use Valuables_Electronics(weight = 0.7);        
+        use Upgrades(weight = 0.7);
+        use Upgrades_Premium(weight = 0.4);
         
     }
 
@@ -127,16 +127,16 @@ sub Loot()
 		use Firecrackers(weight = 2.0);
 		use Consumable_Healing(weight = 4.0);
 
-        use Valuables_Electronics(weight = 0.3);        
-		//use Upgrades(weight = 0.2);
-		//use Upgrades_Premium(weight = 0.05);
+        use Valuables_Electronics(weight = 0.5);        
+		use Upgrades(weight = 0.4);
+		//use Upgrades_Premium(weight = 0.2);
     }
 
     LootedObject(Cont_Med_Box)
     {
         ColorSet(ColorSet_cs_crafting);
         use Empty(weight = 9.0);
-		use Medkits(weight = 1.0);
+		use Medkits(weight = 0.5);
         use Crafting_MedBox(weight = 7.0);
         use QuestItems_Medical(weight = 0.01);
     }
@@ -157,8 +157,8 @@ sub Loot()
         use Valuables_Chest(weight = 1.0);
 
 		use Valuables_Electronics(weight = 0.2);
-		use Upgrades(weight = 0.15);
-		//use Upgrades_Premium(weight = 0.05);
+		use Upgrades(weight = 0.3);
+		//use Upgrades_Premium(weight = 0.1);
     }
 
     LootedObject(Cont_Sedan)
@@ -171,8 +171,8 @@ sub Loot()
         use Valuables_Default(weight = 1.0);
 
         use Valuables_Electronics(weight = 0.4);
-		use Upgrades(weight = 0.2);
-		//use Upgrades_Premium(weight = 0.1);
+		use Upgrades(weight = 0.4);
+		//use Upgrades_Premium(weight = 0.2);
     }
 
     LootedObject("Cont_SedanPolice")
@@ -182,24 +182,23 @@ sub Loot()
 		IgnorePlatinumRestrictions();
         
         use Empty(weight = 8.0);
-        use CashMedium(weight = 1.5);
+        use CashMedium(weight = 0.5);
         use CashBig(weight = 0.5);
-		use Firecrackers(weight = 1.0);
-        use Weapons_Firearms(weight = 0.5);
+		use Ammo(weight = 2.0);
 
         use Healing_Items(weight = 2.5);
         use Valuables_Default(weight = 0.5);
 		use Crafting_Sedan(weight = 4.0);
 
-        use Valuables_Electronics(weight = 0.3);
-        use Upgrades(weight = 0.3);
-        //use Upgrades_Premium(weight = 0.15);
+        use Valuables_Electronics(weight = 0.4);
+        use Upgrades(weight = 0.4);
+        use Upgrades_Premium(weight = 0.2);
     }
 
     LootedObject(Cont_Van)
     {
         ColorSet(ColorSet_Default);
-		use Empty(weight = 3.0);
+		use Empty(weight = 2.0);
         use Crafting_Sedan(weight = 3.0);
     }
 
@@ -239,8 +238,8 @@ sub Loot()
         use Crafting_Chest_Big(weight = 5.0);
 
         use Valuables_Electronics(weight = 0.4);
-        use Upgrades(weight = 0.2);
-        use Upgrades_Premium(weight = 0.05);
+        use Upgrades(weight = 0.4);
+        use Upgrades_Premium(weight = 0.2);
 
         use Valuables_Default(weight = 3.0);
 		use Medkits(weight = 2.0);
@@ -341,9 +340,9 @@ sub Loot()
 		
 		use Valuables_Biter(weight = 0.5);
 
-		use Upgrades(weight = 0.2);
-		use Upgrades_Premium(weight = 0.02);
-		use Valuables_Electronics(weight = 0.2);
+		// use Upgrades(weight = 0.3);
+		// use Upgrades_Premium(weight = 0.1);
+		// use Valuables_Electronics(weight = 0.2);
         
     }
 
@@ -365,9 +364,9 @@ sub Loot()
         
         use Valuables_Biter(weight = 0.25);
 
-        use Upgrades(weight = 0.3);
-        use Upgrades_Premium(weight = 0.03);
-        use Valuables_Electronics(weight = 0.2);
+        // use Upgrades(weight = 0.4);
+        // use Upgrades_Premium(weight = 0.15);
+        // use Valuables_Electronics(weight = 0.2);
         
     }
 
@@ -387,8 +386,8 @@ sub Loot()
         
         use Valuables_Biter(weight = 0);
 
-        use Upgrades(weight = 0.4);
-        use Upgrades_Premium(weight = 0.05);
+        use Upgrades(weight = 0.5);
+        use Upgrades_Premium(weight = 0.2);
         use Valuables_Electronics(weight = 0.25);
     }
 
@@ -505,9 +504,9 @@ sub Loot()
         
         use Consumable_Healing(weight = 0.5);
 
-        use Valuables_Electronics(weight = 1.0);
-        use Upgrades(weight = 0.5);
-        use Upgrades_Premium(weight = 0.1);
+        use Valuables_Electronics(weight = 0.8);
+        use Upgrades(weight = 0.8);
+        use Upgrades_Premium(weight = 0.25);
 
         use Harvesting_Goon(weight = 0.1);
     }
@@ -521,9 +520,9 @@ sub Loot()
         
         use Consumable_Healing(weight = 0.5);
 
-        use Valuables_Electronics(weight = 1.0);
-        use Upgrades(weight = 0.5);
-        use Upgrades_Premium(weight = 0.1);
+        use Valuables_Electronics(weight = 0.8);
+        use Upgrades(weight = 0.8);
+        use Upgrades_Premium(weight = 0.25);
 
         use Harvesting_Goon(weight = 0.1);
     }
@@ -537,9 +536,9 @@ sub Loot()
         
         use Consumable_Healing(weight = 0.5);
 
-        use Valuables_Electronics(weight = 1.0);
-        use Upgrades(weight = 0.5);
-        use Upgrades_Premium(weight = 0.1);
+        use Valuables_Electronics(weight = 0.8);
+        use Upgrades(weight = 0.8);
+        use Upgrades_Premium(weight = 0.25);
 
         use Harvesting_Goon(weight = 0.1);
     }
@@ -585,10 +584,13 @@ sub Loot()
         use CashMedium(weight = 1.0);
 
         use Valuables_Viral(weight = 0.75);
-		use Valuables_Electronics(weight = 0.25);
+		use Valuables_Electronics(weight = 0.4);
 		use Consumable_Healing(weight = 3.0);
 		use Crafting_Biter(weight = 3.0);
 		use Medkits(weight = 0.5);
+
+        use Upgrades(weight = 0.4);
+        use Upgrades_Premium(weight = 0.15);
 		
     }
 
@@ -626,8 +628,8 @@ sub Loot()
         
         use Valuables_Electronics(weight = 1.0);
         use Valuables_Premium(weight = 2.0);
-        use Upgrades(weight = 0.5);
-        use Upgrades_Premium(weight = 0.1);
+        use Upgrades(weight = 1.0);
+        use Upgrades_Premium(weight = 0.3);
     }
 	
     LootedObject("DeadBody_Soldier_Gaas_01")
@@ -682,6 +684,7 @@ sub Loot()
 
         use Valuables_Electronics(weight = 1.0);
         use Upgrades(weight = 1.0);
+        use Upgrades_Premium(weight = 0.3);
     }
 
     LootedObject(DeadBody_HiveBrood)
@@ -751,7 +754,7 @@ sub Loot()
         IgnorePlatinumRestrictions();
          
         use Upgrades(weight = 4.0);
-		use Upgrades_Premium(weight = 0.1);
+		use Upgrades_Premium(weight = 1.0);
     }
 
     LootedObject(Encounter_HelpSafeNPC_Ledge_Medium)
@@ -760,7 +763,7 @@ sub Loot()
         IgnorePlatinumRestrictions();
          
         use Upgrades(weight = 4.0);
-        use Upgrades_Premium(weight = 0.3);
+        use Upgrades_Premium(weight = 1.0);
     }
 
     LootedObject(Encounter_HelpSafeNPC_Ledge_Hard)
@@ -769,7 +772,7 @@ sub Loot()
         IgnorePlatinumRestrictions();
          
         use Upgrades(weight = 4.0);
-        use Upgrades_Premium(weight = 0.5);
+        use Upgrades_Premium(weight = 1.0);
     }
 
     LootedObject(Encounter_HelpSafeNPC_Shop_Easy)
@@ -778,7 +781,7 @@ sub Loot()
         IgnorePlatinumRestrictions();
          
         use Upgrades(weight = 4.0);
-        use Upgrades_Premium(weight = 0.1);
+        use Upgrades_Premium(weight = 1.0);
     }
 
     LootedObject(Encounter_HelpSafeNPC_Shop_Medium)
@@ -787,7 +790,7 @@ sub Loot()
         IgnorePlatinumRestrictions();
          
         use Upgrades(weight = 4.0);
-        use Upgrades_Premium(weight = 0.3);
+        use Upgrades_Premium(weight = 1.0);
     }
 
     LootedObject(Encounter_HelpSafeNPC_Shop_Hard)
@@ -796,7 +799,7 @@ sub Loot()
         IgnorePlatinumRestrictions();
          
         use Upgrades(weight = 4.0);
-        use Upgrades_Premium(weight = 0.5);
+        use Upgrades_Premium(weight = 1.0);
     }
 
     LootedObject(Encounter_HelpSafeNPC_House_Easy)
@@ -805,7 +808,7 @@ sub Loot()
         IgnorePlatinumRestrictions();
          
 		use Upgrades(weight = 4.0);
-        use Upgrades_Premium(weight = 0.1);
+        use Upgrades_Premium(weight = 1.0);
     }
 
     LootedObject(Encounter_HelpSafeNPC_House_Medium)
@@ -814,7 +817,7 @@ sub Loot()
         IgnorePlatinumRestrictions();
          
 		use Upgrades(weight = 4.0);
-        use Upgrades_Premium(weight = 0.3);
+        use Upgrades_Premium(weight = 1.0);
     }
 
     LootedObject(Encounter_HelpSafeNPC_House_Hard)
@@ -823,7 +826,7 @@ sub Loot()
         IgnorePlatinumRestrictions();
          
 		use Upgrades(weight = 4.0);
-		use Upgrades_Premium(weight = 0.5);
+        use Upgrades_Premium(weight = 1.0);
     }
 
     LootedObject(Encounter_HelpSafeNPC_Wardrobe_Easy)
@@ -832,7 +835,7 @@ sub Loot()
         IgnorePlatinumRestrictions();
          
         use Upgrades(weight = 4.0);
-        use Upgrades_Premium(weight = 0.1);
+        use Upgrades_Premium(weight = 1.0);
     }
 
     LootedObject(Encounter_HelpSafeNPC_Wardrobe_Medium)
@@ -841,7 +844,7 @@ sub Loot()
         IgnorePlatinumRestrictions();
          
         use Upgrades(weight = 4.0);
-        use Upgrades_Premium(weight = 0.3);
+        use Upgrades_Premium(weight = 1.0);
     }
 
     LootedObject(Encounter_HelpSafeNPC_Wardrobe_Hard)
@@ -850,7 +853,7 @@ sub Loot()
         IgnorePlatinumRestrictions();
          
         use Upgrades(weight = 4.0);
-		use Upgrades_Premium(weight = 0.5);
+        use Upgrades_Premium(weight = 1.0);
     }
 
     LootedObject(Encounter_HelpGrabbedNPC_Grabbed_Easy)
@@ -859,7 +862,7 @@ sub Loot()
         IgnorePlatinumRestrictions();
          
         use Upgrades(weight = 4.0);
-        use Upgrades_Premium(weight = 0.1);
+        use Upgrades_Premium(weight = 1.0);
     }
 
     LootedObject(Encounter_HelpGrabbedNPC_Grabbed_Medium)
@@ -868,7 +871,7 @@ sub Loot()
         IgnorePlatinumRestrictions();
          
         use Upgrades(weight = 4.0);
-        use Upgrades_Premium(weight = 0.3);
+        use Upgrades_Premium(weight = 1.0);
     }
 
     LootedObject(Encounter_HelpGrabbedNPC_Grabbed_Hard)
@@ -877,7 +880,7 @@ sub Loot()
         IgnorePlatinumRestrictions();
          
         use Upgrades(weight = 4.0);
-        use Upgrades_Premium(weight = 0.5);
+        use Upgrades_Premium(weight = 1.0);
     }
 
     LootedObject(Encounter_Prisoners_Kidnapped_Easy)
@@ -886,7 +889,7 @@ sub Loot()
         IgnorePlatinumRestrictions();
          
         use Upgrades(weight = 4.0);
-        use Upgrades_Premium(weight = 0.5);
+        use Upgrades_Premium(weight = 1.0);
     }
 
     LootedObject(Encounter_Prisoners_Kidnapped_Medium)
@@ -895,7 +898,7 @@ sub Loot()
         IgnorePlatinumRestrictions();
          
         use Upgrades(weight = 4.0);
-		use Upgrades_Premium(weight = 0.5);
+        use Upgrades_Premium(weight = 1.0);
     }
 
     LootedObject(Encounter_Prisoners_Kidnapped_Hard)
@@ -904,7 +907,7 @@ sub Loot()
         IgnorePlatinumRestrictions();
          
         use Upgrades(weight = 4.0);
-		use Upgrades_Premium(weight = 0.5);
+        use Upgrades_Premium(weight = 1.0);
     }
 
     LootedObject(Encounter_Prisoners_Kicking_Easy)
@@ -913,7 +916,7 @@ sub Loot()
         IgnorePlatinumRestrictions();
          
         use Upgrades(weight = 4.0);
-		use Upgrades_Premium(weight = 0.5);
+        use Upgrades_Premium(weight = 1.0);
     }
 
     LootedObject(Encounter_Prisoners_Kicking_Medium)
@@ -922,7 +925,7 @@ sub Loot()
         IgnorePlatinumRestrictions();
          
         use Upgrades(weight = 4.0);
-		use Upgrades_Premium(weight = 0.5);
+        use Upgrades_Premium(weight = 1.0);
     }
 
     LootedObject(Encounter_Prisoners_Kicking_Hard)
@@ -931,7 +934,7 @@ sub Loot()
         IgnorePlatinumRestrictions();
          
         use Upgrades(weight = 4.0);
-		use Upgrades_Premium(weight = 0.5);
+        use Upgrades_Premium(weight = 1.0);
     }
 
     LootedObject(Encounter_FightingGroups_Zombies_Easy)
@@ -940,7 +943,7 @@ sub Loot()
         IgnorePlatinumRestrictions();
          
         use Upgrades(weight = 4.0);
-		use Upgrades_Premium(weight = 0.1);
+        use Upgrades_Premium(weight = 1.0);
     }
 
     LootedObject(Encounter_FightingGroups_Zombies_Medium)
@@ -949,7 +952,7 @@ sub Loot()
         IgnorePlatinumRestrictions();
          
         use Upgrades(weight = 4.0);
-		use Upgrades_Premium(weight = 0.3);
+        use Upgrades_Premium(weight = 1.0);
     }
 
     LootedObject(Encounter_FightingGroups_Zombies_Hard)
@@ -958,7 +961,7 @@ sub Loot()
         IgnorePlatinumRestrictions();
          
         use Upgrades(weight = 4.0);
-		use Upgrades_Premium(weight = 0.5);
+        use Upgrades_Premium(weight = 1.0);
     }
 
     LootedObject(Encounter_FightingGroups_Armored_Easy)
@@ -967,7 +970,7 @@ sub Loot()
         IgnorePlatinumRestrictions();
          
         use Upgrades(weight = 4.0);
-		use Upgrades_Premium(weight = 0.2);
+        use Upgrades_Premium(weight = 1.0);
     }
 
     LootedObject(Encounter_FightingGroups_Armored_Medium)
@@ -976,7 +979,7 @@ sub Loot()
         IgnorePlatinumRestrictions();
          
         use Upgrades(weight = 4.0);
-		use Upgrades_Premium(weight = 0.5);
+        use Upgrades_Premium(weight = 1.0);
     }
 
     LootedObject(Encounter_FightingGroups_Armored_Hard)
@@ -994,7 +997,7 @@ sub Loot()
         IgnorePlatinumRestrictions();
          
         use Upgrades(weight = 4.0);
-		use Upgrades_Premium(weight = 0.2);
+        use Upgrades_Premium(weight = 1.0);
     }
 
     LootedObject(Encounter_FightingGroups_Infecteds_Medium)
@@ -1003,7 +1006,7 @@ sub Loot()
         IgnorePlatinumRestrictions();
          
         use Upgrades(weight = 4.0);
-		use Upgrades_Premium(weight = 0.5);
+        use Upgrades_Premium(weight = 1.0);
     }
 
     LootedObject(Encounter_FightingGroups_Infecteds_Hard)
@@ -1012,7 +1015,7 @@ sub Loot()
         IgnorePlatinumRestrictions();
          
         use Upgrades(weight = 4.0);
-		use Upgrades_Premium(weight = 0.6);
+        use Upgrades_Premium(weight = 1.0);
     }
 
     LootedObject(Encounter_FightingGroups_Thug_Easy)
@@ -1021,7 +1024,7 @@ sub Loot()
         IgnorePlatinumRestrictions();
          
         use Upgrades(weight = 4.0);
-		use Upgrades_Premium(weight = 0.1);
+        use Upgrades_Premium(weight = 1.0);
     }
 
     LootedObject(Encounter_FightingGroups_Thug_Medium)
@@ -1030,7 +1033,7 @@ sub Loot()
         IgnorePlatinumRestrictions();
          
         use Upgrades(weight = 4.0);
-		use Upgrades_Premium(weight = 0.3);
+        use Upgrades_Premium(weight = 1.0);
     }
 
     LootedObject(Encounter_FightingGroups_Thug_Hard)
@@ -1039,7 +1042,7 @@ sub Loot()
         IgnorePlatinumRestrictions();
          
         use Upgrades(weight = 4.0);
-		use Upgrades_Premium(weight = 0.5);
+        use Upgrades_Premium(weight = 1.0);
     }
 
     LootedObject(Encounter_Patrol_Door_Easy)
@@ -1047,7 +1050,7 @@ sub Loot()
         ColorSet(ColorSet_cs_encounter_chest);
          
         use Upgrades(weight = 4.0);
-		use Upgrades_Premium(weight = 0.1);
+        use Upgrades_Premium(weight = 1.0);
         use Encounter_chest(weight = 1.0);
     }
 
@@ -1056,7 +1059,7 @@ sub Loot()
         ColorSet(ColorSet_cs_encounter_chest);
          
         use Upgrades(weight = 4.0);
-		use Upgrades_Premium(weight = 0.3);
+        use Upgrades_Premium(weight = 1.0);
         use Encounter_chest(weight = 1.0);
     }
 
@@ -1065,7 +1068,7 @@ sub Loot()
         ColorSet(ColorSet_cs_encounter_chest);
          
         use Upgrades(weight = 4.0);
-		use Upgrades_Premium(weight = 0.5);
+        use Upgrades_Premium(weight = 1.0);
         use Encounter_chest(weight = 1.0);
     }
 
@@ -1074,7 +1077,7 @@ sub Loot()
         ColorSet(ColorSet_cs_encounter_chest);
          
         use Upgrades(weight = 4.0);
-		use Upgrades_Premium(weight = 0.1);
+        use Upgrades_Premium(weight = 1.0);
         use Encounter_chest(weight = 1.0);
     }
 
@@ -1083,7 +1086,7 @@ sub Loot()
         ColorSet(ColorSet_cs_encounter_chest);
          
         use Upgrades(weight = 4.0);
-		use Upgrades_Premium(weight = 0.3);
+        use Upgrades_Premium(weight = 1.0);
         use Encounter_chest(weight = 1.0);
     }
 
@@ -1092,7 +1095,7 @@ sub Loot()
         ColorSet(ColorSet_cs_encounter_chest);
          
         use Upgrades(weight = 4.0);
-		use Upgrades_Premium(weight = 0.5);
+        use Upgrades_Premium(weight = 1.0);
         use Encounter_chest(weight = 1.0);
     }
 
@@ -1101,7 +1104,7 @@ sub Loot()
         ColorSet(ColorSet_cs_encounter_chest);
          
         use Upgrades(weight = 4.0);
-		use Upgrades_Premium(weight = 0.1);
+        use Upgrades_Premium(weight = 1.0);
         use Encounter_chest(weight = 1.0);
     }
 
@@ -1110,7 +1113,7 @@ sub Loot()
         ColorSet(ColorSet_cs_encounter_chest);
          
         use Upgrades(weight = 4.0);
-		use Upgrades_Premium(weight = 0.3);
+        use Upgrades_Premium(weight = 1.0);
         use Encounter_chest(weight = 1.0);
     }
 
@@ -1119,7 +1122,7 @@ sub Loot()
         ColorSet(ColorSet_cs_encounter_chest);
          
         use Upgrades(weight = 4.0);
-		use Upgrades_Premium(weight = 0.5);
+        use Upgrades_Premium(weight = 1.0);
         use Encounter_chest(weight = 1.0);
     }
 
@@ -1128,7 +1131,7 @@ sub Loot()
         ColorSet(ColorSet_cs_encounter_chest);
          
         use Upgrades(weight = 4.0);
-		use Upgrades_Premium(weight = 0.1);
+        use Upgrades_Premium(weight = 1.0);
         use Encounter_chest(weight = 1.0);
     }
 
@@ -1137,7 +1140,7 @@ sub Loot()
         ColorSet(ColorSet_cs_encounter_chest);
          
         use Upgrades(weight = 4.0);
-		use Upgrades_Premium(weight = 0.3);
+        use Upgrades_Premium(weight = 1.0);
         use Encounter_chest(weight = 1.0);
     }
 
@@ -1146,7 +1149,7 @@ sub Loot()
         ColorSet(ColorSet_cs_encounter_chest);
          
         use Upgrades(weight = 4.0);
-		use Upgrades_Premium(weight = 0.5);
+        use Upgrades_Premium(weight = 1.0);
         use Encounter_chest(weight = 1.0);
     }
 
@@ -1155,7 +1158,7 @@ sub Loot()
         ColorSet(ColorSet_cs_encounter_chest);
          
         use Upgrades(weight = 4.0);
-		use Upgrades_Premium(weight = 0.1);
+        use Upgrades_Premium(weight = 1.0);
         use Encounter_chest(weight = 1.0);
     }
 
@@ -1164,7 +1167,7 @@ sub Loot()
         ColorSet(ColorSet_cs_encounter_chest);
          
         use Upgrades(weight = 4.0);
-		use Upgrades_Premium(weight = 0.3);
+        use Upgrades_Premium(weight = 1.0);
         use Encounter_chest(weight = 1.0);
     }
 
@@ -1173,7 +1176,7 @@ sub Loot()
         ColorSet(ColorSet_cs_encounter_chest);
          
         use Upgrades(weight = 4.0);
-		use Upgrades_Premium(weight = 0.5);
+        use Upgrades_Premium(weight = 1.0);
         use Encounter_chest(weight = 1.0);
     }
 
@@ -1182,7 +1185,7 @@ sub Loot()
         ColorSet(ColorSet_cs_encounter_chest);
          
         use Upgrades(weight = 4.0);
-		use Upgrades_Premium(weight = 0.1);
+        use Upgrades_Premium(weight = 1.0);
         use Encounter_chest(weight = 1.0);
     }
 
@@ -1191,7 +1194,7 @@ sub Loot()
         ColorSet(ColorSet_cs_encounter_chest);
          
         use Upgrades(weight = 4.0);
-		use Upgrades_Premium(weight = 0.3);
+        use Upgrades_Premium(weight = 1.0);
         use Encounter_chest(weight = 1.0);
     }
 
@@ -1200,7 +1203,7 @@ sub Loot()
         ColorSet(ColorSet_cs_encounter_chest);
          
         use Upgrades(weight = 4.0);
-		use Upgrades_Premium(weight = 0.5);
+        use Upgrades_Premium(weight = 1.0);
         use Encounter_chest(weight = 1.0);
     }
 
@@ -1209,7 +1212,7 @@ sub Loot()
         ColorSet(ColorSet_cs_encounter_body);
          
         use Upgrades(weight = 4.0);
-		use Upgrades_Premium(weight = 0.1);
+        use Upgrades_Premium(weight = 1.0);
     }
 
     LootedObject(Encounter_Patrol_Deadbody_Medium)
@@ -1217,7 +1220,7 @@ sub Loot()
         ColorSet(ColorSet_cs_encounter_body);
          
         use Upgrades(weight = 4.0);
-		use Upgrades_Premium(weight = 0.3);
+        use Upgrades_Premium(weight = 1.0);
     }
 
     LootedObject(Encounter_Patrol_Deadbody_Hard)
@@ -1225,7 +1228,7 @@ sub Loot()
         ColorSet(ColorSet_cs_encounter_body);
          
         use Upgrades(weight = 4.0);
-		use Upgrades_Premium(weight = 0.5);
+        use Upgrades_Premium(weight = 1.0);
     }
 
     LootedObject(Encounter_Trap_Sitting_Easy)
@@ -1234,7 +1237,7 @@ sub Loot()
         IgnorePlatinumRestrictions();
          
         use Upgrades(weight = 4.0);
-		use Upgrades_Premium(weight = 0.1);
+        use Upgrades_Premium(weight = 1.0);
     }
 
     LootedObject(Encounter_Trap_Sitting_Medium)
@@ -1243,7 +1246,7 @@ sub Loot()
         IgnorePlatinumRestrictions();
          
         use Upgrades(weight = 4.0);
-		use Upgrades_Premium(weight = 0.3);
+        use Upgrades_Premium(weight = 1.0);
     }
 
     LootedObject(Encounter_Trap_Sitting_Hard)
@@ -1252,7 +1255,7 @@ sub Loot()
         IgnorePlatinumRestrictions();
          
         use Upgrades(weight = 4.0);
-		use Upgrades_Premium(weight = 0.5);
+        use Upgrades_Premium(weight = 1.0);
     }
 
     LootedObject(Harvesting_Biter_Body)

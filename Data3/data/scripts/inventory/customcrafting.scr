@@ -233,7 +233,7 @@ sub customRecipes(){
         CraftplanType("WeaponDLC");
         UniqueSaveID(12006);
         HudIcon("effect_inc_chance_for_burning");
-        //OwnedAtStart();
+        OwnedAtStart();
     }
 	
 	Item("Craftplan_Toxic_Upgrade", CategoryType_Collectable) // Titan (Toxic)
@@ -259,7 +259,7 @@ sub customRecipes(){
         CraftplanType("WeaponDLC");
         UniqueSaveID(12007);
         HudIcon("effect_inc_chance_for_poison");
-        //OwnedAtStart();
+        // OwnedAtStart();
     }
 	
 	Item("Craftplan_Shock_Upgrade", CategoryType_Collectable) // Brawler (Shock)
@@ -284,7 +284,7 @@ sub customRecipes(){
         CraftplanType("WeaponDLC");
         UniqueSaveID(12008);
         HudIcon("effect_inc_chance_for_shock_electricity");
-        //OwnedAtStart();
+        // OwnedAtStart();
     }
 	
 	Item("Craftplan_Impact_Upgrade", CategoryType_Collectable) // Gladiator (Impact)
@@ -309,7 +309,7 @@ sub customRecipes(){
         CraftplanType("WeaponDLC");
         UniqueSaveID(12009);
         HudIcon("effect_inc_stun_chance");
-        //OwnedAtStart();
+        // OwnedAtStart();
     }
 	
 	Item("Craftplan_Freeze_Upgrade", CategoryType_Collectable) // Paladin (Freeze)
@@ -335,7 +335,7 @@ sub customRecipes(){
         CraftplanType("WeaponDLC");
         UniqueSaveID(12010);
         HudIcon("effect_inc_chance_for_freezing");
-        //OwnedAtStart();
+        // OwnedAtStart();
     }
 	
 	Item("Craftplan_Bleed_Upgrade", CategoryType_Collectable) // Fencer (Bleed)
@@ -359,7 +359,7 @@ sub customRecipes(){
         CraftplanType("WeaponDLC");
         UniqueSaveID(12011);
         HudIcon("effect_inc_chance_for_bleeding");
-        //OwnedAtStart();
+        // OwnedAtStart();
     }
 	
     Item("Craftplan_Juggernaut", CategoryType_Collectable) // Juggernaut
@@ -674,7 +674,7 @@ sub customRecipes(){
         RequiredItem("Craft_Upgrade_Bal", 2);
 
         RequiredItem("Craft_Shroom", 12);
-        RequiredItem("Craft_PrimeTissue", 2);
+        RequiredItem("Craft_PrimeTissue", 1);
         
         Color(Color_Violet);
         CraftedItem("Craft_Upgrade_DamDurBal", 2);
@@ -693,6 +693,7 @@ sub customRecipes(){
         Price(838);
         Mesh("blueprint.msh");
         Skin("default");
+
         RequiredItem("Craft_Upgrade_DamDurBal", 1);  //champion
         RequiredItem("Craft_Upgrade_DamL2Dur", 1);  //brute
         RequiredItem("Craft_Upgrade_BalL2Dam", 1);  //duelist

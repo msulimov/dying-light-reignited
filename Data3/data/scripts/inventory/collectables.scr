@@ -74,7 +74,7 @@ sub main()
         Mesh("blueprint.msh");
         Skin("default");
         RequiredItem("Throwable_Btz_Flare", 2);
-        RequiredItem("Craft_DuctTape", 3);
+        RequiredItem("Craft_DuctTape", 2);
         RequiredItem("Craft_PlasticTube", 2);
         RequiredItem("ZZZZ3_Component_Rubber", 1);
         Color(Color_Violet);

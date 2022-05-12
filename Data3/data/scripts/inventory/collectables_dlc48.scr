@@ -32,7 +32,7 @@ sub main()
         CraftedItem("Melee_ShortSword_Dao_SHU", 1, 1);
         CraftplanType("WeaponDLC");
         UniqueSaveID(9620);
-		OwnedAtStart();
+		// OwnedAtStart();
         HudIcon("blueprint_b");
 		GameVersion(31);
     }
@@ -91,7 +91,7 @@ sub main()
         CraftplanType("WeaponDLC");
 		InheritBaseStats();
         UniqueSaveID(9622);
-		OwnedAtStart();
+		// OwnedAtStart();
         HudIcon("blueprint_b");
 		GameVersion(31);	
     }	
@@ -113,7 +113,7 @@ sub main()
         CraftplanType("WeaponDLC");
         UniqueSaveID(9623);
         HudIcon("blueprint_b");
-        OwnedAtStart();
+        // OwnedAtStart();
         GameVersion(31);
     }
 
@@ -136,7 +136,7 @@ sub main()
         CraftplanType("WeaponDLC");
         UniqueSaveID(9624);
         HudIcon("blueprint_b");
-        OwnedAtStart();
+        // OwnedAtStart();
         GameVersion(31);
     }
 
@@ -160,7 +160,7 @@ sub main()
         CraftplanType("WeaponDLC");
         UniqueSaveID(9625);
         HudIcon("blueprint_b");
-        OwnedAtStart();
+        // OwnedAtStart();
         GameVersion(31);
     }
 
@@ -184,7 +184,7 @@ sub main()
         CraftplanType("WeaponDLC");
         UniqueSaveID(9626);
         HudIcon("blueprint_b");
-        OwnedAtStart();
+        // OwnedAtStart();
         GameVersion(31);
     }
 }

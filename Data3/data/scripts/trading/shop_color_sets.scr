@@ -214,7 +214,7 @@ sub main()
         Color(Color_Platinum, 1);
     }
 	
-	ColorSet("cs_WanderingMerchant_Hard") // item of the day weapon elemental upgrades and king
+	ColorSet("cs_WanderingMerchant_Hard") 
     {
         Color(Color_White,  1);
         Color(Color_Green,  1);
@@ -224,13 +224,14 @@ sub main()
         Color(Color_Platinum, 1);
     }
 
-    ColorSet("cs_blueprints")
+    ColorSet("cs_blueprints") // item of the day weapon elemental upgrades and king/clicker
     {
-        Color(Color_White, 0);
-        Color(Color_Green, 1);
-        Color(Color_Blue,  0);
-        Color(Color_Violet, 0);
-        Color(Color_Orange, 0);
+        Color(Color_White,  1);
+        Color(Color_Green,  1);
+        Color(Color_Blue,   1);
+        Color(Color_Violet, 1);
+        Color(Color_Orange, 3);
+        Color(Color_Platinum, 1);
     }
 
     ColorSet("shop_crafting_materials")

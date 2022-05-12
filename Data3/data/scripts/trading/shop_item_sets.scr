@@ -120,7 +120,7 @@ sub main()
 		Item("Craft_String");
 		Item("Craft_DuctTape");
 		Item("Craft_Insecticide");				
-		Item("Craft_TinCan");			  
+		Item("Craft_TinCan");
 	}
 
 		
