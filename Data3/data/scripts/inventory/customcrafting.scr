@@ -233,7 +233,7 @@ sub customRecipes(){
         CraftplanType("WeaponDLC");
         UniqueSaveID(12006);
         HudIcon("effect_inc_chance_for_burning");
-        OwnedAtStart();
+        // OwnedAtStart();
     }
 	
 	Item("Craftplan_Toxic_Upgrade", CategoryType_Collectable) // Titan (Toxic)
