@@ -513,7 +513,7 @@ sub main()
         CanAccelerateBluprintPartDrop(false);
         CanAccelerateVehicleComponentDrop(false);
         ShootingAccuracyFactor(1.25);
-        NightSpottingMult(0.25);       //Multiplier of time need for Volatile to spot player
+        NightSpottingMult(0.3);       //Multiplier of time need for Volatile to spot player
         AddHealthFactor(1.0);         //Multiplier for amount of health received by using medkit.
         HealthRegenFactor(9.0);
         LootTreeName("default_nightmare");

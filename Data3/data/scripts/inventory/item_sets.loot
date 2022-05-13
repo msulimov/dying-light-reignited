@@ -105,7 +105,7 @@ export int Other = 9;
         {
             
             Item("Craft_MetalScrap", 1.0);
-            Item("Craft_PlasticTube", 1.0);
+            Item("Craft_PlasticTube", 2.0);
             Item("ZZZZ3_Component_NutsBolts", 1.0);
             
             Item("Craft_DuctTape", 1.0);
@@ -123,7 +123,7 @@ export int Other = 9;
         Set(CraftPart, weight, prob)
         {
             Item("Craft_MetalScrap", 2.0);
-            Item("Craft_PlasticTube", 2.0);
+            Item("Craft_PlasticTube", 3.0);
             
             Item("Craft_TinCan", 1.0);
             Item("ZZZZ3_Component_Rubber", 2.0);
