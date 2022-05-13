@@ -25,6 +25,21 @@ sub main()
         Item("Craft_Upgrade_BalL2Dur");
     }
 
+    ItemSet("Upgrades_Blue_Violet")
+    {
+        Item("Craft_Upgrade_DamDur");
+        Item("Craft_Upgrade_DamBal");
+        Item("Craft_Upgrade_DurBal");
+
+        Item("Craft_Upgrade_DamDurBal");
+        Item("Craft_Upgrade_DamL2Dur");
+        Item("Craft_Upgrade_DamL2Bal");
+        Item("Craft_Upgrade_DurL2Bal");
+        Item("Craft_Upgrade_DurL2Dam");
+        Item("Craft_Upgrade_BalL2Dam");
+        Item("Craft_Upgrade_BalL2Dur");
+    }
+
     ItemSet("Upgrades_Orange")
     {
        Item("Craft_Upgrade_DamL2DurL2BalL2_Clicker");
@@ -78,6 +93,12 @@ sub main()
         Item("Craft_Bleach");
         Item("ZZZZ3_Component_Wire");
         Item("ZZZZ3_Component_Lubricant");
+
+        Item("Craft_Electronics");
+        Item("Craft_Shroom");
+
+        Item("Craft_PrimeTissue");
+
     }
     ItemSet("Bow")                //ItemID, Weight. Default WEIGHT is 1.
     {

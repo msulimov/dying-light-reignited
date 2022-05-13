@@ -1,29 +1,18 @@
 sub SalesPromotion(){
-	Set("Crafting_Sale", "shop_crafting_materials", 1, 1) 
-	{
-				PriceMod(4.0);
-				Probability(4.0);
-	}
-	Set("SalesPromotion_Bolter", "promotion_bolter", 1, 1) 
-	{
-				MinChapter(5);
-				PriceMod(2.0);
-				Probability(1.5);
-	}
-}
-sub SalesPromotionNight(){
-	Set("Upgrades_Blue", "blue_only", 1, 1) 
+	Set("Crafting_Sale", "promotion_crafting", 1, 1) 
 	{
 				PriceMod(4.0);
 				Probability(1.0);
 	}
-    Set("Upgrades_Violet", "violet_only", 1, 1) 
-    {
-                PriceMod(3.0);
-                Probability(3.0);
-    }
 }
-sub ItemOfTheDayNight(){
+sub SalesPromotionNight(){ // Requested Item for night wandering merchant 
+	Set("Upgrades_Blue_Violet", "shop_slums_throwing_weapons", 1, 1) 
+	{
+				PriceMod(4.0);
+				Probability(1.0);
+	}
+}
+sub ItemOfTheDayNight(){ // Item on sale for night wandering merchant
     Set("ItemOfTheDayNight", "cs_blueprints", 1, 1) 
     {
                 PriceMod(0.6);

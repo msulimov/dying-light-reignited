@@ -171,9 +171,9 @@ sub main()
 	ColorSet("shop_slums_throwing_weapons")
     {
         Color(Color_White, 	00);
-        Color(Color_Green, 	10);
+        Color(Color_Green, 	0);
         Color(Color_Blue,  	50);
-        Color(Color_Violet, 35);
+        Color(Color_Violet, 50);
         Color(Color_Orange, 5);
     }
 	
@@ -257,7 +257,7 @@ sub main()
         Color(Color_Green,  1);
         Color(Color_Blue,   1);
         Color(Color_Violet, 1);
-        Color(Color_Orange, 0);
+        Color(Color_Orange, 1);
     }
 	ColorSet("highway_parts")
     {
