@@ -109,9 +109,10 @@ export int Other = 9;
             Item("ZZZZ3_Component_NutsBolts", 1.0);
             
             Item("Craft_DuctTape", 1.0);
-            Item("ZZZZ3_Component_SteelTubing", 1.0);
+            Item("ZZZZ3_Component_SteelTubing", 0.5);
+            Item("ZZZZ3_Component_Rubber", 1.0);
             
-            Item("ZZZZ3_Component_Wire", 1.0);
+            Item("ZZZZ3_Component_Wire", 0.5);
             Item("ZZZZ3_Component_Lubricant", 1.0);
             
             Item("ZZZZ3_Component_Synthetic", 1.0);
@@ -122,11 +123,11 @@ export int Other = 9;
     {
         Set(CraftPart, weight, prob)
         {
-            Item("Craft_MetalScrap", 2.0);
-            Item("Craft_PlasticTube", 3.0);
+            Item("Craft_MetalScrap", 1.0);
+            Item("Craft_PlasticTube", 1.5);
             
             Item("Craft_TinCan", 1.0);
-            Item("ZZZZ3_Component_Rubber", 2.0);
+            Item("ZZZZ3_Component_Rubber", 1.25);
         }
     }
 
@@ -189,7 +190,8 @@ export int Other = 9;
             Item("Craft_Alcohol", 1.0);
 
             Item("Craft_Insecticide", 1.0);
-            Item("ZZZZ3_Component_SteelTubing", 1.0);
+            Item("ZZZZ3_Component_SteelTubing", 0.75);
+            Item("ZZZZ3_Component_Rubber", 1.0);
 
             Item("ZZZZ3_Component_Lubricant", 0.2);
             Item("Craft_Bleach", 1.0);
@@ -255,7 +257,7 @@ export int Other = 9;
 			Item("ZZZZ3_Component_SteelTubing", 1.0);
 			
 			Item("Craft_Bleach", 2.0);
-			Item("ZZZZ3_Component_Wire", 1.0);
+			Item("ZZZZ3_Component_Wire", 0.5);
 			Item("ZZZZ3_Component_Lubricant", 1.0);
 			
 			Item("ZZZZ3_Component_Synthetic", 1.0);
