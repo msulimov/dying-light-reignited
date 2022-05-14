@@ -1,4 +1,4 @@
-<!-------------------------------------------------------- Start Auto Skills ---------------------------------------------------->
+<!-- Start Auto Skills -->
 <!--Enables a lot of legend specific skill settings when entering legend mode -->
 <skill id="SkillNightmareAuto" cat="legend_auto" auto_install="InstallRemoveOnStart">
     <difficulty_req value="Nightmare"/>       
@@ -49,7 +49,7 @@
 <skill id="AutoSkill_LegendLevel250" cat="legend_auto" >
 	    <effect id="InventorySize" change="5"/>
 </skill>
-<!-------------------------------------------------------- End Auto Skills ---------------------------------------------------->
+<!--End Auto Skills -->
 
 <skill id="LegendSkill_UnarmedDamage" cat="legend" tier="0" max_level = "25" skill_points="1" skill_points_type="Legend" desc_params="conserve_weapons;P;ResultDisplayPercentage">
 	<level_req type="Legend" value="20" active_at_skill_level="5"/>

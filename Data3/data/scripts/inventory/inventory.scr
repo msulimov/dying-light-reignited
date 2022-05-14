@@ -8819,7 +8819,7 @@ sub main()
     {
         ItemType(ItemType_QuestItem);
         Visibility(true);
-        Price(25);
+        Price(40);
         Mesh("loot_ok_sugar_a.msh");
         HudIcon("quest_coffee");
         Skin("coffee");
@@ -8833,7 +8833,7 @@ sub main()
     {
         ItemType(ItemType_QuestItem);
         Visibility(true);
-        Price(20);
+        Price(30);
         Mesh("loot_ok_cigarettes_a.msh");
         HudIcon("quest_cigarettes");
         Skin("Default");
@@ -8847,7 +8847,7 @@ sub main()
     {
         ItemType(ItemType_QuestItem);
         Visibility(true);
-        Price(45);
+        Price(75);
         Mesh("loot_ok_higiene_kit.msh");
         HudIcon("quest_cosmetics");
         Skin("Air_freshener");
@@ -8861,7 +8861,7 @@ sub main()
     {
         ItemType(ItemType_QuestItem);
         Visibility(true);
-        Price(60);
+        Price(80);
         Mesh("loot_ok_pouch_a.msh");
         HudIcon("quest_jewels");
         Skin("Default");
@@ -8900,7 +8900,7 @@ sub main()
     {
         ItemType(ItemType_QuestItem);
         Visibility(true);
-        Price(40);
+        Price(70);
         Mesh("loot_ok_cigarettes_a.msh");
         HudIcon("quest_cigarettes");
         Skin("cigarettes_b");
@@ -8915,7 +8915,7 @@ sub main()
     {
         ItemType(ItemType_QuestItem);
         Visibility(true);
-        Price(80);
+        Price(120);
         Mesh("loot_ok_higiene_kit.msh");
         HudIcon("quest_cosmetics");
         Skin("higiene_kit");
@@ -8930,7 +8930,7 @@ sub main()
     {
         ItemType(ItemType_QuestItem);
         Visibility(true);
-        Price(120);
+        Price(160);
         Mesh("loot_ok_pouch_a.msh");
         HudIcon("quest_jewels");
         Skin("pouch");
@@ -8945,7 +8945,7 @@ sub main()
     {
         ItemType(ItemType_QuestItem);
         Visibility(true);
-        Price(400);
+        Price(600);
         Mesh("loot_ok_jewelery.msh");
         HudIcon("quest_jewels");
         Skin("jewellery_b");

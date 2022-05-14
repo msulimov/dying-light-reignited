@@ -527,7 +527,7 @@ sub main()
     
         sense_enable_triggers(false);            //Decides if player can see triggers
 
-        camouflage_duration_mul(1.0);            //changes the duration of Camouflage skill
+        camouflage_duration_mul(0.0);            //changes the duration of Camouflage skill
 
         PlayerDmgFactorMin()// this means how much damage GIVEN to AI will be modified (ie. player hits with 100 dmg * Biter(0.9) = will give 90 dmg to AI)
         {
@@ -654,7 +654,7 @@ sub main()
         xp_legend_mp_factor_3player(1.2);
         xp_legend_mp_factor_4player(1.3);
         
-        DeathPenaltyStatusXPFactor(1.5);
+        DeathPenaltyStatusXPFactor(1.0);
         DeathPenaltyLegendXPFactor(0.15);
         BannedItems()
         {

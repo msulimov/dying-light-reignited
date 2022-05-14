@@ -47,7 +47,7 @@ sub Loot()
 		
 		use Valuables_Default(weight = 1.0);
 		
-        use Valuables_Electronics(weight = 0.7);        
+        use Valuables_Electronics(weight = 0.3);        
         use Upgrades(weight = 0.7);
         use Upgrades_Premium(weight = 0.4);
         
@@ -122,7 +122,7 @@ sub Loot()
         //use Lockpicks(weight = 2.0);
         use Valuables_Basket(weight = 1.25);
 
-        use Valuables_Electronics(weight = 0.2);
+        use Valuables_Electronics(weight = 0.1);
 		//use Upgrades(weight = 0.2);
 		//use Upgrades_Premium(weight = 0.05);
 		
@@ -142,8 +142,8 @@ sub Loot()
 		use Firecrackers(weight = 2.0);
 		use Consumable_Healing(weight = 4.0);
 
-        use Valuables_Electronics(weight = 0.5);        
-		use Upgrades(weight = 0.4);
+        use Valuables_Electronics(weight = 0.1);        
+		use Upgrades(weight = 0.3);
 		//use Upgrades_Premium(weight = 0.2);
     }
 
@@ -177,8 +177,8 @@ sub Loot()
 		use Firecrackers(weight = 1.0);
         use Valuables_Chest(weight = 1.0);
 
-		use Valuables_Electronics(weight = 0.2);
-		use Upgrades(weight = 0.3);
+		use Valuables_Electronics(weight = 0.1);
+		use Upgrades(weight = 0.1);
 		//use Upgrades_Premium(weight = 0.1);
     }
 
@@ -193,8 +193,8 @@ sub Loot()
         use Healing_Items(weight = 2.0);
         use Valuables_Default(weight = 1.0);
 
-        use Valuables_Electronics(weight = 0.4);
-		use Upgrades(weight = 0.4);
+        use Valuables_Electronics(weight = 0.1);
+		use Upgrades(weight = 0.2);
 		//use Upgrades_Premium(weight = 0.2);
     }
 
@@ -213,8 +213,8 @@ sub Loot()
         use Valuables_Default(weight = 0.5);
 		use Crafting_Sedan(weight = 4.0);
 
-        use Valuables_Electronics(weight = 0.4);
-        use Upgrades(weight = 0.4);
+        use Valuables_Electronics(weight = 0.2);
+        use Upgrades(weight = 0.3);
         use Upgrades_Premium(weight = 0.2);
     }
 
@@ -260,14 +260,14 @@ sub Loot()
         IgnorePlatinumRestrictions();
 
         use CashBig(weight = 1.0);
-        use Crafting_Chest_Big(weight = 5.0);
+        use Crafting_Chest_Big(weight = 4.0);
 
-        use Valuables_Electronics(weight = 0.4);
+        use Valuables_Electronics(weight = 0.1);
         use Upgrades(weight = 0.4);
         use Upgrades_Premium(weight = 0.2);
 
-        use Valuables_Default(weight = 3.0);
-		use Medkits(weight = 2.0);
+        use Valuables_Default(weight = 2.0);
+		use Medkits(weight = 1.0);
     }
 
     LootedObject(FuelContainer)
@@ -324,7 +324,7 @@ sub Loot()
 		use Biter_Healing_Craftparts(weight = 1.5);
 		
         use Valuables_Biter(weight = 1.0);
-		use Valuables_Electronics(weight = 0.1);
+		// use Valuables_Electronics(weight = 0.1);
     }
 
 
@@ -343,7 +343,7 @@ sub Loot()
 		use Biter_Healing_Craftparts(weight = 2.0);
 		
         use Valuables_Biter(weight = 0.8);
-		use Valuables_Electronics(weight = 0.1);
+		// use Valuables_Electronics(weight = 0.1);
         
     }
 
@@ -414,9 +414,9 @@ sub Loot()
         
         use Valuables_Biter(weight = 0.0);
 
-        use Upgrades(weight = 0.5);
-        use Upgrades_Premium(weight = 0.2);
-        use Valuables_Electronics(weight = 0.25);
+        use Upgrades(weight = 0.4);
+        // use Upgrades_Premium(weight = 0.2);
+        // use Valuables_Electronics(weight = 0.25);
     }
 
 	LootedObject("Biter_lvl1_wast")
@@ -534,9 +534,9 @@ sub Loot()
         
         use Consumable_Healing(weight = 0.5);
 
-        use Valuables_Electronics(weight = 0.8);
-        use Upgrades(weight = 0.8);
-        use Upgrades_Premium(weight = 0.25);
+        use Valuables_Electronics(weight = 0.3);
+        use Upgrades(weight = 0.3);
+        use Upgrades_Premium(weight = 0.1);
 
         use Harvesting_Goon(weight = 0.1);
     }
@@ -552,9 +552,9 @@ sub Loot()
         
         use Consumable_Healing(weight = 0.5);
 
-        use Valuables_Electronics(weight = 0.8);
-        use Upgrades(weight = 0.8);
-        use Upgrades_Premium(weight = 0.25);
+        use Valuables_Electronics(weight = 0.3);
+        use Upgrades(weight = 0.3);
+        use Upgrades_Premium(weight = 0.1);
 
         use Harvesting_Goon(weight = 0.1);
     }
@@ -570,9 +570,9 @@ sub Loot()
         
         use Consumable_Healing(weight = 0.5);
 
-        use Valuables_Electronics(weight = 0.8);
-        use Upgrades(weight = 0.8);
-        use Upgrades_Premium(weight = 0.25);
+        use Valuables_Electronics(weight = 0.3);
+        use Upgrades(weight = 0.3);
+        use Upgrades_Premium(weight = 0.1);
 
         use Harvesting_Goon(weight = 0.1);
     }
@@ -588,8 +588,8 @@ sub Loot()
         use Components_Biter(weight = 2.5);
 		use Consumable_Healing(weight = 1.5);
 
-        use Valuables_Electronics(weight = 1.0);
-        use Upgrades(weight = 1.0);
+        // use Valuables_Electronics(weight = 1.0);
+        // use Upgrades(weight = 1.0);
 
     }
 
@@ -604,8 +604,8 @@ sub Loot()
         use Components_Biter(weight = 1.5);
         use Consumable_Healing(weight = 2.5);
 
-        use Valuables_Electronics(weight = 1.0);
-        use Upgrades(weight = 1.0);
+        use Valuables_Electronics(weight = 0.2);
+        use Upgrades(weight = 0.5);
 		
     }
 
@@ -620,13 +620,13 @@ sub Loot()
         use CashMedium(weight = 1.0);
 
         use Valuables_Viral(weight = 0.75);
-		use Valuables_Electronics(weight = 0.4);
+		// use Valuables_Electronics(weight = 0.4);
 		use Consumable_Healing(weight = 3.0);
 		use Crafting_Biter(weight = 3.0);
-		use Medkits(weight = 0.5);
+		// use Medkits(weight = 0.5);
 
-        use Upgrades(weight = 0.4);
-        use Upgrades_Premium(weight = 0.15);
+        // use Upgrades(weight = 0.4);
+        // use Upgrades_Premium(weight = 0.15);
 		
     }
 
@@ -640,7 +640,7 @@ sub Loot()
         use CashMedium(weight = 1.0);
 
         use Valuables_Viral(weight = 0.75);
-        use Valuables_Electronics(weight = 0.25);
+        // use Valuables_Electronics(weight = 0.25);
         use Consumable_Healing(weight = 3.0);
         use Crafting_Biter(weight = 3.0);
         use Medkits(weight = 0.5);
@@ -663,10 +663,10 @@ sub Loot()
         use Medkits(weight = 1.0);
         use Consumable_Healing(weight = 2.0);
         
-        use Valuables_Electronics(weight = 1.0);
+        use Valuables_Electronics(weight = 0.5);
         use Valuables_Premium(weight = 2.0);
         use Upgrades(weight = 1.0);
-        use Upgrades_Premium(weight = 0.3);
+        use Upgrades_Premium(weight = 0.2);
     }
 	
     LootedObject("DeadBody_Soldier_Gaas_01")
@@ -689,7 +689,7 @@ sub Loot()
     {
         ColorSet(ColorSet_Default);
         use Empty(weight = 10.0);  
-        use Valuables_Electronics(weight = 1.0);
+        // use Valuables_Electronics(weight = 1.0);
     }
 
     LootedObject(DeadBody_Prime)
@@ -721,9 +721,9 @@ sub Loot()
         use Components_Biter(weight = 2.5);
         use Consumable_Healing(weight = 1.5);
 
-        use Valuables_Electronics(weight = 1.0);
-        use Upgrades(weight = 1.0);
-        use Upgrades_Premium(weight = 0.3);
+        // use Valuables_Electronics(weight = 1.0);
+        // use Upgrades(weight = 1.0);
+        // use Upgrades_Premium(weight = 0.3);
     }
 
     LootedObject(DeadBody_HiveBrood)

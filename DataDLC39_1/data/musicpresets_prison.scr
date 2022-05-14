@@ -15,6 +15,7 @@ MusicPreset("Prison_Time_Run")
 	Music(NIGHT,                    	"DL_Attack_Soldiers_04.ogg",    		    0, 0, 0, 1.8, -1, 0)
 	//Music(DAY,                      	"DL_Attack_Soldiers_04.ogg",     			0, 0, 0, 1.8, -1, 0) //DW  DWDL_Escape_00.ogg   DL_DLC_Stadion_Attack_01VERB.ogg DL_Run_01.ogg
 }
+
 /*
 MusicPreset("Prison_Time_Run_End")
 {	
@@ -81,40 +82,42 @@ MusicPreset("WC_Fight")
     Music(NIGHT,                        "DL_Attack_Soldiers_04.ogg", 		1, 1, 0, 1.5, -1, 0)
 	//DL_Fight_Warehouse_01.ogg
 }
+*/
 
 MusicPreset("Final_Arena_Fight_Part_1")
 {
 	NoBlockingByEvents()
 	
-    Music(DAY,                          "DL_Attack_Soldiers_04.ogg", 		1, 1, 0, 1.3, -1, 0)
-    Music(DAY_COMMING,                  "DL_Attack_Soldiers_04.ogg", 		1, 1, 0, 1.3, -1, 0)
-    Music(NIGHT,                        "DL_Attack_Soldiers_04.ogg", 		1, 1, 0, 1.3, -1, 0)
+    Music(DAY,                      	"DL_FinalFight_Warehouse_02.ogg", 	0, 2, 0, 1.0, -1, 0)
+	Music(DAY_COMMING,                  "DL_FinalFight_Warehouse_02.ogg", 	0, 2, 0, 1.0, -1, 0)
+	Music(NIGHT,                    	"DL_FinalFight_Warehouse_02.ogg", 	0, 2, 0, 1.0, -1, 0)
 }
 
+/*
 MusicPreset("Final_Arena_Boss")
 {
 	NoBlockingByEvents()
 	
-    Music(DAY,                          "DL_Attack_Soldiers_04.ogg", 		1, 1, 0, 1.3, -1, 0)
-    Music(DAY_COMMING,                  "DL_Attack_Soldiers_04.ogg", 		1, 1, 0, 1.3, -1, 0)
-    Music(NIGHT,                        "DL_Attack_Soldiers_04.ogg", 		1, 1, 0, 1.3, -1, 0)
+    Music(DAY,                          "warehouse_music_area_Final_fifgt.ogg", 		1, 1, 0, 1.3, -1, 0)
+    Music(DAY_COMMING,                  "warehouse_music_area_Final_fifgt.ogg", 		1, 1, 0, 1.3, -1, 0)
+    Music(NIGHT,                        "warehouse_music_area_Final_fifgt.ogg", 		1, 1, 0, 1.3, -1, 0)
 }
+*/
 
 MusicPreset("Music_Gas")
 {
 	NoBlockingByEvents()
 	
-    Music(DAY,                          "DL_Attack_Soldiers_04.ogg", 		1, 1, 0, 1.3, -1, 0)
-    Music(DAY_COMMING,                  "DL_Attack_Soldiers_04.ogg", 		1, 1, 0, 1.3, -1, 0)
-    Music(NIGHT,                        "DL_Attack_Soldiers_04.ogg", 		1, 1, 0, 1.3, -1, 0)
-}*/
+    Music(DAY,                          "DL_Attack_Boss_01.ogg", 		1, 4, 0, 1.1, -1, 0)
+    Music(DAY_COMMING,                  "DL_Attack_Boss_01.ogg", 		1, 4, 0, 1.1, -1, 0)
+    Music(NIGHT,                        "DL_Attack_Boss_01.ogg", 		1, 4, 0, 1.1, -1, 0)
+}
 
 MusicPreset("Revard_Room")
 {
 	NoBlockingByEvents()
 	
-    Music(DAY,                          "DL_Attack_Soldiers_04.ogg", 		0, 0, 0, 1.8, -1, 0)
-    Music(DAY_COMMING,                  "DL_Attack_Soldiers_04.ogg", 		0, 0, 0, 1.8, -1, 0)
-    Music(NIGHT,                        "DL_Attack_Soldiers_04.ogg", 		0, 0, 0, 1.8, -1, 0)
+    Music(DAY,                          "DL_Slums_Wrocek_01.ogg", 		3, 2, 0, 1.2, -1, 0)
+    Music(DAY_COMMING,                  "DL_Slums_Wrocek_01.ogg", 		3, 2, 0, 1.2, -1, 0)
+    Music(NIGHT,                        "DL_Slums_Wrocek_01.ogg", 		3, 2, 0, 1.2, -1, 0)
 }
-

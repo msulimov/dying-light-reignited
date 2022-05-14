@@ -435,18 +435,18 @@
 	</skill>
 	
 	<skill id="StatusHook" cat="status" tier="5" max_level="1" desc_params="equipment_grappling_a_big;NODE;M:StatusHook" skill_points="1" skill_points_type="Status">
-		<level_req type="Status" value="22"/>
+		<level_req type="Status" value="16"/>
 		<effect id="CanUseHook" change="1"/>
 	</skill>
 	
 	<skill id="ElementalCrit" cat="status" tier="20" max_level="1" desc_params="crit;P" skill_points="1" skill_points_type="Status">
-		<level_req type="Status" value="23"/>
+		<level_req type="Status" value="17"/>
 		<skill_req id="StatusHook"/>
 		<effect id="ElementalCritChanceMul" change="0.25"/>
 	</skill>
 	
 	<skill id="CraftingMaster" cat="status" tier="22" max_level="1" desc_params="blueprints_power;P" skill_points="1" skill_points_type="Status">
-		<level_req type="Status" value="23"/>
+		<level_req type="Status" value="17"/>
 		<skill_req id="StatusHook"/>
         <effect id="ElementalCritDamageMul" change="0.25"/>
         <effect id="ElementalCritDamageDurationMul" change="0.25"/>
