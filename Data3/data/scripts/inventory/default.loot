@@ -24,7 +24,7 @@ sub Loot()
         ColorSet(ColorSet_Default);
         IgnorePlatinumRestrictions();
 
-        use Empty(weight = 15.0);
+        use Empty(weight = 20.0);
         use QuestItems_Wardrobe(weight = 0.01);
         use Crafting_Wardrobe(weight = 2.5);
         use Consumable_Healing(weight = 2.0);
