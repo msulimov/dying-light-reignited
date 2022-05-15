@@ -58,6 +58,487 @@ export int ColorSet_Prison_Crafting_Tier_34 = 48;
 export int ColorSet_airdrop_event = 49;
 export int ColorSet_Upgrades_Volatile_Iced = 50;
 
+//------------------------------------------------------------------------
+//------------------------------------------------------------------------
+//------------------------------------------------------------------------ NIGHTMARE
+//------------------------------------------------------------------------
+//------------------------------------------------------------------------
+
+
+sub DefineColorsNightmare()
+{
+    DefColorSet(ColorSet_Default)
+    {
+        ColorWeight(Color_White, 30);
+        ColorWeight(Color_Green, 40);
+        ColorWeight(Color_Blue, 25);
+        ColorWeight(Color_Violet, 3);
+        ColorWeight(Color_Orange, 2);
+        
+    }
+
+    DefColorSet(ColorSet_Lockpick1)
+    {
+        ColorWeight(Color_White, 0);
+        ColorWeight(Color_Green, 92);
+        ColorWeight(Color_Blue, 5);
+        ColorWeight(Color_Violet, 2);
+        ColorWeight(Color_Orange, 1);
+    }
+
+    DefColorSet(ColorSet_Lockpick2)
+    {
+        ColorWeight(Color_White, 0);
+        ColorWeight(Color_Green, 85);
+        ColorWeight(Color_Blue, 10);
+        ColorWeight(Color_Violet, 4);
+        ColorWeight(Color_Orange, 1);
+    }
+
+    DefColorSet(ColorSet_Lockpick3)
+    {
+        ColorWeight(Color_White, 0);
+        ColorWeight(Color_Green, 0);
+        ColorWeight(Color_Blue, 0);
+        ColorWeight(Color_Violet, 40);
+        ColorWeight(Color_Orange, 20);
+        ColorWeight(Color_Platinum, 10);
+    }
+
+    DefColorSet(ColorSet_FatMan)
+    {
+        ColorWeight(Color_White, 30);
+        ColorWeight(Color_Green, 20);
+        ColorWeight(Color_Blue, 40);
+        ColorWeight(Color_Violet, 10);
+        ColorWeight(Color_Orange, 0);
+    }
+
+    DefColorSet(ColorSet_Ram)
+    {
+        ColorWeight(Color_White, 10);
+        ColorWeight(Color_Green, 50);
+        ColorWeight(Color_Blue, 30);
+        ColorWeight(Color_Violet, 10);
+        ColorWeight(Color_Orange, 0);
+    }
+
+    DefColorSet(ColorSet_Suicider)
+    {
+        ColorWeight(Color_White, 70);
+        ColorWeight(Color_Green, 20);
+        ColorWeight(Color_Blue, 5);
+        ColorWeight(Color_Violet, 5);
+        ColorWeight(Color_Orange, 0);
+    }
+
+    DefColorSet(ColorSet_Corrupter)
+    {
+        ColorWeight(Color_White, 30);
+        ColorWeight(Color_Green, 20);
+        ColorWeight(Color_Blue, 40);
+        ColorWeight(Color_Violet, 10);
+        ColorWeight(Color_Orange, 0);
+    }
+
+    DefColorSet(ColorSet_MeleeFighter)
+    {
+        ColorWeight(Color_White, 0);
+        ColorWeight(Color_Green, 10);
+        ColorWeight(Color_Blue, 30);
+        ColorWeight(Color_Violet, 50);
+        ColorWeight(Color_Orange, 10);
+    }
+
+    DefColorSet(ColorSet_AirDrop)
+    {
+        ColorWeight(Color_White, 0);
+        ColorWeight(Color_Green, 0);
+        ColorWeight(Color_Blue, 1);
+        ColorWeight(Color_Violet, 0);
+        ColorWeight(Color_Orange, 0);
+    }
+
+    DefColorSet(ColorSet_WhiteOnly)
+    {
+        ColorWeight(Color_White, 1);
+        ColorWeight(Color_Green, 0);
+        ColorWeight(Color_Blue, 0);
+        ColorWeight(Color_Violet, 0);
+        ColorWeight(Color_Orange, 0);
+    }
+
+    DefColorSet(ColorSet_cs_encounter)
+    {
+        ColorWeight(Color_White, 25);
+        ColorWeight(Color_Green, 25);
+        ColorWeight(Color_Blue, 35);
+        ColorWeight(Color_Violet, 10);
+        ColorWeight(Color_Orange, 5);
+    }
+
+    DefColorSet(ColorSet_cs_encounter_chest)
+    {
+        ColorWeight(Color_White, 25);
+        ColorWeight(Color_Green, 25);
+        ColorWeight(Color_Blue, 35);
+        ColorWeight(Color_Violet, 10);
+        ColorWeight(Color_Orange, 5);
+    }
+
+    DefColorSet(ColorSet_cs_encounter_body)
+    {
+        ColorWeight(Color_White, 25);
+        ColorWeight(Color_Green, 25);
+        ColorWeight(Color_Blue, 35);
+        ColorWeight(Color_Violet, 10);
+        ColorWeight(Color_Orange, 5);
+    }
+
+    DefColorSet(ColorSet_cs_drp)
+    {
+        ColorWeight(Color_White, 0);
+        ColorWeight(Color_Green, 0);
+        ColorWeight(Color_Blue, 0);
+        ColorWeight(Color_Violet, 0);
+        ColorWeight(Color_Orange, 1);
+    }
+
+    DefColorSet(ColorSet_cs_airrdrop_bundles)
+    {
+        ColorWeight(Color_White, 0);
+        ColorWeight(Color_Green, 0);
+        ColorWeight(Color_Blue, 1);
+        ColorWeight(Color_Violet, 0);
+        ColorWeight(Color_Orange, 0);
+    }
+    
+    DefColorSet(ColorSet_airdrop_event)
+    {
+        ColorWeight(Color_White, 50);
+        ColorWeight(Color_Green, 25);
+        ColorWeight(Color_Blue, 10);
+        ColorWeight(Color_Violet, 7);
+        ColorWeight(Color_Orange, 5);
+        ColorWeight(Color_Platinum, 3);
+    }
+
+    DefColorSet(ColorSet_cs_crafting)
+    {
+        ColorWeight(Color_White, 40);
+        ColorWeight(Color_Green, 35);
+        ColorWeight(Color_Blue, 20);
+        ColorWeight(Color_Violet, 5);
+        ColorWeight(Color_Orange, 0);
+    }
+
+    DefColorSet(ColorSet_cs_fridge)
+    {
+        ColorWeight(Color_White, 1);
+        ColorWeight(Color_Green, 2);
+        ColorWeight(Color_Blue, 2);
+        ColorWeight(Color_Violet, 0);
+        ColorWeight(Color_Orange, 0);
+    }
+
+    DefColorSet(ColorSet_cs_cashdesk)
+    {
+        ColorWeight(Color_White, 0);
+        ColorWeight(Color_Green, 75);
+        ColorWeight(Color_Blue, 25);
+        ColorWeight(Color_Violet, 0);
+        ColorWeight(Color_Orange, 0);
+    }
+
+    DefColorSet(ColorSet_cs_prime)
+    {
+        ColorWeight(Color_White, 0);
+        ColorWeight(Color_Green, 0);
+        ColorWeight(Color_Blue, 0);
+        ColorWeight(Color_Violet, 0);
+        ColorWeight(Color_Orange, 1);
+    }
+
+    DefColorSet(ColorSet_Cont_Lockpick)
+    {
+        ColorWeight(Color_White, 1);
+        ColorWeight(Color_Green, 10);
+        ColorWeight(Color_Blue, 50);
+        ColorWeight(Color_Violet, 30);
+        ColorWeight(Color_Orange, 10);
+    }
+
+    DefColorSet(ColorSet_All_Equal)
+    {
+        ColorWeight(Color_White, 1);
+        ColorWeight(Color_Green, 1);
+        ColorWeight(Color_Blue, 1);
+        ColorWeight(Color_Violet, 1);
+        ColorWeight(Color_Orange, 1);
+    }
+
+    DefColorSet(ColorSet_WeaponChest)
+    {
+        ColorWeight(Color_White, 20);
+        ColorWeight(Color_Green, 35);
+        ColorWeight(Color_Blue, 35);
+        ColorWeight(Color_Violet, 10);
+        ColorWeight(Color_Orange, 0);
+    }
+
+    DefColorSet(ColorSet_WeaponChest_Medium)
+    {
+        
+        ColorWeight(Color_White, 0);
+        ColorWeight(Color_Green, 20);
+        ColorWeight(Color_Blue, 40);
+        ColorWeight(Color_Violet, 30);
+        ColorWeight(Color_Orange, 10);
+        
+    }
+        
+    DefColorSet(ColorSet_WeaponChest_Hard)
+    {
+       
+        ColorWeight(Color_White, 0);
+        ColorWeight(Color_Green, 0);
+        ColorWeight(Color_Blue, 25);
+        ColorWeight(Color_Violet, 50);
+        ColorWeight(Color_Orange, 15);
+        ColorWeight(Color_Platinum, 10);
+        
+    }
+
+    DefColorSet(ColorSet_ValuableChest)
+    {
+        ColorWeight(Color_White, 0);
+        ColorWeight(Color_Green, 0);
+        ColorWeight(Color_Blue, 0);
+        ColorWeight(Color_Violet, 85);
+        ColorWeight(Color_Orange, 15);
+    }
+
+    DefColorSet(ColorSet_OrangeOnly)
+    {
+        ColorWeight(Color_White, 0);
+        ColorWeight(Color_Green, 0);
+        ColorWeight(Color_Blue, 0);
+        ColorWeight(Color_Violet, 0);
+        ColorWeight(Color_Orange, 1);
+    }
+
+    DefColorSet(ColorSet_BlueOnly)
+    {
+        ColorWeight(Color_White, 0);
+        ColorWeight(Color_Green, 0);
+        ColorWeight(Color_Blue, 1);
+        ColorWeight(Color_Violet, 0);
+        ColorWeight(Color_Orange, 0);
+    }
+
+    DefColorSet(ColorSet_VioletOnly)
+    {
+        ColorWeight(Color_White, 0);
+        ColorWeight(Color_Green, 0);
+        ColorWeight(Color_Blue, 0);
+        ColorWeight(Color_Violet, 1);
+        ColorWeight(Color_Orange, 0);
+    }
+
+    DefColorSet(ColorSet_GreenOnly)
+    {
+        ColorWeight(Color_White, 0);
+        ColorWeight(Color_Green, 1);
+        ColorWeight(Color_Blue, 0);
+        ColorWeight(Color_Violet, 0);
+        ColorWeight(Color_Orange, 0);
+    }
+
+    DefColorSet(ColorSet_Valuables_Chest)
+    {
+        ColorWeight(Color_White, 20);
+        ColorWeight(Color_Green, 35);
+        ColorWeight(Color_Blue, 35);
+        ColorWeight(Color_Violet, 10);
+        ColorWeight(Color_Orange, 0);
+    }
+    
+    DefColorSet(ColorSet_BTZ_Reward_Platinum)
+    {
+        ColorWeight(Color_White, 0);
+        ColorWeight(Color_Green, 0);
+        ColorWeight(Color_Blue, 0);
+        ColorWeight(Color_Violet, 0);
+        ColorWeight(Color_Orange, 0);
+        ColorWeight(Color_Platinum, 100);
+    }
+  
+    DefColorSet(ColorSet_WeaponChest_Hard_Deadzone)
+    {
+        
+        ColorWeight(Color_White, 0);
+        ColorWeight(Color_Green, 0);
+        ColorWeight(Color_Blue, 10);
+        ColorWeight(Color_Violet, 40);
+        ColorWeight(Color_Orange, 25);
+        ColorWeight(Color_Platinum, 25);
+        
+    }
+
+    DefColorSet(ColorSet_BTZ_Reward_Platinum)
+    {
+        ColorWeight(Color_White, 0);
+        ColorWeight(Color_Green, 0);
+        ColorWeight(Color_Blue, 0);
+        ColorWeight(Color_Violet, 0);
+        ColorWeight(Color_Orange, 0);
+        ColorWeight(Color_Platinum, 100);
+    }
+    
+    DefColorSet(ColorSet_Parts_Sedan_L1_3)
+    {
+        ColorWeight(Color_White, 90);
+        ColorWeight(Color_Green, 10);
+        ColorWeight(Color_Blue, 0);
+        ColorWeight(Color_Violet, 0);
+        ColorWeight(Color_Orange, 0);
+    }
+
+    DefColorSet(ColorSet_Parts_Police_L2_4)
+    {
+        ColorWeight(Color_White, 0.01);
+        ColorWeight(Color_Green, 70);
+        ColorWeight(Color_Blue, 20);
+        ColorWeight(Color_Violet, 10);
+        ColorWeight(Color_Orange, 0);
+    }
+
+    DefColorSet(ColorSet_Parts_Military_L3_5)
+    {
+        ColorWeight(Color_White, 0.01);
+        ColorWeight(Color_Green, 0.01);
+        ColorWeight(Color_Blue, 70);
+        ColorWeight(Color_Violet, 20);
+        ColorWeight(Color_Orange, 10);
+    }
+
+
+    DefColorSet(ColorSet_Components_Common)
+    {
+        ColorWeight(Color_White, 1);
+        ColorWeight(Color_Green, 1);
+        ColorWeight(Color_Blue, 1);
+    }
+
+    DefColorSet(ColorSet_Components_Rare)
+    {
+        ColorWeight(Color_Green, 70);
+        ColorWeight(Color_Blue, 20);
+        ColorWeight(Color_Violet, 10);
+    }
+
+    DefColorSet(ColorSet_PlatinumOnly)
+    {
+        ColorWeight(Color_Platinum, 1);
+    }
+    
+    DefColorSet(ColorSet_Liveops_Christmas)
+    {
+        ColorWeight(Color_Green, 85);
+        ColorWeight(Color_Blue, 10);
+        ColorWeight(Color_Violet, 5);
+    }
+
+    DefColorSet(ColorSet_Tier0)
+    {
+        ColorWeight(Color_White,    0);
+        ColorWeight(Color_Green,    0);
+        ColorWeight(Color_Blue,     100);
+        ColorWeight(Color_Violet,   0);
+        ColorWeight(Color_Orange,   0);
+    }
+
+    DefColorSet(ColorSet_Tier1)
+    {
+        ColorWeight(Color_White,    0);
+        ColorWeight(Color_Green,    100);
+        ColorWeight(Color_Blue,     0);
+        ColorWeight(Color_Violet,   0);
+        ColorWeight(Color_Orange,   0);
+    }
+
+    DefColorSet(ColorSet_Tier2)
+    {
+        ColorWeight(Color_White,    100);
+        ColorWeight(Color_Green,    0);
+        ColorWeight(Color_Blue,     0);
+        ColorWeight(Color_Violet,   0);
+        ColorWeight(Color_Orange,   0);
+    }
+
+    DefColorSet(ColorSet_Prison_Powerups_Tier_0)
+    {
+        ColorWeight(Color_White,    0);
+        ColorWeight(Color_Green,    1);
+        ColorWeight(Color_Blue,     6);
+        ColorWeight(Color_Violet,   0);
+        ColorWeight(Color_Orange,   3);
+    }
+
+    DefColorSet(ColorSet_Prison_Powerups_Tier_12)
+    {
+        ColorWeight(Color_White,    0);
+        ColorWeight(Color_Green,    6);
+        ColorWeight(Color_Blue,     4);
+        ColorWeight(Color_Violet,   0);
+        ColorWeight(Color_Orange,   0);
+    }
+
+    DefColorSet(ColorSet_Prison_Powerups_Tier_34)
+    {
+        ColorWeight(Color_White,    0);
+        ColorWeight(Color_Green,    1);
+        ColorWeight(Color_Blue,     0);
+        ColorWeight(Color_Violet,   0);
+        ColorWeight(Color_Orange,   0);
+    }
+
+    DefColorSet(ColorSet_Prison_Crafting_Tier_0)
+    {
+        ColorWeight(Color_White,  1);
+        ColorWeight(Color_Green,  1);
+        ColorWeight(Color_Blue,   4);
+        ColorWeight(Color_Violet, 4);
+        ColorWeight(Color_Orange, 1);
+    }
+
+    DefColorSet(ColorSet_Prison_Crafting_Tier_12)
+    {
+        ColorWeight(Color_White,  1);
+        ColorWeight(Color_Green,  3);
+        ColorWeight(Color_Blue,   4);
+        ColorWeight(Color_Violet, 3);
+        ColorWeight(Color_Orange, 1);
+    }
+
+    DefColorSet(ColorSet_Prison_Crafting_Tier_34)
+    {
+        ColorWeight(Color_White, 50);
+        ColorWeight(Color_Green, 0);
+        ColorWeight(Color_Blue, 30);
+        ColorWeight(Color_Violet, 15);
+        ColorWeight(Color_Orange, 5);
+    }
+
+    DefColorSet(ColorSet_Upgrades_Volatile_Iced)
+    {
+        ColorWeight(Color_Blue,   3);
+        ColorWeight(Color_Violet, 3);
+        ColorWeight(Color_Orange, 4);
+    }
+    
+}
+
 sub DefineColors()
 {
 
@@ -1011,485 +1492,4 @@ DefColorSet(ColorSet_BTZ_Reward_Platinum)
         ColorWeight(Color_Orange, 4);
     }
 
-}
-
-//------------------------------------------------------------------------
-//------------------------------------------------------------------------
-//------------------------------------------------------------------------ NIGHTMARE
-//------------------------------------------------------------------------
-//------------------------------------------------------------------------
-
-
-sub DefineColorsNightmare()
-{
-    DefColorSet(ColorSet_Default)
-    {
-        ColorWeight(Color_White, 30);
-        ColorWeight(Color_Green, 40);
-        ColorWeight(Color_Blue, 25);
-        ColorWeight(Color_Violet, 3);
-        ColorWeight(Color_Orange, 2);
-        
-    }
-
-    DefColorSet(ColorSet_Lockpick1)
-    {
-        ColorWeight(Color_White, 0);
-        ColorWeight(Color_Green, 92);
-        ColorWeight(Color_Blue, 5);
-        ColorWeight(Color_Violet, 2);
-        ColorWeight(Color_Orange, 1);
-    }
-
-    DefColorSet(ColorSet_Lockpick2)
-    {
-        ColorWeight(Color_White, 0);
-        ColorWeight(Color_Green, 85);
-        ColorWeight(Color_Blue, 10);
-        ColorWeight(Color_Violet, 4);
-        ColorWeight(Color_Orange, 1);
-    }
-
-    DefColorSet(ColorSet_Lockpick3)
-    {
-        ColorWeight(Color_White, 0);
-        ColorWeight(Color_Green, 0);
-        ColorWeight(Color_Blue, 0);
-        ColorWeight(Color_Violet, 40);
-        ColorWeight(Color_Orange, 20);
-        ColorWeight(Color_Platinum, 10);
-    }
-
-    DefColorSet(ColorSet_FatMan)
-    {
-        ColorWeight(Color_White, 30);
-        ColorWeight(Color_Green, 20);
-        ColorWeight(Color_Blue, 40);
-        ColorWeight(Color_Violet, 10);
-        ColorWeight(Color_Orange, 0);
-    }
-
-    DefColorSet(ColorSet_Ram)
-    {
-        ColorWeight(Color_White, 10);
-        ColorWeight(Color_Green, 50);
-        ColorWeight(Color_Blue, 30);
-        ColorWeight(Color_Violet, 10);
-        ColorWeight(Color_Orange, 0);
-    }
-
-    DefColorSet(ColorSet_Suicider)
-    {
-        ColorWeight(Color_White, 70);
-        ColorWeight(Color_Green, 20);
-        ColorWeight(Color_Blue, 5);
-        ColorWeight(Color_Violet, 5);
-        ColorWeight(Color_Orange, 0);
-    }
-
-    DefColorSet(ColorSet_Corrupter)
-    {
-        ColorWeight(Color_White, 30);
-        ColorWeight(Color_Green, 20);
-        ColorWeight(Color_Blue, 40);
-        ColorWeight(Color_Violet, 10);
-        ColorWeight(Color_Orange, 0);
-    }
-
-    DefColorSet(ColorSet_MeleeFighter)
-    {
-        ColorWeight(Color_White, 0);
-        ColorWeight(Color_Green, 10);
-        ColorWeight(Color_Blue, 30);
-        ColorWeight(Color_Violet, 50);
-        ColorWeight(Color_Orange, 10);
-    }
-
-    DefColorSet(ColorSet_AirDrop)
-    {
-        ColorWeight(Color_White, 0);
-        ColorWeight(Color_Green, 0);
-        ColorWeight(Color_Blue, 1);
-        ColorWeight(Color_Violet, 0);
-        ColorWeight(Color_Orange, 0);
-    }
-
-    DefColorSet(ColorSet_WhiteOnly)
-    {
-        ColorWeight(Color_White, 1);
-        ColorWeight(Color_Green, 0);
-        ColorWeight(Color_Blue, 0);
-        ColorWeight(Color_Violet, 0);
-        ColorWeight(Color_Orange, 0);
-    }
-
-    DefColorSet(ColorSet_cs_encounter)
-    {
-        ColorWeight(Color_White, 25);
-        ColorWeight(Color_Green, 25);
-        ColorWeight(Color_Blue, 35);
-        ColorWeight(Color_Violet, 10);
-        ColorWeight(Color_Orange, 5);
-    }
-
-    DefColorSet(ColorSet_cs_encounter_chest)
-    {
-        ColorWeight(Color_White, 25);
-        ColorWeight(Color_Green, 25);
-        ColorWeight(Color_Blue, 35);
-        ColorWeight(Color_Violet, 10);
-        ColorWeight(Color_Orange, 5);
-    }
-
-    DefColorSet(ColorSet_cs_encounter_body)
-    {
-        ColorWeight(Color_White, 25);
-        ColorWeight(Color_Green, 25);
-        ColorWeight(Color_Blue, 35);
-        ColorWeight(Color_Violet, 10);
-        ColorWeight(Color_Orange, 5);
-    }
-
-    DefColorSet(ColorSet_cs_drp)
-    {
-        ColorWeight(Color_White, 0);
-        ColorWeight(Color_Green, 0);
-        ColorWeight(Color_Blue, 0);
-        ColorWeight(Color_Violet, 0);
-        ColorWeight(Color_Orange, 1);
-    }
-
-    DefColorSet(ColorSet_cs_airrdrop_bundles)
-    {
-        ColorWeight(Color_White, 0);
-        ColorWeight(Color_Green, 0);
-        ColorWeight(Color_Blue, 1);
-        ColorWeight(Color_Violet, 0);
-        ColorWeight(Color_Orange, 0);
-    }
-	
-	DefColorSet(ColorSet_airdrop_event)
-    {
-        ColorWeight(Color_White, 50);
-        ColorWeight(Color_Green, 25);
-        ColorWeight(Color_Blue, 10);
-        ColorWeight(Color_Violet, 7);
-        ColorWeight(Color_Orange, 5);
-		ColorWeight(Color_Platinum, 3);
-    }
-
-    DefColorSet(ColorSet_cs_crafting)
-    {
-        ColorWeight(Color_White, 40);
-        ColorWeight(Color_Green, 35);
-        ColorWeight(Color_Blue, 20);
-        ColorWeight(Color_Violet, 5);
-        ColorWeight(Color_Orange, 0);
-    }
-
-    DefColorSet(ColorSet_cs_fridge)
-    {
-        ColorWeight(Color_White, 1);
-        ColorWeight(Color_Green, 2);
-        ColorWeight(Color_Blue, 2);
-        ColorWeight(Color_Violet, 0);
-        ColorWeight(Color_Orange, 0);
-    }
-
-    DefColorSet(ColorSet_cs_cashdesk)
-    {
-        ColorWeight(Color_White, 0);
-        ColorWeight(Color_Green, 75);
-        ColorWeight(Color_Blue, 25);
-        ColorWeight(Color_Violet, 0);
-        ColorWeight(Color_Orange, 0);
-    }
-
-    DefColorSet(ColorSet_cs_prime)
-    {
-        ColorWeight(Color_White, 0);
-        ColorWeight(Color_Green, 0);
-        ColorWeight(Color_Blue, 0);
-        ColorWeight(Color_Violet, 0);
-        ColorWeight(Color_Orange, 1);
-    }
-
-    DefColorSet(ColorSet_Cont_Lockpick)
-    {
-        ColorWeight(Color_White, 1);
-        ColorWeight(Color_Green, 10);
-        ColorWeight(Color_Blue, 50);
-        ColorWeight(Color_Violet, 30);
-        ColorWeight(Color_Orange, 10);
-    }
-
-    DefColorSet(ColorSet_All_Equal)
-    {
-        ColorWeight(Color_White, 1);
-        ColorWeight(Color_Green, 1);
-        ColorWeight(Color_Blue, 1);
-        ColorWeight(Color_Violet, 1);
-        ColorWeight(Color_Orange, 1);
-    }
-
-    DefColorSet(ColorSet_WeaponChest)
-    {
-        ColorWeight(Color_White, 20);
-        ColorWeight(Color_Green, 35);
-        ColorWeight(Color_Blue, 35);
-        ColorWeight(Color_Violet, 10);
-        ColorWeight(Color_Orange, 0);
-    }
-
-    DefColorSet(ColorSet_WeaponChest_Medium)
-    {
-        
-        ColorWeight(Color_White, 0);
-        ColorWeight(Color_Green, 20);
-        ColorWeight(Color_Blue, 40);
-        ColorWeight(Color_Violet, 30);
-        ColorWeight(Color_Orange, 10);
-		
-    }
-        
-    DefColorSet(ColorSet_WeaponChest_Hard)
-    {
-       
-        ColorWeight(Color_White, 0);
-        ColorWeight(Color_Green, 0);
-        ColorWeight(Color_Blue, 25);
-        ColorWeight(Color_Violet, 50);
-        ColorWeight(Color_Orange, 15);
-        ColorWeight(Color_Platinum, 10);
-		
-    }
-
-    DefColorSet(ColorSet_ValuableChest)
-    {
-        ColorWeight(Color_White, 0);
-        ColorWeight(Color_Green, 0);
-        ColorWeight(Color_Blue, 0);
-        ColorWeight(Color_Violet, 85);
-        ColorWeight(Color_Orange, 15);
-    }
-
-    DefColorSet(ColorSet_OrangeOnly)
-    {
-        ColorWeight(Color_White, 0);
-        ColorWeight(Color_Green, 0);
-        ColorWeight(Color_Blue, 0);
-        ColorWeight(Color_Violet, 0);
-        ColorWeight(Color_Orange, 1);
-    }
-
-    DefColorSet(ColorSet_BlueOnly)
-    {
-        ColorWeight(Color_White, 0);
-        ColorWeight(Color_Green, 0);
-        ColorWeight(Color_Blue, 1);
-        ColorWeight(Color_Violet, 0);
-        ColorWeight(Color_Orange, 0);
-    }
-
-    DefColorSet(ColorSet_VioletOnly)
-    {
-        ColorWeight(Color_White, 0);
-        ColorWeight(Color_Green, 0);
-        ColorWeight(Color_Blue, 0);
-        ColorWeight(Color_Violet, 1);
-        ColorWeight(Color_Orange, 0);
-    }
-
-    DefColorSet(ColorSet_GreenOnly)
-    {
-        ColorWeight(Color_White, 0);
-        ColorWeight(Color_Green, 1);
-        ColorWeight(Color_Blue, 0);
-        ColorWeight(Color_Violet, 0);
-        ColorWeight(Color_Orange, 0);
-    }
-
-    DefColorSet(ColorSet_Valuables_Chest)
-    {
-        ColorWeight(Color_White, 20);
-        ColorWeight(Color_Green, 35);
-        ColorWeight(Color_Blue, 35);
-        ColorWeight(Color_Violet, 10);
-        ColorWeight(Color_Orange, 0);
-    }
-    
-DefColorSet(ColorSet_BTZ_Reward_Platinum)
-    {
-        ColorWeight(Color_White, 0);
-        ColorWeight(Color_Green, 0);
-        ColorWeight(Color_Blue, 0);
-        ColorWeight(Color_Violet, 0);
-        ColorWeight(Color_Orange, 0);
-        ColorWeight(Color_Platinum, 100);
-    }
-  
-    DefColorSet(ColorSet_WeaponChest_Hard_Deadzone)
-    {
-        
-        ColorWeight(Color_White, 0);
-        ColorWeight(Color_Green, 0);
-        ColorWeight(Color_Blue, 10);
-        ColorWeight(Color_Violet, 40);
-        ColorWeight(Color_Orange, 25);
-        ColorWeight(Color_Platinum, 25);
-		
-    }
-
-    DefColorSet(ColorSet_BTZ_Reward_Platinum)
-    {
-        ColorWeight(Color_White, 0);
-        ColorWeight(Color_Green, 0);
-        ColorWeight(Color_Blue, 0);
-        ColorWeight(Color_Violet, 0);
-        ColorWeight(Color_Orange, 0);
-        ColorWeight(Color_Platinum, 100);
-    }
-    
-    DefColorSet(ColorSet_Parts_Sedan_L1_3)
-    {
-        ColorWeight(Color_White, 90);
-        ColorWeight(Color_Green, 10);
-        ColorWeight(Color_Blue, 0);
-		ColorWeight(Color_Violet, 0);
-        ColorWeight(Color_Orange, 0);
-    }
-
-    DefColorSet(ColorSet_Parts_Police_L2_4)
-    {
-        ColorWeight(Color_White, 0.01);
-        ColorWeight(Color_Green, 70);
-        ColorWeight(Color_Blue, 20);
-		ColorWeight(Color_Violet, 10);
-        ColorWeight(Color_Orange, 0);
-    }
-
-    DefColorSet(ColorSet_Parts_Military_L3_5)
-    {
-        ColorWeight(Color_White, 0.01);
-        ColorWeight(Color_Green, 0.01);
-        ColorWeight(Color_Blue, 70);
-		ColorWeight(Color_Violet, 20);
-        ColorWeight(Color_Orange, 10);
-    }
-
-
-    DefColorSet(ColorSet_Components_Common)
-    {
-        ColorWeight(Color_White, 1);
-        ColorWeight(Color_Green, 1);
-		ColorWeight(Color_Blue, 1);
-    }
-
-    DefColorSet(ColorSet_Components_Rare)
-    {
-        ColorWeight(Color_Green, 70);
-        ColorWeight(Color_Blue, 20);
-        ColorWeight(Color_Violet, 10);
-    }
-
-    DefColorSet(ColorSet_PlatinumOnly)
-    {
-        ColorWeight(Color_Platinum, 1);
-    }
-	
-    DefColorSet(ColorSet_Liveops_Christmas)
-    {
-        ColorWeight(Color_Green, 85);
-        ColorWeight(Color_Blue, 10);
-		ColorWeight(Color_Violet, 5);
-    }
-
-    DefColorSet(ColorSet_Tier0)
-    {
-        ColorWeight(Color_White,    0);
-        ColorWeight(Color_Green,    0);
-        ColorWeight(Color_Blue,     100);
-        ColorWeight(Color_Violet,   0);
-        ColorWeight(Color_Orange,   0);
-    }
-
-    DefColorSet(ColorSet_Tier1)
-    {
-        ColorWeight(Color_White,    0);
-        ColorWeight(Color_Green,    100);
-        ColorWeight(Color_Blue,     0);
-        ColorWeight(Color_Violet,   0);
-        ColorWeight(Color_Orange,   0);
-    }
-
-    DefColorSet(ColorSet_Tier2)
-    {
-        ColorWeight(Color_White,    100);
-        ColorWeight(Color_Green,    0);
-        ColorWeight(Color_Blue,     0);
-        ColorWeight(Color_Violet,   0);
-        ColorWeight(Color_Orange,   0);
-    }
-
-    DefColorSet(ColorSet_Prison_Powerups_Tier_0)
-    {
-        ColorWeight(Color_White,    0);
-        ColorWeight(Color_Green,    1);
-        ColorWeight(Color_Blue,     6);
-        ColorWeight(Color_Violet,   0);
-        ColorWeight(Color_Orange,   3);
-    }
-
-    DefColorSet(ColorSet_Prison_Powerups_Tier_12)
-    {
-        ColorWeight(Color_White,    0);
-        ColorWeight(Color_Green,    6);
-        ColorWeight(Color_Blue,     4);
-        ColorWeight(Color_Violet,   0);
-        ColorWeight(Color_Orange,   0);
-    }
-
-    DefColorSet(ColorSet_Prison_Powerups_Tier_34)
-    {
-        ColorWeight(Color_White,    0);
-        ColorWeight(Color_Green,    1);
-        ColorWeight(Color_Blue,     0);
-        ColorWeight(Color_Violet,   0);
-        ColorWeight(Color_Orange,   0);
-    }
-
-    DefColorSet(ColorSet_Prison_Crafting_Tier_0)
-    {
-        ColorWeight(Color_White,  1);
-        ColorWeight(Color_Green,  1);
-        ColorWeight(Color_Blue,   4);
-        ColorWeight(Color_Violet, 4);
-        ColorWeight(Color_Orange, 1);
-    }
-
-    DefColorSet(ColorSet_Prison_Crafting_Tier_12)
-    {
-        ColorWeight(Color_White,  1);
-        ColorWeight(Color_Green,  3);
-        ColorWeight(Color_Blue,   4);
-        ColorWeight(Color_Violet, 3);
-        ColorWeight(Color_Orange, 1);
-    }
-
-    DefColorSet(ColorSet_Prison_Crafting_Tier_34)
-    {
-        ColorWeight(Color_White, 50);
-        ColorWeight(Color_Green, 0);
-        ColorWeight(Color_Blue, 30);
-        ColorWeight(Color_Violet, 15);
-        ColorWeight(Color_Orange, 5);
-    }
-
-    DefColorSet(ColorSet_Upgrades_Volatile_Iced)
-    {
-        ColorWeight(Color_Blue,   3);
-        ColorWeight(Color_Violet, 3);
-        ColorWeight(Color_Orange, 4);
-    }
-	
 }

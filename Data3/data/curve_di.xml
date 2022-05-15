@@ -799,14 +799,14 @@
   </curve>
   <curve Name="thug_health" NumberOfSamples="80" MaxX="60" MinX="1" MaxY="6000" MinY="400">
     <knots Count="8">
-      <knot TypeOfSpline="HERMITE" X="1"  Y="400" />
-      <knot TypeOfSpline="HERMITE" X="5"  Y="800" />
-      <knot TypeOfSpline="HERMITE" X="10" Y="1600" />
-      <knot TypeOfSpline="HERMITE" X="20" Y="2200" />
-      <knot TypeOfSpline="HERMITE" X="30" Y="3500" />
-      <knot TypeOfSpline="HERMITE" X="40" Y="4500" />
-      <knot TypeOfSpline="HERMITE" X="50" Y="5500" />
-      <knot TypeOfSpline="HERMITE" X="60" Y="6400" />
+      <knot TypeOfSpline="HERMITE" X="1"  Y="1000" />
+      <knot TypeOfSpline="HERMITE" X="5"  Y="4800" />
+      <knot TypeOfSpline="HERMITE" X="10" Y="9600" />
+      <knot TypeOfSpline="HERMITE" X="20" Y="12200" />
+      <knot TypeOfSpline="HERMITE" X="30" Y="18500" />
+      <knot TypeOfSpline="HERMITE" X="40" Y="24500" />
+      <knot TypeOfSpline="HERMITE" X="50" Y="31000" />
+      <knot TypeOfSpline="HERMITE" X="60" Y="36000" />
     </knots>
   </curve>
   <curve Name="zombie_ko_prob" NumberOfSamples="50" MaxX="80" MinX="0" MaxY="110" MinY="0">

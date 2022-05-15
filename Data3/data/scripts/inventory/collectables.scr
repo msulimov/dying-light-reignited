@@ -15,9 +15,8 @@ sub main()
         Skin("default");
         RequiredItem("Craft_Alcohol", 3);
         RequiredItem("Craft_Gauze", 3);
-        RequiredItem("Craft_Sugar", 1);
         RequiredItem("Craft_String", 2);
-        RequiredItem("Craft_PlasticTube", 2);
+        RequiredItem("Craft_PlasticTube", 3);
         Color(Color_White);
         CraftedItem("Medkit_HealthPackLarge", 1, 2);
         CraftplanType("Top");
@@ -54,9 +53,8 @@ sub main()
         Skin("default");
 		RequiredItem("Craft_DuctTape", 2);
         RequiredItem("Craft_Bleach", 4);
-		RequiredItem("Craft_Alcohol", 2);
         RequiredItem("Craft_Sugar", 1);
-		RequiredItem("Craft_PlasticTube", 2);
+		RequiredItem("ZZZZ3_Component_Rubber", 2);
         Color(Color_Violet);
         CraftedItem("Throwable_Btz_Flare", 2, 3);
         CraftplanType("Top");
@@ -114,7 +112,6 @@ sub main()
         Skin("default");
         RequiredItem("Craft_Alcohol", 2);
         RequiredItem("Craft_Bleach", 1);
-		RequiredItem("Craft_DuctTape", 2);
 		RequiredItem("Craft_TinCan", 2);
         Color(Color_Blue);
         CraftedItem("ZZZZ_Throwable_WaterDLC", 4, 6);
@@ -133,12 +130,12 @@ sub main()
         Price(40);
         Mesh("blueprint.msh");
         Skin("default");
-        RequiredItem("Craft_Alcohol", 5);
+        RequiredItem("Craft_Alcohol", 4);
 		RequiredItem("Craft_Insecticide", 2);
         RequiredItem("Craft_Bleach", 2);
 		RequiredItem("Craft_PlasticTube", 2);
 		RequiredItem("Craft_MetalScrap", 2);
-		RequiredItem("Craft_DuctTape", 2);
+		RequiredItem("ZZZZ3_Component_Rubber", 2);
         RequiredItem("Craft_String", 2);
         Elemental(Elemental_Burning, 2);
         Color(Color_Green);
@@ -179,14 +176,13 @@ sub main()
         Price(40);
         Mesh("blueprint.msh");
         Skin("default");
-        RequiredItem("Craft_TinCan", 1);						 
-        RequiredItem("Craft_Bleach", 3);
+
+        RequiredItem("Craft_TinCan", 2);						 
+        RequiredItem("Craft_Bleach", 1);
 		RequiredItem("Craft_Alcohol", 2);
-		RequiredItem("Craft_Insecticide", 2);
         RequiredItem("Craft_Sugar", 1);
-		RequiredItem("Craft_PlasticTube", 2);
-		RequiredItem("Craft_MetalScrap", 2);
-		RequiredItem("Craft_DuctTape", 2);
+		RequiredItem("Craft_Insecticide", 1);
+
         ExplosionFx("firecrackers_sequence.fx");
         Color(Color_White);
         CraftedItem("Throwable_Decoy", 3, 6);
@@ -209,7 +205,7 @@ sub main()
         RequiredItem("Craft_DuctTape", 6);
 		RequiredItem("Craft_String", 4);
         RequiredItem("Craft_PlasticTube", 4);
-		RequiredItem("ZZZZ3_Component_Rubber", 4);
+		RequiredItem("ZZZZ3_Component_Rubber", 5);
 		RequiredItem("Craft_Nails", 6);
 		
         Color(Color_White);
