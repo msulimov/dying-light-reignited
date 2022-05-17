@@ -115,7 +115,6 @@ sub Loot()
     LootedObject(ToolBox)
     {
         ColorSet(ColorSet_Default);
-        IgnorePlatinumRestrictions();
          
         use Empty(weight = 3.0);
         use Crafting_Toolbox(weight = 7.0);
@@ -129,7 +128,6 @@ sub Loot()
     LootedObject(Cont_Trash)
     {
         ColorSet(ColorSet_cs_crafting);
-        IgnorePlatinumRestrictions();
 
         use Empty(weight = 2.5);
         use Crafting_Trash(weight = 7.5);
@@ -143,14 +141,13 @@ sub Loot()
     LootedObject("Wardrobe")
     {
         ColorSet(ColorSet_Default);
-        IgnorePlatinumRestrictions();
 
         use Empty(weight = 6.0);
         use QuestItems_Wardrobe(weight = 0.01);
 
-        use Crafting_Wardrobe(weight = 2.25);
+        use Crafting_Wardrobe(weight = 2.75);
         use Consumables_Wardrobe(weight = 0.5);
-        use Valuables_Wardrobe(weight = 1.0);
+        use Valuables_Wardrobe(weight = 0.5);
         use Valuables_Wardrobe_Premium(weight = 0.25);
     }
 
@@ -182,7 +179,7 @@ sub Loot()
         ColorSet(ColorSet_Default);
 
         use Empty(weight = 4.5);
-        use Crafting_Chest_Big(weight = 4.5);
+        use Crafting_Chest_Big(weight = 5.5);
         use Valuables_Chest(weight = 1.0);
     }
 
@@ -206,7 +203,7 @@ sub Loot()
     {   // small medium locked chest in old town
         ColorSet(ColorSet_Valuables_Chest);
          
-        use Valuables_Chest(weight = 1.0);
+        //use Valuables_Chest(weight = 1.0);
         use Crafting_Default(weight = 3.0);
         use Upgrades(weight = 0.4);
         use Valuables_Electronics(weight = 0.4);
@@ -223,17 +220,13 @@ sub Loot()
         ColorSet(ColorSet_Default);
         IgnorePlatinumRestrictions();
 
-        use Empty(weight = 14.0);
+        use Empty(weight = 3.0);
         use QuestItems_Wardrobe(weight = 0.01);
-        use Crafting_Basket(weight = 6.0);
-        use Consumable_Healing(weight = 4.5);
-        //use Lockpicks(weight = 2.0);
-        use Valuables_Basket(weight = 1.25);
 
-        use Valuables_Electronics(weight = 0.1);
-        //use Upgrades(weight = 0.2);
-        //use Upgrades_Premium(weight = 0.05);
-        
+        use Crafting_Basket(weight = 5.0);
+        use Consumables_Basket(weight = 1.5);
+        use Valuables_Basket(weight = 1.0);
+        use Valuables_Basket_Premium(weight = 0.5);
     }
 
 
