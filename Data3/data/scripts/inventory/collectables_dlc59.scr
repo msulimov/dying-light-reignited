@@ -29,7 +29,7 @@ sub main()
         UniqueSaveID(9931);
         HudIcon("blueprint_b");
         GameVersion(39);
-        OwnedAtStart();
+        //OwnedAtStart();
         InheritBaseStats();
     }
 	
@@ -59,7 +59,7 @@ sub main()
         UniqueSaveID(9932);
         HudIcon("blueprint_b");
         GameVersion(39);
-        OwnedAtStart();
+        //OwnedAtStart();
         InheritBaseStats();
     }
 	
@@ -92,6 +92,6 @@ sub main()
         HudIcon("blueprint_b");
         GameVersion(39);
         InheritBaseStats();
-        OwnedAtStart();
+        //OwnedAtStart();
     }
 }

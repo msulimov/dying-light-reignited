@@ -22,7 +22,7 @@ sub main()
         HudIcon("blueprint_b");
         GameVersion(32);
         InheritBaseStats();
-        OwnedAtStart();
+        //OwnedAtStart();
     }
 	
 	Item("Craftplan_Pipe_Anniversary5", CategoryType_Collectable)
@@ -50,7 +50,7 @@ sub main()
         InheritBaseStats();
         UniqueSaveID(9591);
         HudIcon("blueprint_b");
-        OwnedAtStart();
+        //OwnedAtStart();
 		GameVersion(32);
     }
 	
@@ -73,7 +73,7 @@ sub main()
 		InheritBaseStats();
         CraftplanType("WeaponDLC");
         UniqueSaveID(9592);
-        OwnedAtStart();
+        //OwnedAtStart();
         HudIcon("blueprint_b");
         GameVersion(32);
     }

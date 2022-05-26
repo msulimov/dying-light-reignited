@@ -674,7 +674,7 @@ sub main()
         Skin("default");
         MaxStackCount(99);
         PhysicsScript("single_dropped_inventory.phx");
-        Color(Color_Green);
+        Color(Color_White);
         GenType(GenType_None);
     }
 

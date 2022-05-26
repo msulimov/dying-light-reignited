@@ -20,7 +20,7 @@ sub main()
         UniqueSaveID(9540);
         HudIcon("blueprint_a");
 		GameVersion(27);
-		OwnedAtStart();
+		//OwnedAtStart();
 		InheritBaseStats();
     }
 	
@@ -43,7 +43,7 @@ sub main()
         UniqueSaveID(9541);
         HudIcon("blueprint_a");
 		GameVersion(27);
-		OwnedAtStart();
+		//OwnedAtStart();
     }
 	
 	Item("Craftplan_Firearm_PistolARaisElite", CategoryType_Collectable)
@@ -63,7 +63,7 @@ sub main()
         UniqueSaveID(9542);
         HudIcon("blueprint_a");
 		GameVersion(27);
-		OwnedAtStart();
+		//OwnedAtStart();
 		InheritBaseStats();
     }
 	
@@ -87,6 +87,6 @@ sub main()
         UniqueSaveID(9545);
         HudIcon("blueprint_a");
 		GameVersion(27);
-		OwnedAtStart();
+		//OwnedAtStart();
     }
 }

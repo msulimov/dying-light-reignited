@@ -28,6 +28,7 @@ sub main()
         UniqueSaveID(9710);
         HudIcon("blueprint_b");
 		GameVersion(33);
+        //OwnedAtStart();
     }
 	
 	Item("Craftplan_Unturned_Rake", CategoryType_Collectable)
@@ -55,6 +56,7 @@ sub main()
         UniqueSaveID(9711);
         HudIcon("blueprint_b");
 		GameVersion(33);
+        //OwnedAtStart();
     }
 
 	Item("Craftplan_Unturned_Machete", CategoryType_Collectable)
@@ -82,5 +84,6 @@ sub main()
         UniqueSaveID(9712);
         HudIcon("blueprint_b");
 		GameVersion(33);
+        //OwnedAtStart();
     }
 }

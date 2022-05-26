@@ -32,7 +32,7 @@ sub main()
         HudIcon("blueprint_b");
         GameVersion(36);
         InheritBaseStats();
-        OwnedAtStart();
+        //OwnedAtStart();
     }
 	
 	Item("Craftplan_Melee_AxeBig_Viking_Fire", CategoryType_Collectable)
@@ -61,7 +61,7 @@ sub main()
         HudIcon("blueprint_b");
         GameVersion(36);
         InheritBaseStats();
-        OwnedAtStart();
+        //OwnedAtStart();
     }
 	
 	Item("Craftplan_Melee_ShortSword_Viking", CategoryType_Collectable)
@@ -93,7 +93,7 @@ sub main()
         CraftedItem("Melee_ShortSword_Viking", 1, 1);
         CraftplanType("Developer");
         UniqueSaveID(9926); 
-		OwnedAtStart();
+		//OwnedAtStart();
         HudIcon("blueprint_b");
 		GameVersion(36);
     }
@@ -124,7 +124,7 @@ sub main()
         CraftplanType("Developer");
         HudIcon("blueprint_b");
         UniqueSaveID(9927);
-		OwnedAtStart();
+		//OwnedAtStart();
 		InheritBaseStats();
 		GameVersion(36);
     }
@@ -148,7 +148,7 @@ sub main()
         UniqueSaveID(9928);
         HudIcon("blueprint_b");
 		GameVersion(36);
-		OwnedAtStart();
+		//OwnedAtStart();
 		InheritBaseStats();
     }
 	
@@ -175,7 +175,7 @@ sub main()
         UniqueSaveID(9929); 
         HudIcon("blueprint_b");
 		GameVersion(36);
-		OwnedAtStart();
+		//OwnedAtStart();
 		InheritBaseStats();
     }
 }

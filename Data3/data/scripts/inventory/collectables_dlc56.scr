@@ -19,7 +19,7 @@ sub main()
         Color(Color_Blue);
         CraftedItem("L4D_Gnome", 1, 1);
         CraftplanType("Developer");
-		OwnedAtStart();
+		//OwnedAtStart();
 		InheritBaseStats();
         UniqueSaveID(9570);
         HudIcon("blueprint_b");

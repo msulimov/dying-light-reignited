@@ -1,7 +1,20 @@
 
+    PresetDef("None")
+    {
+        Difficult(666)
+        AIPreset("Volatile")
+        SpawnCondition("nav_mesh, 1")
+        MinDistBtwZombies(20)
+        ForceTargetType(3)
+        TimeBtwSpawnZombies(1)
+        DieProbality(5)
+        SarcophagusTime(2)
+        MinSpawnDistance(10)
+    }
+
     PresetDef("Volatile_Outside")
     {
-        Difficult(15)
+        Difficult(30)
         AIPreset("Volatile")
         SpawnCondition("nav_mesh, -1;__any__, 1;t_INIT, -1")
         DisallowedMaps("Wasteland")
@@ -70,7 +83,7 @@
 
     PresetDef("Volatile_Hard")
     {
-        Difficult(15)
+        Difficult(40)
 		AIPreset("Volatile_Super")
 		MinStatusLevel(12)
 		
@@ -186,7 +199,7 @@
 
     PresetDef("Volatile_PrimeGuard")
     {
-        Difficult(15)
+        Difficult(40)
         AIPreset("Volatile")
 		UseCondition("Night;PlayerZombie_NotExist")
         SpawnCondition("z_VOLATILE, 1;t_INIT, -1;")
@@ -268,7 +281,7 @@
 
     PresetDef("Night_Suicider_Bomber")
     {
-        Difficult(15)
+        Difficult(25)
         AIPreset("RunningBomber")
         SpawnCondition("nav_mesh, -1;__any__, 1;t_INIT, -1;p_ROOF, -1")
         DisallowedMaps("Wasteland")

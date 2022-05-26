@@ -434,20 +434,20 @@
   <curve Name="xp_fighter_damage" NumberOfSamples="50" MaxX="280" MinX="0" MaxY="30" MinY="0">
     <knots Count="15">
       <knot TypeOfSpline="HERMITE" X="0" Y="0" />
-      <knot TypeOfSpline="HERMITE" X="5" Y="2" />
-      <knot TypeOfSpline="HERMITE" X="15" Y="20" />
-      <knot TypeOfSpline="HERMITE" X="20" Y="22" />
-      <knot TypeOfSpline="HERMITE" X="25" Y="24" />
-      <knot TypeOfSpline="HERMITE" X="35" Y="26" />
-      <knot TypeOfSpline="HERMITE" X="40" Y="28" />
-      <knot TypeOfSpline="HERMITE" X="50" Y="32" />
-      <knot TypeOfSpline="HERMITE" X="70" Y="36" />
-      <knot TypeOfSpline="HERMITE" X="80" Y="40" />
-      <knot TypeOfSpline="HERMITE" X="100" Y="44" />
-      <knot TypeOfSpline="HERMITE" X="140" Y="48" />
-      <knot TypeOfSpline="HERMITE" X="160" Y="52" />
-      <knot TypeOfSpline="HERMITE" X="200" Y="56" />
-      <knot TypeOfSpline="HERMITE" X="280" Y="60" />
+      <knot TypeOfSpline="HERMITE" X="5" Y="5" />
+      <knot TypeOfSpline="HERMITE" X="15" Y="10" />
+      <knot TypeOfSpline="HERMITE" X="20" Y="10" />
+      <knot TypeOfSpline="HERMITE" X="25" Y="10" />
+      <knot TypeOfSpline="HERMITE" X="35" Y="10" />
+      <knot TypeOfSpline="HERMITE" X="40" Y="10" />
+      <knot TypeOfSpline="HERMITE" X="50" Y="10" />
+      <knot TypeOfSpline="HERMITE" X="70" Y="10" />
+      <knot TypeOfSpline="HERMITE" X="80" Y="10" />
+      <knot TypeOfSpline="HERMITE" X="100" Y="10" />
+      <knot TypeOfSpline="HERMITE" X="140" Y="10" />
+      <knot TypeOfSpline="HERMITE" X="160" Y="10" />
+      <knot TypeOfSpline="HERMITE" X="200" Y="10" />
+      <knot TypeOfSpline="HERMITE" X="280" Y="10" />
     </knots>
   </curve>
   <curve Name="item_quality_price_mult_common" NumberOfSamples="50" MaxX="2.1" MinX="-0.1" MaxY="2" MinY="0">
@@ -601,9 +601,9 @@
       <knot TypeOfSpline="HERMITE" X="55" Y="125" />
       <knot TypeOfSpline="HERMITE" X="60" Y="185" />
       <knot TypeOfSpline="HERMITE" X="65" Y="290" />
-      <knot TypeOfSpline="HERMITE" X="70" Y="460" />
-      <knot TypeOfSpline="HERMITE" X="75" Y="750" />
-      <knot TypeOfSpline="HERMITE" X="80" Y="1220" />
+      <knot TypeOfSpline="HERMITE" X="70" Y="360" />
+      <knot TypeOfSpline="HERMITE" X="75" Y="450" />
+      <knot TypeOfSpline="HERMITE" X="80" Y="500" />
     </knots>
   </curve>
   <curve Name="zombie_combo_prob" NumberOfSamples="50" MaxX="80" MinX="0" MaxY="110" MinY="0">
@@ -769,44 +769,44 @@
   </curve>
   <curve Name="shooter_health" NumberOfSamples="60" MaxX="60" MinX="1" MaxY="600" MinY="100">
     <knots Count="2">
-      <knot TypeOfSpline="LINE" X="1" Y="200" />
-      <knot TypeOfSpline="LINE" X="60" Y="1100" />
+      <knot TypeOfSpline="LINE" X="1" Y="300" />
+      <knot TypeOfSpline="LINE" X="60" Y="3000" />
     </knots>
   </curve>
   <curve Name="heavy_shooter_health" NumberOfSamples="60" MaxX="60" MinX="1" MaxY="600" MinY="100">
     <knots Count="2">
-      <knot TypeOfSpline="LINE" X="1" Y="200" />
-      <knot TypeOfSpline="LINE" X="60" Y="1300" />
+      <knot TypeOfSpline="LINE" X="1" Y="600" />
+      <knot TypeOfSpline="LINE" X="60" Y="4500" />
     </knots>
   </curve>
   <curve Name="human_melee_resident_health" NumberOfSamples="60" MaxX="60" MinX="1" MaxY="600" MinY="1">
     <knots Count="2">
-      <knot TypeOfSpline="LINE" X="1" Y="110" />
-      <knot TypeOfSpline="LINE" X="60" Y="1310" />
+      <knot TypeOfSpline="LINE" X="1" Y="410" />
+      <knot TypeOfSpline="LINE" X="60" Y="8010" />
     </knots>
   </curve>
   <curve Name="human_melee_fighter_health" NumberOfSamples="60" MaxX="60" MinX="1" MaxY="600" MinY="100">
     <knots Count="2">
       <knot TypeOfSpline="LINE" X="1" Y="100" />
-      <knot TypeOfSpline="LINE" X="60" Y="1300" />
+      <knot TypeOfSpline="LINE" X="60" Y="10300" />
     </knots>
   </curve>
   <curve Name="human_melee_leader_health" NumberOfSamples="60" MaxX="60" MinX="1" MaxY="600" MinY="100">
     <knots Count="2">
       <knot TypeOfSpline="LINE" X="1" Y="100" />
-      <knot TypeOfSpline="LINE" X="60" Y="1300" />
+      <knot TypeOfSpline="LINE" X="60" Y="8300" />
     </knots>
   </curve>
   <curve Name="thug_health" NumberOfSamples="80" MaxX="60" MinX="1" MaxY="6000" MinY="400">
     <knots Count="8">
       <knot TypeOfSpline="HERMITE" X="1"  Y="1000" />
       <knot TypeOfSpline="HERMITE" X="5"  Y="4800" />
-      <knot TypeOfSpline="HERMITE" X="10" Y="9600" />
-      <knot TypeOfSpline="HERMITE" X="20" Y="12200" />
-      <knot TypeOfSpline="HERMITE" X="30" Y="18500" />
-      <knot TypeOfSpline="HERMITE" X="40" Y="24500" />
-      <knot TypeOfSpline="HERMITE" X="50" Y="31000" />
-      <knot TypeOfSpline="HERMITE" X="60" Y="36000" />
+      <knot TypeOfSpline="HERMITE" X="10" Y="15000" />
+      <knot TypeOfSpline="HERMITE" X="20" Y="25000" />
+      <knot TypeOfSpline="HERMITE" X="30" Y="30000" />
+      <knot TypeOfSpline="HERMITE" X="40" Y="35000" />
+      <knot TypeOfSpline="HERMITE" X="50" Y="45000" />
+      <knot TypeOfSpline="HERMITE" X="60" Y="60000" />
     </knots>
   </curve>
   <curve Name="zombie_ko_prob" NumberOfSamples="50" MaxX="80" MinX="0" MaxY="110" MinY="0">
@@ -825,8 +825,8 @@
   </curve>
   <curve Name="zombie_melee_damage" NumberOfSamples="80" MaxX="80" MinX="1" MaxY="100" MinY="5">
     <knots Count="2">
-      <knot TypeOfSpline="LINE" X="1" Y="18" />
-      <knot TypeOfSpline="LINE" X="80" Y="37" />
+      <knot TypeOfSpline="LINE" X="1" Y="14" />
+      <knot TypeOfSpline="LINE" X="80" Y="35" />
     </knots>
   </curve>
   <curve Name="venom_damage_multiplier" NumberOfSamples="50" MaxX="50" MinX="1" MaxY="500" MinY="1">
@@ -897,7 +897,7 @@
   <curve Name="armored_health" NumberOfSamples="50" MaxX="60" MinX="1" MaxY="1000" MinY="1">
     <knots Count="2">
       <knot TypeOfSpline="LINE" X="1" Y="4500" />
-      <knot TypeOfSpline="LINE" X="60" Y="6500" />
+      <knot TypeOfSpline="LINE" X="60" Y="20000" />
     </knots>
   </curve>
   <curve Name="armored_melee_damage" NumberOfSamples="50" MaxX="50" MinX="1" MaxY="70" MinY="35">

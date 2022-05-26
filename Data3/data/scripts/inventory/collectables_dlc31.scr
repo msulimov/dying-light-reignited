@@ -23,7 +23,7 @@ sub main()
         UniqueSaveID(3080);
         HudIcon("blueprint_b");
         GameVersion(11);
-        OwnedAtStart();
+        //OwnedAtStart();
         InheritBaseStats();
     }
 }

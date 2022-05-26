@@ -1816,11 +1816,11 @@ sub extraDLCRecipes(){
         AllowedRepairs(3);
         SoundDamagedHit("damaged_sharp_weapon_XX.wav");
         ThrowBeginSound("weapon_light_throw.wav");
-        Color(Color_Blue);
+        Color(Color_Platinum);
         AchType(AchType_Machete);
         DismantleResultItem("Craft_MetalScrap");
         DismantleResultItemCnt(3);
-        CraftingSlots(0,0); // remove one upgrade slot since has 3 elementals already
+        CraftingSlots(1,0);
         UniqueFxNameBase("machete_g");
         RestrictionFlags(0);
         RagdollBehaviorPrefix("StickSharp");
@@ -2621,133 +2621,6 @@ sub extraDLCRecipes(){
         RepairPart("Craft_MetalScrap", 1);
     }
 
-
-    //////////////////////////SMG//////////////////////////
-    Item("Craftplan_Dieselpunk_Submachine1", CategoryType_Collectable)
-    {
-        Name("&Craftplan_Dieselpunk_Submachine_N&");
-        Description('&Craftplan_Dieselpunk_Submachine_D&');
-        ItemType(ItemType_CraftPlan);
-        Price(6400);
-        Mesh("blueprint.msh");
-        Skin("default");
-        RequiredItem("Craft_MetalScrap", 7);
-        RequiredItem("Craft_PlasticTube", 5);
-        Color(Color_Blue);
-        CraftedItem("Dieselpunk_Submachine1", 1, 1);
-        CraftplanType("CarUpgrade");
-        UniqueSaveID(100016);
-        OwnedAtStart();
-        HudIcon("blueprint_b");
-        GameVersion(49);    
-        InheritBaseStats();
-    }   
-    Item("Dieselpunk_Submachine1", CategoryType_Firearm)
-    {
-        Name("&Dieselpunk_Submachine_N&");
-        GameVersion(49);
-        CategoryType(CategoryType_Firearm);
-        Visibility(true);
-        ItemType(ItemType_Pistol);
-        PhysicsScript("single_dropped_inventory.phx");
-        UpgradeLevel(0);
-        Condition(-1);
-        DamageRangeMelee(110.0 *0.01);
-        HeadSmashProb(0.5);
-        HeadCutProb(0.0);
-        ArmsCutProb(0.0);
-        LegsCutProb(0.0);
-        CutTypesGroup(CutTypesGroup_Holes);
-        DamageType(DamageType_Bullet);
-        Mesh("wn_submachine_d.msh");
-        SkinTag("weapon_standard1");
-        AnimPrefix("Submachinegun_Alt");
-        HudIcon("weapon_submachine_d");
-        ShotTime(0.1);
-        ShotSound("Dieselpunk_smg_shot_XX.wav");
-        DefaultBulletId("Bullet_SMG");
-        AmmoCount(30);
-        NotInheritBaseAmmoCount();
-        ReloadTime(1.5);
-        EmptySound("SubMachineA_empty.wav");
-        TwoHanded(false);
-        HolderElement("r_thigh");
-        HolderAngle([0.0,90.0,-90.0]);
-        HandOffset(HandModification_Normal, [-0.05,-0.05,0.06]);
-        HandOffset(HandModification_Custom, [-0.03,-0.03,0.0]);
-        use HitEffects_Firearm();
-        use PickupSounds_Default();
-        ClipReload(true);
-        FxNameShell("BerettaGunfireShell");
-        ShootFx("PistolGunfireSingle_sequence.fx");
-        AimBlurStart(0.05);
-        AimBlurEnd(0.08);
-        ShootStatAccuracy(70.0);
-        MoveAcurancyLoseFactor(0.15);
-        JumpInertiaFactor(0.2);
-        DuckInertiaFactor(0.3);
-        ShootMinAngle(0.047);
-        ShootMaxAngle(0.095);
-        ShootAngleVel(0.106);
-        ShootAngleCooldown(0.174);
-        ShootVertRecoil(0.0);
-        ShootVertRecoilSpread(0.0);
-        ShootHorzRecoil(0.0);
-        ShootHorzRecoilSpread(0.0);
-        ShootRecoilTime(0.15);
-        ShootMode(ShotMode_Automatic);
-        BulletsPerShot(1);
-        MaxReboundCount(3);
-        DamageSize(5.0);
-        AiHitSound("bullet");
-        StatsType(StatsType_Pistol);
-        Price(400);
-        FF_EffectName("Shot_SMG");
-        CriticalProb(0.05);
-        CriticalDamage(2.0);
-        DamageHeadMult(2.0);
-        DamageToPhysicsObjects(30.0);
-        FirePointRange(0,1000.0 *0.01);
-        FirePointDamage(0,110.0);
-        FirePointForce(0,100.0);
-        FirePointPhysicsDamage(0,1.0);
-        FirePointRange(1,6000.0 *0.01);
-        FirePointDamage(1,25.0);
-        FirePointForce(1,20.0);
-        FirePointPhysicsDamage(1,0.5);
-        Color(Color_Violet);
-        GenType(GenType_Firearm);
-        ShotTailDelay(0.1);
-        AchType(AchType_Pistol);
-        NameGender(0);
-        PriceMult(1.1);
-        ShootAnimFactor(0.6);
-        BulletSpeed(350.0);
-        LootType(LootType_Firearm_Short);
-        RagdollBehavior(RagdollBehavior_None);
-    }
-
-    Item("Dieselpunk_Submachine1", CategoryType_Firearm)
-    {
-        GameVersion(49);
-        CategoryType(CategoryType_Firearm);
-        UsageType(UsageType_Aim);
-        UpgradeLevel(0);
-        HandOffset(HandModification_Normal, [-0.0009,-0.045,0.07]);
-        HandRot(HandModification_Normal, [0.14,-0.16,0.0]);
-        SwayMaxAngle(0.0);
-        ShootMinAngle(0.0);
-        ShootMaxAngle(0.02);
-        ShootAngleVel(0.004);
-        ShootAngleCooldown(0.1);
-        ShootVertRecoil(0.0);
-        ShootVertRecoilSpread(0.0);
-        ShootHorzRecoil(0.0);
-        ShootHorzRecoilSpread(0.0);
-        HandInertiaFactor(0.5);
-    }
-
-    
 //-------------------------------------------------------------------------
 // END DIESEL DLC 66 ------------------------------------------------------
 //-------------------------------------------------------------------------

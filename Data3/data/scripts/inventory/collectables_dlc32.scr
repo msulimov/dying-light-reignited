@@ -31,6 +31,7 @@ sub main()
         HudIcon("blueprint_b");
         GameVersion(11);
         InheritBaseStats();
+        //OwnedAtStart();
     }
 
     Item("Craftplan_KnifeBNighthunter", CategoryType_Collectable)
@@ -62,6 +63,7 @@ sub main()
         HudIcon("blueprint_b");
         GameVersion(11);
         InheritBaseStats();
+        //OwnedAtStart();
     }
 
     Item("Craftplan_BatonANighthunter", CategoryType_Collectable)
@@ -96,6 +98,7 @@ sub main()
         HudIcon("blueprint_b");
         GameVersion(11);
         InheritBaseStats();
+        //OwnedAtStart();
     }
 
     Item("Craftplan_BigHammerANighthunter", CategoryType_Collectable)
@@ -125,5 +128,6 @@ sub main()
         HudIcon("blueprint_b");
         GameVersion(11);
         InheritBaseStats();
+        //OwnedAtStart();
     }
 }

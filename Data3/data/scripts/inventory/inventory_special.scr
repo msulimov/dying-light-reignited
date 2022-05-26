@@ -2695,7 +2695,7 @@ sub main()
         Visibility(true);
         AmmoCount(3);
         MaxStackCount(15);
-        Price(40);
+        Price(1000);
         Mesh("wn_dynamite_a.msh");
         Skin("default");
         AnimPrefix("Flare");
