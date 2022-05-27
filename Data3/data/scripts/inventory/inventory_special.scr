@@ -1907,7 +1907,7 @@ sub main()
         ExplosiveHudColor([1.0, 0.5, 0.5]);
         TakeDamageThreshold(100.0);
         Damage(0.0);
-        DamageDuration(10.0);
+        DamageDuration(7.0);
         PhysicsDamageMul(0);
         DamageType(DamageType_Blast);
         DamageRange(8.0);
@@ -1916,7 +1916,7 @@ sub main()
         LegsCutProb(0.0);
         ThrowImpulseLook(10.0);
         ThrowImpulseUp(2.0);
-        ExplodeDelay(10.0); // burn duration
+        ExplodeDelay(7.0); // burn duration
         ThrowBeginSound("");
         ThrowEndSound("");
         StatsType(StatsType_Explosive);

@@ -823,10 +823,10 @@
       <knot TypeOfSpline="HERMITE" X="80" Y="100" />
     </knots>
   </curve>
-  <curve Name="zombie_melee_damage" NumberOfSamples="80" MaxX="80" MinX="1" MaxY="100" MinY="5">
+  <curve Name="zombie_melee_damage" NumberOfSamples="60" MaxX="60" MinX="1" MaxY="10" MinY="7">
     <knots Count="2">
       <knot TypeOfSpline="LINE" X="1" Y="14" />
-      <knot TypeOfSpline="LINE" X="80" Y="35" />
+      <knot TypeOfSpline="LINE" X="60" Y="35" />
     </knots>
   </curve>
   <curve Name="venom_damage_multiplier" NumberOfSamples="50" MaxX="50" MinX="1" MaxY="500" MinY="1">

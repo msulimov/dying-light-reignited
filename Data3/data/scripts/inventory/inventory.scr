@@ -548,7 +548,7 @@ sub main()
         Skin("default");
         MaxStackCount(99);
         PhysicsScript("single_dropped_inventory.phx");
-        Color(Color_Blue);
+        Color(Color_Green);
         GenType(GenType_None);
     }
 
@@ -618,7 +618,7 @@ sub main()
         Skin("default");
         MaxStackCount(99);
         PhysicsScript("single_dropped_inventory.phx");
-        Color(Color_Green);
+        Color(Color_Blue);
         GenType(GenType_None);
     }
 
@@ -646,7 +646,7 @@ sub main()
         Skin("default");
         MaxStackCount(99);
         PhysicsScript("single_dropped_inventory.phx");
-        Color(Color_Blue);
+        Color(Color_Green);
         GenType(GenType_None);
     }
 
@@ -660,7 +660,7 @@ sub main()
         Skin("default");
         MaxStackCount(99);
         PhysicsScript("single_dropped_inventory.phx");
-        Color(Color_Green);
+        Color(Color_Blue);
         GenType(GenType_None);
     }
 
@@ -734,7 +734,7 @@ sub main()
         GenType(GenType_None);
     }
 
-    Item("Craft_UnderwaterAlgae", CategoryType_CraftComponent)
+    Item("Craft_UnderwaterAlgae", CategoryType_CraftComponent) // regular glowing blue algae
     {
         ItemType(ItemType_CraftComponent);
         Visibility(true);
@@ -776,11 +776,11 @@ sub main()
         GenType(GenType_None);
     }
 
-    Item("Craft_GreenAlgae", CategoryType_CraftComponent)
+    Item("Craft_GreenAlgae", CategoryType_CraftComponent) // Dulse pink algae
     {
         ItemType(ItemType_CraftComponent);
         Visibility(true);
-        Price(15);
+        Price(120);
         HudIcon("quest_herb_a");
         Mesh("water_vegetation_c.msh");
         Skin("quest_red");

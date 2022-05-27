@@ -448,7 +448,7 @@ sub main()
         Skin("buggy_car_parts");
         MaxStackCount(999999);
         PhysicsScript("single_dropped_inventory.phx");
-        Color(Color_Blue);
+        Color(Color_Green);
         GenType(GenType_None);
 		HudIcon("blueprint_b");
     }

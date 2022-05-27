@@ -86,7 +86,7 @@
 	<skill id="Health2" cat="fighter" tier="0" max_level="1" desc_params="sturdiness_2;P" skill_points="1" skill_points_type="Fighter">
 		<level_req type="Fighter" value="7"/>
 		<skill_req id="combatprof1"/>
-		<effect id="MaxHealth" change="15"/>
+		<effect id="MaxHealth" change="10"/>
 	</skill>	
 
 	<skill id="Overpowered2b" cat="fighter" tier="10" max_level="1" desc_params="consecutive_attack;P" skill_points="1" skill_points_type="Fighter">
@@ -103,7 +103,7 @@
 	<skill id="Stomp" cat="fighter" tier="7" max_level="1" desc_params="freerunning_mastery;NODE;P;M:runningprof2" skill_points="1" skill_points_type="Fighter">
 		<level_req type="Fighter" value="9"/>
 		<skill_req id="combatprof1"/>
-		<effect id="MaxFitness" change="0.15"/>
+		<effect id="MaxFitness" change="0.4"/>
 	</skill>	
 	
 	
@@ -301,14 +301,14 @@
 	</skill>
 	
 	<skill id="WallRun" cat="runner" tier="18" max_level="1" desc_params="tictac;M:WallRun" skill_points="1" skill_points_type="Runner">
-		<level_req type="Runner" value="13"/>
+		<level_req type="Runner" value="17"/>
 		<skill_req id="runningprof2"/>
 		<effect id="WallRunFrontHeight" change="1.8"/>
 		<effect id="WallJumpBackEnabled" change="1"/>
 	</skill>
 	
 	<skill id="HealthRegen2" cat="runner" tier="20" max_level="1" desc_params="health_regeneration_2;P" skill_points="1" skill_points_type="Runner">
-		<level_req type="Runner" value="13"/>
+		<level_req type="Runner" value="17"/>
 		<skill_req id="runningprof2"/>
 		<effect id="HealthRegenerationMaxLevel" change="5"/>
 	</skill>
@@ -407,20 +407,19 @@
 	<skill id="NimbleHands" cat="status" tier="16" max_level="1" desc_params="nimble_hands;P" skill_points="1" skill_points_type="Status">
 		<level_req type="Status" value="10"/> 
 		<skill_req id="RepairLuck"/>
-		<effect id="SearchDurationMul" change="x-0.5"/>
-		<effect id="ThoroughSearch" change="0.0"/>
+		<effect id="SearchDurationMul" change="x-0.2"/>
 	</skill>
 	
 	<skill id="StatusCamouflage" cat="status" tier="11" max_level="1" desc_params="freerunning_mastery;NODE;P;M:runningprof2" skill_points="1" skill_points_type="Status">
 		<level_req type="Status" value="9"/>
 		<skill_req id="craftingexpertise"/>
-				<effect id="MaxFitness" change="0.15"/>
+				<effect id="MaxFitness" change="0.3"/>
 	</skill>
 	
 	<skill id="StatusCamouflage2" cat="status" tier="21" max_level="1" desc_params="freerunning_mastery;NODE;P;M:runningprof2" skill_points="1" skill_points_type="Status">
 		<level_req type="Status" value="12"/>
 		<skill_req id="StatusCamouflage"/>
-				<effect id="MaxFitness" change="0.15"/>
+				<effect id="MaxFitness" change="0.3"/>
 	</skill>
 	
 	<skill id="StatusShield" cat="status" tier="14" max_level="1" desc_params="riot_shield_small;M:StatusShield" skill_points="1" skill_points_type="Status">

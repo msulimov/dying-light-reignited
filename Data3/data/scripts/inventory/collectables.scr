@@ -110,8 +110,7 @@ sub main()
         Mesh("blueprint.msh");
         Skin("default");
         RequiredItem("Craft_Alcohol", 2);
-        RequiredItem("Craft_Bleach", 1);
-		RequiredItem("Craft_TinCan", 2);
+		RequiredItem("Craft_TinCan", 1);
         Color(Color_Blue);
         CraftedItem("ZZZZ_Throwable_WaterDLC", 4, 6);
         CraftplanType("Top");
@@ -1370,7 +1369,7 @@ sub main()
         HudIcon("blueprint_b");
     }
 
-    Item("Craftplan_ThrowableWater", CategoryType_Collectable)
+    Item("Craftplan_ThrowableWater", CategoryType_Collectable) // unused, see water dlc craftplan
     {
         Name("&Craftplan_ThrowableWater_N&");
         Description('&Craftplan_ThrowableWater_D&');
@@ -1389,7 +1388,7 @@ sub main()
         HudIcon("blueprint_b");
     }
 
-    Item("Craftplan_ThrowableFuel", CategoryType_Collectable)
+    Item("Craftplan_ThrowableFuel", CategoryType_Collectable) // unused
     {
         Name("&Craftplan_ThrowableFuel_N&");
         Description('&Craftplan_ThrowableFuel_D&');
