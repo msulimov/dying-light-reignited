@@ -51,10 +51,10 @@ sub main()
         Price(40);
         Mesh("blueprint.msh");
         Skin("default");
-		RequiredItem("ZZZZ3_Component_NutsBolts", 2);
-        RequiredItem("Craft_Bleach", 4);
+		RequiredItem("Craft_PlasticTube", 1);
+        RequiredItem("Craft_Bleach", 3);
         RequiredItem("Craft_Sugar", 1);
-		RequiredItem("ZZZZ3_Component_Rubber", 3);
+		RequiredItem("ZZZZ3_Component_Rubber", 2);
         Color(Color_Violet);
         CraftedItem("Throwable_Btz_Flare", 2, 3);
         CraftplanType("Top");
@@ -74,7 +74,7 @@ sub main()
         RequiredItem("Throwable_Btz_Flare", 2);
         RequiredItem("Craft_DuctTape", 2);
         Color(Color_Violet);
-        CraftedItem("Throwable_ZaidFlare", 1, 2);
+        CraftedItem("Throwable_ZaidFlare", 1, 1);
         CraftplanType("Top");
         UniqueSaveID(104);
         HudIcon("blueprint_b");

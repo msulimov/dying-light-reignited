@@ -21,9 +21,9 @@ export int Other = 9;
     {
         Set(CraftPart, weight, prob)
         {
-            Item("Craft_MetalScrap", 1.0);
-            Item("Craft_PlasticTube", 1.0);
-            Item("ZZZZ3_Component_Rubber", 1.0);
+            Item("Craft_MetalScrap", 3.0);
+            Item("Craft_PlasticTube", 2.0);
+            Item("ZZZZ3_Component_Rubber", 2.0);
         }
     }
     sub Crafting_Biter(float weight = 1.0, float prob = 1.0)
@@ -152,8 +152,8 @@ export int Other = 9;
     {
         Set(CraftPart, weight, prob)
         {
-            Item("Craft_MetalScrap", 2.0);
-            Item("Craft_PlasticTube", 3.0);
+            Item("Craft_MetalScrap", 4.0);
+            Item("Craft_PlasticTube", 2.0);
             Item("Craft_TinCan", 1.0);
             Item("ZZZZ3_Component_Rubber", 2.0);
         }
@@ -549,7 +549,7 @@ export int Other = 9;
         Set(CraftPart, weight, prob)
         {
             Item("ZZZZ3_Component_Lubricant", 1.0);
-            Item("ZZZZ3_Component_Synthetic", 0.4);
+            Item("ZZZZ3_Component_Synthetic", 1.0);
         }
     }
     sub Consumables_Sedan(float weight = 1.0, float prob = 1.0)

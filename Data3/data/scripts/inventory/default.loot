@@ -437,13 +437,12 @@ sub Loot()
     {
         ColorSet(ColorSet_All_Equal);
         
-        use Empty(weight = 2.0);
+        use Empty(weight = 1.0);
        
-        use CashSmall(weight = 1.0);
         use CashMedium(weight = 3.0);
-        use CashBig(weight = 3.0);
+        use CashBig(weight = 4.0);
         
-        use Valuables_Electronics(weight = 1.0);
+        use Valuables_Electronics(weight = 2.0);
     }
 
     

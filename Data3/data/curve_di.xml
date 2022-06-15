@@ -436,18 +436,18 @@
       <knot TypeOfSpline="HERMITE" X="0" Y="0" />
       <knot TypeOfSpline="HERMITE" X="5" Y="5" />
       <knot TypeOfSpline="HERMITE" X="15" Y="10" />
-      <knot TypeOfSpline="HERMITE" X="20" Y="10" />
-      <knot TypeOfSpline="HERMITE" X="25" Y="10" />
-      <knot TypeOfSpline="HERMITE" X="35" Y="10" />
-      <knot TypeOfSpline="HERMITE" X="40" Y="10" />
-      <knot TypeOfSpline="HERMITE" X="50" Y="10" />
-      <knot TypeOfSpline="HERMITE" X="70" Y="10" />
-      <knot TypeOfSpline="HERMITE" X="80" Y="10" />
-      <knot TypeOfSpline="HERMITE" X="100" Y="10" />
-      <knot TypeOfSpline="HERMITE" X="140" Y="10" />
-      <knot TypeOfSpline="HERMITE" X="160" Y="10" />
-      <knot TypeOfSpline="HERMITE" X="200" Y="10" />
-      <knot TypeOfSpline="HERMITE" X="280" Y="10" />
+      <knot TypeOfSpline="HERMITE" X="20" Y="15" />
+      <knot TypeOfSpline="HERMITE" X="25" Y="20" />
+      <knot TypeOfSpline="HERMITE" X="35" Y="20" />
+      <knot TypeOfSpline="HERMITE" X="40" Y="20" />
+      <knot TypeOfSpline="HERMITE" X="50" Y="20" />
+      <knot TypeOfSpline="HERMITE" X="70" Y="20" />
+      <knot TypeOfSpline="HERMITE" X="80" Y="20" />
+      <knot TypeOfSpline="HERMITE" X="100" Y="20" />
+      <knot TypeOfSpline="HERMITE" X="140" Y="20" />
+      <knot TypeOfSpline="HERMITE" X="160" Y="20" />
+      <knot TypeOfSpline="HERMITE" X="200" Y="20" />
+      <knot TypeOfSpline="HERMITE" X="280" Y="20" />
     </knots>
   </curve>
   <curve Name="item_quality_price_mult_common" NumberOfSamples="50" MaxX="2.1" MinX="-0.1" MaxY="2" MinY="0">
