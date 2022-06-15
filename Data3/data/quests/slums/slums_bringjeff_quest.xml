@@ -1833,7 +1833,7 @@
                      state="disabled"
                      pxsl_line="264">
                     <!-- Mnatis 169006 -->
-                    <Object
+                    <!--<Object
                          pxsl_line="265">
                         <QuestObject
                              class="RestingPlace"
@@ -1846,7 +1846,7 @@
                              class="BountyStartTrigger"
                              name="GassedUp_SafeZone_Bounty"
                              pxsl_line="266" />
-                    </Object>
+                    </Object>-->
                 </Phase>
                 <Phase
                      type="checkpoint"
