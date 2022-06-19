@@ -216,7 +216,6 @@ VarFloat("f_btz_cold_dps_on_player_max_hits", 1000.0)
 VarFloat("f_btz_cold_dps_on_player_damage_for_min", 500.0)
 VarFloat("f_btz_cold_dps_on_player_damage_for_max", 1.0)
 
-
 //////////////////// Guns Damage Mapping Begin //////////////////////////////////////
 // NOTE HUNTER HAS BulletDamageReduction of 0.2, which meens he will take 20% less damage than what is mapped here
 VarFloat("f_btz_pistol_on_player_min_hits", 10.0) 
@@ -318,6 +317,16 @@ VarFloat("f_btz_bolt_headshot_on_player_min_hits", 1.66)
 VarFloat("f_btz_bolt_headshot_on_player_max_hits", 1.66) 
 VarFloat("f_btz_bolt_headshot_on_player_damage_for_min", 250)
 VarFloat("f_btz_bolt_headshot_on_player_damage_for_max", 20)
+
+VarFloat("f_btz_chainsaw_on_player_min_hits", 50.0) 
+VarFloat("f_btz_chainsaw_on_player_max_hits", 50.0) 
+VarFloat("f_btz_chainsaw_on_player_damage_for_min", 100.0)
+VarFloat("f_btz_chainsaw_on_player_damage_for_max", 10.0)
+
+VarFloat("f_btz_chainsaw_headshot_on_player_min_hits", 25.0) 
+VarFloat("f_btz_chainsaw_headshot_on_player_max_hits", 25.0) 
+VarFloat("f_btz_chainsaw_headshot_on_player_damage_for_min", 150)
+VarFloat("f_btz_chainsaw_headshot_on_player_damage_for_max", 15)
 
 //// On Zombie ////
 
@@ -421,7 +430,15 @@ VarFloat("f_btz_bolt_headshot_on_zombie_max_hits", 0.1)
 VarFloat("f_btz_bolt_headshot_on_zombie_damage_for_min", 250)
 VarFloat("f_btz_bolt_headshot_on_zombie_damage_for_max", 20)
 
+VarFloat("f_btz_chainsaw_on_zombie_min_hits", 10) 
+VarFloat("f_btz_chainsaw_on_zombie_max_hits", 10) 
+VarFloat("f_btz_chainsaw_on_zombie_damage_for_min", 150.0)
+VarFloat("f_btz_chainsaw_on_zombie_damage_for_max", 15.0)
 
+VarFloat("f_btz_chainsaw_headshot_on_zombie_min_hits", 5) 
+VarFloat("f_btz_chainsaw_headshot_on_zombie_max_hits", 5) 
+VarFloat("f_btz_chainsaw_headshot_on_zombie_damage_for_min", 200.0)
+VarFloat("f_btz_chainsaw_headshot_on_zombie_damage_for_max", 20.0)
 
 //// On Thug ////
 
@@ -525,7 +542,15 @@ VarFloat("f_btz_bolt_headshot_on_thug_max_hits", 1.9)
 VarFloat("f_btz_bolt_headshot_on_thug_damage_for_min", 250)
 VarFloat("f_btz_bolt_headshot_on_thug_damage_for_max", 20)
 
+VarFloat("f_btz_chainsaw_on_thug_min_hits", 20) 
+VarFloat("f_btz_chainsaw_on_thug_max_hits", 20) 
+VarFloat("f_btz_chainsaw_on_thug_damage_for_min", 150.0)
+VarFloat("f_btz_chainsaw_on_thug_damage_for_max", 15.0)
 
+VarFloat("f_btz_chainsaw_headshot_on_thug_min_hits", 10) 
+VarFloat("f_btz_chainsaw_headshot_on_thug_max_hits", 10) 
+VarFloat("f_btz_chainsaw_headshot_on_thug_damage_for_min", 200.0)
+VarFloat("f_btz_chainsaw_headshot_on_thug_damage_for_max", 20.0)
 
 //// On Brood ////
 
@@ -629,6 +654,15 @@ VarFloat("f_btz_bolt_headshot_on_brood_max_hits", 0.06)
 VarFloat("f_btz_bolt_headshot_on_brood_damage_for_min", 250)
 VarFloat("f_btz_bolt_headshot_on_brood_damage_for_max", 20)
 
+VarFloat("f_btz_chainsaw_on_brood_min_hits", 50.0) 
+VarFloat("f_btz_chainsaw_on_brood_max_hits", 50.0) 
+VarFloat("f_btz_chainsaw_on_brood_damage_for_min", 100.0)
+VarFloat("f_btz_chainsaw_on_brood_damage_for_max", 10.0)
+
+VarFloat("f_btz_chainsaw_headshot_on_brood_min_hits", 25.0) 
+VarFloat("f_btz_chainsaw_headshot_on_brood_max_hits", 25.0) 
+VarFloat("f_btz_chainsaw_headshot_on_brood_damage_for_min", 150)
+VarFloat("f_btz_chainsaw_headshot_on_brood_damage_for_max", 15)
 
 //////////////////// Guns Damage Mapping End //////////////////////////////////////
 
@@ -1338,4 +1372,6 @@ VarFloat("f_btz_silent_kill_on_zombie_min_hits", 0.01)
 VarFloat("f_btz_silent_kill_on_zombie_max_hits", 0.01) 
 VarFloat("f_btz_silent_kill_on_zombie_damage_for_min", 1.0)
 VarFloat("f_btz_silent_kill_on_zombie_damage_for_max", 1.0)
+
+
 
