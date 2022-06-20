@@ -18,9 +18,31 @@ sub customRecipes(){
         Color(Color_Orange);
         CraftedItem("Craft_TruckBattery", 1, 2);
         CraftplanType("Top");
-        UniqueSaveID(74978);
+        UniqueSaveID(74977);
         HudIcon("blueprint_b");
 		//OwnedAtStart();
+    }
+    Item("Craftplan_Fireworks", CategoryType_Collectable)
+    {
+        Name("&Craftplan_Fireworks_N&");
+        Description('&Craftplan_Fireworks_D&');
+        ItemType(ItemType_CraftPlan);
+        Price(40);
+        Mesh("blueprint.msh");
+        Skin("default_hl");
+
+        RequiredItem("Craft_PlasticTube", 3);
+        RequiredItem("Craft_DuctTape", 2);
+        RequiredItem("Craft_String", 2);
+        RequiredItem("Craft_Insecticide", 2);
+        RequiredItem("Craft_Bleach", 2);
+        
+        Color(Color_Violet);
+        CraftedItem("Throwable_Firework", 3, 6);
+        CraftplanType("Top");
+        UniqueSaveID(74978);
+        HudIcon("blueprint_b");
+        //OwnedAtStart();
     }
 	
 	Item("Craftplan_Wire", CategoryType_Collectable)

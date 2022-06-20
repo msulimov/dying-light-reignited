@@ -194,7 +194,7 @@ sub main()
     Reward("MothersDay_reward") // REWARDED Gazi movie chocolates
     {
         Xp(20000);
-		Item("Craft_Upgrade_DamL2DurL2BalL2", Color_Orange, 1, 0); // King
+		Item("Craftplan_Fireworks", Color_Orange, 1, 0); // Fireworks Craftplan
         Cash(750);
     }
 

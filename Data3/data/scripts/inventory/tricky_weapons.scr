@@ -88,6 +88,18 @@ sub main()
 			ForcePostHitFx("bat_van_crane_sequence.fx");
         }
     }
+    Item("Crossbow_VanCrane1")
+    {
+		
+		Trick("TimeOfDay", 21.0, 6.0)
+        {	
+			DamageMultiplier(1.5); 
+            IgnoreArmor();    
+			IgnoreBulletProofVest();
+			SetWeaponSkin("Night");
+			ForcePostHitFx("bat_van_crane_sequence.fx");
+        }
+    }
 
 	// END DLC Weapon Tricks
 

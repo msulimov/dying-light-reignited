@@ -8,10 +8,10 @@ sub extraDLCRecipes(){
     //-------------------------------------------------------------------------
     //-------------------------------------------------------------------------
 
-	Item("Craftplan_Melee_Sword_Space_Commando", CategoryType_Collectable)
+	Item("Craftplan_Melee_Sword_Space_Commando1", CategoryType_Collectable)
     {
-        Name("&Craftplan_Melee_Sword_Space_Commando_N&");
-        Description('&Craftplan_Melee_Sword_Space_Commando_D&');
+        Name("&Craftplan_Melee_Sword_Space_Commando1_N&");
+        Description('&Craftplan_Melee_Sword_Space_Commando1_D&');
         ItemType(ItemType_CraftPlan);
         Price(68);
         Mesh("blueprint.msh");
@@ -23,12 +23,11 @@ sub extraDLCRecipes(){
         BaseItem("Melee_Handsaw", "", "");
         BaseItem("Melee_Scythe", "", "");
         RequiredItem("Craft_MetalScrap", 8);
-		RequiredItem("Craft_Electronics", 5);
-		RequiredItem("Craft_Batteries", 5);
-		RequiredItem("Craft_PowerCable", 4);
+		RequiredItem("Craft_Electronics", 2);
+		RequiredItem("Craft_Batteries", 1);
+		RequiredItem("Craft_PowerCable", 1);
 		RequiredItem("Craft_Shroom", 8);
         Color(Color_Blue);
-		Elemental(Elemental_ShockElectricity, 3);
         CraftedItem("Melee_Sword_Space_Commando1", 1, 1);
         CraftplanType("CarUpgrade");
         UniqueSaveID(13003);
@@ -40,7 +39,8 @@ sub extraDLCRecipes(){
 	
 	Item("Melee_Sword_Space_Commando1", CategoryType_Melee)
     {
-        Name("&Melee_Sword_Space_Commando_N&");
+        Name("&Melee_Sword_Space_Commando1_N&");
+        Description('&Melee_Sword_Space_Commando1_D&');
         //GameVersion(11);
         Visibility(true);
         ItemType(ItemType_TwoHandedCloseStick);
@@ -133,10 +133,10 @@ sub extraDLCRecipes(){
         RepairPart("Craft_MetalScrap", 5);
     }
 	
-	Item("Craftplan_Firearm_Pistol_Space_Commando", CategoryType_Collectable)
+	Item("Craftplan_Firearm_Pistol_Space_Commando1", CategoryType_Collectable)
     {
-        Name("&Craftplan_Firearm_Pistol_Space_Commando_N&");
-        Description('&Craftplan_Firearm_Pistol_Space_Commando_D&');
+        Name("&Craftplan_Firearm_Pistol_Space_Commando1_N&");
+        Description('&Craftplan_Firearm_Pistol_Space_Commando1_D&');
         ItemType(ItemType_CraftPlan);
         Price(40);
         Mesh("blueprint.msh");
@@ -161,7 +161,8 @@ sub extraDLCRecipes(){
 	
 	Item("Firearm_Pistol_Space_Commando1", CategoryType_Firearm)
     {
-		Name("&Firearm_Pistol_Space_Commando_N&");
+		Name("&Firearm_Pistol_Space_Commando1_N&");
+        Description("&Firearm_Pistol_Space_Commando1_D&");
         CategoryType(CategoryType_Firearm);
         Visibility(true);
         ItemType(ItemType_Pistol);
@@ -278,10 +279,10 @@ sub extraDLCRecipes(){
         ShootRecoilTime(0.175);
     }
 	
-	Item("Craftplan_Firearm_Rifle_Space_Commando", CategoryType_Collectable)
+	Item("Craftplan_Firearm_Rifle_Space_Commando1", CategoryType_Collectable)
     {
-        Name("&Craftplan_Firearm_Rifle_Space_Commando_N&");
-        Description("&Craftplan_Firearm_Rifle_Space_Commando_D&");
+        Name("&Craftplan_Firearm_Rifle_Space_Commando1_N&");
+        Description("&Craftplan_Firearm_Rifle_Space_Commando1_D&");
         ItemType(ItemType_CraftPlan);
         Price(40);
         Mesh("blueprint.msh");
@@ -308,7 +309,8 @@ sub extraDLCRecipes(){
 
 	Item("Firearm_Rifle_Space_Commando1", CategoryType_Firearm)
     {
-        Name("&Firearm_Rifle_Space_Commando_N&");
+        Name("&Firearm_Rifle_Space_Commando1_N&");
+        Description("&Firearm_Rifle_Space_Commando1_D&");
         //GameVersion(43);
         CategoryType(CategoryType_Firearm);
         Visibility(true);
@@ -431,9 +433,9 @@ sub extraDLCRecipes(){
         HandInertiaFactor(0.0);
     }
 
-//-----------------------------------------------------------------------
-// END LUNAR DLC 53 -----------------------------------------------------
-//-----------------------------------------------------------------------
+    //-----------------------------------------------------------------------
+    // END LUNAR DLC 53 -----------------------------------------------------
+    //-----------------------------------------------------------------------
 
 
 
@@ -441,20 +443,21 @@ sub extraDLCRecipes(){
 
 
 
-//-----------------------------------------------------------------------
-//-----------------------------------------------------------------------
-// START DAO DLC 48 -----------------------------------------------------
-//-----------------------------------------------------------------------
-//-----------------------------------------------------------------------
+    //-----------------------------------------------------------------------
+    //-----------------------------------------------------------------------
+    // START DAO DLC 48 -----------------------------------------------------
+    //-----------------------------------------------------------------------
+    //-----------------------------------------------------------------------
 
 	Item("Craftplan_Melee_ShortSword_Dao_SHU1", CategoryType_Collectable)
     {
-        Name("&Craftplan_Melee_ShortSword_Dao_SHU_N&");
-        Description('&Craftplan_Melee_ShortSword_Dao_SHU_D&');
+        Name("&Craftplan_Melee_ShortSword_Dao_SHU1_N&");
+        Description('&Craftplan_Melee_ShortSword_Dao_SHU1_D&');
         ItemType(ItemType_CraftPlan);
         Price(40);
         Mesh("blueprint.msh");
         Skin("default");
+
 		BaseItem("Melee_ShortSword", "", "");
 		BaseItem("Melee_Knife", "", "");
 		BaseItem("Melee_Scythe", "", "");
@@ -464,17 +467,15 @@ sub extraDLCRecipes(){
         BaseItem("Melee_Sickle", "", "");
 		BaseItem("Melee_ReedKnife", "", "");
 		BaseItem("Melee_Cleaver", "", "");
+
         RequiredItem("Craft_MetalScrap", 8);
-        RequiredItem("Craft_DuctTape", 3);
+        RequiredItem("Craft_Alcohol", 10);
         RequiredItem("Craft_Nails", 4);
-        RequiredItem("Craft_RazorBlade", 3);
-        RequiredItem("Craft_Electronics", 6);
-        RequiredItem("Craft_Batteries", 5);
-		RequiredItem("Craft_PowerCable", 4);
+        RequiredItem("Craft_RazorBlade", 1);
+
 		InheritBaseStats();
         Color(Color_Blue);
         CraftedItem("Melee_ShortSword_Dao_SHU1", 1, 1);
-		Elemental(Elemental_Burning, 3);
         CraftplanType("CarUpgrade");
         UniqueSaveID(13006);
 		OwnedAtStart();
@@ -485,8 +486,8 @@ sub extraDLCRecipes(){
 	Item("Melee_ShortSword_Dao_SHU1", CategoryType_Melee)
     {
         GameVersion(31);
-        Name("&Craftplan_Melee_ShortSword_Dao_SHU_N&");
-        Description('&Craftplan_Melee_ShortSword_Dao_SHU_D&');
+        Name("&Melee_ShortSword_Dao_SHU1_N&");
+        Description('&Melee_ShortSword_Dao_SHU1_D&');
         Visibility(true);
         ItemType(ItemType_Stick);
         PhysicsScript("single_dropped_inventory.phx");
@@ -579,15 +580,15 @@ sub extraDLCRecipes(){
     }
 		
 	
-	Item("Craftplan_Crossbow_SHU", CategoryType_Collectable)
+	Item("Craftplan_Crossbow_SHU1", CategoryType_Collectable)
     {
-        Name("&Craftplan_Crossbow_SHU_N&");
-        Description("&Craftplan_Crossbow_SHU_D&");
+        Name("&Craftplan_Crossbow_SHU1_N&");
+        Description("&Craftplan_Crossbow_SHU1_D&");
         ItemType(ItemType_CraftPlan);
         Price(40);
         Mesh("blueprint.msh");
         Skin("default");
-		RequiredItem("ZZZZ3_Crossbow_Upgraded", 1);
+		RequiredItem("ZZZZ3_Crossbow", 1);
 		RequiredItem("Craft_MetalScrap", 15);
         RequiredItem("Craft_DuctTape", 6);
         RequiredItem("Craft_String", 10);
@@ -608,8 +609,8 @@ sub extraDLCRecipes(){
 	Item("Crossbow_SHU1", CategoryType_Firearm)
     {
         //GameVersion(31);
-        Name("&Crossbow_SHU_N&");
-        Description("&Crossbow_SHU_D&");
+        Name("&Crossbow_SHU1_N&");
+        Description("&Crossbow_SHU1_D&");
         DamageType(DamageType_Arrow);
         UsageType(UsageType_Normal);
         DefaultBulletId("ZZZZ3_Bullet_Bolt");
@@ -691,10 +692,10 @@ sub extraDLCRecipes(){
         HandOffset(HandModification_Custom, [0.0, 0.0, 0.0]);
     }
 
-    Item("zzz_Craftplan_Bow_Composite_Lunar", CategoryType_Collectable) // not sure what dlc this is part of
+    Item("Craftplan_Bow_Composite_Lunar1", CategoryType_Collectable) // not sure what dlc this is part of
     {
-        Name("&zzz_Craftplan_Bow_Composite_Lunar_N&");
-        Description('&zzz_Craftplan_Bow_Composite_Lunar_D&');
+        Name("&Craftplan_Bow_Composite_Lunar1_N&");
+        Description('&Craftplan_Bow_Composite_Lunar1_D&');
         ItemType(ItemType_CraftPlan);
         Price(40);
         Mesh("blueprint.msh");
@@ -717,25 +718,25 @@ sub extraDLCRecipes(){
         GameVersion(26);
         OwnedAtStart();
     }
-//---------------------------------------------------------------------
-// END DAO DLC 48 -----------------------------------------------------
-//---------------------------------------------------------------------
+    //---------------------------------------------------------------------
+    // END DAO DLC 48 -----------------------------------------------------
+    //---------------------------------------------------------------------
 
 
 
 
 
 
-//---------------------------------------------------------------------
-//---------------------------------------------------------------------
-// START RETRO DLC 47 -------------------------------------------------
-//---------------------------------------------------------------------
-//---------------------------------------------------------------------
+    //---------------------------------------------------------------------
+    //---------------------------------------------------------------------
+    // START RETRO DLC 47 -------------------------------------------------
+    //---------------------------------------------------------------------
+    //---------------------------------------------------------------------
 
-	Item("Craftplan_Melee_Machete_Retro", CategoryType_Collectable)
+	Item("Craftplan_Melee_Machete_Retro1", CategoryType_Collectable)
     {
-        Name("&Craftplan_Melee_Machete_Retro_N&");
-        Description('&Craftplan_Melee_Machete_Retro_D&');
+        Name("&Craftplan_Melee_Machete_Retro1_N&");
+        Description('&Craftplan_Melee_Machete_Retro1_D&');
         ItemType(ItemType_CraftPlan);
         Price(40);
         Mesh("blueprint.msh");
@@ -746,15 +747,11 @@ sub extraDLCRecipes(){
 		BaseItem("Melee_Knife", "", "");
 		BaseItem("Melee_ShortSword", "", "");
         RequiredItem("Craft_MetalScrap", 5);
-        RequiredItem("Craft_DuctTape", 3);
-        RequiredItem("Craft_Nails", 4);
-        RequiredItem("Craft_RazorBlade", 2);
-        RequiredItem("Craft_Electronics", 5);
-        RequiredItem("Craft_Batteries", 5);
-		RequiredItem("Craft_PowerCable", 4);
+        RequiredItem("Craft_Electronics", 1);
+        RequiredItem("Craft_Batteries", 2);
+		RequiredItem("Craft_PowerCable", 1);
 		InheritBaseStats();
         Color(Color_Violet);
-		Elemental(Elemental_ShockElectricity, 3);
         CraftedItem("Melee_Machete_Retro1", 1, 1);
         CraftplanType("CarUpgrade");
         UniqueSaveID(13008);
@@ -765,7 +762,8 @@ sub extraDLCRecipes(){
 	
 	Item("Melee_Machete_Retro1", CategoryType_Melee)
     {
-		Name("&Craftplan_Melee_Machete_Retro_N&");
+		Name("&Melee_Machete_Retro1_N&");
+        Description("&Melee_Machete_Retro1_D&");
 		//GameVersion(30);
         Visibility(true);
         ItemType(ItemType_Stick);
@@ -860,10 +858,10 @@ sub extraDLCRecipes(){
         RepairPart("Craft_MetalScrap", 5);
     }
 	
-	Item("Craftplan_Firearm_Rifle_Retro", CategoryType_Collectable)
+	Item("Craftplan_Firearm_Rifle_Retro1", CategoryType_Collectable)
     {
-        Name("&Craftplan_Firearm_Rifle_Retro_N&");
-        Description("&Craftplan_Firearm_Rifle_Retro_D&");
+        Name("&Craftplan_Firearm_Rifle_Retro1_N&");
+        Description("&Craftplan_Firearm_Rifle_Retro1_D&");
         ItemType(ItemType_CraftPlan);
         Price(40);
         Mesh("blueprint.msh");
@@ -886,7 +884,8 @@ sub extraDLCRecipes(){
 	
 	Item("Firearm_Rifle_Retro1", CategoryType_Firearm)
     {
-        Name("&Firearm_Rifle_Retro_N&");
+        Name("&Firearm_Rifle_Retro1_N&");
+        Description("&Firearm_Rifle_Retro1_D&");
         //GameVersion(30);
         CategoryType(CategoryType_Firearm);
         Visibility(true);
@@ -1002,9 +1001,9 @@ sub extraDLCRecipes(){
         ShootHorzRecoilSpread(0.012);
         HandInertiaFactor(0.0);
     }
-//------------------------------------------------------------
-// END RETRO DLC 47 ------------------------------------------
-//------------------------------------------------------------
+    //------------------------------------------------------------
+    // END RETRO DLC 47 ------------------------------------------
+    //------------------------------------------------------------
 	
 
 
@@ -1012,17 +1011,17 @@ sub extraDLCRecipes(){
 
 
 
-//-------------------------------------------------------------------
-//-------------------------------------------------------------------
-// START Viking DLC 55 ----------------------------------------------
-//-------------------------------------------------------------------
-//-------------------------------------------------------------------
+    //-------------------------------------------------------------------
+    //-------------------------------------------------------------------
+    // START Viking DLC 55 ----------------------------------------------
+    //-------------------------------------------------------------------
+    //-------------------------------------------------------------------
 
 	// Viking Fire Axe
-	Item("Craftplan_Melee_AxeBig_Viking_Fire", CategoryType_Collectable)
+	Item("Craftplan_Melee_AxeBig_Viking_Fire1", CategoryType_Collectable)
     {
-        Name("&Craftplan_Melee_AxeBig_Viking_Fire_N&");
-        Description("&Craftplan_Melee_AxeBig_Viking_Fire_D&");
+        Name("&Craftplan_Melee_AxeBig_Viking_Fire1_N&");
+        Description("&Craftplan_Melee_AxeBig_Viking_Fire1_D&");
         ItemType(ItemType_CraftPlan);
         Price(50);
         Mesh("blueprint.msh");
@@ -1033,13 +1032,9 @@ sub extraDLCRecipes(){
         RequiredItem("Craft_MetalScrap", 8);
         RequiredItem("Craft_String", 5);
         RequiredItem("Craft_Insecticide", 6);
-        RequiredItem("Craft_Electronics", 4);
-        RequiredItem("Craft_Batteries", 4);
-		RequiredItem("Craft_PowerCable", 4);
 		RequiredItem("Craft_Alcohol", 15);
-        Elemental(Elemental_Burning, 3);
         Color(Color_Orange);
-        CraftedItem("Burning_AxeBig_Viking", 1, 1);
+        CraftedItem("Burning_AxeBig_Viking1", 1, 1);
         CraftplanType("CarUpgrade");
         UniqueSaveID(9925);
         HudIcon("blueprint_b");
@@ -1048,9 +1043,10 @@ sub extraDLCRecipes(){
         OwnedAtStart();
     }
 	
-	Item("Burning_AxeBig_Viking", CategoryType_Melee)
+	Item("Burning_AxeBig_Viking1", CategoryType_Melee)
     {
-		Name("&Burning_Melee_AxeBig_Viking_N&");
+		Name("&Burning_Melee_AxeBig_Viking1_N&");
+        Description("&Burning_Melee_AxeBig_Viking1_N&");
         //GameVersion(36);
         Visibility(true);
         ItemType(ItemType_TwoHandedHeavyStick);
@@ -1120,7 +1116,7 @@ sub extraDLCRecipes(){
         GenType(GenType_MeleeWeapon);
     }
 
-    Item("Burning_AxeBig_Viking", CategoryType_Melee)
+    Item("Burning_AxeBig_Viking1", CategoryType_Melee)
     {
         //GameVersion(36);
         UpgradeLevel(0);
@@ -1132,7 +1128,7 @@ sub extraDLCRecipes(){
         RepairPart("Craft_MetalScrap", 5);
     }
 
-    Item("Burning_AxeBig_Viking", CategoryType_Melee)
+    Item("Burning_AxeBig_Viking1", CategoryType_Melee) // Viking Fiery Asir Sword
     {
         //GameVersion(36);
 		UpgradeLevel(0);
@@ -1143,13 +1139,11 @@ sub extraDLCRecipes(){
         InventoryMeshHq("wn_axe_viking_b_dm_b.msh");
         RepairPart("Craft_MetalScrap", 5);
     }
-	
-		// Viking Fire Sword
-	
-	Item("Craftplan_Melee_ShortSword_Viking_Fire", CategoryType_Collectable)
+		
+	Item("Craftplan_Melee_ShortSword_Viking_Fire1", CategoryType_Collectable)
     {
-        Name("&Craftplan_Melee_ShortSword_Viking_Fire_N&");
-        Description("&Craftplan_Melee_ShortSword_Viking_Fire_D&");
+        Name("&Craftplan_Melee_ShortSword_Viking_Fire1_N&");
+        Description("&Craftplan_Melee_ShortSword_Viking_Fire1_D&");
         ItemType(ItemType_CraftPlan);
         Price(50);
         Mesh("blueprint.msh");
@@ -1160,14 +1154,9 @@ sub extraDLCRecipes(){
 		BaseItem("Melee_Knife", "", "");
 		BaseItem("Melee_ShortSword", "", "");
         RequiredItem("Craft_MetalScrap", 8);
-        RequiredItem("Craft_String", 5);
-        RequiredItem("Craft_Insecticide", 6);
-        RequiredItem("Craft_Electronics", 4);
-        RequiredItem("Craft_Batteries", 4);
-		RequiredItem("Craft_PowerCable", 4);
-		RequiredItem("Craft_Alcohol", 15);
-		
-		Elemental(Elemental_Burning, 3);
+        RequiredItem("Craft_String", 4);
+        RequiredItem("Craft_Insecticide", 5);
+        RequiredItem("Craft_Alcohol", 10);
 		
         Color(Color_Orange);
         CraftedItem("Burning_ShortSword_Viking1", 1, 1);
@@ -1181,7 +1170,8 @@ sub extraDLCRecipes(){
 	
 	Item("Burning_ShortSword_Viking1", CategoryType_Melee)
     {
-		Name("&Burning_Melee_ShortSword_Viking_N&");
+		Name("&Burning_Melee_ShortSword_Viking1_N&");
+        Description("&Burning_Melee_ShortSword_Viking1_D&");
 		//GameVersion(36);
         Visibility(true);
         ItemType(ItemType_Stick);
@@ -1287,10 +1277,10 @@ sub extraDLCRecipes(){
     //-----------------------------------------------------------------
     //-----------------------------------------------------------------
 	
-	Item("Craftplan_Bow_Savvy", CategoryType_Collectable)
+	Item("Craftplan_Bow_Savvy1", CategoryType_Collectable)
     {
-        Name("&Craftplan_Bow_Savvy_N&");
-        Description('&Craftplan_Bow_Savvy_D&');
+        Name("&Craftplan_Bow_Savvy1_N&");
+        Description('&Craftplan_Bow_Savvy1_D&');
         ItemType(ItemType_CraftPlan);
         Price(64);
         Mesh("blueprint.msh");
@@ -1319,8 +1309,8 @@ sub extraDLCRecipes(){
 	
 	Item("Bow_Savvy1", CategoryType_Firearm)
     {
-        Name("&Bow_Savvy_N&");
-        Description("&Bow_Savvy_D&");
+        Name("&Bow_Savvy1_N&");
+        Description("&Bow_Savvy1_D&");
         DamageType(DamageType_Arrow);
         UsageType(UsageType_Normal);
         DefaultBulletId("ZZZZ_Bullet_Arrow");
@@ -1379,9 +1369,9 @@ sub extraDLCRecipes(){
         BulletGravityFactor(0.15);
         //GameVersion(43);
     }
-//----------------------------------------------------------
-// END SAAVY DLC 61 ----------------------------------------
-//----------------------------------------------------------
+    //----------------------------------------------------------
+    // END SAAVY DLC 61 ----------------------------------------
+    //----------------------------------------------------------
 	
 
 
@@ -1389,16 +1379,16 @@ sub extraDLCRecipes(){
 
 
 
-//-------------------------------------------------------------------------
-//-------------------------------------------------------------------------
-// START ASTRONAUT DLC 62 -------------------------------------------------
-//-------------------------------------------------------------------------
-//-------------------------------------------------------------------------
+    //-------------------------------------------------------------------------
+    //-------------------------------------------------------------------------
+    // START ASTRONAUT DLC 62 -------------------------------------------------
+    //-------------------------------------------------------------------------
+    //-------------------------------------------------------------------------
 
     Item("Craftplan_Firearm_Rifle_Astronaut1", CategoryType_Collectable)
     {
-        Name("&Firearm_Rifle_Astronaut_N&");
-        Description('&Craftplan_Firearm_Rifle_Astronaut_DLC_D&'); // TODO add craftplan description
+        Name("&Craftplan_Firearm_Rifle_Astronaut1_N&");
+        Description('&Craftplan_Firearm_Rifle_Astronaut1_D&');
         ItemType(ItemType_CraftPlan);
         Price(6400);
         Mesh("blueprint.msh");
@@ -1413,16 +1403,17 @@ sub extraDLCRecipes(){
         CraftedItem("Firearm_Rifle_Astronaut1", 1, 1);
         CraftplanType("CarUpgrade");
         InheritBaseStats();
-        UniqueSaveID(10000);
+        UniqueSaveID(13009);
         OwnedAtStart();
         HudIcon("blueprint_b");
-        GameVersion(44);    
+        //GameVersion(44);    
     }
 
     Item("Firearm_Rifle_Astronaut1", CategoryType_Firearm)
     {
-        Name("&Firearm_Rifle_Astronaut_N&");
-        GameVersion(44);
+        Name("&Firearm_Rifle_Astronaut1_N&");
+        Description('&Firearm_Rifle_Astronaut1_D&');
+        //GameVersion(44);
         CategoryType(CategoryType_Firearm);
         Visibility(true);
         ItemType(ItemType_Rifle);
@@ -1524,7 +1515,7 @@ sub extraDLCRecipes(){
 
     Item("Firearm_Rifle_Astronaut1", CategoryType_Firearm)
     {
-        GameVersion(44);
+        //GameVersion(44);
         CategoryType(CategoryType_Firearm);
         UsageType(UsageType_Aim);
         UpgradeLevel(0);
@@ -1545,8 +1536,8 @@ sub extraDLCRecipes(){
     //pistol
     Item("Craftplan_Firearm_Pistol_Astronaut1", CategoryType_Collectable)
     {
-        Name("&Firearm_Pistol_Astronaut_N&");
-        Description('&Craftplan_Firearm_Pistol_Astronaut_D&'); // TODO use bin editor to add description
+        Name("&Craftplan_Firearm_Pistol_Astronaut1_N&");
+        Description('&Craftplan_Firearm_Pistol_Astronaut1_D&');
         ItemType(ItemType_CraftPlan);
         Price(6400);
         Mesh("blueprint.msh");
@@ -1561,16 +1552,17 @@ sub extraDLCRecipes(){
         Color(Color_Blue);
         CraftedItem("Firearm_Pistol_Astronaut1", 1, 1);
         CraftplanType("CarUpgrade");
-        UniqueSaveID(10001);
+        UniqueSaveID(13010);
         OwnedAtStart();
         HudIcon("blueprint_b");
-        GameVersion(44);
+        //GameVersion(44);
     }
 
     Item("Firearm_Pistol_Astronaut1", CategoryType_Firearm)
     {
-        Name("&Firearm_Pistol_Astronaut_N&");
-        GameVersion(44);
+        Name("&Firearm_Pistol_Astronaut1_N&");
+        Description('&Firearm_Pistol_Astronaut1_D&');
+        //GameVersion(44);
         CategoryType(CategoryType_Firearm);
         Visibility(true);
         ItemType(ItemType_Pistol);
@@ -1661,7 +1653,7 @@ sub extraDLCRecipes(){
 
     Item("Firearm_Pistol_Astronaut1", CategoryType_Firearm)
     {
-        GameVersion(44);
+        //GameVersion(44);
         CategoryType(CategoryType_Firearm);
         UsageType(UsageType_Aim);
         UpgradeLevel(0);
@@ -1681,7 +1673,7 @@ sub extraDLCRecipes(){
 
     Item("Bullet_Astronaut_Pistol1", CategoryType_Ammo)
     {
-        GameVersion(44);
+        //GameVersion(44);
         Mesh("loot_ok_ammo_short.msh");
         HudIcon("ammo_pistol");
         ItemType(ItemType_Bullet);
@@ -1693,7 +1685,7 @@ sub extraDLCRecipes(){
 
     Item("Throwable_Astronaut_Pistol_Effect1", CategoryType_Throwable)
     {
-        GameVersion(44);
+        //GameVersion(44);
         Name("&Throwable_DevCraft1_N&");
         Description("&Throwable_DevCraft1_D&");
         DeveloperEffect("StasisField");
@@ -1731,8 +1723,8 @@ sub extraDLCRecipes(){
     //machete
     Item("Craftplan_Melee_Machete_Astronaut1", CategoryType_Collectable)
     {
-        Name("&Craftplan_Melee_Machete_Astronaut_N&"); // TODO add craftplan name
-        Description('&Craftplan_Melee_Machete_Astronaut_D&'); // TODO add description
+        Name("&Craftplan_Melee_Machete_Astronaut1_N&");
+        Description('&Craftplan_Melee_Machete_Astronaut1_D&');
         ItemType(ItemType_CraftPlan);
         Price(6400);
         Mesh("blueprint.msh");
@@ -1741,27 +1733,27 @@ sub extraDLCRecipes(){
         BaseItem("Melee_TahirsWeapon", "", "");
         BaseItem("Melee_RaisMachete", "", "");
 
-        RequiredItem("Craft_RazorBlade", 5);
-        RequiredItem("Craft_Electronics", 5);
-        RequiredItem("Craft_Batteries", 6);
-        RequiredItem("Craft_PowerCable", 6);
+        RequiredItem("Craft_MetalScrap", 8);
+        RequiredItem("Craft_Electronics", 4);
+        RequiredItem("Craft_Batteries", 5);
+        RequiredItem("Craft_PowerCable", 5);
         RequiredItem("Craft_Shroom", 6);
-        RequiredItem("Craft_Insecticide", 6);
 
         Color(Color_Blue);
         CraftedItem("Melee_Machete_Astronaut1", 1, 1);
         InheritBaseStats();
         CraftplanType("CarUpgrade");
         OwnedAtStart();
-        UniqueSaveID(10002);
+        UniqueSaveID(13011);
         HudIcon("blueprint_b");
-        GameVersion(44);
+        //GameVersion(44);
     }
 
     Item("Melee_Machete_Astronaut1", CategoryType_Melee)
     {           
         Visibility(true);
-        Name("&Craftplan_Melee_Machete_Astronaut_N&"); // TODO add craftplan name
+        Name("&Craftplan_Melee_Machete_Astronaut1_N&");
+        Description("&Craftplan_Melee_Machete_Astronaut1_D&");
         ItemType(ItemType_Stick);
         PhysicsScript("single_dropped_inventory.phx");
         UpgradeLevel(0);
@@ -1820,7 +1812,7 @@ sub extraDLCRecipes(){
         AchType(AchType_Machete);
         DismantleResultItem("Craft_MetalScrap");
         DismantleResultItemCnt(3);
-        CraftingSlots(1,0);
+        CraftingSlots(0,0);
         UniqueFxNameBase("machete_g");
         RestrictionFlags(0);
         RagdollBehaviorPrefix("StickSharp");
@@ -1829,7 +1821,7 @@ sub extraDLCRecipes(){
         GenLevelMax(1);
         Price(300);
         GenType(GenType_MeleeWeapon);
-        GameVersion(44);
+        //GameVersion(44);
     }
 
     Item("Melee_Machete_Astronaut1", CategoryType_Melee)
@@ -1840,7 +1832,7 @@ sub extraDLCRecipes(){
         CutTypesGroup(CutTypesGroup_SharpBodyCutsOnCharge);
         InventoryMeshHq("wn_machete_g_dm_a.msh");
         RepairPart("Craft_MetalScrap", 1);
-        GameVersion(44);
+        //GameVersion(44);
     }
 
     Item("Melee_Machete_Astronaut1", CategoryType_Melee)
@@ -1851,28 +1843,28 @@ sub extraDLCRecipes(){
         CutTypesGroup(CutTypesGroup_SharpBodyCutsOnCharge);
         InventoryMeshHq("wn_machete_g_dm_b.msh");
         RepairPart("Craft_MetalScrap", 1);
-        GameVersion(44);    
+        //GameVersion(44);    
     }
 
-//-------------------------------------------------------------------------
-// END ASTRONAUT DLC 62 ---------------------------------------------------
-//-------------------------------------------------------------------------
+    //-------------------------------------------------------------------------
+    // END ASTRONAUT DLC 62 ---------------------------------------------------
+    //-------------------------------------------------------------------------
 
 
 
 
 
 
-//-------------------------------------------------------------------------
-//-------------------------------------------------------------------------
-// START VAN CRANE DLC 64 -------------------------------------------------
-//-------------------------------------------------------------------------
-//-------------------------------------------------------------------------
+    //-------------------------------------------------------------------------
+    //-------------------------------------------------------------------------
+    // START VAN CRANE DLC 64 -------------------------------------------------
+    //-------------------------------------------------------------------------
+    //-------------------------------------------------------------------------
 
     Item("Craftplan_Crossbow_VanCrane1", CategoryType_Collectable)
     {
-        Name("&Crossbow_VanCrane_N&");
-        Description('&Crossbow_VanCrane_D&');
+        Name("&Craftplan_Crossbow_VanCrane1_N&");
+        Description('&Craftplan_Crossbow_VanCrane1_D&');
         ItemType(ItemType_CraftPlan);
         Price(6400);
         Mesh("blueprint.msh");
@@ -1885,20 +1877,20 @@ sub extraDLCRecipes(){
         RequiredItem("Craft_Electronics", 4);
         RequiredItem("Craft_Batteries", 5);
         RequiredItem("Craft_PowerCable", 4);    
-        Color(Color_Blue);
+        Color(Color_Violet);
         CraftedItem("Crossbow_VanCrane1", 1, 1);
         CraftplanType("CarUpgrade");
         InheritBaseStats();
-        UniqueSaveID(10003);
+        UniqueSaveID(13012);
         OwnedAtStart();
         HudIcon("blueprint_b");
-        GameVersion(45);    
+        //GameVersion(45);    
     }
     Item("Crossbow_VanCrane1", CategoryType_Firearm)
     {
-        GameVersion(45);
-        Name("&Crossbow_VanCrane_N&");
-        Description("&Crossbow_VanCrane_D&");
+        //GameVersion(45);
+        Name("&Crossbow_VanCrane1_N&");
+        Description('&Crossbow_VanCrane1_D&');
         DamageType(DamageType_Arrow);
         UsageType(UsageType_Normal);
         DefaultBulletId("ZZZZ3_Bullet_Bolt");
@@ -1945,7 +1937,7 @@ sub extraDLCRecipes(){
         FF_Right(0.6);
         FF_Duration(0.2);
         FF_FadeOut(0.0);
-        Color(Color_Blue);
+        Color(Color_Violet);
         SwayMaxAngle(0.0);
         JumpInertiaFactor(0.1);
         ShotTime(0.33);
@@ -1971,7 +1963,7 @@ sub extraDLCRecipes(){
     }
     Item("Crossbow_VanCrane1", CategoryType_Firearm)
     {
-        GameVersion(45);
+        //GameVersion(45);
         UsageType(UsageType_Aim);
         BulletSpeed(70.0);
         SwayMaxAngle(0.0);
@@ -1983,8 +1975,8 @@ sub extraDLCRecipes(){
 
     Item("Craftplan_Sword_VanCrane1", CategoryType_Collectable)
     {
-        Name("&Sword_VanCrane_N&");
-        Description('&Craftplan_Sword_VanCrane_D&'); // TODO add craftplan description
+        Name("&Craftplan_Sword_VanCrane1_N&");
+        Description('&Craftplan_Sword_VanCrane1_D&');
         ItemType(ItemType_CraftPlan);
         Price(6400);
         Mesh("blueprint.msh");
@@ -2003,26 +1995,22 @@ sub extraDLCRecipes(){
         RequiredItem("Craft_DuctTape", 3);
         RequiredItem("Craft_Nails", 4);
         RequiredItem("Craft_RazorBlade", 2);
-        RequiredItem("Craft_Electronics", 2);
-        RequiredItem("Craft_Batteries", 2);
-        RequiredItem("Craft_PowerCable", 3);
 
-        Elemental(Elemental_Bleeding, 3);
-
-        Color(Color_Blue);
+        Color(Color_Violet);
         CraftedItem("Sword_VanCrane1", 1, 1);
         InheritBaseStats();
         CraftplanType("CarUpgrade");
         OwnedAtStart();
-        UniqueSaveID(10005);
+        UniqueSaveID(13013);
         HudIcon("blueprint_b");
-        GameVersion(45);
+        //GameVersion(45);
     }
 
-    Item("Sword_VanCrane", CategoryType_Melee)
+    Item("Sword_VanCrane1", CategoryType_Melee)
     {
-        Name("&Sword_VanCrane_N&");
-        GameVersion(45);
+        Name("&Sword_VanCrane1_N&");
+        Description("&Sword_VanCrane1_D&");
+        //GameVersion(45);
         Visibility(true);
         ItemType(ItemType_TwoHandedCloseStick);
         PhysicsScript("single_dropped_inventory.phx");
@@ -2075,7 +2063,7 @@ sub extraDLCRecipes(){
         AllowedRepairs(4);
         SoundDamagedHit("damaged_sharp_weapon_XX.wav");
         ThrowBeginSound("machete_throw.wav");
-        Color(Color_Blue);
+        Color(Color_Platinum);
         GenLevelMin(1);
         GenLevelMax(1);
         AchType(AchType_Machete);
@@ -2089,9 +2077,9 @@ sub extraDLCRecipes(){
         Price(300);
         GenType(GenType_MeleeWeapon);
     }
-    Item("Sword_VanCrane", CategoryType_Melee)
+    Item("Sword_VanCrane1", CategoryType_Melee)
     {
-        GameVersion(45);
+        //GameVersion(45);
         UpgradeLevel(0);
         Condition(20);
         CriticalProb(0.0);
@@ -2100,9 +2088,9 @@ sub extraDLCRecipes(){
         InventoryMeshHq("wn_longsword_c_dm_a.msh");
         RepairPart("Craft_MetalScrap", 1);
     }
-    Item("Sword_VanCrane", CategoryType_Melee)
+    Item("Sword_VanCrane1", CategoryType_Melee)
     {
-        GameVersion(45);
+        //GameVersion(45);
         UpgradeLevel(0);
         Condition(10);
         CriticalProb(1.0);
@@ -2112,9 +2100,9 @@ sub extraDLCRecipes(){
         InventoryMeshHq("wn_longsword_c_dm_b.msh");
         RepairPart("Craft_MetalScrap", 1);
     }
-//------------------------------------------------------------------------
-// END VAN CRANE DLC 64 --------------------------------------------------
-//------------------------------------------------------------------------
+    //------------------------------------------------------------------------
+    // END VAN CRANE DLC 64 --------------------------------------------------
+    //------------------------------------------------------------------------
 
 
 
@@ -2122,16 +2110,16 @@ sub extraDLCRecipes(){
 
 
 
-//-------------------------------------------------------------------------
-//-------------------------------------------------------------------------
-// START WINTER DLC 65 ----------------------------------------------------
-//-------------------------------------------------------------------------
-//-------------------------------------------------------------------------
+    //-------------------------------------------------------------------------
+    //-------------------------------------------------------------------------
+    // START WINTER DLC 65 ----------------------------------------------------
+    //-------------------------------------------------------------------------
+    //-------------------------------------------------------------------------
 
     Item("Craftplan_Firearm_Grenade_Launcher_Freeze1", CategoryType_Collectable)
     {
-        Name("&Firearm_Grenade_Launcher_Freeze_N&");
-        Description('&Craftplan_Firearm_Grenade_Launcher_Freeze_D&'); // TODO Add Craftplan description
+        Name("&Craftplan_Firearm_Grenade_Launcher_Freeze1_N&");
+        Description('&Craftplan_Firearm_Grenade_Launcher_Freeze1_D&');
         ItemType(ItemType_CraftPlan);
         Price(6400);
         Mesh("blueprint.msh");
@@ -2147,7 +2135,7 @@ sub extraDLCRecipes(){
         Color(Color_Blue);
         CraftedItem("Firearm_Grenade_Launcher_Freeze1", 1, 1);
         CraftplanType("CarUpgrade");
-        UniqueSaveID(10007);
+        UniqueSaveID(13014);
         OwnedAtStart();
         HudIcon("blueprint_b");
         GameVersion(46);    
@@ -2156,7 +2144,8 @@ sub extraDLCRecipes(){
     
     Item("Firearm_Grenade_Launcher_Freeze1", CategoryType_Firearm)
     {
-        Name("&Firearm_Grenade_Launcher_Freeze_N&");
+        Name("&Firearm_Grenade_Launcher_Freeze1_N&");
+        Description("&Firearm_Grenade_Launcher_Freeze1_D&");
         GameVersion(46);
         CategoryType(CategoryType_Firearm);
         Visibility(true);
@@ -2262,8 +2251,8 @@ sub extraDLCRecipes(){
     //craftplan for grenade launcher's bullet
     Item("Craftplan_Bullet_Grenade_Launcher_Freeze1", CategoryType_Collectable)
     {
-        Name("&Craftplan_Bullet_Grenade_Launcher_Freeze_N&");  // TODO add craftplan name
-        Description('&Craftplan_Bullet_Grenade_Launcher_Freeze_D&'); // TODO add craftplan description
+        Name("&Craftplan_Bullet_Grenade_Launcher_Freeze1_N&");
+        Description('&Craftplan_Bullet_Grenade_Launcher_Freeze1_D&');
         ItemType(ItemType_CraftPlan);
         Price(6400);
         Mesh("blueprint.msh");
@@ -2275,7 +2264,7 @@ sub extraDLCRecipes(){
         Color(Color_Blue);
         CraftedItem("Bullet_Grenade_Launcher_Freeze1", 2, 6);
         CraftplanType("Developer");
-        UniqueSaveID(10008);
+        UniqueSaveID(13015);
         OwnedAtStart();
         HudIcon("blueprint_b");
         GameVersion(46);
@@ -2326,9 +2315,9 @@ sub extraDLCRecipes(){
         AchType(AchType_Grenade);
         ElementalPower(1.0);
     }
-//-------------------------------------------------------------------------
-// END WINTER DLC 65 ------------------------------------------------------
-//-------------------------------------------------------------------------
+    //-------------------------------------------------------------------------
+    // END WINTER DLC 65 ------------------------------------------------------
+    //-------------------------------------------------------------------------
 
 
 
@@ -2341,22 +2330,22 @@ sub extraDLCRecipes(){
 
 
 
-//-------------------------------------------------------------------------
-//-------------------------------------------------------------------------
-// START DIESEL DLC 66 ----------------------------------------------------
-//-------------------------------------------------------------------------
-//-------------------------------------------------------------------------
+    //-------------------------------------------------------------------------
+    //-------------------------------------------------------------------------
+    // START DIESEL DLC 66 ----------------------------------------------------
+    //-------------------------------------------------------------------------
+    //-------------------------------------------------------------------------
 
     //////////////////////////CHAINSAW//////////////////////////
     Item("Craftplan_Chainsaw1", CategoryType_Collectable)
     {
-        Name("&Craftplan_Chainsaw_N&");
-        Description('&Craftplan_Chainsaw_D&');
+        Name("&Craftplan_Chainsaw1_N&");
+        Description('&Craftplan_Chainsaw1_D&');
         ItemType(ItemType_CraftPlan);
         Price(6400);
         Mesh("blueprint.msh");
         Skin("default");
-        RequiredItem("Craft_MetalScrap", 8);
+        RequiredItem("Craft_MetalScrap", 12);
         RequiredItem("Craft_RazorBlade", 6);
         RequiredItem("Craft_Electronics", 6);
         RequiredItem("Craft_Batteries", 5);
@@ -2373,7 +2362,8 @@ sub extraDLCRecipes(){
 
     Item("Chainsaw1", CategoryType_Firearm)
     {
-        Name("&Chainsaw_N&");
+        Name("&Chainsaw1_N&");
+        Description("&Chainsaw1_D&");
         GameVersion(49); 
         CategoryType(CategoryType_Firearm);
         Visibility(true);
@@ -2467,8 +2457,8 @@ sub extraDLCRecipes(){
     ////////////////////CHAINSAW AMMO////////////////////
     Item("Craftplan_Chainsaw_Ammo1", CategoryType_Collectable)
     {
-        Name("&Craftplan_Chainsaw_Ammo_N&");
-        Description('&Craftplan_Chainsaw_Ammo_D&');
+        Name("&Craftplan_Chainsaw_Ammo1_N&");
+        Description('&Craftplan_Chainsaw_Ammo1_D&');
         ItemType(ItemType_CraftPlan);
         Price(6400);
         Mesh("blueprint.msh");
@@ -2485,7 +2475,7 @@ sub extraDLCRecipes(){
     Item("Chainsaw_Ammo1", CategoryType_Ammo)
     {
         Mesh("loot_chainsaw_fuel.msh");
-        HudIcon("ammo_fuel_canister");
+        HudIcon("component_misc");
         ItemType(ItemType_Bullet);
         AmmoType(AmmoType_Rifle);
         MaxAmmoCount(300);
@@ -2496,8 +2486,8 @@ sub extraDLCRecipes(){
     //////////////////////////SAW BLADE//////////////////////////
     Item("Craftplan_Melee_Saw_Blade1", CategoryType_Collectable) // same as bleed_melee
     {
-        Name("&Craftplan_Melee_Saw_Blade_N&");
-        Description('&Craftplan_Melee_Saw_Blade_D&');
+        Name("&Craftplan_Melee_Saw_Blade1_N&");
+        Description('&Craftplan_Melee_Saw_Blade1_D&');
         ItemType(ItemType_CraftPlan);
         Price(6400);
         Mesh("blueprint.msh");
@@ -2509,14 +2499,9 @@ sub extraDLCRecipes(){
         RequiredItem("Craft_MetalScrap", 8);
         RequiredItem("Craft_RazorBlade", 6);
         RequiredItem("ZZZZ3_Component_NutsBolts", 10);
-        RequiredItem("Craft_Electronics", 3);
-        RequiredItem("Craft_Batteries", 2);
-        RequiredItem("Craft_PowerCable", 2);
 
         Color(Color_Violet);
-
         CraftedItem("Melee_Saw_Blade1", 1, 1);
-        Elemental(Elemental_Bleeding, 3);
 
         InheritBaseStats();
         CraftplanType("CarUpgrade");
@@ -2527,7 +2512,7 @@ sub extraDLCRecipes(){
     }
     Item("Melee_Saw_Blade1", CategoryType_Melee)
     {
-        Name("&Melee_Saw_Blade_N&");
+        Name("&Melee_Saw_Blade1_N&");
         GameVersion(49);
         Visibility(true);
         ItemType(ItemType_Stick);
@@ -2621,8 +2606,8 @@ sub extraDLCRecipes(){
         RepairPart("Craft_MetalScrap", 1);
     }
 
-//-------------------------------------------------------------------------
-// END DIESEL DLC 66 ------------------------------------------------------
-//-------------------------------------------------------------------------
+    //-------------------------------------------------------------------------
+    // END DIESEL DLC 66 ------------------------------------------------------
+    //-------------------------------------------------------------------------
 
 }
