@@ -27,5 +27,6 @@ sub main()
         InheritBaseStats();
         UniqueSaveID(3004);
         HudIcon("blueprint_a");
+        //OwnedAtStart();
     }
 }

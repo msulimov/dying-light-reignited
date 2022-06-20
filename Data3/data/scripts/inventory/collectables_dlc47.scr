@@ -28,7 +28,7 @@ sub main()
         CraftedItem("Melee_Machete_Retro", 1, 1);
         CraftplanType("WeaponDLC");
         UniqueSaveID(9610);
-		OwnedAtStart();
+		//OwnedAtStart();
         HudIcon("blueprint_b");
 		GameVersion(30);
     }
@@ -57,7 +57,7 @@ sub main()
         CraftedItem("Firearm_Revolver_Retro", 1, 1);
         CraftplanType("WeaponDLC");
         UniqueSaveID(9611);
-		OwnedAtStart();
+		//OwnedAtStart();
         HudIcon("blueprint_b");
 		GameVersion(30);
     }
@@ -81,7 +81,7 @@ sub main()
         CraftplanType("WeaponDLC");
 		InheritBaseStats();
         UniqueSaveID(9612);
-		OwnedAtStart();
+		//OwnedAtStart();
         HudIcon("blueprint_b");
 		GameVersion(30);	
     }	

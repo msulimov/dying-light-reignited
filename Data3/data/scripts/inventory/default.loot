@@ -26,65 +26,65 @@ sub Loot()
     {   // initial very slow biters
         ColorSet(ColorSet_cs_crafting);
         
-        use Empty(weight = 5.0);   
+        use Empty(weight = 6.0);   
         
-        use CashPenny(weight = 1.0);
+        use CashPenny(weight = 0.5);
         use CashSmall(weight = 0.5);
         
-        use Trash_Biter(weight = 3.5);
-        use Valuables_Biter(weight = 1.0);
+        use Trash_Biter(weight = 3.75);
+        use Valuables_Biter(weight = 0.25);
     }
     LootedObject("Biter_lvl2")
     {   // regular biters
         ColorSet(ColorSet_cs_crafting);
         
-        use Empty(weight = 5.0);   
+        use Empty(weight = 6.0);   
         
-        use CashPenny(weight = 1.0);
+        use CashPenny(weight = 0.5);
         use CashSmall(weight = 0.5);
         
-        use Trash_Biter(weight = 3.5);
-        use Valuables_Biter(weight = 1.0);
+        use Trash_Biter(weight = 3.75);
+        use Valuables_Biter(weight = 0.25);
         
     }
     LootedObject("Biter_lvl3")
     {   // industrial worker biters
         ColorSet(ColorSet_cs_crafting);
         
-        use Empty(weight = 3.0);   
+        use Empty(weight = 5.0);   
         
-        use Trash_Biter(weight = 1.5);
-        use Components_Biter(weight = 3.5);
-        use Crafting_Biter(weight = 0.5);
-        use Valuables_Biter(weight = 1.5);  
+        use Trash_Biter(weight = 3.0);
+        use Components_Biter(weight = 1.5);
+        use Crafting_Biter(weight = 0.25);
+        use Valuables_Biter(weight = 0.25);  
     }
     LootedObject("Biter_lvl4")
     {   // rais' men / fancy dress women biters
         ColorSet(ColorSet_cs_crafting);
         
-        use Empty(weight = 4.0);
+        use Empty(weight = 5.0);
         
         use CashMedium(weight = 0.5);
         
-        use Trash_Biter(weight = 3.5);
-        use Crafting_Biter(weight = 0.5);
+        use Trash_Biter(weight = 2.5);
+        use Crafting_Biter(weight = 1.25);
         
         use Consumables_Biter(weight = 0.5);
         
-        use Valuables_Biter(weight = 1.0);
+        use Valuables_Biter(weight = 0.25);
     }
     LootedObject("Biter_lvl5")
     {   // larger rais' men / fancy dress women biters
         ColorSet(ColorSet_cs_crafting);
 
-        use Empty(weight = 3.0);
+        use Empty(weight = 5.0);
         
         use Trash_Biter(weight = 2.5);
-        use Crafting_Biter(weight = 2.0);
+        use Crafting_Biter(weight = 1.25);
         
-        use Consumables_Biter(weight = 1.0);
+        use Consumables_Biter(weight = 0.5);
         
-        use Valuables_Biter_Premium(weight = 1.0);
+        use Valuables_Biter_Premium(weight = 0.25);
         use Upgrades(weight = 0.5);
     }
 
@@ -97,14 +97,14 @@ sub Loot()
     {   // Virals and Night Walkers
         ColorSet(ColorSet_Default);
 
-        use Empty(weight = 0.0); 
+        use Empty(weight = 3.0); 
 
-        use CashSmall(weight = 1.0);
-        use CashMedium(weight = 1.0);
+        use CashSmall(weight = 0.5);
+        use CashMedium(weight = 0.25);
 
-        use Crafting_Viral(weight = 4.0);
-        use Consumables_Viral(weight = 2.5);
-        use Valuables_Viral(weight = 1.5);
+        use Crafting_Viral(weight = 3.0);
+        use Consumables_Viral(weight = 3.0);
+        use Valuables_Viral(weight = 0.25);
     }
 
 
@@ -116,8 +116,8 @@ sub Loot()
     {
         ColorSet(ColorSet_Default);
          
-        use Empty(weight = 3.0);
-        use Crafting_Toolbox(weight = 7.0);
+        use Empty(weight = 6.0);
+        use Crafting_Toolbox(weight = 4.0);
     }
 
 
@@ -129,8 +129,8 @@ sub Loot()
     {
         ColorSet(ColorSet_cs_crafting);
 
-        use Empty(weight = 2.5);
-        use Crafting_Trash(weight = 7.5);
+        use Empty(weight = 4.0);
+        use Crafting_Trash(weight = 6.0);
     }
 
 
@@ -142,12 +142,12 @@ sub Loot()
     {
         ColorSet(ColorSet_Default);
 
-        use Empty(weight = 6.0);
+        use Empty(weight = 6.5);
         use QuestItems_Wardrobe(weight = 0.01);
 
-        use Crafting_Wardrobe(weight = 2.75);
-        use Consumables_Wardrobe(weight = 0.5);
-        use Valuables_Wardrobe(weight = 0.5);
+        use Crafting_Wardrobe(weight = 2.0);
+        use Consumables_Wardrobe(weight = 1.0);
+        use Valuables_Wardrobe(weight = 0.25);
         use Valuables_Wardrobe_Premium(weight = 0.25);
     }
 
@@ -161,11 +161,11 @@ sub Loot()
         ColorSet(ColorSet_Default);
         IgnorePlatinumRestrictions();
 
-        use Empty(weight = 3.0);
+        use Empty(weight = 4.0);
         use QuestItems_Cabinet(weight = 0.01);
-        use Crafting_Cabinet(weight = 3.5);
+        use Crafting_Cabinet(weight = 3.0);
         use Consumables_Cabinet(weight = 1.5);
-        use Valuables_Cabinet(weight = 2.0);
+        use Valuables_Cabinet(weight = 1.5);
     }
 
 
@@ -178,9 +178,9 @@ sub Loot()
     {
         ColorSet(ColorSet_Default);
 
-        use Empty(weight = 4.5);
-        use Crafting_Chest_Big(weight = 5.5);
-        use Valuables_Chest(weight = 1.0);
+        use Empty(weight = 4.0);
+        use Crafting_Chest_Big(weight = 6.0);
+        // use Valuables_Chest(weight = 0.0);
     }
 
 
@@ -194,18 +194,18 @@ sub Loot()
         ColorSet(ColorSet_ValuableChest);
         IgnorePlatinumRestrictions();
          
+        use Valuables_ChestLockpick(weight = 7.5);
+        use Valuables_Electronics(weight = 1.0);
         use Upgrades(weight = 1.0);
         use Upgrades_Premium(weight = 0.5);
-        use Valuables_Electronics(weight = 1.0);
-        use Valuables_ChestLockpick(weight = 8.0);
     }
     LootedObject("ValuablesChestMedium")
     {   // small medium locked chest in old town
         ColorSet(ColorSet_Valuables_Chest);
          
-        //use Valuables_Chest(weight = 1.0);
-        use Crafting_Default(weight = 3.0);
-        use Upgrades(weight = 0.4);
+        use Valuables_Chest(weight = 5.0);
+        use Crafting_Default(weight = 4.0);
+        use Upgrades(weight = 0.6);
         use Valuables_Electronics(weight = 0.4);
     }
 
@@ -220,13 +220,13 @@ sub Loot()
         ColorSet(ColorSet_Default);
         IgnorePlatinumRestrictions();
 
-        use Empty(weight = 3.0);
+        use Empty(weight = 6.0);
         use QuestItems_Wardrobe(weight = 0.01);
 
-        use Crafting_Basket(weight = 5.0);
+        use Crafting_Basket(weight = 2.0);
         use Consumables_Basket(weight = 1.5);
-        use Valuables_Basket(weight = 1.0);
-        use Valuables_Basket_Premium(weight = 0.5);
+        use Valuables_Basket(weight = 0.25);
+        use Valuables_Basket_Premium(weight = 0.25);
     }
 
 
@@ -240,9 +240,9 @@ sub Loot()
         ColorSet(ColorSet_cs_crafting);
         IgnorePlatinumRestrictions();
 
-        use Empty(weight = 9.0);
+        use Empty(weight = 6.0);
         use Medkits(weight = 0.5);
-        use Crafting_MedBox(weight = 7.0);
+        use Crafting_MedBox(weight = 3.5);
         use QuestItems_Medical(weight = 0.01);
     }
 
@@ -257,9 +257,9 @@ sub Loot()
         ColorSet(ColorSet_Default);
         IgnorePlatinumRestrictions();
 
-        use Empty(weight = 7.0);
-        use Crafting_Fridge(weight = 2.0);
-        use Consumables_Fridge(weight = 3.0);
+        use Empty(weight = 5.0);
+        use Crafting_Fridge(weight = 1.5);
+        use Consumables_Fridge(weight = 3.5);
     }
 
     LootedObject(Cont_Fridge_Pharmacy)
@@ -268,12 +268,19 @@ sub Loot()
         IgnorePlatinumRestrictions();
 
         use Empty(weight = 5.0);
-        use Medkits(weight = 1.0);
-        use Consumables_Pharmacy(weight = 2.0);
-        use Crafting_Fridge_Pharmacy(weight = 2.0);
+        use Medkits(weight = 0.5);
+        use Consumables_Pharmacy(weight = 1.5);
+        use Crafting_Fridge_Pharmacy(weight = 3.0);
         use QuestItems_Medical(weight = 0.01);
     }
 
+    LootedObject("Cont_Fridge_Consumables")
+    {
+        ColorSet(ColorSet_cs_fridge);
+         
+        use Empty(weight = 7.0);
+        use Consumables_Fridge(weight = 3.0);
+    }
 
 
     //////////////////////////////////////////////////////////////
@@ -284,16 +291,16 @@ sub Loot()
         ColorSet(ColorSet_Cont_Lockpick);
         IgnorePlatinumRestrictions();
         
-        use Empty(weight = 0.0);
+        use Empty(weight = 2.0);
         use QuestItems_Locker(weight = 0.01);
         
         use Firecrackers(weight = 5.0);
         use Valuables_Steel_Locker(weight = 0.5);
-        use Valuables_Steel_Locker_Premium(weight = 1.5);
+        use Valuables_Steel_Locker_Premium(weight = 1.25);
 
-        use Valuables_Electronics(weight = 1.0);        
-        use Upgrades(weight = 2.0);
-        use Upgrades_Premium(weight = 0.5);
+        use Valuables_Electronics(weight = 0.5);        
+        use Upgrades(weight = 0.5);
+        use Upgrades_Premium(weight = 0.25);
     }
     LootedObject("Steel_Locker") 
     {   // unlocked tall blue locker
@@ -327,15 +334,15 @@ sub Loot()
     {
         ColorSet(ColorSet_Default);
 
-        use Empty(weight = 3.0);
+        use Empty(weight = 6.0);
 
-        use CashPenny(weight = 0.25);
-        use CashSmall(weight = 1.0);
-        use CashMedium(weight = 0.75);
+        use CashPenny(weight = 0.1);
+        use CashSmall(weight = 0.2);
+        use CashMedium(weight = 0.3);
 
         use Crafting_Bag(weight = 2.5);
-        use Valuables_Bag(weight = 1.0);
-        use Consumables_Bag(weight = 1.5);
+        use Valuables_Bag(weight = 0.25);
+        use Consumables_Bag(weight = 0.75);
     }
 
 
@@ -347,11 +354,11 @@ sub Loot()
     {  // civilian car (sedan)
         ColorSet(ColorSet_Default);
 
-        use Empty(weight = 3.0);
+        use Empty(weight = 4.0);
 
-        use Crafting_Sedan(weight = 2.0);
+        use Crafting_Sedan(weight = 1.5);
         use Components_Sedan(weight = 3.0);
-        use Valuables_Sedan(weight = 1.0);
+        use Valuables_Sedan(weight = 0.5);
         use Consumables_Sedan(weight = 1.0);
 
     }
@@ -430,13 +437,12 @@ sub Loot()
     {
         ColorSet(ColorSet_All_Equal);
         
-        use Empty(weight = 2.0);
+        use Empty(weight = 1.0);
        
-        use CashSmall(weight = 1.0);
         use CashMedium(weight = 3.0);
-        use CashBig(weight = 3.0);
+        use CashBig(weight = 4.0);
         
-        use Valuables_Electronics(weight = 1.0);
+        use Valuables_Electronics(weight = 2.0);
     }
 
     
@@ -2110,14 +2116,6 @@ sub Loot()
          
         use Empty(weight = 6.0);
 		use Crafting_Trash(weight = 4.0);
-    }
-
-    LootedObject("Cont_Fridge_Consumables")
-    {
-        ColorSet(ColorSet_cs_fridge);
-         
-        use Empty(weight = 5.0);
-        use Consumables_Fridge(weight = 2.0);
     }
 
     LootedObject("SmashedHead")

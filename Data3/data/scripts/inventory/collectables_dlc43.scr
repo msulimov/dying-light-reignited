@@ -20,7 +20,7 @@ sub main()
         UniqueSaveID(9537);
         HudIcon("blueprint_a");
 		GameVersion(28);
-		OwnedAtStart();
+		//OwnedAtStart();
 		InheritBaseStats();
     }
 	
@@ -43,7 +43,7 @@ sub main()
         UniqueSaveID(9538);
         HudIcon("blueprint_a");
 		GameVersion(28);
-		OwnedAtStart();
+		//OwnedAtStart();
     }
 	
 	Item("Craftplan_Firearm_PistolAGodFather", CategoryType_Collectable)
@@ -63,7 +63,7 @@ sub main()
         UniqueSaveID(9539);
         HudIcon("blueprint_a");
 		GameVersion(28);
-		OwnedAtStart();
+		//OwnedAtStart();
 		InheritBaseStats();
     }
 }

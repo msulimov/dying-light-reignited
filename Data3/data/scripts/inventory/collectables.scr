@@ -51,8 +51,8 @@ sub main()
         Price(40);
         Mesh("blueprint.msh");
         Skin("default");
-		RequiredItem("Craft_DuctTape", 2);
-        RequiredItem("Craft_Bleach", 4);
+		RequiredItem("Craft_PlasticTube", 1);
+        RequiredItem("Craft_Bleach", 3);
         RequiredItem("Craft_Sugar", 1);
 		RequiredItem("ZZZZ3_Component_Rubber", 2);
         Color(Color_Violet);
@@ -73,9 +73,8 @@ sub main()
         Skin("default");
         RequiredItem("Throwable_Btz_Flare", 2);
         RequiredItem("Craft_DuctTape", 2);
-        RequiredItem("Craft_PlasticTube", 2);
         Color(Color_Violet);
-        CraftedItem("Throwable_ZaidFlare", 1, 2);
+        CraftedItem("Throwable_ZaidFlare", 1, 1);
         CraftplanType("Top");
         UniqueSaveID(104);
         HudIcon("blueprint_b");
@@ -91,7 +90,7 @@ sub main()
         Mesh("blueprint.msh");
         Skin("default");
         RequiredItem("Craft_MetalScrap", 7);
-		RequiredItem("Craft_PlasticTube", 4);
+		RequiredItem("ZZZZ3_Component_Rubber", 4);
         RequiredItem("Craft_Nails", 5);
         RequiredItem("Craft_DuctTape", 5);
 		RequiredItem("Craft_String", 3);
@@ -111,8 +110,7 @@ sub main()
         Mesh("blueprint.msh");
         Skin("default");
         RequiredItem("Craft_Alcohol", 2);
-        RequiredItem("Craft_Bleach", 1);
-		RequiredItem("Craft_TinCan", 2);
+		RequiredItem("Craft_TinCan", 1);
         Color(Color_Blue);
         CraftedItem("ZZZZ_Throwable_WaterDLC", 4, 6);
         CraftplanType("Top");
@@ -130,13 +128,10 @@ sub main()
         Price(40);
         Mesh("blueprint.msh");
         Skin("default");
-        RequiredItem("Craft_Alcohol", 4);
+        RequiredItem("Craft_Alcohol", 6);
 		RequiredItem("Craft_Insecticide", 2);
-        RequiredItem("Craft_Bleach", 2);
-		RequiredItem("Craft_PlasticTube", 2);
-		RequiredItem("Craft_MetalScrap", 2);
 		RequiredItem("ZZZZ3_Component_Rubber", 2);
-        RequiredItem("Craft_String", 2);
+        RequiredItem("Craft_String", 3);
         Elemental(Elemental_Burning, 2);
         Color(Color_Green);
         CraftedItem("Throwable_Molotov", 3, 6);
@@ -157,9 +152,8 @@ sub main()
         RequiredItem("Throwable_Molotov", 6);
 		RequiredItem("Craft_Alcohol", 3);
 		RequiredItem("Craft_Insecticide", 1);
-        RequiredItem("Craft_Bleach", 1);
 		RequiredItem("Craft_String", 2);
-		RequiredItem("Craft_PlasticTube", 2);
+		RequiredItem("ZZZZ3_Component_Rubber", 2);
         Color(Color_Orange);
         CraftedItem("ZZZZ3_Throwable_Supermolotov", 3, 6);
         CraftplanType("Top");
@@ -178,7 +172,7 @@ sub main()
         Skin("default");
 
         RequiredItem("Craft_TinCan", 2);						 
-        RequiredItem("Craft_Bleach", 1);
+        RequiredItem("Craft_Bleach", 2);
 		RequiredItem("Craft_Alcohol", 2);
         RequiredItem("Craft_Sugar", 1);
 		RequiredItem("Craft_Insecticide", 1);
@@ -207,6 +201,7 @@ sub main()
         RequiredItem("Craft_PlasticTube", 4);
 		RequiredItem("ZZZZ3_Component_Rubber", 5);
 		RequiredItem("Craft_Nails", 6);
+        RequiredItem("ZZZZ3_Component_NutsBolts", 5);
 		
         Color(Color_White);
         CraftedItem("Shield_Pro", 1, 1);
@@ -232,11 +227,7 @@ sub main()
 		//BaseItem("CHV_Shield_Pro_M", "", "");
 		
         RequiredItem("Craft_Batteries", 2);
-        RequiredItem("Craft_Bleach", 6);
-		RequiredItem("Craft_PowerCable", 2);
 		RequiredItem("Craft_Electronics", 1);
-		RequiredItem("ZZZZ3_Component_Synthetic", 1);
-		RequiredItem("Craft_DuctTape", 4);
 		
         Color(Color_Platinum);
 		NamePrefix("&Craftplan_ImpactShield_N&");
@@ -262,11 +253,8 @@ sub main()
 		//BaseItem("CHV_Shield_Pro_A", "", "");
 		//BaseItem("CHV_Shield_Pro_M", "", "");
 		
-        RequiredItem("Craft_Batteries", 2);
-		RequiredItem("Craft_PowerCable", 2);
-		RequiredItem("Craft_Electronics", 1);					  
-		RequiredItem("Craft_DuctTape", 4);
-		RequiredItem("ZZZZ3_Component_Synthetic", 1);
+        RequiredItem("Craft_PowerCable", 2);
+        RequiredItem("Craft_Electronics", 1);
 		
 		NamePrefix("&Craftplan_ElectricShield_N&");
 		Elemental(Elemental_ShockElectricity, 3);
@@ -289,13 +277,8 @@ sub main()
         Skin("default");	
 		BaseItem("Shield_Pro", "", "");
 		
-        RequiredItem("Craft_Batteries", 2);
-		RequiredItem("Craft_PowerCable", 2);
-		RequiredItem("Craft_Electronics", 1);					  
-        RequiredItem("Craft_MetalScrap", 3);
-		RequiredItem("Craft_DuctTape", 4);
         RequiredItem("Craft_Shroom", 4);
-		RequiredItem("ZZZZ3_Component_Synthetic", 1);
+        RequiredItem("Craft_Electronics", 1);
 		
 		NamePrefix("&Craftplan_FreezeShield_N&");
 		Elemental(Elemental_Freezing, 3);
@@ -454,15 +437,12 @@ sub main()
 		
 		RequiredItem("Craft_TruckBattery", 1);
 		RequiredItem("Craft_Bleach", 5);
-        RequiredItem("Craft_Insecticide", 3);
-		//RequiredItem("Craft_RazorBlade", 1);
-        RequiredItem("ZZZZ3_Component_Wire", 4);
-        RequiredItem("ZZZZ3_Component_Rubber", 5);
-		RequiredItem("ZZZZ3_Component_Synthetic", 2);
-		//RequiredItem("Craft_PrimeTissue", 1);
+        RequiredItem("Craft_Insecticide", 4);
+        RequiredItem("Craft_Sugar", 4);
+        RequiredItem("Craft_Alcohol", 2);
 		
         Elemental(Elemental_Explosive, 4);
-        Color(Color_Green);
+        Color(Color_Platinum);
         CraftedItem("Throwable_KurtBomb", 4, 4);
         CraftplanType("Weapon");
         UniqueSaveID(102);
@@ -1252,7 +1232,7 @@ sub main()
 		RequiredItem("Craft_Shroom", 6);
         NamePrefix("&ModifiedItemName&");
         Elemental(Elemental_Poison, 2);
-        Color(Color_Orange);
+        Color(Color_Green);
         CraftplanType("Developer");
         UniqueSaveID(86);
         HudIcon("blueprint_b");
@@ -1389,7 +1369,7 @@ sub main()
         HudIcon("blueprint_b");
     }
 
-    Item("Craftplan_ThrowableWater", CategoryType_Collectable)
+    Item("Craftplan_ThrowableWater", CategoryType_Collectable) // unused, see water dlc craftplan
     {
         Name("&Craftplan_ThrowableWater_N&");
         Description('&Craftplan_ThrowableWater_D&');
@@ -1408,7 +1388,7 @@ sub main()
         HudIcon("blueprint_b");
     }
 
-    Item("Craftplan_ThrowableFuel", CategoryType_Collectable)
+    Item("Craftplan_ThrowableFuel", CategoryType_Collectable) // unused
     {
         Name("&Craftplan_ThrowableFuel_N&");
         Description('&Craftplan_ThrowableFuel_D&');

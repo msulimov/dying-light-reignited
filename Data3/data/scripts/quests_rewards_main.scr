@@ -51,128 +51,128 @@ sub main()
 
     Reward("StorylineReward_Airdrop_reward")
     {
-        Xp(50000);
+        Xp(75000);
     }
 
     Reward("StorylineReward_Airdrop_LittleGirl_reward")
     {
-        Xp(35000);
+        Xp(55000);
     }
 
     Reward("StorylineReward_PactWithRais_reward")
     {
-        Xp(0);
+        Xp(120000);
     }
 
     Reward("StorylineReward_Antennas_GREContacted_reward")
     {
-        Xp(30000);
+        Xp(60000);
     }
 
     Reward("StorylineReward_Antennas_CommunicationReinstated_reward")
     {
-        Xp(30000);
+        Xp(120000);
     }
 
     Reward("StorylineReward_Antennas_reward")
     {
-        Xp(30000);
+        Xp(90000);
     }
 
     Reward("StorylineReward_Courier_FishermansHutSecured_reward")
     {
-        Xp(20000);
+        Xp(130000);
     }
 
     Reward("StorylineReward_Courier_MissingPatrol_reward")
     {
-        Xp(20000);
+        Xp(90000);
     }
 
     Reward("StorylineReward_Courier_reward")
     {
-        Xp(20000);
+        Xp(80000);
     }
 
     Reward("StorylineReward_Explosives_reward")
     {
-        Xp(20000);
+        Xp(120000);
     }
 
     Reward("StorylineReward_PrimeHunting_reward")
     {
-        Xp(50000);
+        Xp(80000);
     }
 
     Reward("StorylineReward_Demoliton_reward")
     {
-        Xp(30000);
+        Xp(100000);
     }
 
     Reward("StorylineReward_Intruders_reward")
     {
-        Xp(25000);
+        Xp(75000);
 		
     }
 
     Reward("StorylineReward_Warehouse_reward")
     {
-        Xp(25000);
+        Xp(90000);
     }
 
     Reward("StorylineReward_Arena_reward")
     {
-        Xp(100000);
+        Xp(150000);
     }
 
     Reward("StorylineReward_Runaway_reward")
     {
-        Xp(20000);
+        Xp(70000);
     }
 
     Reward("StorylineReward_Saviors_reward")
     {
-        Xp(25000);
+        Xp(100000);
     }
 
     Reward("StorylineReward_FindTheEmbers_reward")
     {
-        Xp(20000);
+        Xp(70000);
     }
 
     Reward("StorylineReward_University_reward")
     {
-        Xp(20000);
+        Xp(60000);
     }
 
     Reward("StorylineReward_ProjectMayhem_reward")
     {
-        Xp(20000);
+        Xp(120000);
     }
 
     Reward("StorylineReward_MeetingWithJade_reward")
     {
-        Xp(15000);
+        Xp(100000);
     }
 
     Reward("StorylineReward_Museum_reward")
     {
-        Xp(50000);
+        Xp(150000);
     }
 
     Reward("StorylineReward_Contact_reward")
     {
-        Xp(20000);
+        Xp(120000);
     }
 
     Reward("StorylineReward_Clinic_reward")
     {
-        Xp(35000);
+        Xp(90000);
     }
 
     Reward("StorylineReward_ContactGRE_reward")
     {
-        Xp(20000);
+        Xp(80000);
     }
 
     Reward("StorylineReward_Final_reward")
@@ -182,21 +182,19 @@ sub main()
     Reward("BringDawud_reward") // NO REWARD
     {
         Xp(15000);
-		Item("Craft_Upgrade_DamL2DurL2", Color_Orange, 1, 0); // Burn Upgrade
 		Cash(500);
     }
 
     Reward("GoodNightBahir_reward") // NO REWARD fake antizen lab
     {
         Xp(20000);
-		Item("Craft_Upgrade_DurL2BalL2", Color_White, 1, 0); // Freeze Upgrade
 		Cash(750);
     }
 
     Reward("MothersDay_reward") // REWARDED Gazi movie chocolates
     {
         Xp(20000);
-		Item("zzz_Craftplan_ArrowBurn", Color_Orange, 1, 0); // Burning Arrow Craftplan
+		Item("Craftplan_Fireworks", Color_Orange, 1, 0); // Fireworks Craftplan
         Cash(750);
     }
 
@@ -207,7 +205,7 @@ sub main()
 
     Reward("VoltageCraftplan_reward") // REWARDED
     {
-		Item("Craftplan_FreezeMelee", Color_White, 1, 0); // Freeze Melee Craftplan
+        Item("Craftplan_ElectricMelee", Color_Blue, 1, 0); // Shock Melee Craftplan
     }
 
     Reward("Voltage_reward")
@@ -220,15 +218,13 @@ sub main()
     {
         Xp(45000);
         Item("Craftplan_KurtBomb", Color_Orange, 1, 0);
-		Cash(750);
 		
     }
 
-    Reward("Antibiotics_reward") // REWARDED  Tunnel Vision Phenyl Nitrate 
+    Reward("Antibiotics_reward") // REWARD NOT ACCESSABLE Tunnel Vision Phenyl Nitrate 
     {
         Xp(20000);
-		Item("Craft_Upgrade_DamL2DurL2", Color_Orange, 1, 0); // Burn Upgrade
-		Cash(500);
+		Cash(2000);
 		
     }
 
@@ -236,45 +232,42 @@ sub main()
     {
         Xp(30000);
 		Item("Craftplan_BlastMelee", Color_Orange, 1, 0); // Impact Melee Craftplan
-		Cash(750);
         
     }
 
     Reward("PerfectMurder_reward") // DUPLICATE REWARD NOT ACCESSABLE Tunnel Vision Phenyl Nitrate 
     {
         Xp(15000);
-		Cash(250);
+		Cash(2000);
 		
     }
 
     Reward("SpareGlasses_reward") // REWARDED
     {
         Xp(5000);
-		Item("Craft_Upgrade_DamL2", Color_Orange, 1, 0); // Impact Upgrade
-		Cash(250);
+        Item("Craft_Batteries", Color_Blue, 3, 0);
+		Cash(2000);
     }
 
     Reward("MedicalHerbs_reward")  // REWARDED Lavender 
     {
         Xp(5000);
-        Item("Craft_Upgrade_DamL2DurL2", Color_Orange, 1, 0); // Burn Upgrade
-		Cash(350);
+        Item("Craft_PowerCable", Color_Blue, 3, 0);
+		Cash(1000);
     }
-
-    
 
     Reward("BringGalib_reward") // REWARDED rais hidden weapon stashes
     {
         Xp(5000);
-        Item("Craft_Upgrade_DamL2BalL2", Color_Blue, 1, 0); // Shock Upgrade
-		Cash(250);
+        Item("Craft_Upgrade_DurL2", Color_Green, 1, 0); // Poison Upgrade
+		Cash(2000);
     }
 
     Reward("WheresMyMother_reward") // REWARDED
     {
         Xp(15000);
-		Item("zzz_Craftplan_ArrowExploding", Color_Orange, 1, 0); // Craftplan Exploding Arrow
-		Cash(750);
+        Item("Craft_Upgrade_DamL2DurL2", Color_Orange, 1, 0); // Burn Upgrade
+		Cash(5000);
     }
 
     Reward("GuideToZombieland_reward") // REWARDED
@@ -284,15 +277,15 @@ sub main()
 		Cash(250);
     }
 
-    Reward("BringJeff_reward") // NO REWARD Fort Jefferton Gas Apocalypse Wall
+    Reward("BringJeff_reward") // NO REWARD Fort Jefferton Apocalypse Wall
     {
-        Xp(15000);
-		Cash(750);
+        Xp(75000);
+		Cash(4000);
     }
 
     Reward("BringMusa_reward") // REWARDED Shakir Gas Mask Man
     {
-        Xp(15000);
+        Xp(25000);
 		Item("Craftplan_BleedMelee", Color_Violet, 1, 0); // Bleed Melee Craftplan
     }
 
@@ -304,23 +297,21 @@ sub main()
 
     Reward("Searchlights_reward") // REWARDED
     {
-        Xp(20000);
-		Item("Craftplan_ElectricMelee", Color_Blue, 1, 0); // Shock Melee Craftplan
-		
+        Xp(50000);
+		Item("Craft_Electronics", Color_Violet, 10, 0);
     }
 
     Reward("Binoculars_reward") // REWARDED
     {
         Xp(5000);
-		Item("Craft_Upgrade_DamL2", Color_Orange, 1, 0); // Impact Upgrade
+		Item("Craft_RazorBlade", Color_Blue, 5, 0);
 		Cash(500);   
     }
 
-    Reward("MidnightBride_reward") // REWARDED
+    Reward("MidnightBride_reward") // REWARDED collect midnight bride herbs near apartments at night
     {
-        Xp(5000);
+        Xp(75000);
 		Item("Craft_Upgrade_DamL2DurL2", Color_Orange, 1, 0); // Burn Upgrade
-		
     }
 
     Reward("Firebug_reward") // zaid flare quest
@@ -332,26 +323,25 @@ sub main()
     Reward("Algae_reward") // Dulce Lake
     {
         Xp(3500);
-		Item("Craft_Upgrade_DurL2", Color_Green, 1, 0); // Poison Upgrade
+		Cash(2000); 
     }
 
     Reward("BabyIsBorn_reward") // REWARDED Alcohol fetching quest
     {
         Xp(5000);
-		Item("Craftplan_ThrowableFuel", Color_Green, 1, 0); // Throwable Fuel Craftplan
-		Item("ZZZZ3_Craftplan_WaterDLC", Color_Blue, 1, 0); // Throwable Water Craftplan
+        Item("ZZZZ3_Craftplan_WaterDLC", Color_Blue, 1, 0); // Throwable Water Craftplan
     }
 
     Reward("Dynamites_reward") // REWARDED
     {
-        Xp(12500);
+        Xp(17500);
 		Item("ZZZZ3_Craftplan_SuperMolotov", Color_Orange, 1, 0); // Super Molotov 
     }
 
 	Reward("Twins02_reward") // REWARDED warehouse hooks
     {
         Xp(15000);
-		Item("zzz_Craftplan_ArrowElectric", Color_Blue, 1, 0); // Electric Arrow
+        Item("Craftplan_FreezeMelee", Color_White, 1, 0); // Freeze Melee Craftplan
     }
 
     Reward("Twins03_reward") // REWARDED bus batteries
@@ -364,7 +354,7 @@ sub main()
     Reward("Twins04_reward") // NO REWARD power cables, duct tape, sonar
     {
 	   Xp(15000);
-	   Item("Craft_Upgrade_DamL2BalL2", Color_Blue, 1, 0); // Shock Upgrade 
+       Cash(5000);
     }
 
     Reward("TalesFromTheCrypt_reward") // REWARDED Stranded Survivors Apartment Electrocuted
@@ -411,7 +401,7 @@ sub main()
     Reward("CrayonsForTheKids_reward") // REWARDED Get crayons from school
     {
         Xp(15000);
-		Item("Craft_Upgrade_DamL2DurL2BalL2", Color_Orange, 1, 0); // King
+		Item("Craft_Electronics", Color_Violet, 3, 0);
     }
 
     Reward("ElectronicParts_reward") // REWARDED turn in electronics to toygar
@@ -423,19 +413,19 @@ sub main()
     Reward("Cofee_reward") // REWARDED turn in coffee to toygar
     {
         Xp(5000);
-		Item("Craft_Upgrade_DamL2DurL2BalL2", Color_Orange, 1, 0); // King	
+        Cash(3000);
     }
 
     Reward("GasLighter_reward") // REWARDED turn in lighter gas to toygar
     {
         Xp(5000);
-		Item("Craft_Upgrade_DamL2DurL2", Color_Orange, 1, 0); // Burn Upgrade
+		Item("ZZZZ3_Throwable_Supermolotov", Color_Orange, 12, 0);
     }
 
     Reward("BandagesAndMeds_reward") // REWARDED turn in syringes to toygar
     {
         Xp(5000);
-		Item("Craft_Upgrade_DamL2DurL2BalL2", Color_Orange, 1, 0); // King
+		Item("Medkit_HealthPackLarge", Color_Orange, 5, 0);
     }
 
     Reward("EXPcalibur_reward")
@@ -484,21 +474,21 @@ sub main()
 
     Reward("LostInSpace_reward") // NO REWARD Dawud zombie, rescue Sami apartment
     {
-        Xp(10000);
+        Xp(35000);
 		
 		
     }
 
     Reward("TheProphecy_reward") // NO REWARD Rais past hotel
     {
-        Xp(7500);
+        Xp(30000);
 		
 		
     }
 
     Reward("FanZone_reward") // NO REWARD
     {
-        Xp(20000);
+        Xp(50000);
         
 		
     }
@@ -513,8 +503,7 @@ sub main()
     Reward("FindRupert_reward") // REWARDED Super easy meeting rupert at kindergarden
     {
         Xp(1000);
-		
-		
+		Item("Craft_RazorBlade", Color_Blue, 2, 0);
     }
 
     Reward("HealthPotion_reward") // REWARDED 
@@ -538,13 +527,12 @@ sub main()
     Reward("Twins05_reward") // REWARDED Antenna Corner Cave Submarine
     {
         Xp(20000);
-		
+		Item("Craft_Electronics", Color_Violet, 20, 0);
     }
 
     Reward("Dungeons_reward") // REWARDED super easy go to basement to kill biter
     {
         Xp(5000);
-		
     }
 
     Reward("UglyMonster_reward") // REWARDED Kill demolisher
@@ -557,7 +545,6 @@ sub main()
     Reward("FoodCourier_reward") // DUPLICATE Of Alien Quest
     {
         Xp(10000);
-        
     }
 
     Reward("ChildrenOfMatrix_reward") // REWARDED Alien Rocks Quest
@@ -571,13 +558,27 @@ sub main()
     Reward("Ghost_reward") // REWARDED haunted apartments tape recorder
     {
         Xp(10000);
-		Item("Craftplan_Toxic_Upgrade", Color_Green, 1, 0); // Toxic Upgrade Craftplan
-        
+        Item("Craftplan_Toxic_Upgrade", Color_Green, 1, 0); // Toxic Upgrade Craftplan
     }
 
+    Reward("Fountain_reward") // REWARDED turn on water supply in old town
+    {
+        Xp(15000);
+        Item("Craftplan_Bleed_Upgrade", Color_Violet, 1, 0); // Bleed Upgrade Craftplan
+    }
+
+
+
+
+
+    // --------------------------------------------------------------------------------------------
+    // --------------------------------------------------------------------------------------------
+    // ----------------------------------     Challenges      -------------------------------------
+    // --------------------------------------------------------------------------------------------
+    // --------------------------------------------------------------------------------------------
     Reward("Challenge_JelaousRunner_reward") // REWARDED
     {
-		Item("Craft_Batteries", Color_Green, 4, 0);
+		Item("Craft_Batteries", Color_Blue, 4, 0);
     }
 
     Reward("Challenge_JelaousRunner_02_reward") // REWARDED
@@ -670,32 +671,32 @@ sub main()
 
     Reward("Challenge_KillingGuide_Summary_reward") // REWARDED
     {
-		Item("Craft_Upgrade_BalL2Dam", Color_Violet, 2, 0); // Duelist
+		Item("Craft_Upgrade_DamL2DurL2BalL2", Color_Orange, 2, 0); // King
     }
 
     Reward("Challenge_BestRunner_reward") // REWARDED
     {
-		Item("Craft_PowerCable", Color_Blue, 4, 0);
+        Cash(2500);
     }
 
     Reward("Challenge_BestRunner_02_reward") // REWARDED
     {
-		Item("Craft_Batteries", Color_Green, 4, 0);
+        Cash(3500);
     }
 
     Reward("Challenge_BestRunner_03_reward") // REWARDED
     {
-		Item("Craft_Electronics", Color_Violet, 4, 0);
+        Item("Craft_PowerCable", Color_Blue, 4, 0);
     }
 
     Reward("Challenge_BestRunner_04_reward") // REWARDED
     {
-		Item("Craft_Upgrade_DamL2DurL2BalL2", Color_Orange, 1, 0); // King
+        Item("Craft_Batteries", Color_Blue, 4, 0);
     }
 
     Reward("Challenge_BestRunner_05_reward") // REWARDED
     {
-        Item("Craft_Upgrade_DamL2DurL2BalL2", Color_Orange, 1, 0); // King
+        Item("Craft_Electronics", Color_Violet, 4, 0);
     }
 
     Reward("Challenge_BestRunner_Summary_reward") // REWARDED
@@ -705,27 +706,27 @@ sub main()
 
     Reward("Challenge_Psycho_reward") // REWARDED
     {
-        Item("Craft_Upgrade_BalL2", Color_Violet, 1, 0);  // Bleed Upgrade
+        Item("Craft_RazorBlade", Color_Blue, 2, 0);
     }
 
     Reward("Challenge_Psycho_02_reward") // REWARDED
     {
-        Item("Craft_Upgrade_DamL2DurL2BalL2", Color_Orange, 1, 0); // King
+        Item("Craft_RazorBlade", Color_Blue, 2, 0);
     }
 
     Reward("Challenge_Psycho_03_reward") // REWARDED
     {
-        Item("Craft_Upgrade_DamL2", Color_Orange, 1, 0); // Impact Upgrade
+        Item("Craft_RazorBlade", Color_Blue, 2, 0);
     }
 
     Reward("Challenge_Psycho_04_reward") // REWARDED
     {
-        Item("Craft_Upgrade_DamL2BalL2", Color_Blue, 1, 0); // Shock Upgrade
+        Item("Craft_RazorBlade", Color_Blue, 2, 0);
     }
 
     Reward("Challenge_Psycho_05_reward") // REWARDED
     {
-        Item("Craft_Upgrade_DamL2DurL2", Color_Orange, 1, 0); // Burn Upgrade
+        Item("Craft_Upgrade_BalL2", Color_Violet, 1, 0);  // Bleed Upgrade
     }
 
     Reward("Challenge_Psycho_Summary_reward") // REWARDED
@@ -735,17 +736,21 @@ sub main()
 
     Reward("Challenge_DyingLunch_reward") // REWARDED
     {
-		Item("Craft_Upgrade_DamL2DurL2BalL2", Color_Orange, 1, 0); // King
+        Item("zzz_Craftplan_ArrowBurn", Color_Orange, 1, 0); // Burning Arrow Craftplan
+        Cash(1000);
     }
 
     Reward("Challenge_DyingLunch_02_reward") // REWARDED
     {
-		Item("Craft_Upgrade_DamL2DurL2BalL2", Color_Orange, 1, 0); // King
+
+        Item("zzz_Craftplan_ArrowElectric", Color_Blue, 1, 0); // Electric Arrow Craftplan
+		Cash(1500);
     }
 
     Reward("Challenge_DyingLunch_03_reward") // REWARDED
     {
-		Item("Craft_Upgrade_DamL2DurL2BalL2", Color_Orange, 1, 0); // King
+        Item("zzz_Craftplan_ArrowExploding", Color_Orange, 1, 0); // Exploding Arrow Craftplan
+		Cash(2000);
     }
 
     Reward("Challenge_DyingLunch_Summary_reward") // REWARDED
@@ -775,22 +780,22 @@ sub main()
 
     Reward("Challenge_RunForYourLife_reward") // REWARDED Night running with pursuit
     {
-        Item("Craft_Upgrade_DamL2DurL2BalL2", Color_Orange, 1, 0); // King
+        Item("Craft_RazorBlade", Color_Blue, 5, 0);  // Bleed Upgrade
     }
 
     Reward("Challenge_RunForYourLife_02_reward") // REWARDED
     {
-        Item("Craft_Upgrade_DamL2DurL2BalL2", Color_Orange, 1, 0); // King
+        Item("Craft_Electronics", Color_Violet, 5, 0);
     }
 
     Reward("Challenge_RunForYourLife_03_reward") // REWARDED
     {
-        Item("Craft_Upgrade_DamL2DurL2BalL2", Color_Orange, 1, 0); // King
+        Item("Craft_Upgrade_DamL2", Color_Orange, 1, 0); // Impact Upgrade
     }
 
     Reward("Challenge_RunForYourLife_04_reward") // REWARDED
     {
-        Item("Craft_Upgrade_DamL2DurL2BalL2", Color_Orange, 1, 0); // King
+        Item("Craft_Upgrade_DamL2DurL2", Color_Orange, 1, 0); // Burn Upgrade
     }
 
     Reward("Challenge_RunForYourLife_Summary_reward") // REWARDED
@@ -812,7 +817,7 @@ sub main()
 
     Reward("Challenge_climb_01_reward") // REWARDED
     {
-		Item("Craft_Batteries", Color_Green, 4, 0);
+		Item("Craft_Batteries", Color_Blue, 4, 0);
     }
 
     Reward("Challenge_climb_02_reward") // REWARDED
@@ -1491,11 +1496,7 @@ sub main()
         Xp(100, 4);
     }
 
-    Reward("Fountain_reward")
-    {
-        Xp(15000);
-        Item("Craftplan_Bleed_Upgrade", Color_Violet, 1, 0); // Bleed Upgrade Craftplan
-    }
+    
    //main 
  QuestDef("Prologue") { ForceDifficulty(Diff_Easy); }
  QuestDef("GoingOutside") { ForceDifficulty(Diff_Easy); }

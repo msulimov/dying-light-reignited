@@ -37,7 +37,7 @@ Movie()
 Attract()
 {
     File("Intro", 1280, 720, 16, 9)
-	Subtitles("intro_subtitles.scr")
+	  Subtitles("intro_subtitles.scr")
 }
 
 //PostInitial() // In demo played if attract movie from idle timeout was not played
@@ -48,7 +48,7 @@ Attract()
 
 Background()
 {
-    //File("menu_frontend_background", 1280, 720, 16, 9)
-    //Unskippable()
-    //Loop()
+    File("menu_frontend_background", 1280, 720, 16, 9)
+    Unskippable()
+    Loop()
 }

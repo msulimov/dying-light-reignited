@@ -39,15 +39,18 @@ sub default_nightmare()
 
     LootedObject("Chest_Medium")
     {
+
+        IgnorePlatinumRestrictions();
+
 		ColorSet(ColorSet_Valuables_Chest);
 		
-        use Crafting_Chest_Big(weight = 4.0);
-        use Valuables_Chest(weight = 1.0);
-        use Buggy_Components(weight = 2.0);
+        use Crafting_Chest_Big(weight = 3.5);
+        use Crafting_Toolbox(weight = 3.0);
+        use Valuables_Chest(weight = 2.0);
 
-        use Upgrades(weight = 1.5);
+        use Upgrades(weight = 1.0);
         use Upgrades_Premium(weight = 0.25);
-		use Valuables_Electronics(weight = 0.75);
+		use Valuables_Electronics(weight = 0.25);
 
     }
 
@@ -84,19 +87,19 @@ sub default_nightmare()
         
         ColorSet(ColorSet_WeaponChest_Hard);
         
-		Set(Weapon, 0.45, 1.0)    // Weapon on player level + 1
+		Set(Weapon, 0.4, 1.0)    // Weapon on player level + 1
         {
             AvoidGeneratingDuplicates();
         	use melee();
         }
 
-        Set(Weapon, 0.45, 1.0)    // Weapon on player level + 1
+        Set(Weapon, 0.4, 1.0)    // Weapon on player level + 1
         {
             AvoidGeneratingDuplicates();
         	use melee_2h();
         }
 
-        Set(Weapon, 0.1, 1.0)    // Weapon on player level + 1
+        Set(Weapon, 0.2, 1.0)    // Weapon on player level + 1
         {
         	AvoidGeneratingDuplicates();
         	use firearms();
@@ -105,6 +108,9 @@ sub default_nightmare()
 
 	LootedObject("Cont_VanPolice_Other")
     {
+
+        IgnorePlatinumRestrictions();
+
         ColorSet(ColorSet_WeaponChest_Hard);
 		
 		Set(Weapon, 0.1, 1.0)    // Jewels Bundle
@@ -125,9 +131,9 @@ sub default_nightmare()
         	use melee_2h();
         }
 
-		use Items_Ammo(weight = 0.25);
-        use Upgrades(weight = 0.2);
-        use Upgrades_Premium(weight = 0.05);
+		use Items_Ammo(weight = 0.15);
+        use Upgrades(weight = 0.25);
+        use Upgrades_Premium(weight = 0.1);
 	}
 
 	LootedObject("WeaponChestMedium_ornated")
@@ -210,19 +216,19 @@ sub default_nightmare()
         
         ColorSet(ColorSet_WeaponChest_Hard);
 
-		Set(Weapon, 0.45, 1.0)    // Weapon on player level + 1
+		Set(Weapon, 0.40, 1.0)    // Weapon on player level + 1
         {
             AvoidGeneratingDuplicates();
         	use melee();
         }
 
-        Set(Weapon, 0.45, 1.0)    // Weapon on player level + 1
+        Set(Weapon, 0.40, 1.0)    // Weapon on player level + 1
         {
             AvoidGeneratingDuplicates();
         	use melee_2h();
         }
 
-        Set(Weapon, 0.1, 1.0)    // Weapon on player level + 1
+        Set(Weapon, 0.2, 1.0)    // Weapon on player level + 1
         {
         	AvoidGeneratingDuplicates();
         	use firearms();

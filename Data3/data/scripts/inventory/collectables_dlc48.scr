@@ -59,7 +59,7 @@ sub main()
         RequiredItem("Craft_Batteries", 3);
 		RequiredItem("Craft_PowerCable", 2);
 		InheritBaseStats();
-		OwnedAtStart();
+		//OwnedAtStart();
         Color(Color_Blue);
         CraftedItem("Melee_Axe_Sky_Piercer_SHU", 1, 1);
         CraftplanType("WeaponDLC");

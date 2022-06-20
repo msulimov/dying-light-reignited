@@ -48,7 +48,7 @@ sub main()
         CraftedItem("Pistol_VanCrane", 1, 1);
         CraftplanType("Collectables_DLC64");
         UniqueSaveID(10004);
-		OwnedAtStart();
+		//OwnedAtStart();
         HudIcon("blueprint_b");
 		GameVersion(45);
     }

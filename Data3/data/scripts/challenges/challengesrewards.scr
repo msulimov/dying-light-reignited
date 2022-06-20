@@ -3,227 +3,227 @@ sub main()
 
     Reward("slums_01")
     {
-        Base(25000);
-        Place1(15000);
-        Place2(10000);
-        Place3(5000);
-        Place4(1000);
+        Base(5000);
+        Place1(3000);
+        Place2(2000);
+        Place3(1000);
+        Place4(0);
     }
 
     Reward("slums_02")
     {
-        Base(25000);
-        Place1(15000);
-        Place2(10000);
-        Place3(5000);
-        Place4(1000);
+        Base(5000);
+        Place1(3000);
+        Place2(2000);
+        Place3(1000);
+        Place4(0);
     }
 
     Reward("slums_03")
     {
-        Base(25000);
-        Place1(15000);
-        Place2(10000);
-        Place3(5000);
-        Place4(1000);
+        Base(5000);
+        Place1(3000);
+        Place2(2000);
+        Place3(1000);
+        Place4(0);
     }
 
     Reward("slums_00")
     {
-        Base(25000);
-        Place1(15000);
-        Place2(10000);
-        Place3(5000);
-        Place4(1000);
+        Base(5000);
+        Place1(3000);
+        Place2(2000);
+        Place3(1000);
+        Place4(0);
     }
 
     Reward("slums_05")
     {
-        Base(25000);
-        Place1(15000);
-        Place2(10000);
-        Place3(5000);
-        Place4(1000);
+        Base(5000);
+        Place1(3000);
+        Place2(2000);
+        Place3(1000);
+        Place4(0);
     }
 
     Reward("slums_04")
     {
-        Base(25000);
-        Place1(15000);
-        Place2(10000);
-        Place3(5000);
-        Place4(1000);
+        Base(5000);
+        Place1(3000);
+        Place2(2000);
+        Place3(1000);
+        Place4(0);
     }
 
     Reward("oldtown_01")
     {
-        Base(25000);
-        Place1(15000);
-        Place2(10000);
-        Place3(5000);
-        Place4(1000);
+        Base(5000);
+        Place1(3000);
+        Place2(2000);
+        Place3(1000);
+        Place4(0);
     }
 
     Reward("oldtown_02")
     {
-        Base(25000);
-        Place1(15000);
-        Place2(10000);
-        Place3(5000);
-        Place4(1000);
+        Base(5000);
+        Place1(3000);
+        Place2(2000);
+        Place3(1000);
+        Place4(0);
     }
 
     Reward("oldtown_03")
     {
-        Base(25000);
-        Place1(15000);
-        Place2(10000);
-        Place3(5000);
-        Place4(1000);
+        Base(5000);
+        Place1(3000);
+        Place2(2000);
+        Place3(1000);
+        Place4(0);
     }
 
     Reward("slums_07")
     {
-        Base(25000);
-        Place1(15000);
-        Place2(10000);
-        Place3(5000);
-        Place4(1000);
+        Base(5000);
+        Place1(3000);
+        Place2(2000);
+        Place3(1000);
+        Place4(0);
     }
 
     Reward("slums_09")
     {
-        Base(25000);
-        Place1(15000);
-        Place2(10000);
-        Place3(5000);
-        Place4(1000);
+        Base(5000);
+        Place1(3000);
+        Place2(2000);
+        Place3(1000);
+        Place4(0);
     }
 
     Reward("oldtown_10")
     {
-        Base(25000);
-        Place1(15000);
-        Place2(10000);
-        Place3(5000);
-        Place4(1000);
+        Base(5000);
+        Place1(3000);
+        Place2(2000);
+        Place3(1000);
+        Place4(0);
     }
 
     Reward("oldtown_11")
     {
-        Base(25000);
-        Place1(15000);
-        Place2(10000);
-        Place3(5000);
-        Place4(1000);
+        Base(5000);
+        Place1(3000);
+        Place2(2000);
+        Place3(1000);
+        Place4(0);
     }
 
     Reward("oldtown_12")
     {
-        Base(25000);
-        Place1(15000);
-        Place2(10000);
-        Place3(5000);
-        Place4(1000);
+        Base(5000);
+        Place1(3000);
+        Place2(2000);
+        Place3(1000);
+        Place4(0);
     }
 
     Reward("slums_10")
     {
-        Base(25000);
-        Place1(15000);
-        Place2(10000);
-        Place3(5000);
-        Place4(1000);
+        Base(5000);
+        Place1(3000);
+        Place2(2000);
+        Place3(1000);
+        Place4(0);
     }
 
     Reward("slums_11")
     {
-        Base(25000);
-        Place1(15000);
-        Place2(10000);
-        Place3(5000);
-        Place4(1000);
+        Base(5000);
+        Place1(3000);
+        Place2(2000);
+        Place3(1000);
+        Place4(0);
     }
 
     Reward("slums_20")
     {
-        Base(25000);
-        Place1(15000);
-        Place2(10000);
-        Place3(5000);
-        Place4(1000);
+        Base(5000);
+        Place1(3000);
+        Place2(2000);
+        Place3(1000);
+        Place4(0);
     }
 
     Reward("slums_13")
     {
-        Base(25000);
-        Place1(15000);
-        Place2(10000);
-        Place3(5000);
-        Place4(1000);
+        Base(5000);
+        Place1(3000);
+        Place2(2000);
+        Place3(1000);
+        Place4(0);
     }
 
     Reward("slums_12")
     {
-        Base(25000);
-        Place1(15000);
-        Place2(10000);
-        Place3(5000);
-        Place4(1000);
+        Base(5000);
+        Place1(3000);
+        Place2(2000);
+        Place3(1000);
+        Place4(0);
     }
 
     Reward("oldtown_15")
     {
-        Base(25000);
-        Place1(15000);
-        Place2(10000);
-        Place3(5000);
-        Place4(1000);
+        Base(5000);
+        Place1(3000);
+        Place2(2000);
+        Place3(1000);
+        Place4(0);
     }
 
     Reward("oldtown_00")
     {
-        Base(25000);
-        Place1(15000);
-        Place2(10000);
-        Place3(5000);
-        Place4(1000);
+        Base(5000);
+        Place1(3000);
+        Place2(2000);
+        Place3(1000);
+        Place4(0);
     }
 
     Reward("slums_14")
     {
-        Base(25000);
-        Place1(15000);
-        Place2(10000);
-        Place3(5000);
-        Place4(1000);
+        Base(5000);
+        Place1(3000);
+        Place2(2000);
+        Place3(1000);
+        Place4(0);
     }
 
     Reward("slums_15")
     {
-        Base(25000);
-        Place1(15000);
-        Place2(10000);
-        Place3(5000);
-        Place4(1000);
+        Base(5000);
+        Place1(3000);
+        Place2(2000);
+        Place3(1000);
+        Place4(0);
     }
 
     Reward("oldtown_18")
     {
-        Base(25000);
-        Place1(15000);
-        Place2(10000);
-        Place3(5000);
-        Place4(1000);
+        Base(5000);
+        Place1(3000);
+        Place2(2000);
+        Place3(1000);
+        Place4(0);
     }
 
     Reward("oldtown_16")
     {
-        Base(25000);
-        Place1(15000);
-        Place2(10000);
-        Place3(5000);
-        Place4(1000);
+        Base(5000);
+        Place1(3000);
+        Place2(2000);
+        Place3(1000);
+        Place4(0);
     }
 
     Reward("oldtown_17")
@@ -244,272 +244,272 @@ sub main()
 
     Reward("oldtown_20")
     {
-        Base(25000);
-        Place1(15000);
-        Place2(10000);
-        Place3(5000);
-        Place4(1000);
+        Base(5000);
+        Place1(3000);
+        Place2(2000);
+        Place3(1000);
+        Place4(0);
     }
 
     Reward("slums_16")
     {
-        Base(25000);
-        Place1(15000);
-        Place2(10000);
-        Place3(5000);
-        Place4(1000);
+        Base(5000);
+        Place1(3000);
+        Place2(2000);
+        Place3(1000);
+        Place4(0);
     }
 
     Reward("slums_23")
     {
-        Base(25000);
-        Place1(15000);
-        Place2(10000);
-        Place3(5000);
-        Place4(1000);
+        Base(5000);
+        Place1(3000);
+        Place2(2000);
+        Place3(1000);
+        Place4(0);
     }
 
     Reward("slums_17")
     {
-        Base(25000);
-        Place1(15000);
-        Place2(10000);
-        Place3(5000);
-        Place4(1000);
+        Base(5000);
+        Place1(3000);
+        Place2(2000);
+        Place3(1000);
+        Place4(0);
     }
 
     Reward("oldtown_04")
     {
-        Base(25000);
-        Place1(15000);
-        Place2(10000);
-        Place3(5000);
-        Place4(1000);
+        Base(5000);
+        Place1(3000);
+        Place2(2000);
+        Place3(1000);
+        Place4(0);
     }
 
     Reward("oldtown_05")
     {
-        Base(25000);
-        Place1(15000);
-        Place2(10000);
-        Place3(5000);
-        Place4(1000);
+        Base(5000);
+        Place1(3000);
+        Place2(2000);
+        Place3(1000);
+        Place4(0);
     }
 
     Reward("oldtown_06")
     {
-        Base(25000);
-        Place1(15000);
-        Place2(10000);
-        Place3(5000);
-        Place4(1000);
+        Base(5000);
+        Place1(3000);
+        Place2(2000);
+        Place3(1000);
+        Place4(0);
     }
 
     Reward("slums_21")
     {
-        Base(25000);
-        Place1(15000);
-        Place2(10000);
-        Place3(5000);
-        Place4(1000);
+        Base(5000);
+        Place1(3000);
+        Place2(2000);
+        Place3(1000);
+        Place4(0);
     }
 
     Reward("oldtown_07")
     {
-        Base(25000);
-        Place1(15000);
-        Place2(10000);
-        Place3(5000);
-        Place4(1000);
+        Base(5000);
+        Place1(3000);
+        Place2(2000);
+        Place3(1000);
+        Place4(0);
     }
 
     Reward("oldtown_08")
     {
-        Base(25000);
-        Place1(15000);
-        Place2(10000);
-        Place3(5000);
-        Place4(1000);
+        Base(5000);
+        Place1(3000);
+        Place2(2000);
+        Place3(1000);
+        Place4(0);
     }
 
     Reward("oldtown_09")
     {
-        Base(25000);
-        Place1(15000);
-        Place2(10000);
-        Place3(5000);
-        Place4(1000);
+        Base(5000);
+        Place1(3000);
+        Place2(2000);
+        Place3(1000);
+        Place4(0);
     }
 
     Reward("poster_01")
     {
-        Base(25000);
-        Place1(15000);
-        Place2(10000);
-        Place3(5000);
-        Place4(1000);
+        Base(5000);
+        Place1(3000);
+        Place2(2000);
+        Place3(1000);
+        Place4(0);
     }
 
     Reward("poster_02")
     {
-        Base(25000);
-        Place1(15000);
-        Place2(10000);
-        Place3(5000);
-        Place4(1000);
+        Base(5000);
+        Place1(3000);
+        Place2(2000);
+        Place3(1000);
+        Place4(0);
     }
 
     Reward("poster_03")
     {
-        Base(25000);
-        Place1(15000);
-        Place2(10000);
-        Place3(5000);
-        Place4(1000);
+        Base(5000);
+        Place1(3000);
+        Place2(2000);
+        Place3(1000);
+        Place4(0);
     }
 
     Reward("poster_04")
     {
-        Base(25000);
-        Place1(15000);
-        Place2(10000);
-        Place3(5000);
-        Place4(1000);
+        Base(5000);
+        Place1(3000);
+        Place2(2000);
+        Place3(1000);
+        Place4(0);
     }
 
     Reward("poster_05")
     {
-        Base(25000);
-        Place1(15000);
-        Place2(10000);
-        Place3(5000);
-        Place4(1000);
+        Base(5000);
+        Place1(3000);
+        Place2(2000);
+        Place3(1000);
+        Place4(0);
     }
 
     Reward("poster_06")
     {
-        Base(25000);
-        Place1(15000);
-        Place2(10000);
-        Place3(5000);
-        Place4(1000);
+        Base(5000);
+        Place1(3000);
+        Place2(2000);
+        Place3(1000);
+        Place4(0);
     }
 
     Reward("poster_07")
     {
-        Base(25000);
-        Place1(15000);
-        Place2(10000);
-        Place3(5000);
-        Place4(1000);
+        Base(5000);
+        Place1(3000);
+        Place2(2000);
+        Place3(1000);
+        Place4(0);
     }
 
     Reward("poster_08")
     {
-        Base(25000);
-        Place1(15000);
-        Place2(10000);
-        Place3(5000);
-        Place4(1000);
+        Base(5000);
+        Place1(3000);
+        Place2(2000);
+        Place3(1000);
+        Place4(0);
     }
 
     Reward("poster_09")
     {
-        Base(25000);
-        Place1(15000);
-        Place2(10000);
-        Place3(5000);
-        Place4(1000);
+        Base(5000);
+        Place1(3000);
+        Place2(2000);
+        Place3(1000);
+        Place4(0);
     }
 
     Reward("slums_fever_01")
     {
-        Base(25000);
-        Place1(15000);
-        Place2(10000);
-        Place3(5000);
-        Place4(1000);
+        Base(5000);
+        Place1(3000);
+        Place2(2000);
+        Place3(1000);
+        Place4(0);
     }
 
     Reward("slums_fever_02")
     {
-        Base(25000);
-        Place1(15000);
-        Place2(10000);
-        Place3(5000);
-        Place4(1000);
+        Base(5000);
+        Place1(3000);
+        Place2(2000);
+        Place3(1000);
+        Place4(0);
     }
 
     Reward("slums_fever_03")
     {
-        Base(25000);
-        Place1(15000);
-        Place2(10000);
-        Place3(5000);
-        Place4(1000);
+        Base(5000);
+        Place1(3000);
+        Place2(2000);
+        Place3(1000);
+        Place4(0);
     }
 
     Reward("slums_fever_04")
     {
-        Base(25000);
-        Place1(15000);
-        Place2(10000);
-        Place3(5000);
-        Place4(1000);
+        Base(5000);
+        Place1(3000);
+        Place2(2000);
+        Place3(1000);
+        Place4(0);
     }
 
     Reward("slums_fever_05")
     {
-        Base(25000);
-        Place1(15000);
-        Place2(10000);
-        Place3(5000);
-        Place4(1000);
+        Base(5000);
+        Place1(3000);
+        Place2(2000);
+        Place3(1000);
+        Place4(0);
     }
 
     Reward("old_town_fever_01")
     {
-        Base(25000);
-        Place1(15000);
-        Place2(10000);
-        Place3(5000);
-        Place4(1000);
+        Base(5000);
+        Place1(3000);
+        Place2(2000);
+        Place3(1000);
+        Place4(0);
     }
 
     Reward("old_town_fever_02")
     {
-        Base(25000);
-        Place1(15000);
-        Place2(10000);
-        Place3(5000);
-        Place4(1000);
+        Base(5000);
+        Place1(3000);
+        Place2(2000);
+        Place3(1000);
+        Place4(0);
     }
 
     Reward("old_town_fever_03")
     {
-        Base(25000);
-        Place1(15000);
-        Place2(10000);
-        Place3(5000);
-        Place4(1000);
+        Base(5000);
+        Place1(3000);
+        Place2(2000);
+        Place3(1000);
+        Place4(0);
     }
 
     Reward("old_town_fever_04")
     {
-        Base(25000);
-        Place1(15000);
-        Place2(10000);
-        Place3(5000);
-        Place4(1000);
+        Base(5000);
+        Place1(3000);
+        Place2(2000);
+        Place3(1000);
+        Place4(0);
     }
 
     Reward("old_town_fever_05")
     {
-        Base(25000);
-        Place1(15000);
-        Place2(10000);
-        Place3(5000);
-        Place4(1000);
+        Base(5000);
+        Place1(3000);
+        Place2(2000);
+        Place3(1000);
+        Place4(0);
     }
 
     Reward("storyslums_00")
@@ -910,18 +910,18 @@ sub main()
     
     Reward("old_town_wf_01")
     {
-        Base(25000);
-        Place1(12500);
-        Place2(10000);
-        Place3(5000);
-        Place4(2000);
+        Base(5000);
+        Place1(3000);
+        Place2(2000);
+        Place3(1000);
+        Place4(0);
     }
     Reward("old_town_wf_02")
     {
-        Base(25000);
-        Place1(12500);
-        Place2(10000);
-        Place3(5000);
-        Place4(2000);
+        Base(5000);
+        Place1(3000);
+        Place2(2000);
+        Place3(1000);
+        Place4(0);
     }
 }

@@ -26,7 +26,7 @@ sub main()
         UniqueSaveID(9921);
         HudIcon("blueprint_a");
         GameVersion(34);    	
-		OwnedAtStart();
+		//OwnedAtStart();
     }
 	
 	Item("Craftplan_Firearm_SubmachineA_SpecialAgent", CategoryType_Collectable)
@@ -46,7 +46,7 @@ sub main()
         UniqueSaveID(9922);
         HudIcon("blueprint_a");
 		GameVersion(34);
-		OwnedAtStart();
+		//OwnedAtStart();
 		InheritBaseStats();
     }
 	
@@ -69,7 +69,7 @@ sub main()
         HudIcon("blueprint_a");
         GameVersion(34);
         InheritBaseStats();
-		OwnedAtStart();
+		//OwnedAtStart();
     }
 	
 }

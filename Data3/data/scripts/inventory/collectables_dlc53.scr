@@ -33,7 +33,7 @@ sub main()
         HudIcon("blueprint_b");
         GameVersion(33);
         InheritBaseStats();
-        OwnedAtStart();
+        //OwnedAtStart();
     }
 	
 	Item("Craftplan_Firearm_Pistol_Space_Commando", CategoryType_Collectable)
@@ -59,7 +59,7 @@ sub main()
         CraftedItem("Firearm_Pistol_Space_Commando", 1, 1);
         CraftplanType("WeaponDLC");
         UniqueSaveID(9692);
-		OwnedAtStart();
+		//OwnedAtStart();
         HudIcon("blueprint_b");
 		GameVersion(33);
     }
@@ -87,7 +87,7 @@ sub main()
         CraftplanType("WeaponDLC");
 		InheritBaseStats();
         UniqueSaveID(9693);
-		OwnedAtStart();
+		//OwnedAtStart();
         HudIcon("blueprint_b");
 		GameVersion(33);	
     }	

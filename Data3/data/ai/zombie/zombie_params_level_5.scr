@@ -14,8 +14,6 @@ ParamFloat("experience_award", 400.0)
 ParamFloat("health_mul_min_to_play_burn_reaction", 0.2)
 ParamFloat("health_mul_max_to_play_burn_reaction", 0.9)
 
-
-ParamFloat("damage_mult", 0.1) 
 ParamFloat("berserker_dist", 4.0)     //[m]
 ParamFloat("berserker_min_dist", 2.5) //[m]
 ParamFloat("berserker_hit_prob", 100.0)
