@@ -609,7 +609,7 @@ sub aggro_sounds()
     SoundType("WEAPON_MELEE_HIT")
     {
         MaxLifeTime(15.0);
-        Radius(10.0);
+        Radius(7.0);
         Power(5.0);
         MaxPower(50.0);
         RadiusAdd(5.0);
@@ -652,7 +652,7 @@ sub aggro_sounds()
     SoundType("DESTROYABLE_SMALL")
     {
         MaxLifeTime(5.0);
-        Radius(20.0);
+        Radius(5.0);
         Power(50.0);
         MaxPower(80.0);
         ShownOnRadar();
@@ -664,7 +664,7 @@ sub aggro_sounds()
     SoundType("DESTROYABLE_LARGE")
     {
         MaxLifeTime(10.0);
-        Radius(100.0);
+        Radius(10.0);
         Power(120.0);
         MaxPower(220.0);
         ShownOnRadar();
@@ -676,7 +676,7 @@ sub aggro_sounds()
     SoundType("ZOMBIE_SCREAM")
     {
         MaxLifeTime(10.0);
-        Radius(80.0);
+        Radius(20.0);
         MinAdd(50.0);
         MaxAdd(70.0);
         MaxPower(200.0);
@@ -714,7 +714,7 @@ sub aggro_sounds()
     SoundType("PLAYER_SPRINT")
     {
         MaxLifeTime(3.0);
-        Radius(5.0);
+        Radius(3.0);
         Power(10.0);
         MaxPower(50.0);
 		RadiusAdd(3.0);
@@ -726,7 +726,7 @@ sub aggro_sounds()
     SoundType("GAMER_SOUND_LVL_1")
     {
         MaxLifeTime(5.0);
-        Radius(50.0);
+        Radius(10.0);
         Power(10.0);
         MaxPower(20.0);
         GamerNoiseThreshold(0.3);
@@ -739,7 +739,7 @@ sub aggro_sounds()
     SoundType("GAMER_SOUND_LVL_2")
     {
         MaxLifeTime(10.0);
-        Radius(150.0);
+        Radius(20.0);
         Power(60.0);
         MaxPower(60.0);
         GamerNoiseThreshold(0.95);
@@ -774,7 +774,7 @@ sub aggro_sounds()
     SoundType("DECOY")
     {
         MaxLifeTime(0.5);
-        Radius(1.0);
+        Radius(30.0);
         Power(1.0);
         MaxPower(20.0);
         ShownOnRadar();
@@ -783,7 +783,7 @@ sub aggro_sounds()
 	SoundType("BURNING_GROUND")
     {
         MaxLifeTime(7.0);
-        Radius(60.0);
+        Radius(3.0);
         Power(10.0);
         MaxPower(10.0);
 		//ShownOnRadar();
@@ -792,7 +792,7 @@ sub aggro_sounds()
 	SoundType("LIGHT_EXPLOSION")
     {
         MaxLifeTime(5.0);
-        Radius(25.0);
+        Radius(40.0);
         MinAdd(30.0);
         MaxAdd(60.0);
         MaxPower(80.0);
