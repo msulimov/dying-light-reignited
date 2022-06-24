@@ -87,6 +87,14 @@ sub Loot()
         use Valuables_Biter_Premium(weight = 0.25);
         use Upgrades(weight = 0.5);
     }
+    LootedObject("DeadBodyGasTankGray")
+    {
+        ColorSet(ColorSet_Default);
+        
+        use Empty(weight = 0.0);
+        use Trash_GasTank(weight = 5.0); 
+        use Crafting_GasTank(weight = 5.0);
+    }
 
 
 
@@ -97,14 +105,14 @@ sub Loot()
     {   // Virals and Night Walkers
         ColorSet(ColorSet_Default);
 
-        use Empty(weight = 3.0); 
+        use Empty(weight = 0.0); 
 
         use CashSmall(weight = 0.5);
-        use CashMedium(weight = 0.25);
+        use CashMedium(weight = 1.5);
 
-        use Crafting_Viral(weight = 3.0);
-        use Consumables_Viral(weight = 3.0);
-        use Valuables_Viral(weight = 0.25);
+        use Crafting_Viral(weight = 3.5);
+        use Consumables_Viral(weight = 3.5);
+        use Valuables_Viral(weight = 1.0);
     }
 
 
@@ -194,8 +202,8 @@ sub Loot()
         ColorSet(ColorSet_ValuableChest);
         IgnorePlatinumRestrictions();
          
-        use Valuables_ChestLockpick(weight = 7.5);
-        use Valuables_Electronics(weight = 1.0);
+        use Valuables_ChestLockpick(weight = 6.5);
+        use Valuables_Electronics(weight = 2.0);
         use Upgrades(weight = 1.0);
         use Upgrades_Premium(weight = 0.5);
     }
@@ -203,10 +211,10 @@ sub Loot()
     {   // small medium locked chest in old town
         ColorSet(ColorSet_Valuables_Chest);
          
-        use Valuables_Chest(weight = 5.0);
+        use Valuables_Chest(weight = 4.0);
         use Crafting_Default(weight = 4.0);
-        use Upgrades(weight = 0.6);
-        use Valuables_Electronics(weight = 0.4);
+        use Upgrades(weight = 0.5);
+        use Valuables_Electronics(weight = 1.5);
     }
 
 
@@ -294,13 +302,13 @@ sub Loot()
         use Empty(weight = 2.0);
         use QuestItems_Locker(weight = 0.01);
         
-        use Firecrackers(weight = 5.0);
+        use Firecrackers(weight = 2.5);
         use Valuables_Steel_Locker(weight = 0.5);
-        use Valuables_Steel_Locker_Premium(weight = 1.25);
+        use Valuables_Steel_Locker_Premium(weight = 0.5);
 
-        use Valuables_Electronics(weight = 0.5);        
-        use Upgrades(weight = 0.5);
-        use Upgrades_Premium(weight = 0.25);
+        use Valuables_Electronics(weight = 2.5);        
+        use Upgrades(weight = 1.5);
+        use Upgrades_Premium(weight = 0.5);
     }
     LootedObject("Steel_Locker") 
     {   // unlocked tall blue locker
@@ -369,11 +377,11 @@ sub Loot()
         
         use Empty(weight = 0.0);
 
-        use Crafting_Sedan(weight = 2.0);
-        use Components_Sedan(weight = 3.0);
-        use Valuables_Police_Sedan(weight = 1.5);
+        use Items_Ammo(weight = 2.5);
 
-        use Valuables_Electronics(weight = 1.0);        
+        use Components_Sedan(weight = 3.0);
+        use Valuables_Police_Sedan(weight = 2.0);
+        
         use Upgrades(weight = 2.0);
         use Upgrades_Premium(weight = 0.5);
     }
@@ -437,12 +445,12 @@ sub Loot()
     {
         ColorSet(ColorSet_All_Equal);
         
-        use Empty(weight = 1.0);
+        use Empty(weight = 2.0);
        
-        use CashMedium(weight = 3.0);
-        use CashBig(weight = 4.0);
+        use CashMedium(weight = 2.0);
+        use CashBig(weight = 3.0);
         
-        use Valuables_Electronics(weight = 2.0);
+        use Valuables_Electronics(weight = 3.0);
     }
 
     
@@ -472,13 +480,12 @@ sub Loot()
 
         use Empty(weight = 0.0);
 
-        use CashBig(weight = 2.5);
+        use CashBig(weight = 1.5);
 
-        use Medkits(weight = 1.0);
-        use Consumables_Viral(weight = 1.0);
+        use Medkits(weight = 2.0);
 
         use Upgrades(weight = 3.0);
-        use Valuables_Electronics(weight = 2.0);
+        use Valuables_Electronics(weight = 3.0);
         use Upgrades_Premium(weight = 0.5);
 
         use Harvesting_Goon(weight = 0.1);
@@ -491,13 +498,12 @@ sub Loot()
 
         use Empty(weight = 0.0);
 
-        use CashBig(weight = 2.5);
+        use CashBig(weight = 1.5);
 
-        use Medkits(weight = 1.0);
-        use Consumables_Viral(weight = 1.0);
+        use Medkits(weight = 2.0);
 
         use Upgrades(weight = 3.0);
-        use Valuables_Electronics(weight = 2.0);
+        use Valuables_Electronics(weight = 3.0);
         use Upgrades_Premium(weight = 0.5);
 
         use Harvesting_Goon(weight = 0.1);
@@ -510,13 +516,12 @@ sub Loot()
 
         use Empty(weight = 0.0);
 
-        use CashBig(weight = 2.5);
+        use CashBig(weight = 1.5);
 
-        use Medkits(weight = 1.0);
-        use Consumables_Viral(weight = 1.0);
+        use Medkits(weight = 2.0);
 
         use Upgrades(weight = 3.0);
-        use Valuables_Electronics(weight = 2.0);
+        use Valuables_Electronics(weight = 3.0);
         use Upgrades_Premium(weight = 0.5);
 
         use Harvesting_Goon(weight = 0.1);
@@ -2283,17 +2288,6 @@ sub Loot()
     {
         ColorSet(ColorSet_Parts_Military_L3_5);
         use Buggy_Parts(weight = 1.0);
-    }
-
-    LootedObject("DeadBodyGasTankGray")
-    {
-        ColorSet(ColorSet_Default);
-         
-		use Empty(weight = 8.0); 
-
-        use Crafting_Biter(weight = 2.0);
-		use Components_Biter(weight = 4.0);
-        use Biter_Healing_Craftparts(weight = 2.0);
     }
 
 	LootedObject("Volatile_Halloween")

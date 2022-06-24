@@ -69,36 +69,35 @@ sub main()
     ItemSet("Crafting_Sale")
     {
         Item("Craft_MetalScrap");
-        Item("Craft_Alcohol");
-        Item("Craft_Sugar");
+        Item("Craft_TinCan");
         Item("Craft_PlasticTube");
-        Item("ZZZZ3_Component_NutsBolts");
+        Item("ZZZZ3_Component_Rubber");
         Item("Medkit_HealthPackLarge");
         Item("Craft_UnderwaterAlgae");
-        Item("Craft_ToxicPlant");
 
+        Item("Craft_Alcohol");
+        Item("ZZZZ3_Component_NutsBolts");
+        Item("Craft_Sugar");
+        Item("Craft_ToxicPlant");
         Item("Craft_Lichen");
         Item("Craft_Gauze");
-        Item("Craft_TinCan");
         Item("Craft_DuctTape");
         Item("Craft_Insecticide");
         Item("Craft_String");
         Item("ZZZZ3_Component_SteelTubing");
-        Item("ZZZZ3_Component_Rubber");
-        Item("Craft_RazorBlade");
-        Item("Craft_Batteries");
-
-        Item("Craft_PowerCable");
-        Item("Craft_Nails");
-        Item("Craft_Bleach");
         Item("ZZZZ3_Component_Wire");
         Item("ZZZZ3_Component_Lubricant");
+        Item("Craft_Bleach");
+        Item("Craft_Nails");
 
+        Item("Craft_RazorBlade");
+        Item("Craft_Batteries");
+        Item("Craft_PowerCable");
+        
         Item("Craft_Electronics");
         Item("Craft_Shroom");
 
         Item("Craft_PrimeTissue");
-
     }
     ItemSet("Bow")                //ItemID, Weight. Default WEIGHT is 1.
     {
@@ -967,36 +966,31 @@ sub main()
     {
         Item("Bndl_Jewels");
 	}
-	
-    ItemSet("Common_Craftparts")				//ItemID, Weight. Default WEIGHT is 1.
+	ItemSet("Trash_Materials")               //ItemID, Weight. Default WEIGHT is 1.
     {
         Item("Craft_MetalScrap");
+        Item("Craft_PlasticTube");
+        Item("ZZZZ3_Component_Rubber");
+        Item("Craft_TinCan");
+    }
+    ItemSet("Common_Craftparts")				//ItemID, Weight. Default WEIGHT is 1.
+    {
 		Item("Craft_Alcohol");
-		Item("Craft_Sugar");
-		Item("Craft_PlasticTube");
-		Item("ZZZZ3_Component_NutsBolts");
-		
+		Item("Craft_Sugar");	
         Item("Craft_Gauze");
-		Item("Craft_TinCan");
         Item("Craft_DuctTape");
         Item("Craft_Insecticide");
 		Item("Craft_String");
-		Item("ZZZZ3_Component_SteelTubing");
-		Item("ZZZZ3_Component_Rubber");
-        //Item("Craft_RazorBlade");
-		//Item("Craft_Batteries");
-		
-        //Item("Craft_PowerCable");
         Item("Craft_Nails");
         Item("Craft_Bleach");
-		Item("ZZZZ3_Component_Lubricant");
+    }
+    ItemSet("Common_Components")                //ItemID, Weight. Default WEIGHT is 1.
+    {
+        Item("ZZZZ3_Component_NutsBolts");
+        Item("ZZZZ3_Component_SteelTubing");    
+        Item("ZZZZ3_Component_Lubricant");
         Item("ZZZZ3_Component_Wire");
-        	
-		//Item("Craft_Electronics");
-        Item("ZZZZ3_Component_Synthetic");
-		
-    }     
-	
+    }
 	ItemSet("Blueprint_BleedMelee")				//ItemID, Weight. Default WEIGHT is 1.
     {
         Item("Craftplan_BleedMelee");

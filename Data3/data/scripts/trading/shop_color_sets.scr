@@ -236,9 +236,9 @@ sub main()
 
     ColorSet("shop_crafting_materials")
     {
-        Color(Color_White,  55);
-        Color(Color_Green,  35);
-        Color(Color_Blue,   20);
+        Color(Color_White,  0);
+        Color(Color_Green,  50);
+        Color(Color_Blue,   0);
         Color(Color_Violet, 0);
         Color(Color_Orange, 0);
     }
@@ -253,9 +253,9 @@ sub main()
     }
 	ColorSet("promotion_crafting")
     {
-        Color(Color_White,  1);
-        Color(Color_Green,  1);
-        Color(Color_Blue,   1);
+        Color(Color_White,  4);
+        Color(Color_Green,  6);
+        Color(Color_Blue,   2);
         Color(Color_Violet, 1);
         Color(Color_Orange, 1);
     }

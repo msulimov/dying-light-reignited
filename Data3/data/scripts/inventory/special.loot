@@ -39,19 +39,17 @@ sub default_nightmare()
 
     LootedObject("Chest_Medium")
     {
-
         IgnorePlatinumRestrictions();
 
 		ColorSet(ColorSet_Valuables_Chest);
 		
-        use Crafting_Chest_Big(weight = 3.5);
-        use Crafting_Toolbox(weight = 3.0);
-        use Valuables_Chest(weight = 2.0);
+        use Crafting_Chest_Big(weight = 2.0);
+        use Crafting_Toolbox(weight = 2.0);
+        use Valuables_Chest(weight = 2.5);
 
+        use Valuables_Electronics(weight = 2.0);
         use Upgrades(weight = 1.0);
-        use Upgrades_Premium(weight = 0.25);
-		use Valuables_Electronics(weight = 0.25);
-
+        use Upgrades_Premium(weight = 0.5);
     }
 
     LootedObject("WeaponChestHard")
@@ -119,19 +117,19 @@ sub default_nightmare()
 
 			ImportFromShop("Jewels_Bundle", 1, 50);
         }
-        Set(Weapon, 0.2, 1.0)    // Weapon on player level + 1
+        Set(Weapon, 0.1, 1.0)    // Weapon on player level + 1
         {
             AvoidGeneratingDuplicates();
         	use melee();
         }
 
-        Set(Weapon, 0.2, 1.0)    // Weapon on player level + 1
+        Set(Weapon, 0.1, 1.0)    // Weapon on player level + 1
         {
             AvoidGeneratingDuplicates();
         	use melee_2h();
         }
 
-		use Items_Ammo(weight = 0.15);
+		use Items_Ammo(weight = 0.35);
         use Upgrades(weight = 0.25);
         use Upgrades_Premium(weight = 0.1);
 	}

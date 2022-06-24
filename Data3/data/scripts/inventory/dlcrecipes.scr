@@ -2408,8 +2408,8 @@ sub extraDLCRecipes(){
         MoveAcurancyLoseFactor(0.01);
         JumpInertiaFactor(0.2);
         DuckInertiaFactor(0.3);
-        ShootMinAngle(0.027);
-        ShootMaxAngle(0.21);
+        ShootMinAngle(0.1);
+        ShootMaxAngle(0.5);
         ShootAngleVel(0.145);
         ShootAngleCooldown(0.328);
         ShootVertRecoil(0.0);
@@ -2433,7 +2433,7 @@ sub extraDLCRecipes(){
         CriticalDamage(5.0);
         DamageHeadMult(8.0);
         DamageToPhysicsObjects(17.5);
-        FirePointRange(0,1.5);
+        FirePointRange(0,1.75);
         FirePointDamage(0,300.0); 
         FirePointForce(0,250.0); 
         Color(Color_Orange);

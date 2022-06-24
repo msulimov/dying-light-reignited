@@ -1259,11 +1259,20 @@ sub Miscellaneous(){
         }
 }
 
-sub Crafting_Materials(){
-    Set("Common_Craftparts",                    "shop_crafting_materials", 5, 8)
+sub Trash_Materials(){
+    Set("Trash_Materials",                    "whites_only", 4, 4)
         {
             MinStatusLevel(1);
-            PriceMod(1.25);
+            PriceMod(4.0);
+            Limited(3);
+            //ExcludeInDifficultyMode("Hard");
+        }
+}
+sub Crafting_Materials(){
+    Set("Common_Craftparts",                    "green_only", 8, 8)
+        {
+            MinStatusLevel(1);
+            PriceMod(3.0);
             Limited(3);
 			//ExcludeInDifficultyMode("Hard");
         }

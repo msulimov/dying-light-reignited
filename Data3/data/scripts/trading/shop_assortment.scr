@@ -117,19 +117,10 @@ sub main()
         {
 			use Weapons();
 			use Weapons2H();
-			// use Firearms();
 			use Ammo();
-            // use Throwable_Weapons();
             use Healing_Items();
-            //use Miscellaneous();
+            use Trash_Materials();
             use Crafting_Materials();
-			//use Universal_Blueprints();	
-			//use ElementalBoost_Blueprints();	
-			
-			//use ArrowsBlueprintElementals();
-			//use ArrowsBlueprint();
-			// use Arrows();
-			//use Bow();
         }
 		Sell()
 		{
@@ -144,19 +135,10 @@ sub main()
         {
 			use Weapons();
 			use Weapons2H();
-			// use Firearms();
 			use Ammo();
-            // use Throwable_Weapons();
             use Healing_Items();
-            //use Miscellaneous();
-            use Crafting_Materials();
-			//use Universal_Blueprints();
-			//use ElementalBoost_Blueprints();		
-			
-			//use ArrowsBlueprintElementals();
-			//use ArrowsBlueprint();
-			// use Arrows();
-			//use Bow();		
+            use Trash_Materials();
+            use Crafting_Materials();		
 		}
 		Sell()
 		{
@@ -170,19 +152,10 @@ sub main()
         {
 			use Weapons();
 			use Weapons2H();
-			// use Firearms();
 			use Ammo();
-            // use Throwable_Weapons();
             use Healing_Items();
-            //use Miscellaneous();
+            use Trash_Materials();
             use Crafting_Materials();
-			//use Universal_Blueprints();
-			//use ElementalBoost_Blueprints();				
-
-			//use ArrowsBlueprintElementals();
-			//use ArrowsBlueprint();
-			// use Arrows();
-			//use Bow();	
         }
 		Sell()
 		{
@@ -196,19 +169,10 @@ sub main()
         {
 			use Weapons();
 			use Weapons2H();
-            // use Throwable_Weapons();
-			// use Firearms();
 			use Ammo();
             use Healing_Items();
-            //use Miscellaneous();
-            use Crafting_Materials();	
-			//use Universal_Blueprints();	
-			//use ElementalBoost_Blueprints();		
-
-			//use ArrowsBlueprintElementals();
-			//use ArrowsBlueprint();
-			// use Arrows();
-			//use Bow();			
+            use Trash_Materials();
+            use Crafting_Materials();		
         }
 		Sell()
 		{
@@ -222,19 +186,10 @@ sub main()
         {
 			use Weapons();
 			use Weapons2H();
-            // use Throwable_Weapons();
-			// use Firearms();
 			use Ammo();
             use Healing_Items();
-            //use Miscellaneous();
-            use Crafting_Materials();
-			//use Universal_Blueprints();	
-			//use ElementalBoost_Blueprints();
-
-			//use ArrowsBlueprintElementals();
-			//use ArrowsBlueprint();
-			// use Arrows();
-			//use Bow();			
+            use Trash_Materials();
+            use Crafting_Materials();	
         }
 		Sell()
 		{
@@ -248,19 +203,10 @@ sub main()
         {
 			use Weapons();
 			use Weapons2H();
-			// use Firearms();
 			use Ammo();
-            // use Throwable_Weapons();
             use Healing_Items();
-            //use Miscellaneous();
-            use Crafting_Materials();
-			//use Universal_Blueprints();	
-			//use ElementalBoost_Blueprints();	
-
-			//use ArrowsBlueprintElementals();
-			//use ArrowsBlueprint();
-			// use Arrows();
-			//use Bow();			
+            use Trash_Materials();
+            use Crafting_Materials();		
         }
 		Sell()
 		{
@@ -274,19 +220,10 @@ sub main()
         {
 			use Weapons();
 			use Weapons2H();
-			// use Firearms();
 			use Ammo();
-            // use Throwable_Weapons();
             use Healing_Items();
-            //use Miscellaneous();
-            use Crafting_Materials();
-			//use Universal_Blueprints();	
-			//use ElementalBoost_Blueprints();	
-
-			//use ArrowsBlueprintElementals();
-			//use ArrowsBlueprint();
-			// use Arrows();
-			//use Bow();			
+            use Trash_Materials();
+            use Crafting_Materials();	
         }
 		Sell()
 		{
@@ -300,19 +237,10 @@ sub main()
         {
 			use Weapons();
 			use Weapons2H();
-			// use Firearms();
 			use Ammo();
-            // use Throwable_Weapons();
             use Healing_Items();
-            //use Miscellaneous();
-            use Crafting_Materials();
-			//use Universal_Blueprints();	
-			//use ElementalBoost_Blueprints();	
-
-			//use ArrowsBlueprintElementals();
-			//use ArrowsBlueprint();
-			// use Arrows();
-			//use Bow();			
+            use Trash_Materials();
+            use Crafting_Materials();	
         }
 		Sell()
 		{
@@ -326,19 +254,10 @@ sub main()
         {
 			use Weapons();
 			use Weapons2H();
-			// use Firearms();
 			use Ammo();
-            // use Throwable_Weapons();
             use Healing_Items();
-            //use Miscellaneous();
-            use Crafting_Materials();
-			//use Universal_Blueprints();	
-			//use ElementalBoost_Blueprints();
-
-			//use ArrowsBlueprintElementals();
-			//use ArrowsBlueprint();
-			// use Arrows();
-			//use Bow();			
+            use Trash_Materials();
+            use Crafting_Materials();		
         }
 		Sell()
 		{
@@ -352,19 +271,10 @@ sub main()
         {
 			use Weapons();
 			use Weapons2H();
-			// use Firearms();
 			use Ammo();
-            // use Throwable_Weapons();
             use Healing_Items();
-            //use Miscellaneous();
-            use Crafting_Materials();
-			//use Universal_Blueprints();	
-			//use ElementalBoost_Blueprints();	
-
-			//use ArrowsBlueprintElementals();
-			//use ArrowsBlueprint();
-			// use Arrows();
-			//use Bow();			
+            use Trash_Materials();
+            use Crafting_Materials();	
         }
 		Sell()
 		{
@@ -378,19 +288,10 @@ sub main()
         {
 			use Weapons();
 			use Weapons2H();
-			// use Firearms();
 			use Ammo();
-            // use Throwable_Weapons();
             use Healing_Items();
-            //use Miscellaneous();
-            use Crafting_Materials();
-			//use Universal_Blueprints();	
-			//use ElementalBoost_Blueprints();	
-
-			//use ArrowsBlueprintElementals();
-			//use ArrowsBlueprint();
-			// use Arrows();
-			//use Bow();			
+            use Trash_Materials();
+            use Crafting_Materials();	
         }
 		Sell()
 		{
@@ -406,19 +307,10 @@ sub main()
         {
 			use Weapons();
 			use Weapons2H();
-			// use Firearms();
 			use Ammo();
-            // use Throwable_Weapons();
             use Healing_Items();
-            //use Miscellaneous();
+            use Trash_Materials();
             use Crafting_Materials();
-			//use Universal_Blueprints();
-			//use ElementalBoost_Blueprints();
-
-			//use ArrowsBlueprintElementals();
-			//use ArrowsBlueprint();
-			// use Arrows();
-			//use Bow();			
         }
 		Sell()
 		{
@@ -432,19 +324,10 @@ sub main()
         {
 			use Weapons();
 			use Weapons2H();
-			// use Firearms();
 			use Ammo();
-            // use Throwable_Weapons();
             use Healing_Items();
-            //use Miscellaneous();
-            use Crafting_Materials();
-			//use Universal_Blueprints();
-			//use ElementalBoost_Blueprints();	
-
-			//use ArrowsBlueprintElementals();
-			//use ArrowsBlueprint();
-			// use Arrows();
-			//use Bow();			
+            use Trash_Materials();
+            use Crafting_Materials();	
         }
 		Sell()
 		{
@@ -458,19 +341,10 @@ sub main()
         {
 			use Weapons();
 			use Weapons2H();
-			// use Firearms();
 			use Ammo();
-            // use Throwable_Weapons();
             use Healing_Items();
-            //use Miscellaneous();
-            use Crafting_Materials();
-			//use Universal_Blueprints();
-			//use ElementalBoost_Blueprints();	
-
-			//use ArrowsBlueprintElementals();
-			//use ArrowsBlueprint();
-			// use Arrows();
-			//use Bow();			
+            use Trash_Materials();
+            use Crafting_Materials();	
         }
 		Sell()
 		{
@@ -484,19 +358,10 @@ sub main()
         {
 			use Weapons();
 			use Weapons2H();
-			// use Firearms();
 			use Ammo();
-            // use Throwable_Weapons();
             use Healing_Items();
-            //use Miscellaneous();
+            use Trash_Materials();
             use Crafting_Materials();
-			//use Universal_Blueprints();
-			//use ElementalBoost_Blueprints();	
-
-			//use ArrowsBlueprintElementals();
-			//use ArrowsBlueprint();
-			// use Arrows();
-			//use Bow();			
         }
 		Sell()
 		{
@@ -510,19 +375,10 @@ sub main()
         {
 			use Weapons();
 			use Weapons2H();
-			// use Firearms();
 			use Ammo();
-            // use Throwable_Weapons();
             use Healing_Items();
-            //use Miscellaneous();
-            use Crafting_Materials();
-			//use Universal_Blueprints();	
-			//use ElementalBoost_Blueprints();
-
-			//use ArrowsBlueprintElementals();
-			//use ArrowsBlueprint();
-			// use Arrows();
-			//use Bow();			
+            use Trash_Materials();
+            use Crafting_Materials();	
         }
 		Sell()
 		{
@@ -536,19 +392,10 @@ sub main()
         {
 			use Weapons();
 			use Weapons2H();
-			// use Firearms();
 			use Ammo();
-            // use Throwable_Weapons();
             use Healing_Items();
-            //use Miscellaneous();
-            use Crafting_Materials();
-			//use Universal_Blueprints();
-			//use ElementalBoost_Blueprints();	
-
-			//use ArrowsBlueprintElementals();
-			//use ArrowsBlueprint();
-			// use Arrows();
-			//use Bow();			
+            use Trash_Materials();
+            use Crafting_Materials();		
         }
 		Sell()
 		{
@@ -562,19 +409,10 @@ sub main()
         {
 			use Weapons();
 			use Weapons2H();
-			// use Firearms();
 			use Ammo();
-            // use Throwable_Weapons();
             use Healing_Items();
-            //use Miscellaneous();
+            use Trash_Materials();
             use Crafting_Materials();
-			//use Universal_Blueprints();
-			//use ElementalBoost_Blueprints();	
-
-			//use ArrowsBlueprintElementals();
-			//use ArrowsBlueprint();
-			// use Arrows();
-			//use Bow();			
         }
 		Sell()
 		{
@@ -588,19 +426,10 @@ sub main()
         {
 			use Weapons();
 			use Weapons2H();
-			// use Firearms();
 			use Ammo();
-            // use Throwable_Weapons();
             use Healing_Items();
-            //use Miscellaneous();
-            use Crafting_Materials();
-			//use Universal_Blueprints();
-			//use ElementalBoost_Blueprints();	
-
-			//use ArrowsBlueprintElementals();
-			//use ArrowsBlueprint();
-			// use Arrows();
-			//use Bow();			
+            use Trash_Materials();
+            use Crafting_Materials();	
         }
 		Sell()
 		{
@@ -614,19 +443,10 @@ sub main()
         {
 			use Weapons();
 			use Weapons2H();
-			// use Firearms();
 			use Ammo();
-            // use Throwable_Weapons();
             use Healing_Items();
-            //use Miscellaneous();
-            use Crafting_Materials();
-			//use Universal_Blueprints();
-			//use ElementalBoost_Blueprints();	
-
-			//use ArrowsBlueprintElementals();
-			//use ArrowsBlueprint();
-			// use Arrows();
-			//use Bow();			
+            use Trash_Materials();
+            use Crafting_Materials();	
         }
 		Sell()
 		{
@@ -640,19 +460,10 @@ sub main()
         {
 			use Weapons();
 			use Weapons2H();
-			// use Firearms();
 			use Ammo();
-            // use Throwable_Weapons();
             use Healing_Items();
-            //use Miscellaneous();
-            use Crafting_Materials();
-			//use Universal_Blueprints();
-			//use ElementalBoost_Blueprints();	
-
-			//use ArrowsBlueprintElementals();
-			//use ArrowsBlueprint();
-			// use Arrows();
-			//use Bow();			
+            use Trash_Materials();
+            use Crafting_Materials();	
         }
 		Sell()
 		{
@@ -666,19 +477,10 @@ sub main()
         {
 			use Weapons();
 			use Weapons2H();
-			// use Firearms();
 			use Ammo();
-            // use Throwable_Weapons();
             use Healing_Items();
-            //use Miscellaneous();
-            use Crafting_Materials();
-			//use Universal_Blueprints();
-			//use ElementalBoost_Blueprints();	
-
-			//use ArrowsBlueprintElementals();
-			//use ArrowsBlueprint();
-			// use Arrows();
-			//use Bow();			
+            use Trash_Materials();
+            use Crafting_Materials();		
         }
 		Sell()
 		{
@@ -692,19 +494,10 @@ sub main()
         {
 			use Weapons();
 			use Weapons2H();
-			// use Firearms();
 			use Ammo();
-            // use Throwable_Weapons();
             use Healing_Items();
-            //use Miscellaneous();
-            use Crafting_Materials();
-			//use Universal_Blueprints();
-			//use ElementalBoost_Blueprints();	
-
-			//use ArrowsBlueprintElementals();
-			//use ArrowsBlueprint();
-			// use Arrows();
-			//use Bow();			
+            use Trash_Materials();
+            use Crafting_Materials();	
         }
 		Sell()
 		{
@@ -718,19 +511,10 @@ sub main()
         {
 			use Weapons();
 			use Weapons2H();
-			// use Firearms();
 			use Ammo();
-            // use Throwable_Weapons();
             use Healing_Items();
-            //use Miscellaneous();
-            use Crafting_Materials();
-			//use Universal_Blueprints();
-			//use ElementalBoost_Blueprints();	
-
-			//use ArrowsBlueprintElementals();
-			//use ArrowsBlueprint();
-			// use Arrows();
-			//use Bow();			
+            use Trash_Materials();
+            use Crafting_Materials();	
         }
 		Sell()
 		{
@@ -744,19 +528,10 @@ sub main()
         {
 			use Weapons();
 			use Weapons2H();
-			// use Firearms();
 			use Ammo();
-            // use Throwable_Weapons();
             use Healing_Items();
-            //use Miscellaneous();
+            use Trash_Materials();
             use Crafting_Materials();
-			//use Universal_Blueprints();
-			//use ElementalBoost_Blueprints();	
-
-			//use ArrowsBlueprintElementals();
-			//use ArrowsBlueprint();
-			// use Arrows();
-			//use Bow();			
         }
 		Sell()
 		{
@@ -770,19 +545,10 @@ sub main()
         {
 			use Weapons();
 			use Weapons2H();
-			// use Firearms();
 			use Ammo();
-            // use Throwable_Weapons();
             use Healing_Items();
-            //use Miscellaneous();
+            use Trash_Materials();
             use Crafting_Materials();
-			//use Universal_Blueprints();
-			//use ElementalBoost_Blueprints();	
-
-			//use ArrowsBlueprintElementals();
-			//use ArrowsBlueprint();
-			// use Arrows();
-			//use Bow();			
         }
 		Sell()
 		{
@@ -798,21 +564,11 @@ sub main()
         {
 			use Encounter_Shop_Weapons();
 			use Encounter_Shop_Weapons_2H();
+			
 			use Craft_Electronics();
 			use Upgrades();
 			use Upgrades_Premium();
 			use ItemOfTheDayNight();
-			// use Weapons2H();
-			// use Firearms();
-			// use Healing_Items();
-			// use Crafting_Materials();
-			// use Ammo();
-			// use Crafting_Materials_Encounter_Shop();
-			
-			//use ArrowsBlueprintElementals();
-			//use ArrowsBlueprint();
-			// use Arrows();
-			//use Bow();
 		}
 		Sell()
 		{

@@ -112,7 +112,6 @@ sub main()
     Reward("StorylineReward_Intruders_reward")
     {
         Xp(75000);
-		
     }
 
     Reward("StorylineReward_Warehouse_reward")
@@ -286,7 +285,7 @@ sub main()
     Reward("BringMusa_reward") // REWARDED Shakir Gas Mask Man
     {
         Xp(25000);
-		Item("Craftplan_BleedMelee", Color_Violet, 1, 0); // Bleed Melee Craftplan
+		Item("Craft_Upgrade_DurL2BalL2", Color_White, 1, 0); // Freeze Upgrade
     }
 
     Reward("PoisonousHerbs_reward") // REWARDED Wolfsbane quest
@@ -304,7 +303,7 @@ sub main()
     Reward("Binoculars_reward") // REWARDED
     {
         Xp(5000);
-		Item("Craft_RazorBlade", Color_Blue, 5, 0);
+		Item("Craft_Upgrade_DurL2", Color_Green, 1, 0); // Poison Upgrade
 		Cash(500);   
     }
 
@@ -451,53 +450,42 @@ sub main()
     Reward("Bunker_reward") // NO REWARD Bunker under town hall
     {
         Xp(30000);
-		
     }
 
     Reward("Outposts_reward") // NO REWARD
     {
         Xp(35000);
-		
     }
 
     Reward("Outposts_Office_reward") // NO REWARD
     {
         Xp(20000);
-		
     }
 
     Reward("Outposts_Radio_reward") // NO REWARD
     {
         Xp(20000);
-		
     }
 
     Reward("LostInSpace_reward") // NO REWARD Dawud zombie, rescue Sami apartment
     {
         Xp(35000);
-		
-		
     }
 
     Reward("TheProphecy_reward") // NO REWARD Rais past hotel
     {
         Xp(30000);
-		
-		
     }
 
     Reward("FanZone_reward") // NO REWARD
     {
         Xp(50000);
-        
-		
     }
 
     Reward("TheProphet_reward") // REWARDED Bring night flowers to music house
     {
         Xp(20000);
 		Item("Craftplan_Freeze_Upgrade", Color_White, 1, 0); // Freeze Upgrade Craftplan
-
     }
 
     Reward("FindRupert_reward") // REWARDED Super easy meeting rupert at kindergarden
@@ -510,13 +498,11 @@ sub main()
     {
         Xp(10000);
 		Item("Craftplan_Shock_Upgrade", Color_Blue, 1, 0); // Shock Upgrade Craftplan
-		
     }
 
     Reward("BricksForTheBoy01_reward") // REWARDED 
     {
         Xp(5000);
-		
     }
 
     Reward("BricksForTheBoy02_reward") // NO REWARD 
@@ -539,7 +525,6 @@ sub main()
     {
         Xp(20000);
 		Item("Craftplan_Burn_Upgrade", Color_Orange, 1, 0); // Burn Upgrade Craftplan
-		
     }
 
     Reward("FoodCourier_reward") // DUPLICATE Of Alien Quest
@@ -552,7 +537,6 @@ sub main()
         Xp(20000);
         Item("Firearm_ToyGun", Color_White, 1, 0);
 		Item("Craftplan_Impact_Upgrade", Color_Orange, 1, 0); // Impact Upgrade Craftplan
-		
     }
 
     Reward("Ghost_reward") // REWARDED haunted apartments tape recorder
@@ -731,7 +715,7 @@ sub main()
 
     Reward("Challenge_Psycho_Summary_reward") // REWARDED
     {
-        Item("Craft_Upgrade_DamL2DurL2BalL2", Color_Orange, 1, 0); // King
+        Item("Craftplan_BleedMelee", Color_Violet, 1, 0); // Bleed Melee Craftplan
     }
 
     Reward("Challenge_DyingLunch_reward") // REWARDED
