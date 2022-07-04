@@ -1,6 +1,9 @@
-// Once at the start of the game, and each time at 00:00 the system draws one of the scenarios of weather
+// Once at the start of the game, and every midnight, 00:00, the weather system picks a Scenario for that day's weather
+// Use add task to specify which weather for that day should be used
 
 // Scenario::AddTask(f, f, f, f) f-wanted weather val, f-start interpolation hour(format hh::mm), f-end interpolation hour(format hh:mm), f-weather duration(format hh::mm)
+// weather val, time of day to start transitioning current weather to this val, time of day to fully transition to this weather, duration of this weather after fully transitioning to it
+
 // QuestScenario::AddTask(f, f) f-wanted weather val, f-interpolation duration(format hh::mm)
 
 // How to set weather val:
@@ -13,93 +16,135 @@
 sub main()
 {
     // Duration of weather after sleep or map reload (in game time, format mm). If 0, the weather will be active till next event
-    RandomWeatherDuration(240); 
+    RandomWeatherDuration(278); // minutes
 
     // Probability of changing weather after player's death
-    ProbabilityOfChangingWeatherAfterDeath(30);
+    ProbabilityOfChangingWeatherAfterDeath(100);
 
     // Possible weather values, chances and time boundaries
-    AddRandomWeather(0.08, 0.75);
-    AddRandomWeather(0.2, 0.10);
-    AddRandomWeather(0.5, 0.50);
-    
-    AddRandomWeather(0.8, 0.90);
-    AddRandomWeather(1.0, 0.25);
-    AddRandomWeather(0.02, 0.50);
-     
-    AddRandomWeather(0.3, 0.25);
-    AddRandomWeather(0.6, 0.75);
-    AddRandomWeather(0.7, 0.90);
-    
-    AddRandomWeather(0.9, 0.10);
-    AddRandomWeather(0.1, 0.75);
-    AddRandomWeather(0.25, 0.50);
-    
-    AddRandomWeather(0.4, 0.25);
-    AddRandomWeather(0.85, 0.75);
-    AddRandomWeather(0.95, 0.90);
-    
-    AddRandomWeather(0.01, 0.90);
-    AddRandomWeather(0.35, 0.75);
-    AddRandomWeather(0.55, 0.10);
-    
-    AddRandomWeather(0.75, 0.25);
-    AddRandomWeather(1.0, 0.50);
-    AddRandomWeather(0.65, 0.10);
-    
-	Scenario("1") // Night storm
+    AddRandomWeather(0.01, 0.05);  // 0.01 - Heavy Fog
+    AddRandomWeather(0.08, 0.05);  // 0.08 - Med Fog 
+    AddRandomWeather(0.13, 0.20);  // 0.13 - Slight Fog
+
+    AddRandomWeather(0.20, 0.30);  // 0.20 - Clear
+
+    AddRandomWeather(0.40, 0.05);   // 0.40 - Scattered Clouds
+    AddRandomWeather(0.50, 0.02);  // 0.50 - Broken Clouds
+    AddRandomWeather(0.62, 0.03);  // 0.62 - Overcast Clouds
+
+    AddRandomWeather(0.69, 0.05);  // 0.69 - Slight Rain
+    AddRandomWeather(0.77, 0.05);  // 0.77 - Med Rain
+    AddRandomWeather(0.85, 0.05);  // 0.85 - Heavy Rain
+
+    AddRandomWeather(0.88, 0.05);  // 0.88 - Slight Storm
+    AddRandomWeather(0.94, 0.05);  // 0.94 - Med Storm
+    AddRandomWeather(1.00, 0.05);  // 1.00 - Heavy Storm
+
+    // Hand picked weather days, 
+    // TODO create python script to occasionally autogenerate new scenarios using Markov Chain to model weather with time emission var
+	Scenario("1")  
     {
-        AddTask(1.0,   20.00,   5.00,  3.20);
+        AddTask(1.00,  0.00,  0.50,    4.32); // Night Heavy Storm,       00:00 - 04:49, 30 
+        AddTask(0.85,  4.82,  5.32,    4.41); // Morning Heavy Rain,      04:49 - 09:44, 30
+        AddTask(0.13,  9.73, 10.23,    7.99); // Day Slightly Foggy,      09:44 - 18:13, 30
+        AddTask(0.40, 18.22, 18.72,    1.08); // Dusk Scattered Clouds,   18:13 - 19:48, 30
+        AddTask(0.69, 19.80, 20.30,    3.70); // Night Light Rain,        19:48 - 00:00, 30
+ 
     }
 	
-	Scenario("2") // Night rain
+	Scenario("2")
     {
-        AddTask(0.8,   20.00,   5.00,  3.45);      
+        AddTask(0.20,  0.00,  0.50,    2.05); // Night Clear,             00:00 - 02:33, 30
+        AddTask(0.62,  2.55,  3.05,    2.00); // Night Overcast Clouds,   02:33 - 05:03, 30
+        AddTask(0.01,  5.05,  5.55,    5.08); // Morning Very Foggy,      05:03 - 10:38, 30
+        AddTask(0.50, 10.63, 11.13,    2.47); // Day Broken Clouds,       10:38 - 13:36, 30
+        AddTask(0.85, 13.60, 14.10,    2.85); // Day Heavy Rain,          13:36 - 16:57, 30
+        AddTask(1.00, 16.95, 17.45,    6.55); // Dusk Heavy Storm ,       16:57 - 00:00, 30
     }
 	
-	Scenario("3") // Night fog
+	Scenario("3")
     {
-        AddTask(0.08,   20.00,   5.00,  3.40);				      
+        AddTask(0.40,  0.00,  0.50,    0.08); // Night Scattered Clouds,  00:00 - 00:35, 30
+        AddTask(0.69,  0.58,  1.08,    2.45); // Night Slight Rain,       00:35 - 03:20, 30
+        AddTask(0.01,  3.53,  4.03,    6.29); // Morning Heavy Fog,       03:20 - 10:19, 30
+        AddTask(0.13, 10.32, 10.82,    6.28); // Day Slight Fog,          10:19 - 17:06, 30
+        AddTask(0.62, 17.10, 17.60,    3.62); // Dusk Overcast Clouds,    17:06 - 21:13, 30
+        AddTask(0.94, 21.22, 21.72,    2.28); // Night Med Storm,         21:13 - 00:00, 30 
     }
 	
-	Scenario("4") // Night clouds
+	Scenario("4")
     {
-        AddTask(0.5,   20.00,   5.00,  3.30);	      
+        AddTask(0.13,  0.00,  0.50,    2.78); // Night Slightly Foggy,    00:00 - 03:17, 30
+        AddTask(0.77,  3.28,  3.78,    4.20); // Morning Med Rain,        03:17 - 07:59, 30
+        AddTask(0.62,  7.98,  8.48,    1.75); // Day Overcast Clouds,     07:59 - 10:14, 30
+        AddTask(0.40, 10.23, 10.73,    2.17); // Day Scattered Clouds,    10:14 - 12:54, 30
+        AddTask(0.20, 12.90, 12.40,    4.42); // Day Clear,               12:54 - 16:49, 30
+        AddTask(0.08, 16.82, 17.32,    2.76); // Dusk Med Fog,            16:49 - 20:05, 30
+        AddTask(0.01, 20.08, 20.58,    3.42); // Night Heavy Fog,         20:05 - 00:00, 30
     }
 	
-	Scenario("5") // Day storm
+	Scenario("5")
     {
-        AddTask(1.0,   6.00,   15.00,  3.10);		      
+        AddTask(0.88,  0.00,  0.50,    1.25); // Night Slight Storm,      00:00 - 01:45, 30
+        AddTask(0.62,  1.75,  2.25,    3.02); // Night Overcast Clouds,   01:45 - 05:16, 30
+        AddTask(0.20,  5.27,  5.77,    1.68); // Morning Clear,           05:16 - 07:27, 30
+        AddTask(0.69,  7.45,  7.95,    5.01); // Day Light Rain,          07:27 - 12:58, 30
+        AddTask(0.20, 12.96, 13.46,    1.67); // Day Clear,               12:58 - 15:08, 30
+        AddTask(0.85, 15.13, 15.63,    3.39); // Day Heavy Rain,          15:08 - 19:01, 30
+        AddTask(0.50, 19.02, 19.52,    4.48); // Dusk Broken Clouds,      19:01 - 00:00, 30
     }
 	
-	Scenario("6") // Day rain
+	Scenario("6")
     {
-        AddTask(0.8,   6.00,   15.00,  3.50);
+        AddTask(0.69,  0.00,  0.50,    3.88); // Night Slight Rain,       00:00 - 04:23, 30
+        AddTask(0.20,  4.38,  4.88,    6.05); // Morning Clear,           04:23 - 10:56, 30
+        AddTask(0.62, 10.93, 11.43,    0.70); // Day Overcast Clouds,     10:56 - 12:08, 30
+        AddTask(1.00, 12.13, 12.63,    7.42); // Day Heavy Storm,         12:08 - 20:03, 30
+        AddTask(0.62, 20.05, 20.55,    0.90); // Dusk Overcast Clouds,    20:03 - 21:27, 30
+        AddTask(0.20, 21.45, 21.95,    2.05); // Dusk Clear,              21:27 - 00:00, 30
     }
 	
-	Scenario("7") // Day fog
+	Scenario("7")
     {
-        AddTask(0.08,   6.00,   15.00,  3.45);	
+        AddTask(0.01,  0.00,  0.50,    2.20); // Night Very Foggy,        00:00 - 02:42, 30
+        AddTask(0.69,  2.70,  3.20,    2.83); // Morning Light Rain,      02:42 - 06:02, 30
+        AddTask(0.20,  6.03,  6.53,    1.80); // Day Clear,               06:02 - 08:20, 30
+        AddTask(0.62,  8.33,  8.83,    0.19); // Day Overcast Clouds,     08:20 - 09:01, 30
+        AddTask(1.00,  9.02,  9.52,    3.38); // Day Heavy Storm,         09:01 - 12:54, 30
+        AddTask(0.69, 12.90, 13.40,    1.68); // Day Light Rain,          12:54 - 15:05, 30
+        AddTask(0.94, 15.08, 15.58,    8.42); // Dusk Med Storm,          15:05 - 00:00, 30
     }
 	
-	Scenario("8") // Day clouds
+	Scenario("8")
     {
-        AddTask(0.5,   6.00,   15.00,  3.15);
+        AddTask(0.08,  0.00,  0.50,    1.48); // Night Med Fog,           00:00 - 01:59, 30
+        AddTask(0.20,  1.98,  2.48,    1.89); // Night Clear,             01:59 - 04:22, 30
+        AddTask(0.69,  4.37,  4.87,    0.85); // Night Slight Rain,       04:22 - 05:43, 30
+        AddTask(0.20,  5.72, 06.22,   13.88); // Day Clear,               05:43 - 20:06, 30
+        AddTask(0.50, 20.10, 20.60,    3.40); // Night Broken Clouds,     20:06 - 00:00, 30
     }
     
-        Scenario("9") //
+    Scenario("9") // Day Partly Cloudy
     {
-        
+        AddTask(0.85,  0.00,  0.50,    1.92); // Night Heavy Rain,        00:00 - 02:25, 30
+        AddTask(0.01,  2.42,  2.92,    1.38); // Night Very Foggy,        02:25 - 04:18, 30
+        AddTask(1.00,  4.30,  4.80,    9.02); // Morning Heavy Storm,     04:18 - 13:49, 30
+        AddTask(0.69, 13.82, 14.32,    6.68); // Day Slight Rain,         13:49 - 21:00, 30
+        AddTask(0.20, 21.00, 21.50,    2.50); // Dusk Clear,              21:00 - 00:00, 30
     }
     
-        Scenario("10") //
+    Scenario("10") // Day Clear
     {
-        
+        AddTask(0.20,  0.00,  0.50,    4.33); // Night Clear,             00:00 - 04:50, 30
+        AddTask(0.01,  4.83,  5.33,    4.32); // Morning Heavy Fog,       04:50 - 09:39, 30
+        AddTask(1.00,  9.65, 10.15,    2.57); // Day Heavy Storm,         09:39 - 12:43, 30
+        AddTask(0.01, 12.72, 13.22,    5.30); // Day Heavy Fog,           12:43 - 18:31, 30
+        AddTask(0.40, 18.52, 19.02,    4.98); // Dusk Scattered Clouds,   18:31 - 00:00, 30
     }	
     
     QuestScenario("slums_start_weather")
     {
-        AddTask(0.2, 0.20);       						
+        AddTask(1.0, 0.20);       						
     }
     
     QuestScenario("wasteland_start_weather")
@@ -107,3 +152,30 @@ sub main()
         AddTask(0.2, 0.20);
     }
 }
+
+
+
+
+    // AddRandomWeather(0.8, 0.90);
+    // AddRandomWeather(1.0, 0.25);
+    // AddRandomWeather(0.02, 0.50);
+     
+    // AddRandomWeather(0.3, 0.25);
+    // AddRandomWeather(0.2, 0.75);
+    // AddRandomWeather(0.7, 0.90);
+    
+    // AddRandomWeather(0.9, 0.10);
+    // AddRandomWeather(0.1, 0.75);
+    // AddRandomWeather(0.25, 0.50);
+    
+    // AddRandomWeather(0.4, 0.25);
+    // AddRandomWeather(0.85, 0.75);
+    // AddRandomWeather(0.95, 0.90);
+    
+    // AddRandomWeather(0.01, 0.90);
+    // AddRandomWeather(0.35, 0.75);
+    // AddRandomWeather(0.55, 0.10);
+    
+    // AddRandomWeather(0.75, 0.25);
+    // AddRandomWeather(1.0, 0.50);
+    // AddRandomWeather(0.65, 0.10);

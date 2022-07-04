@@ -42,26 +42,25 @@ Event("AirDrop")
 //	DayTimeCondition(11.95) // wylaczone po skroceniu dnia do pol godziny
 //	DayTimeCondition(17.95) // wylaczone po skroceniu dnia do pol godziny
 
-	DayTimeCondition(6.50)
-	DayTimeCondition(15.95)
+	
+	DayTimeCondition(13.15) // afternoon
+	DayTimeCondition(20.87) // right before night
+	//DayTimeCondition(22.85)
+	DayTimeCondition(00.00) // midnight
+	DayTimeCondition(1.85)
+	DayTimeCondition(3.09)
+	DayTimeCondition(4.78)
+	DayTimeCondition(6.50) // right before dawn
 
-	DayTimeCondition(21.50)
-	DayTimeCondition(22.75)
-	DayTimeCondition(00.00)
-	DayTimeCondition(1.25)
-	DayTimeCondition(2.75)
-	DayTimeCondition(3.5)
-	DayTimeCondition(4.75)
-
-// 	Category("Frequency")
-// 	TimeBtw(5000.)			    // time btw event radnomize [s]
-// 	Probability(80.)			// prawdopodobienstwo ze wylosuje sie event [%]
+ 	Category("Frequency")
+ 	TimeBtw(20.0)			    // time btw event radnomize [s]
+ 	Probability(75.)			// prawdopodobienstwo ze wylosuje sie event [%]
 
 	CreatePlace("Air_Drop_Place")
 	{
 		//Condition("place of discharge", 0.5)
 		Condition("air drop", 1.)
-		IncludePrevInSuitabilityValue(0)
+		IncludePrevInSuitabilityValue(1)
 		DistanceFrom("Player", 150., 100., 200.)				//optymalna odleglosc od innego punktu - nazwa "Player" uzywana do okreslenia aktualnej pozycji gracza
 	}
 

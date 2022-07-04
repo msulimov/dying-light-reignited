@@ -1897,7 +1897,7 @@ sub main()
         ItemType(ItemType_Flare);
         Visibility(true);
         MaxStackCount(999);
-        Price(40);
+        Price(200);
         Mesh("flare_a.msh");
         Skin("default");
         AnimPrefix("Flare");

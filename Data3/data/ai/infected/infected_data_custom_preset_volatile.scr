@@ -584,7 +584,7 @@ ParamFloat("flashlight_max_awareness", 2.0)
 ParamBool("can_react_on_dangerous_objects", 1)
 
 ParamBool("treat_flare_as_dangerous_object", 1)
-ParamFloat("max_dist_treat_player_in_safe_zone_as_dangerous", 20.0)
+ParamFloat("max_dist_treat_player_in_safe_zone_as_dangerous", 5.0)
 ParamFloat("safe_zone_halo_causing_runing_away_from_player", 0.3)
 ParamFloat("max_time_to_treat_player_in_safe_zone_as_dangerous", 0.0)
 

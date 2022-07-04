@@ -14,9 +14,9 @@ sub main()
         Mesh("blueprint.msh");
         Skin("default");
         RequiredItem("Craft_Alcohol", 3);
-        RequiredItem("Craft_Gauze", 3);
-        RequiredItem("Craft_String", 2);
-        RequiredItem("Craft_PlasticTube", 3);
+        RequiredItem("Craft_Gauze", 2);
+        RequiredItem("Craft_String", 3);
+        RequiredItem("Craft_PlasticTube", 2);
         Color(Color_White);
         CraftedItem("Medkit_HealthPackLarge", 1, 2);
         CraftplanType("Top");
@@ -33,9 +33,9 @@ sub main()
         Price(42);
         Mesh("blueprint.msh");
         Skin("default");
-        RequiredItem("Craft_Lichen", 6);
-        RequiredItem("Craft_UnderwaterAlgae", 20);
-        RequiredItem("Craft_ToxicPlant", 10);
+        RequiredItem("Craft_Lichen", 3);
+        RequiredItem("Craft_UnderwaterAlgae", 10);
+        RequiredItem("Craft_ToxicPlant", 5);
         Color(Color_White);
         CraftedItem("Medkit_HealthPackLarge", 1, 2);
         CraftplanType("Top");
@@ -52,7 +52,8 @@ sub main()
         Mesh("blueprint.msh");
         Skin("default");
 		RequiredItem("Craft_PlasticTube", 1);
-        RequiredItem("Craft_Bleach", 3);
+        RequiredItem("Craft_String", 2);
+        RequiredItem("Craft_Bleach", 2);
         RequiredItem("Craft_Sugar", 1);
 		RequiredItem("ZZZZ3_Component_Rubber", 2);
         Color(Color_Violet);
@@ -73,6 +74,7 @@ sub main()
         Skin("default");
         RequiredItem("Throwable_Btz_Flare", 2);
         RequiredItem("Craft_DuctTape", 2);
+        RequiredItem("Craft_String", 2);
         Color(Color_Violet);
         CraftedItem("Throwable_ZaidFlare", 1, 1);
         CraftplanType("Top");
@@ -173,10 +175,11 @@ sub main()
         Skin("default");
 
         RequiredItem("Craft_TinCan", 2);						 
-        RequiredItem("Craft_Bleach", 2);
+        RequiredItem("Craft_String", 2);
 		RequiredItem("Craft_Alcohol", 2);
         RequiredItem("Craft_Sugar", 1);
 		RequiredItem("Craft_Insecticide", 1);
+        RequiredItem("Craft_PlasticTube", 2);
 
         ExplosionFx("firecrackers_sequence.fx");
         Color(Color_White);
@@ -196,7 +199,7 @@ sub main()
         Skin("default");
 
         RequiredItem("Craft_TinCan", 3);
-        RequiredItem("Craft_PlasticTube", 1);
+        RequiredItem("Craft_PlasticTube", 2);
         RequiredItem("ZZZZ3_Component_Rubber", 2);
         RequiredItem("Craft_String", 3);
         RequiredItem("Craft_Insecticide", 2);
@@ -242,7 +245,7 @@ sub main()
         Skin("default");
 
         RequiredItem("Craft_TinCan", 3);
-        RequiredItem("Craft_PlasticTube", 1);
+        RequiredItem("Craft_PlasticTube", 2);
         RequiredItem("ZZZZ3_Component_Rubber", 2);
         RequiredItem("Craft_String", 3);
         RequiredItem("Craft_Lichen", 2);
@@ -1009,9 +1012,8 @@ sub main()
         Mesh("blueprint.msh");
         Skin("default");
         RequiredItem("Craft_Lichen", 3);
-        RequiredItem("Craft_UnderwaterAlgae", 6);
-        RequiredItem("Craft_ToxicPlant", 6);
-        RequiredItem("Craft_DuctTape", 3);
+        RequiredItem("Craft_UnderwaterAlgae", 10);
+        RequiredItem("Craft_ToxicPlant", 5);
         Color(Color_Green);
         CraftedItem("Medkit_HealthPackLarge", 2, 2);
         CraftplanType("Top");

@@ -233,7 +233,7 @@ export int Other = 9;
             Item("Craft_Alcohol", 2.0);
             Item("Craft_Sugar", 4.0);
             Item("Craft_Insecticide", 1.0);
-            Item("Craft_Bleach", 1.0);
+            Item("Craft_Bleach", 2.0);
         }
     }
     sub Consumables_Cabinet(float weight = 1.0, float prob = 1.0)
@@ -271,9 +271,9 @@ export int Other = 9;
         Set(CraftPart, weight, prob)
         {
             Item("Craft_DuctTape", 1.0);
-            Item("Craft_Insecticide", 1.0);
+            Item("Craft_Insecticide", 2.0);
             Item("Craft_String", 1.0);
-            Item("Craft_Bleach", 1.0);
+            Item("Craft_Bleach", 3.0);
         }
     }
     sub Components_Chest_Big(float weight = 1.0, float prob = 1.0)
@@ -327,10 +327,10 @@ export int Other = 9;
     {
         Set(CraftPart, weight, prob)
         {           
-            Item("Craft_DuctTape", 3.0);
+            Item("Craft_DuctTape", 2.0);
             Item("Craft_String", 1.0);
             Item("Craft_Gauze", 3.0);
-            Item("Craft_Insecticide", 2.0);
+            Item("Craft_Insecticide", 1.0);
             Item("Craft_Bleach", 2.0);
         }
     }
@@ -431,7 +431,7 @@ export int Other = 9;
             Item("Craft_Alcohol", 1.0);
             Item("Craft_String", 1.0);
             Item("Craft_Insecticide", 1.0);
-            Item("Craft_Bleach", 1.0);
+            Item("Craft_Bleach", 2.0);
         }
     }
     sub Components_Steel_Locker(float weight = 1.0, float prob = 1.0)
@@ -493,7 +493,7 @@ export int Other = 9;
             Item("Craft_String", 1.0);
             Item("Craft_DuctTape", 2.0);
             Item("Craft_Insecticide", 2.0);
-            Item("Craft_Bleach", 2.0);
+            Item("Craft_Bleach", 3.0);
         }
     }
     sub Valuables_Bag(float weight = 1.0, float prob = 1.0)
@@ -541,7 +541,7 @@ export int Other = 9;
     {
         Set(CraftPart, weight, prob)
         {
-            Item("ZZZZ3_Component_Lubricant", 2.0);
+            Item("ZZZZ3_Component_Lubricant", 3.0);
             Item("ZZZZ3_Component_Synthetic", 1.0);
         }
     }

@@ -1180,6 +1180,7 @@ sub Ammo(){
     Set("Pistol_Ammo",              "whites_only",   2, 3)
     {
         MinStatusLevel(9);
+        PriceMod(2.0);
         Cycle("Hour", 12);
 		Limited(3);
 		//ExcludeInDifficultyMode("Hard");
@@ -1189,6 +1190,7 @@ sub Ammo(){
     {
         MinStatusLevel(9);
 		Cycle("Hour", 12);
+        PriceMod(2.0);
         Limited(3);
 		//ExcludeInDifficultyMode("Hard");
     }
@@ -1197,6 +1199,7 @@ sub Ammo(){
     {
         MinStatusLevel(9);
 		Cycle("Hour", 12);
+        PriceMod(2.0);
         Limited(3);
 		//ExcludeInDifficultyMode("Hard");
     }
@@ -1204,6 +1207,7 @@ sub Ammo(){
     {
         MinStatusLevel(9);
 		Cycle("Hour", 12);
+        PriceMod(2.0);
         Limited(3);
 		//ExcludeInDifficultyMode("Hard");
     }
@@ -1264,7 +1268,7 @@ sub Trash_Materials(){
         {
             MinStatusLevel(1);
             PriceMod(4.0);
-            Limited(3);
+            Limited(6);
             //ExcludeInDifficultyMode("Hard");
         }
 }
@@ -1273,7 +1277,7 @@ sub Crafting_Materials(){
         {
             MinStatusLevel(1);
             PriceMod(3.0);
-            Limited(3);
+            Limited(4);
 			//ExcludeInDifficultyMode("Hard");
         }
 }
