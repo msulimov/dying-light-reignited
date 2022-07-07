@@ -1,8 +1,8 @@
-export float DAYTIME_NIGHT_END = 6.0;
+export float DAYTIME_NIGHT_END = 5.0;
 
-export float DAYTIME_DAWN_START = 7.5;
-export float DAYTIME_DAWN = 9.0;
-export float DAYTIME_DAWN_END = 10.5;
+export float DAYTIME_DAWN_START = 6.0;
+export float DAYTIME_DAWN = 8.0;
+export float DAYTIME_DAWN_END = 10.0;
 
 export float DAYTIME_DAY_START = 12.0;
 export float DAYTIME_DAY_END = 18.0;

@@ -49,12 +49,11 @@ Event("AirDrop")
 	DayTimeCondition(00.00) // midnight
 	DayTimeCondition(1.85)
 	DayTimeCondition(3.09)
-	DayTimeCondition(4.78)
-	DayTimeCondition(6.50) // right before dawn
+	DayTimeCondition(5.50) // right before dawn
 
  	Category("Frequency")
- 	TimeBtw(20.0)			    // time btw event radnomize [s]
- 	Probability(75.)			// prawdopodobienstwo ze wylosuje sie event [%]
+ 	//TimeBtw(20.0)			    // time btw event radnomize [s]
+ 	//Probability(75.)			// prawdopodobienstwo ze wylosuje sie event [%]
 
 	CreatePlace("Air_Drop_Place")
 	{
