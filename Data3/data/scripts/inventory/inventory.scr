@@ -654,7 +654,7 @@ sub main()
     {
         ItemType(ItemType_CraftComponent);
         Visibility(true);
-        Price(200);
+        Price(800);
         HudIcon("component_misc");
         Mesh("loot_ok_circular_saw_a.msh");
         Skin("default");

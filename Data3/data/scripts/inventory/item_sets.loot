@@ -21,9 +21,9 @@ export int Other = 9;
     {
         Set(CraftPart, weight, prob)
         {
-            Item("Craft_MetalScrap", 3.0);
-            Item("Craft_PlasticTube", 2.0);
-            Item("ZZZZ3_Component_Rubber", 2.0);
+            Item("Craft_MetalScrap", 1.0);
+            Item("Craft_PlasticTube", 1.0);
+            Item("ZZZZ3_Component_Rubber", 1.0);
         }
     }
     sub Trash_GasTank(float weight = 1.0, float prob = 1.0)
@@ -38,13 +38,11 @@ export int Other = 9;
     {
         Set(CraftPart, weight, prob)
         {
-            Item("Craft_Alcohol", 1.0);
+            Item("Craft_Alcohol", 3.0);
             Item("Craft_Sugar", 1.0);
-
             Item("Craft_Insecticide", 1.0);
-            Item("Craft_String", 1.0);
-            Item("Craft_Gauze", 1.0);
-            
+            Item("Craft_String", 2.0);
+            Item("Craft_Gauze", 2.0);
             Item("Craft_Bleach", 1.0);
         }
     }
@@ -168,10 +166,10 @@ export int Other = 9;
     {
         Set(CraftPart, weight, prob)
         {
-            Item("Craft_MetalScrap", 4.0);
-            Item("Craft_PlasticTube", 2.0);
+            Item("Craft_MetalScrap", 1.0);
+            Item("Craft_PlasticTube", 1.0);
             Item("Craft_TinCan", 1.0);
-            Item("ZZZZ3_Component_Rubber", 2.0);
+            Item("ZZZZ3_Component_Rubber", 1.0);
         }
     }
 
@@ -185,6 +183,7 @@ export int Other = 9;
         Set(CraftPart, weight, prob)
         {
             Item("Craft_DuctTape", 1.0);
+            Item("Craft_Alcohol", 1.0);
             Item("Craft_String", 3.0);
         }
     }
@@ -273,6 +272,7 @@ export int Other = 9;
             Item("Craft_DuctTape", 1.0);
             Item("Craft_Insecticide", 2.0);
             Item("Craft_String", 1.0);
+            Item("Craft_Alcohol", 1.0);
             Item("Craft_Bleach", 3.0);
         }
     }

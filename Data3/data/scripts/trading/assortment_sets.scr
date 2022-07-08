@@ -1245,7 +1245,7 @@ sub AmmoFollowing(){
 }
 
 sub Healing_Items(){
-    Set("Medkits",                              "shop_crafting_materials",              2, 5)            
+    Set("Medkits",                              "highway_components",              4, 6)            
         {
             MinStatusLevel(1);
 			Limited(1);
