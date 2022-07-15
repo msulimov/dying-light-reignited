@@ -584,9 +584,9 @@ ParamFloat("flashlight_max_awareness", 2.0)
 ParamBool("can_react_on_dangerous_objects", 1)
 
 ParamBool("treat_flare_as_dangerous_object", 1)
-ParamFloat("max_dist_treat_player_in_safe_zone_as_dangerous", 5.0)
+ParamFloat("max_dist_treat_player_in_safe_zone_as_dangerous", 10.0)
 ParamFloat("safe_zone_halo_causing_runing_away_from_player", 0.3)
-ParamFloat("max_time_to_treat_player_in_safe_zone_as_dangerous", 0.0)
+ParamFloat("max_time_to_treat_player_in_safe_zone_as_dangerous", 4.0)
 
 ParamFloat("coop_damage_mul_2", 1.2) // damage multiplayer for 2 players coop
 ParamFloat("coop_damage_mul_3", 1.4) // damage multiplayer for 3 players coop

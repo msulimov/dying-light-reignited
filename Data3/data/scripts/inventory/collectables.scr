@@ -51,10 +51,9 @@ sub main()
         Price(40);
         Mesh("blueprint.msh");
         Skin("default");
-		RequiredItem("Craft_PlasticTube", 1);
-        RequiredItem("Craft_String", 2);
+		RequiredItem("Craft_MetalScrap", 2);
         RequiredItem("Craft_Bleach", 2);
-        RequiredItem("Craft_Sugar", 1);
+        RequiredItem("Craft_Sugar", 3);
 		RequiredItem("ZZZZ3_Component_Rubber", 2);
         Color(Color_Violet);
         CraftedItem("Throwable_Btz_Flare", 2, 3);
@@ -130,8 +129,9 @@ sub main()
         Skin("default");
         RequiredItem("Craft_Alcohol", 6);
 		RequiredItem("Craft_Insecticide", 2);
-		RequiredItem("ZZZZ3_Component_Rubber", 2);
+		RequiredItem("ZZZZ3_Component_Rubber", 3);
         RequiredItem("Craft_String", 3);
+        RequiredItem("Craft_MetalScrap", 1);
         Elemental(Elemental_Burning, 2);
         Color(Color_Green);
         CraftedItem("Throwable_Molotov", 3, 6);
@@ -174,10 +174,9 @@ sub main()
         Skin("default");
 
         RequiredItem("Craft_TinCan", 2);						 
-        RequiredItem("Craft_String", 2);
-		RequiredItem("Craft_Alcohol", 2);
         RequiredItem("Craft_Sugar", 1);
 		RequiredItem("Craft_Insecticide", 1);
+        RequiredItem("Craft_Bleach", 1);
         RequiredItem("Craft_PlasticTube", 2);
 
         ExplosionFx("firecrackers_sequence.fx");
@@ -431,14 +430,16 @@ sub main()
         Skin("default");
         BaseItem("Melee_", "", "");
         
-		RequiredItem("Craft_MetalScrap", 8);
-        RequiredItem("Craft_PrimeTissue", 1);
-        RequiredItem("Craft_Gauze", 5);
+		RequiredItem("Craft_MetalScrap", 6);
+        RequiredItem("ZZZZ3_Component_NutsBolts", 4);
+        RequiredItem("Craft_PrimeTissue", 2);
         RequiredItem("Craft_Lichen", 10);
-        RequiredItem("Craft_Electronics", 2);
-        RequiredItem("Craft_Batteries", 2);
-        RequiredItem("Craft_PowerCable", 2);
         RequiredItem("Craft_ToxicPlant", 15);
+
+        RequiredItem("Craft_RazorBlade", 1);
+        RequiredItem("Craft_Batteries", 1);
+        RequiredItem("Craft_PowerCable", 1);
+        RequiredItem("Craft_Electronics", 1);
 		
         NamePrefix("&ModifiedItemName&");
         Elemental(Elemental_Poison, 3);
@@ -446,7 +447,7 @@ sub main()
         CraftplanType("WeaponDLC");
         UniqueSaveID(12);
         HudIcon("blueprint_b");
-		//OwnedAtStart();
+		OwnedAtStart();
     }
 
     Item("Craftplan_BleedMelee", CategoryType_Collectable)
@@ -459,12 +460,13 @@ sub main()
         Skin("default");
         BaseItem("Melee_", "", "");
         
-		RequiredItem("Craft_MetalScrap", 8);
-		RequiredItem("Craft_RazorBlade", 6);
+		RequiredItem("Craft_MetalScrap", 7);
         RequiredItem("ZZZZ3_Component_NutsBolts", 10);
-        RequiredItem("Craft_Electronics", 3);
-        RequiredItem("Craft_Batteries", 2);
-		RequiredItem("Craft_PowerCable", 2);
+        RequiredItem("Craft_Nails", 8);
+        RequiredItem("Craft_DuctTape", 6);
+        RequiredItem("ZZZZ3_Component_SteelTubing", 5);
+
+        RequiredItem("Craft_RazorBlade", 4);
 		
         NamePrefix("&ModifiedItemName&");
         Elemental(Elemental_Bleeding, 3);
@@ -472,7 +474,7 @@ sub main()
         CraftplanType("WeaponDLC");
         UniqueSaveID(13);
         HudIcon("blueprint_b");
-		//OwnedAtStart();
+		OwnedAtStart();
     }
 
     Item("Craftplan_ElectricMelee", CategoryType_Collectable)
@@ -485,13 +487,15 @@ sub main()
         Skin("default");
         BaseItem("Melee_", "", "");
 		
-        RequiredItem("Craft_MetalScrap", 8);
-        RequiredItem("Craft_DuctTape", 8);
-        RequiredItem("ZZZZ3_Component_Rubber", 6);
-        RequiredItem("Craft_Electronics", 5);
-        RequiredItem("Craft_Batteries", 5);
-        RequiredItem("Craft_PowerCable", 4);
+        RequiredItem("Craft_MetalScrap", 6);
+        RequiredItem("ZZZZ3_Component_NutsBolts", 4);
         RequiredItem("ZZZZ3_Component_Wire", 8);
+        RequiredItem("ZZZZ3_Component_Rubber", 6);
+
+        RequiredItem("Craft_RazorBlade", 1);
+        RequiredItem("Craft_Batteries", 3);
+        RequiredItem("Craft_PowerCable", 2);
+        RequiredItem("Craft_Electronics", 2);
 		
         NamePrefix("&ModifiedItemName&");
         Elemental(Elemental_ShockElectricity, 3);
@@ -499,7 +503,7 @@ sub main()
         CraftplanType("WeaponDLC");
         UniqueSaveID(14);
         HudIcon("blueprint_b");
-		//OwnedAtStart();
+		OwnedAtStart();
     }
 
     Item("Craftplan_BurnMelee", CategoryType_Collectable)
@@ -512,13 +516,16 @@ sub main()
         Skin("default");
         BaseItem("Melee_", "", "");
 		
-        RequiredItem("Craft_MetalScrap", 8);
-        RequiredItem("Craft_String", 5);
-        RequiredItem("Craft_Insecticide", 10);
-        RequiredItem("Craft_Electronics", 6);
-        RequiredItem("Craft_Batteries", 5);
-		RequiredItem("Craft_PowerCable", 5);
-		RequiredItem("Craft_Alcohol", 15);
+        RequiredItem("Craft_MetalScrap", 6);
+        RequiredItem("ZZZZ3_Component_NutsBolts", 4);
+        RequiredItem("Craft_String", 4);
+        RequiredItem("Craft_Insecticide", 4);
+        RequiredItem("Craft_Alcohol", 8);
+
+        RequiredItem("Craft_RazorBlade", 1);
+        RequiredItem("Craft_Batteries", 2);
+        RequiredItem("Craft_PowerCable", 2);
+        RequiredItem("Craft_Electronics", 3);
 		
         NamePrefix("&ModifiedItemName&");
         Elemental(Elemental_Burning, 3);
@@ -526,7 +533,7 @@ sub main()
         CraftplanType("WeaponDLC");
         UniqueSaveID(15);
         HudIcon("blueprint_b");
-		//OwnedAtStart();
+		OwnedAtStart();
     }
 
     Item("Craftplan_BlastMelee", CategoryType_Collectable)
@@ -539,13 +546,15 @@ sub main()
         Skin("default");
         BaseItem("Melee_", "", "");
         
-		RequiredItem("Craft_MetalScrap", 8);
-        RequiredItem("Craft_TinCan", 7);
-        RequiredItem("Craft_Insecticide", 5);
-        RequiredItem("Craft_Bleach", 5);
-        RequiredItem("Craft_Electronics", 4);
-        RequiredItem("Craft_Batteries", 4);
-        RequiredItem("Craft_PowerCable", 3);
+		RequiredItem("Craft_MetalScrap", 6);
+        RequiredItem("ZZZZ3_Component_NutsBolts", 4);
+        RequiredItem("Craft_Insecticide", 6);
+        RequiredItem("Craft_Bleach", 6);
+        RequiredItem("Craft_Sugar", 6);
+
+        RequiredItem("Craft_Batteries", 2);
+        RequiredItem("Craft_PowerCable", 2);
+        RequiredItem("Craft_Electronics", 1);
 		
         NamePrefix("&ModifiedItemName&");
         Elemental(Elemental_ImpactElectricity, 3);
@@ -553,7 +562,7 @@ sub main()
         CraftplanType("WeaponDLC");
         UniqueSaveID(16);
         HudIcon("blueprint_b");
-		//OwnedAtStart();
+		OwnedAtStart();
     }
 
 	Item("Craftplan_KurtBomb", CategoryType_Collectable)

@@ -296,7 +296,7 @@
     {
         Difficult(20)
         AIPreset("Enemy_Headhunter_Melee")
-        SpawnCondition("t_INIT, 0.7;z_MELEE_FIGHTER, 0.7")
+        SpawnCondition("t_INIT, 0.7;z_MELEE_FIGHTER, 0.7;p_WIDE, 1;p_SQUARE, 1;p_ROOF, 1")
         //AllowedMaps("Old_Town")						   
         MinDistBtwZombies(3)
         RemoveDistanceIfNotContact(45)
@@ -309,7 +309,7 @@
     PresetDef("Melee_Fighter_With_Pipe")
     {
         Difficult(20)
-        SpawnCondition("z_MELEE_FIGHTER, 1;p_WIDE, 1;p_SQUARE, 1;p_ROOF, 0.3")
+        SpawnCondition("z_MELEE_FIGHTER, 1;p_WIDE, 1;p_SQUARE, 1;p_ROOF, 1")
         AIPreset("Enemy_Headhunter_Melee")
         //AllowedMaps("Old_Town")
         MinDistBtwZombies(3)
@@ -322,7 +322,7 @@
 	PresetDef("Defender_Fighter")
     {
         Difficult(20)
-        SpawnCondition("z_MELEE_FIGHTER, 1;p_WIDE, 1;p_SQUARE, 1;p_ROOF, 0.3")
+        SpawnCondition("z_MELEE_FIGHTER, 1;p_WIDE, 1;p_SQUARE, 1;p_ROOF, 1")
         AIPreset("Enemy_S_Bandit_FirearmDefender001")
         //AllowedMaps("Old_Town;slums")
         MinDistBtwZombies(3)
@@ -335,7 +335,7 @@
 	PresetDef("Melee_Fighter_Rais")
     {
         Difficult(20)
-        SpawnCondition("z_MELEE_FIGHTER, 1;p_WIDE, 1;p_SQUARE, 1;p_ROOF, 0.3")
+        SpawnCondition("z_MELEE_FIGHTER, 1;p_WIDE, 1;p_SQUARE, 1;p_ROOF, 1")
 		AIPreset("enc_slums_maskedbandit_leader_lvl00;enc_slums_maskedbandit_leader_lvl01;enc_slums_maskedbandit_leader_lvl02;enc_slums_maskedbandit_leader_lvl03;enc_slums_maskedbandit_lvl00;enc_slums_maskedbandit_lvl01;enc_slums_maskedbandit_lvl02;Enemy_GR_Gang_Melee001;enc_survivor_clench_01;enc_maskedbandit_01_weapon_FLASHLIGHT_TEST")
 		
         //AllowedMaps("Old_Town;slums")
@@ -349,7 +349,7 @@
 	PresetDef("Melee_Survivor")
     {
         Difficult(20)
-        SpawnCondition("z_MELEE_FIGHTER, 1;p_WIDE, 1;p_SQUARE, 1;p_ROOF, 0.3")
+        SpawnCondition("z_MELEE_FIGHTER, 1;p_WIDE, 1;p_SQUARE, 1;p_ROOF, 1")
 		AIPreset("enc_survivor_clench_01;")
         //AllowedMaps("Old_Town;slums")
         MinDistBtwZombies(3)

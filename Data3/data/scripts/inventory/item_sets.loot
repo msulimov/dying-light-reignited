@@ -58,12 +58,11 @@ export int Other = 9;
     {
         Set(Weapon, weight, prob)
         {
-            Item("ZZZZ3_Component_NutsBolts", 2.0);
+            // Item("ZZZZ3_Component_NutsBolts", 2.0);
             Item("Craft_DuctTape", 4.0);
             Item("ZZZZ3_Component_SteelTubing", 3.0);
-            
-            Item("Craft_Nails", 3.0);
-            Item("ZZZZ3_Component_Wire", 1.0);
+            Item("Craft_Nails", 2.0);
+            // Item("ZZZZ3_Component_Wire", 1.0);
         }
     }
     sub Consumables_Biter(float weight = 1.0, float prob = 1.0)
@@ -148,10 +147,9 @@ export int Other = 9;
         Set(CraftPart, weight, prob)
         {
             
-            Item("ZZZZ3_Component_NutsBolts", 2.0);
-            Item("Craft_DuctTape", 4.0);
+            Item("ZZZZ3_Component_NutsBolts", 1.0);
+            Item("Craft_DuctTape", 6.0);
             Item("ZZZZ3_Component_SteelTubing", 3.0);
-            
             Item("Craft_Nails", 3.0);
             Item("ZZZZ3_Component_Wire", 1.0);
         }
@@ -283,7 +281,7 @@ export int Other = 9;
             Item("ZZZZ3_Component_NutsBolts", 2.0);
             Item("ZZZZ3_Component_SteelTubing", 3.0);
             Item("Craft_Nails", 3.0);
-            Item("ZZZZ3_Component_Wire", 1.0);
+            // Item("ZZZZ3_Component_Wire", 1.0);
         }
     }
     sub Valuables_Chest(float weight = 1.0, float prob = 1.0)
@@ -438,11 +436,11 @@ export int Other = 9;
     {
         Set(CraftPart, weight, prob)
         {
-            Item("ZZZZ3_Component_NutsBolts", 2.0);
-            Item("Craft_DuctTape", 4.0);
-            Item("ZZZZ3_Component_SteelTubing", 3.0);
-            Item("Craft_Nails", 4.0);
-            Item("ZZZZ3_Component_Wire", 1.0);
+            // Item("ZZZZ3_Component_NutsBolts", 2.0);
+            Item("Craft_DuctTape", 1.0);
+            // Item("ZZZZ3_Component_SteelTubing", 3.0);
+            Item("Craft_Nails", 1.0);
+            // Item("ZZZZ3_Component_Wire", 1.0);
         }
     }
     sub Consumables_Steel_Locker(float weight = 1.0, float prob = 1.0)

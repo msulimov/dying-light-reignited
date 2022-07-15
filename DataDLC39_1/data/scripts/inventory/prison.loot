@@ -24,7 +24,7 @@ sub Loot()
     LootedObject("Prison_Chest_Mod_0")
     {
         // ColorSet(ColorSet_cs_crafting);
-        ColorSet(ColorSet_Prison_Crafting_Tier_34);
+        ColorSet(ColorSet_Prison_Powerups_Tier_0);
         
         use Empty(weight = 0.0);
         use Prison_Mods(weight = 1.0);
@@ -32,7 +32,7 @@ sub Loot()
 
     LootedObject("Prison_Chest_Mod_1")
     {
-        ColorSet(ColorSet_Prison_Crafting_Tier_34);
+        ColorSet(ColorSet_Prison_Powerups_Tier_12);
         
         use Empty(weight = 0.0);
         use Prison_Mods(weight = 1.0);
@@ -40,7 +40,7 @@ sub Loot()
 
     LootedObject("Prison_Chest_Mod_2")
     {
-        ColorSet(ColorSet_Prison_Crafting_Tier_34);        
+        ColorSet(ColorSet_Prison_Powerups_Tier_12);        
         
         use Empty(weight = 0.0);
         use Prison_Mods(weight = 1.0);
@@ -48,7 +48,7 @@ sub Loot()
 
     LootedObject("Prison_Chest_Mod_3")
     {
-        ColorSet(ColorSet_Prison_Crafting_Tier_34);        
+        ColorSet(ColorSet_Prison_Powerups_Tier_34);        
         
         use Empty(weight = 0.0);
         use Prison_Mods(weight = 1.0);
@@ -56,7 +56,7 @@ sub Loot()
 
     LootedObject("Prison_Chest_Mod_4")
     {
-        ColorSet(ColorSet_Prison_Crafting_Tier_34);        
+        ColorSet(ColorSet_Prison_Powerups_Tier_34);        
         
         use Empty(weight = 0.0);
         use Prison_Mods(weight = 1.0);
@@ -64,7 +64,7 @@ sub Loot()
 
     LootedObject("Prison_Chest_Mod_5")
     {
-        ColorSet(ColorSet_Prison_Crafting_Tier_34);        
+        ColorSet(ColorSet_Prison_Powerups_Tier_34);        
         
         use Empty(weight = 1.0);
         use Prison_Mods(weight = 0.0);
@@ -175,7 +175,7 @@ sub Loot()
 
     LootedObject("Prison_Toolbox_A_0")
     {
-        ColorSet(ColorSet_cs_crafting);
+        ColorSet(ColorSet_GreenOnly);
          
         use Empty(weight = 0.0);
         use Crafting_Toolbox(weight = 1.0);
@@ -183,47 +183,47 @@ sub Loot()
 
     LootedObject("Prison_Toolbox_A_1")
     {
-        ColorSet(ColorSet_cs_crafting);
+        ColorSet(ColorSet_GreenOnly);
          
-        use Empty(weight = 0.0);
+        use Empty(weight = 0.15);
         use Crafting_Toolbox(weight = 1.0);
     }
 
     LootedObject("Prison_Toolbox_A_2")
     {
-        ColorSet(ColorSet_cs_crafting);
+        ColorSet(ColorSet_GreenOnly);
          
-        use Empty(weight = 0.0);
+        use Empty(weight = 0.25);
         use Crafting_Toolbox(weight = 1.0);
     }
 
     LootedObject("Prison_Toolbox_A_3")
     {
-        ColorSet(ColorSet_cs_crafting);
+        ColorSet(ColorSet_GreenOnly);
          
-        use Empty(weight = 0.0);
+        use Empty(weight = 0.5);
         use Crafting_Toolbox(weight = 1.0);
     }
 
     LootedObject("Prison_Toolbox_A_4")
     {
-        ColorSet(ColorSet_cs_crafting);
+        ColorSet(ColorSet_GreenOnly);
          
-        use Empty(weight = 0.0);
+        use Empty(weight = 0.75);
         use Crafting_Toolbox(weight = 1.0);
     }
 
     LootedObject("Prison_Toolbox_A_5")
     {
-        ColorSet(ColorSet_cs_crafting);
+        ColorSet(ColorSet_GreenOnly);
          
-        use Empty(weight = 0.0);
+        use Empty(weight = 1.0);
         use Crafting_Toolbox(weight = 1.0);
     }
 
     LootedObject("Prison_Toolbox_B_0")
     {
-        ColorSet(ColorSet_Prison_Crafting_Tier_0);
+        ColorSet(ColorSet_GreenOnly);
          
         use Empty(weight = 0.0);
         use Crafting_Toolbox(weight = 1.0);
@@ -231,39 +231,39 @@ sub Loot()
 
     LootedObject("Prison_Toolbox_B_1")
     {
-        ColorSet(ColorSet_Prison_Crafting_Tier_12);
+        ColorSet(ColorSet_GreenOnly);
          
-        use Empty(weight = 0.0);
+        use Empty(weight = 0.15);
         use Crafting_Toolbox(weight = 1.0);
     }
 
     LootedObject("Prison_Toolbox_B_2")
     {
-        ColorSet(ColorSet_Prison_Crafting_Tier_34);
+        ColorSet(ColorSet_GreenOnly);
          
-        use Empty(weight = 0.0);
+        use Empty(weight = 0.25);
         use Crafting_Toolbox(weight = 1.0);
     }
 
     LootedObject("Prison_Toolbox_B_3")
     {
-        ColorSet(ColorSet_Prison_Crafting_Tier_0);
+        ColorSet(ColorSet_GreenOnly);
          
-        use Empty(weight = 0.0);
+        use Empty(weight = 0.5);
         use Crafting_Toolbox(weight = 0.0);
     }
 
     LootedObject("Prison_Toolbox_B_4")
     {
-        ColorSet(ColorSet_Prison_Crafting_Tier_0);
+        ColorSet(ColorSet_GreenOnly);
          
-        use Empty(weight = 0.0);
+        use Empty(weight = 0.75);
         use Crafting_Toolbox(weight = 0.0);
     }
 
     LootedObject("Prison_Toolbox_B_5")
     {
-        ColorSet(ColorSet_Prison_Crafting_Tier_0);
+        ColorSet(ColorSet_GreenOnly);
          
         use Empty(weight = 1.0);
         use Crafting_Toolbox(weight = 0.0);
@@ -278,84 +278,84 @@ sub Loot()
 
     LootedObject("Prison_Powerups_0")
     {
-        ColorSet(ColorSet_Prison_Powerups_Tier_0);
+        ColorSet(ColorSet_GreenOnly);
         use Empty(weight = 0.0);
-        use Prison_Powerups(weight = 1.0);
+        use Crafting_MedBox(weight = 1.0);
     }
 
     LootedObject("Prison_Powerups_1")
     {
-        ColorSet(ColorSet_Prison_Powerups_Tier_12);
+        ColorSet(ColorSet_GreenOnly);
         use Empty(weight = 0.0);
-        use Prison_Powerups(weight = 1.0);
+        use Crafting_MedBox(weight = 1.0);
     }
 
     LootedObject("Prison_Powerups_2")
     {
-        ColorSet(ColorSet_Prison_Powerups_Tier_12);
+        ColorSet(ColorSet_GreenOnly);
         use Empty(weight = 0.0);
-        use Prison_Powerups(weight = 1.0);
+        use Crafting_MedBox(weight = 1.0);
     }
 
     LootedObject("Prison_Powerups_3")
     {
-        ColorSet(ColorSet_Prison_Powerups_Tier_34);
+        ColorSet(ColorSet_GreenOnly);
         use Empty(weight = 0.0);
-        use Prison_Powerups(weight = 1.0);
+        use Crafting_MedBox(weight = 1.0);
     }
 
     LootedObject("Prison_Powerups_4")
     {
-        ColorSet(ColorSet_Prison_Powerups_Tier_34);
+        ColorSet(ColorSet_GreenOnly);
         use Empty(weight = 0.0);
-        use Prison_Powerups(weight = 1.0);
+        use Crafting_MedBox(weight = 1.0);
     }
 
     LootedObject("Prison_Powerups_5")
     {
-        ColorSet(ColorSet_OrangeOnly);
-        use Empty(weight = 1.0);
-        use Prison_Powerups(weight = 0.0);
+        ColorSet(ColorSet_GreenOnly);
+        use Empty(weight = 0.0);
+        use Crafting_MedBox(weight = 1.0);
     }
 
     LootedObject("Prison_Steel_Locker_0")
     {
-        ColorSet(ColorSet_WeaponChest);
-        use Empty(weight = 0.0);
+        ColorSet(ColorSet_Prison_Crafting_Tier_0);
+        use Empty(weight = 0.5);
         use Prison_Crafting(weight = 1.0);
     }
 
     LootedObject("Prison_Steel_Locker_1")
     {
-        ColorSet(ColorSet_WeaponChest);
-        use Empty(weight = 1.0);
+        ColorSet(ColorSet_Prison_Crafting_Tier_12);
+        use Empty(weight = 0.5);
         use Prison_Crafting(weight = 1.0);
     }
 
     LootedObject("Prison_Steel_Locker_2")
     {
-        ColorSet(ColorSet_Default);
-        use Empty(weight = 1.0);
+        ColorSet(ColorSet_Prison_Crafting_Tier_12);
+        use Empty(weight = 0.5);
         use Prison_Crafting(weight = 1.0);
     }
 
     LootedObject("Prison_Steel_Locker_3")
     {
-        ColorSet(ColorSet_Default);
-        use Empty(weight = 1.0);
+        ColorSet(ColorSet_Prison_Crafting_Tier_34);
+        use Empty(weight = 0.5);
         use Prison_Crafting(weight = 1.0);
     }
 
     LootedObject("Prison_Steel_Locker_4")
     {
-        ColorSet(ColorSet_Default);
-        use Empty(weight = 1.0);
+        ColorSet(ColorSet_Prison_Crafting_Tier_34);
+        use Empty(weight = 0.75);
         use Prison_Crafting(weight = 1.0);
     }
 
     LootedObject("Prison_Steel_Locker_5")
     {
-        ColorSet(ColorSet_Default);
+        ColorSet(ColorSet_Prison_Crafting_Tier_34);
         use Empty(weight = 1.0);
         use Prison_Crafting(weight = 1.0);
     }
