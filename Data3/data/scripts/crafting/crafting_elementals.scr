@@ -395,7 +395,7 @@ sub main()
     {
         Level(2)
         {
-            DamageMul(0.15);
+            DamageMul(0.2);
             DamageCriticalMul(0.05);
             ProcProb(1.0);
             ConfusionProb(1.0);
@@ -414,7 +414,7 @@ sub main()
     {
         Level(3)
         {
-            DamageMul(0.2);
+            DamageMul(0.33);
             DamageCriticalMul(0.05);
             ProcProb(1.0);
             ConfusionProb(1.0);
@@ -433,7 +433,7 @@ sub main()
     {
         Level(4)
         {
-            DamageMul(0.4);
+            DamageMul(0.7);
             DamageCriticalMul(1.0);
             ProcProb(1.0);
             ConfusionProb(1.0);
@@ -531,7 +531,7 @@ sub main()
     {
         Level(1)
         {
-            DamageMul(0.1);
+            DamageMul(0.2);
             DamageCriticalMul(0.05);
             ProcProb(0.05);
             NightCreatureDmgMul(1.0);
@@ -548,7 +548,7 @@ sub main()
     {
         Level(2)
         {
-            DamageMul(0.15);
+            DamageMul(0.3);
             DamageCriticalMul(0.05);
             ProcProb(0.05);
             NightCreatureDmgMul(1.0);
@@ -565,7 +565,7 @@ sub main()
     {
         Level(3)
         {
-            DamageMul(0.2);
+            DamageMul(0.4);
             DamageCriticalMul(0.05);
             ProcProb(0.5);
             NightCreatureDmgMul(1.0);
@@ -582,7 +582,7 @@ sub main()
     {
         Level(4)
         {
-            DamageMul(0.4);
+            DamageMul(0.8);
             DamageCriticalMul(1.0);
             ProcProb(1.0);
             NightCreatureDmgMul(1.0);
@@ -615,7 +615,7 @@ sub main()
     {
         Level(1)
         {
-            DamageMul(0.1);
+            DamageMul(0.2);
             DamageCriticalMul(0.05);
             ProcProb(0.05);
             DamageDuration(3.0);
@@ -634,7 +634,7 @@ sub main()
     {
         Level(2)
         {
-            DamageMul(0.2);
+            DamageMul(0.35);
             DamageCriticalMul(0.05);
             ProcProb(0.05);
             DamageDuration(5.0);
@@ -653,7 +653,7 @@ sub main()
     {
         Level(3)
         {
-            DamageMul(0.3);
+            DamageMul(0.45);
             DamageCriticalMul(0.05);
             ProcProb(0.2);
             DamageDuration(8.0);
@@ -742,7 +742,7 @@ sub main()
     {
         Level(4)
         {
-            DamageMul(0.2);
+            DamageMul(0.5);
             DamageCriticalMul(0.05);
             ProcProb(0.30);
             DamageDuration(15.0);
@@ -756,7 +756,7 @@ sub main()
     {
         Level(1)
         {
-            DamageMul(0.1);
+            DamageMul(0.2);
             DamageCriticalMul(0.05);
             ProcProb(0.15);
             DamageDuration(6.0);
@@ -771,7 +771,7 @@ sub main()
     {
         Level(2)
         {
-            DamageMul(0.15);
+            DamageMul(0.3);
             DamageCriticalMul(0.05);
             ProcProb(0.20);
             DamageDuration(10.0);
@@ -786,7 +786,7 @@ sub main()
     {
         Level(3)
         {
-            DamageMul(0.25);
+            DamageMul(0.45);
             DamageCriticalMul(0.05);
             ProcProb(0.30);
             DamageDuration(16.0);
@@ -801,7 +801,7 @@ sub main()
     {
         Level(4)
         {
-            DamageMul(0.075);
+            DamageMul(1.0);
             DamageCriticalMul(0.05);
             ProcProb(1.0);
             DamageDuration(30.0);
@@ -816,7 +816,7 @@ sub main()
     {
         Level(1)
         {
-            DamageMul(0.1);
+            DamageMul(0.2);
             DamageCriticalMul(0.05);
             ProcProb(0.05);
             DamageDuration(4.0);
@@ -831,7 +831,7 @@ sub main()
     {
         Level(2)
         {
-            DamageMul(0.2);
+            DamageMul(0.3);
             DamageCriticalMul(0.02);
             ProcProb(1.0);
             DamageDuration(8.0);
@@ -846,7 +846,7 @@ sub main()
     {
         Level(3)
         {
-            DamageMul(0.25);
+            DamageMul(0.4);
             DamageCriticalMul(0.02);
             ProcProb(0.3);
             DamageDuration(10.0);
