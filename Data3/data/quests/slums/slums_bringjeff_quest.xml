@@ -1910,6 +1910,7 @@
                              name="GassedUp_ZB_Explosion"
                              pxsl_line="276" />
                     </SpecificLocation>
+                    <!--
                     <Path
                          pxsl_line="277">
                         <Phase
@@ -1933,6 +1934,7 @@
                             </AI>
                         </Phase>
                     </Path>
+                    -->
                     <Path
                          pxsl_line="280">
                         <Phase
@@ -2130,6 +2132,7 @@
                              pxsl_line="313" />
                     </Path>
                 </Phase>
+                <!--
                 <Phase
                      type="wait guard"
                      name="_"
@@ -2143,13 +2146,13 @@
                              pxsl_line="315" />
                     </SpecificLocation>
                 </Phase>
-                
+               -->
                 <Phase
                      type="enable"
                      name="_"
                      state="disabled"
                      pxsl_line="316">
-                     <!--
+                <!--
                     <Object
                          pxsl_line="317">
                         <QuestObject
@@ -2178,7 +2181,7 @@
                              name="GassedUp_QEG_Fire_Emitter"
                              pxsl_line="320" />
                     </Object>
-               -->
+                    -->
                     <Object
                          pxsl_line="321">
                         <QuestObject
@@ -2186,6 +2189,7 @@
                              name="GassedUp_QEG_Fire_FakeTarget"
                              pxsl_line="321" />
                     </Object>
+                    
                 </Phase>
                 <!--
                 <Phase
@@ -2268,6 +2272,7 @@
                              pxsl_line="330" />
                     </Object>
                 </Phase>
+                <!--
                 <Phase
                      type="wait guard"
                      name="_"
@@ -2338,6 +2343,7 @@
                              pxsl_line="338" />
                     </Object>
                 </Phase>
+           
                 <Phase
                      type="enable"
                      name="_"
@@ -2350,6 +2356,7 @@
                              name="GassedUp_SafeZone_Lamps::GassedUp_SafeZone_Lamps"
                              pxsl_line="340" />
                     </Object>
+                    
                     <Object
                          pxsl_line="341">
                         <QuestObject
@@ -2357,7 +2364,9 @@
                              name="GassedUp_Bomb_Explosion_Lethal"
                              pxsl_line="341" />
                     </Object>
+                    
                 </Phase>
+                
                 <Phase
                      type="AND"
                      name="_"
@@ -2457,6 +2466,7 @@
                      name="_"
                      time="1"
                      pxsl_line="356" />
+               -->
                 <Phase
                      type="set reward"
                      name="_"
@@ -2473,6 +2483,7 @@
                              pxsl_line="358" />
                     </Destination>
                 </Phase>
+           
             </Path>
         </Phase>
     </Quest>
