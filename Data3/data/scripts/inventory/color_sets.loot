@@ -479,55 +479,55 @@ sub DefineColorsNightmare()
     DefColorSet(ColorSet_Prison_Powerups_Tier_0)
     {
         ColorWeight(Color_White,    0);
-        ColorWeight(Color_Green,    1);
-        ColorWeight(Color_Blue,     6);
-        ColorWeight(Color_Violet,   0);
-        ColorWeight(Color_Orange,   3);
+        ColorWeight(Color_Green,    0);
+        ColorWeight(Color_Blue,     2);
+        ColorWeight(Color_Violet,   8);
+        ColorWeight(Color_Orange,   0);
     }
 
     DefColorSet(ColorSet_Prison_Powerups_Tier_12)
     {
-        ColorWeight(Color_White,    0);
-        ColorWeight(Color_Green,    6);
-        ColorWeight(Color_Blue,     4);
-        ColorWeight(Color_Violet,   0);
+        ColorWeight(Color_White,    2);
+        ColorWeight(Color_Green,    0);
+        ColorWeight(Color_Blue,     6);
+        ColorWeight(Color_Violet,   2);
         ColorWeight(Color_Orange,   0);
     }
 
     DefColorSet(ColorSet_Prison_Powerups_Tier_34)
     {
-        ColorWeight(Color_White,    0);
-        ColorWeight(Color_Green,    1);
-        ColorWeight(Color_Blue,     0);
+        ColorWeight(Color_White,    7);
+        ColorWeight(Color_Green,    0);
+        ColorWeight(Color_Blue,     3);
         ColorWeight(Color_Violet,   0);
         ColorWeight(Color_Orange,   0);
     }
 
     DefColorSet(ColorSet_Prison_Crafting_Tier_0)
     {
-        ColorWeight(Color_White,  1);
-        ColorWeight(Color_Green,  1);
-        ColorWeight(Color_Blue,   4);
-        ColorWeight(Color_Violet, 4);
-        ColorWeight(Color_Orange, 1);
+        ColorWeight(Color_White,  7);
+        ColorWeight(Color_Green,  10);
+        ColorWeight(Color_Blue,   1);
+        ColorWeight(Color_Violet, 2);
+        ColorWeight(Color_Orange, 0);
     }
 
     DefColorSet(ColorSet_Prison_Crafting_Tier_12)
     {
-        ColorWeight(Color_White,  1);
-        ColorWeight(Color_Green,  3);
-        ColorWeight(Color_Blue,   4);
-        ColorWeight(Color_Violet, 3);
-        ColorWeight(Color_Orange, 1);
+        ColorWeight(Color_White,  9);
+        ColorWeight(Color_Green,  10);
+        ColorWeight(Color_Blue,   1);
+        ColorWeight(Color_Violet, 0);
+        ColorWeight(Color_Orange, 0);
     }
 
     DefColorSet(ColorSet_Prison_Crafting_Tier_34)
     {
-        ColorWeight(Color_White, 50);
-        ColorWeight(Color_Green, 0);
-        ColorWeight(Color_Blue, 30);
-        ColorWeight(Color_Violet, 15);
-        ColorWeight(Color_Orange, 5);
+        ColorWeight(Color_White,  12);
+        ColorWeight(Color_Green,  8);
+        ColorWeight(Color_Blue,   0);
+        ColorWeight(Color_Violet, 0);
+        ColorWeight(Color_Orange, 0);
     }
 
     DefColorSet(ColorSet_Upgrades_Volatile_Iced)
@@ -954,55 +954,55 @@ DefColorSet(ColorSet_BTZ_Reward_Platinum)
     DefColorSet(ColorSet_Prison_Powerups_Tier_0)
     {
         ColorWeight(Color_White,    0);
-        ColorWeight(Color_Green,    1);
-        ColorWeight(Color_Blue,     6);
-        ColorWeight(Color_Violet,   0);
-        ColorWeight(Color_Orange,   3);
+        ColorWeight(Color_Green,    0);
+        ColorWeight(Color_Blue,     2);
+        ColorWeight(Color_Violet,   8);
+        ColorWeight(Color_Orange,   0);
     }
 
     DefColorSet(ColorSet_Prison_Powerups_Tier_12)
     {
-        ColorWeight(Color_White,    0);
-        ColorWeight(Color_Green,    6);
-        ColorWeight(Color_Blue,     4);
-        ColorWeight(Color_Violet,   0);
+        ColorWeight(Color_White,    2);
+        ColorWeight(Color_Green,    0);
+        ColorWeight(Color_Blue,     6);
+        ColorWeight(Color_Violet,   2);
         ColorWeight(Color_Orange,   0);
     }
 
     DefColorSet(ColorSet_Prison_Powerups_Tier_34)
     {
-        ColorWeight(Color_White,    0);
-        ColorWeight(Color_Green,    1);
-        ColorWeight(Color_Blue,     0);
+        ColorWeight(Color_White,    7);
+        ColorWeight(Color_Green,    0);
+        ColorWeight(Color_Blue,     3);
         ColorWeight(Color_Violet,   0);
         ColorWeight(Color_Orange,   0);
     }
 
     DefColorSet(ColorSet_Prison_Crafting_Tier_0)
     {
-        ColorWeight(Color_White,  1);
-        ColorWeight(Color_Green,  1);
-        ColorWeight(Color_Blue,   4);
-        ColorWeight(Color_Violet, 4);
-        ColorWeight(Color_Orange, 1);
+        ColorWeight(Color_White,  7);
+        ColorWeight(Color_Green,  10);
+        ColorWeight(Color_Blue,   1);
+        ColorWeight(Color_Violet, 2);
+        ColorWeight(Color_Orange, 0);
     }
 
     DefColorSet(ColorSet_Prison_Crafting_Tier_12)
     {
-        ColorWeight(Color_White,  1);
-        ColorWeight(Color_Green,  3);
-        ColorWeight(Color_Blue,   4);
-        ColorWeight(Color_Violet, 3);
-        ColorWeight(Color_Orange, 1);
+        ColorWeight(Color_White,  9);
+        ColorWeight(Color_Green,  10);
+        ColorWeight(Color_Blue,   1);
+        ColorWeight(Color_Violet, 0);
+        ColorWeight(Color_Orange, 0);
     }
 
     DefColorSet(ColorSet_Prison_Crafting_Tier_34)
     {
-        ColorWeight(Color_White, 50);
-        ColorWeight(Color_Green, 0);
-        ColorWeight(Color_Blue, 30);
-        ColorWeight(Color_Violet, 15);
-        ColorWeight(Color_Orange, 5);
+        ColorWeight(Color_White,  12);
+        ColorWeight(Color_Green,  8);
+        ColorWeight(Color_Blue,   0);
+        ColorWeight(Color_Violet, 0);
+        ColorWeight(Color_Orange, 0);
     }
 
     DefColorSet(ColorSet_Upgrades_Volatile_Iced)
@@ -1434,55 +1434,55 @@ DefColorSet(ColorSet_BTZ_Reward_Platinum)
     DefColorSet(ColorSet_Prison_Powerups_Tier_0)
     {
         ColorWeight(Color_White,    0);
-        ColorWeight(Color_Green,    1);
-        ColorWeight(Color_Blue,     6);
-        ColorWeight(Color_Violet,   0);
-        ColorWeight(Color_Orange,   3);
+        ColorWeight(Color_Green,    0);
+        ColorWeight(Color_Blue,     2);
+        ColorWeight(Color_Violet,   8);
+        ColorWeight(Color_Orange,   0);
     }
 
     DefColorSet(ColorSet_Prison_Powerups_Tier_12)
     {
-        ColorWeight(Color_White,    0);
-        ColorWeight(Color_Green,    6);
-        ColorWeight(Color_Blue,     4);
-        ColorWeight(Color_Violet,   0);
+        ColorWeight(Color_White,    2);
+        ColorWeight(Color_Green,    0);
+        ColorWeight(Color_Blue,     6);
+        ColorWeight(Color_Violet,   2);
         ColorWeight(Color_Orange,   0);
     }
 
     DefColorSet(ColorSet_Prison_Powerups_Tier_34)
     {
-        ColorWeight(Color_White,    0);
-        ColorWeight(Color_Green,    1);
-        ColorWeight(Color_Blue,     0);
+        ColorWeight(Color_White,    7);
+        ColorWeight(Color_Green,    0);
+        ColorWeight(Color_Blue,     3);
         ColorWeight(Color_Violet,   0);
         ColorWeight(Color_Orange,   0);
     }
 
     DefColorSet(ColorSet_Prison_Crafting_Tier_0)
     {
-        ColorWeight(Color_White,  1);
-        ColorWeight(Color_Green,  1);
-        ColorWeight(Color_Blue,   4);
-        ColorWeight(Color_Violet, 4);
-        ColorWeight(Color_Orange, 1);
+        ColorWeight(Color_White,  7);
+        ColorWeight(Color_Green,  10);
+        ColorWeight(Color_Blue,   1);
+        ColorWeight(Color_Violet, 2);
+        ColorWeight(Color_Orange, 0);
     }
 
     DefColorSet(ColorSet_Prison_Crafting_Tier_12)
     {
-        ColorWeight(Color_White,  1);
-        ColorWeight(Color_Green,  3);
-        ColorWeight(Color_Blue,   4);
-        ColorWeight(Color_Violet, 3);
-        ColorWeight(Color_Orange, 1);
+        ColorWeight(Color_White,  9);
+        ColorWeight(Color_Green,  10);
+        ColorWeight(Color_Blue,   1);
+        ColorWeight(Color_Violet, 0);
+        ColorWeight(Color_Orange, 0);
     }
 
     DefColorSet(ColorSet_Prison_Crafting_Tier_34)
     {
-        ColorWeight(Color_White, 50);
-        ColorWeight(Color_Green, 0);
-        ColorWeight(Color_Blue, 30);
-        ColorWeight(Color_Violet, 15);
-        ColorWeight(Color_Orange, 5);
+        ColorWeight(Color_White,  12);
+        ColorWeight(Color_Green,  8);
+        ColorWeight(Color_Blue,   0);
+        ColorWeight(Color_Violet, 0);
+        ColorWeight(Color_Orange, 0);
     }
     
     DefColorSet(ColorSet_Upgrades_Volatile_Iced)

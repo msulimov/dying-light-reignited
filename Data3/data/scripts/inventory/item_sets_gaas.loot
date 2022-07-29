@@ -25,23 +25,26 @@ export int Other = 9;
         {
             Item("Craft_MetalScrap", 1.0);
             Item("Craft_PlasticTube", 1.0);
-            Item("ZZZZ3_Component_NutsBolts", 1.0);
+            Item("Craft_TinCan", 1.0);
+            Item("ZZZZ3_Component_Rubber", 1.0);
+            
 			Item("Craft_Alcohol", 1.0);
             Item("Craft_Sugar", 1.0);
-            
+            Item("ZZZZ3_Component_NutsBolts", 1.0);
             Item("Craft_DuctTape", 1.0);
-            Item("Craft_Gauze", 1.0);
             Item("Craft_Insecticide", 1.0);
-			Item("ZZZZ3_Component_Rubber", 1.0);
             Item("Craft_String", 1.0);
-            
+            Item("ZZZZ3_Component_Wire", 1.0);
             Item("Craft_Bleach", 1.0);
 			Item("Craft_Nails", 1.0);
-			Item("ZZZZ3_Component_Wire", 1.0);
-            
-			Item("misc_pouch", 1.0);
+			
+            Item("Craft_Batteries", 1.0);
+            Item("Craft_PowerCable", 1.0);
+
+			Item("misc_pouch", 2.0);
             Item("ZZZZ3_Component_Synthetic", 1.0);
-            Item("Craft_Shroom", 1.0);
+            Item("Craft_Electronics", 1.0);
+            Item("Craft_Shroom", 2.0);
 			
 			//Item("ZZZZ3_Component_NutsBolts", 1.0);
 			//Item("Craft_RazorBlade", 1.0);
@@ -74,19 +77,23 @@ export int Other = 9;
     {
         Set(CraftPart, weight, prob)
         {
-            Item("Craft_Upgrade_Dam", 1.0);
+            Item("Craft_Upgrade_Dam", 1.0); // white
             Item("Craft_Upgrade_Dur", 1.0);
             Item("Craft_Upgrade_Bal", 1.0);
-            Item("Craft_Upgrade_DamDur", 1.0);
+
+            Item("Craft_Upgrade_DamDur", 1.0); // blue
             Item("Craft_Upgrade_DamBal", 1.0);
             Item("Craft_Upgrade_DurBal", 1.0);
-            Item("Craft_Upgrade_DamL2Dur", 1.0);
+
+            Item("Craft_Upgrade_DamL2Dur", 1.0); // violet
             Item("Craft_Upgrade_DamL2Bal", 1.0);
             Item("Craft_Upgrade_DurL2Bal", 1.0);
             Item("Craft_Upgrade_DurL2Dam", 1.0);
             Item("Craft_Upgrade_BalL2Dam", 1.0);
             Item("Craft_Upgrade_BalL2Dur", 1.0);
-            Item("Craft_Upgrade_DamL2DurL2BalL2", 1.0);
+
+            Item("Craft_Upgrade_DamL2DurL2BalL2", 1.0); // orange
+            Item("Craft_Upgrade_DamL2DurL2BalL2_Clicker", 1.0);
       
         }
     }

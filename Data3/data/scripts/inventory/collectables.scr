@@ -13,10 +13,10 @@ sub main()
         Price(42);
         Mesh("blueprint.msh");
         Skin("default");
-        RequiredItem("Craft_Alcohol", 3);
-        RequiredItem("Craft_Gauze", 3);
+        RequiredItem("Craft_Alcohol", 2);
+        RequiredItem("Craft_Gauze", 2);
         RequiredItem("Craft_String", 2);
-        RequiredItem("Craft_PlasticTube", 3);
+        RequiredItem("Craft_PlasticTube", 2);
         Color(Color_White);
         CraftedItem("Medkit_HealthPackLarge", 1, 2);
         CraftplanType("Top");
@@ -33,9 +33,9 @@ sub main()
         Price(42);
         Mesh("blueprint.msh");
         Skin("default");
-        RequiredItem("Craft_Lichen", 6);
-        RequiredItem("Craft_UnderwaterAlgae", 20);
-        RequiredItem("Craft_ToxicPlant", 10);
+        RequiredItem("Craft_Lichen", 3);
+        RequiredItem("Craft_UnderwaterAlgae", 10);
+        RequiredItem("Craft_ToxicPlant", 5);
         Color(Color_White);
         CraftedItem("Medkit_HealthPackLarge", 1, 2);
         CraftplanType("Top");
@@ -51,9 +51,9 @@ sub main()
         Price(40);
         Mesh("blueprint.msh");
         Skin("default");
-		RequiredItem("Craft_PlasticTube", 1);
-        RequiredItem("Craft_Bleach", 3);
-        RequiredItem("Craft_Sugar", 1);
+		RequiredItem("Craft_MetalScrap", 2);
+        RequiredItem("Craft_Bleach", 2);
+        RequiredItem("Craft_Sugar", 3);
 		RequiredItem("ZZZZ3_Component_Rubber", 2);
         Color(Color_Violet);
         CraftedItem("Throwable_Btz_Flare", 2, 3);
@@ -78,7 +78,6 @@ sub main()
         CraftplanType("Top");
         UniqueSaveID(104);
         HudIcon("blueprint_b");
-        //OwnedAtStart();
     }
 
     Item("Craftplan_Lockpick", CategoryType_Collectable)
@@ -90,6 +89,7 @@ sub main()
         Mesh("blueprint.msh");
         Skin("default");
         RequiredItem("Craft_MetalScrap", 7);
+        RequiredItem("Craft_PlasticTube", 4);
 		RequiredItem("ZZZZ3_Component_Rubber", 4);
         RequiredItem("Craft_Nails", 5);
         RequiredItem("Craft_DuctTape", 5);
@@ -117,7 +117,6 @@ sub main()
         UniqueSaveID(3038);
         HudIcon("blueprint_b");
         //GameVersion(8);
-		//OwnedAtStart();
     }
 	
 	 Item("Craftplan_Molotov", CategoryType_Collectable)
@@ -130,8 +129,9 @@ sub main()
         Skin("default");
         RequiredItem("Craft_Alcohol", 6);
 		RequiredItem("Craft_Insecticide", 2);
-		RequiredItem("ZZZZ3_Component_Rubber", 2);
+		RequiredItem("ZZZZ3_Component_Rubber", 3);
         RequiredItem("Craft_String", 3);
+        RequiredItem("Craft_MetalScrap", 1);
         Elemental(Elemental_Burning, 2);
         Color(Color_Green);
         CraftedItem("Throwable_Molotov", 3, 6);
@@ -162,6 +162,8 @@ sub main()
         //GameVersion(8);
     }
 
+
+
 	Item("Craftplan_FireCrackers", CategoryType_Collectable)
     {
         Name("&Craftplan_FireCrackers_N&");
@@ -172,10 +174,10 @@ sub main()
         Skin("default");
 
         RequiredItem("Craft_TinCan", 2);						 
-        RequiredItem("Craft_Bleach", 2);
-		RequiredItem("Craft_Alcohol", 2);
         RequiredItem("Craft_Sugar", 1);
 		RequiredItem("Craft_Insecticide", 1);
+        RequiredItem("Craft_Bleach", 1);
+        RequiredItem("Craft_PlasticTube", 2);
 
         ExplosionFx("firecrackers_sequence.fx");
         Color(Color_White);
@@ -183,8 +185,151 @@ sub main()
         CraftplanType("Top");
         UniqueSaveID(3);
         HudIcon("blueprint_b");
-		//OwnedAtStart();
     }
+
+    Item("Craftplan_Bomb", CategoryType_Collectable)
+    {
+        Name("&Craftplan_Bomb_N&");
+        Description('&Craftplan_Bomb_D&');
+        ItemType(ItemType_CraftPlan);
+        Price(40);
+        Mesh("blueprint.msh");
+        Skin("default");
+
+        RequiredItem("Craft_TinCan", 3);
+        RequiredItem("Craft_PlasticTube", 2);
+        RequiredItem("ZZZZ3_Component_Rubber", 2);
+        RequiredItem("Craft_String", 3);
+        RequiredItem("Craft_Insecticide", 2);
+        RequiredItem("Craft_Bleach", 3);
+        RequiredItem("Craft_Sugar", 2);
+
+        Elemental(Elemental_Explosive, 1);
+        Color(Color_Green);
+        CraftedItem("Throwable_ExplosiveGrenade", 3, 6);
+        CraftplanType("Weapon");
+        UniqueSaveID(7);
+        HudIcon("blueprint_b");
+    }
+    Item("Craftplan_BombFireCrackers", CategoryType_Collectable)
+    {
+        Name("&Craftplan_BombFireCrackers_N&");
+        Description('&Craftplan_BombFireCrackers_D&');
+        ItemType(ItemType_CraftPlan);
+        Price(41);
+        Mesh("blueprint.msh");
+        Skin("default");
+
+        RequiredItem("Throwable_ExplosiveGrenade", 6);
+        RequiredItem("Throwable_Decoy", 6);
+        RequiredItem("Craft_DuctTape", 2);
+
+        Elemental(Elemental_Explosive, 1);
+        Color(Color_Blue);
+        CraftedItem("Throwable_ExplosiveDecoy", 3, 6);
+        CraftplanType("Weapon");
+        UniqueSaveID(57);
+        HudIcon("blueprint_b");
+    }
+
+
+    Item("Craftplan_PoisonBomb", CategoryType_Collectable)
+    {
+        Name("&Craftplan_PoisonBomb_N&");
+        Description('&Craftplan_PoisonBomb_D&');
+        ItemType(ItemType_CraftPlan);
+        Price(41);
+        Mesh("blueprint.msh");
+        Skin("default");
+
+        RequiredItem("Craft_TinCan", 3);
+        RequiredItem("Craft_PlasticTube", 2);
+        RequiredItem("ZZZZ3_Component_Rubber", 2);
+        RequiredItem("Craft_String", 3);
+        RequiredItem("Craft_Lichen", 2);
+        RequiredItem("Craft_ToxicPlant", 6);
+        RequiredItem("Craft_Insecticide", 2);
+        
+        Elemental(Elemental_Poison, 4);
+        Color(Color_Blue);
+        CraftedItem("Throwable_PoisonGrenade", 3, 6);
+        CraftplanType("Weapon");
+        UniqueSaveID(55);
+        HudIcon("blueprint_b");
+    }
+    Item("Craftplan_PoisonFireCrackers", CategoryType_Collectable)
+    {
+        Name("&Craftplan_PoisonFireCrackers_N&");
+        Description('&Craftplan_PoisonFireCrackers_D&');
+        ItemType(ItemType_CraftPlan);
+        Price(41);
+        Mesh("blueprint.msh");
+        Skin("default");
+   
+        RequiredItem("Craftplan_PoisonBomb", 6);
+        RequiredItem("Throwable_Decoy", 6);
+        RequiredItem("Craft_DuctTape", 2);
+        
+        Elemental(Elemental_Poison, 4);
+        Color(Color_Blue);
+        CraftedItem("Throwable_DecoyPoison", 2, 6);
+        CraftplanType("Weapon");
+        UniqueSaveID(56);
+        HudIcon("blueprint_b");
+    }
+
+
+    Item("Craftplan_NailBomb", CategoryType_Collectable)
+    {
+        Name("&Craftplan_NailBomb_N&");
+        Description('&Craftplan_NailBomb_D&');
+        ItemType(ItemType_CraftPlan);
+        Price(40);
+        Mesh("blueprint.msh");
+        Skin("default");
+        
+        RequiredItem("Craft_TinCan", 3);
+        RequiredItem("Craft_Nails", 5);
+        RequiredItem("MetalScrap", 2);
+        RequiredItem("Craft_String", 3);
+        RequiredItem("Craft_Insecticide", 2);
+        RequiredItem("Craft_Bleach", 3);
+        RequiredItem("Craft_Sugar", 2);
+        
+        Elemental(Elemental_Bleeding, 4);
+        Color(Color_Green);
+        CraftedItem("Throwable_BleedingGrenade", 3, 6);
+        CraftplanType("Weapon");
+        UniqueSaveID(8);
+        HudIcon("blueprint_b");
+        //OwnedAtStart();
+    }
+    Item("Craftplan_NailsFireCrackers", CategoryType_Collectable)
+    {
+        Name("&Craftplan_NailsFireCrackers_N&");
+        Description('&Craftplan_NailsFireCrackers_D&');
+        ItemType(ItemType_CraftPlan);
+        Price(41);
+        Mesh("blueprint.msh");
+        Skin("default");
+
+        RequiredItem("Craftplan_PoisonBomb", 6);
+        RequiredItem("Throwable_BleedingGrenade", 6);
+        RequiredItem("Craft_DuctTape", 2);
+        
+        Elemental(Elemental_Bleeding, 4);
+        Color(Color_Blue);
+        CraftedItem("Throwable_BleedingDecoy", 3, 6);
+        CraftplanType("Weapon");
+        UniqueSaveID(58);
+        HudIcon("blueprint_b");
+        //OwnedAtStart();
+    }
+    
+    
+
+    
+
 
 	Item("Craftplan_Shield", CategoryType_Collectable)
     {
@@ -208,9 +353,7 @@ sub main()
         CraftplanType("Weapon10in12");
         UniqueSaveID(94);
         HudIcon("Riot_Shield");
-		//OwnedAtStart();
     }
-
 	Item("Craftplan_ImpactShield", CategoryType_Collectable)
     {
 	
@@ -222,10 +365,7 @@ sub main()
         Mesh("blueprint.msh");
         Skin("default");
 		BaseItem("Shield_Pro", "", "");
-		//BaseItem("Shield_Pro_Gold", "", "");
-		//BaseItem("CHV_Shield_Pro_A", "", "");
-		//BaseItem("CHV_Shield_Pro_M", "", "");
-		
+
         RequiredItem("Craft_Batteries", 2);
 		RequiredItem("Craft_Electronics", 1);
 		
@@ -234,11 +374,8 @@ sub main()
 		Elemental(Elemental_ImpactElectricity, 3);
         CraftplanType("Weapon10in12");
         UniqueSaveID(19);
-        HudIcon("Riot_Shield");
-		//OwnedAtStart();
-		
+        HudIcon("Riot_Shield");	
     }
-
 	Item("Craftplan_ElectricShield", CategoryType_Collectable)
     {
         Name("&Craftplan_ElectricShield_N&");
@@ -249,10 +386,7 @@ sub main()
         Skin("default");
 		
 		BaseItem("Shield_Pro", "", "");
-		//BaseItem("Shield_Pro_Gold", "", "");
-		//BaseItem("CHV_Shield_Pro_A", "", "");
-		//BaseItem("CHV_Shield_Pro_M", "", "");
-		
+
         RequiredItem("Craft_PowerCable", 2);
         RequiredItem("Craft_Electronics", 1);
 		
@@ -262,11 +396,7 @@ sub main()
         CraftplanType("Weapon10in12");
         UniqueSaveID(89);
         HudIcon("Riot_Shield");
-		//OwnedAtStart();
     }
-
-    
-	
 	Item("Craftplan_FreezeShield", CategoryType_Collectable)
     {
         Name("&Craftplan_FreezeShield_N&");
@@ -286,11 +416,10 @@ sub main()
         CraftplanType("Weapon10in12");
         UniqueSaveID(90);
         HudIcon("Riot_Shield");
-		//OwnedAtStart();
-		
     }
 	
 	
+
 	Item("Craftplan_PoisonMelee", CategoryType_Collectable)
     {
         Name("&Craftplan_PoisonMelee_N&");
@@ -301,14 +430,16 @@ sub main()
         Skin("default");
         BaseItem("Melee_", "", "");
         
-		RequiredItem("Craft_MetalScrap", 8);
-        RequiredItem("Craft_PrimeTissue", 1);
-        RequiredItem("Craft_Gauze", 5);
+		RequiredItem("Craft_MetalScrap", 6);
+        RequiredItem("ZZZZ3_Component_NutsBolts", 4);
+        RequiredItem("Craft_PrimeTissue", 2);
         RequiredItem("Craft_Lichen", 10);
-        RequiredItem("Craft_Electronics", 2);
-        RequiredItem("Craft_Batteries", 2);
-        RequiredItem("Craft_PowerCable", 2);
         RequiredItem("Craft_ToxicPlant", 15);
+
+        RequiredItem("Craft_RazorBlade", 1);
+        RequiredItem("Craft_Batteries", 1);
+        RequiredItem("Craft_PowerCable", 1);
+        RequiredItem("Craft_Electronics", 1);
 		
         NamePrefix("&ModifiedItemName&");
         Elemental(Elemental_Poison, 3);
@@ -316,7 +447,7 @@ sub main()
         CraftplanType("WeaponDLC");
         UniqueSaveID(12);
         HudIcon("blueprint_b");
-		//OwnedAtStart();
+		OwnedAtStart();
     }
 
     Item("Craftplan_BleedMelee", CategoryType_Collectable)
@@ -329,12 +460,13 @@ sub main()
         Skin("default");
         BaseItem("Melee_", "", "");
         
-		RequiredItem("Craft_MetalScrap", 8);
-		RequiredItem("Craft_RazorBlade", 6);
+		RequiredItem("Craft_MetalScrap", 7);
         RequiredItem("ZZZZ3_Component_NutsBolts", 10);
-        RequiredItem("Craft_Electronics", 3);
-        RequiredItem("Craft_Batteries", 2);
-		RequiredItem("Craft_PowerCable", 2);
+        RequiredItem("Craft_Nails", 8);
+        RequiredItem("Craft_DuctTape", 6);
+        RequiredItem("ZZZZ3_Component_SteelTubing", 5);
+
+        RequiredItem("Craft_RazorBlade", 4);
 		
         NamePrefix("&ModifiedItemName&");
         Elemental(Elemental_Bleeding, 3);
@@ -342,7 +474,7 @@ sub main()
         CraftplanType("WeaponDLC");
         UniqueSaveID(13);
         HudIcon("blueprint_b");
-		//OwnedAtStart();
+		OwnedAtStart();
     }
 
     Item("Craftplan_ElectricMelee", CategoryType_Collectable)
@@ -355,13 +487,15 @@ sub main()
         Skin("default");
         BaseItem("Melee_", "", "");
 		
-        RequiredItem("Craft_MetalScrap", 8);
-        RequiredItem("Craft_DuctTape", 8);
-        RequiredItem("ZZZZ3_Component_Rubber", 6);
-        RequiredItem("Craft_Electronics", 5);
-        RequiredItem("Craft_Batteries", 5);
-        RequiredItem("Craft_PowerCable", 4);
+        RequiredItem("Craft_MetalScrap", 6);
+        RequiredItem("ZZZZ3_Component_NutsBolts", 4);
         RequiredItem("ZZZZ3_Component_Wire", 8);
+        RequiredItem("ZZZZ3_Component_Rubber", 6);
+
+        RequiredItem("Craft_RazorBlade", 1);
+        RequiredItem("Craft_Batteries", 3);
+        RequiredItem("Craft_PowerCable", 2);
+        RequiredItem("Craft_Electronics", 2);
 		
         NamePrefix("&ModifiedItemName&");
         Elemental(Elemental_ShockElectricity, 3);
@@ -369,7 +503,7 @@ sub main()
         CraftplanType("WeaponDLC");
         UniqueSaveID(14);
         HudIcon("blueprint_b");
-		//OwnedAtStart();
+		OwnedAtStart();
     }
 
     Item("Craftplan_BurnMelee", CategoryType_Collectable)
@@ -382,13 +516,16 @@ sub main()
         Skin("default");
         BaseItem("Melee_", "", "");
 		
-        RequiredItem("Craft_MetalScrap", 8);
-        RequiredItem("Craft_String", 5);
-        RequiredItem("Craft_Insecticide", 10);
-        RequiredItem("Craft_Electronics", 6);
-        RequiredItem("Craft_Batteries", 5);
-		RequiredItem("Craft_PowerCable", 5);
-		RequiredItem("Craft_Alcohol", 15);
+        RequiredItem("Craft_MetalScrap", 6);
+        RequiredItem("ZZZZ3_Component_NutsBolts", 4);
+        RequiredItem("Craft_String", 4);
+        RequiredItem("Craft_Insecticide", 4);
+        RequiredItem("Craft_Alcohol", 8);
+
+        RequiredItem("Craft_RazorBlade", 1);
+        RequiredItem("Craft_Batteries", 2);
+        RequiredItem("Craft_PowerCable", 2);
+        RequiredItem("Craft_Electronics", 3);
 		
         NamePrefix("&ModifiedItemName&");
         Elemental(Elemental_Burning, 3);
@@ -396,7 +533,7 @@ sub main()
         CraftplanType("WeaponDLC");
         UniqueSaveID(15);
         HudIcon("blueprint_b");
-		//OwnedAtStart();
+		OwnedAtStart();
     }
 
     Item("Craftplan_BlastMelee", CategoryType_Collectable)
@@ -409,13 +546,15 @@ sub main()
         Skin("default");
         BaseItem("Melee_", "", "");
         
-		RequiredItem("Craft_MetalScrap", 8);
-        RequiredItem("Craft_TinCan", 7);
-        RequiredItem("Craft_Insecticide", 5);
-        RequiredItem("Craft_Bleach", 5);
-        RequiredItem("Craft_Electronics", 4);
-        RequiredItem("Craft_Batteries", 4);
-        RequiredItem("Craft_PowerCable", 3);
+		RequiredItem("Craft_MetalScrap", 6);
+        RequiredItem("ZZZZ3_Component_NutsBolts", 4);
+        RequiredItem("Craft_Insecticide", 6);
+        RequiredItem("Craft_Bleach", 6);
+        RequiredItem("Craft_Sugar", 6);
+
+        RequiredItem("Craft_Batteries", 2);
+        RequiredItem("Craft_PowerCable", 2);
+        RequiredItem("Craft_Electronics", 1);
 		
         NamePrefix("&ModifiedItemName&");
         Elemental(Elemental_ImpactElectricity, 3);
@@ -423,7 +562,7 @@ sub main()
         CraftplanType("WeaponDLC");
         UniqueSaveID(16);
         HudIcon("blueprint_b");
-		//OwnedAtStart();
+		OwnedAtStart();
     }
 
 	Item("Craftplan_KurtBomb", CategoryType_Collectable)
@@ -448,6 +587,8 @@ sub main()
         UniqueSaveID(102);
         HudIcon("blueprint_b");
     }
+
+
 	
     Item("Craftplan_FreezeBomb", CategoryType_Collectable)
     {
@@ -474,148 +615,7 @@ sub main()
 		//OwnedAtStart();
     }
 
-    Item("Craftplan_PoisonBomb", CategoryType_Collectable)
-    {
-        Name("&Craftplan_PoisonBomb_N&");
-        Description('&Craftplan_PoisonBomb_D&');
-        ItemType(ItemType_CraftPlan);
-        Price(41);
-        Mesh("blueprint.msh");
-        Skin("default");
-        RequiredItem("Craft_TinCan", 2);
-        RequiredItem("Craft_Bleach", 2);
-        RequiredItem("Craft_PlasticTube", 3);
-		RequiredItem("Craft_UnderwaterAlgae", 6);
-        RequiredItem("Craft_Lichen", 3);
-        RequiredItem("Craft_ToxicPlant", 5);
-		
-        Elemental(Elemental_Poison, 4);
-        Color(Color_Blue);
-        CraftedItem("Throwable_PoisonGrenade", 3, 6);
-        CraftplanType("Weapon");
-        UniqueSaveID(55);
-        HudIcon("blueprint_b");
-    }
-
-    Item("Craftplan_PoisonFireCrackers", CategoryType_Collectable)
-    {
-        Name("&Craftplan_PoisonFireCrackers_N&");
-        Description('&Craftplan_PoisonFireCrackers_D&');
-        ItemType(ItemType_CraftPlan);
-        Price(41);
-        Mesh("blueprint.msh");
-        Skin("default");
-   
-        RequiredItem("Craft_TinCan", 3);
-        RequiredItem("Craft_Bleach", 3);
-		RequiredItem("Craft_UnderwaterAlgae", 6);
-        RequiredItem("Craft_Lichen", 4);
-        RequiredItem("Craft_ToxicPlant", 6);
-		
-        Elemental(Elemental_Poison, 4);
-        Color(Color_Blue);
-        CraftedItem("Throwable_DecoyPoison", 2, 3);
-        CraftplanType("Weapon");
-        UniqueSaveID(56);
-        HudIcon("blueprint_b");
-    }
-
-    Item("Craftplan_BombFireCrackers", CategoryType_Collectable)
-    {
-        Name("&Craftplan_BombFireCrackers_N&");
-        Description('&Craftplan_BombFireCrackers_D&');
-        ItemType(ItemType_CraftPlan);
-        Price(41);
-        Mesh("blueprint.msh");
-        Skin("default");
-		RequiredItem("Craft_Insecticide", 2);
-        RequiredItem("Craft_Bleach", 3);
-        RequiredItem("Craft_TinCan", 2);
-		RequiredItem("Craft_DuctTape", 2);
-        RequiredItem("Craft_PlasticTube", 2);
-
-        Elemental(Elemental_Explosive, 1);
-        Color(Color_Blue);
-        CraftedItem("Throwable_ExplosiveDecoy", 3, 6);
-        CraftplanType("Weapon");
-        UniqueSaveID(57);
-        HudIcon("blueprint_b");
-		//OwnedAtStart();
-    }
-
-    Item("Craftplan_NailsFireCrackers", CategoryType_Collectable)
-    {
-        Name("&Craftplan_NailsFireCrackers_N&");
-        Description('&Craftplan_NailsFireCrackers_D&');
-        ItemType(ItemType_CraftPlan);
-        Price(41);
-        Mesh("blueprint.msh");
-        Skin("default");
-
-        RequiredItem("Craft_PlasticTube", 2);								
-		RequiredItem("Craft_Nails", 3);
-        RequiredItem("Craft_MetalScrap", 2);
-        RequiredItem("Craft_Bleach", 3);
-        RequiredItem("Craft_Insecticide", 2);
-		RequiredItem("Craft_TinCan", 2);
-		
-        Elemental(Elemental_Bleeding, 4);
-        Color(Color_Blue);
-        CraftedItem("Throwable_BleedingDecoy", 2, 3);
-        CraftplanType("Weapon");
-        UniqueSaveID(58);
-        HudIcon("blueprint_b");
-		//OwnedAtStart();
-    }
     
-    Item("Craftplan_Bomb", CategoryType_Collectable)
-    {
-        Name("&Craftplan_Bomb_N&");
-        Description('&Craftplan_Bomb_D&');
-        ItemType(ItemType_CraftPlan);
-        Price(40);
-        Mesh("blueprint.msh");
-        Skin("default");
-
-        RequiredItem("Craft_Insecticide", 2);
-        RequiredItem("Craft_Bleach", 3);
-        RequiredItem("Craft_TinCan", 3);
-		RequiredItem("Craft_DuctTape", 2);
-        RequiredItem("Craft_PlasticTube", 2);
-
-        Elemental(Elemental_Explosive, 1);
-        Color(Color_Green);
-        CraftedItem("Throwable_ExplosiveGrenade", 3, 6);
-        CraftplanType("Weapon");
-        UniqueSaveID(7);
-        HudIcon("blueprint_b");
-		//OwnedAtStart();
-    }
-
-    Item("Craftplan_NailBomb", CategoryType_Collectable)
-    {
-        Name("&Craftplan_NailBomb_N&");
-        Description('&Craftplan_NailBomb_D&');
-        ItemType(ItemType_CraftPlan);
-        Price(40);
-        Mesh("blueprint.msh");
-        Skin("default");
-		
-        RequiredItem("Craft_PlasticTube", 3);									
-		RequiredItem("Craft_Nails", 3);
-        RequiredItem("Craft_MetalScrap", 2);
-        RequiredItem("Craft_Bleach", 3);
-        RequiredItem("Craft_Insecticide", 2);
-		RequiredItem("Craft_TinCan", 3);
-		
-        Elemental(Elemental_Bleeding, 4);
-        Color(Color_Green);
-        CraftedItem("Throwable_BleedingGrenade", 2, 3);
-        CraftplanType("Weapon");
-        UniqueSaveID(8);
-        HudIcon("blueprint_b");
-		//OwnedAtStart();
-    }
 
     Item("Craftplan_Shuriken", CategoryType_Collectable)
     {
@@ -625,10 +625,8 @@ sub main()
         Price(40);
         Mesh("blueprint.msh");
         Skin("default");
-        RequiredItem("Craft_MetalScrap", 2);
+        RequiredItem("Craft_RazorBlade", 1);
         RequiredItem("Craft_String", 2);
-        RequiredItem("Craft_Nails", 3);
-        RequiredItem("Craft_DuctTape", 2);
         
         Elemental(Elemental_Poison, 3);
         Color(Color_White);
@@ -647,10 +645,8 @@ sub main()
         Mesh("blueprint.msh");
         Skin("default");
 		
-        RequiredItem("Craft_MetalScrap", 2);
-        RequiredItem("Craft_String", 1);
-        RequiredItem("Craft_Nails", 2);
-        RequiredItem("Craft_DuctTape", 2);
+        RequiredItem("Craft_RazorBlade", 1);
+        RequiredItem("Craft_String", 2);
 		
         RequiredItem("Craft_Alcohol", 2);
         RequiredItem("Craft_Insecticide", 1);
@@ -675,10 +671,8 @@ sub main()
         Skin("default");
         RequiredItem("Throwable_ShurikenBGen", 12);
 
-        RequiredItem("Craft_MetalScrap", 2);
+        RequiredItem("Craft_RazorBlade", 1);
         RequiredItem("Craft_String", 2);
-        RequiredItem("Craft_Nails", 2);
-        RequiredItem("Craft_DuctTape", 2);
 		
         RequiredItem("Craft_Insecticide", 1);
         RequiredItem("Craft_Bleach", 1);
@@ -704,13 +698,10 @@ sub main()
         Skin("default");
         RequiredItem("Throwable_ShurikenBGen", 12);
 
-        RequiredItem("Craft_MetalScrap", 2);
+        RequiredItem("Craft_RazorBlade", 1);
         RequiredItem("Craft_String", 2);
-        RequiredItem("Craft_Nails", 2);
-        RequiredItem("Craft_DuctTape", 2);
         
-        RequiredItem("Craft_Shroom", 2);
-        RequiredItem("ZZZZ3_Component_Wire", 1);
+        RequiredItem("Craft_Shroom", 1);
         RequiredItem("Craft_Bleach", 2);
 		
         Elemental(Elemental_Freezing, 2);
@@ -1029,9 +1020,8 @@ sub main()
         Mesh("blueprint.msh");
         Skin("default");
         RequiredItem("Craft_Lichen", 3);
-        RequiredItem("Craft_UnderwaterAlgae", 6);
-        RequiredItem("Craft_ToxicPlant", 6);
-        RequiredItem("Craft_DuctTape", 3);
+        RequiredItem("Craft_UnderwaterAlgae", 10);
+        RequiredItem("Craft_ToxicPlant", 5);
         Color(Color_Green);
         CraftedItem("Medkit_HealthPackLarge", 2, 2);
         CraftplanType("Top");

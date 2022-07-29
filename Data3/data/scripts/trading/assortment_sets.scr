@@ -1180,6 +1180,7 @@ sub Ammo(){
     Set("Pistol_Ammo",              "whites_only",   2, 3)
     {
         MinStatusLevel(9);
+        PriceMod(2.0);
         Cycle("Hour", 12);
 		Limited(3);
 		//ExcludeInDifficultyMode("Hard");
@@ -1189,6 +1190,7 @@ sub Ammo(){
     {
         MinStatusLevel(9);
 		Cycle("Hour", 12);
+        PriceMod(2.0);
         Limited(3);
 		//ExcludeInDifficultyMode("Hard");
     }
@@ -1197,6 +1199,7 @@ sub Ammo(){
     {
         MinStatusLevel(9);
 		Cycle("Hour", 12);
+        PriceMod(2.0);
         Limited(3);
 		//ExcludeInDifficultyMode("Hard");
     }
@@ -1204,6 +1207,7 @@ sub Ammo(){
     {
         MinStatusLevel(9);
 		Cycle("Hour", 12);
+        PriceMod(2.0);
         Limited(3);
 		//ExcludeInDifficultyMode("Hard");
     }
@@ -1241,7 +1245,7 @@ sub AmmoFollowing(){
 }
 
 sub Healing_Items(){
-    Set("Medkits",                              "shop_crafting_materials",              2, 5)            
+    Set("Medkits",                              "highway_components",              4, 6)            
         {
             MinStatusLevel(1);
 			Limited(1);
@@ -1259,12 +1263,21 @@ sub Miscellaneous(){
         }
 }
 
-sub Crafting_Materials(){
-    Set("Common_Craftparts",                    "shop_crafting_materials", 5, 8)
+sub Trash_Materials(){
+    Set("Trash_Materials",                    "whites_only", 4, 4)
         {
             MinStatusLevel(1);
-            PriceMod(1.25);
-            Limited(3);
+            PriceMod(4.0);
+            Limited(6);
+            //ExcludeInDifficultyMode("Hard");
+        }
+}
+sub Crafting_Materials(){
+    Set("Common_Craftparts",                    "green_only", 8, 8)
+        {
+            MinStatusLevel(1);
+            PriceMod(3.0);
+            Limited(4);
 			//ExcludeInDifficultyMode("Hard");
         }
 }

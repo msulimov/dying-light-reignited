@@ -16,17 +16,20 @@ sub extraDLCRecipes(){
         Price(68);
         Mesh("blueprint.msh");
         Skin("default");
+
         BaseItem("Melee_ShortSword", "", "");
         BaseItem("Melee_LongSword", "", "");
         BaseItem("Melee_Khopesh", "", "");
         BaseItem("Melee_Machete", "", "");
         BaseItem("Melee_Handsaw", "", "");
         BaseItem("Melee_Scythe", "", "");
+
         RequiredItem("Craft_MetalScrap", 8);
+        RequiredItem("Craft_Shroom", 4);
 		RequiredItem("Craft_Electronics", 2);
 		RequiredItem("Craft_Batteries", 1);
-		RequiredItem("Craft_PowerCable", 1);
-		RequiredItem("Craft_Shroom", 8);
+		RequiredItem("Craft_PowerCable", 2);
+
         Color(Color_Blue);
         CraftedItem("Melee_Sword_Space_Commando1", 1, 1);
         CraftplanType("CarUpgrade");
@@ -141,6 +144,7 @@ sub extraDLCRecipes(){
         Price(40);
         Mesh("blueprint.msh");
         Skin("default");
+
 		BaseItem("Firearm_Pistol", "", "");
 
         RequiredItem("Craft_MetalScrap", 20);
@@ -470,8 +474,8 @@ sub extraDLCRecipes(){
 
         RequiredItem("Craft_MetalScrap", 8);
         RequiredItem("Craft_Alcohol", 10);
-        RequiredItem("Craft_Nails", 4);
-        RequiredItem("Craft_RazorBlade", 1);
+        RequiredItem("Craft_Insecticide", 8);
+        RequiredItem("Craft_RazorBlade", 2);
 
 		InheritBaseStats();
         Color(Color_Blue);
@@ -588,6 +592,7 @@ sub extraDLCRecipes(){
         Price(40);
         Mesh("blueprint.msh");
         Skin("default");
+
 		RequiredItem("ZZZZ3_Crossbow", 1);
 		RequiredItem("Craft_MetalScrap", 15);
         RequiredItem("Craft_DuctTape", 6);
@@ -596,6 +601,7 @@ sub extraDLCRecipes(){
 		RequiredItem("Craft_Electronics", 6);
 		RequiredItem("Craft_Batteries", 6);
 		RequiredItem("Craft_PowerCable", 5);
+
         Color(Color_Orange);
         CraftedItem("Crossbow_SHU1", 1, 1);
         CraftplanType("CarUpgrade");
@@ -700,6 +706,7 @@ sub extraDLCRecipes(){
         Price(40);
         Mesh("blueprint.msh");
         Skin("default");
+
         RequiredItem("ZZZZ_Bow_Composite", 1);
         RequiredItem("Craft_MetalScrap", 10);
         RequiredItem("Craft_Nails", 5);
@@ -710,6 +717,7 @@ sub extraDLCRecipes(){
         RequiredItem("Craft_Electronics", 5);
         RequiredItem("Craft_Batteries", 4);
         RequiredItem("Craft_PowerCable", 2);
+
         Color(Color_Platinum);
         CraftedItem("ZZZZ_Bow_Composite_Lunar", 1, 1);
         CraftplanType("CarUpgrade");
@@ -741,15 +749,19 @@ sub extraDLCRecipes(){
         Price(40);
         Mesh("blueprint.msh");
         Skin("default");
+
 		BaseItem("Melee_Machete", "", "");
 		BaseItem("Melee_TahirsWeapon", "", "");
         BaseItem("Melee_RaisMachete", "", "");
 		BaseItem("Melee_Knife", "", "");
 		BaseItem("Melee_ShortSword", "", "");
+
         RequiredItem("Craft_MetalScrap", 5);
-        RequiredItem("Craft_Electronics", 1);
+        RequiredItem("Craft_Shroom", 4);
+        RequiredItem("Craft_Electronics", 2);
         RequiredItem("Craft_Batteries", 2);
 		RequiredItem("Craft_PowerCable", 1);
+
 		InheritBaseStats();
         Color(Color_Violet);
         CraftedItem("Melee_Machete_Retro1", 1, 1);
@@ -866,12 +878,15 @@ sub extraDLCRecipes(){
         Price(40);
         Mesh("blueprint.msh");
         Skin("default");
+
         BaseItem("Firearm_Rifle", "", "");
+
 		RequiredItem("Craft_MetalScrap", 15);
 		RequiredItem("Craft_Batteries", 12);
 		RequiredItem("Craft_PlasticTube", 10);
 		RequiredItem("Craft_PowerCable", 12);
 		RequiredItem("Craft_Electronics", 10);
+
         Color(Color_Violet);
         CraftedItem("Firearm_Rifle_Retro1", 1, 1);
         CraftplanType("CarUpgrade");
@@ -1026,14 +1041,23 @@ sub extraDLCRecipes(){
         Price(50);
         Mesh("blueprint.msh");
         Skin("default");
+
         BaseItem("Melee_BigHammer", "", "");
         BaseItem("Melee_AxeBig", "", "");
         BaseItem("Melee_Pickaxe", "", "");
-        RequiredItem("Craft_MetalScrap", 8);
-        RequiredItem("Craft_String", 5);
-        RequiredItem("Craft_Insecticide", 6);
-		RequiredItem("Craft_Alcohol", 15);
+
+        // RequiredItem("Craft_MetalScrap", 10);
+        // RequiredItem("Craft_RazorBlade", 2);
+        // RequiredItem("Craft_String", 4);
+        // RequiredItem("Craft_Insecticide", 6);
+        // RequiredItem("Craft_Alcohol", 10);
+
+        // RequiredItem("Craft_Batteries", 2);
+        // RequiredItem("Craft_PowerCable", 2);
+        // RequiredItem("Craft_Electronics", 3);
+
         Color(Color_Orange);
+        Elemental(Elemental_Burning, 3);
         CraftedItem("Burning_AxeBig_Viking1", 1, 1);
         CraftplanType("CarUpgrade");
         UniqueSaveID(9925);
@@ -1045,8 +1069,8 @@ sub extraDLCRecipes(){
 	
 	Item("Burning_AxeBig_Viking1", CategoryType_Melee)
     {
-		Name("&Burning_Melee_AxeBig_Viking1_N&");
-        Description("&Burning_Melee_AxeBig_Viking1_N&");
+		Name("&Burning_AxeBig_Viking1_N&");
+        Description("&Burning_AxeBig_Viking1_D&");
         //GameVersion(36);
         Visibility(true);
         ItemType(ItemType_TwoHandedHeavyStick);
@@ -1148,17 +1172,25 @@ sub extraDLCRecipes(){
         Price(50);
         Mesh("blueprint.msh");
         Skin("default");
+
 		BaseItem("Melee_Machete", "", "");
 		BaseItem("Melee_TahirsWeapon", "", "");
         BaseItem("Melee_RaisMachete", "", "");
 		BaseItem("Melee_Knife", "", "");
 		BaseItem("Melee_ShortSword", "", "");
-        RequiredItem("Craft_MetalScrap", 8);
+
+        RequiredItem("Craft_MetalScrap", 7);
+        RequiredItem("Craft_RazorBlade", 2);
         RequiredItem("Craft_String", 4);
-        RequiredItem("Craft_Insecticide", 5);
+        RequiredItem("Craft_Insecticide", 4);
         RequiredItem("Craft_Alcohol", 10);
+
+        RequiredItem("Craft_Batteries", 2);
+        RequiredItem("Craft_PowerCable", 2);
+        RequiredItem("Craft_Electronics", 3);
 		
         Color(Color_Orange);
+        Elemental(Elemental_Burning, 3);
         CraftedItem("Burning_ShortSword_Viking1", 1, 1);
         CraftplanType("CarUpgrade");
         HudIcon("blueprint_b");
@@ -1170,8 +1202,8 @@ sub extraDLCRecipes(){
 	
 	Item("Burning_ShortSword_Viking1", CategoryType_Melee)
     {
-		Name("&Burning_Melee_ShortSword_Viking1_N&");
-        Description("&Burning_Melee_ShortSword_Viking1_D&");
+		Name("&Burning_ShortSword_Viking1_N&");
+        Description("&Burning_ShortSword_Viking1_D&");
 		//GameVersion(36);
         Visibility(true);
         ItemType(ItemType_Stick);
@@ -1287,6 +1319,7 @@ sub extraDLCRecipes(){
         Skin("default");
 		
 		BaseItem("ZZZZ_Bow_Composite", "", "");
+
         RequiredItem("Craft_MetalScrap", 10);
         RequiredItem("Craft_Nails", 7);
         RequiredItem("Craft_DuctTape", 6);
@@ -1393,12 +1426,15 @@ sub extraDLCRecipes(){
         Price(6400);
         Mesh("blueprint.msh");
         Skin("default");
+
         BaseItem("Firearm_Rifle", "", "");
+        
         RequiredItem("Craft_MetalScrap", 20);
         RequiredItem("Craft_Electronics", 16);
         RequiredItem("Craft_Batteries", 12);
         RequiredItem("Craft_PowerCable", 12);
         RequiredItem("Craft_Shroom", 40);
+        
         Color(Color_Blue);
         CraftedItem("Firearm_Rifle_Astronaut1", 1, 1);
         CraftplanType("CarUpgrade");
@@ -1542,12 +1578,15 @@ sub extraDLCRecipes(){
         Price(6400);
         Mesh("blueprint.msh");
         Skin("default");
+
         BaseItem("Firearm_Pistol", "", "");
+
         RequiredItem("Craft_MetalScrap", 20);
         RequiredItem("Craft_Electronics", 12);
         RequiredItem("Craft_Batteries", 14);
         RequiredItem("Craft_PowerCable", 10);
         RequiredItem("Craft_Shroom", 40);
+
         InheritBaseStats();
         Color(Color_Blue);
         CraftedItem("Firearm_Pistol_Astronaut1", 1, 1);
@@ -1729,6 +1768,7 @@ sub extraDLCRecipes(){
         Price(6400);
         Mesh("blueprint.msh");
         Skin("default");
+
         BaseItem("Melee_Machete", "", "");
         BaseItem("Melee_TahirsWeapon", "", "");
         BaseItem("Melee_RaisMachete", "", "");
@@ -1869,14 +1909,16 @@ sub extraDLCRecipes(){
         Price(6400);
         Mesh("blueprint.msh");
         Skin("default");
-        RequiredItem("ZZZZ3_Crossbow", 1); // same as upgraded crossbow from collectables.scr
+
+        RequiredItem("ZZZZ3_Crossbow", 1); // crossbow from collectables.scr
         RequiredItem("Craft_MetalScrap", 20);
         RequiredItem("Craft_DuctTape", 10);
         RequiredItem("Craft_String", 7);
         RequiredItem("Craft_RazorBlade", 3);
         RequiredItem("Craft_Electronics", 4);
         RequiredItem("Craft_Batteries", 5);
-        RequiredItem("Craft_PowerCable", 4);    
+        RequiredItem("Craft_PowerCable", 4);  
+
         Color(Color_Violet);
         CraftedItem("Crossbow_VanCrane1", 1, 1);
         CraftplanType("CarUpgrade");
@@ -1981,6 +2023,7 @@ sub extraDLCRecipes(){
         Price(6400);
         Mesh("blueprint.msh");
         Skin("default");
+
         BaseItem("Melee_ShortSword", "", "");
         BaseItem("Melee_Knife", "", "");
         BaseItem("Melee_Scythe", "", "");
@@ -1991,12 +2034,19 @@ sub extraDLCRecipes(){
         BaseItem("Melee_ReedKnife", "", "");
         BaseItem("Melee_Cleaver", "", "");
 
-        RequiredItem("Craft_MetalScrap", 8);
-        RequiredItem("Craft_DuctTape", 3);
-        RequiredItem("Craft_Nails", 4);
-        RequiredItem("Craft_RazorBlade", 2);
+        RequiredItem("Craft_MetalScrap", 7);
+        RequiredItem("Craft_DuctTape", 6);
+        RequiredItem("ZZZZ3_Component_Rubber", 4);
+        RequiredItem("Craft_String", 4);
+
+        RequiredItem("Craft_Nails", 8);
+        RequiredItem("ZZZZ3_Component_SteelTubing", 5);
+        RequiredItem("ZZZZ3_Component_NutsBolts", 10);
+        RequiredItem("Craft_RazorBlade", 4);
 
         Color(Color_Violet);
+
+        Elemental(Elemental_Bleeding, 3);
         CraftedItem("Sword_VanCrane1", 1, 1);
         InheritBaseStats();
         CraftplanType("CarUpgrade");
@@ -2124,14 +2174,17 @@ sub extraDLCRecipes(){
         Price(6400);
         Mesh("blueprint.msh");
         Skin("default");
+
         BaseItem("Firearm_Rifle", "", "");
         BaseItem("Firearm_Revolver", "", "");
         BaseItem("Firearm_ShotgunA", "", "");
+
         RequiredItem("Craft_MetalScrap", 20);
         RequiredItem("Craft_Electronics", 12);
         RequiredItem("Craft_Batteries", 9);
         RequiredItem("Craft_PowerCable", 8);
         RequiredItem("Craft_Shroom", 40);
+
         Color(Color_Blue);
         CraftedItem("Firearm_Grenade_Launcher_Freeze1", 1, 1);
         CraftplanType("CarUpgrade");
@@ -2257,10 +2310,13 @@ sub extraDLCRecipes(){
         Price(6400);
         Mesh("blueprint.msh");
         Skin("default");
+
         RequiredItem("Craft_Bleach", 2);
-        RequiredItem("Craft_Insecticide", 2);
-        RequiredItem("Craft_Sugar", 1);
+        RequiredItem("Craft_Insecticide", 3);
+        RequiredItem("Craft_Sugar", 2);
         RequiredItem("Craft_TinCan", 2);
+        RequiredItem("Craft_Shroom", 2);
+
         Color(Color_Blue);
         CraftedItem("Bullet_Grenade_Launcher_Freeze1", 2, 6);
         CraftplanType("Developer");
@@ -2345,11 +2401,13 @@ sub extraDLCRecipes(){
         Price(6400);
         Mesh("blueprint.msh");
         Skin("default");
+
         RequiredItem("Craft_MetalScrap", 12);
         RequiredItem("Craft_RazorBlade", 6);
         RequiredItem("Craft_Electronics", 6);
         RequiredItem("Craft_Batteries", 5);
         RequiredItem("Craft_PowerCable", 4);
+
         Color(Color_Blue);
         CraftedItem("Chainsaw1", 1, 1);
         CraftplanType("CarUpgrade");
@@ -2408,8 +2466,8 @@ sub extraDLCRecipes(){
         MoveAcurancyLoseFactor(0.01);
         JumpInertiaFactor(0.2);
         DuckInertiaFactor(0.3);
-        ShootMinAngle(0.027);
-        ShootMaxAngle(0.21);
+        ShootMinAngle(0.1);
+        ShootMaxAngle(0.5);
         ShootAngleVel(0.145);
         ShootAngleCooldown(0.328);
         ShootVertRecoil(0.0);
@@ -2433,7 +2491,7 @@ sub extraDLCRecipes(){
         CriticalDamage(5.0);
         DamageHeadMult(8.0);
         DamageToPhysicsObjects(17.5);
-        FirePointRange(0,1.5);
+        FirePointRange(0,1.75);
         FirePointDamage(0,300.0); 
         FirePointForce(0,250.0); 
         Color(Color_Orange);
@@ -2463,7 +2521,9 @@ sub extraDLCRecipes(){
         Price(6400);
         Mesh("blueprint.msh");
         Skin("default");
+
         RequiredItem("Craft_RazorBlade", 1);
+
         Color(Color_Blue);
         CraftedItem("Chainsaw_Ammo1", 100, 150);
         CraftplanType("Developer");
@@ -2492,13 +2552,15 @@ sub extraDLCRecipes(){
         Price(6400);
         Mesh("blueprint.msh");
         Skin("default");
+        
         BaseItem("Melee_ShortSword", "", "");
         BaseItem("Melee_LongSword", "", "");
         BaseItem("Melee_Handsaw", "", "");
 
-        RequiredItem("Craft_MetalScrap", 8);
-        RequiredItem("Craft_RazorBlade", 6);
-        RequiredItem("ZZZZ3_Component_NutsBolts", 10);
+        RequiredItem("Craft_MetalScrap", 5);
+        RequiredItem("Craft_Nails", 3);
+        RequiredItem("Craft_String", 2);
+        RequiredItem("Craft_RazorBlade", 2); 
 
         Color(Color_Violet);
         CraftedItem("Melee_Saw_Blade1", 1, 1);

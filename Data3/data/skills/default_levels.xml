@@ -901,7 +901,7 @@
 <level id="12" type="Runner"><prop n="ExpToNextLevelRunner" v="135000"/></level>
 <level id="13" type="Runner"><prop n="ExpToNextLevelRunner" v="140000"/></level>
 <level id="14" type="Runner"><prop n="ExpToNextLevelRunner" v="145000"/></level>
-<level id="15" type="Runner"><prop n="ExpToNextLevelRunner" v="150000"/></level>
+<level id="15" type="Runner"><prop n="ExpToNextLevelRunner" v="300000"/></level> <!-- Harder for level 16 fast climbing -->
 <level id="16" type="Runner"><prop n="ExpToNextLevelRunner" v="155000"/></level>
 <level id="17" type="Runner"><prop n="ExpToNextLevelRunner" v="160000"/></level>
 <level id="18" type="Runner"><prop n="ExpToNextLevelRunner" v="170000"/></level>
