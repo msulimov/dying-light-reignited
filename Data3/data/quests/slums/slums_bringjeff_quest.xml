@@ -2143,12 +2143,13 @@
                              pxsl_line="315" />
                     </SpecificLocation>
                 </Phase>
-                <!--
+                
                 <Phase
                      type="enable"
                      name="_"
                      state="disabled"
                      pxsl_line="316">
+                     <!--
                     <Object
                          pxsl_line="317">
                         <QuestObject
@@ -2177,6 +2178,7 @@
                              name="GassedUp_QEG_Fire_Emitter"
                              pxsl_line="320" />
                     </Object>
+               -->
                     <Object
                          pxsl_line="321">
                         <QuestObject
@@ -2185,6 +2187,7 @@
                              pxsl_line="321" />
                     </Object>
                 </Phase>
+                <!--
                 <Phase
                      type="appear"
                      name="_"
